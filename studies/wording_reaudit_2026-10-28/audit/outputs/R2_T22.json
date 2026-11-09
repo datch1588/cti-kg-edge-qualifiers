@@ -1,0 +1,10 @@
+{
+ "audit_file": "R2_T22",
+ "target_doc_id": "D0402",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 сказано як факт «The research proposes two lightweight DL-based IDS ... the proposed LSTM-based IDS», що відповідає формулюванню без маркерів (actual, positive)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 стверджено без застережень «the proposed convolutional neural network (CNN)-based IDS», тобто звʼязок поданий як actual, positive, як і у формулюванні."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never has DOI» заперечує звʼязок, тоді як у D0402:P0003 для arXiv:2603.16342 прямо наведено DOI https://doi.org/10.48550/arXiv.2603.16342, тобто стаття звʼязок стверджує (actual, positive)."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 як факт сказано, що дослідження пропонує «the proposed convolutional neural network (CNN)-based IDS», що відповідає формулюванню actual, positive."}
+ ]
+}

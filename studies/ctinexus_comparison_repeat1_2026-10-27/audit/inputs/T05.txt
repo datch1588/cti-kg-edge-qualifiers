@@ -1,0 +1,194 @@
+AUDIT_FILE: T05
+TARGET_DOC_ID: D0648
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0648
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://www.bleepingcomputer.com/news/security/in-2026-hackers-want-ai-threat-intel-on-vibe-hacking-and-hackgpt/
+TITLE_SHA256: b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750
+BEGIN_DOCUMENT
+[D0648:P0001] sha256:b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750
+[D0648:P0002] sha256:5711c8e7d3bf82fb31a5ee3c4c4b2dc25335929d67b415c0b6a2b2c1cb5847cf
+[D0648:P0003] sha256:f937876ad05a92231da837cfe0caa573f99363226bb0d92f081ffb827ecbcc83
+[D0648:P0004] sha256:9f6be5bbf04bee7d4ef14909f9f1d8f8aabb3a7730ed14e8a3927071bd34c1d5
+[D0648:P0005] sha256:cd23e32e41a6220d07577e66cb457ee2987c8ec03d0e4fc852bced811699e830
+[D0648:P0006] sha256:6f6a74a254a49d7834857c9f06204a7e4ee331f68507b1690bab02a76ca39244
+[D0648:P0007] sha256:069a2ed88ba7c45c03062e01eb19e26c5c3e09484efab8c44073e086250891cb
+[D0648:P0008] sha256:e36aec9cf2cb1e1136777b570c917fd8d3dbda3ab50b518208b12454d5cbacd1
+[D0648:P0009] sha256:0317e59832254818013073b86288789274d17a018a73450993583061ce73741e
+[D0648:P0010] sha256:70d6de38b374fdd8259408ec6aa03786ebc58f3941ed335de17ac8317e5201bb
+[D0648:P0011] sha256:67ac5926b9c873f1f95dff9de55cdbdd8e2b82a0ccb9800abc00ca02053a5b16
+[D0648:P0012] sha256:b6f488acc90afcb329460b0fb330e3291787963250f99f10df38af571e365e98
+[D0648:P0013] sha256:108131775791ef2fcc7634e6b1fa5c64b07334c53c29ff21193a09b973d018ef
+[D0648:P0014] sha256:8b521cb95b6159917cd629cd22270bcb60f4933effead5460dd9845ce9c498ca
+[D0648:P0015] sha256:c4d7e1ea0ca04d1ef0079835edcc53ebb7cdc582044b432c6fb916b1185935a1
+[D0648:P0016] sha256:5a4d66238eb9b39afe6ab8788d49a47b75b5985355ad0e2b613f4a8aa0779e30
+[D0648:P0017] sha256:24c45ee1b382f807d0690be65952f24053f858ed8ea3cc889a7148ad51df53ae
+[D0648:P0018] sha256:bb07f302bb673841836e30f80519a5a718d176812a13d7f0a2ad6d7c8ea26050
+[D0648:P0019] sha256:06bcf79761a6a78a1212841e6e2d2d13ac2c1f0ddfa4d6bb372fb2da4b38717f
+[D0648:P0020] sha256:d403ec82e49f73fce1279708b03fe77e6736ba48286584f27e5392f9240075f7
+[D0648:P0021] sha256:85275ad22a9bf26cff21a3a86e229a04f4fea9fccd47b74758d89aa73b883736
+[D0648:P0022] sha256:109c73381f28c2e88a999a4c0739547674aff050c98a93f1667646db39d55f01
+[D0648:P0023] sha256:66bafffb55d0e23963585b7ec6c06f73fc9592e6e290681a2da7221a0bfe35d9
+[D0648:P0024] sha256:66fa6bd91ddc94475182732226be08a089d28dc4b3c34b783c203d970910c611
+[D0648:P0025] sha256:182b7d23bbede90462a716ed6c7af2471c2714762dcf406372e98f2a8ab0b060
+[D0648:P0026] sha256:55647e9c443370298ba8f8dc35b0a43ff716d0ef9c6aebc91e068a36415cbbad
+[D0648:P0027] sha256:ffa5e47cc01f9b47e9dae4ad0020fd5df91d27f39e31a556b6e56163b83270f9
+[D0648:P0028] sha256:aed648c284cffb68ee52f7cdb3f24627f15a047c30034b30355fabef698567a0
+[D0648:P0029] sha256:8446234a363a0e3816bb4b9c990729356c2792bd1e234b626776b9e302a89184
+[D0648:P0030] sha256:4720bfd5bb5cd30891c39810c98d675910fce0817b2c64ec88dd2938b5d87b38
+[D0648:P0031] sha256:95d139d2cae6f2244623d8390f71305cb5a87c9c06df565988f19efbd258d970
+[D0648:P0032] sha256:8c11d91adbfd859ab5b31837a61da0eec69d9217a0ae1859318ba81b58a30ebf
+[D0648:P0033] sha256:678341750a33ff12fc047a9894dbc0fb89b84397455ad222d74994780cf32fa6
+[D0648:P0034] sha256:5ba59f6b877258ca3cbf2a33f9ffd7547fcec76475c3d005ea06bba41723b071
+[D0648:P0035] sha256:7f5129df4392ed533e150f94ec09e9943a1090290d69a4459873773dc8d4cd44
+[D0648:P0036] sha256:c4c930988707f7564fa8ac6b2d748126c6ac5b1427f95577756155d1ee4e558c
+[D0648:P0037] sha256:d457317817875960d4666cb875e88c991b0cf4558cd932d9a94b965d26f24004
+[D0648:P0038] sha256:46079d31aa57cf9822e4b1305c5c61eda9c0305ca0db13583e0a7a86a8e39b4a
+[D0648:P0039] sha256:8cf6b7988640c920c48fc7262276e250c7dc64d918ed6bbd4fb3a7fdbad34002
+[D0648:P0040] sha256:78c29c7266241415ce7b70f8315b291a3bb9e45d4293f5244d64b8248ae862e5
+[D0648:P0041] sha256:57ceb7ff8c7354313117d6ef04df62ff5a415190053c7df64dd83572c77b3381
+[D0648:P0042] sha256:cb0e1d5b0fb3e9d7be2cd2e1ac042bba701a0b6dbb425306b589b2f99aa666a8
+[D0648:P0043] sha256:1edace626999d1caa1e3124d823bed6bce68214471ff36b5ecc922cc5f839956
+[D0648:P0044] sha256:b9d907bc4fd34809a4d15ec1ef18d7e42c11fae3ab0a25ecfd52a5acdf61f28c
+[D0648:P0045] sha256:faf964891b68beebb25ed3928349b2bf0b83ffaa3c9e71d42ca50421497252e5
+[D0648:P0046] sha256:a87582482c537c639734c99e7104b267194bc78ddf89fb5ef9051efd4cf8e88e
+[D0648:P0047] sha256:9bf0470c65553c504cd48c663f498f06b1f768952ba5f2b1b5486748e7becade
+[D0648:P0048] sha256:5256809dfe4bf973405329318305785dd7d4cff11180d7747a366da0f3a8a357
+[D0648:P0049] sha256:ef1415cd3767c7e9d7c5b5cf160bf199b38a8c8c554d901274ec60b8355f96ea
+[D0648:P0050] sha256:99ccc63f728d55610ea3f0a335b6162d701ba5e7a2c80d28fecfa09dc01e315d
+[D0648:P0051] sha256:9ee648e2adbd738bf0e1160b1eda97ec5c7b20fd0de432161d440fb3399af193
+[D0648:P0052] sha256:b92989cccafc99d4642aee742bcb98a8384be69b372e5c76e29dcfeb66f32b69
+[D0648:P0053] sha256:73fdee4d72591a60c1e413a92962eb0126e248db9cafe86729cbfe2bdbc5d8e7
+[D0648:P0054] sha256:ce0ec72f83a7f051fa79ecb2815dee35ad3c63433b7be2e40fbc3b497768e228
+[D0648:P0055] sha256:133277a1c6fdbcfff216c893d29d9934c6d23825c1a19ea1376f26cdf71c3f9c
+[D0648:P0056] sha256:04b6f5005cce32016ded7965b2b3a15c0c5ec8222fc4dd293409bec087e036b8
+[D0648:P0057] sha256:66a655d34c8e5b07431780983722ed61e7803123343a58cc49adedbba1f6b9a5
+[D0648:P0058] sha256:8b28d5ba96152cce3b1376a1e76dc570edc7d1c0179c1f11342aafaab388c7b4
+[D0648:P0059] sha256:a1d9ce9e5e026d1de6483ca523ba4fc67d01e6add7d5c84190dfa201a6a73522
+[D0648:P0060] sha256:665617527ac5a42ee9edd0bdc57d64414ad0055311782be96a82672a00b1e18a
+[D0648:P0061] sha256:eb2335e9f33a20e6bb9969219b34d1819f00e03b238d44abb0f150b1eda24e44
+[D0648:P0062] sha256:5202bcaa321a8dc36ccfac4e0741ef35cc58c89c29c9a6aa1db6f18c66ab744a
+[D0648:P0063] sha256:ed3aaff3d130819055a860d9224c780d3ccb86683d8ccaf5dfe0a88d4ad602f0
+[D0648:P0064] sha256:752ffcb25a9d142a01b319aaca96b9a0f4bda1ad3fa87bf40fad50b5b30d8e23
+[D0648:P0065] sha256:85fa517af4ed31331ceb20412b7747ec9aea1c328df392537738815694246ca6
+[D0648:P0066] sha256:2c56ebe83b2a805510a3e2a29856780ef9b78035e69794c70aa5bbd81917499e
+[D0648:P0067] sha256:400ff595463a29be667c5b5818625c6fc80736b305b762307c25c37bd56db842
+[D0648:P0068] sha256:68b600e35257625a075203d67c077abd17cd76aa581e447d55d5fcb061be4f5b
+[D0648:P0069] sha256:265abae7fc30c477d2fb15d3b37fee467b601b260dd34e3af83c518ffc53a48f
+[D0648:P0070] sha256:482bbe8c6ff7cf932b77f1a27b8f47961700816b4aa4ad67e3cebb55f38938bd
+[D0648:P0071] sha256:3204731b0a61bf68355ad3fca2b006124ac8373382afaad21dccd995341665c6
+[D0648:P0072] sha256:6c2cdd03bf910fed655159106e36867aa5719631882fafcc7627c8d5334620d8
+[D0648:P0073] sha256:1fbd9d275ce0189fc19ddf94805d0844894327b78dbe2ebb24a44efd5dac33d3
+[D0648:P0074] sha256:c3c143a3abf4b2ae9c5a3e7909deb417a9bbe6050afe78d8783328e8fd0bbedd
+[D0648:P0075] sha256:df4d51733dfc1c4ca7853c6210f4be11a1890216ef56951621b46ebd0486e242
+[D0648:P0076] sha256:8743a11aa96b155f009822ae1400878718539f17ad50ad5d368f026626355f2a
+[D0648:P0077] sha256:7118c99e33c00181d174c4fea465f8993d47aa4346e400b3a82cd1af10851a3c
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (62)
+E001: «WormGPT» — circulates in → «underground channels» | форма: actual, positive
+E002: «Hacking-GPT tools» — are → «language models wrapped around prompts, templates, or recycled guides» | форма: actual, positive
+E003: «PhishGPT» — enables → «phishing» | форма: possible, positive
+E004: «Flare» — surfaces → «malicious LLM workflows» | форма: actual, positive
+E005: «Hacking-GPT tools» — generate → «scam scripts and chat responses» | форма: actual, positive
+E006: «AI jailbreaking» — bypasses → «safety controls of AI service providers» | форма: actual, positive
+E007: «Hacking-GPT tools» — write → «phishing emails» | форма: actual, positive
+E008: «AI-branded hacking services» — mirror the model of → «ransomware affiliate programs» | форма: actual, positive
+E009: «generative AI» — produces → «modern fraud emails» | форма: actual, positive
+E010: «Flare» — detects → «AI jailbreaking» | форма: actual, positive
+E011: «Flare» — surfaces → «AI jailbreak techniques» | форма: actual, positive
+E012: «Red Team GPT» — enables → «phishing» | форма: possible, positive
+E013: «AI-branded hacking services» — target → «low-skill actors» | форма: actual, negative
+E014: «underground marketplaces» — discuss artificial intelligence on → «hackers» | форма: actual, positive
+E015: «Red Team GPT» — enables → «phishing» | форма: possible, negative
+E016: «Flare» — surfaces → «prompt-injection abuse» | форма: actual, positive
+E017: «scammers» — use → «generative AI» | форма: actual, positive
+E018: «In 2026, Hackers Want AI: Threat Intel on Vibe Hacking & HackGPT» — was published on → «January 7, 2026» | форма: actual, positive
+E019: «AI-branded hacking services» — mirror the model of → «phishing-as-a-service» | форма: actual, positive
+E020: «Flare» — detects → «data leaks, brand abuse, and cyber threats» | форма: actual, positive
+E021: «Russian-language Telegram channels» — market → «AI jailbreak methods» | форма: actual, positive
+E022: «author of Tor-based forum post» — utilizes → «MCP» | форма: actual, positive
+E023: «In 2026, Hackers Want AI: Threat Intel on Vibe Hacking & HackGPT» — is sponsored and written by → «Flare» | форма: actual, positive
+E024: «hackers» — discuss artificial intelligence on → «dark web forums» | форма: actual, positive
+E025: «author of Tor-based forum post» — utilizes → «n8n» | форма: actual, positive
+E026: «AI jailbreak techniques» — are traded as → «cybercrime service» | форма: actual, positive
+E027: «underground marketplaces» — offer → «credential access and recovery» | форма: actual, positive
+E028: «Hacking-GPT tools» — guide users through → «attacks» | форма: actual, positive
+E029: «AI jailbreak methods» — bypass → «content filters» | форма: actual, positive
+E030: «author of Tor-based forum post» — jailbreaks → «AI systems» | форма: actual, positive
+E031: «Red Team GPT» — enables → «phishing» | форма: actual, positive
+E032: «Flare» — detects → «prompt injection» | форма: actual, positive
+E033: «generative AI» — enables → «phishing» | форма: actual, positive
+E034: «vibe coding» — uses → «artificial intelligence» | форма: actual, positive
+E035: «Hacking-GPT» — uses → «language models» | форма: actual, positive
+E036: «PhishGPT» — circulates in → «underground channels» | форма: actual, positive
+E037: «Flare» — detects → «Hacking-GPT» | форма: actual, positive
+E038: «hackers» — adopted → «vibe hacking» | форма: actual, positive
+E039: «Flare» — monitors → «dark web forums, Telegram channels, underground marketplaces, and paste sites» | форма: actual, positive
+E040: «WormGPT» — enables → «phishing» | форма: possible, positive
+E041: «phishing» — enables → «generative AI» | форма: actual, positive
+E042: «underground marketplaces» — offer → «fraud and carding-related services» | форма: actual, positive
+E043: «vibe hacking» — is guided by → «AI» | форма: actual, positive
+E044: «Flare» — is used by → «Fortune 500 companies» | форма: actual, positive
+E045: «underground marketplaces» — offer → «social media account takeovers» | форма: actual, positive
+E046: «vibe hacking» — is derived from → «vibe coding» | форма: actual, positive
+E047: «FraudGPT, PhishGPT, WormGPT, and Red Team GPT» — are branded as → «AI copilots for crime» | форма: actual, positive
+E048: «Flare» — surfaces → «commercialization of Hacking-GPT tools» | форма: actual, positive
+E049: «vibe hacking» — is guided by → «AI» | форма: possible, positive
+E050: «fraudsters» — target → «novice cybercriminals» | форма: actual, positive
+E051: «FraudGPT» — enables → «phishing» | форма: possible, positive
+E052: «AI-branded service ads» — are copied across → «forums and Telegram channels» | форма: actual, positive
+E053: «hackers» — discuss artificial intelligence on → «Telegram channels» | форма: actual, positive
+E054: «hackers» — discuss artificial intelligence on → «underground marketplaces» | форма: actual, positive
+E055: «underground marketplaces» — offer → «email account hacking» | форма: actual, positive
+E056: «AI-branded hacking services» — target → «low-skill actors» | форма: actual, positive
+E057: «Red Team GPT» — circulates in → «underground channels» | форма: actual, positive
+E058: «Flare» — is used by → «global law enforcement» | форма: actual, positive
+E059: «AI-branded hacking services» — target → «first-time fraudsters» | форма: actual, positive
+E060: «FraudGPT» — circulates in → «underground channels» | форма: actual, positive
+E061: «Hacking-GPT tools» — explain → «vulnerabilities» | форма: actual, positive
+E062: «In 2026, Hackers Want AI: Threat Intel on Vibe Hacking & HackGPT» — is published by → «BleepingComputer» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

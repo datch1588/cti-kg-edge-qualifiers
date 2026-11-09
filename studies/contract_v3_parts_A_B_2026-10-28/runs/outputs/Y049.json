@@ -1,0 +1,225 @@
+{
+ "run_id": "Y049",
+ "target_doc_id": "D0432",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "data destruction", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0021", "start": 1, "end": 101, "sha256": "a186d402827bbcadabc51b895c5f19e8fed3173117883e56e98bc6be1c99e6ed"}}]},
+  {"id": "n002", "label": "denial-of-service attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0029", "start": 0, "end": 115, "sha256": "3545819309f7d6056e50924c1e20fc8790c2b3d10ebf730a297d4e2fd2cc994c"}}]},
+  {"id": "n003", "label": "Hack-and-leak operations", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0029", "start": 205, "end": 316, "sha256": "99b5b48a76c1e83b2bf1a14c2fdaab51c91721df87f2be0874663815d759f5c7"}}]},
+  {"id": "n004", "label": "website defacements", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0029", "start": 121, "end": 203, "sha256": "4840405907dd95d6f1f13ed7dc068568dd52a0a5ad64a0559198e43476300145"}}]},
+  {"id": "n005", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "n006", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 0, "end": 103, "sha256": "9b3926012799197b689ff4fe028e0a81146fe6e05bb28751be4ea7fe085eaa70"}}]},
+  {"id": "n007", "label": "Israel", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n008", "label": "Kuwait", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n009", "label": "North Korea", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "n010", "label": "Russia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "n011", "label": "Saudi Arabia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n012", "label": "United States", "entity_type": "country", "aliases": ["U.S."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 138, "sha256": "400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "n013", "label": "cyberattack - on a nuclear research facility", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 119, "sha256": "6167cf597514dbdaeee0f3141592778be16cbbe464fb9885e2ca7903b5d5a672"}}]},
+  {"id": "n014", "label": "Denver", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0036", "start": 233, "end": 280, "sha256": "4f16f1ec79e76f9ada01995267f89676c2117549a4a2aaed3d97c814d3e7fa2a"}}]},
+  {"id": "n015", "label": "Michigan", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 0, "end": 131, "sha256": "e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09"}}]},
+  {"id": "n016", "label": "Middle East", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 138, "sha256": "400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984"}}]},
+  {"id": "n017", "label": "airport", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n018", "label": "Arctic Wolf", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0020", "start": 74, "end": 185, "sha256": "e368a45578b0652ce8e35662be3be3293619e67563d52f83a76d3c029912d10d"}}]},
+  {"id": "n019", "label": "Armadin", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0012", "start": 59, "end": 138, "sha256": "b507e052ad7140c79ee2fa0e09480d60b17a12bc9c353fae4993a390df0e8d60"}}]},
+  {"id": "n020", "label": "CIA", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0030", "start": 53, "end": 164, "sha256": "b5dd1ee8525860afdd4fad5dc187b140c3164019e53a8945e7afdbb87d538be9"}}]},
+  {"id": "n021", "label": "CrowdStrike", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0038", "start": 124, "end": 265, "sha256": "4da2d6511d2973a9748091c5a6d93d1948c1a6239accb6ed4af0cf5ea46d4764"}}]},
+  {"id": "n022", "label": "defense contractors", "entity_type": "organization", "aliases": ["American defense contractors", "U.S. defense contractors"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 140, "end": 262, "sha256": "29827b03d8e526ed08089480808946051c12b942a797ce15aadb5b712acad0b6"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0023", "start": 0, "end": 115, "sha256": "b883da9b595b59003683d0633d01db9faace242f19ce5e527a56339b827a5e9f"}}]},
+  {"id": "n023", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0035", "start": 0, "end": 122, "sha256": "84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76"}}]},
+  {"id": "n024", "label": "FBI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0030", "start": 53, "end": 164, "sha256": "b5dd1ee8525860afdd4fad5dc187b140c3164019e53a8945e7afdbb87d538be9"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0036", "start": 125, "end": 281, "sha256": "d1d9c659331f65fcf841cd5766cea3168533c78f7d4acfb969ccb42b4fff7d26"}}]},
+  {"id": "n025", "label": "Mandiant", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0012", "start": 59, "end": 138, "sha256": "b507e052ad7140c79ee2fa0e09480d60b17a12bc9c353fae4993a390df0e8d60"}}]},
+  {"id": "n026", "label": "nuclear research facility", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 119, "sha256": "6167cf597514dbdaeee0f3141592778be16cbbe464fb9885e2ca7903b5d5a672"}}]},
+  {"id": "n027", "label": "Optiv", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0036", "start": 125, "end": 281, "sha256": "d1d9c659331f65fcf841cd5766cea3168533c78f7d4acfb969ccb42b4fff7d26"}}]},
+  {"id": "n028", "label": "Polish authorities", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 119, "sha256": "6167cf597514dbdaeee0f3141592778be16cbbe464fb9885e2ca7903b5d5a672"}}]},
+  {"id": "n029", "label": "power stations", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 140, "end": 262, "sha256": "29827b03d8e526ed08089480808946051c12b942a797ce15aadb5b712acad0b6"}}]},
+  {"id": "n030", "label": "school", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n031", "label": "SentinelOne", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0030", "start": 53, "end": 164, "sha256": "b5dd1ee8525860afdd4fad5dc187b140c3164019e53a8945e7afdbb87d538be9"}}]},
+  {"id": "n032", "label": "SITE Intelligence Group", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0025", "start": 40, "end": 122, "sha256": "80535df503d4622f12d472c59925ddc928d6f6562ba83187702b7c75b4ea2e54"}}]},
+  {"id": "n033", "label": "Stryker", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 0, "end": 131, "sha256": "fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 0, "end": 131, "sha256": "e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09"}}]},
+  {"id": "n034", "label": "Trump campaign", "entity_type": "organization", "aliases": ["President Donald Trump's campaign"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 0, "end": 146, "sha256": "4c6f1f8a0a82faa5f07486925b6dc186005ac73b90e57dd9f8778a3a26c3168d"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}}]},
+  {"id": "n035", "label": "water plants", "entity_type": "organization", "aliases": ["U.S. water plants"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 140, "end": 262, "sha256": "29827b03d8e526ed08089480808946051c12b942a797ce15aadb5b712acad0b6"}}]},
+  {"id": "n036", "label": "data centers", "entity_type": "other", "aliases": ["datacenters"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0025", "start": 1, "end": 122, "sha256": "864df6dafe748f255afeee414255e9f785a5408b3ba46a2db1cdb804ca35edf4"}}]},
+  {"id": "n037", "label": "fake news websites", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0033", "start": 154, "end": 288, "sha256": "6f0bc1bc4737a1a1ff4661863fc76b116c0d8c191cd179c7507db7cfb0d7e223"}}]},
+  {"id": "n038", "label": "industrial facilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "n039", "label": "social media accounts", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0033", "start": 154, "end": 288, "sha256": "6f0bc1bc4737a1a1ff4661863fc76b116c0d8c191cd179c7507db7cfb0d7e223"}}]},
+  {"id": "n040", "label": "U.S. networks", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0039", "start": 0, "end": 146, "sha256": "99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940"}}]},
+  {"id": "n041", "label": "Adam Meyers", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0040", "start": 104, "end": 182, "sha256": "cf3cd42a5abb418e361b8695a2ab997ddee41f345c176709c0c71f030b0cd26f"}}]},
+  {"id": "n042", "label": "Donald Trump", "entity_type": "person", "aliases": ["Trump"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 147, "end": 284, "sha256": "b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555"}}]},
+  {"id": "n043", "label": "Ismael Valenzuela", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0020", "start": 74, "end": 185, "sha256": "e368a45578b0652ce8e35662be3be3293619e67563d52f83a76d3c029912d10d"}}]},
+  {"id": "n044", "label": "James Turgal", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0036", "start": 125, "end": 281, "sha256": "d1d9c659331f65fcf841cd5766cea3168533c78f7d4acfb969ccb42b4fff7d26"}}]},
+  {"id": "n045", "label": "Joe Biden", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 147, "end": 284, "sha256": "b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555"}}]},
+  {"id": "n046", "label": "Kevin Mandia", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0012", "start": 59, "end": 138, "sha256": "b507e052ad7140c79ee2fa0e09480d60b17a12bc9c353fae4993a390df0e8d60"}}]},
+  {"id": "n047", "label": "Shaun Williams", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0030", "start": 53, "end": 164, "sha256": "b5dd1ee8525860afdd4fad5dc187b140c3164019e53a8945e7afdbb87d538be9"}}]},
+  {"id": "n048", "label": "cameras", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 132, "end": 267, "sha256": "4dfd4007494c053dfbc05c31f38efe4653b766365fbf1a4ce986ecf60124f8e5"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0026", "start": 57, "end": 145, "sha256": "8fa67d706f35781441dc6b123c014f250b166954b930a7e6ea1afbb2bc339128"}}]},
+  {"id": "n049", "label": "Telegram", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0024", "start": 0, "end": 91, "sha256": "76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2"}}]},
+  {"id": "n050", "label": "WhatsApp", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 147, "end": 284, "sha256": "b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555"}}]},
+  {"id": "n051", "label": "Handala", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 132, "end": 254, "sha256": "7f4b50623ccd4be17c2ecf159479a8be4751f4a0376376c57002113e2d3b1a37"}}]},
+  {"id": "n052", "label": "Iranian hackers", "entity_type": "threat_actor", "aliases": ["groups working for Tehran", "Tehran's digital warriors", "Hackers linked to Iran"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 0, "end": 146, "sha256": "4c6f1f8a0a82faa5f07486925b6dc186005ac73b90e57dd9f8778a3a26c3168d"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0033", "start": 0, "end": 153, "sha256": "37745eff01c4b8d0bf43207aec284ba571a80591ffb90bf4b19748d975ea63ce"}}]},
+  {"id": "n053", "label": "Pro-Iranian hackers", "entity_type": "threat_actor", "aliases": ["Hackers supporting Iran"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 138, "sha256": "400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 0, "end": 131, "sha256": "fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44"}}]},
+  {"id": "n054", "label": "Russian hackers", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0038", "start": 124, "end": 265, "sha256": "4da2d6511d2973a9748091c5a6d93d1948c1a6239accb6ed4af0cf5ea46d4764"}}]},
+  {"id": "n055", "label": "Z-Pentest", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0039", "start": 0, "end": 146, "sha256": "99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940"}}]},
+  {"id": "n056", "label": "Iranian cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0035", "start": 0, "end": 122, "sha256": "84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n005", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "e002", "source": "n006", "target": "n048", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "effort to hack into cameras in neighboring countries to aid missile targeting", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0026", "start": 0, "end": 146, "sha256": "f037e8902bfd73809e83415fcbb7da5420991aa6efed4720dd71a3db579d7e7a"}}]},
+  {"id": "e003", "source": "n010", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0032", "start": 0, "end": 104, "sha256": "1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a"}}]},
+  {"id": "e004", "source": "n013", "target": "n006", "relation_type": "ATTRIBUTED_TO", "modality": "possible", "polarity": "positive", "attribution": "Polish authorities", "event_time": "", "event_scope": "n013", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 119, "sha256": "6167cf597514dbdaeee0f3141592778be16cbbe464fb9885e2ca7903b5d5a672"}}]},
+  {"id": "e005", "source": "n013", "target": "n026", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n013", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 119, "sha256": "6167cf597514dbdaeee0f3141592778be16cbbe464fb9885e2ca7903b5d5a672"}}]},
+  {"id": "e006", "source": "n017", "target": "n008", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e007", "source": "n021", "target": "n054", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "since the war began", "event_scope": "surge of activity from Russian hackers in support of Tehran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0038", "start": 124, "end": 265, "sha256": "4da2d6511d2973a9748091c5a6d93d1948c1a6239accb6ed4af0cf5ea46d4764"}}]},
+  {"id": "e008", "source": "n023", "target": "n056", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "last year", "event_scope": "public warning about Iranian cyber threats", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0035", "start": 0, "end": 122, "sha256": "84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76"}}]},
+  {"id": "e009", "source": "n027", "target": "n014", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0036", "start": 233, "end": 280, "sha256": "4f16f1ec79e76f9ada01995267f89676c2117549a4a2aaed3d97c814d3e7fa2a"}}]},
+  {"id": "e010", "source": "n028", "target": "n013", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n013", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0022", "start": 0, "end": 190, "sha256": "c2c5bae59e617a383ca1fc4c4b9f4c72076cf2ce99f628dcbdbd34de60ce73eb"}}]},
+  {"id": "e011", "source": "n030", "target": "n011", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e012", "source": "n032", "target": "n012", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0025", "start": 40, "end": 122, "sha256": "80535df503d4622f12d472c59925ddc928d6f6562ba83187702b7c75b4ea2e54"}}]},
+  {"id": "e013", "source": "n033", "target": "n012", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 0, "end": 131, "sha256": "fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44"}}]},
+  {"id": "e014", "source": "n033", "target": "n015", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 0, "end": 131, "sha256": "e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09"}}]},
+  {"id": "e015", "source": "n038", "target": "n007", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e016", "source": "n041", "target": "n055", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "disruption of several U.S. networks claimed by Z-Pentest", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0040", "start": 0, "end": 182, "sha256": "7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0039", "start": 0, "end": 146, "sha256": "99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940"}}]},
+  {"id": "e017", "source": "n043", "target": "n051", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0020", "start": 0, "end": 185, "sha256": "2a7109dc6ee632113bac144c5b75a6ffe7aabd5220d180a252676b9d3b6640be"}}]},
+  {"id": "e018", "source": "n051", "target": "n033", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Handala", "event_time": "", "event_scope": "cyberattack disrupting systems at Stryker", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 0, "end": 254, "sha256": "553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff"}}]},
+  {"id": "e019", "source": "n051", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Ismael Valenzuela", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0021", "start": 1, "end": 101, "sha256": "a186d402827bbcadabc51b895c5f19e8fed3173117883e56e98bc6be1c99e6ed"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0020", "start": 0, "end": 104, "sha256": "32314138a816b60636321a095fed71eb057ce66b3bcce77bada2847dbdd354a7"}}]},
+  {"id": "e020", "source": "n052", "target": "n037", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In recent years", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0033", "start": 0, "end": 288, "sha256": "9cc9a938b8267ea36c641900acc9697ed50693b257288010a87d9cf531131744"}}]},
+  {"id": "e021", "source": "n052", "target": "n039", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In recent years", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0033", "start": 0, "end": 288, "sha256": "9cc9a938b8267ea36c641900acc9697ed50693b257288010a87d9cf531131744"}}]},
+  {"id": "e022", "source": "n052", "target": "n022", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In recent years", "event_scope": "attempts to breach networks used by the military and defense contractors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}}]},
+  {"id": "e023", "source": "n052", "target": "n034", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In 2024", "event_scope": "infiltration of the email system of the Trump campaign", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 0, "end": 146, "sha256": "4c6f1f8a0a82faa5f07486925b6dc186005ac73b90e57dd9f8778a3a26c3168d"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 217, "sha256": "23718489b1d77bae9446388a13ef4db6dcb93819de1ff80bf089f1ef5422b6a8"}}]},
+  {"id": "e024", "source": "n052", "target": "n035", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In recent years", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0010", "start": 104, "end": 324, "sha256": "bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a"}}]},
+  {"id": "e025", "source": "n052", "target": "n042", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "attempt to hack into the WhatsApp accounts of Trump and Joe Biden", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 147, "end": 284, "sha256": "b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555"}}]},
+  {"id": "e026", "source": "n052", "target": "n045", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "attempt to hack into the WhatsApp accounts of Trump and Joe Biden", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0034", "start": 147, "end": 284, "sha256": "b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555"}}]},
+  {"id": "e027", "source": "n053", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "during the war", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 138, "sha256": "400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984"}}]},
+  {"id": "e028", "source": "n053", "target": "n016", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "during the war", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 138, "sha256": "400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984"}}]},
+  {"id": "e029", "source": "n053", "target": "n017", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e030", "source": "n053", "target": "n022", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 262, "sha256": "d282585424f66cc0b359d47a8fac271ee467b7e909a2b4c771c4c6614ac38cfc"}}]},
+  {"id": "e031", "source": "n053", "target": "n029", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 262, "sha256": "d282585424f66cc0b359d47a8fac271ee467b7e909a2b4c771c4c6614ac38cfc"}}]},
+  {"id": "e032", "source": "n053", "target": "n030", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e033", "source": "n053", "target": "n033", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Hackers supporting Iran", "event_time": "Wednesday", "event_scope": "cyberattack disrupting systems at Stryker", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 0, "end": 131, "sha256": "fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0019", "start": 0, "end": 131, "sha256": "e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09"}}]},
+  {"id": "e034", "source": "n053", "target": "n035", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0008", "start": 18, "end": 262, "sha256": "d282585424f66cc0b359d47a8fac271ee467b7e909a2b4c771c4c6614ac38cfc"}}]},
+  {"id": "e035", "source": "n053", "target": "n036", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e036", "source": "n053", "target": "n036", "relation_type": "TARGETS", "modality": "recommended", "polarity": "positive", "attribution": "one user", "event_time": "", "event_scope": "Telegram discussion of plans uncovered by SITE Intelligence Group", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0024", "start": 0, "end": 91, "sha256": "76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0025", "start": 1, "end": 122, "sha256": "864df6dafe748f255afeee414255e9f785a5408b3ba46a2db1cdb804ca35edf4"}}]},
+  {"id": "e037", "source": "n053", "target": "n038", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 268, "end": 409, "sha256": "1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5"}}]},
+  {"id": "e038", "source": "n053", "target": "n048", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "Since the war began Feb. 28", "event_scope": "attempts to penetrate cameras in Middle Eastern countries to improve Iran's missile targeting", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0009", "start": 132, "end": 267, "sha256": "4dfd4007494c053dfbc05c31f38efe4653b766365fbf1a4ce986ecf60124f8e5"}}]},
+  {"id": "e039", "source": "n053", "target": "n049", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0024", "start": 0, "end": 91, "sha256": "76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2"}}]},
+  {"id": "e040", "source": "n054", "target": "n010", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0038", "start": 50, "end": 265, "sha256": "1809c6b7ffd719407cd786d23f54c7e05a18c47c8555f3f6e5a982fc14f20755"}}]},
+  {"id": "e041", "source": "n055", "target": "n012", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "Adam Meyers", "event_time": "", "event_scope": "disruption of several U.S. networks claimed by Z-Pentest", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0040", "start": 0, "end": 182, "sha256": "7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0"}},
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0039", "start": 0, "end": 146, "sha256": "99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940"}}]},
+  {"id": "e042", "source": "n055", "target": "n040", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Z-Pentest", "event_time": "", "event_scope": "disruption of several U.S. networks claimed by Z-Pentest", "evidence": [
+   {"role": "TARGET", "doc_id": "D0432", "paragraph_id": "D0432:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0432:P0039", "start": 0, "end": 146, "sha256": "99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940"}}]}
+ ],
+ "context_passages_used": []
+}

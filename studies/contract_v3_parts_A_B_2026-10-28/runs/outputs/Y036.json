@@ -1,0 +1,75 @@
+{
+ "run_id": "Y036",
+ "target_doc_id": "D0402",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Sentiment Steering Attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0001", "start": 0, "end": 73, "sha256": "699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7"}}
+  ]},
+  {"id": "n002", "label": "CICIoT2023", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 844, "end": 949, "sha256": "1e078b8b1602f7ffb5df62a52c5d3fffd8985424a2cce9fb99bb4c7bc9a57399"}}
+  ]},
+  {"id": "n003", "label": "convolutional neural network", "entity_type": "technology", "aliases": ["CNN"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 728, "end": 842, "sha256": "f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1"}}
+  ]},
+  {"id": "n004", "label": "deep learning", "entity_type": "technology", "aliases": ["DL"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 577, "end": 686, "sha256": "8019d11b64e95572c0ddb38722d4ea95effad8b72d558b878a3a391c26d8001a"}}
+  ]},
+  {"id": "n005", "label": "IoT networks", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 99, "end": 182, "sha256": "f5c91fa9f21859a44eb204ab4113b4e0092499f2b5841b634d629fdd928f4530"}}
+  ]},
+  {"id": "n006", "label": "long short-term memory", "entity_type": "technology", "aliases": ["LSTM"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 728, "end": 842, "sha256": "f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1"}}
+  ]},
+  {"id": "n007", "label": "RAG-enabled Large Language Models", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0001", "start": 0, "end": 73, "sha256": "699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7"}}
+  ]},
+  {"id": "n008", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 950, "end": 1087, "sha256": "1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2"}}
+  ]},
+  {"id": "n009", "label": "unauthorized devices", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 414, "end": 575, "sha256": "8e61b8aa6a687cf079718c4b4b45150ffb7e36f29ad8d28eee69a2f20e3d0958"}}
+  ]},
+  {"id": "n010", "label": "convolutional neural network (CNN)-based IDS", "entity_type": "tool", "aliases": ["CNN- based IDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 728, "end": 842, "sha256": "f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1"}},
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 1088, "end": 1164, "sha256": "2868c2f205396e1f63bce05096870c9c4c59dab0d68d9232cddafde0d212a56d"}}
+  ]},
+  {"id": "n011", "label": "LSTM-based IDS", "entity_type": "tool", "aliases": ["long short-term memory (LSTM)-based IDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 728, "end": 842, "sha256": "f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1"}},
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 1166, "end": 1250, "sha256": "4603b28e6c9daa4b7a92849e11da6b86ae53720ab03a015e3758c0063e3d855c"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n007", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0001", "start": 0, "end": 73, "sha256": "699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7"}}
+  ]},
+  {"id": "e002", "source": "n009", "target": "n005", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 351, "end": 513, "sha256": "d4617dd1aa993ebd30fe3f110903e1770f89fcbfd8898a7934f8d73249782768"}}
+  ]},
+  {"id": "e003", "source": "n010", "target": "n008", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 950, "end": 1087, "sha256": "1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2"}}
+  ]},
+  {"id": "e004", "source": "n010", "target": "n005", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 599, "end": 842, "sha256": "8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe"}}
+  ]},
+  {"id": "e005", "source": "n010", "target": "n003", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 728, "end": 785, "sha256": "6cea0dd01d9b3a5fd5b75547a4ebfcf6448063e8d7649903531611cfa640b866"}}
+  ]},
+  {"id": "e006", "source": "n010", "target": "n004", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 599, "end": 842, "sha256": "8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe"}}
+  ]},
+  {"id": "e007", "source": "n011", "target": "n008", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 950, "end": 1087, "sha256": "1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2"}}
+  ]},
+  {"id": "e008", "source": "n011", "target": "n005", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 599, "end": 842, "sha256": "8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe"}}
+  ]},
+  {"id": "e009", "source": "n011", "target": "n004", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 599, "end": 842, "sha256": "8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe"}}
+  ]},
+  {"id": "e010", "source": "n011", "target": "n006", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0402", "paragraph_id": "D0402:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0402:P0002", "start": 790, "end": 842, "sha256": "ddf8d8ab92cf0d0aead2c1ff37214c83a89aa42fa59faa4e35742a27c14abbf4"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

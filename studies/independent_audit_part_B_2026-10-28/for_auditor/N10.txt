@@ -1,0 +1,209 @@
+AUDIT_BATCH: N10
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N10-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N10-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N10-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 3 (TARGET_DOC_ID: D0399) ===
+DOC_ID: D0399
+PUBLICATION_DATE: 2026-03-19
+SOURCE_URL: https://www.eureporter.co/general/2026/03/19/how-does-private-cloud-improve-it-security/
+TITLE_SHA256: 6a18aa7ea8b448fe5c7951110878a67d1052f63f79056ca5fcf02fa65ffd4c86
+BEGIN_DOCUMENT
+[D0399:P0001] sha256:6a18aa7ea8b448fe5c7951110878a67d1052f63f79056ca5fcf02fa65ffd4c86
+[D0399:P0002] sha256:0317ffb109739c36d0fb99be7efc36e53968f23a364ca07c027214a326ca0e3e
+[D0399:P0003] sha256:7ecb241cc4fad41895bdc43d39c24da44ca51a50e381585e5b2d3458ef79314f
+[D0399:P0004] sha256:97378a217fe24da56d46f123d2d08eea763bc17194fed5864715597f996c0f83
+[D0399:P0005] sha256:a14e82e028306d0f4ac429e80bbc6a9b28f1c7a191de07ef78f0d88e9f9cf49e
+[D0399:P0006] sha256:da078ac526873b239352b44ade9f8aceae8b0004d69c73c6f9854d759805b306
+[D0399:P0007] sha256:cdbecbbd5991962be8573e48b74ad729350c6f5529d85fcde3f5de428dfa3512
+[D0399:P0008] sha256:2be01db9a9cef1a3357f4fceea43ba3479903ae6977e6d22fe9abfd3e8eb3466
+[D0399:P0009] sha256:23427d921668c516b59405e38bd6b8ee3b80eb8e3435495fdc8d1ac6762b60b1
+[D0399:P0010] sha256:c38269141fd59562fb7a219ea9a71c1350677dcff506b574d0916d0c2538318c
+[D0399:P0011] sha256:54f3ea9f7598b142da50f2e2aac866d81b8244f172bbfbc4c87c7928ce3cfc6c
+[D0399:P0012] sha256:266e875944eca5ef21e584a69df39f0f731532b7a5cb7f5e92a5b75126b62043
+[D0399:P0013] sha256:e9609e2f5dfa3bda036143526ddfb36f9b44c8e91edb17de92d00e498736053b
+[D0399:P0014] sha256:cb8850abdf9ea2ea7a4ca73b80035e34b65274645268ffbfb80c726546789b25
+[D0399:P0015] sha256:bb8d816efb81ec1fab84771c4ddd8685b04f899cf9e6bc779b1f88b75d47de27
+[D0399:P0016] sha256:1a9863e071c37b9ccaca3478bd76c31086b74f575376ae764a28f0f9629ea595
+[D0399:P0017] sha256:dbdb1c3c34b99a105eced586bf629ea3beada38d2683f08ef82efd8a740b8da7
+[D0399:P0018] sha256:8ec7bbb322644ed64b13d58cb6e8392b06c0c4892d1c486511878c3b224e700f
+[D0399:P0019] sha256:eb738d8e9a400c473cc04589e05f9623c64a7b2b47a4b25502fb4c652c3f6b41
+[D0399:P0020] sha256:cb5111839eec7eb12d593d05d66db672f463d58ca9e99dfc140061be4e8d8271
+[D0399:P0021] sha256:aaa439f7e4f9dec51bd7024c822f9fec51f259210812568fc5d3b1c52c19b388
+[D0399:P0022] sha256:4a0615d6589d78f9a5071d29a2e551fe424292039c3dde445b39b4af9c9ce486
+[D0399:P0023] sha256:5b5fe21bcf9ac12c8d6444e37687bb59311d452a84cb6be64ceb8254876682b2
+[D0399:P0024] sha256:9364a3784803976859a9ab6f1ac95e447a0b22fefb6f150172a43beae5689029
+[D0399:P0025] sha256:e95edad526ef195877e9649a58a118781e64be152a6b80277ec3ec508708e680
+[D0399:P0026] sha256:41958c436af470ba075653a192808d6ad47a112d33027b41b91bee7b54819a90
+[D0399:P0027] sha256:4c22d79cf231baca92e4b763fe29f00c8bcc3bc0136d1575c0e74fcb073a41b0
+[D0399:P0028] sha256:9f3b8d9ce8795b3a1f8719e9cfa047c13e84d3f4980f24559a0767610f75d1c7
+[D0399:P0029] sha256:4c83a905bf18192cbaf6f818d3d3ad3a8a50444ff12d9f956f8f7f5e1370c9a4
+[D0399:P0030] sha256:781fbfab3b3547b105fc80e74514901bdbbd4ccb0e45e207b728a7ebfabe4a87
+[D0399:P0031] sha256:5aea8873f6efb49dbf9189895778d0874783619992e8194c333038ea4960fea2
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (25)
+N10-E001: «Cybersecurity Act» — mitigates → «foreign IT risks» | форма: actual, negative
+N10-E002: «Patches» — mitigates → «speculative-execution flaws» | форма: actual, positive
+N10-E003: «software-defined networking» — uses → «zero-trust principles» | форма: recommended, positive
+N10-E004: «private cloud» — mitigates → «cyber threats» | форма: actual, positive
+N10-E005: «private cloud» — mitigates → «shared-tenancy risk» | форма: actual, positive
+N10-E006: «backup isolation» — mitigates → «ransomware» | форма: actual, positive
+N10-E007: «National Cyber Security Centre» — provides → «cloud security guidance» | форма: actual, positive
+N10-E008: «ransomware» — targets → «critical infrastructure» | форма: actual, positive
+N10-E009: «backup isolation» — mitigates → «ransomware» | форма: actual, negative
+N10-E010: «private cloud» — mitigates → «insider threat» | форма: actual, positive
+N10-E011: «critical infrastructure» — targets → «ransomware» | форма: actual, positive
+N10-E012: «National Cyber Security Centre» — located in → «UK» | форма: actual, positive
+N10-E013: «Identity federation» — uses → «OpenID Connect» | форма: actual, positive
+N10-E014: «Cybersecurity Act» — mitigates → «foreign IT risks» | форма: actual, positive
+N10-E015: «write-once storage tier» — protects → «audit trails» | форма: actual, positive
+N10-E016: «private cloud» — mitigates → «side-channel attacks» | форма: actual, positive
+N10-E017: «write-once storage tier» — protects → «audit trails» | форма: recommended, positive
+N10-E018: «speculative-execution flaws» — affects → «shared silicon» | форма: actual, positive
+N10-E019: «speculative-execution flaws» — mitigates → «Patches» | форма: actual, positive
+N10-E020: «private cloud» — mitigates → «cross-tenant exploits» | форма: actual, positive
+N10-E021: «private cloud» — enables → «encryption» | форма: actual, positive
+N10-E022: «private cloud» — mitigates → «side-channel attacks» | форма: possible, positive
+N10-E023: «private cloud» — enables → «HSMs» | форма: actual, positive
+N10-E024: «Identity federation» — uses → «SAML» | форма: actual, positive
+N10-E025: «backup isolation» — mitigates → «ransomware» | форма: recommended, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 3 (TARGET_DOC_ID: D0515) ===
+DOC_ID: D0515
+PUBLICATION_DATE: 2026-02-24
+SOURCE_URL: https://www.prnewswire.com/news-releases/optiv-announces-2025-partner-of-the-year-awards-celebrating-unmatched-partner-ecosystem-optiv-one-partner-program-302695214.html
+TITLE_SHA256: 934331858c7be722fe5f2efd36a454298d830f49087a41a7ac4f23eb1e127a2a
+BEGIN_DOCUMENT
+[D0515:P0001] sha256:934331858c7be722fe5f2efd36a454298d830f49087a41a7ac4f23eb1e127a2a
+[D0515:P0002] sha256:abda5cc2b639d9d1ee6d77c72a0adec7c35505a76e871f3d2e2f045bdcb6eca6
+[D0515:P0003] sha256:63db6c4c99b1d0753ad07ac2fbbb8cb9c054844ae75f3c77d911553b85f69530
+[D0515:P0004] sha256:6ed84e4d1216cfd47f974b74ae1d010c3b61083f0478203265b81d7330ae3b23
+[D0515:P0005] sha256:3e89ae985ef7240d02938ba567f86966bc067f5fed4a5bca38a8c80113b61526
+[D0515:P0006] sha256:3beabba1c747343d4160e484eb685d29a8527338a703509bf79af631c13c35a3
+[D0515:P0007] sha256:89d6d05678638d01b84c77fcfbbffaddd63ed931c90c4bc64804c886aa94f288
+[D0515:P0008] sha256:5ad8d23b93fe5ba373f5da9085c981fad5cb5052b3b6caddfc5c4f172848821e
+[D0515:P0009] sha256:a70652e8e7b6d19a0b4ca5d29ca67b4c7d0ba70b28704ee49a8fcf5831084002
+[D0515:P0010] sha256:0f251b4db92aa0ca03757e7788e9bfed6d59730725824798c72ce57e245c11e0
+[D0515:P0011] sha256:1251d99b8bfd47675cccdb1d5deadc5bac39c5ddf4741b1a36a24bee2c21c747
+[D0515:P0012] sha256:859b6e2db3265f5d03db7377d477e86bbab01ea61d50dd89ab53fdf904b4cf90
+[D0515:P0013] sha256:6f319bc38946e44742f7069b76117d007728ddb063d50b26a3e3dd75497a84f6
+[D0515:P0014] sha256:c51098b681c622378cbd2b6502c1ee284828eb6f8a074526079cb2ec7b07bd1b
+[D0515:P0015] sha256:2d7fd1f09567ee2efd687d227bd45ec5cb56aaa0f85cf78bcac62225766d0252
+[D0515:P0016] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0515:P0017] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0515:P0018] sha256:534c0bdbb5b17680319ef6f5c8d77a1ef470088bcb51db1dd10c5be64fa03fee
+[D0515:P0019] sha256:eb602803110efb128d4df853ab226b0b1bd396983b05114c138015087cd76810
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (6)
+N10-E026: «Optiv» — provides → «managed security services» | форма: actual, negative
+N10-E027: «Optiv» — provides → «managed security services» | форма: actual, positive
+N10-E028: «John Hurley» — member of → «Optiv» | форма: actual, positive
+N10-E029: «Scott Goree» — member of → «Optiv» | форма: actual, positive
+N10-E030: «Optiv» — member of → «John Hurley» | форма: actual, positive
+N10-E031: «Optiv» — operates → «Optiv One» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 3 (TARGET_DOC_ID: D0159) ===
+DOC_ID: D0159
+PUBLICATION_DATE: 2026-05-21
+SOURCE_URL: https://breakingdefense.com/2026/05/first-defense-critical-infrastructure-summit-aims-to-develop-repeatable-playbook/
+TITLE_SHA256: 6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+BEGIN_DOCUMENT
+[D0159:P0001] sha256:6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+[D0159:P0002] sha256:3343de4ef4c559a5cd5e51491b8027684b857d0ceecdb2cf2a49dbd799f58309
+[D0159:P0003] sha256:fe6e2b30651f4e57280e2afe90bf1a5d418f5152b594e744d536136c8b8d53b0
+[D0159:P0004] sha256:4c68f106c0fd35aeb1cf22955f0c73e188306a16e1e0dd393da066a04e85f8aa
+[D0159:P0005] sha256:767888feefae4c5abe1f05441f32c31833ac3e09d173a0afb2c63b6a7e6fa026
+[D0159:P0006] sha256:4c15835c8370ee70f07fa5f00dff73d72768211622fd973f84ced2e92cd5ac59
+[D0159:P0007] sha256:3a2ddc808b8ded81fc854b1686ceadf3f3441e4e968e307c8b405bf7bd395313
+[D0159:P0008] sha256:55e4c7c1ea5d9bc003f91bb3c36179ea09cd2a0da79de257d163df1daededc4d
+[D0159:P0009] sha256:cceba4eada9f75fe009f4baa03a41fee12f1b230b992a826abb1eb2d86c60b17
+[D0159:P0010] sha256:8bdd47abcd0743118121cb1296746b5145aec91c5ca68de63ec6de27b78fc192
+[D0159:P0011] sha256:288c18b6a6caa87436fe5e6f601eee035d2a037b83d7a1707d3f5c2743cc1672
+[D0159:P0012] sha256:6c796ec9c2812a6d2d631e3764b2175265c6a885548a7543ad929bb473a1b8d3
+[D0159:P0013] sha256:ea9fa4f9087d08545b1c7d8f40b9c49391f108770f03d58c1c400d2f9ca6bd26
+[D0159:P0014] sha256:31cf2671dc85ad541e709c971d91f76380ff4dea217d21e6e69109b8cf9c478e
+[D0159:P0015] sha256:1bf5a6128f88f8699b0a282c12561dab85ddfd3fb11c540865408346a7472beb
+[D0159:P0016] sha256:9114ba87f2d99eb41077fd34930ac43dec5d7967a5029111c1e9c07f83cf483e
+[D0159:P0017] sha256:3e4ac269f3f720620a0a9a3c06d02e3d076607ab80f6b1b1c6ee1a91d7543abe
+[D0159:P0018] sha256:2b5ff1ef41cc9131cbe6f2ee4276a7756720973a7d25faafd83575134999a08b
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (26)
+N10-E032: «Operation Spider's Web» — located in → «Russia» | форма: actual, negative
+N10-E033: «Russia» — located in → «Operation Spider's Web» | форма: actual, positive
+N10-E034: «Operation Spider's Web» — located in → «Russia» | форма: actual, positive
+N10-E035: «XVIII Airborne Corps» — located in → «Fort Bragg» | форма: actual, positive
+N10-E036: «Daniel Driscoll» — leads → «Army» | форма: actual, positive
+N10-E037: «military» — operates → «critical infrastructure» | форма: actual, negative
+N10-E038: «coordinated attacks» — targets → «Fort Bragg» | форма: possible, negative
+N10-E039: «Army Cyber Institute» — located in → «West Point» | форма: actual, positive
+N10-E040: «Operation Spider's Web» — targets → «Russia» | форма: actual, positive
+N10-E041: «Operation Spider's Web» — located in → «Russia» | форма: possible, positive
+N10-E042: «government» — operates → «critical infrastructure» | форма: actual, negative
+N10-E043: «Brandon Pugh» — member of → «Army» | форма: actual, positive
+N10-E044: «tabletop exercise» — part of → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+N10-E045: «Operation Spider's Web» — attributed to → «Ukraine» | форма: actual, positive
+N10-E046: «coordinated attacks» — targets → «Fort Bragg» | форма: possible, positive
+N10-E047: «XVIII Airborne Corps» — part of → «Army» | форма: actual, positive
+N10-E048: «82nd Airborne Division» — part of → «XVIII Airborne Corps» | форма: actual, positive
+N10-E049: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: conditional, positive
+N10-E050: «coordinated attacks» — targets → «commercial electric stations» | форма: possible, positive
+N10-E051: «Ukraine» — uses → «drones» | форма: actual, positive
+N10-E052: «Ukraine» — targets → «Russia» | форма: actual, positive
+N10-E053: «Brandon Pugh» — develops → «DCI playbook» | форма: planned, positive
+N10-E054: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: possible, positive
+N10-E055: «private companies» — operates → «critical infrastructure» | форма: actual, positive
+N10-E056: «coordinated attacks» — uses → «drones» | форма: possible, positive
+N10-E057: «Defense Critical Infrastructure (DCI) Summit» — located in → «Fort Bragg» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+КІНЕЦЬ ФАЙЛУ N10. Усього записів у файлі: 57 (від N10-E001 до N10-E057).

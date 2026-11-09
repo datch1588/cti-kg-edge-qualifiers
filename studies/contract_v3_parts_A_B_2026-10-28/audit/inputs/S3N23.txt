@@ -1,0 +1,150 @@
+AUDIT_FILE: S3N23
+TARGET_DOC_ID: D0066
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0066
+PUBLICATION_DATE: 2026-06-12
+SOURCE_URL: https://www.prnewswire.com/news-releases/cybersecurity-market-to-reach-usd-663-2-billion-by-2033-amid-escalating-threat-landscape-and-accelerating-digital-transformation-302799047.html
+TITLE_SHA256: 948aaaa86c4e17840bc243d865c31b0490f0ff427301b9231ef0bfaaf6d9d3ba
+BEGIN_DOCUMENT
+[D0066:P0001] sha256:948aaaa86c4e17840bc243d865c31b0490f0ff427301b9231ef0bfaaf6d9d3ba
+[D0066:P0002] sha256:39dbd9a4d72917485cde7180866bb802562a0543893b88b6968151513f4301e5
+[D0066:P0003] sha256:d558fa76d46265d8fa9bcb0ad5bbfb160690dc8623858bb62d3e57aea8a18591
+[D0066:P0004] sha256:2ff26f78b7877a076d6ea60bbeaf7e6626262ce1075f4aa56a838cecf8e48a6c
+[D0066:P0005] sha256:a261ee7cb00f0f9de74c629eb096e4afa498fc4c59db54e04574cd320d71d255
+[D0066:P0006] sha256:c10951253e86d18cf2b956bcc04611adc1b8d6172607ee6b85adf8fa46ad1dc9
+[D0066:P0007] sha256:39a770a542c92fff9cf33983187e8d152d2d8db0d4fc3b2e811336e71709341e
+[D0066:P0008] sha256:d6c9521b67b3ab14bef94800ff2314771f95eaf724ddedde1652cada947438d2
+[D0066:P0009] sha256:f5044009f70332e6bf0a34dfebb514139c6486894c88db9c1c3a96bbc3625f7a
+[D0066:P0010] sha256:96a2d5cdc81449ad4bd27297a9e584b327b3ad721e6fec62c3e64e9f8979d9a3
+[D0066:P0011] sha256:6e1afa19d718d7ffea98657cd33ca7f3ff5bbd5cc86c03e47be889f294f27185
+[D0066:P0012] sha256:255b4ca108eab8b5e19335115c50f496217e4ca80f5fc452e30184867c50c1ff
+[D0066:P0013] sha256:ff6265aabae0e0fb691de4677acbf826077e677bdcf95110cad72f386f215ca6
+[D0066:P0014] sha256:a262e8f480c18816f1d37c35e66dd1c1c5de817c393b89eda450923deca6b788
+[D0066:P0015] sha256:832b31eca10a54717c1511a52968ab8f21d2ce6c4d3966e0fcae5f4ff5b43936
+[D0066:P0016] sha256:8d10540e4afb2800b27162826f630cf03ffa06626b3e89453b5bca1050add60e
+[D0066:P0017] sha256:213bad6a2b9b984533f02005baae7f29891e7d8b5b92fe5fa237e683ea52d616
+[D0066:P0018] sha256:36de539a5070405c2ce05fa5994a17c7b0cc4e9df83f4377fe7aa62b7fb72273
+[D0066:P0019] sha256:24cef015985dc45efc22b4b9f5660a0fff453c42b4ea36c8dfbea40fe18bb577
+[D0066:P0020] sha256:4f1659adf6e3c30e8b18774b2402513bf2414985cb0ae74639f928f9f85cfcc0
+[D0066:P0021] sha256:04c5b7e154e34e50019240bd08cf66ba8cfc15a526448dbd9999d1721ec86156
+[D0066:P0022] sha256:a593852b7710d2e078958fedba9aa145daed2b0912c98168f02a9e40c0ace3a8
+[D0066:P0023] sha256:eaf6925f4d4fdecc7e019372050e4f8634b437c85956ad407c1d7b3724761499
+[D0066:P0024] sha256:54ce034d35fb7844d3969c475c78642f6a318b3626df004002861923fd74ddf4
+[D0066:P0025] sha256:7b0a469b66c4e7084274202ed580af3cdcf8e27f1eebdf3876e5480b9b67d072
+[D0066:P0026] sha256:60454448c9f60934650adbf52a53b1440ede89412ca73a3bd3ca5f48c89f07aa
+[D0066:P0027] sha256:61f354d504dd343cfad8d6c4842512a434945c59960c83898d1ee7a58e73a660
+[D0066:P0028] sha256:e2e29831cbfc32bed47d0f4480c587cb2be06b6e8558bd13040df093f6b59a31
+[D0066:P0029] sha256:6da6c83d771dba9cac7a483cf738c18fb4eed47a067bde9b0b1b58eb99b9dc1b
+[D0066:P0030] sha256:dec9ba8ec56d239b5681f52674bf99c97ad28eb9fce1136ed3f510a131948b88
+[D0066:P0031] sha256:a0e830c8b3b3fdcb78dbe10da0f3364c586e76c096e432f9e3129e007fc02b8f
+[D0066:P0032] sha256:3974dc1f5ee5317061c2e0b658ef051f74112c74276e64a835503334851b5792
+[D0066:P0033] sha256:8eca7431286a8119e3c2a03104eaaf14f617788f0572304ad9d9620c18037295
+[D0066:P0034] sha256:171dd55b14e98ff26dfab6a50baadd6bcf307bcdcf5f497b21454e5056879453
+[D0066:P0035] sha256:4817be2a52bfefc331e10726c8db5b122962ee2eeb0bd916ec8d25586a114ca3
+[D0066:P0036] sha256:f5d7f54f59d2949f2ee62749810d289752dc59c27d28a91e38f10564d190ac4c
+[D0066:P0037] sha256:5705a643af6ad35da29371c9603a394fb6549c5895d6f4030f2c1a5146b1bfe8
+[D0066:P0038] sha256:a4cf0deb02bb14f3b42d016124516af68bed22cd32440a2c1d37e3460cbbf82a
+[D0066:P0039] sha256:eea23e5895e9113e6b66c766c8727ee5b33310b0058a7d1dba7aeadc13e0a101
+[D0066:P0040] sha256:fb8da061f1493f119c80b25ddc1c1f885235dd80934a39ea4cd4f4f1c3106c77
+[D0066:P0041] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0066:P0042] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0066:P0043] sha256:85bbcf237a5243b18d89303649080e7b964e42541883aa32b0e58171e43772a9
+[D0066:P0044] sha256:98a3241977235b9a42eb1a01964f584ed895606a96d67ef643aa783c559c1246
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (43)
+E001: «Grand View Research» — projects global cybersecurity market to reach USD 663.2 billion by → «2033» | форма: actual, positive
+E002: «SMEs» — uses → «cloud-delivered security offerings» | форма: actual, positive
+E003: «advanced security technologies» — mitigates → «phishing» | форма: actual, positive
+E004: «governments and enterprises throughout Asia Pacific» — introduce cybersecurity initiatives to protect → «critical infrastructure» | форма: actual, positive
+E005: «cybercriminals» — targets → «small and medium-sized enterprises» | форма: actual, positive
+E006: «advanced security technologies» — address → «ransomware attacks» | форма: actual, positive
+E007: «advanced security technologies» — address → «malware intrusions» | форма: actual, positive
+E008: «SMEs» — uses → «endpoint security solutions» | форма: actual, positive
+E009: «advanced security technologies» — mitigates → «malware» | форма: actual, positive
+E010: «advanced security technologies» — mitigates → «distributed denial-of-service» | форма: actual, positive
+E011: «Grand View Research» — is based in → «U.S.» | форма: actual, positive
+E012: «advanced security technologies» — mitigates → «ransomware» | форма: actual, positive
+E013: «Grand View Research» — has website → «https://www.grandviewresearch.com» | форма: actual, positive
+E014: «Grand View Research» — is registered in → «California» | форма: actual, positive
+E015: «advanced security technologies» — address → «distributed denial-of-service (DDoS) attacks» | форма: actual, positive
+E016: «Cybercriminals» — target → «healthcare organizations» | форма: actual, positive
+E017: «healthcare organizations» — are concerned about → «ransomware attacks» | форма: actual, positive
+E018: «healthcare organizations» — are concerned about → «data breaches» | форма: actual, positive
+E019: «cloud security platforms» — integrate → «artificial intelligence and machine learning capabilities» | форма: actual, positive
+E020: «Grand View Research» — is headquartered in → «San Francisco» | форма: possible, positive
+E021: «Cybersecurity Market to Reach USD 663.2 Billion by 2033 Amid Escalating Threat Landscape and Accelerating Digital Transformation» — published on → «June 12, 2026» | форма: actual, positive
+E022: «advanced security technologies» — address → «AI-enabled cyber threats» | форма: actual, positive
+E023: «Cybercriminals» — increasingly target → «smaller organizations» | форма: actual, positive
+E024: «Security teams» — uses → «AI-driven solutions» | форма: actual, positive
+E025: «Cybercriminals» — targets → «Healthcare organizations» | форма: actual, positive
+E026: «small and medium-sized enterprises» — uses → «cloud-delivered security offerings» | форма: actual, positive
+E027: «cloud security platforms» — uses → «machine learning» | форма: actual, positive
+E028: «Cybersecurity Market to Reach USD 663.2 Billion by 2033 Amid Escalating Threat Landscape and Accelerating Digital Transformation» — published by → «Grand View Research, Inc.» | форма: actual, positive
+E029: «Grand View Research» — is headquartered in → «San Francisco» | форма: actual, positive
+E030: «Grand View Research» — located in → «San Francisco» | форма: actual, positive
+E031: «small and medium-sized enterprises» — uses → «managed security services» | форма: actual, positive
+E032: «Cybersecurity Market to Reach USD 663.2 Billion by 2033 Amid Escalating Threat Landscape and Accelerating Digital Transformation» — distributed via → «PR Newswire» | форма: actual, positive
+E033: «Cybercriminals» — targets → «SMEs» | форма: actual, positive
+E034: «advanced security technologies» — mitigates → «AI-enabled cyber threats» | форма: actual, positive
+E035: «Grand View Research» — located in → «U.S.» | форма: actual, positive
+E036: «advanced security technologies» — address → «phishing campaigns» | форма: actual, positive
+E037: «Cybercriminals» — targets → «Healthcare organizations» | форма: actual, negative
+E038: «cybercriminals» — targets → «small and medium-sized enterprises» | форма: actual, negative
+E039: «artificial intelligence» — uses → «cloud security platforms» | форма: actual, positive
+E040: «cloud security platforms» — uses → «artificial intelligence» | форма: actual, positive
+E041: «Grand View Research» — located in → «California» | форма: actual, positive
+E042: «small and medium-sized enterprises» — uses → «endpoint security solutions» | форма: actual, positive
+E043: «SMEs» — uses → «managed security services» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

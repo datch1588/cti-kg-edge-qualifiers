@@ -1,0 +1,120 @@
+AUDIT_FILE: S5F17
+TARGET_DOC_ID: D0398
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0398
+PUBLICATION_DATE: 2026-03-19
+SOURCE_URL: https://www.manilatimes.net/2026/03/19/tmt-newswire/globenewswire/sans-institute-returns-to-rsac-2026-with-industry-leading-keynotes-new-cybersecurity-workforce-research-and-hands-on-training/2303807
+TITLE_SHA256: 050a0d694485b5d629f58831aacec6629f18e4e949e06fb70ddd8b3c38ca0119
+BEGIN_DOCUMENT
+[D0398:P0001] sha256:050a0d694485b5d629f58831aacec6629f18e4e949e06fb70ddd8b3c38ca0119
+[D0398:P0002] sha256:00e58e2b3985bb52705b38543a4253ee8dd303bf78cecb4db1f9b54b77cf7b33
+[D0398:P0003] sha256:0317ffb109739c36d0fb99be7efc36e53968f23a364ca07c027214a326ca0e3e
+[D0398:P0004] sha256:85586be1258f541c620bf3a9256fb0e07ac6ce4dcfbb561be07450ec4408c9c6
+[D0398:P0005] sha256:f00bda60e0b58e18ba90bd39d45966a4d5f07645a2389f2f649682dc9cd47b15
+[D0398:P0006] sha256:b84353a1815c728695d7e4565e49a414a7cea2fa8da9a1c039775c744fa9e417
+[D0398:P0007] sha256:12ae111c4b351e92c4ee5e3a75d2319347c3fb3a3a4682c6c47e806d80944502
+[D0398:P0008] sha256:7bc0566ad5c778f2c817674b268f25663bda41e82a5b9f06ddf62e015e43e83a
+[D0398:P0009] sha256:1fc1f8da8bee6fad268fdb83a11fe86fff7657155c588250110d40615e3ad42f
+[D0398:P0010] sha256:808e746471f2deb6c0fc7526fb81bdffb7ab1a166e6eb7033385da745d995b90
+[D0398:P0011] sha256:7ca5b13c3f5a2ba96c5a874e7f40a92fa1470faf4946dee0c10d8d21f9e9253e
+[D0398:P0012] sha256:283de73e3b4f46d3585d43db11feedd8e942569e8e6bd446dc2c0d6d07277e02
+[D0398:P0013] sha256:44c4f10044e4ddf5881530843551188d2e5613ee44d9e41f1fd78be8404421fa
+[D0398:P0014] sha256:1b50e36d5eefb6671139efc68b9246aab1375e360c1461a3cb59dd1124613ca1
+[D0398:P0015] sha256:e06825086208b5c18fdb6c6461ee209ce425a22e9af1206228aca528215375a2
+[D0398:P0016] sha256:e94a5b8b5530c6989713a25c867782c466532d39de686905174a6dd3ec11954b
+[D0398:P0017] sha256:a177c234cb0cbb0af645de15da430c1675afdce6bb45d3378b53c127854f9ca0
+[D0398:P0018] sha256:cab562c2b50805909f761281ab5f7a0d34296d2ae78211fa6f1cbbb67eced622
+[D0398:P0019] sha256:2cf24ccd62f7a83ae304fac088f510db13e25d323d04633b32405a62362dea70
+[D0398:P0020] sha256:00a10491c85a5a784cd6a8fbab8506161cfb0e049ba40eba6b2c02c46c4ceda1
+[D0398:P0021] sha256:5fbb10ec40e20fac59e128aec07a6f9ae76e6d4164693533984acac0e9502902
+[D0398:P0022] sha256:799afd373dff59fcab6446c7aa717794efc72c3c5dc59703613af0d75c4804c8
+[D0398:P0023] sha256:719511ff26b4b8e656ce33a131e811cb0695b1c1e8e4e3939819377698b432cd
+[D0398:P0024] sha256:72abc022f2408dfa2c653b4963390ab1c769d51c3a867778788f48f343e4e19c
+[D0398:P0025] sha256:ea6cd7567e833c2b01b3b391b9c0d4816d55f45e7935dd3e8c2572f19b9acd3c
+[D0398:P0026] sha256:174e24c4c1299ffeb8e6b9d91c8a6db0647ceab31400540073cc8c025c37c45d
+[D0398:P0027] sha256:6ebcc8a0cd44a83128e15a3eed71b07c03545f6275ec7e2f21215cc0f5c059d3
+[D0398:P0028] sha256:5140062eb81083603794653f26976d6bb972390fe630a9570a1928592ad2c386
+[D0398:P0029] sha256:22ac11657ee113c77da20e572212376b061be814cc987db34e56910f7a61c1ad
+[D0398:P0030] sha256:a77413d60b2e8c2196a928dd0bf1e8c0de1bfbd8aebdbdb57087f8944a62241b
+[D0398:P0031] sha256:a652089a5bd567803a595bec160c125a1d142ae141923a02adcf6678114e6acf
+[D0398:P0032] sha256:3501b440cce79a70040d25132e142a0956183ac646b618ddf9a588ccfc143284
+[D0398:P0033] sha256:7a6a9f160317afe8b5d264a955eccd4bc75a7aee46f33a0e9abaea038703ce0d
+[D0398:P0034] sha256:8ebe8eaa5eb4a6320cd95dfb3062fe89a488395546117dc0bd76cd77f3a76d3e
+[D0398:P0035] sha256:72547023f29096a9d4092994d3ccf8964c1239e0ba717ef212175ea42933470e
+[D0398:P0036] sha256:68eb7c524208300c6e0de4d28354ce94a1f2cc9fb835506a27706dd359ac5d32
+[D0398:P0037] sha256:e4d59363855c77bfea9083297041033e70773a6ad7956cd358f4507390d1320c
+[D0398:P0038] sha256:8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771
+[D0398:P0039] sha256:52cc0bf55ff55bd291c89a266fef5bea27ed300524e4bfd4f4ca2c3d196fa79e
+[D0398:P0040] sha256:a4de57887496298a3cb96a0990db8bf724759f9439a572802a9b2bd35523a4b7
+[D0398:P0041] sha256:a652089a5bd567803a595bec160c125a1d142ae141923a02adcf6678114e6acf
+[D0398:P0042] sha256:dc4b55a4a4f44f1862b62e2482ef61aeb9a2f9125f20a70a332cc82711f7a8e5
+[D0398:P0043] sha256:2ee133e3f010f68bdc493e286c22c0eb8579bc6d174b887abe9a8b883dda41f6
+[D0398:P0044] sha256:a3abccaaf7c72155e977aebe2eaefb91c3c4c3fdf0085574423319021c3c351b
+[D0398:P0045] sha256:67a4ec6c270e5e5733dea276fd1c87488d89bf89874a40eee0a2bf548bb3a2d6
+[D0398:P0046] sha256:ab91ee30cfc01ef5d66b1bd9719c791aac726571b61e3199e639aeb927f72f53
+[D0398:P0047] sha256:6cc55807279241fcc764903bb557059766132c239dc54fe5da06aa1460f74c70
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (10)
+E001: «SANS Institute» — develops → «2026 Cybersecurity Workforce Research Report» | форма: actual, negative
+E002: «AI, Regulation & the Battle for Talent: The Future of the Cyber Workforce» — located in → «Moscone South Esplanade 154» | форма: planned, positive
+E003: «The Five Most Dangerous New Attack Techniques: Crucial Tips for Defenders» — located in → «Moscone West» | форма: planned, positive
+E004: «Rob T. Lee» — member of → «SANS Institute» | форма: actual, positive
+E005: «SANS Institute» — leads → «James Lyne» | форма: actual, positive
+E006: «The Great Cyber Misconceptions: How Security Stories Mislead Us» — located in → «YBCA Blue Shield of California Theater» | форма: planned, positive
+E007: «James Lyne» — leads → «SANS Institute» | форма: actual, positive
+E008: «SANS Institute» — develops → «2026 Cybersecurity Workforce Research Report» | форма: actual, positive
+E009: «The Five Most Dangerous New Attack Techniques: Crucial Tips for Defenders» — part of → «RSAC 2026» | форма: actual, positive
+E010: «The Great Cyber Misconceptions: How Security Stories Mislead Us» — part of → «RSAC 2026» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

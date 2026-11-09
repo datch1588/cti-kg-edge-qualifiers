@@ -1,0 +1,32 @@
+{
+ "run_id": "X009",
+ "target_doc_id": "D0598",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Dream Job", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 181, "end": 341, "sha256": "42ce3eeb7ca26e729b889c61c99501677a5be041baad5f2d14ab7a1c1330f17d"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1267, "end": 1415, "sha256": "42cd069e449219f0dc8a4ced8e89c27c1d5d9e47f8fbd43928045d76f572e498"}}
+  ]},
+  {"id": "n002", "label": "WannaCry", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 181, "end": 341, "sha256": "42ce3eeb7ca26e729b889c61c99501677a5be041baad5f2d14ab7a1c1330f17d"}}
+  ]},
+  {"id": "n003", "label": "Wocao", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 181, "end": 341, "sha256": "42ce3eeb7ca26e729b889c61c99501677a5be041baad5f2d14ab7a1c1330f17d"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1267, "end": 1415, "sha256": "42cd069e449219f0dc8a4ced8e89c27c1d5d9e47f8fbd43928045d76f572e498"}}
+  ]},
+  {"id": "n004", "label": "MITRE knowledge-base", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 848, "end": 949, "sha256": "a64652ea38ed12bf3ffaf4ee232010407bd90a3e1ad6848295b8aee8e9dbdbfd"}}
+  ]},
+  {"id": "n005", "label": "attack trees", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0001", "start": 0, "end": 87, "sha256": "98549261656f295456f35e9d9705ad49de976d0054b082eefdcf04c7bdb090ab"}}
+  ]},
+  {"id": "n006", "label": "cATM logic", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1108, "end": 1190, "sha256": "0f34523196b6bc56a2bda37704c5a2ffd96e97058ffded85f0faa885785ebf33"}}
+  ]},
+  {"id": "n007", "label": "Advanced Persistent Threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 181, "end": 341, "sha256": "42ce3eeb7ca26e729b889c61c99501677a5be041baad5f2d14ab7a1c1330f17d"}}
+  ]}
+ ],
+ "edges": [],
+ "context_passages_used": []
+}

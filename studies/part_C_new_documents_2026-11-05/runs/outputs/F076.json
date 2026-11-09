@@ -1,0 +1,62 @@
+{
+ "run_id": "F076",
+ "target_doc_id": "D0071",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0007", "start": 152, "end": 246, "sha256": "e3f71a2f070b617d7675c12f6391463c9465844b8c8aa0f20c1c56c42df98f04"}}
+  ]},
+  {"id": "n002", "label": "C3iHub", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 196, "end": 278, "sha256": "8c4ce22c30e1102723085fb58f30b0f89e9e4c33cb608609ec9b1fd94674f795"}}
+  ]},
+  {"id": "n003", "label": "CBSE", "entity_type": "organization", "aliases": ["Central Board of Secondary Education"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]},
+  {"id": "n004", "label": "IIT Kanpur", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0014", "start": 47, "end": 149, "sha256": "e0d6a5924a582758ea6d642c09981624c1910e00588d25722daf939ab72f4ca5"}}
+  ]},
+  {"id": "n005", "label": "sensitive academic data", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 193, "end": 335, "sha256": "69a7b94f3d808920848a897d8e7a79fffadc09ecef1285530aeafb3eb02ee8cd"}}
+  ]},
+  {"id": "n006", "label": "Nisarga Adhikary", "entity_type": "person", "aliases": ["Nisarga", "Adhikary"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 101, "sha256": "3de5fbea4bbdb507f9f9f554a84ad7d57b744dcda5b5c343df614d56f7ffd250"}}
+  ]},
+  {"id": "n007", "label": "OSM portal", "entity_type": "product", "aliases": ["Online Submission of Marks (OSM) portal"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 82, "end": 192, "sha256": "21e3c56228faac1f144962983c76f55cf9675299e38d3c579d56fb110ef41d85"}}
+  ]},
+  {"id": "n008", "label": "security vulnerabilities", "entity_type": "vulnerability", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n001", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0007", "start": 152, "end": 246, "sha256": "e3f71a2f070b617d7675c12f6391463c9465844b8c8aa0f20c1c56c42df98f04"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n004", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 53, "end": 154, "sha256": "1f55614c39142e634139ad076846d653348a37a8df59c750550a27015d124fc0"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n007", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 82, "end": 192, "sha256": "21e3c56228faac1f144962983c76f55cf9675299e38d3c579d56fb110ef41d85"}}
+  ]},
+  {"id": "e004", "source": "n006", "target": "n008", "relation_type": "DISCOVERS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 194, "sha256": "a49ab141c76b5c78232c1c9296bb79fd2e78ad22b2b2d1085ff8bf9e828dcea5"}}
+  ]},
+  {"id": "e005", "source": "n006", "target": "n008", "relation_type": "EXPLOITS", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0012", "start": 0, "end": 116, "sha256": "94e49b5f7dee85997a056a59871b40c9d00a4be015f2b35c7a343121d0920484"}}
+  ]},
+  {"id": "e006", "source": "n006", "target": "n002", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 196, "end": 278, "sha256": "8c4ce22c30e1102723085fb58f30b0f89e9e4c33cb608609ec9b1fd94674f795"}},
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 53, "end": 154, "sha256": "1f55614c39142e634139ad076846d653348a37a8df59c750550a27015d124fc0"}}
+  ]},
+  {"id": "e007", "source": "n006", "target": "n008", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0012", "start": 0, "end": 116, "sha256": "94e49b5f7dee85997a056a59871b40c9d00a4be015f2b35c7a343121d0920484"}}
+  ]},
+  {"id": "e008", "source": "n008", "target": "n005", "relation_type": "AFFECTS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 193, "end": 335, "sha256": "69a7b94f3d808920848a897d8e7a79fffadc09ecef1285530aeafb3eb02ee8cd"}}
+  ]},
+  {"id": "e009", "source": "n008", "target": "n007", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

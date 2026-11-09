@@ -1,0 +1,249 @@
+AUDIT_FILE: QT23C
+TARGET_DOC_ID: D0432
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0432
+PUBLICATION_DATE: 2026-03-12
+SOURCE_URL: https://www.denverpost.com/2026/03/12/iran-us-cyber-threats/
+TITLE_SHA256: 2ead63cfa70ee56cc98a932730aa861b28b2cb7b9e699e7d3d4167ffd2a4e51e
+BEGIN_DOCUMENT
+[D0432:P0001] sha256:2ead63cfa70ee56cc98a932730aa861b28b2cb7b9e699e7d3d4167ffd2a4e51e
+[D0432:P0002] sha256:b3a239c09acd880d152a3f83cc5061680a504a54c2a42430f30b728b7d13c9e4
+[D0432:P0003] sha256:581d34254592d7a57888e8571154aed42a67fd7064430fe7ae95997879a07cb9
+[D0432:P0004] sha256:d8602a62e870d6867e3a40ea7e629bf929648387fb216e67f9855e52cc110b6c
+[D0432:P0005] sha256:c6a05a6894ca5429e6f0141801ed50626ce681ba723775de4f43ca35ada1cc22
+[D0432:P0006] sha256:f44890b1a8640aa99a433782d33f35fd5bc962cf419898882785c6e0eb7992ad
+[D0432:P0007] sha256:fb86a2fbb5d453517f3f67bf6b949ca69bcc201f77ca71369598228acf4f0e70
+[D0432:P0008] sha256:97ea60f48bd404a2c01dc98a03499ea4e8caf099053754cdbc55fe2b9419586f
+[D0432:P0009] sha256:a7340ae5cb8ace8a084878b50bf4584398546d33fee03d1701d926dbc0e89aeb
+[D0432:P0010] sha256:a7b73ebfb807ccd186827edcba01d62fc29c2757bdd74561b24a98133ddf235d
+[D0432:P0011] sha256:fe626e8bd6e8859e97174a7c1593597091d983315470a231860927322e1d6778
+[D0432:P0012] sha256:43600bca9a6795fb20584986a55a704d00db62eb3d1f22b47577f00faa1083c9
+[D0432:P0013] sha256:8947281f9f80271c491632de87ce21149828244cbebfb04201c1c6edbdfc8d8f
+[D0432:P0014] sha256:36f419afd3098bb56960d562f2d132756f3ac82cd945034cf698fcec120811ba
+[D0432:P0015] sha256:e483bb399a770b894c71954298326cc98c1ae18090687ac3eb34b8e879cddee0
+[D0432:P0016] sha256:d2cfc8fbd47a8b97032d3757d2a55f3ae71fe21a5b0b83792d7f88b0984262c4
+[D0432:P0017] sha256:581d34254592d7a57888e8571154aed42a67fd7064430fe7ae95997879a07cb9
+[D0432:P0018] sha256:8568e15d0a48e890f659595ddbbb138c95e0c0c07dc324757c9049021eb1658b
+[D0432:P0019] sha256:553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff
+[D0432:P0020] sha256:2a7109dc6ee632113bac144c5b75a6ffe7aabd5220d180a252676b9d3b6640be
+[D0432:P0021] sha256:ff5812cf25ca75c27c94155c31607325f24ae80b6ccc7d7e84f06f27b2008c1d
+[D0432:P0022] sha256:d70e0f22ffba362c29f8792cc7fbcd7fe3450621f9da1dffd5ae50385d18d3c3
+[D0432:P0023] sha256:8f391be3b989a36520a3cc95dc1d46a10fc71918eb4ab09d50d240b202ebf0b4
+[D0432:P0024] sha256:76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2
+[D0432:P0025] sha256:aa1f9e66e8d909d172d22c4745904ed9a62eec40cb1578c831971329c0144258
+[D0432:P0026] sha256:77eab26b1d8f0920a67cc86a44ddcdd117920080e57a7fc305f7a20469a24587
+[D0432:P0027] sha256:6d4d72ef989e44471e0e246392482a64d9911fbaead4249958f6404296a54846
+[D0432:P0028] sha256:a018412dc03dcbb2e886aa1ccda59ed09f6ebd2cfd068d81519e72b4894cec65
+[D0432:P0029] sha256:56810a31cb2df1cba5ac39f1fb8b9f070886e9fbc4472cbb1d90ae285b912190
+[D0432:P0030] sha256:18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75
+[D0432:P0031] sha256:1bd96306db387b4ab895108b5001a947296e27c4ca1ac95f69e13c63f9d68c18
+[D0432:P0032] sha256:0c18c8363329c3cfe879a581d97edba62df6dd003ecc7e6fb3361d7417ee3726
+[D0432:P0033] sha256:9cc9a938b8267ea36c641900acc9697ed50693b257288010a87d9cf531131744
+[D0432:P0034] sha256:7a474bf4c204a9a92215e201a4c67b232e3b16a4d6d7428713d121a99d85299f
+[D0432:P0035] sha256:84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76
+[D0432:P0036] sha256:cc97c31dccaf08174a858535c9e8dedf812ddb61d5669a7dd30301a406809d9e
+[D0432:P0037] sha256:977f09b1b5dac959655981f1c77281b5820d908a50b89db773d6fd2be118ee6f
+[D0432:P0038] sha256:d680b5f9d76c11b87ac90457d5a65bdd1eb6799a029e4f318f9b30f9a855e8ec
+[D0432:P0039] sha256:99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940
+[D0432:P0040] sha256:7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0
+[D0432:P0041] sha256:310c73960955335aac4ae7e3aab5217253f3ea3147d1497a8b84c7dbf0ea1e1c
+[D0432:P0042] sha256:0d12f2f95bf83bcafdb25c5477b359c4457c3d42570c23c50e742f5823c9dfbf
+[D0432:P0043] sha256:652fef2f72c0b7a2a292217b37d5cf819f41d9c9661a3514241e62469862c371
+[D0432:P0044] sha256:0750f446c966b53a49504db910448aa8e6bed93bf4ab2505e6d46f89f8ff0bce
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 37, вузлів 4)
+E001: «Z-Pentest» — targets → «cameras» | форма: actual, positive
+  атрибуція: «Z-Pentest» | час події: — | контекст події: «disruption of several U.S. networks»
+  фрагменти: [D0432:P0039] «@0-146 sha256=99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940»
+E002: «Pro-Iranian hackers» — targets → «power stations» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0008] «@18-262 sha256=d282585424f66cc0b359d47a8fac271ee467b7e909a2b4c771c4c6614ac38cfc»
+E003: «Optiv» — located in → «Denver» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0036] «@206-280 sha256=0b0564d6bed2445a2ff6522f6404b60c9744817adbab77967c7032dc9dab25d3»
+E004: «Stryker» — located in → «United States» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0009] «@0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»
+E005: «CrowdStrike» — detects → «Russian hackers» | форма: actual, positive
+  атрибуція: «CrowdStrike» | час події: «since the war began» | контекст події: «surge of activity from Russian hackers in support of Tehran»
+  фрагменти: [D0432:P0038] «@124-265 sha256=4da2d6511d2973a9748091c5a6d93d1948c1a6239accb6ed4af0cf5ea46d4764»
+E006: «Iranian hackers» — targets → «Donald Trump» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «attempt to hack into WhatsApp accounts»
+  фрагменти: [D0432:P0034] «@147-284 sha256=b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555»
+E007: «Ismael Valenzuela» — reports on → «Handala» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0020] «@0-185 sha256=2a7109dc6ee632113bac144c5b75a6ffe7aabd5220d180a252676b9d3b6640be»
+E008: «Pro-Iranian hackers» — targets → «United States» | форма: actual, positive
+  атрибуція: — | час події: «during the war» | контекст події: «pro-Iranian hacking during the war»
+  фрагменти: [D0432:P0001] «@0-93 sha256=2ead63cfa70ee56cc98a932730aa861b28b2cb7b9e699e7d3d4167ffd2a4e51e»; [D0432:P0008] «@18-138 sha256=400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984»
+E009: «Pro-Iranian hackers» — targets → «school» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0009] «@268-409 sha256=1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5»
+E010: «Iranian hackers» — targets → «Joe Biden» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «attempt to hack into WhatsApp accounts»
+  фрагменти: [D0432:P0034] «@147-284 sha256=b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555»
+E011: «Pro-Iranian hackers» — targets → «cameras» | форма: actual, positive
+  атрибуція: — | час події: «Since the war began Feb. 28» | контекст події: «attempts to penetrate cameras in Middle Eastern countries»
+  фрагменти: [D0432:P0009] «@132-267 sha256=4dfd4007494c053dfbc05c31f38efe4653b766365fbf1a4ce986ecf60124f8e5»
+E012: «Pro-Iranian hackers» — targets → «cameras» | форма: actual, positive
+  атрибуція: — | час події: «Since the war began Feb. 28» | контекст події: «attempts to penetrate cameras in Middle Eastern countries»
+  фрагменти: [D0432:P0009] «@0-267 sha256=a101fc2d4429b5befd0e3dd11bcc39078118ab6c36cd7c3f7ed7402cbb027446»
+E013: «Iranian hackers» — uses → «Hack-and-leak operations» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: «quick-victory attacks on the weakest links in American cybersecurity»
+  фрагменти: [D0432:P0027] «@115-250 sha256=3e11afdacbf1fba4ee6a48e532b849ff7b53a2005dc96781e94fea2a7ed73c6a»; [D0432:P0029] «@205-316 sha256=99b5b48a76c1e83b2bf1a14c2fdaab51c91721df87f2be0874663815d759f5c7»
+E014: «Handala» — uses → «data destruction» | форма: actual, positive
+  атрибуція: «Ismael Valenzuela» | час події: — | контекст події: —
+  фрагменти: [D0432:P0020] «@44-104 sha256=8d5a301cb2f81305b5669443adb9675ef5cf016c01d06f9b402477cb241f2779»; [D0432:P0021] «@1-101 sha256=a186d402827bbcadabc51b895c5f19e8fed3173117883e56e98bc6be1c99e6ed»
+E015: «Handala» — targets → «Stryker» | форма: actual, positive
+  атрибуція: «Handala» | час події: — | контекст події: «cyberattack disrupting systems at Stryker»
+  фрагменти: [D0432:P0019] «@0-254 sha256=553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff»
+E016: «Pro-Iranian hackers» — targets → «data centers» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0019] «@0-131 sha256=e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09»
+E017: «Pro-Iranian hackers» — targets → «Middle East» | форма: actual, positive
+  атрибуція: — | час події: «during the war» | контекст події: —
+  фрагменти: [D0432:P0008] «@18-138 sha256=400ba123731e196976aa7b04c401e79f0dbd610355f76578ab6173014d976984»
+E018: «Stryker» — located in → «Michigan» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0019] «@0-131 sha256=e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09»
+E019: «Pro-Iranian hackers» — targets → «data centers» | форма: recommended, positive
+  атрибуція: «one user» | час події: — | контекст події: «Telegram discussion of plans uncovered by SITE Intelligence Group»
+  фрагменти: [D0432:P0024] «@0-91 sha256=76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2»; [D0432:P0025] «@1-122 sha256=864df6dafe748f255afeee414255e9f785a5408b3ba46a2db1cdb804ca35edf4»
+E020: «Pro-Iranian hackers» — targets → «cameras» | форма: actual, positive
+  атрибуція: — | час події: «Since the war began Feb. 28» | контекст події: «attempts to penetrate cameras in Middle Eastern countries to improve Iran's missile targeting»
+  фрагменти: [D0432:P0009] «@132-267 sha256=4dfd4007494c053dfbc05c31f38efe4653b766365fbf1a4ce986ecf60124f8e5»
+E021: «industrial facilities» — located in → «Israel» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0009] «@268-357 sha256=9e570a63c3721d95251c822587573604ab8e6433689a3f610e8f2c1366a2557b»
+E022: «Z-Pentest» — targets → «U.S. networks» | форма: actual, positive
+  атрибуція: «Z-Pentest» | час події: — | контекст події: «disruption of several U.S. networks claimed by Z-Pentest»
+  фрагменти: [D0432:P0039] «@0-146 sha256=99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940»
+E023: «Pro-Iranian hackers» — targets → «Stryker» | форма: actual, positive
+  атрибуція: «Hackers supporting Iran» | час події: «Wednesday» | контекст події: «claimed cyberattack against Stryker»
+  фрагменти: [D0432:P0009] «@0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»; [D0432:P0019] «@0-131 sha256=e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09»
+E024: «school» — located in → «Saudi Arabia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0009] «@315-408 sha256=ea361156a9ff2dc737c38581552b3752c49c33b0712a3767b7526fb39be0f05a»
+E025: «counter adversary operations» — part of → «CrowdStrike» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0040] «@104-181 sha256=3f74c5117f31bc66a9e927053312a5b235896d6ad6bce04b6a5a78bf288dfc3e»
+E026: «Pro-Iranian hackers» — uses → «Telegram» | форма: actual, positive
+  атрибуція: «SentinelOne» | час події: — | контекст події: —
+  фрагменти: [D0432:P0024] «@0-91 sha256=76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2»
+E027: «groups working for Tehran» — targets → «water plants» | форма: actual, positive
+  атрибуція: — | час події: «In recent years» | контекст події: «targeting of U.S. water plants»
+  фрагменти: [D0432:P0010] «@104-324 sha256=bde4686d78e9ad1c27b880a143fbfbfe92b44df0f41eb6fc4860131feb9bdb5a»
+E028: «Russia» — targets → «United States» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0032] «@0-104 sha256=1711018e4eaf8d04b80568e85628e676b5c1ca0c90115d4279b9e7ce01c5a95a»
+E029: «Pro-Iranian hackers» — targets → «Stryker» | форма: actual, positive
+  атрибуція: «Hackers supporting Iran» | час події: «Wednesday» | контекст події: «cyberattack disrupting systems at Stryker»
+  фрагменти: [D0432:P0009] «@0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»; [D0432:P0019] «@0-131 sha256=e9df67853b362e9cc91bd5feb8e3468b17575a708479de49a0d9a30f40afea09»
+E030: «Z-Pentest» — targets → «closed-circuit video cameras» | форма: actual, positive
+  атрибуція: «Z-Pentest» | час події: — | контекст події: «claimed disruption of several U.S. networks»
+  фрагменти: [D0432:P0039] «@0-146 sha256=99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940»
+E031: «Handala» — targets → «Stryker» | форма: actual, positive
+  атрибуція: «Handala» | час події: — | контекст події: «cyberattack against Stryker»
+  фрагменти: [D0432:P0019] «@0-254 sha256=553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff»
+E032: «Iranian hackers» — targets → «water plants» | форма: actual, positive
+  атрибуція: — | час події: «In recent years» | контекст події: «targeting of U.S. water plants»
+  фрагменти: [D0432:P0010] «@104-245 sha256=b181efcc9ce5acd598f0fece55c1f6bfeb8f576f32e45b401c4ea678d6fa16bd»
+E033: «Optiv» — located in → «Denver» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0036] «@233-280 sha256=4f16f1ec79e76f9ada01995267f89676c2117549a4a2aaed3d97c814d3e7fa2a»
+E034: «Iranian hackers» — uses → «website defacements» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: «possible disruptions of easy targets»
+  фрагменти: [D0432:P0027] «@115-250 sha256=3e11afdacbf1fba4ee6a48e532b849ff7b53a2005dc96781e94fea2a7ed73c6a»; [D0432:P0029] «@117-203 sha256=56292eda697f9fc5bc04afc9b750bf473e88cd06b6617cd82200ba079faa0d4f»
+E035: «Optiv» — located in → «Denver» | форма: actual, positive
+  атрибуція: — | час події: «2026-03-12» | контекст події: —
+  фрагменти: [D0432:P0036] «@233-280 sha256=4f16f1ec79e76f9ada01995267f89676c2117549a4a2aaed3d97c814d3e7fa2a»
+E036: «Pro-Iranian hackers» — targets → «data centers» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0009] «@0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»; [D0432:P0009] «@268-409 sha256=1003e0ba7e34b1d79d4c30ccde1b348c62d12aece3ca176930f8e8e2d6b88bb5»
+E037: «Pro-Iranian hackers» — uses → «Telegram» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0432:P0024] «@0-91 sha256=76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2»
+V001: «Iranian hackers» (threat_actor) | альтернативні назви: «groups working for Tehran»; «Tehran's digital warriors»; «Hackers linked to Iran»
+V002: «CIA» (organization) | альтернативні назви: «counter adversary operations»
+V003: «United States» (country) | альтернативні назви: «U.S.»; «US»
+V004: «United States» (country) | альтернативні назви: «U.S.»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,107 @@
+AUDIT_FILE: S5F44
+TARGET_DOC_ID: D0071
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0071
+PUBLICATION_DATE: 2026-06-11
+SOURCE_URL: https://www.indiatoday.in/education-today/news/story/cbse-osm-vulnerability-finder-nisarga-adhikary-hired-by-iit-kanpur-2924925-2026-06-11
+TITLE_SHA256: 7d35d36669591ab2562ba72ff92554c10a0f86a39a4b063ea86676d2a46043f9
+BEGIN_DOCUMENT
+[D0071:P0001] sha256:7d35d36669591ab2562ba72ff92554c10a0f86a39a4b063ea86676d2a46043f9
+[D0071:P0002] sha256:47d1bdfc0146034ec8f9b1e488f014eb0d2ee4e7df46e61b6e8a7f71622ba22b
+[D0071:P0003] sha256:971cb4b3a0db34e7a3d646c85fc7e18d36c139c9eb4d82722c433ba1e30654f9
+[D0071:P0004] sha256:c7b2ea8921b9ad9e7bfbdced66728a94880921888613761f665f77883ccd2bae
+[D0071:P0005] sha256:978b0d4c88b33ef5eceb2740a6de8ddb791d07aee1e53dd87d507144cbadd32a
+[D0071:P0006] sha256:64ab067be4b63a88b8cc029ea9b1c0f8c5254180163695f33783a3c31c2cc0d8
+[D0071:P0007] sha256:9f417ebd4f6ecef0c3deb85e25ab384a0c849da33ea060d5e55e588a113dd8a3
+[D0071:P0008] sha256:ba68ba1f1abe5393205c5f9a8d68b3f4b0efc6bd7090d5ab24b121f18a21317f
+[D0071:P0009] sha256:8f79e5e3b945fa5a4cb386c9aa80a11877e40a6a069e8f7fc2355858961bc077
+[D0071:P0010] sha256:4bb95955932069a2dbfe71c09bb5506db227dbb9e7f7eee80eaf3b13eaa7dbe0
+[D0071:P0011] sha256:d9f5a76741f587509e3ee9cf8868f30c984f18b45561cca7c7712ef3447f5a3a
+[D0071:P0012] sha256:e0f99aa156c4252834de7799f39a7a414d06339660586f435b0ed9bfa5bfcb3a
+[D0071:P0013] sha256:be59be4f911c6fba2a6e7fb654012c91620e6f46de0ac17d285557779b9fc868
+[D0071:P0014] sha256:99df2792927edcbb2ccbf7ecff3dcc7202903e6b38f2cfcd40fbafc0e453bdc9
+[D0071:P0015] sha256:0140d7a4f2fadea39a4274e9ed1d589ad72e59c2163540f116395d6f967b0ea4
+[D0071:P0016] sha256:a6c140e5f7d6d0756b379c422dc0f512c16a3d786abf162169bb8b3572f3a9ea
+[D0071:P0017] sha256:84eee25de59b997cd114e2a61a31ad2f5011e613bbaf503e0dc16f3c404d0c30
+[D0071:P0018] sha256:8d901202c8a19a58fd12acf8f5591f5ba409642e9333d0e24ace91eac6823589
+[D0071:P0019] sha256:d1efe45bbb73edd4700ce11641c7d4f16c3ce7906f4de1c8efbf220429cbbc12
+[D0071:P0020] sha256:03046f714a09ce7c249424b88ef841096a895b557ce4fd45ea6c9f881f8cd2fa
+[D0071:P0021] sha256:1fe88fbfd53f8fc03f62d49e963c4db9d74878e1e1ba3f37668ff5402fa50c21
+[D0071:P0022] sha256:7e0d721681e5e545d7edd0334a4964151fa65ff40278eda7be09bf14a0184b74
+[D0071:P0023] sha256:bf2e39d9b59f4bd34e58bbbf6165be5e9a0042c87f859f98fce5c403817f7ef5
+[D0071:P0024] sha256:a00c410809d20d0a3d3badc27a4c0f56609ff99574065c201e4c9df6b64fa615
+[D0071:P0025] sha256:4ea64915a4b909a2ed76fe68a7310d7869ed18c4e3426b9733c35ba8d761b125
+[D0071:P0026] sha256:1821fed49cf73073eb84cdcc2f585a6248a2b2941bc78cb568f90009b3666339
+[D0071:P0027] sha256:8b69e038c26f6d6b81b281540617ce63ae3ce4af1cc13566bdbe93796af17a79
+[D0071:P0028] sha256:8b5022acc4a4065089bafba0aa52293319a1708957ebffd09cbd507d74b8b31a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (16)
+E001: «Nisarga Adhikary» — member of → «C3iHub» | форма: actual, positive
+E002: «Nisarga Adhikary» — discovers → «vulnerabilities in CBSE's OSM portal» | форма: actual, positive
+E003: «vulnerabilities in CBSE's OSM portal» — affects → «OSM portal» | форма: actual, positive
+E004: «Nisarga Adhikary» — reports on → «vulnerabilities in CBSE's OSM portal» | форма: actual, positive
+E005: «security vulnerabilities» — affects → «Online Submission of Marks (OSM) portal» | форма: actual, positive
+E006: «C3iHub» — located in → «India» | форма: actual, positive
+E007: «C3iHub» — part of → «IIT Kanpur» | форма: actual, positive
+E008: «Nisarga Adhikary» — exploits → «security vulnerabilities» | форма: actual, negative
+E009: «security vulnerabilities» — affects → «OSM portal» | форма: actual, positive
+E010: «C3iHub» — member of → «Nisarga Adhikary» | форма: actual, positive
+E011: «Central Board of Secondary Education» — operates → «Online Submission of Marks (OSM) portal» | форма: actual, positive
+E012: «Nisarga Adhikary» — discovers → «security vulnerabilities» | форма: actual, positive
+E013: «CBSE» — operates → «OSM portal» | форма: actual, positive
+E014: «C3iHub» — located in → «India» | форма: actual, negative
+E015: «Nisarga Adhikary» — reports on → «security vulnerabilities» | форма: actual, positive
+E016: «security vulnerabilities» — affects → «sensitive academic data» | форма: conditional, positive
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,197 @@
+RESOLVER_FILE: R07
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 6, згадок 39)
+
+ГРУПА G034 (згадок 15)
+M001: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:476-581 sha256=168925c803375ee73255e283d444fb9522872fffc13a1381ae0e1b08428ed568»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «National Cyber Security Centre» — MEMBER_OF → «Five Eyes» (actual, positive); «National Cyber Security Centre» — PART_OF → «Government Communications Security Bureau» (actual, positive); «Catriona Robinson» — LEADS → «National Cyber Security Centre» (actual, positive)
+M002: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:582-653 sha256=fff315880999d8ed93b4f7d1b305ba6e53ad28b9eb4cbf612fa15ac18450b812»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «National Cyber Security Centre» — MEMBER_OF → «Five Eyes» (actual, positive); «Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive)
+M003: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20)
+  фрагмент [P0006]: «@D0165:P0006:0-102 sha256=fe1cd4ff906c2e240b3edde7d246acfcb8bf211da182f706465b8f786fd78c1c»
+    абзац: «@D0165:P0006:0-378 sha256=69d9dae89b60e5cfea29b717d8f2e270daf7c5ef3850bbba33bed4c745715d66»
+  твердження статті: «National Cyber Security Centre» — DEVELOPS → «SilentGlass» (actual, positive); «National Cyber Security Centre» — LOCATED_IN → «UK» (actual, positive); «National Cyber Security Centre» — MITIGATES → «cyber threats» (actual, positive)
+M004: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0017]: «@D0197:P0017:0-177 sha256=d896f8e8b692f5642246873de169780e2a8ab020148b7462d2b5405f6752d5ea»
+  твердження статті: «National Cyber Security Centre» — PART_OF → «GCHQ» (actual, positive); «National Cyber Security Centre» — PROTECTS → «UK» (actual, positive); «National Cyber Security Centre» — PROVIDES → «Early Warning Service» (actual, positive)
+M005: «UK National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01)
+  фрагмент [P0005]: «@D0228:P0005:0-152 sha256=6c9aa7563e6e7559526cdec64104d3ff68f6551cc0743269146780cfe8fac4bb»
+    абзац: «@D0228:P0005:0-569 sha256=18f5136eae6b3cdaa84c305b85f47e60e798b56f61cc8ff37ea8e1d984d58f26»
+  твердження статті: «UK National Cyber Security Centre» — LOCATED_IN → «UK» (actual, positive); «UK National Cyber Security Centre» — WARNS_ABOUT → «cyber threats» (actual, positive)
+M006: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0006]: «@D0262:P0006:36-125 sha256=59c7d3f3a50575493a32c0442c255a80aa6132ca30c53b5f1be848631d4b7417»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  твердження статті: «National Cyber Security Centre» — REPORTS_ON → «indirect cyber threats» (actual, positive); «National Cyber Security Centre» — WARNS_ABOUT → «state-backed actors» (actual, positive); «Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive)
+M007: «Jordanian National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0013]: «@D0468:P0013:1097-1181 sha256=f92d3a127f137645578d417b82b43556815e6f6b15ba9962e140c9756ed3928e»
+    абзац: «…@D0468:P0013:817-1417 sha256=e88655dc18127b3e91b211224aab8f5acb06f01e20af69f2e213b513fcc99aea»
+  твердження статті: «Jordanian National Cyber Security Centre» — MITIGATES → «cyberattack originating in Iran» (actual, positive); «Jordanian National Cyber Security Centre» — PROTECTS → «strategic food reserve» (actual, positive)
+M008: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0019]: «@D0468:P0019:284-356 sha256=44c95fa01613d8cb8eddf761b5813eaf4a11eb50ca66e8005ab21bc1d9570513»
+    абзац: «…@D0468:P0019:20-620 sha256=555ad39a546783a8b3f4c793045eb11653e31e8efaeb96cbcb4d4692164299a0…»
+  твердження статті: «National Cyber Security Centre» — WARNS_ABOUT → «Iran» (actual, positive)
+M009: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+  фрагмент [P0018]: «@D0478:P0018:0-66 sha256=026e89c4db455c26a7af9b3a94fe636b3eb3d46908bdfcc272a1961e7c3496b0»
+    абзац: «@D0478:P0018:0-225 sha256=581e5999cb3c8b5f73388d9395d04904a0dc8bb8c3ab3814e095816f1509ca8b»
+  фрагмент [P0002]: «@D0478:P0002:0-115 sha256=ecc579bd9e2892840a491b36efab753d9f584eb706639b4c71262862df37acd1»
+  твердження статті: «National Cyber Security Centre» — LOCATED_IN → «UK» (actual, positive); «National Cyber Security Centre» — WARNS_ABOUT → «cyber threats» (actual, positive); «Jonathon Ellison» — MEMBER_OF → «National Cyber Security Centre» (actual, positive)
+M010: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0015]: «@D0493:P0015:9-69 sha256=43e22a80ecbbbf93a3efeef0ad32167bc9d816abdc0f35e9555b872d3055f40b»
+    абзац: «@D0493:P0015:0-193 sha256=d5fc2acf3bb8e69dc6f68979edf8801a2103c481577031cecf1344290738d38a»
+  твердження статті: «National Cyber Security Centre» — LOCATED_IN → «UK» (actual, positive)
+M011: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0016]: «@D0539:P0016:0-130 sha256=0313eccc78dc782da34a7be5b3e86492f098191c27ff27d747cd6054249dc9bb»
+    абзац: «@D0539:P0016:0-265 sha256=49c6c4ac1181d58cb0eadfbbe1a797bce8886d5e002be0e049811dc2496868cc»
+  твердження статті: «National Cyber Security Centre» — DEVELOPS → «Cyber Essentials» (actual, positive); «Dr Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive)
+M012: «NCSC-UK» (organization) | альтернативні назви: «National Cyber Security Centre»; «UK NCSC»; «NCSC» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0006]: «@D0550:P0006:81-138 sha256=c42b1a98582cd1aa533ddf7531205be4eeab4f055a70330d8000a956e542737e»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+  фрагмент [P0001]: «@D0550:P0001:0-64 sha256=981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8»
+  фрагмент [P0009]: «@D0550:P0009:254-305 sha256=49b20dec3af3edb332d4f65c0810288573d877d5f3188ce2cb4d60239870bb53»
+    абзац: «@D0550:P0009:0-600 sha256=dbb06894f7c3f090b67b385c8b2fe153be617b16bedb37dce1e6082728f4934b…»
+  твердження статті: «NCSC-UK» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive); «NCSC-UK» — LOCATED_IN → «United Kingdom» (actual, positive); «NCSC-UK» — PROVIDES → «Secure Connectivity Principles for Operational Technology» (actual, positive)
+M013: «Netherlands National Cyber Security Centre» (organization) | альтернативні назви: «NCSC-NL» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0012]: «@D0550:P0012:430-482 sha256=718bc6fe0cb1a1275150bd675037b952cfa739dcb1f851e2caae3200cef1e0f1»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+  твердження статті: «Netherlands National Cyber Security Centre» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive)
+M014: «New Zealand National Cyber Security Centre» (organization) | альтернативні назви: «NCSC-NZ» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0012]: «@D0550:P0012:483-535 sha256=4d45ff59acb0cb4f3572ade857b5392ca8cd97963c4c8b20569c77ef82284c1e»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+  твердження статті: «New Zealand National Cyber Security Centre» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive)
+M015: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+  фрагмент [P0015]: «@D0575:P0015:182-301 sha256=87c90250df7edcd09bbeac25372922ed8eab4bd590c9f9c900de580e96bc9b19»
+    абзац: «@D0575:P0015:0-544 sha256=c7b0f987e5361780f04a0625c7c99e196dc6f92275dcc89d3dd0064b329d23bf»
+  фрагмент [P0016]: «@D0575:P0016:163-296 sha256=82dca8d542b3a34c9e72756f3b663df6a39ddc09bc675086ef78d888dd475a25»
+    абзац: «@D0575:P0016:0-480 sha256=1cbe237bdac01d3761f4c021370cf9a0c554a6120cf0c5e3455d01978e9e5c17»
+  твердження статті: «National Cyber Security Centre» — REPORTS_ON → «'highly significant' cyber incidents» (actual, positive)
+
+ГРУПА G035 (згадок 2)
+M016: «Nick Andersen» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:721-802 sha256=4ef91b7fdc740a875c07bbb58c0300a8c803ce083045e1860e8096c44cc4b262»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «Nick Andersen» — LEADS → «Cybersecurity and Infrastructure Security Agency» (actual, positive)
+M017: «Nick Andersen» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0008]: «@D0550:P0008:377-447 sha256=9c451f34c375962e0232a08d19370a063ce93a037f48d1b87c1c38bab701529d»
+    абзац: «…@D0550:P0008:100-700 sha256=4efdcda6dce8b7e612a58e91b167a7f1e41a322ebd48baa488a970253b8f6ad2»
+  твердження статті: «Nick Andersen» — MEMBER_OF → «Cybersecurity and Infrastructure Security Agency» (actual, positive)
+
+ГРУПА G036 (згадок 3)
+M018: «Richard Horne» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:582-653 sha256=fff315880999d8ed93b4f7d1b305ba6e53ad28b9eb4cbf612fa15ac18450b812»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive)
+M019: «Richard Horne» (person) | альтернативні назви: «Horne» | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0006]: «@D0262:P0006:74-188 sha256=d657d7c7ced395cf900929811dfcf4b8283326554e7edc11ab88100ce275e10e»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  фрагмент [P0007]: «@D0262:P0007:0-72 sha256=52ee1470e8fca3deec777f9209b583a33390102d76f84c346cd2ca98af04d6db»
+    абзац: «@D0262:P0007:0-313 sha256=00182e86a8b3969a815d59a5b5f469e43dfa967367e289ca085a2c23789898ed»
+  твердження статті: «Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive); «Richard Horne» — REPORTS_ON → «cyber campaign» (actual, positive); «Richard Horne» — REPORTS_ON → «'nationally significant' cyber incidents» (actual, positive)
+M020: «Dr Richard Horne» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0025]: «@D0539:P0025:0-31 sha256=9c404b469a4685ef9b07a1bec7130edc805b964e65d8ee888dce9603a6267e0c»
+  твердження статті: «Dr Richard Horne» — LEADS → «National Cyber Security Centre» (actual, positive); «Dr Richard Horne» — WARNS_ABOUT → «cyber criminals» (actual, positive)
+
+ГРУПА G037 (згадок 2)
+M021: «Adversaries» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0019]: «@D0043:P0019:0-69 sha256=cde71d4b99f7e3f9f603ff604c2ae9817a3a2d7e61ad55704b274dd46c47b443»
+    абзац: «@D0043:P0019:0-97 sha256=828fc440a483fe70a84ef294c619174b1fac1a35e1b107719a18401a2f6c01ec»
+  твердження статті: «Adversaries» — USES → «artificial intelligence» (actual, positive)
+M022: «adversaries» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0018]: «@D0480:P0018:355-492 sha256=1323412199b8699108242d9f2e422b55fb08200e53a4faa7c3f4008a633e0f00»
+    абзац: «@D0480:P0018:0-539 sha256=ec4162283c67ee8ca548ec394b4c2626ec03ca4b8adf1673a710c0ffc22cbd75»
+  твердження статті: «adversaries» — USES → «multimodal AI models» (possible, positive)
+
+ГРУПА G038 (згадок 15)
+M023: «zero-day vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0012]: «@D0043:P0012:0-113 sha256=413aad169f5de7d0ff45a2c3c5defc08c2f1981805e3628bca1c4cbb65cdd1f5»
+  твердження статті: «Five Eyes» — WARNS_ABOUT → «zero-day vulnerabilities» (actual, positive)
+M024: «vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0017]: «@D0045:P0017:127-230 sha256=6f486055b524484a7f10cd3a6fb33e3e5e6446ef2b6d5d2a6f3152d2e8bbb20e»
+    абзац: «@D0045:P0017:0-367 sha256=5156427be8152f284d8e0f38867b99673e8c03c69a58926bb80e8db0b4a018df»
+  твердження статті: «AI tools» — DETECTS → «vulnerabilities» (actual, positive)
+M025: «vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0016]: «@D0046:P0016:195-279 sha256=af1069d70c856cbace658701e01693e34bf28b7c4746c735730fcb4940c68723»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  твердження статті: «Mythos» — DETECTS → «vulnerabilities» (actual, positive)
+M026: «vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:d1e9b87f10b767e0527bd90a21521fe4886334fbe98feb2369fc0af92cd307b2» (2026-06-09)
+  фрагмент [P0017]: «@D0077:P0017:212-333 sha256=959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9»
+    абзац: «@D0077:P0017:0-544 sha256=1e684331b549ded525ec3ea7bc7cb1031eb9526c14d8b0696237e6aa57d78a4c»
+  твердження статті: «self- evolving AI agents» — EXPLOITS → «vulnerabilities» (actual, positive)
+M027: «corporate network vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741» (2026-06-03)
+  фрагмент [P0002]: «@D0107:P0002:683-867 sha256=d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48»
+    абзац: «…@D0107:P0002:475-1075 sha256=a30988235c05a49b7d6817047373cc018193f37c10219b9ed3e719af501998a4…»
+  твердження статті: «Adaptive Computer Worms» — EXPLOITS → «corporate network vulnerabilities» (actual, positive)
+M028: «predetermined vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741» (2026-06-03)
+  фрагмент [P0002]: «@D0107:P0002:209-349 sha256=e657838a1a446620fc90eb2cc0e80d0b96f66a3725c700c822b620e248f91c0a»
+    абзац: «@D0107:P0002:0-600 sha256=f5c8874b29634c4d3df372238fab0bc50e2db14ddea87d4b147a1772812550e3…»
+  твердження статті: «WannaCry» — EXPLOITS → «predetermined vulnerabilities» (actual, positive); «Traditional worms» — EXPLOITS → «predetermined vulnerabilities» (actual, positive)
+M029: «Cisco Catalyst SD-WAN vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0027]: «@D0113:P0027:0-99 sha256=f47a358076de8e6640cc377dfa6161ebfff3b6ad2a3427453a0b4010cbaeb4c7»
+    абзац: «@D0113:P0027:0-565 sha256=a25491f3a7d0569d7e664c199aedb506a8132f3a2186dd9bc75254313a5349b8»
+  твердження статті: «Cisco Talos» — REPORTS_ON → «Cisco Catalyst SD-WAN vulnerabilities» (actual, positive); «UAT-8616» — EXPLOITS → «Cisco Catalyst SD-WAN vulnerabilities» (actual, positive); «Cisco Catalyst SD-WAN vulnerabilities» — AFFECTS → «Cisco Catalyst SD-WAN» (actual, positive)
+M030: «zero-day» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0028]: «@D0194:P0028:0-190 sha256=603ef0c06bf4d7a5657aa0d2e7a656d466704547782efc496053627c64747f56»
+    абзац: «@D0194:P0028:0-356 sha256=2be59a26f4bc66823ad4799a7a285786b8b44cbc9f683d98f1523386019257c3»
+  твердження статті: «Claude Mythos» — DETECTS → «zero-day» (actual, positive)
+M031: «vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0009]: «@D0195:P0009:0-145 sha256=745282ab12bc13e9b4a49023bacb5211b4ed8dc78a4e0af535bf1968e7425efc»
+    абзац: «@D0195:P0009:0-539 sha256=527d52b3276ce34c73866981979ff90e13aebf98be9f777274afe063321a5155»
+  фрагмент [P0007]: «@D0195:P0007:196-326 sha256=ac2e7d4986dc22340d5762ba725723a3839d4cc37f8d4bd174833c3b5c131d09»
+    абзац: «@D0195:P0007:0-326 sha256=57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b»
+  твердження статті: «Claude Mythos Preview» — DETECTS → «vulnerabilities» (actual, positive); «Codex security» — DETECTS → «vulnerabilities» (actual, positive); «Codex security» — MITIGATES → «vulnerabilities» (actual, positive)
+M032: «IoT (Internet of Things) vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01)
+  фрагмент [P0006]: «@D0228:P0006:34-171 sha256=b4fb80334b34800f270a00bb35feed6152d675602b7df1b8b9f0941c1ab26de0»
+    абзац: «@D0228:P0006:0-454 sha256=51279cae87179f74cfa4e60bde724805d638315ee8e827fe6d8a27a3c59b4353»
+M033: «vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0015]: «@D0250:P0015:0-140 sha256=e71605eef091b3f5ff91a1da16df5f7f1f7f7d0da9879d88fea82bb95f3486a9»
+  твердження статті: «Mythos» — DISCOVERS → «vulnerabilities» (actual, positive); «Mythos» — DISCOVERS → «vulnerabilities» (actual, positive); «Mythos» — DISCOVERS → «vulnerabilities» (actual, positive)
+M034: «inherent vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0009]: «@D0344:P0009:0-104 sha256=9dbd3e77d34eee6b605a85b483fdd42722fba952fcbbf222883f086fd4cd28ed»
+    абзац: «@D0344:P0009:0-461 sha256=a02db3a16ef19da385f7e98f831c39f26a06e53d56241624cf1de0d4cf035468»
+  твердження статті: «cybercriminals» — EXPLOITS → «inherent vulnerabilities» (actual, positive); «inherent vulnerabilities» — AFFECTS → «Entra ID» (actual, positive); «inherent vulnerabilities» — AFFECTS → «Microsoft 365» (actual, positive)
+M035: «zero-day vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b» (2026-02-18)
+  фрагмент [P0018]: «@D0532:P0018:0-108 sha256=e4b6aaccd5dbddeff507424d8d6d46d2a2de879e16db6f2a9080537ab1a9e552»
+    абзац: «@D0532:P0018:0-423 sha256=d6924316cd19aef08f3811b8ca58fb179e53b38d6a52c15ab276739752427293»
+  твердження статті: «ethical hackers» — DISCOVERS → «zero-day vulnerabilities» (actual, positive)
+M036: «software and hardware vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0019]: «@D0663:P0019:0-119 sha256=3ca86e1acb6897f15b4cda52fc02af427c60ca93d0b606ab7b2a983e5a1cb293»
+    абзац: «@D0663:P0019:0-244 sha256=92211d882dafcdbbd1e8827de2cfb25e7f7426f74ac18dcfb5dad3e54ba1e80b»
+  твердження статті: «China» — EXPLOITS → «software and hardware vulnerabilities» (actual, positive); «software and hardware vulnerabilities» — AFFECTS → «ICT equipment» (actual, positive)
+M037: «unpatched vulnerabilities» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0020]: «@D0663:P0020:0-69 sha256=7dcd5e61f0457a5bfc741075baf066472c8886f979d9858cc54f72902160bdf8»
+    абзац: «@D0663:P0020:0-172 sha256=a83528cc7f5074cb8a76cd5fdacd0cfe6b54bce68fce9efde7de45442ef7396e»
+  твердження статті: «Chinese hackers» — EXPLOITS → «unpatched vulnerabilities» (actual, positive); «unpatched vulnerabilities» — AFFECTS → «ICT equipment» (actual, positive)
+
+ГРУПА G039 (згадок 2)
+M038: «incidents» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0017]: «@D0045:P0017:289-366 sha256=b36f918f523cc1c926255217586d5d51e8d6d38bc19a7c092ee919470a7ca0cc»
+    абзац: «@D0045:P0017:0-367 sha256=5156427be8152f284d8e0f38867b99673e8c03c69a58926bb80e8db0b4a018df»
+  твердження статті: «AI tools» — MITIGATES → «incidents» (actual, positive)
+M039: «'nationally significant' cyber incidents» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0006]: «@D0262:P0006:99-188 sha256=637b102e22cdeb9bfc87331b66e8780f74d197f2bfc97d063e7ea48a220d5fae»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  твердження статті: «'nationally significant' cyber incidents» — ATTRIBUTED_TO → «China» (actual, positive); «'nationally significant' cyber incidents» — ATTRIBUTED_TO → «Iran» (actual, positive); «'nationally significant' cyber incidents» — ATTRIBUTED_TO → «Russia» (actual, positive)
+
+КІНЕЦЬ ГРУП

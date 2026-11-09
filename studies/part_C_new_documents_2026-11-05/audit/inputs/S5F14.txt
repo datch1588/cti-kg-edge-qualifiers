@@ -1,0 +1,108 @@
+AUDIT_FILE: S5F14
+TARGET_DOC_ID: D0463
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0463
+PUBLICATION_DATE: 2026-03-06
+SOURCE_URL: https://www.theglobeandmail.com/politics/article-canada-and-japan-sign-new-strategic-partnership-including-military-co/
+TITLE_SHA256: 6e5d3409bab27758a9559b8111aef1f50b33435517eedc94e56c9d89c69963ab
+BEGIN_DOCUMENT
+[D0463:P0001] sha256:6e5d3409bab27758a9559b8111aef1f50b33435517eedc94e56c9d89c69963ab
+[D0463:P0002] sha256:085184a917044fdb1b0846ff35e25fcf2748247098bbbabe3b319834fae6f394
+[D0463:P0003] sha256:8a9b5cf72756a85ed121175685c19045146c119332ef79cf4b991d132009052f
+[D0463:P0004] sha256:0565b20eccd44e714fd9fc022ec81973d2264162edd3d3dc525adee69b9e8420
+[D0463:P0005] sha256:f3f51e4a8ee7c4f29b4a57f7980178aa1d7881e5fcb8d99534546e858f6f80eb
+[D0463:P0006] sha256:4a68021d2eac422c89c2f2c8d21ae948fffea913603fe5ac9710c4f3a96533f7
+[D0463:P0007] sha256:fd2eddb63eff657feb5315df088270468e23b48f9c4fce16cbf1eff0311d0677
+[D0463:P0008] sha256:f840a70370e5237e72a11be57305e65c5542e1afa638911116c083d32d13acb3
+[D0463:P0009] sha256:715bfb947cda17def05539ca89e9c0b67dc450277263cc24a1b256039ada891a
+[D0463:P0010] sha256:65d366cd861feb66ab29bda0b102da5a964b59e508a4dbb59231fa731a7a84ac
+[D0463:P0011] sha256:19a78af7c1fdb00961a4841a2bf3b8b9cf9a8772c8d428786d3ee62711534882
+[D0463:P0012] sha256:45ecebd1b889dd2b786ded5a67722f9040b70346873eb6958254f3b2169ae75a
+[D0463:P0013] sha256:0d10120aeb66feef7a0201b3c44baad7eda88a8af0239a02d5bdfcacb9d77cc6
+[D0463:P0014] sha256:e49e09bf51f949d744cc114dc06ecf9cf8b12dcba319397ef8e674e73e6c6999
+[D0463:P0015] sha256:03cc5c7b53a36906a1a98d5cee2413d86de296359e53a87b405400ff165ca55c
+[D0463:P0016] sha256:e3d34da64b07e373f488d69dd1f232f26f58aa86bf08067b1672d82694915576
+[D0463:P0017] sha256:8ecc939af8b333ba080b762abb86b83754c235619f409f672b5b353b878553fb
+[D0463:P0018] sha256:082cfb1af2ba18a50709d2bb85e7235c9473299ca41919422e2fa12784b24a7f
+[D0463:P0019] sha256:eab9175a91c1427be4d7fb841c043569b99b96c96bc0861385708977d9bcef5c
+[D0463:P0020] sha256:1a143779fbd7f8c80e0a6f0e4172d33f2aa50595fc695cb2a3fa62f2266f2a24
+[D0463:P0021] sha256:944521900b602a352410304335176c7e696fb5b52e5c86cc6c733fa01304f273
+[D0463:P0022] sha256:da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf
+[D0463:P0023] sha256:823148b689314a8df48e195a25ceb78965540cc66229749d436e064df3e1a1a9
+[D0463:P0024] sha256:6ee1a590205396211c8cdacce43af1dd5a2caf0fa92f22e5e74946dd06c0ec31
+[D0463:P0025] sha256:4a9317c81a94a5269a0bd96ee282b7aac965037ac0cb23af94c7cd51898fbaa2
+[D0463:P0026] sha256:05389eb3e13702ab6de7204b8a1cade234d16d643e40e4f0be5cb4676b988f16
+[D0463:P0027] sha256:f297fc1b7a50b256a8dce790b1b6e0dd3ba5a47f01f1748ea16b782455360b62
+[D0463:P0028] sha256:5b5a0fa3140ad48c2ad612812d57519b6bfe89d2139a4b1d9280e105034332c8
+[D0463:P0029] sha256:0d09ab0c4a0216f8be7691e057a3879de28b365e8990d84b1af4e9f52012ff47
+[D0463:P0030] sha256:9e2ce8fda7e936d012876ba1438cf3f18312913aab52141d8b4074fcb7d5c6b3
+[D0463:P0031] sha256:9195a15702d8f7ce5cecdba5c6808cf88fef0261e7d7902dd577786fc21d8b12
+[D0463:P0032] sha256:0efc6b8bac0f5c258cf4ee4e008cf4a8ef5e5ccb4464ac42fd823b88bb074e1c
+[D0463:P0033] sha256:f9a66dc39b76cdad123e7059f7f6958a405df488a2354f09254848613dc69875
+[D0463:P0034] sha256:d9c3269f1270c732c41ef4df2fc2e525aaf001a3c7bbe38a9f9d927f5fef3025
+[D0463:P0035] sha256:2cfde7c2b0d3aae1e5b783e8fa960738bb1190f5b021bdae378b08b7e0e7b6ef
+[D0463:P0036] sha256:f54ca65cc3e4d776f9a05b682dc186fb411c53d263b7dc179a5f19dd5c8c7467
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (9)
+E001: «Canada Japan Cyber Policy Dialogue» — mitigates → «cyber threats» | форма: planned, positive
+E002: «Canadian Armed Forces» — operates → «Operation NEON» | форма: actual, positive
+E003: «Mark Carney» — mitigates → «cyber threats» | форма: planned, negative
+E004: «Canada Japan Cyber Policy Dialogue» — mitigates → «cyber threats» | форма: actual, positive
+E005: «Mark Carney» — mitigates → «cyber threats» | форма: planned, positive
+E006: «cyber threats» — mitigates → «Sanae Takaichi» | форма: planned, positive
+E007: «Canada» — operates → «Operation NANOOK» | форма: actual, positive
+E008: «Sanae Takaichi» — mitigates → «cyber threats» | форма: planned, positive
+E009: «Operation NANOOK» — located in → «Canadian Arctic» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

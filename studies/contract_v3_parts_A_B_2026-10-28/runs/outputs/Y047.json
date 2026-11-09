@@ -1,0 +1,127 @@
+{
+ "run_id": "Y047",
+ "target_doc_id": "D0166",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "China", "entity_type": "country", "aliases": ["Communist China"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 0, "end": 99, "sha256": "50f63ed6e2d7ca252589b9c4ff931a4083eadd80c2db829d50bfac83741cb8d7"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}}]},
+  {"id": "n002", "label": "U.S.", "entity_type": "country", "aliases": ["America"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 288, "end": 326, "sha256": "a2cc052184c638e31015762069e149233f03ae7c70b579a86063edf31d1fb824"}}]},
+  {"id": "n003", "label": "Chinese Communist Party", "entity_type": "organization", "aliases": ["CCP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 201, "sha256": "0a872f100306d0a4c9694ac6e740b3312af0ae52877e7c8b76a96b4451a832d2"}}]},
+  {"id": "n004", "label": "Cybersecurity and Infrastructure Security Agency", "entity_type": "organization", "aliases": ["CISA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}]},
+  {"id": "n005", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": ["DHS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 96, "sha256": "39a917c25b2a92c1bfd8596c38828db60c5030671af767620e31e50888c406c7"}}]},
+  {"id": "n006", "label": "financial institutions", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 85, "sha256": "c57656e8579f2a0af18920e7e86a2124d1b32ea182f360a4a2b53f5a181e2959"}}]},
+  {"id": "n007", "label": "joint task force", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}]},
+  {"id": "n008", "label": "Senate", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0016", "start": 103, "end": 170, "sha256": "2e191194c46fc147468c3a3a97444dfe8d8cec3e5ef4f76af3c90413fd1f2f3d"}}]},
+  {"id": "n009", "label": "U.S. government agencies", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 195, "sha256": "6419733e0eeb83ad369d646b3c5a51a318c25464777e9420775201e7041f2d4f"}}]},
+  {"id": "n010", "label": "U.S. House of Representatives", "entity_type": "organization", "aliases": ["House"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0013", "start": 136, "end": 181, "sha256": "7b93910473045812a2e1a937898cffff91432406f33cfe5f47e09fa4de941823"}}]},
+  {"id": "n011", "label": "bank account", "entity_type": "other", "aliases": ["bank accounts"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 48, "end": 143, "sha256": "b3462a4217c0de1b11efa34522ba665d2eccdbdd90b888003fc73df094c7dadb"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 206, "end": 286, "sha256": "93e98f9b6da5dc9cbf00708d9510a4945583da8f0d74c2195a0a980d004ee54c"}}]},
+  {"id": "n012", "label": "communications", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 330, "sha256": "654ffb37ce5bc3973e7ea96c5721379ccf2726d7c9bda14963e2a7c086f25f36"}}]},
+  {"id": "n013", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 330, "sha256": "654ffb37ce5bc3973e7ea96c5721379ccf2726d7c9bda14963e2a7c086f25f36"}}]},
+  {"id": "n014", "label": "digital records of stock and home ownership", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 48, "end": 143, "sha256": "b3462a4217c0de1b11efa34522ba665d2eccdbdd90b888003fc73df094c7dadb"}}]},
+  {"id": "n015", "label": "energy", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 330, "sha256": "654ffb37ce5bc3973e7ea96c5721379ccf2726d7c9bda14963e2a7c086f25f36"}}]},
+  {"id": "n016", "label": "power", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 206, "end": 286, "sha256": "93e98f9b6da5dc9cbf00708d9510a4945583da8f0d74c2195a0a980d004ee54c"}}]},
+  {"id": "n017", "label": "Strengthening Cyber Resilience Against State-Sponsored Threats Act", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 100, "end": 201, "sha256": "f3f1b90eeca88622785398145046b8bae0358fdc7e6caa02a410c083b23e95e0"}}]},
+  {"id": "n018", "label": "transportation systems", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 330, "sha256": "654ffb37ce5bc3973e7ea96c5721379ccf2726d7c9bda14963e2a7c086f25f36"}}]},
+  {"id": "n019", "label": "water", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 206, "end": 286, "sha256": "93e98f9b6da5dc9cbf00708d9510a4945583da8f0d74c2195a0a980d004ee54c"}}]},
+  {"id": "n020", "label": "water and wastewater systems", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 330, "sha256": "654ffb37ce5bc3973e7ea96c5721379ccf2726d7c9bda14963e2a7c086f25f36"}}]},
+  {"id": "n021", "label": "Andy Ogles", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}}]},
+  {"id": "n022", "label": "Rick Scott", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 0, "end": 51, "sha256": "86006e1d54f686bbe846b231790c2bfd245c9f8fd040e34f300f917006482fd6"}}]},
+  {"id": "n023", "label": "national security", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0016", "start": 0, "end": 102, "sha256": "73fdb87c10a3b1c760d010bd2afce4f47d06a9d88df2b3ea471e17ce85622e1f"}}]},
+  {"id": "n024", "label": "internet", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 206, "end": 286, "sha256": "93e98f9b6da5dc9cbf00708d9510a4945583da8f0d74c2195a0a980d004ee54c"}}]},
+  {"id": "n025", "label": "Salt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}}]},
+  {"id": "n026", "label": "Volt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 195, "sha256": "6419733e0eeb83ad369d646b3c5a51a318c25464777e9420775201e7041f2d4f"}}]},
+  {"id": "n027", "label": "CCP-backed cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}]},
+  {"id": "n028", "label": "hackers", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 85, "sha256": "c57656e8579f2a0af18920e7e86a2124d1b32ea182f360a4a2b53f5a181e2959"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Communist China prodding U.S. security",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}}]},
+  {"id": "e002", "source": "n003", "target": "n006", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP attack on financial institutions",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 85, "sha256": "c57656e8579f2a0af18920e7e86a2124d1b32ea182f360a4a2b53f5a181e2959"}}]},
+  {"id": "e003", "source": "n003", "target": "n011", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP cyber-attack scenario",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}]},
+  {"id": "e004", "source": "n003", "target": "n016", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP cyber-attack scenario",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}]},
+  {"id": "e005", "source": "n003", "target": "n019", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP cyber-attack scenario",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}]},
+  {"id": "e006", "source": "n003", "target": "n024", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP cyber-attack scenario",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}]},
+  {"id": "e007", "source": "n004", "target": "n007", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 305, "sha256": "9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba"}}]},
+  {"id": "e008", "source": "n004", "target": "n005", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 124, "end": 146, "sha256": "25e5666fb9254db24b00d26e646a0ad013b5fc86e963ca006b7fe3e3e9e729c5"}}]},
+  {"id": "e009", "source": "n004", "target": "n027", "relation_type": "REPORTS_ON", "modality": "recommended", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "annual CISA reports to Congress mandated by the bill",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0013", "start": 0, "end": 135, "sha256": "a030b767a71f666c223da43b360363e0235ff970ff127687747e7213689eda57"}},
+    {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}]},
+  {"id": "e010", "source": "n007", "target": "n026", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}]},
+  {"id": "e011", "source": "n007", "target": "n027", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}]},
+  {"id": "e012", "source": "n009", "target": "n026", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "February 2024", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}]},
+  {"id": "e013", "source": "n017", "target": "n023", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0016", "start": 0, "end": 102, "sha256": "73fdb87c10a3b1c760d010bd2afce4f47d06a9d88df2b3ea471e17ce85622e1f"}}]},
+  {"id": "e014", "source": "n021", "target": "n010", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}}]},
+  {"id": "e015", "source": "n021", "target": "n001", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}]},
+  {"id": "e016", "source": "n022", "target": "n008", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 0, "end": 51, "sha256": "86006e1d54f686bbe846b231790c2bfd245c9f8fd040e34f300f917006482fd6"}}]},
+  {"id": "e017", "source": "n022", "target": "n001", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}]},
+  {"id": "e018", "source": "n025", "target": "n003", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}}]},
+  {"id": "e019", "source": "n026", "target": "n003", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}},
+    {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}]},
+  {"id": "e020", "source": "n026", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}]},
+  {"id": "e021", "source": "n026", "target": "n013", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}]},
+  {"id": "e022", "source": "n026", "target": "n015", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}]},
+  {"id": "e023", "source": "n026", "target": "n018", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}]},
+  {"id": "e024", "source": "n026", "target": "n020", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}]},
+  {"id": "e025", "source": "n028", "target": "n011", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP attack on financial institutions",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 85, "sha256": "c57656e8579f2a0af18920e7e86a2124d1b32ea182f360a4a2b53f5a181e2959"}}]},
+  {"id": "e026", "source": "n028", "target": "n014", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "hypothetical CCP attack on financial institutions",
+   "evidence": [{"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}]}
+ ],
+ "context_passages_used": []
+}

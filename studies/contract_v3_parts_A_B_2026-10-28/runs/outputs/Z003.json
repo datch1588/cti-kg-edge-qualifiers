@@ -1,0 +1,88 @@
+{
+ "run_id": "Z003",
+ "target_doc_id": "D0259",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "phishing attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0018", "start": 16, "end": 149, "sha256": "eb023ef106b868ef9d6c0c8e0f6d58e303c5ab12e20b4505ff33d7c435249bd3"}}]},
+  {"id": "n002", "label": "UK", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0033", "start": 0, "end": 76, "sha256": "ca5f12496c05c648ed76f41215c4a765e0b471481928edd36c1e5ba90e92bbee"}}]},
+  {"id": "n003", "label": "eBay", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0034", "start": 0, "end": 101, "sha256": "ffed745e405dc4528be8d15e74280eeb2b012d3e9b7ab77e2725b87c5708cdf2"}}]},
+  {"id": "n004", "label": "GCHQ", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0008", "start": 0, "end": 115, "sha256": "56487ee60c1f5061a7adb9696efede0759511f6176d046d5080eed7ed94c204d"}}]},
+  {"id": "n005", "label": "Google", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0033", "start": 77, "end": 144, "sha256": "7f2faf5d72c90608273da4bfc2529b46eda1996620fcf899bbd28e16ba7b5cbc"}}]},
+  {"id": "n006", "label": "National Cyber Security Centre", "entity_type": "organization", "aliases": ["NCSC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0009", "start": 0, "end": 80, "sha256": "107d2b998a66d98ca160135e9ff38fee9ca15d174f69ab0396406a235122eae3"}}]},
+  {"id": "n007", "label": "NHS", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0032", "start": 19, "end": 148, "sha256": "79ccbcf2a594e89fbe508c8acdaad8b687ad61c7663ad2419e76d0531c48b17a"}}]},
+  {"id": "n008", "label": "PayPal", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0034", "start": 0, "end": 101, "sha256": "ffed745e405dc4528be8d15e74280eeb2b012d3e9b7ab77e2725b87c5708cdf2"}}]},
+  {"id": "n009", "label": "UK Government", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0032", "start": 19, "end": 148, "sha256": "79ccbcf2a594e89fbe508c8acdaad8b687ad61c7663ad2419e76d0531c48b17a"}}]},
+  {"id": "n010", "label": "Jonathon Ellison", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0039", "start": 0, "end": 61, "sha256": "55b279a291cff60f0a4d43356fdd6ab379f06de2b7cf64bb81878ad68328f227"}}]},
+  {"id": "n011", "label": "biometric data", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0048", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0048", "start": 0, "end": 105, "sha256": "1227d59a83b49cb70582fe93c1192dd22fe0fbcd6b6f9c21628adc412964a5f0"}}]},
+  {"id": "n012", "label": "device-level authentication", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0028", "start": 0, "end": 168, "sha256": "b402ea0e7bdcb1257fd1c95303d95fb9a73c1a8016f2160dcfe51b100a05fa36"}}]},
+  {"id": "n013", "label": "passkeys", "entity_type": "technology", "aliases": ["passkey"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0026", "start": 0, "end": 57, "sha256": "c19874a2a54f26a30e578d16c84a6a6d9806201de96ff1735ec052be2926ece8"}},
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0046", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0046", "start": 0, "end": 18, "sha256": "a4d63b5ed3f39e040cb3bbb3f35f35343883ea8a853aa7ff2fb30641a0036e70"}}]},
+  {"id": "n014", "label": "passwords", "entity_type": "technology", "aliases": ["password"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0016", "start": 0, "end": 100, "sha256": "1a1b08b0d966c15b2a8996896c40c6d1efe6a9b34a134e345738d81ac3096e53"}},
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0020", "start": 0, "end": 72, "sha256": "a4268475c04a3b0376d0da66e008698e9577eb13637fa8d70e2b92eda5afcb63"}}]},
+  {"id": "n015", "label": "private key", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0029", "start": 0, "end": 122, "sha256": "1cba5c1555746bf762368b77cbe5bcef3a56a056a334ae746bfe53c7613a0584"}}]},
+  {"id": "n016", "label": "public key", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0029", "start": 0, "end": 122, "sha256": "1cba5c1555746bf762368b77cbe5bcef3a56a056a334ae746bfe53c7613a0584"}}]},
+  {"id": "n017", "label": "two-factor authentication", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0026", "start": 59, "end": 172, "sha256": "19f0407d06328422e8d01cec2030b82b9364df4be8de86291b1110649a05aceb"}}]},
+  {"id": "n018", "label": "two-step verification", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0042", "start": 48, "end": 172, "sha256": "26acad05639ee82e82a76a53ff575a49b3db5b8524966afff48e45e79858d005"}},
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0035", "start": 60, "end": 157, "sha256": "b3e4352cba052d17e3e02a0a01d53f519bd5b523e18886d870064c12540cfc82"}}]},
+  {"id": "n019", "label": "cybercriminals", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0019", "start": 0, "end": 106, "sha256": "b32086a48057c1f5a4faf6054094daae57c98897d0f549572d201b738775ec44"}}]},
+  {"id": "n020", "label": "password manager", "entity_type": "tool", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0042", "start": 48, "end": 172, "sha256": "26acad05639ee82e82a76a53ff575a49b3db5b8524966afff48e45e79858d005"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n014", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0052", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0052", "start": 49, "end": 219, "sha256": "2ed9f58b414f5963619213df62cbfbb863fb20454ebb1606a8ad9016e8dc86ef"}}]},
+  {"id": "e002", "source": "n002", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "NCSC", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0033", "start": 0, "end": 76, "sha256": "ca5f12496c05c648ed76f41215c4a765e0b471481928edd36c1e5ba90e92bbee"}}]},
+  {"id": "e003", "source": "n003", "target": "n013", "relation_type": "SUPPORTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0034", "start": 0, "end": 101, "sha256": "ffed745e405dc4528be8d15e74280eeb2b012d3e9b7ab77e2725b87c5708cdf2"}}]},
+  {"id": "e004", "source": "n004", "target": "n014", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "GCHQ warning to ditch passwords", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0008", "start": 0, "end": 115, "sha256": "56487ee60c1f5061a7adb9696efede0759511f6176d046d5080eed7ed94c204d"}}]},
+  {"id": "e005", "source": "n006", "target": "n004", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0016", "start": 0, "end": 100, "sha256": "1a1b08b0d966c15b2a8996896c40c6d1efe6a9b34a134e345738d81ac3096e53"}}]},
+  {"id": "e006", "source": "n007", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "NCSC", "event_time": "", "event_scope": "passkey rollout across UK Government's digital services", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0032", "start": 0, "end": 149, "sha256": "57a653a306139155a1da5340d11684b91803e968732996a01702811640d2b4fc"}}]},
+  {"id": "e007", "source": "n008", "target": "n013", "relation_type": "SUPPORTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0034", "start": 0, "end": 101, "sha256": "ffed745e405dc4528be8d15e74280eeb2b012d3e9b7ab77e2725b87c5708cdf2"}}]},
+  {"id": "e008", "source": "n009", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "NCSC", "event_time": "", "event_scope": "passkey rollout across UK Government's digital services", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0032", "start": 0, "end": 149, "sha256": "57a653a306139155a1da5340d11684b91803e968732996a01702811640d2b4fc"}}]},
+  {"id": "e009", "source": "n010", "target": "n006", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0039", "start": 0, "end": 61, "sha256": "55b279a291cff60f0a4d43356fdd6ab379f06de2b7cf64bb81878ad68328f227"}}]},
+  {"id": "e010", "source": "n012", "target": "n011", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0028", "start": 55, "end": 167, "sha256": "2472525fe3d8265be89e2f11a75e6c42f775a5dfab78f7cdffcaec2fc900e5ed"}}]},
+  {"id": "e011", "source": "n013", "target": "n001", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "NCSC", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0051", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0051", "start": 0, "end": 139, "sha256": "263c6ab549e16b714bca48a577a593fc85d2ed451d82477f29126ff6e910e02c"}},
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0052", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0052", "start": 0, "end": 65, "sha256": "03086d0ba4a0e992c83f86cbd920cd07ace1e28f21b9c8dc7d3ed7a534d4e42f"}}]},
+  {"id": "e012", "source": "n013", "target": "n011", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0048", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0048", "start": 0, "end": 105, "sha256": "1227d59a83b49cb70582fe93c1192dd22fe0fbcd6b6f9c21628adc412964a5f0"}}]},
+  {"id": "e013", "source": "n013", "target": "n012", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0028", "start": 0, "end": 168, "sha256": "b402ea0e7bdcb1257fd1c95303d95fb9a73c1a8016f2160dcfe51b100a05fa36"}}]},
+  {"id": "e014", "source": "n015", "target": "n013", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0029", "start": 0, "end": 122, "sha256": "1cba5c1555746bf762368b77cbe5bcef3a56a056a334ae746bfe53c7613a0584"}}]},
+  {"id": "e015", "source": "n016", "target": "n013", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0029", "start": 0, "end": 122, "sha256": "1cba5c1555746bf762368b77cbe5bcef3a56a056a334ae746bfe53c7613a0584"}}]},
+  {"id": "e016", "source": "n019", "target": "n014", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0020", "start": 0, "end": 163, "sha256": "7cf227be161c59fda43a5876540c699bed6ecd2a40f1e9bb4b40e36ff383d85b"}}]},
+  {"id": "e017", "source": "n019", "target": "n014", "relation_type": "USES", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0259", "paragraph_id": "D0259:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0259:P0019", "start": 0, "end": 106, "sha256": "b32086a48057c1f5a4faf6054094daae57c98897d0f549572d201b738775ec44"}}]}
+ ],
+ "context_passages_used": []
+}

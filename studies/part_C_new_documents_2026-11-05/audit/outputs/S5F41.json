@@ -1,0 +1,14 @@
+{
+ "audit_file": "S5F41",
+ "target_doc_id": "D0131",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0032 радить: «every organization should consider tabletop exercises», тож це рекомендація."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "I", "reason": "P0004 подає витоки даних як ризик для організацій і цього не заперечує, тому полярність negative хибна."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації «face risks from ransomware attacks», тож форма possible відповідає цьому місцю."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації «face risks from ... data breaches ... that can disrupt operations», тобто це можливий вплив."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації «face risks from ... phishing campaigns», тобто це можливий вплив."},
+  {"item_id": "E006", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: за статтею ransomware впливає на організації, а не організації на ransomware."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0014 подає це як факт: ransomware «affects organizations across all sectors»."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації «face risks from ... insider threats», тобто це можливий вплив."}
+ ]
+}

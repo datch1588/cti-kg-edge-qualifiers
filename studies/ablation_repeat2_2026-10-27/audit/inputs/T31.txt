@@ -1,0 +1,156 @@
+AUDIT_FILE: T31
+TARGET_DOC_ID: D0268
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0268
+PUBLICATION_DATE: 2026-04-21
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6345059
+TITLE_SHA256: c62f6bc8bdba8beb731d687cefdb2d32b02226fb9917d3c949d4689986e7d026
+BEGIN_DOCUMENT
+[D0268:P0001] sha256:c62f6bc8bdba8beb731d687cefdb2d32b02226fb9917d3c949d4689986e7d026
+[D0268:P0002] sha256:42db5b0786e8de20bfe1c1a091492694a6afa966a062d7f39e5f42d951b60c52
+[D0268:P0003] sha256:cc03a804e96b0e6f4802cf9bf54aa1a4718a03af3ee3b736ed0d6c8452aa5c70
+[D0268:P0004] sha256:dd5ce2a52a51c26fb5060c0137469245dd8abb16483df667fbcacc704707ac80
+[D0268:P0005] sha256:81ab014a9cd28156efd582aad1b13bbf8ba38277f16b88b497e53440b9cfafc4
+[D0268:P0006] sha256:e0d2bef77d32f1a3e272b314e941b94a93225d7852ecf526c3d923df94ef1108
+[D0268:P0007] sha256:4a1fbfb5a379f31463d5074083ae3aada87b952438573dc1d56609906432af28
+[D0268:P0008] sha256:6abd5e7f6858054c9b8c78ed486536c70ef04ecc36e5504e5d60120a18cb14eb
+[D0268:P0009] sha256:eb1e30d1ab6e690c29396554152b9d232a812151049592ee4d151da1d4b789f8
+[D0268:P0010] sha256:7051f5723a26cc6207bd89470be9c0315275ec2a812fae8a1c2abe0958859a37
+[D0268:P0011] sha256:e3030686735fb60ecfbd9485dd211a26c723a3ff6ada692cf8be6129e0d58ba9
+[D0268:P0012] sha256:018e3608a745fe15fcce3f42b3bd5be276734bd17c858836ce68b4aab6e69940
+[D0268:P0013] sha256:d2d566d9494221c2a1b531fc8f1f384b61154a526a7429f051fdc4eefe603055
+[D0268:P0014] sha256:701c8a4131a9a1e09bebb25cf0f4047b8609cf313843a6f16d1a4901be0d6b7d
+[D0268:P0015] sha256:18507b0a1bf667eabdd2c6e2aa25ca956b88bf26acdd9a720021330b4cf45e82
+[D0268:P0016] sha256:2d6aa5198aa3b81af9d83532b0608f0529538419cef133c80104d4f8fcae6c6d
+[D0268:P0017] sha256:b833f637681fc3c2847a55eaba6dcaa10a44896acdec26980d7de4fab8e1d237
+[D0268:P0018] sha256:90e639cf25845cbba67faa3e94953098cfe77bf6e1b4555caf4911754a5e0040
+[D0268:P0019] sha256:2ee3d7c02dcb2d7a579874cccc495b859169767fa0f0085f23ca063d1710419a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (82)
+E001: «Claude Mythos Preview» — unveiled on → «April 7, 2026» | форма: actual, positive
+E002: «SEALSQ Corp» — advocates embedding into silicon → «Post-Quantum Cryptography» | форма: actual, positive
+E003: «SEALSQ» — develops → «Post-Quantum Semiconductors» | форма: actual, positive
+E004: «Post-Quantum Semiconductors» — protect → «Industrial Automation and Control Systems» | форма: actual, positive
+E005: «tamper-resistant hardware environments» — create → «immutable root of trust» | форма: actual, positive
+E006: «autonomous AI agents» — systematically explore → «attack paths» | форма: actual, positive
+E007: «Anthropic» — operates → «Project Glasswing» | форма: actual, positive
+E008: «Project Glasswing» — operates → «Anthropic» | форма: actual, positive
+E009: «Post-Quantum Cryptography» — mitigates → «quantum threat» | форма: actual, positive
+E010: «SEALSQ» — provides → «PKI» | форма: actual, positive
+E011: «SEALSQ Corp» — files reports with → «SEC» | форма: actual, positive
+E012: «quantum computers» — affects → «RSA» | форма: possible, positive
+E013: «SEALSQ Corp» — is listed on → «NASDAQ» | форма: actual, positive
+E014: «Post-Quantum Semiconductors» — protect → «Defense» | форма: actual, positive
+E015: «Anthropic» — restricted access to → «Claude Mythos Preview» | форма: actual, positive
+E016: «SEALSQ» — provides → «Semiconductors» | форма: actual, positive
+E017: «SEALSQ Corp» — is based in → «Geneva, Switzerland» | форма: actual, positive
+E018: «next-generation semiconductors» — secure against → «quantum attacks» | форма: actual, positive
+E019: «Claude Mythos Preview» — has advanced capabilities in → «coding» | форма: actual, positive
+E020: «Post-Quantum Semiconductors» — protect → «IT Network Infrastructure» | форма: actual, positive
+E021: «SEALSQ» — develops → «Quantum Resistant Cryptography» | форма: actual, positive
+E022: «Anthropic» — launched → «Project Glasswing» | форма: actual, positive
+E023: «evasion techniques» — uses → «AI agents» | форма: actual, positive
+E024: «Semiconductors» — mitigates → «AI-driven cyber threats» | форма: actual, positive
+E025: «Post-Quantum Semiconductors» — uses → «Post-Quantum Cryptography» | форма: actual, positive
+E026: «SEALSQ Corp» — has website → «www.sealsq.com» | форма: actual, positive
+E027: «Post-Quantum Semiconductors» — protect → «Automotive» | форма: possible, positive
+E028: «immutable root of trust» — cannot be altered, bypassed, or extracted by → «AI-driven attacks» | форма: actual, positive
+E029: «harvest now, decrypt later» — affects → «classical encryption» | форма: actual, positive
+E030: «secure microcontrollers» — uses → «Post-Quantum Cryptography» | форма: recommended, positive
+E031: «Claude Mythos Preview» — uncovered → «serious long-standing flaws» | форма: actual, positive
+E032: «SEALSQ Corp» — develops → «Quantum Resistant Cryptography» | форма: actual, positive
+E033: «SEALSQ Corp» — develops and sells → «Post-Quantum technology hardware and software products» | форма: actual, positive
+E034: «SEALSQ Advances Post-Quantum Cryptography (PQC) in Silicon to Counter AI-Driven Threats» — published on → «April 21, 2026» | форма: actual, positive
+E035: «hardware-enforced cryptographic protections» — prevent → «privilege escalation» | форма: actual, positive
+E036: «harvest now, decrypt later» — shortens effective lifespan of → «classical encryption» | форма: actual, positive
+E037: «Claude Mythos Preview» — has advanced capabilities in → «reasoning» | форма: actual, positive
+E038: «SEALSQ Corp» — develops and sells → «Semiconductors» | форма: actual, positive
+E039: «SEALSQ» — develops → «Semiconductors» | форма: possible, positive
+E040: «quantum computers» — affects → «RSA» | форма: actual, positive
+E041: «Post-Quantum Cryptography» — embedded into → «secure microcontrollers» | форма: actual, positive
+E042: «AI agents» — uses → «evasion techniques» | форма: actual, positive
+E043: «Project Glasswing» — aims to secure → «critical software» | форма: actual, positive
+E044: «SEALSQ Corp» — develops → «next-generation semiconductors» | форма: actual, positive
+E045: «Claude Mythos Preview» — has advanced capabilities in → «vulnerability discovery» | форма: actual, positive
+E046: «long-standing flaws» — affects → «widely used software» | форма: actual, positive
+E047: «Post-Quantum Semiconductors» — protect → «Automotive» | форма: actual, positive
+E048: «SEALSQ Advances Post-Quantum Cryptography (PQC) in Silicon to Counter AI-Driven Threats» — hosted at → «https://www.taiwannews.com.tw/en/news/6345059» | форма: actual, positive
+E049: «SEALSQ Advances Post-Quantum Cryptography (PQC) in Silicon to Counter AI-Driven Threats» — republished by → «Taiwan News» | форма: actual, positive
+E050: «Post-Quantum Cryptography» — embedded into → «semiconductor components» | форма: actual, positive
+E051: «quantum computers» — affects → «Elliptic Curve Cryptography» | форма: actual, positive
+E052: «Elliptic Curve Cryptography (ECC)» — increasingly vulnerable to → «quantum computers» | форма: actual, positive
+E053: «hardware-enforced cryptographic protections» — are resistant to → «iterative attack strategies» | форма: actual, positive
+E054: «Post-Quantum Semiconductors» — protect → «Smart Energy» | форма: actual, positive
+E055: «next-generation semiconductors» — secure against → «AI-driven cyber threats» | форма: actual, negative
+E056: «SEALSQ Corp» — develops and sells → «PKI» | форма: actual, positive
+E057: «hardware-enforced cryptographic protections» — mitigate → «vulnerabilities linked to software layers» | форма: actual, positive
+E058: «Post-Quantum Semiconductors» — protects → «sensitive data» | форма: actual, positive
+E059: «serious long-standing flaws» — found in → «widely used software» | форма: actual, positive
+E060: «Project Glasswing» — protects → «critical software» | форма: planned, positive
+E061: «SEALSQ» — develops → «PKI» | форма: actual, positive
+E062: «autonomous AI agents» — use → «sophisticated evasion techniques» | форма: actual, positive
+E063: «quantum computers» — affects → «Elliptic Curve Cryptography» | форма: possible, negative
+E064: «hardware-enforced cryptographic protections» — mitigate → «misconfigurations» | форма: actual, positive
+E065: «next-generation semiconductors» — secure against → «AI-driven cyber threats» | форма: actual, positive
+E066: «hardware-enforced cryptographic protections» — protect cryptographic keys from → «exfiltration» | форма: actual, positive
+E067: «RSA» — increasingly vulnerable to → «quantum computers» | форма: actual, positive
+E068: «Post-Quantum Cryptography» — mitigates → «AI-driven cyber threats» | форма: actual, positive
+E069: «SEALSQ Corp» — develops → «Post-Quantum Semiconductors» | форма: actual, positive
+E070: «hardware-enforced cryptographic protections» — protect cryptographic keys from → «unauthorized access» | форма: actual, positive
+E071: «SEALSQ Advances Post-Quantum Cryptography (PQC) in Silicon to Counter AI-Driven Threats» — published by → «GlobeNewswire» | форма: actual, positive
+E072: «Post-Quantum Semiconductors» — protect → «Multi-Factor Authentication tokens» | форма: actual, positive
+E073: «quantum computers» — affects → «Elliptic Curve Cryptography» | форма: possible, positive
+E074: «Anthropic» — unveiled → «Claude Mythos Preview» | форма: actual, positive
+E075: «autonomous AI agents» — enable faster identification of → «cryptographic weaknesses» | форма: actual, positive
+E076: «SEALSQ Corp» — integrates → «Provisioning Services» | форма: actual, positive
+E077: «Anthropic» — develops → «Claude Mythos Preview» | форма: actual, positive
+E078: «Post-Quantum Semiconductors» — protect → «Medical and Healthcare Systems» | форма: actual, positive
+E079: «The Equity Group Inc.» — handles investor relations for → «SEALSQ Corp» | форма: actual, positive
+E080: «Post-Quantum Cryptography» — mitigates → «AI-Driven Threats» | форма: recommended, positive
+E081: «SEALSQ» — uses → «Post-Quantum Cryptography» | форма: actual, positive
+E082: «SEALSQ» — develops → «Semiconductors» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

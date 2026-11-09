@@ -1,0 +1,228 @@
+AUDIT_FILE: S2T18
+TARGET_DOC_ID: D0435
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0435
+PUBLICATION_DATE: 2026-03-12
+SOURCE_URL: https://timesofindia.indiatimes.com/technology/tech-news/what-message-iran-linked-hacker-group-handala-left-after-disabling-laptops-and-phones-of-stryker-employees-americas-medical-devices-company-with-125-billion-mrket-cap/articleshow/129506840.cms
+TITLE_SHA256: 3a61deec5d4297be26cdc50d054e1cbed30d3ed52f21621c9fc087b91c43c17b
+BEGIN_DOCUMENT
+[D0435:P0001] sha256:3a61deec5d4297be26cdc50d054e1cbed30d3ed52f21621c9fc087b91c43c17b
+[D0435:P0002] sha256:fc341d18d30bb19b13ec95eb581fab7656388d6b5f790ed3f5758009ceca8ead
+[D0435:P0003] sha256:b2901014555591be95d1d7b710308e61ea2560d7b8b7f72932fd65b07f576715
+[D0435:P0004] sha256:e8539997ea25126129c31cb7a8638be17bf891275a69f2c2440b071126336597
+[D0435:P0005] sha256:fd00f7851f0279b6e9cc5bcec698f25ca54738914aa20e46035623c68964d546
+[D0435:P0006] sha256:746cb9e72711d7b1c81ecda8e8ceb155feedbcce34be75f13ef37eca3dcbd1a6
+[D0435:P0007] sha256:4cdb4f50294f4232153abd809a68869fd05b3afe7ccd450d4c184700e3f7a08d
+[D0435:P0008] sha256:d79eeaf8c2408ea1b4c59d60989c5a08df198c7aaec8154d0ea6dd9cc3a78abd
+[D0435:P0009] sha256:8064ecff47821f114108af70e7eabbfa341aea952dcb393edd85df3e80896b2a
+[D0435:P0010] sha256:b921a321e0a51c273e269215af34303e320203dbd0ab3a2eb1d4c0f10fcee97e
+[D0435:P0011] sha256:55a2a010e9f137bf58b68ab4cbcb2badda6f81d39902bc835a2300428605aa7f
+[D0435:P0012] sha256:4aba0c804eba9b226fd80d4063a439c3cad44d9a9e51854a0aa8a851a9a66f02
+[D0435:P0013] sha256:17ea2f081f8f0121031acb9157945403522aceb85af4c1f2919cab9073ffa91f
+[D0435:P0014] sha256:25c59f6fd19aecf95108bccb9bb219a1d2c4679275b2b08b81d1e7129692fe7b
+[D0435:P0015] sha256:5bfb749d8dae01220486dba27c8b0fb2f73a4799c4ff2af1d082f0fc961be864
+[D0435:P0016] sha256:2ccb5c4e5af4f9072e140eafaf055ed587a887a4826458af0e60c8ebc748839c
+[D0435:P0017] sha256:3962553aecb44294e5d5be1905d3c3f485bae7bdb76a172d981a515a5f34c830
+[D0435:P0018] sha256:7dfce8eecf2360563a68d4b9db5f70a72d266c0376f6669272abddae1c16e1d4
+[D0435:P0019] sha256:c809c6eeff1f2a515e82c8abd593a4eab2fd38aaf3eb3e0f9ba774284d493f2c
+[D0435:P0020] sha256:a57b08a480b822a0a572b993391c292ede593bf8000b406675b180bbb16260fa
+[D0435:P0021] sha256:a463d620eeb639ff243d8cc2bde006ba1757f90388ce39629d229e0bd8505b0d
+[D0435:P0022] sha256:c7e6673590d2426f635c9be70bd8f057389d4a1680f062ffd58c5d20a19720e4
+[D0435:P0023] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0024] sha256:fa54b55d81fc21f93126e53e533a4aab18a71ba3d92285025079812793feeee6
+[D0435:P0025] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0026] sha256:8ebfd6fcbdb9530527967f8023cb49e10289ade1196bb0928698a6c83c864790
+[D0435:P0027] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0028] sha256:b3cdd421a781584625a0d2c0bb06268d3be4fc59c3bc5fe460f784c2431cf045
+[D0435:P0029] sha256:bbbe78620e4b274d8cf6671883fee6abab3b57457c70df22ed79aa68ad75ff5c
+[D0435:P0030] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0031] sha256:8be92400d33b89db2dfd6a395fa6a34f36975142d26b97392c09e52f2c6e480f
+[D0435:P0032] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0033] sha256:406678498fad5b5432e077dcca04d8bd3b7ac643394f114f45a2ad6737e471d3
+[D0435:P0034] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0035] sha256:406678498fad5b5432e077dcca04d8bd3b7ac643394f114f45a2ad6737e471d3
+[D0435:P0036] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0037] sha256:0332cabf8591f41df0588e3f7197bd880420d3e5d3175c2fcbd716981840e79e
+[D0435:P0038] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0039] sha256:0332cabf8591f41df0588e3f7197bd880420d3e5d3175c2fcbd716981840e79e
+[D0435:P0040] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0041] sha256:b4c9846ccbe34a671744765426aedfd90f1770c2f89ed2e9db118de19765b849
+[D0435:P0042] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0043] sha256:b4c9846ccbe34a671744765426aedfd90f1770c2f89ed2e9db118de19765b849
+[D0435:P0044] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0045] sha256:bbef09baa5c7b10789befa56ec18bb16a96217e774507711a213fca340a8ee12
+[D0435:P0046] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0047] sha256:bbef09baa5c7b10789befa56ec18bb16a96217e774507711a213fca340a8ee12
+[D0435:P0048] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0049] sha256:eaf14ce6f13471cef2ec4837f264c1dbff76c62b5d91ad41ca3b26f89a148477
+[D0435:P0050] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0051] sha256:4592a2d74881c5b81f486898754108959d08d802b39896b46d8018ea00ca3360
+[D0435:P0052] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0053] sha256:46cd8afe683b356fc0d823d873594a5870e1478ef7232341d5a12eeee5d754e2
+[D0435:P0054] sha256:09411db6be8343604de67cb9dbbcdea0ee2c2b69f899bb77b0f326ce6d4e8e93
+[D0435:P0055] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0056] sha256:64d548eb9eef3c06ad6333f30c52e0d979e8cd7c12ad95b7ca881263ffc2c319
+[D0435:P0057] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0058] sha256:3bb700528d4c0dbe6a86e4d3c0ae7e02326c823efd6854bccb945fbabce3ebe9
+[D0435:P0059] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0060] sha256:f730253bdf0e0b574b8c64c2777c765b8c7ea4830a4a65ba2dc73ca26164d629
+[D0435:P0061] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0062] sha256:a3083080a6a65852b4cd8760f0d3aeb9dd86b2638e82bb6569fb6b9807ae2eef
+[D0435:P0063] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0064] sha256:fe46e1f9ef9ad3c262d9d028e23d06253e7cf470ca14c186c2d43e1815473a05
+[D0435:P0065] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0066] sha256:276bbfa8256f62e995e7076c7b2a402626a6895fc62406cbdf092ee8504c9aa6
+[D0435:P0067] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0068] sha256:1d6a84dbd84c13d91ed3c0fd0d2503dead7176a20bfe4dce31cb8cf3de72f47a
+[D0435:P0069] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0070] sha256:977deeb23279b8f1f3f3cab4d21d3d947eaa31d250c15ed8a679ada2ce9babde
+[D0435:P0071] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0072] sha256:461ecb2cc2a8260830e125d054669bbb619fcb36c060e875d4b4897ee8d37e1e
+[D0435:P0073] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0074] sha256:f09dfcbda134fc1289784fa26b4ff22c51e203079fe7dcfed0c2dfa70348470c
+[D0435:P0075] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0076] sha256:fef0317709373279cbc8d6cd1f1bd79bd80837976caef0e48b6dcc3c822357f0
+[D0435:P0077] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0078] sha256:907dee4df10007e8df245157286c22936ec46905c49c7994eb72ad104f6f9c02
+[D0435:P0079] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0080] sha256:1bf324f2109bcd492d36fb80ce8acf0ac344cedf668e4036b480267db7cded97
+[D0435:P0081] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0082] sha256:0bf19dcd7ec14c2e55d193badceff59412a7b1f8c404a75b36cbf225f3b6ce4a
+[D0435:P0083] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0084] sha256:9f53afec29b3cb4acd8f5ec0435509fbba5af507979e958b00430c3f08ad9d07
+[D0435:P0085] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0086] sha256:d0d8fb4071c2b0874ff0dd16656fbedcaf7e1537ec910da6d78a97798f54d414
+[D0435:P0087] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0088] sha256:cea2a2713644165f7789a58a769d1314213a522eea75fc75e0cc8909dc80035e
+[D0435:P0089] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0090] sha256:05604339cd97b759e76843624d49983d2ff9472854ef5c57933a5133443a8d67
+[D0435:P0091] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0092] sha256:50b0df248444746ffa8c7fa4e6ac48b3a5e4c981bed14fddb17394425df8a6c8
+[D0435:P0093] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0094] sha256:1cd5ce471932a2027dfa668de1588dc4f2c7a17c15096adb1e45a7c034ad55d9
+[D0435:P0095] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0096] sha256:1f41601aaf3fb6ca6d4ab5dccff78cf86eaf1a1c2000394e209123dcf0035769
+[D0435:P0097] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0098] sha256:f511f6d169fd9190f2dbee7eda21926f3dbad00afc04386973dc95bd8c433600
+[D0435:P0099] sha256:67c8d0213b0ac160c11b9c2edcedb93a75af378952e749564810e7580b279bc5
+[D0435:P0100] sha256:d25714f86699dccb23907134c2e0f94bceb61c3f4c23dde8f68bdfba0c429400
+[D0435:P0101] sha256:24330af2f11ac375c5c32f64022de5bad375c43cefa25440a027ba71109dc165
+[D0435:P0102] sha256:350379c9502f22cc769a7519f61aaf335a1fa3163b5c0ecd617aee3541c21830
+[D0435:P0103] sha256:cd34420d54b8f6f442f3798f690b10934c5eb6fc6c2a0613d51d7fd76c681d20
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (62)
+E001: «Cork, Ireland» — located in → «Stryker» | форма: actual, positive
+E002: «TOI Tech Desk» — published → «Stryker cyber attack report» | форма: actual, positive
+E003: «OrthoSpace» — acquired by Stryker in → «2019» | форма: actual, positive
+E004: «Stryker cyber attack» — affects → «mobile phones» | форма: actual, positive
+E005: «Stryker cyber attack» — affects → «Stryker» | форма: possible, positive
+E006: «wiper malware» — enters systems through → «compromised websites» | форма: actual, positive
+E007: «Stryker cyber attack» — disrupted → «Stryker Microsoft systems» | форма: actual, positive
+E008: «Bloomberg News» — reports on → «Stryker cyber attack» | форма: actual, positive
+E009: «Stryker» — acquired → «OrthoSpace» | форма: actual, positive
+E010: «Handala» — is associated with → «Iran» | форма: actual, positive
+E011: «Handala» — affected → «personal mobile phones with company work profile» | форма: actual, positive
+E012: «Stryker cyber attack» — affects → «Cork, Ireland» | форма: actual, positive
+E013: «Microsoft Windows» — affects → «wiper malware» | форма: actual, positive
+E014: «Minab» — located in → «Iran» | форма: actual, positive
+E015: «Minab» — located in → «Iran» | форма: actual, negative
+E016: «Stryker» — won contract from → «US Department of Defense» | форма: actual, positive
+E017: «Stryker» — located in → «Portage, Michigan» | форма: actual, negative
+E018: «Stryker cyber attack» — heavily impacted → «Cork, Ireland» | форма: actual, positive
+E019: «Stryker cyber attack» — occurred on → «March 11, 2026» | форма: actual, positive
+E020: «Stryker cyber attack» — affects → «mobile phones» | форма: conditional, positive
+E021: «Stryker cyber attack» — affected employees in → «Europe» | форма: actual, positive
+E022: «wiper malware» — uses → «compromised websites» | форма: actual, positive
+E023: «OrthoSpace» — part of → «Stryker» | форма: actual, positive
+E024: «wiper malware» — installed by exploiting → «software vulnerabilities» | форма: actual, positive
+E025: «wiper malware» — uses → «malicious downloads» | форма: actual, positive
+E026: «wiper malware» — uses → «phishing emails» | форма: possible, positive
+E027: «Stryker» — uses → «Microsoft Windows» | форма: actual, positive
+E028: «Stryker» — is based in → «Portage, Michigan» | форма: actual, positive
+E029: «Stryker cyber attack» — attributed to → «Handala» | форма: actual, positive
+E030: «Handala» — uses → «wiper malware» | форма: actual, positive
+E031: «Handala» — displayed logo on → «Stryker internal login pages» | форма: actual, positive
+E032: «Handala» — claimed to have wiped → «over 200,000 systems, servers, and mobile devices» | форма: actual, positive
+E033: «Stryker» — located in → «Portage, Michigan» | форма: actual, positive
+E034: «Handala» — attacked → «Stryker» | форма: actual, positive
+E035: «wiper malware» — deletes or corrupts → «files, databases, or entire drives» | форма: actual, positive
+E036: «wiper malware» — enters systems through → «phishing emails» | форма: actual, positive
+E037: «Stryker cyber attack» — affects → «Stryker» | форма: actual, positive
+E038: «wiper malware» — uses → «malicious downloads» | форма: possible, positive
+E039: «wiper malware» — uses → «phishing emails» | форма: actual, positive
+E040: «Handala» — claimed shutdown of Stryker offices in → «50-plus countries» | форма: actual, positive
+E041: «Handala» — wiped → «laptops and phones of Stryker employees» | форма: actual, positive
+E042: «Stryker cyber attack» — linked to military strike in → «Minab» | форма: actual, positive
+E043: «wiper malware» — uses → «compromised websites» | форма: possible, positive
+E044: «Stryker cyber attack» — affected employees in → «Asia» | форма: actual, positive
+E045: «Stryker cyber attack» — uses → «ransomware» | форма: unknown, positive
+E046: «Stryker» — reports on → «Stryker cyber attack» | форма: actual, positive
+E047: «Handala» — deployed → «wiper malware» | форма: actual, positive
+E048: «Stryker cyber attack» — affects → «laptops» | форма: actual, positive
+E049: «Stryker» — located in → «Cork, Ireland» | форма: actual, positive
+E050: «wiper malware» — erased data from → «Microsoft Windows environment» | форма: actual, positive
+E051: «Handala» — conducted → «Stryker cyber attack» | форма: actual, positive
+E052: «wiper malware» — affects → «Microsoft Windows» | форма: actual, positive
+E053: «Handala» — uses → «wiper malware» | форма: possible, positive
+E054: «wiper attack» — uses → «privilege escalation» | форма: actual, positive
+E055: «Stryker cyber attack» — affected employees in → «United States» | форма: actual, positive
+E056: «wiper malware» — enters systems through → «malicious downloads» | форма: actual, positive
+E057: «OrthoSpace» — located in → «Israel» | форма: actual, positive
+E058: «OrthoSpace» — is based in → «Israel» | форма: actual, positive
+E059: «OrthoSpace» — acquired by Stryker in → «2019» | форма: possible, positive
+E060: «Stryker cyber attack report» — published on → «March 12, 2026» | форма: actual, positive
+E061: «Handala» — targets → «Stryker» | форма: actual, positive
+E062: «Handala» — targeted Stryker due to connections to → «Israel» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

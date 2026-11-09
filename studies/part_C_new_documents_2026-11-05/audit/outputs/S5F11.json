@@ -1,0 +1,21 @@
+{
+ "audit_file": "S5F11",
+ "target_doc_id": "D0571",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 і P0014: посібник адаптує рекомендації, використовуючи модель DGs від SAFECode, як чинний факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: version control застосовують, щоб запобігти підробці коду; функція засобу — actual, бо порада впровадити засіб не робить рекомендацією твердження про його захисну дію."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: SAFECode разом із CIS випустив цей посібник, як здійснений факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок є в P0012, але те, що change tracking запобігає підробці, — функція засобу (actual), а не рекомендація."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: CIS разом із SAFECode випустив цей посібник, як здійснений факт."},
+  {"item_id": "E006", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: у P0012 version control запобігає підробці, а не підробка — version control."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: code signing застосовують, щоб запобігти підробці; це функція засобу, тож actual, positive."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 і P0014 називають модель DGs моделлю SAFECode («SAFECode's Development Groups (DGs) model»), як чинний стан."},
+  {"item_id": "E009", "triple_verdict": "U", "form_verdict": "—", "reason": "CISA запустила ініціативу Secure by Design (P0004), але об'єкт «Secure by Design» без уточнення можна сплутати з посібником CIS/SAFECode з подібною назвою."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок є в P0012, але те, що version control запобігає підробці, — функція засобу (actual), а не рекомендація."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує звʼязку: у P0012 change tracking запобігає підробці, тож полярність positive, а не negative."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: change tracking застосовують, щоб запобігти підробці; це функція засобу, тож actual, positive."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок є в P0012, але те, що code signing запобігає підробці, — функція засобу (actual), а не рекомендація."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: ініціативу Secure by Design запустила CISA у 2023 році, як здійснений факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004 і P0005 називають SSDF фреймворком NIST («NIST's SSDF»), як чинний стан."}
+ ]
+}

@@ -1,0 +1,101 @@
+AUDIT_FILE: R2_T02
+TARGET_DOC_ID: D0652
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0652
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://eurasiantimes.com/hinas-justice-mission-2025-drills-singled-out-himars/
+TITLE_SHA256: ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+BEGIN_DOCUMENT
+[D0652:P0001] sha256:ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+[D0652:P0002] sha256:f5e1780e47142181f61c0ceec3d2a8b58aad04c35660fd88c4171e57bd194913
+[D0652:P0003] sha256:350a4e3bca128eb76933e50fcbcc56a72a3bf62487f765d977c4a8189b943aef
+[D0652:P0004] sha256:9c07d18157103502a76812f6ba9602946eb1f86e19b63c5aecb6d96f8f4ffd81
+[D0652:P0005] sha256:7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8
+[D0652:P0006] sha256:f40ae60c857f52ef28d74583a8498ab74e724a8f1eccc1d076a0f85106a4734a
+[D0652:P0007] sha256:2fec46ce12eaf13d97f5dad8556ee45a6e20a8001dfe3418ee445458d12bf6b0
+[D0652:P0008] sha256:9e2fc72e7f97c8bcfea3fd68e0777f2cca463d4fdfb5e6292da9fe871a1d0a46
+[D0652:P0009] sha256:9ae91a2721ef8d76c8562f6284d2a17ef6a04263e6ff27c39edb3f26041b13dc
+[D0652:P0010] sha256:dbe203846cff4aa99dd96ba879082f152f5397ecfc92cf7284ee21b7cd1400b5
+[D0652:P0011] sha256:f6f6aaa7566452e7823fc119e74abaabf14ed44c303f74ef92c6364f78bce174
+[D0652:P0012] sha256:3b122ed435cc6aac48ae3e61a3888d5a4997dbad9a8cee46bd1de1e599310912
+[D0652:P0013] sha256:813ad0172d7d7bcd704d9dfedd484435e7926ec3501f76700aa129f845de14fc
+[D0652:P0014] sha256:c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c
+[D0652:P0015] sha256:e619f24d19ce3c18e8a477603418a1b01f76f03b351f0c9dc20a3d89594a235d
+[D0652:P0016] sha256:88eea6fd2e71b6d6886dac41f58c67b6febff31970c9ffa1b9918a855ddc0f83
+[D0652:P0017] sha256:717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840
+[D0652:P0018] sha256:b2ccb4df76316544e47586f4d9c4cf2fb78971c0b608f39a1ed6e5324358231c
+[D0652:P0019] sha256:9848bc7599962fd51ce89086ff096990482a1f1f52bcf4708c78987a8a4b790d
+[D0652:P0020] sha256:983f361af1b441ba4afccc156e6a9bc778fe6b4f56bddf0f2395da91653966f9
+[D0652:P0021] sha256:4fdbc2670db0a8871568e1334233eec8d27577b73e2672d9602146a220fd5609
+[D0652:P0022] sha256:2c34838c8dfc88b3c420aacda11f08e79cd12169326607fd2df0f372ee783f3c
+[D0652:P0023] sha256:146b7a757e0ec762481c096f8bf654d83505b7177b49438372509fddb968fa9a
+[D0652:P0024] sha256:4f588d664054812f67c43b6c1068d9aa30d41579e855e0f036fb13e593537198
+[D0652:P0025] sha256:8dcd954bc907849940b115c16e3393417feb5a1f0aa2eb6d66e14077d9057542
+[D0652:P0026] sha256:4e9b8c0d72ccaaec53abc0788e6399b105e64e15d5a12325d9c0c72cc5efe823
+[D0652:P0027] sha256:d434895e0c6631b7d4f629b6f4d7101beebf9168d59c1532779054e882640863
+[D0652:P0028] sha256:89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1
+[D0652:P0029] sha256:6fa076bd16d4df1eb8601a41b33e5ddf88c362c0210a4370fea748cee95b9af1
+[D0652:P0030] sha256:00d686c81b67873793dd21f98660f9fbb33aaf72aaa4048e192db0ec950e5040
+[D0652:P0031] sha256:660a4ab8f238ab6077d6c653cf24e99331682ea7a87a2fc6869406accd0f84d5
+[D0652:P0032] sha256:9f9ae237c7a0850502c1c4c59d7beb0b44a43e5b79bd57b6e4a9c3066a07a09c
+[D0652:P0033] sha256:a8e451870020cec126519fa78b3248f02ed84fe2dd2f60589674c2845980d2a7
+[D0652:P0034] sha256:d8a67d2c2add7b404eae55b1a6389a0d51fce426993e4b34a9d46a22bcdd92d3
+[D0652:P0035] sha256:becf0f14d297bd0bfe5ed4b807ca54547433d9a1fc5e0e8c15681b7c5da40732
+[D0652:P0036] sha256:f8b504512c64111a647372634cc4f81f31da792a981a8003cd8807428811dd53
+[D0652:P0037] sha256:02fefdec59233becebd80a4f2b2ab94d49356e46b3aa5979eb8a13d82b730cc7
+[D0652:P0038] sha256:be5887b9858fb10c272fd37bc9e40e74c8fb3c202a1787bf728f1eb5576b0dbf
+[D0652:P0039] sha256:215730f42ed8508141b80c08172d79c4473519b548ee971a98e299ebedbb581c
+[D0652:P0040] sha256:b319456576ecbe181ff28f02421d64c716ab8701a1e495f6972f431002842f8f
+[D0652:P0041] sha256:933409bbe1a1732bdb6d49aec9296ce3cf0869a37cc76020c0c9c4f4c8f193fa
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (16)
+W001: «HIMARS» — can fire → «ATACMS (Army Tactical Missile System)»
+W002: «HIMARS» — can conduct deep counterstrikes against → «logistics bases»
+W003: «People's Liberation Army (PLA)» — benefits from impersonating HIMARS in → «OPFOR (Opposing Force) exercises»
+W004: «ATACMS (Army Tactical Missile System)» — can strike targets → «300 kilometres away»
+W005: «unmanned vehicle mock-ups» — never resemble → «M142 HIMARS launchers»
+W006: «HIMARS» — can target → «PLA long-range rocket batteries»
+W007: «ATACMS (Army Tactical Missile System)» — could pose a threat to → «Fujian Province»
+W008: «China» — aims at blockading → «key ports and shipping lanes in Taiwan»
+W009: «GMLRS (Guided Missile Launch Rocket System)» — can hit targets over → «70 kilometres»
+W010: «HIMARS» — can target → «logistics hubs in Fujian»
+W011: «HIMARS» — can conduct deep counterstrikes against → «PLA rocket units»
+W012: «HIMARS» — can target → «ports of embarkation»
+W013: «HIMARS» — was first deployed by Ukrainian forces in → «2022»
+W014: «HIMARS» — can target → «PLA staging areas»
+W015: «HIMARS» — can conduct deep counterstrikes against → «coastal targets in Fujian»
+W016: «HIMARS» — can fire → «GMLRS (Guided Missile Launch Rocket System)»
+КІНЕЦЬ ЗАПИСІВ

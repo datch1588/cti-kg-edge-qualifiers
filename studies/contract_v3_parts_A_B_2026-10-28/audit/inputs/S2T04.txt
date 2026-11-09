@@ -1,0 +1,129 @@
+AUDIT_FILE: S2T04
+TARGET_DOC_ID: D0655
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0655
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6277775
+TITLE_SHA256: 7f38448cbeb17d6773756404aad7460e03e7f79768aaa3aede895f74ad7d2890
+BEGIN_DOCUMENT
+[D0655:P0001] sha256:7f38448cbeb17d6773756404aad7460e03e7f79768aaa3aede895f74ad7d2890
+[D0655:P0002] sha256:0ad941d71f71d5d31ca91c5b5948f280ffae6a039d66b8b2e2a6c75b65171019
+[D0655:P0003] sha256:946e2cf3152a768295fb7daf7f4787a4ee53ae6e1377e05a81fd53c06ec62aef
+[D0655:P0004] sha256:abc1fb1ded9e8f7dd294c81e9d3253ae21cf12a0e662ffc9d183f90e4e0fd82d
+[D0655:P0005] sha256:d96e3b0517e6bcdb88b3149d9be235619776621a816d089684933e0e7eed3f13
+[D0655:P0006] sha256:3bb3c9de4351f36098257828b5a87cb810af2bb1fafabb3d7c5b9b0029d25a8c
+[D0655:P0007] sha256:35798f66ffeca440edd672186930280cb207a0dc552392a5deee54c5c1e8f9c5
+[D0655:P0008] sha256:fa4942f21db5fe854cc6552dfe4e1a5f9376d29c595eb46e3483ee903b454db4
+[D0655:P0009] sha256:f58fcdd1c77fc43266413975005e45682b7d36283889aec96c7627d76aafe168
+[D0655:P0010] sha256:a166e9490bedc7b8ee6205e5076701c03885c0a91e534010e297426f1cb9a713
+[D0655:P0011] sha256:e366a06bcc27c03c5c565c3ec532b917911e378ac3ae660a695fa4b446343b3e
+[D0655:P0012] sha256:879253ad4028a9dfbf84115b303452a54f41fc4ada7dcb097cf1388f60c0940a
+[D0655:P0013] sha256:c362f0858893304a94293b569a5e38a5aef735c17c8efbe8fe176891652406f7
+[D0655:P0014] sha256:fbd250537bfd0d07db85b43fd1ab4cdaa9bf32c349082863cf61407ba6a84c97
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (52)
+E001: «MSSP Alert Top 250 for 2025» — available at → «https://www.msspalert.com/top-250-2025» | форма: actual, positive
+E002: «Ensign InfoSecurity» — provides → «managed security services for advanced threat detection, threat hunting, and incident response» | форма: actual, positive
+E003: «Ensign InfoSecurity» — provides → «architecture design and systems integration services» | форма: actual, positive
+E004: «Ensign InfoSecurity» — featured in top 10 in → «2022» | форма: actual, positive
+E005: «PIKOM Digital Excellence Awards 2025» — held in → «Malaysia» | форма: actual, positive
+E006: «Taiwan News» — published report on → «2026.01.07» | форма: possible, positive
+E007: «Chua Zong Fu» — is Executive Vice President, International Business & Commercial of → «Ensign InfoSecurity» | форма: actual, positive
+E008: «The Cybersecurity Awards 2025» — located in → «Singapore» | форма: actual, positive
+E009: «attackers» — exploits → «broader ecosystem vulnerabilities» | форма: actual, positive
+E010: «Charles Ng» — is Chief Executive Officer of → «Ensign InfoSecurity» | форма: actual, positive
+E011: «Ensign InfoSecurity» — received recognition at → «PIKOM Digital Excellence Awards 2025» | форма: actual, positive
+E012: «attackers» — uses → «AI» | форма: actual, positive
+E013: «attackers» — weaponise → «AI» | форма: actual, positive
+E014: «Agentic Security Operations Centre» — uses → «autonomous AI agents» | форма: actual, positive
+E015: «Agentic Security Operations Centre (SOC)» — integrates → «adaptive intelligence, regional threat insights, and human expertise» | форма: actual, positive
+E016: «Ensign InfoSecurity» — recognised in → «2025 MSSP Alert Top 250 Managed Security Service Providers list» | форма: actual, positive
+E017: «Agentic Security Operations Centre» — detects → «cyber threats» | форма: possible, positive
+E018: «Ensign InfoSecurity» — has website → «www.ensigninfosecurity.com» | форма: actual, positive
+E019: «attackers» — exploit → «broader ecosystem vulnerabilities» | форма: actual, positive
+E020: «MSSP Alert Top 250» — identifies → «world's leading managed security service providers» | форма: actual, positive
+E021: «Agentic Security Operations Centre (SOC)» — launched at → «GovWare 2025» | форма: actual, positive
+E022: «Agentic Security Operations Centre (SOC)» — powered by → «autonomous AI agents» | форма: actual, positive
+E023: «PIKOM Digital Excellence Awards 2025» — located in → «Malaysia» | форма: actual, positive
+E024: «Agentic Security Operations Centre» — detects → «cyber threats» | форма: actual, positive
+E025: «Ensign InfoSecurity» — provides → «Agentic Security Operations Centre» | форма: actual, positive
+E026: «Ensign InfoSecurity» — featured in top 10 in → «2024» | форма: actual, positive
+E027: «Ensign InfoSecurity» — located in → «Singapore» | форма: actual, negative
+E028: «Agentic Security Operations Centre» — uses → «adaptive AI» | форма: actual, positive
+E029: «Ensign InfoSecurity» — is highest-ranked MSSP from → «Asia Pacific» | форма: actual, positive
+E030: «Ensign InfoSecurity» — develops → «Agentic Security Operations Centre» | форма: actual, positive
+E031: «Chua Zong Fu» — leads → «International Business & Commercial» | форма: actual, positive
+E032: «International Business & Commercial» — part of → «Ensign InfoSecurity» | форма: actual, positive
+E033: «Ensign InfoSecurity» — located in → «Singapore» | форма: actual, positive
+E034: «Charles Ng» — leads → «Ensign InfoSecurity» | форма: actual, positive
+E035: «Agentic Security Operations Centre» — develops → «Ensign InfoSecurity» | форма: actual, positive
+E036: «Agentic Security Operations Centre (SOC)» — learns from → «real-world attack patterns» | форма: actual, positive
+E037: «Agentic Security Operations Centre (SOC)» — enables organisations to → «detect, triage, and respond to cyber threats at machine speed» | форма: actual, positive
+E038: «Ensign InfoSecurity» — provides → «managed security services» | форма: actual, positive
+E039: «Ensign InfoSecurity» — serves clients in → «Asia Pacific region» | форма: actual, positive
+E040: «Ensign InfoSecurity» — headquartered in → «Singapore» | форма: actual, positive
+E041: «The Cybersecurity Awards 2025» — held in → «Singapore» | форма: actual, positive
+E042: «Ensign InfoSecurity» — is → «Asia Pacific's largest pure-play cybersecurity services provider» | форма: actual, positive
+E043: «Ensign InfoSecurity» — crowned Best MNC Vendor at → «The Cybersecurity Awards 2025» | форма: actual, positive
+E044: «PR Newswire» — published announcement on → «Jan. 7, 2026» | форма: actual, positive
+E045: «Ensign InfoSecurity» — ranked 7th globally in → «2025 MSSP Alert Top 250 Managed Security Service Providers list» | форма: actual, positive
+E046: «Ensign InfoSecurity» — located in → «Asia Pacific» | форма: actual, positive
+E047: «Ensign InfoSecurity» — featured in top 10 in → «2025» | форма: actual, positive
+E048: «PIKOM Digital Excellence Awards 2025» — located in → «Malaysia» | форма: actual, negative
+E049: «Taiwan News» — published report on → «2026.01.07» | форма: actual, positive
+E050: «Ensign InfoSecurity» — provides → «cybersecurity advisory and assurance services» | форма: actual, positive
+E051: «Ensign InfoSecurity» — launched → «Agentic Security Operations Centre (SOC)» | форма: actual, positive
+E052: «Ensign InfoSecurity» — featured in top 10 in → «2023» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

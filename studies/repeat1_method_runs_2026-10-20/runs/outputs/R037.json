@@ -1,0 +1,144 @@
+{
+ "run_id": "R037",
+ "target_doc_id": "D0652",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "electronic jamming", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 196, "end": 296, "sha256": "2527dd44730ecbff3786c5791bced4a981959d6eda57015748868fe855b04f3f"}}]},
+  {"id": "n002", "label": "sensor-to-shooter", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 168, "end": 285, "sha256": "e0b3b7b2ffa992812448f5e7c8772db7293528da5e97238e3d951f209adcae19"}}]},
+  {"id": "n003", "label": "shoot-and-scoot", "entity_type": "attack_technique", "aliases": ["shoot and scoot"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0023", "start": 0, "end": 99, "sha256": "a65f97d56ed894b04aca2bb895f9a38a8ce31417fe23b27c9f255b1ea3d4ab99"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0036", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0036", "start": 0, "end": 125, "sha256": "54563f5c6d61882573e5938313afdee83cb202f34a6f2d0097788e0ab2501fe7"}}]},
+  {"id": "n004", "label": "Justice Mission 2025", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 151, "end": 261, "sha256": "c224ecb02d83a283792b0da5f9aa6f372df062a5b2a98b900d1ec5e571967a07"}}]},
+  {"id": "n005", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 0, "end": 88, "sha256": "e6c851f9e3fd37fc2329689796498a98757937e125e6a4b234296bf995cb3e7d"}}]},
+  {"id": "n006", "label": "Russia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0038", "start": 228, "end": 296, "sha256": "929a0020655582b075fcd8db906039e5d4184b1e40049fd12566a0aa6d27e1b1"}}]},
+  {"id": "n007", "label": "Taiwan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 23, "end": 149, "sha256": "54555b7d5dbad7aaa44c0f00ea0f19420af3440c7a3354e2044b43d6eba95837"}}]},
+  {"id": "n008", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0038", "start": 228, "end": 296, "sha256": "929a0020655582b075fcd8db906039e5d4184b1e40049fd12566a0aa6d27e1b1"}}]},
+  {"id": "n009", "label": "US", "entity_type": "country", "aliases": ["U.S."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0014", "start": 0, "end": 121, "sha256": "c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0001", "start": 64, "end": 120, "sha256": "4ad67a5884ad9c50a5bc3eb73263f840b437e2aa5102f365ba84ddc01348c5cf"}}]},
+  {"id": "n010", "label": "Donbas", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0030", "start": 87, "end": 212, "sha256": "79b855e8c5056ab9e67526e408801792158cfdf73317295c2c783cf24c2a3858"}}]},
+  {"id": "n011", "label": "Fujian", "entity_type": "location", "aliases": ["Fujian Province"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0026", "start": 0, "end": 143, "sha256": "59f02e6170cb2b497e782ebc4c6b1566d5d1b33436741374fc87bc32f2d9b0c3"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0025", "start": 61, "end": 137, "sha256": "3a247822477e18fed924c521a1b7ef270bdf985da576e544d2e11ec57ef317df"}}]},
+  {"id": "n012", "label": "Kherson", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0031", "start": 107, "end": 196, "sha256": "dd810f5eab3dce618f9f2786d877b6fead5fc59e5d0e0f51ee3d8b43b8b8973c"}}]},
+  {"id": "n013", "label": "Taiwan Strait", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0025", "start": 0, "end": 138, "sha256": "32c7cfd72d3d45d4b2df398861c77281b4ef0d04a2ad19f63501778702ed6cc1"}}]},
+  {"id": "n014", "label": "Biden administration", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0032", "start": 118, "end": 227, "sha256": "3db261032b5c80620c8b2e8a4b5c7c9d68ccaf5379ce37a03be317e72ee136f9"}}]},
+  {"id": "n015", "label": "CCTV", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0006", "start": 83, "end": 135, "sha256": "0a110f72efa5ac1c9128d3d385261a0d0514cd1f9e9d82a896111fd91e2ecea6"}}]},
+  {"id": "n016", "label": "Eastern Theatre Command", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 266, "end": 404, "sha256": "f05ce59bbea332563d5ba9b0d2260017b67ae0ad40960445e9b9616b0dd166e1"}}]},
+  {"id": "n017", "label": "EurAsian Times", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0027", "start": 0, "end": 66, "sha256": "bc337912d21bac19c800eb3d07fb04ffa02aeb1ed0560f16c35f1232573d9d48"}}]},
+  {"id": "n018", "label": "FocusTaiwan", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0021", "start": 120, "end": 175, "sha256": "ff466182bc305801841bd96df98a6e4f52e1ccfde9bdf5bfbac09a1c00a3a917"}}]},
+  {"id": "n019", "label": "Institute for National Defence and Security Research", "entity_type": "organization", "aliases": ["INDSR"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0021", "start": 12, "end": 118, "sha256": "1d5e2642e4f458154e59464d83b74a57d5b27365187406b2d84eddf394ff1e3b"}}]},
+  {"id": "n020", "label": "PLA", "entity_type": "organization", "aliases": ["People's Liberation Army"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 275, "end": 370, "sha256": "ea952be18f029bffd1d5afb1ad168f2793d7a4ffbb8aac038fcb6318a757a2fa"}}]},
+  {"id": "n021", "label": "Nitin J Ticku", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0027", "start": 0, "end": 66, "sha256": "bc337912d21bac19c800eb3d07fb04ffa02aeb1ed0560f16c35f1232573d9d48"}}]},
+  {"id": "n022", "label": "Su Tzu-yun", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0021", "start": 0, "end": 118, "sha256": "bc4a04d18431b87e96e77cedd503801d4d30776666c9ddf7d7e836b98476ae0b"}}]},
+  {"id": "n023", "label": "Wang Yi", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0013", "start": 0, "end": 120, "sha256": "517a1e8280ec12baa7f2812444e132628b4b1de766aef1049c4e1a847a64f65a"}}]},
+  {"id": "n024", "label": "ATACMS", "entity_type": "product", "aliases": ["Army Tactical Missile System"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0024", "start": 116, "end": 203, "sha256": "317c929ecad26ad54a14e70e6161c093ccaa12433f7fbeff276a31c6cf9e36af"}}]},
+  {"id": "n025", "label": "GMLRS", "entity_type": "product", "aliases": ["Guided Missile Launch Rocket System", "Guided Multiple Launch Rocket Systems"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0024", "start": 0, "end": 110, "sha256": "0b09eb786f4b913c4f218e983eee9b3cdd94b30005906e774dc39b63515ff51b"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0029", "start": 44, "end": 146, "sha256": "fb01bcc3b89a3d3a31144081bd40997ab6857b11e195d4c7df9c9a77e1624083"}}]},
+  {"id": "n026", "label": "HIMARS", "entity_type": "product", "aliases": ["High Mobility Attack Rocket System", "M142 HIMARS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0003", "start": 40, "end": 168, "sha256": "8ff4e3ec3d2f49811841a49debe8a9b68d7290c5050f10ac2dfb5fa5fca471ef"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0018", "start": 78, "end": 181, "sha256": "46007dd21bb2ce37402c2d24202075078467030cdf8e9618dfecb16572717e06"}}]},
+  {"id": "n027", "label": "PCL-191", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0007", "start": 72, "end": 163, "sha256": "e58a2482e445cdaf2a4bbe786d1db43fb30985e039c4d4a5071a506ea29881f7"}}]},
+  {"id": "n028", "label": "Tactical Mission Network", "entity_type": "product", "aliases": ["TMN"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 0, "end": 166, "sha256": "dfc27f6d22af117c7c6121927fd1fb65ebdac5f55960726bce1e80cccc9079b5"}}]},
+  {"id": "n029", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 225, "end": 366, "sha256": "6004b1c2964703bc8eb4e409c7428222374ddf74f104d2936b821315dc2f42b4"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n004", "target": "n005", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 0, "end": 88, "sha256": "e6c851f9e3fd37fc2329689796498a98757937e125e6a4b234296bf995cb3e7d"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 151, "end": 261, "sha256": "c224ecb02d83a283792b0da5f9aa6f372df062a5b2a98b900d1ec5e571967a07"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0001", "start": 22, "end": 82, "sha256": "e8eab72c3ec6c80d860d44a75cbb4ffcc5152bb8119e3ac8030e6fa709de35d0"}}]},
+  {"id": "e002", "source": "n004", "target": "n020", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0004", "start": 185, "end": 404, "sha256": "a58cb0bc9df2d45df1039a694f93e61ee7beed43e6a4d39943b3059fd703b150"}}]},
+  {"id": "e003", "source": "n005", "target": "n026", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "potential Taiwan contingency / invasion", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0016", "start": 0, "end": 107, "sha256": "3b03ba8aafed959bb42e4a98da0b0e735e7856b7438a7478993988d437edab0d"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0017", "start": 0, "end": 122, "sha256": "717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840"}}]},
+  {"id": "e004", "source": "n005", "target": "n026", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0003", "start": 0, "end": 129, "sha256": "7b097c93fc53e0cfaa0c8c65fa24dbb613577777b54d22ae7593837a36b4df4c"}}]},
+  {"id": "e005", "source": "n006", "target": "n026", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 296, "sha256": "544e63df9aefd02c59c93c1a40e2e7ce4aeca3c4e505d07b651155afe0eab259"}}]},
+  {"id": "e006", "source": "n006", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 296, "sha256": "544e63df9aefd02c59c93c1a40e2e7ce4aeca3c4e505d07b651155afe0eab259"}}]},
+  {"id": "e007", "source": "n007", "target": "n026", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0018", "start": 183, "end": 318, "sha256": "60af704c17a6827482f1ed540a8db3e1c6d7d7513eeba83b1339e61dfa5e735d"}}]},
+  {"id": "e008", "source": "n008", "target": "n006", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0028", "start": 0, "end": 112, "sha256": "89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 194, "sha256": "765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d"}}]},
+  {"id": "e009", "source": "n008", "target": "n006", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2022", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0029", "start": 0, "end": 281, "sha256": "28b6cc2a6e96827a59847e19fe126ff3524e61a607d1e3ec0a5359bc5821232d"}}]},
+  {"id": "e010", "source": "n008", "target": "n024", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0035", "start": 0, "end": 174, "sha256": "306b3aea4bbcff0d9620f8ecbc357778f7497742cc2d775c7230a6877f344e89"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 194, "sha256": "765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d"}}]},
+  {"id": "e011", "source": "n008", "target": "n025", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2022", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0029", "start": 0, "end": 146, "sha256": "3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539"}}]},
+  {"id": "e012", "source": "n008", "target": "n026", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0028", "start": 0, "end": 112, "sha256": "89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 194, "sha256": "765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d"}}]},
+  {"id": "e013", "source": "n008", "target": "n026", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2022", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0029", "start": 0, "end": 146, "sha256": "3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0031", "start": 0, "end": 282, "sha256": "660a4ab8f238ab6077d6c653cf24e99331682ea7a87a2fc6869406accd0f84d5"}}]},
+  {"id": "e014", "source": "n009", "target": "n024", "relation_type": "PROVIDES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "latest US arms package for Taiwan", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0014", "start": 0, "end": 121, "sha256": "c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c"}}]},
+  {"id": "e015", "source": "n009", "target": "n026", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0001", "start": 64, "end": 120, "sha256": "4ad67a5884ad9c50a5bc3eb73263f840b437e2aa5102f365ba84ddc01348c5cf"}}]},
+  {"id": "e016", "source": "n009", "target": "n026", "relation_type": "PROVIDES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "latest US arms package for Taiwan", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0014", "start": 0, "end": 121, "sha256": "c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c"}}]},
+  {"id": "e017", "source": "n009", "target": "n028", "relation_type": "PROVIDES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "latest US arms package for Taiwan", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0014", "start": 0, "end": 76, "sha256": "a01b7bf8b030159806ec8dfb6922658f11b8e505abc289bb0f65d9e329d0d817"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 0, "end": 111, "sha256": "5ed3b781f5dee0c0882e26b12cdcc3e3aed3c7b610f0c3f49e0deb06d763e312"}}]},
+  {"id": "e018", "source": "n011", "target": "n005", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0025", "start": 61, "end": 137, "sha256": "3a247822477e18fed924c521a1b7ef270bdf985da576e544d2e11ec57ef317df"}}]},
+  {"id": "e019", "source": "n014", "target": "n024", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "delivery of ATACMS to Ukraine", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0032", "start": 118, "end": 316, "sha256": "7efb375757aa16b9c91d032327b6e26e591677e982de970764ec1f50c79892eb"}}]},
+  {"id": "e020", "source": "n015", "target": "n004", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0006", "start": 0, "end": 136, "sha256": "a447384779547a9e7cf6c0aa1de2802348f8883d0e9b4b668148b76049386d3d"}}]},
+  {"id": "e021", "source": "n020", "target": "n007", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0005", "start": 0, "end": 145, "sha256": "7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8"}}]},
+  {"id": "e022", "source": "n020", "target": "n007", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "possible PLA invasion of Taiwan", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0003", "start": 0, "end": 92, "sha256": "966e78c847e1d827de5bf7fdcc329a0a03c4b01d5627726971f3d0dce3b95290"}}]},
+  {"id": "e023", "source": "n020", "target": "n026", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0005", "start": 0, "end": 145, "sha256": "7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8"}}]},
+  {"id": "e024", "source": "n020", "target": "n027", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Chinese state media", "event_time": "late December 2025", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0007", "start": 0, "end": 164, "sha256": "2fec46ce12eaf13d97f5dad8556ee45a6e20a8001dfe3418ee445458d12bf6b0"}}]},
+  {"id": "e025", "source": "n021", "target": "n017", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0027", "start": 0, "end": 66, "sha256": "bc337912d21bac19c800eb3d07fb04ffa02aeb1ed0560f16c35f1232573d9d48"}}]},
+  {"id": "e026", "source": "n022", "target": "n019", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0021", "start": 0, "end": 118, "sha256": "bc4a04d18431b87e96e77cedd503801d4d30776666c9ddf7d7e836b98476ae0b"}}]},
+  {"id": "e027", "source": "n026", "target": "n003", "relation_type": "USES", "modality": "possible", "polarity": "positive", "attribution": "the experts", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0023", "start": 0, "end": 178, "sha256": "146b7a757e0ec762481c096f8bf654d83505b7177b49438372509fddb968fa9a"}}]},
+  {"id": "e028", "source": "n026", "target": "n024", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0024", "start": 0, "end": 204, "sha256": "4f588d664054812f67c43b6c1068d9aa30d41579e855e0f036fb13e593537198"}},
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0037", "start": 79, "end": 194, "sha256": "765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d"}}]},
+  {"id": "e029", "source": "n026", "target": "n025", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0024", "start": 0, "end": 110, "sha256": "0b09eb786f4b913c4f218e983eee9b3cdd94b30005906e774dc39b63515ff51b"}}]},
+  {"id": "e030", "source": "n028", "target": "n002", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 0, "end": 223, "sha256": "c51fdacdce8c0c098a4a7e2d69e3474f6d0cd03fc39261974ee3b2415e6472db"}}]},
+  {"id": "e031", "source": "n028", "target": "n029", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0652", "paragraph_id": "D0652:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0652:P0015", "start": 17, "end": 331, "sha256": "9b74aa78c3d4985ee003f9a3176aeb1afdfd13a567827fd73bd7769eb90bb8f1"}}]}
+ ],
+ "context_passages_used": []
+}

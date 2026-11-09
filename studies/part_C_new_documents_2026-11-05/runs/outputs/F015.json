@@ -1,0 +1,199 @@
+{
+ "run_id": "F015",
+ "target_doc_id": "D0059",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "degrading", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0022", "start": 0, "end": 131, "sha256": "e9022aab9260422fe7937d95826a0301888b012eb09549b7672cc8a15afc4ab2"}}
+  ]},
+  {"id": "n002", "label": "electromagnetic warfare", "entity_type": "attack_technique", "aliases": ["EW"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0008", "start": 158, "end": 292, "sha256": "66b26b3590c0369c8c93650f9144e711dfc623e4632f82c6f6dba40a4d9dc74a"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 77, "end": 164, "sha256": "6d9e76e27fda55a79307b7255ddc7293d4311b32551248eee045b73fdbef9618"}}
+  ]},
+  {"id": "n003", "label": "jamming", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0025", "start": 0, "end": 124, "sha256": "32fee44facd20bf8452f92b910891a7ea08c9af8424540d1257c53511c77a879"}}
+  ]},
+  {"id": "n004", "label": "spoofing WiFi passwords", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 191, "end": 342, "sha256": "07f32cbff40789ba9e12ef56258ceb7f4d691f8a8d59113a0589c6ed48bb4d14"}}
+  ]},
+  {"id": "n005", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 167, "end": 189, "sha256": "97fa62db3ae64c9684547052c17fbd7c197e6b04142fc9f57094e1109d6f89ca"}}
+  ]},
+  {"id": "n006", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0017", "start": 0, "end": 49, "sha256": "7e4f8fcfc192bbb7ea6a1d1176a0941acb605bda11cdf5589f4c876eb7db21b1"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0027", "start": 0, "end": 99, "sha256": "e59476a00856f3de9f67774eda770bcc51da8fe2b1f6ad96ea9fdf22967a1452"}}
+  ]},
+  {"id": "n007", "label": "Ivy Mass", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 0, "end": 106, "sha256": "a564475c147020f39d40bac1bbe5598d79654dbc5b6ce68fb61bf5963641d3b8"}}
+  ]},
+  {"id": "n008", "label": "Project Convergence", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0045", "start": 45, "end": 174, "sha256": "6b0ceff3265a6fe6a134da4f099a45c99e2d597ead59c7d5dd66363600367abb"}}
+  ]},
+  {"id": "n009", "label": "Colorado", "entity_type": "location", "aliases": ["Colo."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0029", "start": 275, "end": 366, "sha256": "211e7c1ef7b4f3a32159fb85aa0d3733f68cac358428935796edb5e09c6b26e0"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0005", "start": 0, "end": 33, "sha256": "df7eaefc1b9b5d21d6d04349721bbf6f3d1f2ac9b1139d349fe3e8c7e897b9d2"}}
+  ]},
+  {"id": "n010", "label": "Pacific", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 77, "end": 164, "sha256": "6d9e76e27fda55a79307b7255ddc7293d4311b32551248eee045b73fdbef9618"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0045", "start": 248, "end": 303, "sha256": "9a3ac3d0a791606b68d193f54ae51b3428c1fb4c986869a970ca21ca619e7959"}}
+  ]},
+  {"id": "n011", "label": "Piñon Canyon Maneuver Site", "entity_type": "location", "aliases": ["PIÑON CANYON MANEUVER SITE"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0029", "start": 275, "end": 366, "sha256": "211e7c1ef7b4f3a32159fb85aa0d3733f68cac358428935796edb5e09c6b26e0"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0005", "start": 0, "end": 33, "sha256": "df7eaefc1b9b5d21d6d04349721bbf6f3d1f2ac9b1139d349fe3e8c7e897b9d2"}}
+  ]},
+  {"id": "n012", "label": "2-23 Infantry", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0018", "start": 84, "end": 179, "sha256": "0e2ccd71b6d3917d7113b7702a64c16710aa65aef4b8c69896a774ce81ba1435"}}
+  ]},
+  {"id": "n013", "label": "2nd Brigade", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 156, "end": 267, "sha256": "32d43a7dd835bb3d66b63852580be9335e6c13849683c80128597bd971f208d9"}}
+  ]},
+  {"id": "n014", "label": "4th Infantry Division", "entity_type": "organization", "aliases": ["4th ID"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0012", "start": 105, "end": 171, "sha256": "06e8f3dc17bd50c091dd6b58657cb7df3c7e6dda5cc8b0c7bf77581e5a342912"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0032", "start": 92, "end": 126, "sha256": "5b8489e3d620ecee4178c0f767f97d7c8df6683b8866f158621bf826efa8c2b2"}}
+  ]},
+  {"id": "n015", "label": "Command and Control Future Capability Directorate", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0011", "start": 143, "end": 261, "sha256": "82b224a8e0726e094fdacdb9a8498305e6e65b7a31366fd666e2bdb957ca3ff9"}}
+  ]},
+  {"id": "n016", "label": "cyber and electromagnetic activities section", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 156, "end": 267, "sha256": "32d43a7dd835bb3d66b63852580be9335e6c13849683c80128597bd971f208d9"}}
+  ]},
+  {"id": "n017", "label": "cyber red team units", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 191, "end": 342, "sha256": "07f32cbff40789ba9e12ef56258ceb7f4d691f8a8d59113a0589c6ed48bb4d14"}}
+  ]},
+  {"id": "n018", "label": "multidomain operations team", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 334, "end": 444, "sha256": "4945d79111d148bf8c0ccd718f42737234c61695b5416bb976ba0320305b7576"}}
+  ]},
+  {"id": "n019", "label": "OPFOR", "entity_type": "organization", "aliases": ["opposing force", "red team", "red cell"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0018", "start": 0, "end": 179, "sha256": "5d50326dacf8008ef33428773afa348ddc34e98d5abf4067efc9e2cda6b20197"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0022", "start": 0, "end": 131, "sha256": "e9022aab9260422fe7937d95826a0301888b012eb09549b7672cc8a15afc4ab2"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 222, "end": 325, "sha256": "3ff06b6b597bbb0e4fa6698ddc8f1b4dccf97f918e6de90bacf666eb835f1963"}}
+  ]},
+  {"id": "n020", "label": "Threat Systems Management Office", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 334, "end": 444, "sha256": "4945d79111d148bf8c0ccd718f42737234c61695b5416bb976ba0320305b7576"}}
+  ]},
+  {"id": "n021", "label": "US Army", "entity_type": "organization", "aliases": ["Army", "U.S. Army"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0008", "start": 158, "end": 292, "sha256": "66b26b3590c0369c8c93650f9144e711dfc623e4632f82c6f6dba40a4d9dc74a"}}
+  ]},
+  {"id": "n022", "label": "dispersion", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0031", "start": 0, "end": 196, "sha256": "ec132b118006fd92c2837e087b3a5dff07516c194b5ba615f28ed943d5c5d694"}}
+  ]},
+  {"id": "n023", "label": "Jacob Wiley", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 156, "end": 267, "sha256": "32d43a7dd835bb3d66b63852580be9335e6c13849683c80128597bd971f208d9"}}
+  ]},
+  {"id": "n024", "label": "John Brasher", "entity_type": "person", "aliases": ["Brasher", "Brahser"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0018", "start": 84, "end": 179, "sha256": "0e2ccd71b6d3917d7113b7702a64c16710aa65aef4b8c69896a774ce81ba1435"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0025", "start": 0, "end": 124, "sha256": "32fee44facd20bf8452f92b910891a7ea08c9af8424540d1257c53511c77a879"}}
+  ]},
+  {"id": "n025", "label": "Michael Kalootian", "entity_type": "person", "aliases": ["Kalootian", "Kaloostian"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0011", "start": 143, "end": 261, "sha256": "82b224a8e0726e094fdacdb9a8498305e6e65b7a31366fd666e2bdb957ca3ff9"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0020", "start": 0, "end": 98, "sha256": "f6e0fab8a72a244c95af18e906f683652e01306303dd006e84502c52337858ab"}}
+  ]},
+  {"id": "n026", "label": "Patrick Ellis", "entity_type": "person", "aliases": ["Ellis"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0012", "start": 105, "end": 171, "sha256": "06e8f3dc17bd50c091dd6b58657cb7df3c7e6dda5cc8b0c7bf77581e5a342912"}}
+  ]},
+  {"id": "n027", "label": "Troy Bedsole", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 334, "end": 444, "sha256": "4945d79111d148bf8c0ccd718f42737234c61695b5416bb976ba0320305b7576"}}
+  ]},
+  {"id": "n028", "label": "Terrestrial Layer Manpack", "entity_type": "product", "aliases": ["TLS", "TLS Manpack", "Manpack"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0040", "start": 74, "end": 232, "sha256": "741c9564e7c1f5081ba0553890ee5b2a5fc3b56d495e291c36b8255487df04a6"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 1, "end": 44, "sha256": "488fa6eff76674bcc5c2ba530118bfd64fd2df3b5998c3b7444079a809996594"}}
+  ]},
+  {"id": "n029", "label": "counter-jamming gear", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0007", "start": 184, "end": 291, "sha256": "97abde78588a61dbee8c5927da89a46397c17e43f434a364b20f62c19f900b11"}}
+  ]},
+  {"id": "n030", "label": "direction finding", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0040", "start": 74, "end": 232, "sha256": "741c9564e7c1f5081ba0553890ee5b2a5fc3b56d495e291c36b8255487df04a6"}}
+  ]},
+  {"id": "n031", "label": "Next Generation Command and Control", "entity_type": "technology", "aliases": ["NGC2", "Next-Generation Command and Control"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 107, "end": 220, "sha256": "7685412ef812658300e8d7d2f352348e337c559737429db0f5042078e07c9153"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0029", "start": 457, "end": 514, "sha256": "b3bdeb0a32586c2bf7c98f613bbc448b651f654ef0f77ea0da7c5fa0a7e110b5"}}
+  ]},
+  {"id": "n032", "label": "MAMBA-E", "entity_type": "tool", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 157, "end": 259, "sha256": "f9d18b509e7fed810d2d2de30bdc01f63ce4dc6954db4475dc7083a3958a1bfa"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n007", "target": "n011", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0029", "start": 275, "end": 366, "sha256": "211e7c1ef7b4f3a32159fb85aa0d3733f68cac358428935796edb5e09c6b26e0"}}
+  ]},
+  {"id": "e002", "source": "n011", "target": "n009", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0029", "start": 275, "end": 366, "sha256": "211e7c1ef7b4f3a32159fb85aa0d3733f68cac358428935796edb5e09c6b26e0"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0005", "start": 0, "end": 33, "sha256": "df7eaefc1b9b5d21d6d04349721bbf6f3d1f2ac9b1139d349fe3e8c7e897b9d2"}}
+  ]},
+  {"id": "e003", "source": "n016", "target": "n013", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 187, "end": 260, "sha256": "906cb62ef9a343bc8230bb526f5dfe0305ba0da9245cd957ce99d249ad899a78"}}
+  ]},
+  {"id": "e004", "source": "n017", "target": "n004", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 191, "end": 342, "sha256": "07f32cbff40789ba9e12ef56258ceb7f4d691f8a8d59113a0589c6ed48bb4d14"}}
+  ]},
+  {"id": "e005", "source": "n018", "target": "n020", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 334, "end": 444, "sha256": "4945d79111d148bf8c0ccd718f42737234c61695b5416bb976ba0320305b7576"}}
+  ]},
+  {"id": "e006", "source": "n019", "target": "n021", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0002", "start": 0, "end": 80, "sha256": "140ef3e6d4704cfa4fe449b2df023c45aa6796b76bfb6d78f109ff2d72f381bd"}}
+  ]},
+  {"id": "e007", "source": "n019", "target": "n014", "relation_type": "TARGETS", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 269, "end": 408, "sha256": "7da5561de6b643e64e49361e1f268a86e24b07d80c645f60d3a41ea703ae7028"}}
+  ]},
+  {"id": "e008", "source": "n019", "target": "n001", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0022", "start": 0, "end": 131, "sha256": "e9022aab9260422fe7937d95826a0301888b012eb09549b7672cc8a15afc4ab2"}}
+  ]},
+  {"id": "e009", "source": "n019", "target": "n003", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 269, "end": 408, "sha256": "7da5561de6b643e64e49361e1f268a86e24b07d80c645f60d3a41ea703ae7028"}}
+  ]},
+  {"id": "e010", "source": "n019", "target": "n022", "relation_type": "USES", "attribution": "John Brasher", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0028", "start": 118, "end": 165, "sha256": "4255a8c465b53c7e2b309bc9b0d242bc57ace7dca0560c1e54bb936366e98f4c"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0028", "start": 170, "end": 313, "sha256": "508cf849097795c874dcdf36f3ff4d2047c696316655e1f93e797e85c9eecf32"}}
+  ]},
+  {"id": "e011", "source": "n021", "target": "n031", "relation_type": "DEVELOPS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0009", "start": 107, "end": 220, "sha256": "7685412ef812658300e8d7d2f352348e337c559737429db0f5042078e07c9153"}}
+  ]},
+  {"id": "e012", "source": "n021", "target": "n002", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 9, "end": 164, "sha256": "ec725ba529343ade4842eb107bc36f2858db29ce5fa122f0a26f2f3ae1fea628"}}
+  ]},
+  {"id": "e013", "source": "n021", "target": "n003", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0001", "start": 11, "end": 58, "sha256": "7b02b3b70f0b47e111bfc1705f46e44cf8a32143206417be5ea27e6d6f76bf72"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0010", "start": 0, "end": 159, "sha256": "c077ad39b3265eb2862053c29247027282cd5bde049e74e42c2cac58a0f443d2"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0013", "start": 9, "end": 164, "sha256": "ec725ba529343ade4842eb107bc36f2858db29ce5fa122f0a26f2f3ae1fea628"}}
+  ]},
+  {"id": "e014", "source": "n021", "target": "n032", "relation_type": "USES", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 157, "end": 259, "sha256": "f9d18b509e7fed810d2d2de30bdc01f63ce4dc6954db4475dc7083a3958a1bfa"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 445, "end": 555, "sha256": "c6566ccc91f4fa998c6a155add590c8147ba1046b466f1c3092835673575be92"}}
+  ]},
+  {"id": "e015", "source": "n023", "target": "n016", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0041", "start": 156, "end": 267, "sha256": "32d43a7dd835bb3d66b63852580be9335e6c13849683c80128597bd971f208d9"}}
+  ]},
+  {"id": "e016", "source": "n024", "target": "n012", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0018", "start": 84, "end": 179, "sha256": "0e2ccd71b6d3917d7113b7702a64c16710aa65aef4b8c69896a774ce81ba1435"}}
+  ]},
+  {"id": "e017", "source": "n024", "target": "n019", "relation_type": "LEADS", "attribution": "", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0018", "start": 84, "end": 179, "sha256": "0e2ccd71b6d3917d7113b7702a64c16710aa65aef4b8c69896a774ce81ba1435"}}
+  ]},
+  {"id": "e018", "source": "n025", "target": "n015", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0011", "start": 143, "end": 261, "sha256": "82b224a8e0726e094fdacdb9a8498305e6e65b7a31366fd666e2bdb957ca3ff9"}}
+  ]},
+  {"id": "e019", "source": "n026", "target": "n014", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0012", "start": 105, "end": 171, "sha256": "06e8f3dc17bd50c091dd6b58657cb7df3c7e6dda5cc8b0c7bf77581e5a342912"}},
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0032", "start": 92, "end": 126, "sha256": "5b8489e3d620ecee4178c0f767f97d7c8df6683b8866f158621bf826efa8c2b2"}}
+  ]},
+  {"id": "e020", "source": "n027", "target": "n018", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0014", "start": 334, "end": 444, "sha256": "4945d79111d148bf8c0ccd718f42737234c61695b5416bb976ba0320305b7576"}}
+  ]},
+  {"id": "e021", "source": "n028", "target": "n003", "relation_type": "ENABLES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0040", "start": 74, "end": 232, "sha256": "741c9564e7c1f5081ba0553890ee5b2a5fc3b56d495e291c36b8255487df04a6"}}
+  ]},
+  {"id": "e022", "source": "n028", "target": "n030", "relation_type": "ENABLES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0040", "start": 74, "end": 232, "sha256": "741c9564e7c1f5081ba0553890ee5b2a5fc3b56d495e291c36b8255487df04a6"}}
+  ]},
+  {"id": "e023", "source": "n029", "target": "n003", "relation_type": "MITIGATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0007", "start": 184, "end": 291, "sha256": "97abde78588a61dbee8c5927da89a46397c17e43f434a364b20f62c19f900b11"}}
+  ]},
+  {"id": "e024", "source": "n031", "target": "n003", "relation_type": "DETECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0026", "start": 35, "end": 238, "sha256": "7e11c2118c21f3db1081975cb2bb0cb44a40616c37b9a2624312afb9a14cd483"}}
+  ]},
+  {"id": "e025", "source": "n031", "target": "n022", "relation_type": "ENABLES", "attribution": "John Brasher", "event_time": "for several weeks in May", "event_scope": "Ivy Mass exercise", "evidence": [
+   {"role": "TARGET", "doc_id": "D0059", "paragraph_id": "D0059:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0059:P0031", "start": 0, "end": 196, "sha256": "ec132b118006fd92c2837e087b3a5dff07516c194b5ba615f28ed943d5c5d694"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

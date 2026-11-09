@@ -1,0 +1,109 @@
+AUDIT_FILE: S5F34
+TARGET_DOC_ID: D0256
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0256
+PUBLICATION_DATE: 2026-04-24
+SOURCE_URL: https://www.19fortyfive.com/2026/04/locked-and-loaded-the-u-s-military-could-get-a-massive-amount-of-new-b-21-bombers-f-47-and-f-a-xx-fighters/
+TITLE_SHA256: ace752988a63591bdf3ef754eb080254887a508737b2a81edaf6c0e0cbc21491
+BEGIN_DOCUMENT
+[D0256:P0001] sha256:ace752988a63591bdf3ef754eb080254887a508737b2a81edaf6c0e0cbc21491
+[D0256:P0002] sha256:6e9c45db496597f617f2d45eb47a5ea6250af512bb982c41c42df18c3bdf6ebf
+[D0256:P0003] sha256:7cec69d6eceaaf6f51c2004f587d3d993a51e14c080d12313088b6f66af27dd5
+[D0256:P0004] sha256:bcf533765528bf70228cb53212a0574ad2536c05593582239e8153388d3e0fd7
+[D0256:P0005] sha256:cd14d74ba2281281a7ed54ce9f1ca007ab902b21a8d718bdf71ed1505b7e4743
+[D0256:P0006] sha256:3ee3931ced196d50a48958868e6394033b4ab60f502aa19cf4ad102ce04cdac5
+[D0256:P0007] sha256:9393a068b085bcf988b6eb14a73dd41121b8c3e6f5194026c8dc1d87e908a089
+[D0256:P0008] sha256:d2a36270011951095704fb572469e59d323ec8b7ea103a8aa2fa30b936645ab1
+[D0256:P0009] sha256:8ffd39f7299bbb94a656ca9e5744e8832c54c704e56df756e6905347176d51e2
+[D0256:P0010] sha256:facef708ff5fc142b8980137eb464cc50cbd421428d5978849ebe173fcb20115
+[D0256:P0011] sha256:e5a6ffe5b2524a3a82dd13d30346f9cc48198572b614365360a75bfc37f82a2f
+[D0256:P0012] sha256:564a1fad475df4452b5a79c3e4c787476655ff43ad4abdd78a624ce15e778d25
+[D0256:P0013] sha256:b964287f3d879d5daa6589b15af38b04583def0f882732bd9d8cd74487510727
+[D0256:P0014] sha256:70bef246406587726fc0b3ff27bfb46e0026c877f54fde7f8de588cf99aa1d44
+[D0256:P0015] sha256:812b3d12e95256897399e774913b4eb633b8290bfca6bfaa7cd0a1a25928d60c
+[D0256:P0016] sha256:1ab29936b7c63424ae59020ceb531c65e045d635fe77a4c653ff6234a8bcc752
+[D0256:P0017] sha256:b5f72c1651a9fb781cfd3166eabd23aabd26f783cdaabc1193f78b0a1611eab9
+[D0256:P0018] sha256:8b824fbbe808bef98dcb97d73397b504b0cec4dd935c140f685db97ad4082f32
+[D0256:P0019] sha256:fef99b3e7107a458cc9a29aa4850675ea329ce3c87e5befd37f5a02249d2d5f4
+[D0256:P0020] sha256:837d7ee791487941be70327f34d588fcce284e636676b4dee6c72895fda70395
+[D0256:P0021] sha256:a0c6c7da49b57857037f9602bb45964aaac647446a5b5d75d925b78f2cfa488f
+[D0256:P0022] sha256:6c43b0145263aef55bacf659b972e72ad1281978dedf2683c5b0e3fce877b759
+[D0256:P0023] sha256:9b7befa92d3407f51421620421cb738604fbf6854ea865ce80bc2cb46ec3f440
+[D0256:P0024] sha256:5462e7cd91d1f9a1e0350a35587e5a0ba314db41d938aefd4a43e186374f631a
+[D0256:P0025] sha256:ff97b29ea8f9a222d953f71b4e5cf8739538cc7144cd33b19df2538a81f43adb
+[D0256:P0026] sha256:2a0b6e312a354815129f3f441f35bd816af3f971fd59d74fb39fef7460308ea5
+[D0256:P0027] sha256:f92c70ca67430daf34c9b29b1f0f1a4fe10747bef1d128381675fbf3620626dc
+[D0256:P0028] sha256:14adc66e9f4da8bbe29345327868c83a291eec07d3b67d97d0f8127290672aa9
+[D0256:P0029] sha256:f51a774db72a97b0aa230a928c387c4a3843b42545dd86c5b787bfc8ac44eee0
+[D0256:P0030] sha256:a9b5006583c04b3c5cbeefa6a93ee4e40916e798cefa9286bc29d4d32e926dbd
+[D0256:P0031] sha256:d0f294ed1d8364d2b76a5ec117302352406711fded1391b69777799abcd9ecf0
+[D0256:P0032] sha256:2c2f41408d3887d6ea80efc078b4187be557319300b01f961ee79efcbc95839d
+[D0256:P0033] sha256:7f7d5640b0dd04c2c8a616c23291e5844713307d309b71c95866bac59b9ee4ff
+[D0256:P0034] sha256:ae7fbc7601b7d45831ae7b27d0c0101b5a0fb082ec28aa53a4e6324791c1efd5
+[D0256:P0035] sha256:1f83e8bd9440561f25f9251cf274a8a1f6ddddca5b8cb7d67cd93241b9b1f756
+[D0256:P0036] sha256:f7c6e6017a248544a37c2a841cc58e1cb411b1dbe21312bb83e73b175917e0ad
+[D0256:P0037] sha256:df7f77934125b0f1e7182a1d223ef12c1792e4bcc92cbd7046da75710baf3eeb
+[D0256:P0038] sha256:fc0911b499a327cc4924963a8c02536086a92f591e654c3de53160c632d6b258
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (8)
+E001: «United States» — affects → «cyber threats» | форма: actual, positive
+E002: «Boeing» — develops → «F-47» | форма: actual, positive
+E003: «Northrop Grumman» — develops → «B-21 Raider» | форма: actual, positive
+E004: «cyber threats» — affects → «United States» | форма: actual, positive
+E005: «Iran war» — targets → «Iran» | форма: actual, positive
+E006: «cybersecurity» — protects → «critical infrastructure» | форма: actual, positive
+E007: «cybersecurity» — protects → «critical infrastructure» | форма: planned, positive
+E008: «cyber threats» — affects → «United States» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ

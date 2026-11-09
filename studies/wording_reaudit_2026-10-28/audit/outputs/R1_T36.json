@@ -1,0 +1,15 @@
+{
+ "audit_file": "R1_T36",
+ "target_doc_id": "D0166",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає керівництво CISA як чинний факт, а в D0166:P0012 і D0166:P0016 спільну оперативну групу лише передбачає законопроєкт, який Сенат ще має ухвалити, тож це запланований або умовний зв'язок, а не actual."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання стверджує, що оперативна група вже виявляє Volt Typhoon і реагує на нього, а в D0166:P0012 це лише мета групи, яку створить ще не ухвалений законопроєкт (D0166:P0016), тобто зв'язок запланований, а не actual."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне («never»), а D0166:P0005 стверджує, що «Communist China is constantly prodding U.S. security», тобто зв'язок позитивний."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0009 атаку CCP на фінансові установи подано як гіпотетичний сценарій загрози («If the CCP attacked…»), що відповідає формулюванню «could attack»."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0005 Salt Typhoon прямо названо «CCP-backed groups of hackers», тобто подано як факт, що відповідає формулюванню без маркерів."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає щорічні звіти CISA Конгресу як чинну практику, а в D0166:P0013 це лише вимога ще не ухваленого законопроєкту (D0166:P0016), тобто запланований або умовний зв'язок."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 кібератаку CCP на енергетику й водопостачання подано як можливу загрозу («imagine… were able to launch a cyber-attack and target your power and water»), що відповідає «could»."},
+  {"item_id": "W008", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 вимкнення інтернету подано як гіпотетичну можливість CCP («were able to… turn off your internet»), що відповідає «could turn off»."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 блокування банківських рахунків подано як гіпотетичну можливість CCP («were able to… block your bank accounts»), що відповідає «could block»."}
+ ]
+}

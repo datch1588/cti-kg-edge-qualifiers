@@ -1,0 +1,128 @@
+AUDIT_FILE: S5F02
+TARGET_DOC_ID: D0625
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0625
+PUBLICATION_DATE: 2026-01-15
+SOURCE_URL: https://nationalinterest.org/blog/techland/harnessing-ai-to-move-from-threat-to-threat-reduction
+TITLE_SHA256: 275b67fddc33eb8d6ed33c1cf676571952a3f1127508fe29342ab0c67da15bef
+BEGIN_DOCUMENT
+[D0625:P0001] sha256:275b67fddc33eb8d6ed33c1cf676571952a3f1127508fe29342ab0c67da15bef
+[D0625:P0002] sha256:9f9c705b984d771f5fc5cba793674dbe6453b4c8ceddd992d5feef09c91a6572
+[D0625:P0003] sha256:b35114312ab52d6fe10dfb0025b2ad127951f11f4ad7ccfb20c4a2fba93b3ca1
+[D0625:P0004] sha256:c3e1f40a7e01e0aeb9ec9210c17254835e7c5eced1bc0564419b035f91414eea
+[D0625:P0005] sha256:bd508317d553d8af774937a4228c81eacc019c549f4d6df3673387c9658dd949
+[D0625:P0006] sha256:c23b557d79cefcfbcadba1d4a2882ddfc01a1b7b87e28246f22c23294a69c3bc
+[D0625:P0007] sha256:a6fbe8594d792ab115bb2af3e196b6331ed9ef079a69cf05bd419befa1a8e672
+[D0625:P0008] sha256:4117455a97fddaff1d42f6b3cf4cc307ba94453ec14be3fb63dcc2b73781f938
+[D0625:P0009] sha256:7e6c7fda574ad660ed94501c6147e3d493150a416c6bd686d25e37fb511ecaf5
+[D0625:P0010] sha256:e2c38717ac56ebe695825890f1774eb05617e4c31c9f279309014b79d0e5b685
+[D0625:P0011] sha256:48026eba7f2e5820d12a414b91ad964f6f5f2b210f6a4eddecee19f00d01835b
+[D0625:P0012] sha256:d80a1bcf926bd0514ecf4e6f677c0eba7e8ec37915f65b60a6090e7de7db388a
+[D0625:P0013] sha256:158957d7bd5b762a036b2cfe4e8d2c9c8cb8aa29e836302acdeebc485d721f9d
+[D0625:P0014] sha256:c71e113187635260ffe9a6c23e0eec3c90271d90ad27de4ce03961e7524fc969
+[D0625:P0015] sha256:913b3c656306e53a2b4f8bf2bab25c40e38167e08af1cce4671bc138f83c96ad
+[D0625:P0016] sha256:720805d242a7bc99977c9d11c9ac7db6628f9cabdbb6fc4ce860b7705d8f8b21
+[D0625:P0017] sha256:657559718b16b58c2b525612eb8f47cf1196c0267e7b1dc255360f98db4cb9bd
+[D0625:P0018] sha256:84a05f7a8416403ad9e517db8bd63f45425b5de103338a2a65d9811752e590a5
+[D0625:P0019] sha256:7f1e41688b7f68b0452c259dd23b9fb4071b0ddcbdc8a801f7e06cb36842133c
+[D0625:P0020] sha256:5ae14da55f9bc9a000d89354465c96dcbff351e8ae79099a10e8f00f8f27eddf
+[D0625:P0021] sha256:b6b8af6562a9a6530c05c04a5389f0eea5e7b04213c8475043dc64d87e538ce6
+[D0625:P0022] sha256:d7b522e679e9b64fd5a089c5c759942b50ec4b9fd39a37f268f10593c97cf613
+[D0625:P0023] sha256:40672544d6f22e1933d40c9457eb9fb3b7d919b71e5375095716872d4b8060a9
+[D0625:P0024] sha256:bfdbbe9bc03c06c14650b35c354ae0dc02b7a093941b1825a03239ed7cd25275
+[D0625:P0025] sha256:bab72f3019d61fe19661ee5472455884cabae198ed528403c10c5a57d76eb4d1
+[D0625:P0026] sha256:27682e6f3183f270857a08aa6391ad48101c07b9c635c8a804627d1289f884a2
+[D0625:P0027] sha256:9da50b35a84f73eaa959d2f90dfeff79b23d90e958f4f9c331419368e31104a1
+[D0625:P0028] sha256:8f46e6ef0e8ebd5f2a969a6ecb08331615b23a07819b787a5aa2fb832bbb90f8
+[D0625:P0029] sha256:09e3edb5fd4503f106d98a12fabf520e7c199fa27451fc3164721c479253d2d2
+[D0625:P0030] sha256:f632007bb08b0888a7c162b1b25f8842492030cda0aaa8bcf69b0db50f6dc399
+[D0625:P0031] sha256:e23ab5aab5c5ac80587b88614f8be12621c8c132a8ac33825a93620f566245ee
+[D0625:P0032] sha256:0a2a5c48173d414e6f02ef02e70091438eaf9a79a7af896798462ae594b4acbe
+[D0625:P0033] sha256:377306b84aad467cd3b067ec315fd28faa3a4c509441cfa09d8be4e4061f1dc7
+[D0625:P0034] sha256:a70d03c151f765ff699c179f16fa3fcc7d96d9dee261423e3b9315755eabdfcb
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (31)
+E001: «Cindy Vestergaard» — leads → «Blockchain in Practice program» | форма: actual, positive
+E002: «Europol» — reports on → «prompt engineering techniques» | форма: actual, positive
+E003: «Internet Corporation for Assigned Names and Numbers» — uses → «AI-driven translation tools» | форма: actual, positive
+E004: «prompt engineering techniques» — targets → «LLM guardrails» | форма: actual, positive
+E005: «Copenhagen» — located in → «Denmark» | форма: actual, positive
+E006: «Microsoft» — develops → «Frontier Governance Framework» | форма: actual, positive
+E007: «Converging Technologies and Global Security program» — part of → «Stimson Center» | форма: actual, positive
+E008: «Meta» — member of → «Frontier Model Forum» | форма: actual, positive
+E009: «AI Safety Summit» — located in → «Seoul» | форма: actual, positive
+E010: «OpenAI» — member of → «Frontier Model Forum» | форма: actual, positive
+E011: «Google» — member of → «Frontier Model Forum» | форма: actual, positive
+E012: «Global Partnership Against the Spread of Weapons and Materials of Mass Destruction» — mitigates → «weapons of mass destruction» | форма: actual, positive
+E013: «Europol» — reports on → «CBRN threats» | форма: actual, positive
+E014: «Aerosol Vapor and Chemical Agent Detector» — detects → «chemical agents» | форма: actual, positive
+E015: «Seoul» — located in → «South Korea» | форма: actual, negative
+E016: «International Atomic Energy Agency» — uses → «Artificial intelligence» | форма: actual, positive
+E017: «OpenAI» — develops → «Preparedness Framework» | форма: actual, positive
+E018: «Danish Institute for International Studies» — located in → «Copenhagen» | форма: actual, positive
+E019: «AI-enhanced cyberattacks» — targets → «CBRN supply chains» | форма: possible, positive
+E020: «Amazon» — member of → «Frontier Model Forum» | форма: actual, positive
+E021: «Cindy Vestergaard» — leads → «Converging Technologies and Global Security program» | форма: actual, positive
+E022: «Cindy Vestergaard» — leads → «Nuclear Safeguards program» | форма: actual, positive
+E023: «Aerosol Vapor and Chemical Agent Detector» — detects → «chemical agents» | форма: possible, positive
+E024: «Anthropic» — develops → «Responsible Scaling Policy» | форма: actual, positive
+E025: «Aerosol Vapor and Chemical Agent Detector» — uses → «Artificial intelligence» | форма: actual, positive
+E026: «Microsoft» — member of → «Frontier Model Forum» | форма: actual, positive
+E027: «Generative AI» — enables → «Fraud-as-a-Service» | форма: actual, positive
+E028: «Preparedness Framework» — develops → «OpenAI» | форма: actual, positive
+E029: «BioTracker» — uses → «machine learning» | форма: actual, positive
+E030: «Anthropic» — member of → «Frontier Model Forum» | форма: actual, positive
+E031: «Seoul» — located in → «South Korea» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

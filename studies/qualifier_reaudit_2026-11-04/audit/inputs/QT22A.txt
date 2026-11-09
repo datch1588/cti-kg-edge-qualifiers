@@ -1,0 +1,201 @@
+AUDIT_FILE: QT22A
+TARGET_DOC_ID: D0402
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0402
+PUBLICATION_DATE: 2026-03-18
+SOURCE_URL: https://arxiv.org/abs/2603.16342
+TITLE_SHA256: 699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7
+BEGIN_DOCUMENT
+[D0402:P0001] sha256:699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7
+[D0402:P0002] sha256:04f84c0c3b12d6065e3a414fcd023c76c1acc9b9defa1147324a8919a7c9569a
+[D0402:P0003] sha256:158fcd05b685338db8c820e361043b427cde812986b901bf820d3e68bd1122e1
+[D0402:P0004] sha256:6a70ac20fd4d79080bbbf33c3c9af0c02a5a523bd17d796670e398f525a5edfa
+[D0402:P0005] sha256:35e9c593e44b1c098e4596240293d488689183fa0120b4da4f34114e7092e72c
+[D0402:P0006] sha256:916433b7675aebdaeee0973df4e73fa30c3c62ea4eda3dd0b210d086f99cdf69
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 32, вузлів 9)
+E001: «long short-term memory (LSTM)-based IDS» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «evaluation of the proposed IDSs using the CICIoT2023 dataset»
+  фрагменти: [D0402:P0002] «@950-1087 sha256=1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2»
+E002: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@599-842 sha256=8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe»
+E003: «LSTM-based IDS» — protects → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «evaluation of the proposed IDSs using the CICIoT2023 dataset»
+  фрагменти: [D0402:P0002] «@599-842 sha256=8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe»
+E004: «convolutional neural network (CNN)-based IDS» — uses → «convolutional neural network» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@728-785 sha256=6cea0dd01d9b3a5fd5b75547a4ebfcf6448063e8d7649903531611cfa640b866»
+E005: «LSTM-based IDS» — uses → «long short-term memory» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@790-842 sha256=ddf8d8ab92cf0d0aead2c1ff37214c83a89aa42fa59faa4e35742a27c14abbf4»
+E006: «unauthorized devices» — targets → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@414-576 sha256=25599b6e3d857e790b692f8b634a17b437999c51c8f414d4589401d3f636594d»
+E007: «LSTM-based IDS» — uses → «long short-term memory» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@728-842 sha256=f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1»
+E008: «convolutional neural network (CNN)-based IDS» — uses → «convolutional neural network» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@728-842 sha256=f31f82a5004852dde04bb5201e2aa375bcc01ba57b85efe4c07bb42317bea2c1»
+E009: «long short-term memory (LSTM)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E010: «unauthorized devices» — targets → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@351-576 sha256=86c08d5288829b399e7cd5a981347da597c3d727bb022d0b326dad2f8e5b9fa6»
+E011: «LSTM-based IDS» — protects → «IoT networks» | форма: possible, positive
+  атрибуція: — | час події: «2026-03-18» | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E012: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@687-842 sha256=25623f2a5a1c8af01e99a8d52a3d67b4d06fed327e78cffec957d33d3ba8eb43»
+E013: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@599-842 sha256=8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe»
+E014: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-785 sha256=8cda98b39e428e97959b731f81cf2b1d6e294986bb5e27de5da8390bc01dc31d»
+E015: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E016: «LSTM-based IDS» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@950-1087 sha256=1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2»
+E017: «long short-term memory (LSTM)-based IDS» — uses → «long short-term memory» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@790-842 sha256=ddf8d8ab92cf0d0aead2c1ff37214c83a89aa42fa59faa4e35742a27c14abbf4»
+E018: «Sentiment Steering Attacks» — targets → «RAG-enabled Large Language Models» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0001] «@0-73 sha256=699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7»
+E019: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@599-785 sha256=59dd02f148627b82305d953b459e2c0e576ced269b2257f0ee1b93acf8c9d3d0»
+E020: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-785 sha256=8cda98b39e428e97959b731f81cf2b1d6e294986bb5e27de5da8390bc01dc31d»
+E021: «convolutional neural network (CNN)-based IDS» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@950-1087 sha256=1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2»
+E022: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E023: «convolutional neural network (CNN)-based IDS» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «evaluation of the proposed IDSs using the CICIoT2023 dataset»
+  фрагменти: [D0402:P0002] «@950-1087 sha256=1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2»
+E024: «LSTM-based IDS» — protects → «IoT networks» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E025: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0004] «@0-101 sha256=6a70ac20fd4d79080bbbf33c3c9af0c02a5a523bd17d796670e398f525a5edfa»
+E026: «long short-term memory (LSTM)-based IDS» — protects → «IoT networks» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E027: «LSTM-based IDS» — protects → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@599-842 sha256=8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe»
+E028: «long short-term memory (LSTM)-based IDS» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@950-1087 sha256=1f4c9ec018a8e05d3cb0dc1387b3794837b1cb2085fe76856deeee91d69e04d2»
+E029: «unauthorized devices» — targets → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@351-513 sha256=d4617dd1aa993ebd30fe3f110903e1770f89fcbfd8898a7934f8d73249782768»
+E030: «LSTM-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@599-842 sha256=8382654ef0d0ddf1cbff347f2bb2437fd08f7f7d164b258c5c5439b41e7d7bbe»
+E031: «LSTM-based IDS» — uses → «deep learning» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@577-843 sha256=19db7a955fb1d17bc9122cc0d21fc40235790887a5d66b52347c8da476ffe394»
+E032: «long short-term memory (LSTM)-based IDS» — protects → «IoT networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0402:P0002] «@687-842 sha256=25623f2a5a1c8af01e99a8d52a3d67b4d06fed327e78cffec957d33d3ba8eb43»
+V001: «deep learning» (technology) | альтернативні назви: «DL»
+V002: «long short-term memory» (technology) | альтернативні назви: «LSTM»
+V003: «convolutional neural network» (technology) | альтернативні назви: «CNN»
+V004: «long short-term memory (LSTM)-based IDS» (tool) | альтернативні назви: «LSTM-based IDS»
+V005: «convolutional neural network (CNN)-based IDS» (tool) | альтернативні назви: «CNN- based IDS»
+V006: «long short-term memory (LSTM)-based IDS» (technology) | альтернативні назви: «LSTM-based IDS»
+V007: «LSTM-based IDS» (tool) | альтернативні назви: «long short-term memory (LSTM)-based IDS»
+V008: «long short-term memory» (technology) | альтернативні назви: «LSTM»; «convolutional neural network (CNN)-based IDS»
+V009: «convolutional neural network (CNN)-based IDS» (technology) | альтернативні назви: «CNN- based IDS»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,60 @@
+{
+ "run_id": "F085",
+ "target_doc_id": "D0613",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "double extortion", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 224, "end": 361, "sha256": "f4eb45c05b9ae8c1c717863a46185a301a010149ded94551f9201c6187930165"}}]},
+  {"id": "n002", "label": "Phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0032", "start": 268, "end": 401, "sha256": "b90bd3a7caa3e9687f32ddfc040ed776dbef1b48e85818cc781f53c084978f62"}}]},
+  {"id": "n003", "label": "Egypt", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 217, "end": 283, "sha256": "df7374258517d0fd70bd4e540435febc113a0a5d4e5f88a5e3199334c5716b71"}}]},
+  {"id": "n004", "label": "South Africa", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 217, "end": 283, "sha256": "df7374258517d0fd70bd4e540435febc113a0a5d4e5f88a5e3199334c5716b71"}}]},
+  {"id": "n005", "label": "Africa", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 109, "end": 216, "sha256": "484bd8167d9be04a5e67dcfac2dc8982f26428b69cc9b834dd5fae0d0dc8c3fe"}}]},
+  {"id": "n006", "label": "Ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0019", "start": 0, "end": 101, "sha256": "1517454d004cdd0f69b96ddcb9214589b59f5289434715e912e9c8f71fcf4a1a"}}]},
+  {"id": "n007", "label": "Check Point", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 224, "end": 361, "sha256": "f4eb45c05b9ae8c1c717863a46185a301a010149ded94551f9201c6187930165"}}]},
+  {"id": "n008", "label": "Interpol", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 109, "end": 216, "sha256": "484bd8167d9be04a5e67dcfac2dc8982f26428b69cc9b834dd5fae0d0dc8c3fe"}}]},
+  {"id": "n009", "label": "Sophos", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0021", "start": 122, "end": 304, "sha256": "65735e6447e84ca50b6f16abf9e388a65765def59ec4529192a51ffd44d6ee4f"}}]},
+  {"id": "n010", "label": "Verizon", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0028", "start": 0, "end": 176, "sha256": "bc2faf651af09f0fd60cae171dd08da5503090dbaae4c1372eb98ea6c097d5e0"}}]},
+  {"id": "n011", "label": "business continuity plan", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0029", "start": 0, "end": 118, "sha256": "b12e5ead0c473bf690da8f43bad4b55f2ce5cb39435677ff4f4dc77e2cb11c8c"}}]},
+  {"id": "n012", "label": "ICT disaster recovery plan", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0029", "start": 119, "end": 180, "sha256": "07093b5f07831f1042e13e134219d2014f2f2b79a8f4e08c7ce1fecf660cc291"}}]},
+  {"id": "n013", "label": "Have I Been Pwned", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0035", "start": 159, "end": 285, "sha256": "17129cd5960558c7d3c72372eec092e815dd5f4a06c429bc16358d4bc6a6e118"}}]},
+  {"id": "n014", "label": "Bitcoin", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 0, "end": 125, "sha256": "33569102276f67142ea0906118845ea624280d5182e0915c515a42f8f15a75dd"}}]},
+  {"id": "n015", "label": "dark web", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0034", "start": 72, "end": 201, "sha256": "ae7f102d55b81892f1f69e5b8cd797833dcef97e3d319586e013d20ed9d845e5"}}]},
+  {"id": "n016", "label": "endpoint protection", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0037", "start": 96, "end": 270, "sha256": "ccdb9a22b48ba7e8954ee3c09d3d928105a7d5121f573083f99c9342039d4d44"}}]},
+  {"id": "n017", "label": "intrusion detection systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0031", "start": 123, "end": 245, "sha256": "93f54537d3f5d404cf19897eeebab0e0530683c882422dd9251f7ab536d682f8"}}]},
+  {"id": "n018", "label": "Medusa", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 224, "end": 361, "sha256": "f4eb45c05b9ae8c1c717863a46185a301a010149ded94551f9201c6187930165"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n006", "target": "n005", "relation_type": "AFFECTS", "attribution": "Interpol", "event_time": "2024", "event_scope": "Interpol report on cyber threats across Africa", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 109, "end": 216, "sha256": "484bd8167d9be04a5e67dcfac2dc8982f26428b69cc9b834dd5fae0d0dc8c3fe"}}]},
+  {"id": "e002", "source": "n008", "target": "n006", "relation_type": "REPORTS_ON", "attribution": "Interpol", "event_time": "2024", "event_scope": "Interpol report on cyber threats across Africa", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0020", "start": 109, "end": 216, "sha256": "484bd8167d9be04a5e67dcfac2dc8982f26428b69cc9b834dd5fae0d0dc8c3fe"}}]},
+  {"id": "e003", "source": "n009", "target": "n006", "relation_type": "REPORTS_ON", "attribution": "Sophos", "event_time": "first-quarter 2025", "event_scope": "Sophos first-quarter 2025 report", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0021", "start": 122, "end": 304, "sha256": "65735e6447e84ca50b6f16abf9e388a65765def59ec4529192a51ffd44d6ee4f"}}]},
+  {"id": "e004", "source": "n010", "target": "n006", "relation_type": "REPORTS_ON", "attribution": "Verizon", "event_time": "2025", "event_scope": "Verizon data breach report for 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0028", "start": 0, "end": 176, "sha256": "bc2faf651af09f0fd60cae171dd08da5503090dbaae4c1372eb98ea6c097d5e0"}}]},
+  {"id": "e005", "source": "n012", "target": "n011", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0029", "start": 119, "end": 180, "sha256": "07093b5f07831f1042e13e134219d2014f2f2b79a8f4e08c7ce1fecf660cc291"}}]},
+  {"id": "e006", "source": "n018", "target": "n001", "relation_type": "USES", "attribution": "Check Point", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 224, "end": 361, "sha256": "f4eb45c05b9ae8c1c717863a46185a301a010149ded94551f9201c6187930165"}}]},
+  {"id": "e007", "source": "n018", "target": "n006", "relation_type": "USES", "attribution": "Check Point", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0613", "paragraph_id": "D0613:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0613:P0033", "start": 224, "end": 361, "sha256": "f4eb45c05b9ae8c1c717863a46185a301a010149ded94551f9201c6187930165"}}]}
+ ],
+ "context_passages_used": []
+}

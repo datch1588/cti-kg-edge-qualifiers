@@ -1,0 +1,238 @@
+{
+ "run_id": "X022",
+ "target_doc_id": "D0468",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "data leaks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 156, "end": 281, "sha256": "bffb6428cf253e419ba9c073b310f268f2e9758b08afc424a44b5dc68b3c2398"}}]},
+  {"id": "n002", "label": "DDoS", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 179, "end": 282, "sha256": "f294f98670ca6493bd02418f5cae7dcc78aaa16d8d7ed0651971dad2ac3ea84f"}}]},
+  {"id": "n003", "label": "hacktivist personas", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 885, "end": 994, "sha256": "ae57e0ca2698626d6e84cd6a84a6a2eecaaee8c13e865fa274cf56b30796b125"}}]},
+  {"id": "n004", "label": "non-kinetic effects", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 366, "end": 491, "sha256": "db2e343815d400b228a174ccc878d4ae2d00170ec565dbaccdef4a7010d42368"}}]},
+  {"id": "n005", "label": "website defacement", "entity_type": "attack_technique", "aliases": ["website defacements"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 156, "end": 281, "sha256": "bffb6428cf253e419ba9c073b310f268f2e9758b08afc424a44b5dc68b3c2398"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 179, "end": 282, "sha256": "f294f98670ca6493bd02418f5cae7dcc78aaa16d8d7ed0651971dad2ac3ea84f"}}]},
+  {"id": "n006", "label": "wiper attack", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 579, "end": 700, "sha256": "0da222212b1bdaf67afa65f84f706cb7d88746149bc0570056847f33a378b723"}}]},
+  {"id": "n007", "label": "Operation Absolute Resolve", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 354, "end": 484, "sha256": "17233dd4f45ad05102bf853721b7def76d1c153a5fcdfa6a5b5bb51fd39fc920"}}]},
+  {"id": "n008", "label": "Operation Epic Fury", "entity_type": "campaign", "aliases": ["Epic Fury"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0008", "start": 0, "end": 282, "sha256": "47e18c93f1b5a8d73ec337dd183e286f9b670878f5d2b19893b9cfb20f711750"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0004", "start": 0, "end": 130, "sha256": "d86bfc36b754ad276a1fe24914ec6c978f53d56a13653f3cf32490241aa4f8ec"}}]},
+  {"id": "n009", "label": "Operation Midnight Hammer", "entity_type": "campaign", "aliases": ["Midnight Hammer"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0008", "start": 0, "end": 282, "sha256": "47e18c93f1b5a8d73ec337dd183e286f9b670878f5d2b19893b9cfb20f711750"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 665, "end": 807, "sha256": "3d56d56de60b236a435814bc0ce97088fb4ac3ade0dcbea30f9e73b33fe287fa"}}]},
+  {"id": "n010", "label": "Operation Roaring Lion", "entity_type": "campaign", "aliases": ["Roaring Lion"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 124, "end": 278, "sha256": "64496612570ece566bb74a32bac6468f5e8eb94f4ced6a8cd6dc76f51dbb5b25"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0004", "start": 0, "end": 130, "sha256": "d86bfc36b754ad276a1fe24914ec6c978f53d56a13653f3cf32490241aa4f8ec"}}]},
+  {"id": "n011", "label": "Albania", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 579, "end": 700, "sha256": "0da222212b1bdaf67afa65f84f706cb7d88746149bc0570056847f33a378b723"}}]},
+  {"id": "n012", "label": "Bahrain", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n013", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 878, "sha256": "8dc4be04ef19cd41958e91c9ee4af674ecb19e4c9ad7f53223f7049132dad872"}}]},
+  {"id": "n014", "label": "Israel", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 633, "end": 740, "sha256": "25dc13c1183a7f1e9e65723fe8cab25e763cae17eba6aa910689366c6341950a"}}]},
+  {"id": "n015", "label": "Jordan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n016", "label": "Kuwait", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n017", "label": "Qatar", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n018", "label": "UK", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 284, "end": 462, "sha256": "e01d0b38ce32bd2ab2eb5491a1d8920ff6c14c36eea11c458869f8c2869f77d8"}}]},
+  {"id": "n019", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 59, "end": 225, "sha256": "daf5f313718bdefd247358e8c778cdc4695ebfb29165d7b6c490c0ba458a8654"}}]},
+  {"id": "n020", "label": "US", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0008", "start": 0, "end": 282, "sha256": "47e18c93f1b5a8d73ec337dd183e286f9b670878f5d2b19893b9cfb20f711750"}}]},
+  {"id": "n021", "label": "Venezuela", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 59, "end": 225, "sha256": "daf5f313718bdefd247358e8c778cdc4695ebfb29165d7b6c490c0ba458a8654"}}]},
+  {"id": "n022", "label": "cyberattack", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "n023", "label": "Tehran", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "n024", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 702, "end": 816, "sha256": "10fd91b4840bb5c29b483dd2578ce22e4edbf9c779bcb69081969f90b779724d"}}]},
+  {"id": "n025", "label": "CIA", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 542, "end": 630, "sha256": "e4f601447297c02428ebf473ea3c4f1377fc87fa244633001267631832eca858"}}]},
+  {"id": "n026", "label": "cyber warfare headquarters", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "n027", "label": "cyber-electronic command", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 878, "sha256": "8dc4be04ef19cd41958e91c9ee4af674ecb19e4c9ad7f53223f7049132dad872"}}]},
+  {"id": "n028", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 0, "end": 177, "sha256": "faa15ce7e55baaea685ba2d60a00604571fbf010903626901d38abfccd352e35"}}]},
+  {"id": "n029", "label": "Intelligence and Security Committee", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 696, "end": 792, "sha256": "1c725180c298f107bfc3c2807904ea25334a483dbde5361226f5e72c02c17185"}}]},
+  {"id": "n030", "label": "intelligence directorate", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "n031", "label": "IRGC", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 878, "sha256": "8dc4be04ef19cd41958e91c9ee4af674ecb19e4c9ad7f53223f7049132dad872"}}]},
+  {"id": "n032", "label": "Israeli Defence Forces", "entity_type": "organization", "aliases": ["IDF"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "n033", "label": "Israeli organisations", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 599, "end": 755, "sha256": "2f8e996350949746bf5a8e45a23f16e275764620a89a009a54950bc0cba7af73"}}]},
+  {"id": "n034", "label": "Jordanian National Cyber Security Centre", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "n035", "label": "Las Vegas Sands Casino", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 374, "end": 452, "sha256": "393235456d44f7d759fa62f04ed70c9a2ba18729385a69a5d4bfcb8654ca193c"}}]},
+  {"id": "n036", "label": "Mossad", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 124, "end": 278, "sha256": "64496612570ece566bb74a32bac6468f5e8eb94f4ced6a8cd6dc76f51dbb5b25"}}]},
+  {"id": "n037", "label": "National Cyber Security Centre", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 284, "end": 462, "sha256": "e01d0b38ce32bd2ab2eb5491a1d8920ff6c14c36eea11c458869f8c2869f77d8"}}]},
+  {"id": "n038", "label": "NATO", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0008", "start": 637, "end": 780, "sha256": "ce365f16abc3ee500528e934369965fc899bff8898404efe026463f2838a018a"}}]},
+  {"id": "n039", "label": "Qatar's Ministry of Interior", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n040", "label": "Saudi Aramco", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 457, "end": 576, "sha256": "e66588dea3f03b975bbc6dcf0ed9541a45e4fae5296ecb783d71e2bdf03f72ba"}}]},
+  {"id": "n041", "label": "Space Command", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 106, "end": 209, "sha256": "1165303a97b09a2b8b6cfd8ac60344e3b9a23678fae793eda083f5fdcf23d70e"}}]},
+  {"id": "n042", "label": "UK Parliament", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 696, "end": 792, "sha256": "1c725180c298f107bfc3c2807904ea25334a483dbde5361226f5e72c02c17185"}}]},
+  {"id": "n043", "label": "US Cyber Command", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 262, "end": 364, "sha256": "ace6a158b0943e69f2c391243e76fc6db4ac4b2e298515f723b783b3ce6db354"}}]},
+  {"id": "n044", "label": "air defences", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 665, "end": 807, "sha256": "3d56d56de60b236a435814bc0ce97088fb4ac3ade0dcbea30f9e73b33fe287fa"}}]},
+  {"id": "n045", "label": "Albanian government systems", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 579, "end": 700, "sha256": "0da222212b1bdaf67afa65f84f706cb7d88746149bc0570056847f33a378b723"}}]},
+  {"id": "n046", "label": "civil society websites", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 786, "end": 932, "sha256": "3d440d1cbf8cb58b827506ccd00066f237387a3ab8d967fb04fd072e2272a7e0"}}]},
+  {"id": "n047", "label": "communications and sensor networks", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 595, "end": 663, "sha256": "b2c680ef51c4279f50d4097635c60183312fafad7b618c671a0c68b7958ae01d"}}]},
+  {"id": "n048", "label": "e-commerce platforms", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 786, "end": 932, "sha256": "3d440d1cbf8cb58b827506ccd00066f237387a3ab8d967fb04fd072e2272a7e0"}}]},
+  {"id": "n049", "label": "government satellite broadcasts", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 406, "end": 509, "sha256": "e18a8273fcc5d620226992abf66909089d3519dff77667363d15ee0b856370f8"}}]},
+  {"id": "n050", "label": "HUMINT", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 542, "end": 630, "sha256": "e4f601447297c02428ebf473ea3c4f1377fc87fa244633001267631832eca858"}}]},
+  {"id": "n051", "label": "Iran's financial infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 364, "end": 530, "sha256": "350796fbf179298c090fbd92f31ac7240def003245dfcda8023a0a709781153f"}}]},
+  {"id": "n052", "label": "Iranian security and traffic cameras", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 743, "end": 827, "sha256": "e7c5e630d5c00ee64d886989baadabbd7679469c8da69721a2169aa3eb10a63f"}}]},
+  {"id": "n053", "label": "Israeli electronic banking portals", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 786, "end": 932, "sha256": "3d440d1cbf8cb58b827506ccd00066f237387a3ab8d967fb04fd072e2272a7e0"}}]},
+  {"id": "n054", "label": "Kuwait's airport official portal", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "n055", "label": "strategic food reserve", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "n056", "label": "Ayatollah Ali Khamenei", "entity_type": "person", "aliases": ["Ali Khamenei"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 440, "end": 541, "sha256": "b383aabde89ba69a4e42521db7fc175e5c060dc6995c61b77b3bf0d75d84dc7a"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 186, "end": 388, "sha256": "fac5aeef5761ad6e06d35944a6dd32c37a851e956900ba83d521699eb7159d92"}}]},
+  {"id": "n057", "label": "Dan Caine", "entity_type": "person", "aliases": ["General Caine"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 262, "end": 364, "sha256": "ace6a158b0943e69f2c391243e76fc6db4ac4b2e298515f723b783b3ce6db354"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 0, "end": 105, "sha256": "eb444eb459e70d0fe199b25dbd0d1420f408f2fcbb424300abb5e66a67553794"}}]},
+  {"id": "n058", "label": "Nicol'as Maduro", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 354, "end": 484, "sha256": "17233dd4f45ad05102bf853721b7def76d1c153a5fcdfa6a5b5bb51fd39fc920"}}]},
+  {"id": "n059", "label": "BadeSaba", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 670, "end": 789, "sha256": "ef08acefbba3bac65861f2d52628551ec7735e512c788c690188106d09f2a5c8"}}]},
+  {"id": "n060", "label": "Telegram", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 599, "end": 755, "sha256": "2f8e996350949746bf5a8e45a23f16e275764620a89a009a54950bc0cba7af73"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 124, "end": 278, "sha256": "64496612570ece566bb74a32bac6468f5e8eb94f4ced6a8cd6dc76f51dbb5b25"}}]},
+  {"id": "n061", "label": "APT34", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 781, "end": 878, "sha256": "18ccd039297c700466b27f741ecd3870b7ccf1434f1a93d422a983b69708cb7a"}}]},
+  {"id": "n062", "label": "APT39", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 781, "end": 878, "sha256": "18ccd039297c700466b27f741ecd3870b7ccf1434f1a93d422a983b69708cb7a"}}]},
+  {"id": "n063", "label": "APT42", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 781, "end": 878, "sha256": "18ccd039297c700466b27f741ecd3870b7ccf1434f1a93d422a983b69708cb7a"}}]},
+  {"id": "n064", "label": "hacktivist groups", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 599, "end": 755, "sha256": "2f8e996350949746bf5a8e45a23f16e275764620a89a009a54950bc0cba7af73"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 786, "end": 932, "sha256": "3d440d1cbf8cb58b827506ccd00066f237387a3ab8d967fb04fd072e2272a7e0"}}]},
+  {"id": "n065", "label": "Iranian state-sponsored cyber threat actors", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 862, "end": 995, "sha256": "b47fb1c11793d3f66a7d31b7744f9100708f24148bda7485b7074033fb537587"}}]},
+  {"id": "n066", "label": "patriotic hacker groups", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 775, "sha256": "443d3f4d79e9317c9665ae81b47125543b1c7e4eff4e2f4448fa30ad62a681df"}}]},
+  {"id": "n067", "label": "Predatory Sparrow", "entity_type": "threat_actor", "aliases": ["Gonjeshke Darande"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 289, "end": 413, "sha256": "ef045bcfbc80ae886b98206bc128d1a6c0292f8967bc2f320ff5d25ee200e525"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n007", "target": "n058", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "n007", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 354, "end": 484, "sha256": "17233dd4f45ad05102bf853721b7def76d1c153a5fcdfa6a5b5bb51fd39fc920"}}]},
+  {"id": "e002", "source": "n009", "target": "n044", "relation_type": "TARGETS", "attribution": "", "event_time": "last year", "event_scope": "n009", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 665, "end": 807, "sha256": "3d56d56de60b236a435814bc0ce97088fb4ac3ade0dcbea30f9e73b33fe287fa"}}]},
+  {"id": "e003", "source": "n013", "target": "n035", "relation_type": "TARGETS", "attribution": "", "event_time": "2014", "event_scope": "wiping out data from the Las Vegas Sands Casino", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 170, "end": 373, "sha256": "5d9ad01754fc6fa211fb76e75abe1973fe5c56d8dcfca49e13f2487882d23f80"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 374, "end": 452, "sha256": "393235456d44f7d759fa62f04ed70c9a2ba18729385a69a5d4bfcb8654ca193c"}}]},
+  {"id": "e004", "source": "n013", "target": "n040", "relation_type": "TARGETS", "attribution": "", "event_time": "2012", "event_scope": "cyber campaigns targeting energy and government targets across the Gulf", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 170, "end": 373, "sha256": "5d9ad01754fc6fa211fb76e75abe1973fe5c56d8dcfca49e13f2487882d23f80"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 457, "end": 576, "sha256": "e66588dea3f03b975bbc6dcf0ed9541a45e4fae5296ecb783d71e2bdf03f72ba"}}]},
+  {"id": "e005", "source": "n013", "target": "n045", "relation_type": "TARGETS", "attribution": "", "event_time": "2022", "event_scope": "wiper attack on Albanian government systems", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 170, "end": 373, "sha256": "5d9ad01754fc6fa211fb76e75abe1973fe5c56d8dcfca49e13f2487882d23f80"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 579, "end": 700, "sha256": "0da222212b1bdaf67afa65f84f706cb7d88746149bc0570056847f33a378b723"}}]},
+  {"id": "e006", "source": "n013", "target": "n006", "relation_type": "USES", "attribution": "", "event_time": "2022", "event_scope": "wiper attack on Albanian government systems", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 170, "end": 373, "sha256": "5d9ad01754fc6fa211fb76e75abe1973fe5c56d8dcfca49e13f2487882d23f80"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 579, "end": 700, "sha256": "0da222212b1bdaf67afa65f84f706cb7d88746149bc0570056847f33a378b723"}}]},
+  {"id": "e007", "source": "n013", "target": "n024", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "ransomware campaigns", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 170, "end": 373, "sha256": "5d9ad01754fc6fa211fb76e75abe1973fe5c56d8dcfca49e13f2487882d23f80"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0018", "start": 702, "end": 816, "sha256": "10fd91b4840bb5c29b483dd2578ce22e4edbf9c779bcb69081969f90b779724d"}}]},
+  {"id": "e008", "source": "n014", "target": "n052", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "killing of Ayatollah Ali Khamenei", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 743, "end": 944, "sha256": "ee4a03d7a774bfe59ca148a1dd54f7689b891c2482e857e7870468e41caa52fd"}}]},
+  {"id": "e009", "source": "n022", "target": "n055", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "n022", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "e010", "source": "n025", "target": "n050", "relation_type": "PROVIDES", "attribution": "", "event_time": "", "event_scope": "killing of Ayatollah Ali Khamenei", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 542, "end": 740, "sha256": "16e8b0dc757f1bb2d2063309cc9f369e0d15e3a55ad015a2af6e580b35334b5e"}}]},
+  {"id": "e011", "source": "n026", "target": "n023", "relation_type": "LOCATED_IN", "attribution": "Israeli Defence Forces (IDF)", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "e012", "source": "n026", "target": "n031", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 548, "end": 629, "sha256": "d7e4685e9bc179b75cd5cff776ac23e86b854786d7ccfe9dea5e649feece4bb3"}}]},
+  {"id": "e013", "source": "n027", "target": "n031", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 775, "sha256": "443d3f4d79e9317c9665ae81b47125543b1c7e4eff4e2f4448fa30ad62a681df"}}]},
+  {"id": "e014", "source": "n028", "target": "n002", "relation_type": "WARNS_ABOUT", "attribution": "Department of Homeland Security", "event_time": "28 February", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 0, "end": 282, "sha256": "f7157ab6e9286707bf26b7a47df3ae5375184f854b6af611018d85c8e081f945"}}]},
+  {"id": "e015", "source": "n028", "target": "n005", "relation_type": "WARNS_ABOUT", "attribution": "Department of Homeland Security", "event_time": "28 February", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 0, "end": 282, "sha256": "f7157ab6e9286707bf26b7a47df3ae5375184f854b6af611018d85c8e081f945"}}]},
+  {"id": "e016", "source": "n029", "target": "n042", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 696, "end": 792, "sha256": "1c725180c298f107bfc3c2807904ea25334a483dbde5361226f5e72c02c17185"}}]},
+  {"id": "e017", "source": "n030", "target": "n023", "relation_type": "LOCATED_IN", "attribution": "Israeli Defence Forces (IDF)", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "e018", "source": "n030", "target": "n031", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 548, "end": 629, "sha256": "d7e4685e9bc179b75cd5cff776ac23e86b854786d7ccfe9dea5e649feece4bb3"}}]},
+  {"id": "e019", "source": "n032", "target": "n026", "relation_type": "TARGETS", "attribution": "Israeli Defence Forces (IDF)", "event_time": "4 March", "event_scope": "IDF strike on a compound in eastern Tehran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "e020", "source": "n032", "target": "n030", "relation_type": "TARGETS", "attribution": "Israeli Defence Forces (IDF)", "event_time": "4 March", "event_scope": "IDF strike on a compound in eastern Tehran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0016", "start": 436, "end": 629, "sha256": "b55d8292d2f238ef4c84f274ab73d825abb151c34c598aa55a04967c608a7bde"}}]},
+  {"id": "e021", "source": "n034", "target": "n015", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "e022", "source": "n034", "target": "n022", "relation_type": "MITIGATES", "attribution": "", "event_time": "", "event_scope": "n022", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "e023", "source": "n034", "target": "n055", "relation_type": "PROTECTS", "attribution": "", "event_time": "", "event_scope": "n022", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 1097, "end": 1238, "sha256": "25c7a95aceaf5f95ebddd7da415f3941302d436b0074c4edbe6592228671e139"}}]},
+  {"id": "e024", "source": "n036", "target": "n060", "relation_type": "USES", "attribution": "", "event_time": "opening hours of Operation Roaring Lion", "event_scope": "n010", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 124, "end": 278, "sha256": "64496612570ece566bb74a32bac6468f5e8eb94f4ced6a8cd6dc76f51dbb5b25"}}]},
+  {"id": "e025", "source": "n037", "target": "n018", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0019", "start": 284, "end": 462, "sha256": "e01d0b38ce32bd2ab2eb5491a1d8920ff6c14c36eea11c458869f8c2869f77d8"}}]},
+  {"id": "e026", "source": "n039", "target": "n017", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 934, "end": 1095, "sha256": "7495c2c704b67be932af9a091302219d1210aeb46f827df34f2f7cdf3014fdaf"}}]},
+  {"id": "e027", "source": "n041", "target": "n004", "relation_type": "USES", "attribution": "Dan Caine", "event_time": "", "event_scope": "n008", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 0, "end": 209, "sha256": "291ce8e21bf202627dd41d65129d0ab014736fd25399c72b2b56fe8419c2dbb5"}}]},
+  {"id": "e028", "source": "n043", "target": "n047", "relation_type": "TARGETS", "attribution": "Dan Caine", "event_time": "first 57 hours of the operation", "event_scope": "n008", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 493, "end": 663, "sha256": "c4dba8c3fc93343644ac1fdc00ff7e9e85250ba79420a0f9f447b75ee3ac8813"}}]},
+  {"id": "e029", "source": "n043", "target": "n004", "relation_type": "USES", "attribution": "Dan Caine", "event_time": "", "event_scope": "n008", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0006", "start": 270, "end": 491, "sha256": "48c449af912b8eb61257404125aa47896181a858b54da0ff204696811dc31ded"}},
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0009", "start": 0, "end": 209, "sha256": "291ce8e21bf202627dd41d65129d0ab014736fd25399c72b2b56fe8419c2dbb5"}}]},
+  {"id": "e030", "source": "n049", "target": "n013", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0014", "start": 406, "end": 509, "sha256": "e18a8273fcc5d620226992abf66909089d3519dff77667363d15ee0b856370f8"}}]},
+  {"id": "e031", "source": "n064", "target": "n033", "relation_type": "TARGETS", "attribution": "OSINT and cyber threat intelligence reports", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 532, "end": 756, "sha256": "b96cc9b2dde85d7d238fc42d82ce131cd8721d43e27f2444fab47fac6c86ba88"}}]},
+  {"id": "e032", "source": "n064", "target": "n046", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 702, "end": 932, "sha256": "66a0b175aead64acad205b9b6cafed6d782b5aa69785f19342580a396d1725bd"}}]},
+  {"id": "e033", "source": "n064", "target": "n048", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 702, "end": 932, "sha256": "66a0b175aead64acad205b9b6cafed6d782b5aa69785f19342580a396d1725bd"}}]},
+  {"id": "e034", "source": "n064", "target": "n053", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0013", "start": 702, "end": 932, "sha256": "66a0b175aead64acad205b9b6cafed6d782b5aa69785f19342580a396d1725bd"}}]},
+  {"id": "e035", "source": "n064", "target": "n001", "relation_type": "USES", "attribution": "cybersecurity firms", "event_time": "June 2025", "event_scope": "June 2025 12-day conflict", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 123, "end": 281, "sha256": "63ba4487db68f6ed9a7bbc59ae2900995d5b9d17778cfdc7c1326c10be283f0c"}}]},
+  {"id": "e036", "source": "n064", "target": "n005", "relation_type": "USES", "attribution": "cybersecurity firms", "event_time": "June 2025", "event_scope": "June 2025 12-day conflict", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 123, "end": 281, "sha256": "63ba4487db68f6ed9a7bbc59ae2900995d5b9d17778cfdc7c1326c10be283f0c"}}]},
+  {"id": "e037", "source": "n064", "target": "n060", "relation_type": "USES", "attribution": "OSINT and cyber threat intelligence reports", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 532, "end": 756, "sha256": "b96cc9b2dde85d7d238fc42d82ce131cd8721d43e27f2444fab47fac6c86ba88"}}]},
+  {"id": "e038", "source": "n065", "target": "n003", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 862, "end": 995, "sha256": "b47fb1c11793d3f66a7d31b7744f9100708f24148bda7485b7074033fb537587"}}]},
+  {"id": "e039", "source": "n066", "target": "n013", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0007", "start": 671, "end": 775, "sha256": "443d3f4d79e9317c9665ae81b47125543b1c7e4eff4e2f4448fa30ad62a681df"}}]},
+  {"id": "e040", "source": "n067", "target": "n051", "relation_type": "TARGETS", "attribution": "", "event_time": "June 2025", "event_scope": "June 2025 12-day conflict", "evidence": [
+   {"role": "TARGET", "doc_id": "D0468", "paragraph_id": "D0468:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0468:P0012", "start": 289, "end": 530, "sha256": "b93e634a02169609f2ad40493d1ece35dc8f57fd04188417ebcf8ff9a7889129"}}]}
+ ],
+ "context_passages_used": []
+}

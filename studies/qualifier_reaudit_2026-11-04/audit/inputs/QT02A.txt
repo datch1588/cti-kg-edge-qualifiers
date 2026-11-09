@@ -1,0 +1,236 @@
+AUDIT_FILE: QT02A
+TARGET_DOC_ID: D0652
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0652
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://eurasiantimes.com/hinas-justice-mission-2025-drills-singled-out-himars/
+TITLE_SHA256: ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+BEGIN_DOCUMENT
+[D0652:P0001] sha256:ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+[D0652:P0002] sha256:f5e1780e47142181f61c0ceec3d2a8b58aad04c35660fd88c4171e57bd194913
+[D0652:P0003] sha256:350a4e3bca128eb76933e50fcbcc56a72a3bf62487f765d977c4a8189b943aef
+[D0652:P0004] sha256:9c07d18157103502a76812f6ba9602946eb1f86e19b63c5aecb6d96f8f4ffd81
+[D0652:P0005] sha256:7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8
+[D0652:P0006] sha256:f40ae60c857f52ef28d74583a8498ab74e724a8f1eccc1d076a0f85106a4734a
+[D0652:P0007] sha256:2fec46ce12eaf13d97f5dad8556ee45a6e20a8001dfe3418ee445458d12bf6b0
+[D0652:P0008] sha256:9e2fc72e7f97c8bcfea3fd68e0777f2cca463d4fdfb5e6292da9fe871a1d0a46
+[D0652:P0009] sha256:9ae91a2721ef8d76c8562f6284d2a17ef6a04263e6ff27c39edb3f26041b13dc
+[D0652:P0010] sha256:dbe203846cff4aa99dd96ba879082f152f5397ecfc92cf7284ee21b7cd1400b5
+[D0652:P0011] sha256:f6f6aaa7566452e7823fc119e74abaabf14ed44c303f74ef92c6364f78bce174
+[D0652:P0012] sha256:3b122ed435cc6aac48ae3e61a3888d5a4997dbad9a8cee46bd1de1e599310912
+[D0652:P0013] sha256:813ad0172d7d7bcd704d9dfedd484435e7926ec3501f76700aa129f845de14fc
+[D0652:P0014] sha256:c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c
+[D0652:P0015] sha256:e619f24d19ce3c18e8a477603418a1b01f76f03b351f0c9dc20a3d89594a235d
+[D0652:P0016] sha256:88eea6fd2e71b6d6886dac41f58c67b6febff31970c9ffa1b9918a855ddc0f83
+[D0652:P0017] sha256:717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840
+[D0652:P0018] sha256:b2ccb4df76316544e47586f4d9c4cf2fb78971c0b608f39a1ed6e5324358231c
+[D0652:P0019] sha256:9848bc7599962fd51ce89086ff096990482a1f1f52bcf4708c78987a8a4b790d
+[D0652:P0020] sha256:983f361af1b441ba4afccc156e6a9bc778fe6b4f56bddf0f2395da91653966f9
+[D0652:P0021] sha256:4fdbc2670db0a8871568e1334233eec8d27577b73e2672d9602146a220fd5609
+[D0652:P0022] sha256:2c34838c8dfc88b3c420aacda11f08e79cd12169326607fd2df0f372ee783f3c
+[D0652:P0023] sha256:146b7a757e0ec762481c096f8bf654d83505b7177b49438372509fddb968fa9a
+[D0652:P0024] sha256:4f588d664054812f67c43b6c1068d9aa30d41579e855e0f036fb13e593537198
+[D0652:P0025] sha256:8dcd954bc907849940b115c16e3393417feb5a1f0aa2eb6d66e14077d9057542
+[D0652:P0026] sha256:4e9b8c0d72ccaaec53abc0788e6399b105e64e15d5a12325d9c0c72cc5efe823
+[D0652:P0027] sha256:d434895e0c6631b7d4f629b6f4d7101beebf9168d59c1532779054e882640863
+[D0652:P0028] sha256:89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1
+[D0652:P0029] sha256:6fa076bd16d4df1eb8601a41b33e5ddf88c362c0210a4370fea748cee95b9af1
+[D0652:P0030] sha256:00d686c81b67873793dd21f98660f9fbb33aaf72aaa4048e192db0ec950e5040
+[D0652:P0031] sha256:660a4ab8f238ab6077d6c653cf24e99331682ea7a87a2fc6869406accd0f84d5
+[D0652:P0032] sha256:9f9ae237c7a0850502c1c4c59d7beb0b44a43e5b79bd57b6e4a9c3066a07a09c
+[D0652:P0033] sha256:a8e451870020cec126519fa78b3248f02ed84fe2dd2f60589674c2845980d2a7
+[D0652:P0034] sha256:d8a67d2c2add7b404eae55b1a6389a0d51fce426993e4b34a9d46a22bcdd92d3
+[D0652:P0035] sha256:becf0f14d297bd0bfe5ed4b807ca54547433d9a1fc5e0e8c15681b7c5da40732
+[D0652:P0036] sha256:f8b504512c64111a647372634cc4f81f31da792a981a8003cd8807428811dd53
+[D0652:P0037] sha256:02fefdec59233becebd80a4f2b2ab94d49356e46b3aa5979eb8a13d82b730cc7
+[D0652:P0038] sha256:be5887b9858fb10c272fd37bc9e40e74c8fb3c202a1787bf728f1eb5576b0dbf
+[D0652:P0039] sha256:215730f42ed8508141b80c08172d79c4473519b548ee971a98e299ebedbb581c
+[D0652:P0040] sha256:b319456576ecbe181ff28f02421d64c716ab8701a1e495f6972f431002842f8f
+[D0652:P0041] sha256:933409bbe1a1732bdb6d49aec9296ce3cf0869a37cc76020c0c9c4f4c8f193fa
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 34, вузлів 3)
+E001: «China» — targets → «HIMARS» | форма: conditional, positive
+  атрибуція: — | час події: — | контекст події: «possible Chinese invasion of Taiwan»
+  фрагменти: [D0652:P0017] «@0-122 sha256=717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840»
+E002: «ATACMS» — uses → «GPS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0035] «@0-174 sha256=306b3aea4bbcff0d9620f8ecbc357778f7497742cc2d775c7230a6877f344e89»
+E003: «US» — provides → «HIMARS» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «latest US arms package for Taiwan»
+  фрагменти: [D0652:P0014] «@0-121 sha256=c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c»
+E004: «US» — provides → «Tactical Mission Network» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «latest US arms package for Taiwan worth $11 billion»
+  фрагменти: [D0652:P0014] «@9-121 sha256=bf85b3212809e4377496f041f4325baf1f827e04d5b4d4871be65534d5c14c6a»; [D0652:P0015] «@0-51 sha256=cded90ca3b94b0de44dcf5e4aa20c582a3d0ac4bdd4137d10a093ebdaa988031»
+E005: «People's Liberation Army» — targets → «Taiwan» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0003] «@0-92 sha256=966e78c847e1d827de5bf7fdcc329a0a03c4b01d5627726971f3d0dce3b95290»
+E006: «Tactical Mission Network» — mitigates → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0015] «@168-331 sha256=32f3cad4774462072aa7e8281e6e40485f7c75714ee39057a33ae301afb176ef»
+E007: «HIMARS» — enables → «deep counterstrikes» | форма: actual, positive
+  атрибуція: «Su Tzu-yun» | час події: — | контекст події: —
+  фрагменти: [D0652:P0021] «@142-274 sha256=942ac472c93ac66f539755cfd7a85207b0fc6e67a9a1aa35d168741ecb83b90b»
+E008: «PLA» — targets → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: «late December 2025» | контекст події: вузол «Justice Mission 2025» (campaign)
+  фрагменти: [D0652:P0005] «@0-145 sha256=7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8»
+E009: «Ukraine» — uses → «GMLRS» | форма: actual, positive
+  атрибуція: — | час події: «2022» | контекст події: —
+  фрагменти: [D0652:P0029] «@0-146 sha256=3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539»
+E010: «Justice Mission 2025» — targets → «Taiwan» | форма: actual, positive
+  атрибуція: — | час події: «2026-01-07» | контекст події: вузол «Justice Mission 2025» (event)
+  фрагменти: [D0652:P0004] «@0-88 sha256=e6c851f9e3fd37fc2329689796498a98757937e125e6a4b234296bf995cb3e7d»; [D0652:P0005] «@0-145 sha256=7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8»
+E011: «Justice Mission 2025» — attributed to → «China» | форма: actual, positive
+  атрибуція: — | час події: «late December 2025» | контекст події: вузол «Justice Mission 2025» (campaign)
+  фрагменти: [D0652:P0001] «@22-82 sha256=e8eab72c3ec6c80d860d44a75cbb4ffcc5152bb8119e3ac8030e6fa709de35d0»; [D0652:P0004] «@151-261 sha256=c224ecb02d83a283792b0da5f9aa6f372df062a5b2a98b900d1ec5e571967a07»; [D0652:P0004] «@0-88 sha256=e6c851f9e3fd37fc2329689796498a98757937e125e6a4b234296bf995cb3e7d»
+E012: «Ukrainian forces» — targets → «Russian forces» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0029] «@282-344 sha256=b2fc4dfc947a70eb264b7ba34bfc738dd8f064f81cf9e3fc3814545a4862acf5»; [D0652:P0037] «@79-194 sha256=765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d»
+E013: «deep counterstrikes» — targets → «People's Liberation Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0026] «@279-410 sha256=2108a63b58035a998bc1e9bcf54a1cd892d38c2aa587e3eb5006a17e45e03589»
+E014: «Taiwan» — uses → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0018] «@183-318 sha256=60af704c17a6827482f1ed540a8db3e1c6d7d7513eeba83b1339e61dfa5e735d»
+E015: «Russia» — uses → «electronic jamming» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «Russian adaptation to ATACMS-HIMARS strikes inside Russia»
+  фрагменти: [D0652:P0037] «@79-297 sha256=f751ce3bb3dd91d85feef57c64e158d36a1c2b938ca4d04757407c3ea0415789»
+E016: «Ukrainian forces» — uses → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0028] «@0-112 sha256=89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1»; [D0652:P0031] «@0-105 sha256=f6bd7891ba9275e84813cddb7c448304982faea56fdba634c5ecd4b5b4440414»; [D0652:P0037] «@79-194 sha256=765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d»
+E017: «Ukraine» — uses → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0028] «@0-112 sha256=89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1»; [D0652:P0031] «@0-105 sha256=f6bd7891ba9275e84813cddb7c448304982faea56fdba634c5ecd4b5b4440414»
+E018: «HIMARS» — uses → «ATACMS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0037] «@79-194 sha256=765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d»
+E019: «Russia» — targets → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «strikes inside Russia after the US lifted restrictions in 2024»
+  фрагменти: [D0652:P0037] «@79-297 sha256=f751ce3bb3dd91d85feef57c64e158d36a1c2b938ca4d04757407c3ea0415789»
+E020: «HIMARS» — uses → «GMLRS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0024] «@0-110 sha256=0b09eb786f4b913c4f218e983eee9b3cdd94b30005906e774dc39b63515ff51b»
+E021: «Ukrainian forces» — uses → «ATACMS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0037] «@79-194 sha256=765d2b600e0127ed1338b35772c0c32d31952cedd86e19d6d9cabe80956b6f6d»
+E022: «US» — provides → «ATACMS» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «latest US arms package for Taiwan»
+  фрагменти: [D0652:P0014] «@0-121 sha256=c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c»
+E023: «Ukrainian forces» — uses → «GMLRS» | форма: actual, positive
+  атрибуція: — | час події: «2022» | контекст події: «first deployment by Ukrainian forces»
+  фрагменти: [D0652:P0029] «@0-146 sha256=3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539»
+E024: «Ukrainian forces» — uses → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: «2022» | контекст події: —
+  фрагменти: [D0652:P0029] «@0-146 sha256=3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539»
+E025: «China» — targets → «HIMARS» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «delivery of a limited number of ATACMS to Ukraine»
+  фрагменти: [D0652:P0016] «@0-107 sha256=3b03ba8aafed959bb42e4a98da0b0e735e7856b7438a7478993988d437edab0d»
+E026: «PLA» — targets → «Taiwan» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: «possible PLA invasion of Taiwan»
+  фрагменти: [D0652:P0003] «@0-92 sha256=966e78c847e1d827de5bf7fdcc329a0a03c4b01d5627726971f3d0dce3b95290»
+E027: «Justice Mission 2025» — targets → «Taiwan» | форма: actual, positive
+  атрибуція: — | час події: «late December 2025» | контекст події: вузол «Justice Mission 2025» (event)
+  фрагменти: [D0652:P0004] «@0-88 sha256=e6c851f9e3fd37fc2329689796498a98757937e125e6a4b234296bf995cb3e7d»; [D0652:P0005] «@0-145 sha256=7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8»
+E028: «China» — targets → «HIMARS» | форма: conditional, positive
+  атрибуція: — | час події: — | контекст події: «potential Taiwan contingency / invasion»
+  фрагменти: [D0652:P0016] «@0-107 sha256=3b03ba8aafed959bb42e4a98da0b0e735e7856b7438a7478993988d437edab0d»; [D0652:P0017] «@0-122 sha256=717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840»
+E029: «Russia» — targets → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «strikes inside Russia after the US lifted restrictions in 2024»
+  фрагменти: [D0652:P0027] «@200-432 sha256=5b921057f155e2e1bd66432e058acf1203b5fd2d07be5603c26a812466a9085f»
+E030: «China» — targets → «HIMARS» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0003] «@0-129 sha256=7b097c93fc53e0cfaa0c8c65fa24dbb613577777b54d22ae7593837a36b4df4c»
+E031: «People's Liberation Army» — targets → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: «late December 2025» | контекст події: «Justice Mission 2025 drills»
+  фрагменти: [D0652:P0005] «@0-145 sha256=7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8»
+E032: «China» — targets → «HIMARS» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0016] «@0-107 sha256=3b03ba8aafed959bb42e4a98da0b0e735e7856b7438a7478993988d437edab0d»
+E033: «US» — provides → «HIMARS» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0001] «@57-119 sha256=62e362ac5f63f91111bf35cffcd0c996b9d3d3257b5d3c1ab4eb8e74f70f9128»
+E034: «Ukrainian forces» — targets → «Russian forces» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0652:P0029] «@0-146 sha256=3b5cf0d2f2a7fcd2322758b69dffb6cb013e2fd4d15ca8706da2492ec8ba1539»; [D0652:P0029] «@282-344 sha256=b2fc4dfc947a70eb264b7ba34bfc738dd8f064f81cf9e3fc3814545a4862acf5»
+V001: «ATACMS» (product) | альтернативні назви: «Army Tactical Missile System»
+V002: «GMLRS» (product) | альтернативні назви: «Guided Missile Launch Rocket System»; «Guided Multiple Launch Rocket Systems»
+V003: «People's Liberation Army» (organization) | альтернативні назви: «PLA»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,1317 @@
+{
+ "protocol": "PROTOCOL_UA.md",
+ "mode": "self-test (вердикти основного аудиту)",
+ "items": 584,
+ "real": 498,
+ "decoys": 86,
+ "coverage": {
+  "N01": {
+   "items": 61,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 61,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N02": {
+   "items": 58,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 58,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N03": {
+   "items": 57,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 57,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N04": {
+   "items": 55,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 55,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N05": {
+   "items": 52,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 52,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N06": {
+   "items": 61,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 61,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N07": {
+   "items": 61,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 61,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N08": {
+   "items": 61,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 61,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N09": {
+   "items": 61,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 61,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  },
+  "N10": {
+   "items": 57,
+   "file": true,
+   "lenient_json": false,
+   "header_ok": true,
+   "verdicts": 57,
+   "missing": 0,
+   "invalid": 0,
+   "duplicates": 0,
+   "unknown_ids": 0
+  }
+ },
+ "coverage_share": 1.0,
+ "independent": {
+  "Q1_false_form_A2_minus_A3": {
+   "articles": 24,
+   "A2": 0.07462686567164178,
+   "A3": 0.01728395061728395,
+   "A2_false_form": 25,
+   "A2_triple_c": 335,
+   "A3_false_form": 7,
+   "A3_triple_c": 405,
+   "diff": 0.05734291505435783,
+   "ci95": [
+    0.009477077920223178,
+    0.11970399743144669
+   ],
+   "decision": "зменшення хибної форми за вердиктами незалежного аудитора встановлено"
+  },
+  "Q1_sensitivity_noU": {
+   "articles": 24,
+   "diff": 0.05734291505435783,
+   "ci95": [
+    0.009018883685473607,
+    0.12044827233129955
+   ]
+  },
+  "share_correct": {
+   "articles": 24,
+   "A2": 0.9068001126607911,
+   "A3": 0.9581049791419495,
+   "diff_A3_minus_A2": 0.05130486648115837,
+   "ci95": [
+    0.003341590727358246,
+    0.11359817591325402
+   ]
+  },
+  "nonactual_forms": {
+   "A2": {
+    "n": 63,
+    "correct": 40,
+    "false_form": 23,
+    "form_U": 0,
+    "triple_not_C": 0,
+    "by_form": {
+     "planned, positive": {
+      "n": 22,
+      "correct": 22,
+      "false_form": 0
+     },
+     "possible, positive": {
+      "n": 32,
+      "correct": 15,
+      "false_form": 17
+     },
+     "recommended, positive": {
+      "n": 6,
+      "correct": 1,
+      "false_form": 5
+     },
+     "conditional, positive": {
+      "n": 2,
+      "correct": 1,
+      "false_form": 1
+     },
+     "actual, negative": {
+      "n": 1,
+      "correct": 1,
+      "false_form": 0
+     }
+    }
+   },
+   "A3": {
+    "n": 53,
+    "correct": 49,
+    "false_form": 3,
+    "form_U": 0,
+    "triple_not_C": 1,
+    "by_form": {
+     "planned, positive": {
+      "n": 19,
+      "correct": 19,
+      "false_form": 0
+     },
+     "possible, negative": {
+      "n": 1,
+      "correct": 1,
+      "false_form": 0
+     },
+     "possible, positive": {
+      "n": 24,
+      "correct": 23,
+      "false_form": 0
+     },
+     "conditional, positive": {
+      "n": 2,
+      "correct": 2,
+      "false_form": 0
+     },
+     "recommended, positive": {
+      "n": 4,
+      "correct": 1,
+      "false_form": 3
+     },
+     "actual, negative": {
+      "n": 3,
+      "correct": 3,
+      "false_form": 0
+     }
+    }
+   }
+  },
+  "decoys": {
+   "n": 86,
+   "caught_expected": 86,
+   "by_mutation": {
+    "reverse": {
+     "n": 34,
+     "caught_expected": 34
+    },
+    "polarity": {
+     "n": 41,
+     "caught_expected": 41
+    },
+    "modality": {
+     "n": 11,
+     "caught_expected": 11
+    }
+   }
+  },
+  "per_article": {
+   "S3N01": {
+    "A2": {
+     "n": 13,
+     "correct": 5,
+     "triple_c": 13,
+     "false_form": 8,
+     "triple_c_noU": 13,
+     "false_form_noU": 8
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   },
+   "S3N02": {
+    "A2": {
+     "n": 31,
+     "correct": 29,
+     "triple_c": 29,
+     "false_form": 0,
+     "triple_c_noU": 29,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 30,
+     "correct": 30,
+     "triple_c": 30,
+     "false_form": 0,
+     "triple_c_noU": 30,
+     "false_form_noU": 0
+    }
+   },
+   "S3N03": {
+    "A2": {
+     "n": 6,
+     "correct": 4,
+     "triple_c": 5,
+     "false_form": 1,
+     "triple_c_noU": 5,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 10,
+     "correct": 5,
+     "triple_c": 9,
+     "false_form": 4,
+     "triple_c_noU": 9,
+     "false_form_noU": 4
+    }
+   },
+   "S3N04": {
+    "A2": {
+     "n": 20,
+     "correct": 20,
+     "triple_c": 20,
+     "false_form": 0,
+     "triple_c_noU": 20,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 24,
+     "correct": 24,
+     "triple_c": 24,
+     "false_form": 0,
+     "triple_c_noU": 24,
+     "false_form_noU": 0
+    }
+   },
+   "S3N05": {
+    "A2": {
+     "n": 4,
+     "correct": 4,
+     "triple_c": 4,
+     "false_form": 0,
+     "triple_c_noU": 4,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 2,
+     "correct": 2,
+     "triple_c": 2,
+     "false_form": 0,
+     "triple_c_noU": 2,
+     "false_form_noU": 0
+    }
+   },
+   "S3N06": {
+    "A2": {
+     "n": 17,
+     "correct": 17,
+     "triple_c": 17,
+     "false_form": 0,
+     "triple_c_noU": 17,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 23,
+     "correct": 23,
+     "triple_c": 23,
+     "false_form": 0,
+     "triple_c_noU": 23,
+     "false_form_noU": 0
+    }
+   },
+   "S3N07": {
+    "A2": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N08": {
+    "A2": {
+     "n": 13,
+     "correct": 13,
+     "triple_c": 13,
+     "false_form": 0,
+     "triple_c_noU": 13,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 17,
+     "correct": 15,
+     "triple_c": 15,
+     "false_form": 0,
+     "triple_c_noU": 15,
+     "false_form_noU": 0
+    }
+   },
+   "S3N09": {
+    "A2": {
+     "n": 29,
+     "correct": 23,
+     "triple_c": 28,
+     "false_form": 5,
+     "triple_c_noU": 28,
+     "false_form_noU": 5
+    },
+    "A3": {
+     "n": 29,
+     "correct": 27,
+     "triple_c": 27,
+     "false_form": 0,
+     "triple_c_noU": 27,
+     "false_form_noU": 0
+    }
+   },
+   "S3N10": {
+    "A2": {
+     "n": 12,
+     "correct": 10,
+     "triple_c": 12,
+     "false_form": 2,
+     "triple_c_noU": 12,
+     "false_form_noU": 2
+    },
+    "A3": {
+     "n": 18,
+     "correct": 18,
+     "triple_c": 18,
+     "false_form": 0,
+     "triple_c_noU": 18,
+     "false_form_noU": 0
+    }
+   },
+   "S3N11": {
+    "A2": {
+     "n": 7,
+     "correct": 7,
+     "triple_c": 7,
+     "false_form": 0,
+     "triple_c_noU": 7,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N12": {
+    "A2": {
+     "n": 10,
+     "correct": 6,
+     "triple_c": 10,
+     "false_form": 4,
+     "triple_c_noU": 10,
+     "false_form_noU": 4
+    },
+    "A3": {
+     "n": 10,
+     "correct": 7,
+     "triple_c": 10,
+     "false_form": 3,
+     "triple_c_noU": 10,
+     "false_form_noU": 3
+    }
+   },
+   "S3N13": {
+    "A2": {
+     "n": 6,
+     "correct": 6,
+     "triple_c": 6,
+     "false_form": 0,
+     "triple_c_noU": 6,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   },
+   "S3N14": {
+    "A2": {
+     "n": 16,
+     "correct": 16,
+     "triple_c": 16,
+     "false_form": 0,
+     "triple_c_noU": 16,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 16,
+     "correct": 16,
+     "triple_c": 16,
+     "false_form": 0,
+     "triple_c_noU": 16,
+     "false_form_noU": 0
+    }
+   },
+   "S3N15": {
+    "A2": {
+     "n": 27,
+     "correct": 27,
+     "triple_c": 27,
+     "false_form": 0,
+     "triple_c_noU": 27,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 30,
+     "correct": 30,
+     "triple_c": 30,
+     "false_form": 0,
+     "triple_c_noU": 30,
+     "false_form_noU": 0
+    }
+   },
+   "S3N16": {
+    "A2": {
+     "n": 4,
+     "correct": 4,
+     "triple_c": 4,
+     "false_form": 0,
+     "triple_c_noU": 4,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N17": {
+    "A2": {
+     "n": 20,
+     "correct": 19,
+     "triple_c": 20,
+     "false_form": 1,
+     "triple_c_noU": 20,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 17,
+     "correct": 17,
+     "triple_c": 17,
+     "false_form": 0,
+     "triple_c_noU": 17,
+     "false_form_noU": 0
+    }
+   },
+   "S3N18": {
+    "A2": {
+     "n": 12,
+     "correct": 11,
+     "triple_c": 12,
+     "false_form": 1,
+     "triple_c_noU": 12,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 20,
+     "correct": 20,
+     "triple_c": 20,
+     "false_form": 0,
+     "triple_c_noU": 20,
+     "false_form_noU": 0
+    }
+   },
+   "S3N19": {
+    "A2": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    }
+   },
+   "S3N20": {
+    "A2": {
+     "n": 40,
+     "correct": 39,
+     "triple_c": 39,
+     "false_form": 0,
+     "triple_c_noU": 39,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 53,
+     "correct": 52,
+     "triple_c": 52,
+     "false_form": 0,
+     "triple_c_noU": 52,
+     "false_form_noU": 0
+    }
+   },
+   "S3N21": {
+    "A2": {
+     "n": 12,
+     "correct": 10,
+     "triple_c": 12,
+     "false_form": 2,
+     "triple_c_noU": 12,
+     "false_form_noU": 2
+    },
+    "A3": {
+     "n": 13,
+     "correct": 13,
+     "triple_c": 13,
+     "false_form": 0,
+     "triple_c_noU": 13,
+     "false_form_noU": 0
+    }
+   },
+   "S3N23": {
+    "A2": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 15,
+     "correct": 15,
+     "triple_c": 15,
+     "false_form": 0,
+     "triple_c_noU": 15,
+     "false_form_noU": 0
+    }
+   },
+   "S3N24": {
+    "A2": {
+     "n": 7,
+     "correct": 7,
+     "triple_c": 7,
+     "false_form": 0,
+     "triple_c_noU": 7,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N25": {
+    "A2": {
+     "n": 8,
+     "correct": 7,
+     "triple_c": 8,
+     "false_form": 1,
+     "triple_c_noU": 8,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   }
+  }
+ },
+ "main_on_same_records": {
+  "Q1_false_form_A2_minus_A3": {
+   "articles": 24,
+   "A2": 0.07462686567164178,
+   "A3": 0.01728395061728395,
+   "A2_false_form": 25,
+   "A2_triple_c": 335,
+   "A3_false_form": 7,
+   "A3_triple_c": 405,
+   "diff": 0.05734291505435783,
+   "ci95": [
+    0.009477077920223178,
+    0.11970399743144669
+   ],
+   "decision": "зменшення хибної форми за вердиктами незалежного аудитора встановлено"
+  },
+  "Q1_sensitivity_noU": {
+   "articles": 24,
+   "diff": 0.05734291505435783,
+   "ci95": [
+    0.009018883685473607,
+    0.12044827233129955
+   ]
+  },
+  "share_correct": {
+   "articles": 24,
+   "A2": 0.9068001126607911,
+   "A3": 0.9581049791419495,
+   "diff_A3_minus_A2": 0.05130486648115837,
+   "ci95": [
+    0.003341590727358246,
+    0.11359817591325402
+   ]
+  },
+  "nonactual_forms": {
+   "A2": {
+    "n": 63,
+    "correct": 40,
+    "false_form": 23,
+    "form_U": 0,
+    "triple_not_C": 0,
+    "by_form": {
+     "planned, positive": {
+      "n": 22,
+      "correct": 22,
+      "false_form": 0
+     },
+     "possible, positive": {
+      "n": 32,
+      "correct": 15,
+      "false_form": 17
+     },
+     "recommended, positive": {
+      "n": 6,
+      "correct": 1,
+      "false_form": 5
+     },
+     "conditional, positive": {
+      "n": 2,
+      "correct": 1,
+      "false_form": 1
+     },
+     "actual, negative": {
+      "n": 1,
+      "correct": 1,
+      "false_form": 0
+     }
+    }
+   },
+   "A3": {
+    "n": 53,
+    "correct": 49,
+    "false_form": 3,
+    "form_U": 0,
+    "triple_not_C": 1,
+    "by_form": {
+     "planned, positive": {
+      "n": 19,
+      "correct": 19,
+      "false_form": 0
+     },
+     "possible, negative": {
+      "n": 1,
+      "correct": 1,
+      "false_form": 0
+     },
+     "possible, positive": {
+      "n": 24,
+      "correct": 23,
+      "false_form": 0
+     },
+     "conditional, positive": {
+      "n": 2,
+      "correct": 2,
+      "false_form": 0
+     },
+     "recommended, positive": {
+      "n": 4,
+      "correct": 1,
+      "false_form": 3
+     },
+     "actual, negative": {
+      "n": 3,
+      "correct": 3,
+      "false_form": 0
+     }
+    }
+   }
+  },
+  "decoys": {
+   "n": 86,
+   "caught_expected": 86,
+   "by_mutation": {
+    "reverse": {
+     "n": 34,
+     "caught_expected": 34
+    },
+    "polarity": {
+     "n": 41,
+     "caught_expected": 41
+    },
+    "modality": {
+     "n": 11,
+     "caught_expected": 11
+    }
+   }
+  },
+  "per_article": {
+   "S3N01": {
+    "A2": {
+     "n": 13,
+     "correct": 5,
+     "triple_c": 13,
+     "false_form": 8,
+     "triple_c_noU": 13,
+     "false_form_noU": 8
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   },
+   "S3N02": {
+    "A2": {
+     "n": 31,
+     "correct": 29,
+     "triple_c": 29,
+     "false_form": 0,
+     "triple_c_noU": 29,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 30,
+     "correct": 30,
+     "triple_c": 30,
+     "false_form": 0,
+     "triple_c_noU": 30,
+     "false_form_noU": 0
+    }
+   },
+   "S3N03": {
+    "A2": {
+     "n": 6,
+     "correct": 4,
+     "triple_c": 5,
+     "false_form": 1,
+     "triple_c_noU": 5,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 10,
+     "correct": 5,
+     "triple_c": 9,
+     "false_form": 4,
+     "triple_c_noU": 9,
+     "false_form_noU": 4
+    }
+   },
+   "S3N04": {
+    "A2": {
+     "n": 20,
+     "correct": 20,
+     "triple_c": 20,
+     "false_form": 0,
+     "triple_c_noU": 20,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 24,
+     "correct": 24,
+     "triple_c": 24,
+     "false_form": 0,
+     "triple_c_noU": 24,
+     "false_form_noU": 0
+    }
+   },
+   "S3N05": {
+    "A2": {
+     "n": 4,
+     "correct": 4,
+     "triple_c": 4,
+     "false_form": 0,
+     "triple_c_noU": 4,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 2,
+     "correct": 2,
+     "triple_c": 2,
+     "false_form": 0,
+     "triple_c_noU": 2,
+     "false_form_noU": 0
+    }
+   },
+   "S3N06": {
+    "A2": {
+     "n": 17,
+     "correct": 17,
+     "triple_c": 17,
+     "false_form": 0,
+     "triple_c_noU": 17,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 23,
+     "correct": 23,
+     "triple_c": 23,
+     "false_form": 0,
+     "triple_c_noU": 23,
+     "false_form_noU": 0
+    }
+   },
+   "S3N07": {
+    "A2": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N08": {
+    "A2": {
+     "n": 13,
+     "correct": 13,
+     "triple_c": 13,
+     "false_form": 0,
+     "triple_c_noU": 13,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 17,
+     "correct": 15,
+     "triple_c": 15,
+     "false_form": 0,
+     "triple_c_noU": 15,
+     "false_form_noU": 0
+    }
+   },
+   "S3N09": {
+    "A2": {
+     "n": 29,
+     "correct": 23,
+     "triple_c": 28,
+     "false_form": 5,
+     "triple_c_noU": 28,
+     "false_form_noU": 5
+    },
+    "A3": {
+     "n": 29,
+     "correct": 27,
+     "triple_c": 27,
+     "false_form": 0,
+     "triple_c_noU": 27,
+     "false_form_noU": 0
+    }
+   },
+   "S3N10": {
+    "A2": {
+     "n": 12,
+     "correct": 10,
+     "triple_c": 12,
+     "false_form": 2,
+     "triple_c_noU": 12,
+     "false_form_noU": 2
+    },
+    "A3": {
+     "n": 18,
+     "correct": 18,
+     "triple_c": 18,
+     "false_form": 0,
+     "triple_c_noU": 18,
+     "false_form_noU": 0
+    }
+   },
+   "S3N11": {
+    "A2": {
+     "n": 7,
+     "correct": 7,
+     "triple_c": 7,
+     "false_form": 0,
+     "triple_c_noU": 7,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N12": {
+    "A2": {
+     "n": 10,
+     "correct": 6,
+     "triple_c": 10,
+     "false_form": 4,
+     "triple_c_noU": 10,
+     "false_form_noU": 4
+    },
+    "A3": {
+     "n": 10,
+     "correct": 7,
+     "triple_c": 10,
+     "false_form": 3,
+     "triple_c_noU": 10,
+     "false_form_noU": 3
+    }
+   },
+   "S3N13": {
+    "A2": {
+     "n": 6,
+     "correct": 6,
+     "triple_c": 6,
+     "false_form": 0,
+     "triple_c_noU": 6,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   },
+   "S3N14": {
+    "A2": {
+     "n": 16,
+     "correct": 16,
+     "triple_c": 16,
+     "false_form": 0,
+     "triple_c_noU": 16,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 16,
+     "correct": 16,
+     "triple_c": 16,
+     "false_form": 0,
+     "triple_c_noU": 16,
+     "false_form_noU": 0
+    }
+   },
+   "S3N15": {
+    "A2": {
+     "n": 27,
+     "correct": 27,
+     "triple_c": 27,
+     "false_form": 0,
+     "triple_c_noU": 27,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 30,
+     "correct": 30,
+     "triple_c": 30,
+     "false_form": 0,
+     "triple_c_noU": 30,
+     "false_form_noU": 0
+    }
+   },
+   "S3N16": {
+    "A2": {
+     "n": 4,
+     "correct": 4,
+     "triple_c": 4,
+     "false_form": 0,
+     "triple_c_noU": 4,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N17": {
+    "A2": {
+     "n": 20,
+     "correct": 19,
+     "triple_c": 20,
+     "false_form": 1,
+     "triple_c_noU": 20,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 17,
+     "correct": 17,
+     "triple_c": 17,
+     "false_form": 0,
+     "triple_c_noU": 17,
+     "false_form_noU": 0
+    }
+   },
+   "S3N18": {
+    "A2": {
+     "n": 12,
+     "correct": 11,
+     "triple_c": 12,
+     "false_form": 1,
+     "triple_c_noU": 12,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 20,
+     "correct": 20,
+     "triple_c": 20,
+     "false_form": 0,
+     "triple_c_noU": 20,
+     "false_form_noU": 0
+    }
+   },
+   "S3N19": {
+    "A2": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 8,
+     "correct": 8,
+     "triple_c": 8,
+     "false_form": 0,
+     "triple_c_noU": 8,
+     "false_form_noU": 0
+    }
+   },
+   "S3N20": {
+    "A2": {
+     "n": 40,
+     "correct": 39,
+     "triple_c": 39,
+     "false_form": 0,
+     "triple_c_noU": 39,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 53,
+     "correct": 52,
+     "triple_c": 52,
+     "false_form": 0,
+     "triple_c_noU": 52,
+     "false_form_noU": 0
+    }
+   },
+   "S3N21": {
+    "A2": {
+     "n": 12,
+     "correct": 10,
+     "triple_c": 12,
+     "false_form": 2,
+     "triple_c_noU": 12,
+     "false_form_noU": 2
+    },
+    "A3": {
+     "n": 13,
+     "correct": 13,
+     "triple_c": 13,
+     "false_form": 0,
+     "triple_c_noU": 13,
+     "false_form_noU": 0
+    }
+   },
+   "S3N23": {
+    "A2": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 15,
+     "correct": 15,
+     "triple_c": 15,
+     "false_form": 0,
+     "triple_c_noU": 15,
+     "false_form_noU": 0
+    }
+   },
+   "S3N24": {
+    "A2": {
+     "n": 7,
+     "correct": 7,
+     "triple_c": 7,
+     "false_form": 0,
+     "triple_c_noU": 7,
+     "false_form_noU": 0
+    },
+    "A3": {
+     "n": 10,
+     "correct": 10,
+     "triple_c": 10,
+     "false_form": 0,
+     "triple_c_noU": 10,
+     "false_form_noU": 0
+    }
+   },
+   "S3N25": {
+    "A2": {
+     "n": 8,
+     "correct": 7,
+     "triple_c": 8,
+     "false_form": 1,
+     "triple_c_noU": 8,
+     "false_form_noU": 1
+    },
+    "A3": {
+     "n": 12,
+     "correct": 12,
+     "triple_c": 12,
+     "false_form": 0,
+     "triple_c_noU": 12,
+     "false_form_noU": 0
+    }
+   }
+  }
+ },
+ "reliability": {
+  "decoys_caught_share": 1.0,
+  "coverage_share": 1.0,
+  "reliable": true
+ },
+ "agreement_with_main": {
+  "correct_match": 1.0,
+  "correct_kappa": 1.0,
+  "correct_table": {
+   "both_correct": 460,
+   "both_not": 38,
+   "main_correct_ind_not": 0,
+   "main_not_ind_correct": 0
+  },
+  "triple_transitions": {
+   "C→C": 489,
+   "U→U": 6,
+   "I→I": 3
+  },
+  "form_both_triple_C": {
+   "n": 489,
+   "table": {
+    "C→C": 460,
+    "I→I": 29
+   },
+   "match": 1.0,
+   "kappa": 1.0
+  },
+  "by_group_and_form": {
+   "A2 і A3 | actual, positive": {
+    "n": 223,
+    "main_correct": 221,
+    "ind_correct": 221,
+    "main_false_form": 0,
+    "ind_false_form": 0
+   },
+   "A2 і A3 | інша форма": {
+    "n": 30,
+    "main_correct": 27,
+    "ind_correct": 27,
+    "main_false_form": 3,
+    "ind_false_form": 3
+   },
+   "лише A2 | actual, positive": {
+    "n": 54,
+    "main_correct": 49,
+    "ind_correct": 49,
+    "main_false_form": 2,
+    "ind_false_form": 2
+   },
+   "лише A2 | інша форма": {
+    "n": 33,
+    "main_correct": 13,
+    "ind_correct": 13,
+    "main_false_form": 20,
+    "ind_false_form": 20
+   },
+   "лише A3 | actual, positive": {
+    "n": 135,
+    "main_correct": 128,
+    "ind_correct": 128,
+    "main_false_form": 4,
+    "ind_false_form": 4
+   },
+   "лише A3 | інша форма": {
+    "n": 23,
+    "main_correct": 22,
+    "ind_correct": 22,
+    "main_false_form": 0,
+    "ind_false_form": 0
+   }
+  }
+ }
+}

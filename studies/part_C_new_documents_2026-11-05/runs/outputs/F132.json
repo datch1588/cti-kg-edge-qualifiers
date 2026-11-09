@@ -1,0 +1,33 @@
+{
+ "run_id": "F132",
+ "target_doc_id": "D0131",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Phishing attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0015", "start": 193, "end": 245, "sha256": "02361ba85050a8ecccc491c108f83723a7e15d9610a24b2166191c8d622307dd"}}
+  ]},
+  {"id": "n002", "label": "Supply chain attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0016", "start": 247, "end": 366, "sha256": "9e65d13fbee0429992e1fa63ac48ce59aa3ae31f934d04284e4621a6a40546c8"}}
+  ]},
+  {"id": "n003", "label": "Ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0014", "start": 100, "end": 223, "sha256": "b80c4491c38065cbb0d0958c7083809ab1169d85cbfefa563371b78a76a0e7a3"}}
+  ]},
+  {"id": "n004", "label": "tabletop exercise", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0007", "start": 0, "end": 141, "sha256": "4be640cb459b9022b54289cd4dfa653cd97ac1ce917351b7a4f2c5d9599128e3"}}
+  ]},
+  {"id": "n005", "label": "artificial intelligence-driven attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0029", "start": 478, "end": 617, "sha256": "40dea7513944a62052fa0b85586260aca98bf8d93e95e5716d4d8dfc5eb12f89"}}
+  ]},
+  {"id": "n006", "label": "cloud security incidents", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0029", "start": 478, "end": 617, "sha256": "40dea7513944a62052fa0b85586260aca98bf8d93e95e5716d4d8dfc5eb12f89"}}
+  ]},
+  {"id": "n007", "label": "data breach", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0007", "start": 245, "end": 324, "sha256": "add856c344afc2f4b975c91004376213f2dc713040cb09a1280c0c079c7bb333"}}
+  ]},
+  {"id": "n008", "label": "insider threat", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0131", "paragraph_id": "D0131:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0131:P0007", "start": 245, "end": 324, "sha256": "add856c344afc2f4b975c91004376213f2dc713040cb09a1280c0c079c7bb333"}}
+  ]}
+ ],
+ "edges": [],
+ "context_passages_used": []
+}

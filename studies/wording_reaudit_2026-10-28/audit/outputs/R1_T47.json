@@ -1,0 +1,10 @@
+{
+ "audit_file": "R1_T47",
+ "target_doc_id": "D0107",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У D0107:P0002 сказано лише, що поширення традиційних червів на кшталт WannaCry «can be halted by patching», тобто це можливість (possible), а формулювання «halts spread of» подає це як здійснений факт."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0107:P0002 прямо стверджено як факт, що «the worm requires no commercial AI platform», що відповідає заперечному фактичному формулюванню «requires no»."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "У D0107:P0002 WannaCry наведено як приклад традиційного черва («Traditional worms, like WannaCry»), тобто звʼязок стверджено, а формулювання «never is a» його заперечує."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0107:P0002 autonomous generative adversaries визначено як системи, що «are defined ... by the capacity to reason about targets», тобто це загальне визначальне твердження, подане як факт, що відповідає формулюванню без маркерів."}
+ ]
+}

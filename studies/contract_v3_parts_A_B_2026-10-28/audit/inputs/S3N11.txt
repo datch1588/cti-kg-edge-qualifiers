@@ -1,0 +1,129 @@
+AUDIT_FILE: S3N11
+TARGET_DOC_ID: D0440
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0440
+PUBLICATION_DATE: 2026-03-12
+SOURCE_URL: https://www.ibtimes.com/stryker-cyberattack-sparks-health-sector-alert-iran-linked-hackers-target-medtech-firm-serving-3799010
+TITLE_SHA256: 7ce3e5234af2dac2663e9e98901829a11852a52b4434866ac42dfe50839bac24
+BEGIN_DOCUMENT
+[D0440:P0001] sha256:7ce3e5234af2dac2663e9e98901829a11852a52b4434866ac42dfe50839bac24
+[D0440:P0002] sha256:3c76112cd1c982c8d2cba9610507cb924840108b250138fffa845c7949450d79
+[D0440:P0003] sha256:3473d295bd6aad3c81689606add106472623b984a434ef4c79ad02ba5eab6429
+[D0440:P0004] sha256:5b8c62837d25df3189844d9b5cbb2647728a64e9eaf28a3afc2e8b85e716999a
+[D0440:P0005] sha256:caf30e90e368d14bdb7cd58470c44378659273d3f89bf0039645ff9bc6bde6b8
+[D0440:P0006] sha256:f081b5cbfaac3d9d1bf31680d4fb03ddab2d99b67778be80f4fad07b8a1e81f4
+[D0440:P0007] sha256:7067fc083f60e95f9f9ae12e466b3a05c7917d3c2b71c8af9246e5aff221d419
+[D0440:P0008] sha256:e67f28c898368cffb706763894e7be4e4647173c541e1a17dfa4161e79ebd1d6
+[D0440:P0009] sha256:a9299b9b13cd746254c315f0e091331981635b52078135d202a3cbf4f3c94813
+[D0440:P0010] sha256:84df0af09e14683cd9e020fffcccd6ec4968c49b99c5bd4bf0d5d1e5ab71e8ef
+[D0440:P0011] sha256:c60144c3b5f25456a43e782143a78539b4a7c8903db1acadb9fefe832fc4ddb2
+[D0440:P0012] sha256:a4fe50b6c72ef6637014302b677ef0d3eb566d51e1c896d33e976158e96d7faa
+[D0440:P0013] sha256:5a7326637d1b563bcb06722dbadeefae572af2468ba412957a0a00f126e5a6d0
+[D0440:P0014] sha256:38e8d2235b7d9205c67cd0ee709ccecb5118d238b0cd9a91cf4c8af1b934defc
+[D0440:P0015] sha256:36d6545ca5be5124ceae9e09a905e991143537377899a3d2435fca9da87cc270
+[D0440:P0016] sha256:92aa64443c8bd904348ebdd6c1a6dbeccd0134546cef0996587a52a4bbd644dd
+[D0440:P0017] sha256:54409cbff6c73de08691a7b27e9cd7d0de992e369e2e7caeb30ada5978ac3b25
+[D0440:P0018] sha256:4815ceb1c582d8c759df549988413e2b6d6a0f0e4eeed86ef6ee0340ba8f0567
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (48)
+E001: «Stryker Corporation» — supplies → «surgical instruments» | форма: actual, positive
+E002: «Handala hacker group» — claimed responsibility for → «Stryker cyberattack» | форма: actual, positive
+E003: «Stryker cyberattack» — attributed to → «Handala» | форма: actual, negative
+E004: «Stryker Corporation» — supplies → «orthopaedic implants» | форма: actual, positive
+E005: «Stryker Corporation» — targeted by → «Stryker cyberattack» | форма: actual, positive
+E006: «Stryker cyberattack» — involved → «wiper malware» | форма: actual, positive
+E007: «Stryker Cyberattack Sparks Health Sector Alert as Iran-Linked Hackers Target Medtech Firm Serving 150M Patients» — authored by → «Athena Freya» | форма: actual, positive
+E008: «wiper malware» — permanently deletes → «data» | форма: actual, positive
+E009: «Stryker Corporation» — supplies → «hospital robotics» | форма: actual, positive
+E010: «Stryker Corporation» — located in → «US» | форма: actual, positive
+E011: «Stryker Corporation» — is → «US medical device manufacturer» | форма: actual, positive
+E012: «US» — located in → «Stryker Corporation» | форма: actual, positive
+E013: «Stryker cyberattack» — caused loss of access to → «laptops» | форма: actual, positive
+E014: «Stryker cyberattack» — affects → «Stryker Corporation» | форма: actual, positive
+E015: «Stryker Cyberattack Sparks Health Sector Alert as Iran-Linked Hackers Target Medtech Firm Serving 150M Patients» — published on → «03/12/26» | форма: actual, positive
+E016: «The Wall Street Journal» — reports on → «Stryker cyberattack» | форма: actual, positive
+E017: «Stryker Corporation» — provides → «surgical instruments» | форма: actual, positive
+E018: «Stryker cyberattack» — affected → «thousands of devices across Stryker's global network» | форма: actual, positive
+E019: «Stryker cyberattack» — highlights vulnerability of → «US healthcare and MedTech sectors» | форма: actual, positive
+E020: «Stryker Corporation» — mitigates → «Stryker cyberattack» | форма: actual, positive
+E021: «hospitals and clinics» — rely on → «Stryker technology» | форма: actual, positive
+E022: «Stryker cyberattack» — affected → «thousands of devices across Stryker's global network» | форма: possible, positive
+E023: «Handala hacker group» — is linked to → «Iran» | форма: actual, positive
+E024: «Stryker cyberattack» — caused loss of access to → «communication systems» | форма: actual, positive
+E025: «Stryker cyberattack» — uses → «wiper malware» | форма: actual, positive
+E026: «wiper malware» — blocked access to → «patient records» | форма: actual, positive
+E027: «Stryker Cyberattack Sparks Health Sector Alert as Iran-Linked Hackers Target Medtech Firm Serving 150M Patients» — available at → «https://www.ibtimes.com/stryker-cyberattack-sparks-health-sector-alert-iran-linked-hackers-target-medtech-firm-serving-3799010» | форма: actual, positive
+E028: «Stryker Corporation» — isolated → «affected systems» | форма: actual, positive
+E029: «Stryker cyberattack» — targets → «Stryker Corporation» | форма: actual, negative
+E030: «Stryker Corporation» — provides → «orthopaedic implants» | форма: actual, positive
+E031: «Stryker Corporation» — is located in → «US» | форма: actual, positive
+E032: «Stryker Corporation» — provides → «hospital robotics» | форма: actual, positive
+E033: «Stryker Cyberattack Sparks Health Sector Alert as Iran-Linked Hackers Target Medtech Firm Serving 150M Patients» — originally published on → «IBTimes UK» | форма: actual, positive
+E034: «Stryker cyberattack» — targets → «MedTech supply chains» | форма: actual, positive
+E035: «state-backed hackers» — target → «companies providing essential medical devices» | форма: actual, positive
+E036: «Stryker Cyberattack Sparks Health Sector Alert as Iran-Linked Hackers Target Medtech Firm Serving 150M Patients» — published by → «International Business Times» | форма: actual, positive
+E037: «Stryker cyberattack» — attributed to → «Handala» | форма: actual, positive
+E038: «CNN» — reported → «Iran-linked cyberattacks» | форма: actual, positive
+E039: «wiper malware» — wiped → «thousands of devices» | форма: actual, positive
+E040: «Iran-linked cyberattacks» — previously targeted → «industrial and medical suppliers» | форма: actual, positive
+E041: «Stryker technology» — serves → «150 million patients worldwide» | форма: actual, positive
+E042: «Stryker cyberattack» — reportedly orchestrated by → «pro-Iran hackers» | форма: actual, positive
+E043: «pro-Iran hackers» — exploit → «weaknesses in civilian infrastructure» | форма: actual, positive
+E044: «Stryker Corporation» — engaged → «cybersecurity teams» | форма: actual, positive
+E045: «The Wall Street Journal» — reported → «Stryker cyberattack» | форма: actual, positive
+E046: «Stryker cyberattack» — halted → «internal systems» | форма: actual, positive
+E047: «Stryker cyberattack» — caused loss of access to → «corporate tools» | форма: actual, positive
+E048: «Stryker cyberattack» — targets → «Stryker Corporation» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

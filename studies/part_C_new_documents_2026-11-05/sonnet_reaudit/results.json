@@ -1,0 +1,346 @@
+{
+ "protocol": "CTI_FACTS_NEW / повторний аудит Sonnet",
+ "auditor": "claude-sonnet-5-5",
+ "seed": "CTI_FACTS_NEW_2026-11-05",
+ "problems": [],
+ "Q1_primary_M1_C_minus_A3": {
+  "label": "S5|C−A3",
+  "metric": "M1",
+  "systems": [
+   "C",
+   "A3"
+  ],
+  "difference": "C − A3",
+  "articles": 49,
+  "C": {
+   "num": 10,
+   "den": 587,
+   "share": 0.017035775127768313
+  },
+  "A3": {
+   "num": 7,
+   "den": 640,
+   "share": 0.0109375
+  },
+  "diff": 0.0060982751277683135,
+  "ci95": [
+   -0.01681352605538336,
+   0.03568831624169377
+  ],
+  "boot_used": 10000,
+  "boot_skipped": 0,
+  "decision": "не встановлено"
+ },
+ "Q2_M1_C_minus_A2": {
+  "label": "S5|C−A2",
+  "metric": "M1",
+  "systems": [
+   "C",
+   "A2"
+  ],
+  "difference": "C − A2",
+  "articles": 48,
+  "C": {
+   "num": 10,
+   "den": 573,
+   "share": 0.017452006980802792
+  },
+  "A2": {
+   "num": 0,
+   "den": 536,
+   "share": 0.0
+  },
+  "diff": 0.017452006980802792,
+  "ci95": [
+   0.0,
+   0.04401408450704225
+  ],
+  "boot_used": 10000,
+  "boot_skipped": 0,
+  "decision": "не встановлено"
+ },
+ "Q3_FF_A2_minus_A3": {
+  "label": "S5|A2−A3",
+  "metric": "FF",
+  "systems": [
+   "A2",
+   "A3"
+  ],
+  "difference": "A2 − A3",
+  "articles": 48,
+  "A2": {
+   "num": 49,
+   "den": 660,
+   "share": 0.07424242424242425
+  },
+  "A3": {
+   "num": 13,
+   "den": 711,
+   "share": 0.01828410689170183
+  },
+  "diff": 0.05595831735072242,
+  "ci95": [
+   0.015897551356287818,
+   0.10559537197802868
+  ],
+  "boot_used": 10000,
+  "boot_skipped": 0,
+  "decision": "зменшення хибної форми встановлено"
+ },
+ "Q4_FF_C_minus_A3": {
+  "label": "S5|C−A3",
+  "metric": "FF",
+  "systems": [
+   "C",
+   "A3"
+  ],
+  "difference": "C − A3",
+  "articles": 49,
+  "C": {
+   "num": 10,
+   "den": 587,
+   "share": 0.017035775127768313
+  },
+  "A3": {
+   "num": 13,
+   "den": 718,
+   "share": 0.018105849582172703
+  },
+  "diff": -0.0010700744544043898,
+  "ci95": [
+   -0.026737121223308423,
+   0.030432568582930915
+  ],
+  "boot_used": 10000,
+  "boot_skipped": 0,
+  "decision": "ефект не встановлено"
+ },
+ "sensitivity_noU": {
+  "Q1": {
+   "label": "S5|C−A3",
+   "metric": "M1_noU",
+   "systems": [
+    "C",
+    "A3"
+   ],
+   "difference": "C − A3",
+   "articles": 49,
+   "C": {
+    "num": 10,
+    "den": 587,
+    "share": 0.017035775127768313
+   },
+   "A3": {
+    "num": 7,
+    "den": 640,
+    "share": 0.0109375
+   },
+   "diff": 0.0060982751277683135,
+   "ci95": [
+    -0.017666576174513608,
+    0.0355792043830924
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "не встановлено"
+  },
+  "Q2": {
+   "label": "S5|C−A2",
+   "metric": "M1_noU",
+   "systems": [
+    "C",
+    "A2"
+   ],
+   "difference": "C − A2",
+   "articles": 48,
+   "C": {
+    "num": 10,
+    "den": 573,
+    "share": 0.017452006980802792
+   },
+   "A2": {
+    "num": 0,
+    "den": 536,
+    "share": 0.0
+   },
+   "diff": 0.017452006980802792,
+   "ci95": [
+    0.0,
+    0.0446284681227863
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "не встановлено"
+  },
+  "Q3": {
+   "label": "S5|A2−A3",
+   "metric": "FF_noU",
+   "systems": [
+    "A2",
+    "A3"
+   ],
+   "difference": "A2 − A3",
+   "articles": 48,
+   "A2": {
+    "num": 49,
+    "den": 660,
+    "share": 0.07424242424242425
+   },
+   "A3": {
+    "num": 13,
+    "den": 711,
+    "share": 0.01828410689170183
+   },
+   "diff": 0.05595831735072242,
+   "ci95": [
+    0.01513438196355186,
+    0.1073219378271274
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "зменшення хибної форми встановлено"
+  },
+  "Q4": {
+   "label": "S5|C−A3",
+   "metric": "FF_noU",
+   "systems": [
+    "C",
+    "A3"
+   ],
+   "difference": "C − A3",
+   "articles": 49,
+   "C": {
+    "num": 10,
+    "den": 587,
+    "share": 0.017035775127768313
+   },
+   "A3": {
+    "num": 13,
+    "den": 718,
+    "share": 0.018105849582172703
+   },
+   "diff": -0.0010700744544043898,
+   "ci95": [
+    -0.02683675087613573,
+    0.02968081354066589
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "ефект не встановлено"
+  }
+ },
+ "agreement": {
+  "triple": {
+   "agree": 0.9828620394173093,
+   "n": 1167,
+   "kappa": 0.19461697722567595
+  },
+  "form_both_tripleC": {
+   "agree": 0.955536181342633,
+   "n": 1147,
+   "kappa": 0.6688124193219648
+  },
+  "form_table": {
+   "C|C": 1042,
+   "C|I": 9,
+   "I|C": 33,
+   "I|I": 54,
+   "U|C": 3,
+   "U|I": 6
+  },
+  "fact_A2": {
+   "n": 533,
+   "opus_I": 0,
+   "sonnet_I": 0,
+   "both_I": 0
+  },
+  "fact_A3": {
+   "n": 639,
+   "opus_I": 0,
+   "sonnet_I": 7,
+   "both_I": 0
+  },
+  "fact_C": {
+   "n": 582,
+   "opus_I": 24,
+   "sonnet_I": 10,
+   "both_I": 9
+  }
+ },
+ "descriptive_both_auditors": {
+  "M1_C_minus_A3": {
+   "label": "S5|C−A3|обидва",
+   "metric": "M1",
+   "systems": [
+    "C",
+    "A3"
+   ],
+   "difference": "C − A3",
+   "articles": 49,
+   "C": {
+    "num": 9,
+    "den": 582,
+    "share": 0.015463917525773196
+   },
+   "A3": {
+    "num": 0,
+    "den": 638,
+    "share": 0.0
+   },
+   "diff": 0.015463917525773196,
+   "ci95": [
+    0.0,
+    0.04223198021689398
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "описово"
+  },
+  "M1_C_minus_A2": {
+   "label": "S5|C−A2|обидва",
+   "metric": "M1",
+   "systems": [
+    "C",
+    "A2"
+   ],
+   "difference": "C − A2",
+   "articles": 48,
+   "C": {
+    "num": 9,
+    "den": 568,
+    "share": 0.01584507042253521
+   },
+   "A2": {
+    "num": 0,
+    "den": 533,
+    "share": 0.0
+   },
+   "diff": 0.01584507042253521,
+   "ci95": [
+    0.0,
+    0.04321045669729879
+   ],
+   "boot_used": 10000,
+   "boot_skipped": 0,
+   "decision": "описово"
+  }
+ },
+ "decoys": {
+  "n": 129,
+  "caught_expected": 127,
+  "by_mutation": {
+   "reverse": [
+    50,
+    50
+   ],
+   "polarity": [
+    61,
+    59
+   ],
+   "modality": [
+    18,
+    18
+   ]
+  }
+ }
+}

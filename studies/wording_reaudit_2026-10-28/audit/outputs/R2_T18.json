@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T18",
+ "target_doc_id": "D0435",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0435:P0008 як факт сказано, що працівників у США, Європі та Азії було заблоковано в системах, тож форма actual, positive відповідає статті."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never published» заперечує зв'язок, а стаття вказує дату публікації/оновлення 12 березня 2026 року (D0435:P0002, D0435:P0102), тобто стверджує його."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає встановлення через вразливості як факт, а в D0435:P0014 сказано лише, що зловмисники «may also exploit software vulnerabilities» — це загальна можливість (possible)."}
+ ]
+}

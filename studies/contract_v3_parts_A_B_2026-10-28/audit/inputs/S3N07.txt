@@ -1,0 +1,115 @@
+AUDIT_FILE: S3N07
+TARGET_DOC_ID: D0574
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0574
+PUBLICATION_DATE: 2026-02-03
+SOURCE_URL: https://www.pravda.com.ua/eng/news/2026/02/03/8019272/
+TITLE_SHA256: 18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4
+BEGIN_DOCUMENT
+[D0574:P0001] sha256:18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4
+[D0574:P0002] sha256:54b5720b9ee1c8553e1a73f64a1aa2e91ea9f39d455a8e0d48f0465f7c0ebcdd
+[D0574:P0003] sha256:e960489ef1e1a8ef4e28c088c8f78d690131dfe1b467a3f1f9ef55ffb176ebf7
+[D0574:P0004] sha256:4edf55c006667eabff2a17588a46e35f245ffbf33fb69f175b9c0b388991490b
+[D0574:P0005] sha256:52124feeed6a5eb2df06e7cc20b3ce554dab040def18a9120bf7062ff2d0e03c
+[D0574:P0006] sha256:d47137da1dc1c8713e507b283e37c8b2a1280a9034c33d70db6ed128d9016630
+[D0574:P0007] sha256:06a2a35dbdf9c3b72244e3a3679c54ff1ca52f6e6367f6c839b17806ae5e4535
+[D0574:P0008] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0009] sha256:1aa38b27670f0bcfa8261a171d82236d8cf976538170565c58834e9e70ed0416
+[D0574:P0010] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0011] sha256:3c1bdcf36341a79cd420d3c93b882c081d0dc910e0c027031d3f077e8e072dc7
+[D0574:P0012] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0013] sha256:5ddbda4b8e18eaf671f62c8e42a9fe70fe5361371a1e98af44254d12b4040cc3
+[D0574:P0014] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0015] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0016] sha256:b13e85eb02be73713f81a2373e66e65d96473cf219d619dc40d8b635581e8010
+[D0574:P0017] sha256:d8a7f067daef3e36f74a4f15a5b45fb1cd0cd7af78ce15da52662fdbfe72bdfd
+[D0574:P0018] sha256:eb11d0b2989b316cfa230ff67b4e9d1088326e49ef3e3c0b6468dc4b2f5b9983
+[D0574:P0019] sha256:e88699fa23c78487babbd8f19c715dc2d70972569e1010b836a0b9d17f87991a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (33)
+E001: «Russian attack on Kyiv's energy infrastructure» — affects → «Darnytskyi» | форма: actual, positive
+E002: «large-scale Russian attack» — targets → «Kyiv's energy infrastructure» | форма: actual, positive
+E003: «Russian attack on Kyiv energy infrastructure» — left without heating → «Dniprovskyi district» | форма: actual, positive
+E004: «missile strike» — targeted → «Kyiv combined heat and power plant» | форма: actual, positive
+E005: «Ukraine's energy minister shows destroyed Kyiv power plant to NATO secretary general» — was published on → «3 February 2026» | форма: actual, positive
+E006: «large-scale Russian attack» — affects → «Dniprovskyi» | форма: actual, positive
+E007: «NATO» — stressed importance of strengthening protection of → «heat and electricity supply facilities» | форма: actual, positive
+E008: «cyber threats» — affects → «energy sector» | форма: actual, positive
+E009: «Russian attack on Kyiv energy infrastructure» — left without heating → «Darnytskyi district» | форма: actual, positive
+E010: «energy infrastructure» — located in → «Kyiv» | форма: actual, positive
+E011: «missile strike» — targets → «Kyiv power plant» | форма: actual, positive
+E012: «Kyiv combined heat and power plant» — provides heat to → «Kyiv» | форма: actual, positive
+E013: «Russian forces» — attacked → «Kyiv combined heat and power plant» | форма: actual, positive
+E014: «Kyiv power plant» — located in → «Kyiv» | форма: actual, positive
+E015: «Kyiv combined heat and power plant» — was attacked on → «night of 2-3 February» | форма: actual, positive
+E016: «Kyiv» — is located in → «Ukraine» | форма: actual, positive
+E017: «Kyiv combined heat and power plant» — is located in → «Kyiv» | форма: actual, positive
+E018: «Mark Rutte» — leads → «NATO» | форма: actual, negative
+E019: «Russian attack on Kyiv's energy infrastructure» — affects → «Dniprovskyi» | форма: actual, positive
+E020: «Russian forces» — carried out large-scale attack on → «Kyiv energy infrastructure» | форма: actual, positive
+E021: «Russian forces» — carried out → «missile strike» | форма: actual, positive
+E022: «large-scale Russian attack» — affects → «Darnytskyi» | форма: actual, positive
+E023: «Ukraine's energy minister shows destroyed Kyiv power plant to NATO secretary general» — cites as source → «Telegram» | форма: actual, positive
+E024: «Dniprovskyi» — affects → «Russian attack on Kyiv's energy infrastructure» | форма: actual, positive
+E025: «NATO» — discussed cooperation in countering cyber threats in the energy sector with → «Ukraine» | форма: actual, positive
+E026: «large-scale Russian attack» — targets → «energy infrastructure» | форма: actual, positive
+E027: «Ukrainska Pravda» — published → «Ukraine's energy minister shows destroyed Kyiv power plant to NATO secretary general» | форма: actual, positive
+E028: «Denys Shmyhal» — reports on → «missile strike» | форма: actual, positive
+E029: «missile strike» — attributed to → «Russian forces» | форма: actual, positive
+E030: «missile strike» — affects → «Kyiv power plant» | форма: actual, positive
+E031: «Russian forces» — carried out large-scale attack on → «Kyiv energy infrastructure» | форма: possible, positive
+E032: «Mark Rutte» — leads → «NATO» | форма: actual, positive
+E033: «Russian forces» — targets → «Kyiv power plant» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

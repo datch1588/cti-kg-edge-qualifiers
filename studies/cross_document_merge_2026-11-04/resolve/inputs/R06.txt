@@ -1,0 +1,183 @@
+RESOLVER_FILE: R06
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 9, згадок 36)
+
+ГРУПА G025 (згадок 6)
+M001: «power grids» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0027]: «@D0018:P0027:167-278 sha256=41cb9150d01bd97d26d8b018df6678d2d044c8d6a9820805dde0b4e9ef23b946»
+    абзац: «@D0018:P0027:0-279 sha256=fe12f08acee465bfd47d51748da9d06255e0d5a6ffab7782fc0137b84de837c4»
+  твердження статті: «AI cyber attacks» — TARGETS → «power grids» (possible, positive)
+M002: «power» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0004]: «@D0166:P0004:107-287 sha256=e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008»
+    абзац: «@D0166:P0004:0-461 sha256=50bfc76937bab5d16add72519f040deb3953fe98e1293aab8d2f53fcf7ae89ad»
+  твердження статті: «Chinese Communist Party» — TARGETS → «power» (possible, positive)
+M003: «power grid» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338» (2026-04-15)
+  фрагмент [P0026]: «@D0290:P0026:0-101 sha256=3825ab2256064220b59ce00b52c22eaae8c045a4dc0a19fbc9869fe8fe393bae»
+  твердження статті: «attacking OT systems» — AFFECTS → «power grid» (possible, positive)
+M004: «thermal power plant» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338» (2026-04-15)
+  фрагмент [P0007]: «@D0290:P0007:0-79 sha256=161a3a369f8a063e0446e4774dbea361b5a9ad698df16c5aad212a1c2319fe35»
+    абзац: «@D0290:P0007:0-177 sha256=8ad46ec6b18214a4f5eefe929975317c8cb48555e39fab45c8cc7a0b51dca652»
+  фрагмент [P0014]: «@D0290:P0014:0-49 sha256=f531550aefaa0a1d0266036f0f7408092ba8de280e8a610e777915f024c7f995»
+  твердження статті: «pro-Russian cyberattack on thermal power plant» — AFFECTS → «thermal power plant» (actual, negative); «pro-Russian cyberattack on thermal power plant» — AFFECTS → «thermal power plant» (planned, positive); «pro-Russian cyberattack on thermal power plant» — TARGETS → «thermal power plant» (actual, positive)
+M005: «power grids» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0016]: «@D0418:P0016:79-159 sha256=e171876c32d2dd23f8bd77dfc86009ba412ca58d6148047925630214bae36868»
+    абзац: «@D0418:P0016:0-160 sha256=105b8ed9ca5450d1cc529db6d7fde644fc48c2360c0786c7c24d9b8fe2197153»
+  твердження статті: «Shahed» — AFFECTS → «power grids» (actual, positive)
+M006: «power stations» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0003]: «@D0424:P0003:142-264 sha256=29827b03d8e526ed08089480808946051c12b942a797ce15aadb5b712acad0b6»
+    абзац: «@D0424:P0003:0-316 sha256=9c09d77ffaad7a4bfb6d6a86fa3f3392a256e5544a4ce3b4700b0e86e94a4846»
+  твердження статті: «Pro-Iranian hackers» — TARGETS → «power stations» (possible, positive)
+
+ГРУПА G026 (згадок 4)
+M007: «transportation» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0020]: «@D0018:P0020:53-182 sha256=48790bf968bf46c3770e72f3143e33864cfb6d8718ddbd2b737efad88c4b0987»
+    абзац: «@D0018:P0020:0-183 sha256=9e678ddf9a7a42ab2a86f021e243983328306ce6b5e4d3e283d9ef4c0677b329»
+  твердження статті: «ransomware» — TARGETS → «transportation» (actual, positive); «AI cyber attacks» — TARGETS → «transportation» (possible, positive)
+M008: «transportation systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:199-331 sha256=92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «Volt Typhoon» — TARGETS → «transportation systems» (actual, positive)
+M009: «transportation» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0011]: «@D0480:P0011:447-557 sha256=3560949497808c054b8128628c22185751c3ddab38b1ecd2a25c79c1d7829fae»
+    абзац: «@D0480:P0011:0-558 sha256=52d6f6ab445480685d2dd6ca33e7b7df37659a488207712023260195956e7cfd»
+  твердження статті: «attackers» — TARGETS → «transportation» (actual, positive)
+M010: «transportation» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0011]: «@D0663:P0011:0-255 sha256=22f8f773914a9baf8ababf9433ca0954370201ac029473bd153dd2b32d295472»
+  твердження статті: «China's cyberarmy» — TARGETS → «transportation» (actual, positive)
+
+ГРУПА G027 (згадок 5)
+M011: «Water and wastewater systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0029]: «@D0018:P0029:260-400 sha256=094fee408e971429a9036aab5c61634de24ba4bbb8f6ae830e73ca17e7af70ad»
+    абзац: «…@D0018:P0029:30-630 sha256=a59ac9e835034f80fcb5181e15913331ef965780c1ddf5472333f650f4b267d0…»
+  твердження статті: «Water and wastewater systems» — USES → «industrial control systems» (actual, positive)
+M012: «water» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0004]: «@D0166:P0004:107-287 sha256=e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008»
+    абзац: «@D0166:P0004:0-461 sha256=50bfc76937bab5d16add72519f040deb3953fe98e1293aab8d2f53fcf7ae89ad»
+  твердження статті: «Chinese Communist Party» — TARGETS → «water» (possible, positive)
+M013: «water and wastewater systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:199-331 sha256=92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «Volt Typhoon» — TARGETS → «water and wastewater systems» (actual, positive)
+M014: «water plants» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0006]: «@D0424:P0006:219-323 sha256=ae1e760cb4ff56e79b917f8ab0d663f7cf47ca0f99489ba291cb56005b3c1559»
+    абзац: «@D0424:P0006:0-324 sha256=a7b73ebfb807ccd186827edcba01d62fc29c2757bdd74561b24a98133ddf235d»
+  твердження статті: «groups working for Tehran» — TARGETS → «water plants» (actual, positive); «Pro-Iranian hackers» — TARGETS → «water plants» (possible, positive)
+M015: «water resources» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0011]: «@D0663:P0011:0-255 sha256=22f8f773914a9baf8ababf9433ca0954370201ac029473bd153dd2b32d295472»
+  твердження статті: «China's cyberarmy» — TARGETS → «water resources» (actual, positive)
+
+ГРУПА G028 (згадок 3)
+M016: «Volt Typhoon» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0031]: «@D0018:P0031:83-199 sha256=cc067ff4d27af7825d509ebfb964061f9ad1e9dd849b747553ca589e46280c00»
+    абзац: «@D0018:P0031:0-200 sha256=38e830e71ae66a4ff45ebebe77be9832072fec300bfcaea942eef7cb67ed04ff»
+  твердження статті: «Littleton Electric Light and Water Department» — MITIGATES → «Volt Typhoon» (actual, positive); «The Record» — REPORTS_ON → «Volt Typhoon» (actual, positive); «Volt Typhoon» — TARGETS → «Littleton Electric Light and Water Department» (actual, positive)
+M017: «Volt Typhoon» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:83-234 sha256=3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «joint task force» — DETECTS → «Volt Typhoon» (planned, positive); «U.S. government agencies» — REPORTS_ON → «Volt Typhoon» (actual, positive); «Volt Typhoon» — ATTRIBUTED_TO → «Chinese Communist Party» (actual, positive)
+M018: «Volt Typhoon» (campaign) | альтернативні назви: — | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0014]: «@D0608:P0014:0-121 sha256=5f890d1c41f1b8d17479af1b057410692ca5867dee9ee0aaf8b8fbbd819e94b4»
+  фрагмент [P0051]: «@D0608:P0051:0-112 sha256=4b2504b5f6ff1095ef3677161d4e2eb85f72010bb1ff19a5c9f81d6b7ccad914»
+  твердження статті: «Volt Typhoon» — ATTRIBUTED_TO → «China» (actual, positive); «Volt Typhoon» — TARGETS → «Guam» (actual, positive); «Volt Typhoon» — TARGETS → «critical infrastructure» (actual, positive)
+
+ГРУПА G029 (згадок 9)
+M019: «businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24)
+  фрагмент [P0004]: «@D0036:P0004:337-492 sha256=5682ab81560af3a6d96986647d159fc5b22efc42970fbf3a398c774edcaea64d»
+    абзац: «…@D0036:P0004:52-652 sha256=ffef6eea41b0398f49f1804ec7fb95448ffb3224a137c4411b46268733c40ce6»
+  твердження статті: «businesses» — USES → «access controls» (recommended, positive)
+M020: «businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0006]: «@D0046:P0006:289-431 sha256=596031d0baaae0ac08aa7e361009b590b29d449f80df6b9c49edf5a1617efa3a»
+    абзац: «@D0046:P0006:0-464 sha256=4a69a91de27b71c43f1607fbc48c2966543da8cbd407ad114a08ce1df847f6fa»
+  твердження статті: «cyber attacks» — TARGETS → «businesses» (possible, positive)
+M021: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0014]: «@D0197:P0014:335-429 sha256=3a4233a6a62227b4b461499e7d2b4777f6635d4ad56b0e17604d5d9b174d35ca»
+    абзац: «@D0197:P0014:0-465 sha256=d58b31ff37645db875a352050abf53b507e4e8bd267e26ada3517cdb451179e1»
+  твердження статті: «UK businesses» — MITIGATES → «AI-enabled threats» (recommended, positive); «cyber attacks» — AFFECTS → «UK businesses» (actual, positive)
+M022: «UK-based businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01)
+  фрагмент [P0007]: «@D0228:P0007:374-453 sha256=99425438722646c60389cb75f8e4d36e4887c2e0000c784aa951ba1552ae052c»
+    абзац: «@D0228:P0007:0-453 sha256=f170722b928ae4e5c40a0874211f9041fcf1fc0a36b26bb5be3e51313c5c2b47»
+  твердження статті: «Russia» — TARGETS → «UK-based businesses» (actual, positive); «UK-based businesses» — LOCATED_IN → «UK» (actual, positive)
+M023: «medium and large businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0022]: «@D0539:P0022:107-229 sha256=92ab3420c4f081f53e582958e7a94f3fa2f398ea21fc2bd8249997c3cb29bf57»
+    абзац: «@D0539:P0022:0-310 sha256=66026bfb1c97a0f2b554a18604682c41adfc826bfa5f095e0a1ddd258abcc93f»
+  твердження статті: «cyber incident» — AFFECTS → «medium and large businesses» (actual, positive)
+M024: «small and medium sized businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0009]: «@D0539:P0009:70-150 sha256=7f44cdf4f2e0711ca0a8c2ed840b7940a9a3a18ca8bb966a5b8826541de9c933»
+    абзац: «@D0539:P0009:0-586 sha256=daea5a8de415f60905f66cc2826e8775f86768bf87ac24c57be6de0dbcbd5117»
+  твердження статті: «new government campaign» — TARGETS → «small and medium sized businesses» (planned, positive)
+M025: «smaller businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0024]: «@D0539:P0024:99-216 sha256=bd62fecefaf317aca344088626fe5d90ab4c88ba66b2d9cec812461609db46e1»
+    абзац: «@D0539:P0024:0-320 sha256=c699be5a47c4b4f0c1219f58128144e352cb2bff207f3a860a0e17fdf774d5f4»
+  твердження статті: «new government campaign» — TARGETS → «smaller businesses» (actual, positive)
+M026: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0006]: «@D0539:P0006:0-119 sha256=42daddffbea63219745b05a65418c8b2cac413f44dff5310a24bf74dd3b041f9»
+  твердження статті: «cyber threats» — AFFECTS → «UK businesses» (actual, positive)
+M027: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+  фрагмент [P0014]: «@D0575:P0014:186-255 sha256=62b34a4bc38dd2e8ac99c4795a7d6dc0fec1a6591361457928824347d07e2cf3»
+    абзац: «@D0575:P0014:0-340 sha256=b31a55d2b49cd256baad1f2b23078b0b52fde6baab4fc19af4cc2bbdf42dac8a»
+  твердження статті: «Cybercriminals» — TARGETS → «UK businesses» (actual, positive); «cyber attacks» — AFFECTS → «UK businesses» (actual, positive); «malicious cyber incidents» — AFFECTS → «UK businesses» (actual, positive)
+
+ГРУПА G030 (згадок 3)
+M028: «Governments» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24)
+  фрагмент [P0004]: «@D0036:P0004:337-492 sha256=5682ab81560af3a6d96986647d159fc5b22efc42970fbf3a398c774edcaea64d»
+    абзац: «…@D0036:P0004:52-652 sha256=ffef6eea41b0398f49f1804ec7fb95448ffb3224a137c4411b46268733c40ce6»
+  твердження статті: «Governments» — USES → «access controls» (recommended, positive)
+M029: «governments» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0006]: «@D0046:P0006:289-431 sha256=596031d0baaae0ac08aa7e361009b590b29d449f80df6b9c49edf5a1617efa3a»
+    абзац: «@D0046:P0006:0-464 sha256=4a69a91de27b71c43f1607fbc48c2966543da8cbd407ad114a08ce1df847f6fa»
+  твердження статті: «cyber attacks» — TARGETS → «governments» (possible, positive)
+M030: «governments» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0012]: «@D0587:P0012:0-127 sha256=0bfbc67c758a795a04f10dd21b5947474764f2b4fc6fd3dc717e27e77303292c»
+    абзац: «@D0587:P0012:0-480 sha256=93ac6fffd091b866ca6690575266eb7a052e71c44fcc4ffd6320d447e546744f»
+  твердження статті: «governments» — MITIGATES → «AI-driven threats» (actual, positive)
+
+ГРУПА G031 (згадок 2)
+M031: «Australian Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:295-382 sha256=22462dc79914eb803df6641052c78f363ee80645f99c7da2744dbc98d2aeb1b7»
+    абзац: «…@D0043:P0024:38-638 sha256=6e4af0b5565a686f10b2043ebfd81ba3a9604ea58257cc288ebf31f4adda398a…»
+  твердження статті: «Australian Cyber Security Centre» — MEMBER_OF → «Five Eyes» (actual, positive); «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate» (actual, positive); «Stephanie Crowe» — LEADS → «Australian Cyber Security Centre» (actual, positive)
+M032: «Australian Cyber Security Centre» (organization) | альтернативні назви: «ACSC»; «ASD's ACSC» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0012]: «@D0550:P0012:248-326 sha256=3fbad0edc3e6dbbfbe72aca6a7519301c6cd8eef37884455b4db86044e0eac84»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+  твердження статті: «Australian Cyber Security Centre» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive); «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate» (actual, positive)
+
+ГРУПА G032 (згадок 2)
+M033: «Australian Signals Directorate» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:295-382 sha256=22462dc79914eb803df6641052c78f363ee80645f99c7da2744dbc98d2aeb1b7»
+    абзац: «…@D0043:P0024:38-638 sha256=6e4af0b5565a686f10b2043ebfd81ba3a9604ea58257cc288ebf31f4adda398a…»
+  твердження статті: «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate» (actual, positive)
+M034: «Australian Signals Directorate» (organization) | альтернативні назви: «ASD» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0012]: «@D0550:P0012:248-326 sha256=3fbad0edc3e6dbbfbe72aca6a7519301c6cd8eef37884455b4db86044e0eac84»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+  твердження статті: «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate» (actual, positive)
+
+ГРУПА G033 (згадок 2)
+M035: «Canadian Centre for Cyber Security» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:383-475 sha256=1e43be4df7242e25f8eab04fe9333c13ef4cde7413c0d5e9a5e2069adb191f91»
+    абзац: «…@D0043:P0024:129-729 sha256=ffb2fe697944646999cdcb8e054af120e037fd280dd19b3c1535319fe2cc9ea4…»
+  твердження статті: «Canadian Centre for Cyber Security» — MEMBER_OF → «Five Eyes» (actual, positive); «Canadian Centre for Cyber Security» — PART_OF → «Communications Security Establishment» (actual, positive); «Rajiv Gupta» — LEADS → «Canadian Centre for Cyber Security» (actual, positive)
+M036: «Canadian Centre for Cyber Security» (organization) | альтернативні назви: «Cyber Centre» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0012]: «@D0550:P0012:327-376 sha256=edbafc74902d433bc3b81e2c122b932bb74021a7db84b6cc9cac1d9cef531716»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+  твердження статті: «Canadian Centre for Cyber Security» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive)
+
+КІНЕЦЬ ГРУП

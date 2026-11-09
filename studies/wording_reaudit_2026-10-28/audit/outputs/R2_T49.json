@@ -1,0 +1,15 @@
+{
+ "audit_file": "R2_T49",
+ "target_doc_id": "D0069",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «is scheduled to recess until» передає план, і стаття так само подає перерву як заплановану за графіком («the House is scheduled to recess until June 23», D0069:P0008)."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання з «possibly» подає ухвалення як можливе, а стаття стверджує це як факт («Section 702 of FISA, enacted in 2008», D0069:P0015)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття подає обов'язок провайдерів, зокрема Microsoft, виконувати вимоги як чинний стан речей («providers - such as AT&T and Microsoft - who are required to comply», D0069:P0017), і формулювання це точно відтворює."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття подає як факт, що Section 702 дозволяє збирати комунікації іноземців за кордоном без ордера («lets agencies ... collect communications of foreigners abroad without a warrant», D0069:P0005), і формулювання без маркерів цьому відповідає."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття подає обов'язок AT&T виконувати вимоги як чинний стан речей («providers - such as AT&T and Microsoft - who are required to comply», D0069:P0017), і формулювання це точно відтворює."},
+  {"item_id": "W006", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «can gather» відповідає тому, як стаття подає звʼязок: дзвінки й повідомлення американців «can also be gathered» (D0069:P0005)."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання стверджує без застережень, що припинення дії підвищує ризик кібератак, а стаття подає це лише як припущення Герстелла («might present a higher risk», D0069:P0023), тож маркер можливості «might» втрачено."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "Заперечне формулювання «failed to approve» відповідає статті, яка подає неухвалення продовження як факт («The House failed to approve an extension», D0069:P0003)."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає як факт, що FBI використовує Section 702, щоб встановити джерело атаки програми-вимагача, а в статті це лише гіпотетичний умовний приклад Герстелла («If the FBI hears a ransomware attack has been made ... they're going to want to», D0069:P0024)."}
+ ]
+}

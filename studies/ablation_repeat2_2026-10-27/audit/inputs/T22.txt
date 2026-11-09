@@ -1,0 +1,96 @@
+AUDIT_FILE: T22
+TARGET_DOC_ID: D0402
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0402
+PUBLICATION_DATE: 2026-03-18
+SOURCE_URL: https://arxiv.org/abs/2603.16342
+TITLE_SHA256: 699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7
+BEGIN_DOCUMENT
+[D0402:P0001] sha256:699ca8d70b5acad1c5edb5b17dc5dc5e8aeb672b92d400ceb2006cdf5f0d68f7
+[D0402:P0002] sha256:04f84c0c3b12d6065e3a414fcd023c76c1acc9b9defa1147324a8919a7c9569a
+[D0402:P0003] sha256:158fcd05b685338db8c820e361043b427cde812986b901bf820d3e68bd1122e1
+[D0402:P0004] sha256:6a70ac20fd4d79080bbbf33c3c9af0c02a5a523bd17d796670e398f525a5edfa
+[D0402:P0005] sha256:35e9c593e44b1c098e4596240293d488689183fa0120b4da4f34114e7092e72c
+[D0402:P0006] sha256:916433b7675aebdaeee0973df4e73fa30c3c62ea4eda3dd0b210d086f99cdf69
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (35)
+E001: «Sentiment Steering Attacks» — target → «RAG-enabled Large Language Models» | форма: actual, positive
+E002: «LSTM-based IDS» — evaluated using → «CICIoT2023 dataset» | форма: actual, positive
+E003: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: possible, positive
+E004: «unauthorized devices» — gain access to → «large-scale IoT networks» | форма: actual, positive
+E005: «IoT networks» — protects → «convolutional neural network (CNN)-based IDS» | форма: possible, positive
+E006: «long short-term memory (LSTM)-based IDS» — detects → «cyber threats» | форма: actual, positive
+E007: «unauthorized devices» — exploit → «existing weaknesses» | форма: actual, positive
+E008: «CNN-based IDS» — performs → «binary, grouped, and multi-class classification» | форма: actual, positive
+E009: «arXiv:2603.16342» — was published on → «arXiv» | форма: actual, positive
+E010: «unauthorized devices» — targets → «IoT networks» | форма: actual, positive
+E011: «long short-term memory (LSTM)-based IDS» — protects → «IoT networks» | форма: possible, positive
+E012: «arXiv:2603.16342» — has DOI → «https://doi.org/10.48550/arXiv.2603.16342» | форма: actual, positive
+E013: «existing weaknesses» — exist in → «large-scale IoT networks» | форма: actual, positive
+E014: «arXiv:2603.16342» — was published on → «arXiv» | форма: actual, negative
+E015: «CNN-based IDS» — identifies and classifies → «cyber threats» | форма: actual, positive
+E016: «LSTM-based IDS» — identifies and classifies → «cyber threats» | форма: actual, positive
+E017: «arXiv:2603.16342» — was listed on → «2026.03.18» | форма: actual, positive
+E018: «long short-term memory (LSTM)-based IDS» — uses → «deep learning» | форма: actual, positive
+E019: «long short-term memory (LSTM)-based IDS» — protects → «IoT networks» | форма: actual, positive
+E020: «Sentiment Steering Attacks» — targets → «RAG-enabled Large Language Models» | форма: possible, positive
+E021: «Sentiment Steering Attacks» — targets → «RAG-enabled Large Language Models» | форма: actual, positive
+E022: «LSTM-based IDS» — enhances security of → «IoT networks» | форма: actual, positive
+E023: «CNN-based IDS» — evaluated using → «CICIoT2023 dataset» | форма: actual, positive
+E024: «LSTM-based IDS» — performs → «binary, grouped, and multi-class classification» | форма: actual, positive
+E025: «convolutional neural network (CNN)-based IDS» — protects → «IoT networks» | форма: actual, positive
+E026: «arXiv:2603.16342» — was submitted on → «Tue, 17 Mar 2026 10:18:47 UTC» | форма: actual, positive
+E027: «arXiv:2603.16342» — addresses detection of → «Sentiment Steering Attacks» | форма: actual, positive
+E028: «LSTM-based IDS» — is based on → «long short-term memory» | форма: actual, positive
+E029: «arXiv:2603.16342» — is available at → «https://arxiv.org/abs/2603.16342» | форма: actual, positive
+E030: «convolutional neural network (CNN)-based IDS» — detects → «cyber threats» | форма: actual, positive
+E031: «arXiv:2603.16342» — proposes → «LSTM-based IDS» | форма: actual, positive
+E032: «arXiv:2603.16342» — proposes → «CNN-based IDS» | форма: actual, positive
+E033: «CNN-based IDS» — is based on → «convolutional neural network» | форма: actual, positive
+E034: «CNN-based IDS» — enhances security of → «IoT networks» | форма: actual, positive
+E035: «convolutional neural network (CNN)-based IDS» — uses → «deep learning» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

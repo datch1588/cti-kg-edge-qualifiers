@@ -1,0 +1,89 @@
+{
+ "run_id": "X081",
+ "target_doc_id": "D0530",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "DDoS", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}}
+  ]},
+  {"id": "n002", "label": "DoS", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}}
+  ]},
+  {"id": "n003", "label": "MITM", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}}
+  ]},
+  {"id": "n004", "label": "ToN_IoT", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1253, "sha256": "00f008287ba7a734e1da217457eca1838cba97ea6e1b386930e9fa20a3b306a0"}}
+  ]},
+  {"id": "n005", "label": "UNSW-NB15", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1319, "end": 1463, "sha256": "dc353e551ade0c65bf0e1330c4ee81b7c1c22d7343cdad5799e861fca823c69a"}}
+  ]},
+  {"id": "n006", "label": "autoencoder", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 814, "end": 886, "sha256": "40e1181b3f14fd805c0e881dae007aaae61f16212ff2ca5f39c87160ed8d4dc8"}}
+  ]},
+  {"id": "n007", "label": "federated aggregation", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 961, "end": 1139, "sha256": "4943bb6c36c367b858804d6956d3dd63f32c352975f56b5851547f2cae43e830"}}
+  ]},
+  {"id": "n008", "label": "Internet of Battlefield Things", "entity_type": "technology", "aliases": ["IoBT"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 96, "end": 232, "sha256": "b9c0abe467aa32c9f0f9e4a9bb81e48171a75890245eebeb7499f3313a789dd3"}}
+  ]},
+  {"id": "n009", "label": "lightweight adapter modules", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 888, "end": 959, "sha256": "9d598f22b5578aab82b79f1822fbd302c9d0d2ac803bb12b4f2fa4fad72a8e5f"}}
+  ]},
+  {"id": "n010", "label": "pseudo-labelling", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 961, "end": 1139, "sha256": "4943bb6c36c367b858804d6956d3dd63f32c352975f56b5851547f2cae43e830"}}
+  ]},
+  {"id": "n011", "label": "tactical networks", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 190, "end": 273, "sha256": "ceddff057cbd29d6524b6e242cde7456269b03ebc45063f5d7505b25962e38d2"}}
+  ]},
+  {"id": "n012", "label": "universal convolutional model", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 725, "end": 812, "sha256": "1fb03473ac56b0fbefb351c648d53f22e9c6d0f0bf6550e7a1338f1ac2110de0"}}
+  ]},
+  {"id": "n013", "label": "Zone-Adaptive Intrusion Detection", "entity_type": "technology", "aliases": ["ZAID"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 470, "end": 604, "sha256": "10ede487ac4e679af3dd29fb64d0c228a293f2f849172f18881e15f93190fc31"}}
+  ]},
+  {"id": "n014", "label": "zero-day", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 606, "end": 723, "sha256": "4a00b7184caa749df5becc112e7bf74abde6c9ce14c8792f4d4e47b8197ddeb3"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n008", "target": "n011", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 96, "end": 232, "sha256": "b9c0abe467aa32c9f0f9e4a9bb81e48171a75890245eebeb7499f3313a789dd3"}}
+  ]},
+  {"id": "e002", "source": "n013", "target": "n001", "relation_type": "DETECTS", "attribution": "", "event_time": "", "event_scope": "zero-day protocol evaluation on ToN_IoT", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}},
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1319, "end": 1379, "sha256": "efa2e8539a9ed760ac701c3e7d05b4154a94cb70e9a1aef7167c61df58a1dcab"}}
+  ]},
+  {"id": "e003", "source": "n013", "target": "n002", "relation_type": "DETECTS", "attribution": "", "event_time": "", "event_scope": "zero-day protocol evaluation on ToN_IoT", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}},
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1319, "end": 1379, "sha256": "efa2e8539a9ed760ac701c3e7d05b4154a94cb70e9a1aef7167c61df58a1dcab"}}
+  ]},
+  {"id": "e004", "source": "n013", "target": "n003", "relation_type": "DETECTS", "attribution": "", "event_time": "", "event_scope": "zero-day protocol evaluation on ToN_IoT", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1141, "end": 1317, "sha256": "8141f8c65b2dce900a01792942fe93e3086d3da77f81a2571af054358cc22db0"}},
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1319, "end": 1379, "sha256": "efa2e8539a9ed760ac701c3e7d05b4154a94cb70e9a1aef7167c61df58a1dcab"}}
+  ]},
+  {"id": "e005", "source": "n013", "target": "n014", "relation_type": "DETECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 470, "end": 685, "sha256": "095f38020ab8ef13989f058490c488cf0794084ecbf653dd0e7ea02cb9a5bf7c"}}
+  ]},
+  {"id": "e006", "source": "n013", "target": "n008", "relation_type": "PROTECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0001", "start": 0, "end": 65, "sha256": "bd830f5955ab804d0ecedb3e7f265c2bd14be484e3bbaf91d2d9e89341024ac6"}},
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 1465, "end": 1632, "sha256": "907b19a20bf18e7fd4e66e101a096e432d8441070e4a92f58913445d57c03372"}}
+  ]},
+  {"id": "e007", "source": "n013", "target": "n006", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 725, "end": 886, "sha256": "32244845281e6d6bf1a1c9c730610a269bf8a15588852f2a3802bc801f1f8cdc"}}
+  ]},
+  {"id": "e008", "source": "n013", "target": "n007", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 961, "end": 1139, "sha256": "4943bb6c36c367b858804d6956d3dd63f32c352975f56b5851547f2cae43e830"}}
+  ]},
+  {"id": "e009", "source": "n013", "target": "n009", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 725, "end": 959, "sha256": "6f3fd3ab1c9cc92ad020bfd8645f34c28d6ead410d8c56a2174eb53ef8e3fddd"}}
+  ]},
+  {"id": "e010", "source": "n013", "target": "n010", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 961, "end": 1139, "sha256": "4943bb6c36c367b858804d6956d3dd63f32c352975f56b5851547f2cae43e830"}}
+  ]},
+  {"id": "e011", "source": "n013", "target": "n012", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0530", "paragraph_id": "D0530:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0530:P0002", "start": 725, "end": 812, "sha256": "1fb03473ac56b0fbefb351c648d53f22e9c6d0f0bf6550e7a1338f1ac2110de0"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

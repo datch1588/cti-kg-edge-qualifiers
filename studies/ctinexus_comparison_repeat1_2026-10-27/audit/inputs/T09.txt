@@ -1,0 +1,111 @@
+AUDIT_FILE: T09
+TARGET_DOC_ID: D0523
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0523
+PUBLICATION_DATE: 2026-02-23
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6306682
+TITLE_SHA256: 65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+BEGIN_DOCUMENT
+[D0523:P0001] sha256:65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+[D0523:P0002] sha256:906fbda5fd9dde7675960bd576c234cff66505b3db1ecc62448ef60e50e65e01
+[D0523:P0003] sha256:f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57
+[D0523:P0004] sha256:36ce2c1c60914ff26dc7aa5c6093f7486da2569712bbb42e8782885d42bdc7a8
+[D0523:P0005] sha256:8f82a53bc0b10480b38e7d6b55e4184f1ea4aa6ba69a147c1f072724179aa4ac
+[D0523:P0006] sha256:990ee36eb0e55771811c9cd800dbddbd9d6fcba91b1908612c869fbea353ad1c
+[D0523:P0007] sha256:43c9da78bfde5ed2beb41b61876d3aa2f0e6c441b74d2bc689ef36b63d147b61
+[D0523:P0008] sha256:8d01b47206e1264ca796eb013066865da67f3935ce69da0efcc8b5c50d3cefba
+[D0523:P0009] sha256:dc8b87944bcbf48ab66f13d4a06a5ac2d06fc6fa92241ed9d2ae26f5c3e14dfc
+[D0523:P0010] sha256:c97b958632fd1cf6ad84df50e2c08b69593df1314fb67caa612d0a333b4d49d6
+[D0523:P0011] sha256:7866d45752f3cbce62a872f812abf31de5fe3af0d092aa6eaed577d2385d83e1
+[D0523:P0012] sha256:198633fa606af0c8bcea398e9a0e747cf728b5271d49c3145feacc40e186e59f
+[D0523:P0013] sha256:13b1bc79ac0e73f09f3787de27a667edccaae55cecddf90f8dd722fef03f2f9e
+[D0523:P0014] sha256:8df21090a6f464a10d74a87792d61f7a58af5e4620d87b7f01f358512668bb1d
+[D0523:P0015] sha256:9bc6b3ca5ce948e35a34bd175f6b3e8f9bd1c305fa003c719a6b4a1bb44e6d77
+[D0523:P0016] sha256:37a995cf47dd0741622526f75cb09c08c7061629b200a994fa828f033f8a5c0a
+[D0523:P0017] sha256:27161775d7428c11de511b73f48115465832cb257e85d3ae32af4ee9c1017853
+[D0523:P0018] sha256:554561987fe731bdd8e3815bdec6f2fd7c8f5c228f9671baa73e7d1573c2e97f
+[D0523:P0019] sha256:6043c70b20821f367b1a4fa5a8690dce50fbc099e0e6f17eb2ec919387f5809c
+[D0523:P0020] sha256:2916dd5baf3ac49963c7a8fd17b04ecd9afa23a89d0060c37b9d575d3f3c720e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (36)
+E001: «Proofpoint» — secures → «collaboration tools» | форма: actual, positive
+E002: «Proofpoint» — develops → «Proofpoint security platform» | форма: actual, positive
+E003: «Proofpoint» — secures → «email» | форма: actual, positive
+E004: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: planned, positive
+E005: «Proofpoint security platform» — provides → «human- and agent-centric security» | форма: actual, positive
+E006: «Proofpoint» — develops → «Proofpoint collaboration and data security platform» | форма: actual, positive
+E007: «Proofpoint» — provides → «human- and agent-centric security platform» | форма: actual, positive
+E008: «Concentrix» — deploys → «Proofpoint security platform» | форма: actual, positive
+E009: «Proofpoint» — secures → «AI agents» | форма: actual, positive
+E010: «India» — reported → «loss of sensitive data» | форма: actual, positive
+E011: «Proofpoint» — provides → «collaboration security and data protection solutions» | форма: actual, positive
+E012: «Proofpoint» — mitigates → «data loss» | форма: actual, positive
+E013: «Proofpoint» — collaborates across → «Asia Pacific» | форма: actual, positive
+E014: «Concentrix» — provides → «Concentrix Security Operations Centre offerings» | форма: actual, negative
+E015: «Nelson Soon» — member of → «Proofpoint» | форма: actual, positive
+E016: «Concentrix» — provides → «Security Operations Centre (SOC) offerings» | форма: actual, positive
+E017: «Concentrix» — collaborates across → «Asia Pacific» | форма: actual, positive
+E018: «cyber threats targeting people» — target organisations across → «Asia Pacific» | форма: actual, positive
+E019: «Proofpoint» — announced strategic partnership with → «Concentrix» | форма: actual, positive
+E020: «Concentrix» — integrates → «Proofpoint data protection solutions» | форма: actual, positive
+E021: «Security Operations Centre (SOC) offerings» — provides → «Concentrix» | форма: actual, positive
+E022: «Proofpoint data protection solutions» — integrated into → «Concentrix Security Operations Centre offerings» | форма: actual, positive
+E023: «Concentrix» — provides → «Concentrix Security Operations Centre offerings» | форма: actual, positive
+E024: «India» — at risk of → «material cyberattack» | форма: actual, positive
+E025: «Proofpoint» — announced partnership in → «New Delhi» | форма: actual, positive
+E026: «Proofpoint» — invests in → «APAC region» | форма: actual, positive
+E027: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: actual, positive
+E028: «2025 Voice of the CISO report» — reports concern about → «material cyberattack» | форма: actual, positive
+E029: «Proofpoint collaboration security solutions» — integrated into → «Concentrix Security Operations Centre offerings» | форма: actual, positive
+E030: «Proofpoint» — is trusted partner to → «Fortune 100» | форма: actual, positive
+E031: «Proofpoint» — secures → «cloud» | форма: actual, positive
+E032: «2025 Voice of the CISO report» — covers → «India» | форма: actual, positive
+E033: «Proofpoint» — published → «2025 Voice of the CISO report» | форма: actual, positive
+E034: «Rishi Rajpal» — member of → «Concentrix» | форма: actual, positive
+E035: «Concentrix» — integrates → «Proofpoint collaboration security solutions» | форма: actual, positive
+E036: «Proofpoint» — announced partnership on → «Feb. 23, 2026» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

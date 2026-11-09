@@ -1,0 +1,21 @@
+{
+ "audit_file": "S5F11",
+ "target_doc_id": "D0571",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття каже, що посібник використовує модель DGs від SAFECode, подано як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "«Use version control ... to prevent tampering» — порада впровадити засіб не робить рекомендацією твердження про його захисну функцію, тож actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "CIS і SAFECode випустили посібник, факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Зв'язок change tracking — запобігає підміні є, але це функція засобу (actual), а не рекомендація; порада застосувати засіб не робить зв'язок recommended."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "CIS разом із SAFECode випустив посібник, факт."},
+  {"item_id": "E006", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: не tampering запобігає version control, а навпаки."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Підписування коду названо засобом проти підміни, функція засобу — actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "«SAFECode's Development Groups (DGs) model» — модель SAFECode, подано як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "CISA запустила ініціативу Secure by Design у 2023, факт."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "Version control запобігає підміні — функція засобу (actual); порада його використати не робить зв'язок recommended."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує, що change tracking запобігає підміні; полярність має бути positive."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Change tracking названо засобом запобігання підміні, actual positive."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Захисна функція підписування коду — actual, а не рекомендація; порада використати засіб не змінює модальності зв'язку."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Ініціатива Secure by Design запущена CISA, факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "«NIST Secure Software Development Framework» — фреймворк NIST, факт."}
+ ]
+}

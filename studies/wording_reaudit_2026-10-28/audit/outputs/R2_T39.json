@@ -1,0 +1,12 @@
+{
+ "audit_file": "R2_T39",
+ "target_doc_id": "D0198",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0198:P0010 як факт подано наявну вже зараз здатність («AI-enabled cyber tools can now systematically map legacy exposure»), і це відповідає формулюванню без маркерів."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0198:P0011 як чинний стан сказано, що «progress among Defence-adjacent entities ... remains uneven», і це відповідає формулюванню без маркерів."},
+  {"item_id": "W003", "wording_modality": "conditional", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0198:P0011 дані стають читабельними лише «once quantum capability matures», і саме цю умову містить формулювання."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «protects» подає захист як здійснений факт, а в D0198:P0007 IIP лише називає zero-trust підходом, обраним для захисту мереж («committing to a specific architectural response»), а в D0198:P0013 сказано, що настанов щодо впровадження ще бракує, тобто це план."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly caused by» подає причину лише як можливу, а в D0198:P0009 її подано як факт: «have suffered major data breaches because of third-party failures overseas»."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «directs» не має маркерів плану, а в D0198:P0006 фінансування заплановане на майбутнє: «will be directed ... over the decade»."}
+ ]
+}

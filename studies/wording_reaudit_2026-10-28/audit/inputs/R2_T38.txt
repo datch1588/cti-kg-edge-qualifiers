@@ -1,0 +1,71 @@
+AUDIT_FILE: R2_T38
+TARGET_DOC_ID: D0144
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0144
+PUBLICATION_DATE: 2026-05-27
+SOURCE_URL: https://www.aa.com.tr/en/europe/german-government-approves-draft-for-new-powers-to-fight-cyber-threats/3949933
+TITLE_SHA256: fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+BEGIN_DOCUMENT
+[D0144:P0001] sha256:fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+[D0144:P0002] sha256:9ea106218bc851ef1ddde648dc3211e843b3e4e58a155cd34f27a430b74120ee
+[D0144:P0003] sha256:b27a38347d9c98bec8bee9c690e02baa496e89101d69c7a5794792e879ffd17b
+[D0144:P0004] sha256:e5af578481a4b35d652765ccdab8e194179c045a59a9dbe0a680494828ecfe2c
+[D0144:P0005] sha256:253fab16fc1f1ac31b997f4eeef3b7cefa94e6d3b4e56baaa8b4ed00b0f0b5b9
+[D0144:P0006] sha256:b98e567baa639cfef2283782f700c041aaef42ce9892ccd00a29b52ed661a82a
+[D0144:P0007] sha256:d1382b3f4976e1e3ebf9dc06bebc1374b7eafab399982bea6bdc3afce1562661
+[D0144:P0008] sha256:825b78aabe95bcac334b7525c2d2d697adef8f70adbbeb1368ca5837c96267c9
+[D0144:P0009] sha256:1c0deb8c8477c48914cca0968dd41e5baf00bcf76f38e833a3272374175b0c3c
+[D0144:P0010] sha256:caf2d26f7c57ade93fe0b531756f51a8fea38091ecc1ac4167b01d73bfde26c9
+[D0144:P0011] sha256:7c63e57feef66042ddf1db733c8b36dd7b2ee109d272c96d449a3a88123db6b2
+[D0144:P0012] sha256:234b4fb68d682269e4cb118675ec8bdca07558dbded83a4fe10704a155ed23a5
+[D0144:P0013] sha256:c6178c3c7a565f8da58b133fce2e6b29b8ac1047a29c11e6a6ef7df3f6f7f12c
+[D0144:P0014] sha256:f231d27feee60bf45ba632a2a4e04ed20914d45bf1f394c1eb544e6cf643302a
+[D0144:P0015] sha256:a405faa469c031edd4a4604793093105b2438e099deaa6a988bfe5bb5967de37
+[D0144:P0016] sha256:f776f3ed49d11a2f7760f7baca58586bed85d0cabb3e66cb149a73187856bf22
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (11)
+W001: «Anadolu Agency» — published → «German government approves draft for new powers to fight cyber threats»
+W002: «Federal Office for Information Security (BSI)» — searches for → «activities indicating preparations for an attack»
+W003: «German authorities» — will not engage in → «hackbacks»
+W004: «telecommunications companies» — would be required to pass on warnings from → «Federal Office for Information Security (BSI)»
+W005: «German government» — would give new powers to → «Federal Office for Information Security (BSI)»
+W006: «German government» — would give new powers to → «Bundespolizei»
+W007: «foreign powers and state-linked groups» — never target → «government institutions»
+W008: «major digital platforms» — would be required to pass on warnings from → «Federal Office for Information Security (BSI)»
+W009: «attackers' software and servers» — may be located → «abroad»
+W010: «German government» — would give new powers to → «Federal Criminal Police Office (BKA)»
+W011: «German authorities» — will disrupt → «attackers' software and servers»
+КІНЕЦЬ ЗАПИСІВ

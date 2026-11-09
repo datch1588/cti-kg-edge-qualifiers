@@ -1,0 +1,212 @@
+AUDIT_FILE: QT48C
+TARGET_DOC_ID: D0001
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0001
+PUBLICATION_DATE: 2026-06-30
+SOURCE_URL: https://nannews.ng/nigerian-army-strengthening-cyber-capabilities-to-counter-evolving-security-threats-coas/
+TITLE_SHA256: 94a566830c245287109b15bd767f2e55ecb53028dfb0373dcc1b068646a8fa4f
+BEGIN_DOCUMENT
+[D0001:P0001] sha256:94a566830c245287109b15bd767f2e55ecb53028dfb0373dcc1b068646a8fa4f
+[D0001:P0002] sha256:c9267e80237a5b167bb1ff5d28ddbb8d1d2d51bfbe95641966d35ed7c5f7d803
+[D0001:P0003] sha256:4a73125e750863d8b341bf47545d5d598bd5163945ba5c85fde8300d1bcf4561
+[D0001:P0004] sha256:9af6a6b3899cbfbadbc9252c3c407dfa65ea1e38014ad39b3a36e970044d0079
+[D0001:P0005] sha256:8d2587d0b81e1a539bd44596ac31354e4c8788c99e0fe6a7993e3cde646af887
+[D0001:P0006] sha256:cccd609684d114af60279d31c8c06a0cfa621ecde89fb4446edfb46394a973cb
+[D0001:P0007] sha256:ea85a45489264f503489463a81821e7c648775ffdec73516477089d432959d65
+[D0001:P0008] sha256:ef44b5b137722aa594a4a0aa2b34419353c78359cecac8b7dbe34240e7ad81a6
+[D0001:P0009] sha256:3f31fc514c0fd12d24a0aaec904d93e339bb643d1c5a22c88606cb51608b362a
+[D0001:P0010] sha256:c8771aac82fdbb8f129381b0f011daaad48f01f7a81ea2fd4eab3e8aabc13dd0
+[D0001:P0011] sha256:016a348e60b7f48b153ff131a223194daa43c14ef3784d7862fb95697cca2323
+[D0001:P0012] sha256:009f9b6da82b2604167b4aa88bc2700a6771ff0fc3b1f2ea788cdd32f4e47c40
+[D0001:P0013] sha256:bf6c481691f3a2e18f343b56e57a9a061fd1c3419a377c87d6f9a5fcf1499f73
+[D0001:P0014] sha256:d7a783e7d6f2d21ffb44c2f79bd0c2e1a1f0e585efd87d5a9de895d2ab79f20a
+[D0001:P0015] sha256:9c7ae7c220d2c2e4c9f1f1446f0296b7b4b0e18cbd8f8394770bcdf6841d4eff
+[D0001:P0016] sha256:83e55a337ff4e1ce226d002d101fbac40ab1d3b0f4e3cf965e4d9c29dfaa3b66
+[D0001:P0017] sha256:b7ecbcc70632fb22b5ca271e4bb4d01da0d1c7e05209e5b02344a7664985ead1
+[D0001:P0018] sha256:5beac5b7007e52e61e35c9576945c968e1791234831d9e7849f08fca194c79cb
+[D0001:P0019] sha256:c5d5ce6d53e3dc5bc414219e2a997ba8a7f06f56ba33e8c2d5043caf72b3e5c9
+[D0001:P0020] sha256:b07b991dfc3c7ecf5969a3fd32eaf33b9810e0e5919b9fed4162483a67838683
+[D0001:P0021] sha256:f0274465547cb79c5d1ad37a6b2d41136f95e170e242be374010730b052d608e
+[D0001:P0022] sha256:e482faaa16ef8639e90f1f50edfea95d42a75130f6926cd68a4d4bfb51d792c5
+[D0001:P0023] sha256:af83105d06674e51081c8912ab82114720d4f625c4a9e651f83d0e5b9a5d9794
+[D0001:P0024] sha256:06791fde6345849b7dd688ce8e8a79e6ba947fe0af2571f2f3f4b8ebf0d9cb47
+[D0001:P0025] sha256:8c964099f27d1d42bebe79c9bed3d1962b438f1bb9ff99fda2687862403da902
+[D0001:P0026] sha256:19c4f81b225ee6087d977f475ce5693a27b102b43af52fb942e717c2395993c4
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 31, вузлів 3)
+E001: «machine learning» — enables → «cyber intelligence capabilities» | форма: recommended, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0011] «@0-144 sha256=fdf124047b6ccd8acd206e3dad7d53316b3db7b54dd35bb9cae8ad968b1dc5c5»
+E002: «digital platforms» — enables → «banditry» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E003: «Waidi Shaibu» — leads → «Nigerian Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0001:P0001] «@0-90 sha256=94a566830c245287109b15bd767f2e55ecb53028dfb0373dcc1b068646a8fa4f»; [D0001:P0005] «@0-53 sha256=24db78fbbd524811c9aa3c6456b45b289bc4d2a4b962cd49337bd95c01029d05»
+E004: «cybercriminals» — targets → «critical infrastructure» | форма: possible, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-239 sha256=b7ecbcc70632fb22b5ca271e4bb4d01da0d1c7e05209e5b02344a7664985ead1»
+E005: «digital platforms» — enables → «organised crime» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@0-240 sha256=3f31fc514c0fd12d24a0aaec904d93e339bb643d1c5a22c88606cb51608b362a»
+E006: «cybercriminals» — targets → «critical infrastructure» | форма: possible, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@10-238 sha256=01d57b58b0233f3035f13b317b93a722fa1d2241ecbc08d8bef2870d106f9abe»
+E007: «power» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0018] «@0-213 sha256=5beac5b7007e52e61e35c9576945c968e1791234831d9e7849f08fca194c79cb»
+E008: «telecommunications» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@60-172 sha256=fc79f641af741d579c3f0cdda1bd9bb939e4cb5234cb8d73b209f160051e5e25»
+E009: «government databases» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@56-172 sha256=0a6afff509aa8d2f44cef6f0aa9a26535db70d49327c4211fb7187729fcd7e89»
+E010: «cyber intelligence capabilities» — uses → «machine learning» | форма: recommended, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0011] «@0-232 sha256=016a348e60b7f48b153ff131a223194daa43c14ef3784d7862fb95697cca2323»
+E011: «financial systems» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-172 sha256=d26f2006823107387cf1711fd460b37fafc52113a31878136d62f37a2d635898»
+E012: «cyber networks» — enables → «organised crime» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E013: «digital platforms» — enables → «organised crime» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-239 sha256=b7ecbcc70632fb22b5ca271e4bb4d01da0d1c7e05209e5b02344a7664985ead1»
+E014: «telecommunications» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-239 sha256=b7ecbcc70632fb22b5ca271e4bb4d01da0d1c7e05209e5b02344a7664985ead1»
+E015: «digital platforms» — enables → «kidnapping» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E016: «2026 Nigerian Army Cyber Warfare School Seminar» — located in → «Abuja» | форма: actual, positive
+  атрибуція: — | час події: «on Tuesday» | контекст події: —
+  фрагменти: [D0001:P0005] «@70-146 sha256=879dc26269a85c28b1f1549cab3e85e281dbffc481fe45cac833499f63ec3e33»
+E017: «telecommunications» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@56-172 sha256=0a6afff509aa8d2f44cef6f0aa9a26535db70d49327c4211fb7187729fcd7e89»
+E018: «Waidi Shaibu» — leads → «Nigerian Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0001:P0005] «@0-147 sha256=8d2587d0b81e1a539bd44596ac31354e4c8788c99e0fe6a7993e3cde646af887»
+E019: «cyber networks» — enables → «organised crime» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@0-240 sha256=3f31fc514c0fd12d24a0aaec904d93e339bb643d1c5a22c88606cb51608b362a»
+E020: «financial systems» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@56-172 sha256=0a6afff509aa8d2f44cef6f0aa9a26535db70d49327c4211fb7187729fcd7e89»
+E021: «power» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-239 sha256=b7ecbcc70632fb22b5ca271e4bb4d01da0d1c7e05209e5b02344a7664985ead1»
+E022: «hostile actors» — uses → «cyber attacks» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0008] «@0-228 sha256=ef44b5b137722aa594a4a0aa2b34419353c78359cecac8b7dbe34240e7ad81a6»
+E023: «digital platforms» — enables → «disinformation» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E024: «2026 Nigerian Army Cyber Warfare School Seminar» — located in → «Abuja» | форма: actual, positive
+  атрибуція: — | час події: «Tuesday» | контекст події: —
+  фрагменти: [D0001:P0005] «@0-147 sha256=8d2587d0b81e1a539bd44596ac31354e4c8788c99e0fe6a7993e3cde646af887»
+E025: «digital platforms» — enables → «organised crime» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E026: «telecommunications» — part of → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Jacob Bawa» | час події: — | контекст події: —
+  фрагменти: [D0001:P0017] «@0-172 sha256=d26f2006823107387cf1711fd460b37fafc52113a31878136d62f37a2d635898»
+E027: «digital platforms» — enables → «separatist agitations» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E028: «dependence on foreign-controlled software, platforms and artificial intelligence» — affects → «national resilience» | форма: possible, positive
+  атрибуція: «Abdulhakeem Ajijola» | час події: — | контекст події: —
+  фрагменти: [D0001:P0021] «@62-265 sha256=4049416e019592c38bca2399b4efae820eb12ae6cb5414f41340e1266f791fb3»
+E029: «cyber networks» — enables → «disinformation» | форма: actual, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0009] «@8-239 sha256=cf345166007bc3291d0372d7a066aaff49adcef2dc6da18ebe3e05cbc40fc8f2»
+E030: «advanced data analytics» — enables → «cyber intelligence capabilities» | форма: recommended, positive
+  атрибуція: «Waidi Shaibu» | час події: — | контекст події: —
+  фрагменти: [D0001:P0011] «@0-144 sha256=fdf124047b6ccd8acd206e3dad7d53316b3db7b54dd35bb9cae8ad968b1dc5c5»
+E031: «Abdulhakeem Ajijola» — warns about → «dependence on foreign-controlled software, platforms and artificial intelligence» | форма: actual, positive
+  атрибуція: «Abdulhakeem Ajijola» | час події: — | контекст події: —
+  фрагменти: [D0001:P0021] «@0-265 sha256=f0274465547cb79c5d1ad37a6b2d41136f95e170e242be374010730b052d608e»
+V001: «Abdulhakeem Ajijola» (person) | альтернативні назви: «Ajijola»
+V002: «terrorist and criminal groups» (threat_category) | альтернативні назви: «dependence on foreign-controlled software, platforms and artificial intelligence»
+V003: «Waidi Shaibu» (person) | альтернативні назви: «Shaibu»
+КІНЕЦЬ ЗАПИСІВ

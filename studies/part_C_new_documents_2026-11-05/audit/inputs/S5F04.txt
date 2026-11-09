@@ -1,0 +1,153 @@
+AUDIT_FILE: S5F04
+TARGET_DOC_ID: D0643
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0643
+PUBLICATION_DATE: 2026-01-08
+SOURCE_URL: https://www.orfonline.org/research/grey-zone-warfare-and-cyber-precursor-to-conventional-conflict
+TITLE_SHA256: 169bed25b2b6dd3228ef379bc45aa6a9fe59e64a51e32eb1faf48c6df39b0920
+BEGIN_DOCUMENT
+[D0643:P0001] sha256:169bed25b2b6dd3228ef379bc45aa6a9fe59e64a51e32eb1faf48c6df39b0920
+[D0643:P0002] sha256:c7f86d4e745b7404d4c832c3083aa201a56b910f81ac4634584797cd0da716d8
+[D0643:P0003] sha256:447b81413d7dfb84ad624890ca8ba8df772075b6515093b86b244f9016618665
+[D0643:P0004] sha256:24271ace4097a91f90f32c4d573e0638287cee6874446292ac9c40f9f9072c12
+[D0643:P0005] sha256:3eede31954de10e402dead35545e075fa38643176c2bd6b7398f7d3e49b449ac
+[D0643:P0006] sha256:1a57c2ebfe78c8c1b8c3dcedb677534235d5967464b7bfc30db06b897954ae1d
+[D0643:P0007] sha256:637456f0734ba343dc54f344c7135f81c4a581b594a9cfaf6fc403fb7252c6f2
+[D0643:P0008] sha256:ef2f4d08fe2cff34575ce6b756f198d2b57d0d059d50ab605e70409c58f77cd3
+[D0643:P0009] sha256:c883df48a4f7b3af73c19f907c89fa1328e4f3d11938a2ca21c08807ab71f0b2
+[D0643:P0010] sha256:fa09095d322f11806625badda0830b1e4eba3a811962a6da87b5db247b42bfe6
+[D0643:P0011] sha256:4f00d01e7d25571dd294d1eb8caad4b71ae16e8224d8d1a91528f973f112422f
+[D0643:P0012] sha256:2e90b7d7f78728e20af27d34ea74b24010be210f208a3b3ad9376f59776996be
+[D0643:P0013] sha256:09a6303aa189a9235fa63c27fb72bf3587a5fa72a128487427eab4486b720db5
+[D0643:P0014] sha256:ebdc1c45ac2d9736de7cd1a845b43d12c23aa9f52d3b1a49a883d716907df6f7
+[D0643:P0015] sha256:1c7c14d85ab990cfd9d1f5f05bd2db00e3cfca9e9be29dee1b39cc91ce7ab3b8
+[D0643:P0016] sha256:72517b33ac0fdcfc3a57548c1c2ea3a766e60190d1784ecf920dc5aacfa182da
+[D0643:P0017] sha256:eb5dcbff2039c08dd4ffa0d05cfb60e935c4d7efab08cc3977664b375bf438d8
+[D0643:P0018] sha256:8ea6d02108085979cb9bf5b822ee5b579d95b99ce870e337ea7b90fe84b7ef50
+[D0643:P0019] sha256:0e45ba412d7079c4a6bfdef15bc7946f45cb36fa92751f4823fdcc9e33c3846b
+[D0643:P0020] sha256:58e8f2837f57c291e282fb29534877033af6d4ecccdd6e18571d30a0d2e1341b
+[D0643:P0021] sha256:e4d669c25dd4db2113a06d3a798f5e99e5f12c7b92e1d6ed891bc3019d7213ea
+[D0643:P0022] sha256:64fdedb7ba93ebdc4feae33cbcada19d3d0e4b20a31e6c743a1aa5fa6af7bc58
+[D0643:P0023] sha256:d3d4d894254687b33d41c85da8ecb41f432a48a69691c8c540948c97858976db
+[D0643:P0024] sha256:2e9211054acd70d826190ccf1574deea9ff85cfb8499117f5f56ee66b52468e1
+[D0643:P0025] sha256:ff8cf2ce7f7f03a500381b22cdfce78ee54a72e8368737a8418e36d9684be904
+[D0643:P0026] sha256:815782d36034798c97f5016835487ea26a8e39f585f1f977b7a3f89b08c7c2e2
+[D0643:P0027] sha256:49907b9204069faeccd495f2f13b883e2d9461adec188d6524787efaafd696de
+[D0643:P0028] sha256:bb92da7e1310520586c4611d161e0ca4b46cabb480fe1adc770c698c15b72326
+[D0643:P0029] sha256:9104e270f7cddc76651bdf8578b12323cc170404ad7c012616423c101505f94a
+[D0643:P0030] sha256:4d8fbda85036ae0aef785828dba818cb26fc85734089c679fcb52fb2e498dfad
+[D0643:P0031] sha256:9cd070e467002d9207411da696b036303d0e2b056d7a7e2919b398a6d82dc254
+[D0643:P0032] sha256:7df6a8bce49b0971f8139df4006b01b47a3dfc9538c287fcbafb85ab00bcf182
+[D0643:P0033] sha256:098fbcafc37033d0653e4a87e899f95a87b7695007ceedfd2340a06002662b7a
+[D0643:P0034] sha256:e12fff4b3381febd0365f3c29d837bd7eb18f3ebd3041441d22eb81c4ddc5c09
+[D0643:P0035] sha256:ef3841c94e4a013b290027b2678f80d5aa91dd0f1e8d034790da412f2c517335
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (55)
+E001: «US' cyber operations» — targets → «Venezuela's air defence systems» | форма: actual, positive
+E002: «Mumbai power outage» — located in → «Mumbai» | форма: actual, positive
+E003: «China» — targets → «Indian power grid networks» | форма: actual, positive
+E004: «Indian power grid networks» — located in → «India» | форма: actual, positive
+E005: «January 2026 power grid failure in Venezuela» — located in → «Venezuela» | форма: actual, positive
+E006: «cyber operations» — uses → «supply-chain compromise» | форма: actual, positive
+E007: «US» — targets → «Venezuela's air defence systems» | форма: actual, positive
+E008: «industrial control networks» — affects → «Malware» | форма: possible, positive
+E009: «US' cyber operations» — targets → «surveillance infrastructure» | форма: possible, positive
+E010: «US' cyber operations» — targets → «Venezuela's power infrastructure» | форма: actual, positive
+E011: «attack on the Ukrainian power grid» — targets → «Ukrainian power grid» | форма: actual, negative
+E012: «Chinese intrusions» — attributed to → «China» | форма: actual, positive
+E013: «US' cyber operations» — targets → «communication network» | форма: actual, positive
+E014: «US' cyber operations» — affects → «military installations» | форма: actual, positive
+E015: «Mumbai power outage» — attributed to → «China» | форма: actual, positive
+E016: «supply-chain vulnerability» — affects → «India» | форма: actual, positive
+E017: «US' cyber operations» — attributed to → «US» | форма: actual, positive
+E018: «US' cyber operations» — affects → «Venezuelan military» | форма: actual, positive
+E019: «Nicolas Maduro» — leads → «Venezuela» | форма: actual, negative
+E020: «cyber operations» — uses → «Malware» | форма: actual, positive
+E021: «ZTE» — located in → «China» | форма: actual, positive
+E022: «Chinese intrusions» — targets → «Indian power grid networks» | форма: actual, positive
+E023: «Nicolas Maduro» — located in → «Caracas» | форма: actual, positive
+E024: «US» — uses → «Grey-zone tactic» | форма: actual, positive
+E025: «attack on the Ukrainian power grid» — targets → «Ukrainian power grid» | форма: actual, positive
+E026: «Nicolas Maduro» — leads → «Venezuela» | форма: actual, positive
+E027: «Malware» — affects → «industrial control networks» | форма: possible, positive
+E028: «communication network» — located in → «El Volcan» | форма: actual, positive
+E029: «cyber operations» — uses → «intelligence collection» | форма: actual, positive
+E030: «US' cyber operations» — targets → «radar networks» | форма: actual, positive
+E031: «Venezuela» — uses → «biometric systems» | форма: actual, positive
+E032: «US' cyber operations» — targets → «software that processes radar data» | форма: actual, positive
+E033: «January 2026 power grid failure in Venezuela» — attributed to → «US» | форма: actual, positive
+E034: «attack on the Ukrainian power grid» — uses → «Malware» | форма: actual, positive
+E035: «US' cyber operations» — targets → «air defence systems» | форма: actual, positive
+E036: «cyber operations» — uses → «insider access» | форма: actual, positive
+E037: «India» — mitigates → «Mumbai power outage» | форма: actual, positive
+E038: «Venezuela» — uses → «"smart city" technologies» | форма: actual, positive
+E039: «radar networks» — part of → «air defence systems» | форма: actual, positive
+E040: «January 2026 power grid failure» — located in → «Venezuela» | форма: actual, positive
+E041: «cyber operations» — targets → «critical infrastructure» | форма: actual, positive
+E042: «US' cyber operations» — targets → «encrypted communications» | форма: actual, positive
+E043: «ZTE» — provides → «"smart city" technologies» | форма: actual, positive
+E044: «US» — targets → «Nicolas Maduro» | форма: possible, positive
+E045: «supply-chain vulnerability» — affects → «India's infrastructure» | форма: actual, positive
+E046: «US» — targets → «Nicolas Maduro» | форма: actual, positive
+E047: «ZTE» — provides → «smart city» | форма: actual, positive
+E048: «China» — provides → «"smart city" technologies» | форма: actual, positive
+E049: «Malware» — affects → «SCADA» | форма: possible, positive
+E050: «Malware» — affects → «supply-chain hardware» | форма: possible, positive
+E051: «India» — detects → «cyber aggression» | форма: recommended, positive
+E052: «supply-chain vulnerability» — affects → «India's infrastructure» | форма: possible, positive
+E053: «radar networks» — part of → «Venezuela's air defence systems» | форма: actual, positive
+E054: «US» — uses → «cyber and electronic capabilities» | форма: actual, positive
+E055: «Venezuela» — uses → «networked cameras» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

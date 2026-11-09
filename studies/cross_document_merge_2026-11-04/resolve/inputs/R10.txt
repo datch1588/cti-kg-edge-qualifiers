@@ -1,0 +1,215 @@
+RESOLVER_FILE: R10
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 14, згадок 40)
+
+ГРУПА G057 (згадок 9)
+M001: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0028]: «@D0113:P0028:74-222 sha256=19b218fd3db63e312fabd5f423b2029f0183e3fa7be23fddc2f19ff66ad13e5a»
+    абзац: «@D0113:P0028:0-424 sha256=2d593c075f9e6bc662d463377caa5c55789889d8a7a1ddfe2217d9fcfb953849»
+  твердження статті: «Microsoft» — REPORTS_ON → «compromise of the mistralai PyPI package» (actual, positive); «Microsoft» — REPORTS_ON → «Storm-2949» (actual, positive); «Microsoft» — REPORTS_ON → «CVE-2026-45585» (actual, positive)
+M002: «Microsoft Israel» (organization) | альтернативні назви: «Microsoft's Israel branch» | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0025]: «@D0113:P0025:0-89 sha256=1fc87fc0b35ced0b8e451d705371f5982c99abfc80db431274ea1157a17f0dfb»
+    абзац: «@D0113:P0025:0-600 sha256=5637bed6529f114c619d79ba7f19577b8737cab7c05b670b18f1adb75ff07d09…»
+  твердження статті: «Microsoft Israel» — PART_OF → «Microsoft» (actual, positive); «Alon Haimovich» — LEADS → «Microsoft Israel» (actual, positive)
+M003: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0007]: «@D0124:P0007:0-70 sha256=f73a0105f48f4b35e8dfb7a38f9f8afc4515f1eff0d5a77150c6b4609d422630»
+    абзац: «@D0124:P0007:0-356 sha256=934bcc77c6bf952487721c77292e61a84374af9c24b35fa6a12f165b3d3a5545»
+  твердження статті: «Microsoft» — DEVELOPS → «Windows 365 for Agents» (actual, positive); «Microsoft» — MITIGATES → «CVE-2026-45659» (actual, positive); «Microsoft» — WARNS_ABOUT → «cryptojacking campaign» (actual, positive)
+M004: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0026]: «@D0194:P0026:206-366 sha256=2fc20271b2b7f684cd55317d8e3148ec554e1710348222b397c2984a1687baa5»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «Microsoft» — MEMBER_OF → «restricted working group» (actual, positive)
+M005: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0018]: «@D0250:P0018:61-216 sha256=0ab126f4b900c21aab38d0c3e632a8ef0c36e3329e047bf4c1af29fcf95252c8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+M006: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0008]: «@D0344:P0008:0-88 sha256=9cad514ff92950214ffeb443a69295a86e1981bcba3a8e76d6d6571306d59848»
+    абзац: «@D0344:P0008:0-354 sha256=4d1764e38619b08d546754962652331ebd3786cf3284dfa3926507604586e5ca»
+  твердження статті: «Microsoft» — PROVIDES → «EDR tools» (actual, positive)
+M007: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0030]: «@D0427:P0030:31-90 sha256=35c23efba3729b1a80218f1e6d69dd7f4e4cd9ed37b75371b82a1ad71c7b5efc»
+    абзац: «@D0427:P0030:0-203 sha256=f489766fd72b6142589252e10485d05e844064fbb7943fa1c946f6ccd7889ce9»
+  твердження статті: «Microsoft» — DEVELOPS → «Windows» (actual, positive)
+M008: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0034]: «@D0457:P0034:68-191 sha256=0b1251832899e5307727806b2aaaa7b1795a9f6dd22cf078618d99d2c3929bb6»
+    абзац: «@D0457:P0034:0-359 sha256=6c93e170a30f27cbb267bcd7a5199dd081e49e3e3b5f7f7ae86b99f9691a2611»
+  твердження статті: «Microsoft» — MITIGATES → «unauthorized bots» (planned, positive); «Microsoft» — REPORTS_ON → «phishing campaign» (actual, positive)
+M009: «Microsoft» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+  фрагмент [P0020]: «@D0478:P0020:27-131 sha256=3a864d8204db04146836de089f976b151fdb595473a149116c5060a6550d790a»
+    абзац: «@D0478:P0020:0-294 sha256=87e909c14d7509e9afc63a9c5673b9cb0e1bba95e5a7f6e7b84a1412fe414c1a»
+  твердження статті: «Microsoft» — OPERATES → «data centres» (actual, positive)
+
+ГРУПА G058 (згадок 2)
+M010: «Shadowserver Foundation» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0023]: «@D0113:P0023:71-207 sha256=a11ca4393b84999b5b9d905159ba9b5eeb3fddfb9728e37d6f9d4810fa9daff1»
+    абзац: «@D0113:P0023:0-421 sha256=cee8ef5f87f5622e91b16ae919b1e453470eb53171ef993369757ffe3bd5c6ad»
+  твердження статті: «Shadowserver Foundation» — MITIGATES → «Glassworm» (actual, positive)
+M011: «Shadowserver Foundation» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0012]: «@D0457:P0012:297-426 sha256=222a9ca3ca83df351d31cc32888287f64ba0697ca950997d67153e0873349b84»
+    абзац: «@D0457:P0012:0-508 sha256=2060f5366c299e2c7c2e3198e609a107c33daf4c0adcb3a9065b0237251dbee3»
+  твердження статті: «Shadowserver Foundation» — REPORTS_ON → «CVE-2025-14500» (actual, positive); «Shadowserver Foundation» — WARNS_ABOUT → «CVE-2025-14500» (actual, positive)
+
+ГРУПА G059 (згадок 2)
+M012: «Thales Alenia Space» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0013]: «@D0113:P0013:106-219 sha256=c11b307235a9a07dc4b10eed7d06df1971ece7ad340fef0ad4fd067cd794bef7»
+    абзац: «@D0113:P0013:0-589 sha256=99cae4e7df87f2068a57840bcfafbb041aed09b5f01bd65ea87fe5787ddb2a91»
+M013: «Thales» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0035]: «@D0457:P0035:162-252 sha256=ff4b6b584d939806612546f2dcabb7dcfe67b828608c98ce76a6d8d0451bab43»
+    абзац: «@D0457:P0035:0-357 sha256=24d9af33a397fef64244db0e1e0cf99042b7cc827ee48720d94d700c44be4c9f»
+
+ГРУПА G060 (згадок 2)
+M014: «Cisco Catalyst SD-WAN» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0027]: «@D0113:P0027:0-99 sha256=f47a358076de8e6640cc377dfa6161ebfff3b6ad2a3427453a0b4010cbaeb4c7»
+    абзац: «@D0113:P0027:0-565 sha256=a25491f3a7d0569d7e664c199aedb506a8132f3a2186dd9bc75254313a5349b8»
+  твердження статті: «Cisco Catalyst SD-WAN vulnerabilities» — AFFECTS → «Cisco Catalyst SD-WAN» (actual, positive)
+M015: «Cisco Catalyst SD-WAN Manager» (product) | альтернативні назви: «Catalyst SD-WAN Manager»; «SD-WAN Manager» | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0015]: «@D0457:P0015:248-347 sha256=d6eff7361afb7156b61d91d95a800593cd067c94999300fcd1562e3aa203c43a»
+    абзац: «@D0457:P0015:0-450 sha256=d5be78e9fb5b7ee547fd96b8a392f30efd39dce6d86e669cd1775358a4e3d676»
+  фрагмент [P0015]: «@D0457:P0015:78-146 sha256=df718a1b4ef4e9ef7be7289393fd15a45dff64e0e854fe6b5060d857b78f7501»
+    абзац: «@D0457:P0015:0-450 sha256=d5be78e9fb5b7ee547fd96b8a392f30efd39dce6d86e669cd1775358a4e3d676»
+  фрагмент [P0015]: «@D0457:P0015:0-42 sha256=e3c6dfe254d6d88df4187fea0c29030e75cc0ccc8f57c2bbcb52de9bf94e6c89»
+    абзац: «@D0457:P0015:0-450 sha256=d5be78e9fb5b7ee547fd96b8a392f30efd39dce6d86e669cd1775358a4e3d676»
+  твердження статті: «Data Collection Agent» — PART_OF → «Cisco Catalyst SD-WAN Manager» (actual, positive); «CVE-2026-20122» — AFFECTS → «Cisco Catalyst SD-WAN Manager» (actual, positive); «CVE-2026-20128» — AFFECTS → «Cisco Catalyst SD-WAN Manager» (actual, positive)
+
+ГРУПА G061 (згадок 2)
+M016: «FortiClient EMS» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0008]: «@D0113:P0008:266-394 sha256=c43919a412bceff5eeab484815b65166fa390f5bacf6b742012b25151b648b6e»
+    абзац: «@D0113:P0008:0-394 sha256=844d44f19890288d84c6dced1c6bfda772d916b59740239d96c4e97b0855d14a»
+  твердження статті: «CVE-2026-35616» — AFFECTS → «FortiClient EMS» (actual, positive)
+M017: «FortiClient EMS» (product) | альтернативні назви: «FortiClient Enterprise Management Server» | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0010]: «@D0124:P0010:173-261 sha256=2f3af7798dddbd0ba27b3b944e9e580a9d6ddc2dc4ac2467dd97c7b41e03c083»
+    абзац: «@D0124:P0010:0-532 sha256=830b3e03059e02eff748332a5ce781da95821f64dd35029770347ec14031b11a»
+  твердження статті: «CVE-2026-35616» — AFFECTS → «FortiClient EMS» (actual, positive)
+
+ГРУПА G062 (згадок 3)
+M018: «Microsoft 365» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0028]: «@D0113:P0028:223-397 sha256=57ff5229a342dfe60befd23369ab93454c8153c7f22c0647d95efb69433164cc»
+    абзац: «@D0113:P0028:0-424 sha256=2d593c075f9e6bc662d463377caa5c55789889d8a7a1ddfe2217d9fcfb953849»
+  твердження статті: «Storm-2949» — TARGETS → «Microsoft 365» (actual, positive)
+M019: «Microsoft 365 Copilot» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0047]: «@D0124:P0047:76-171 sha256=63856217fc0a1923ab198c034d590aca4a24b3ed175feca7a02897466ac58fcd»
+    абзац: «@D0124:P0047:0-424 sha256=ad04414362bddebffc73fee15fc2ff9faeea2a306ce1c1b3af554560b8f1a8ca»
+M020: «Microsoft 365» (product) | альтернативні назви: «M365»; «Microsoft M365» | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0008]: «@D0344:P0008:94-150 sha256=a17b3c09ad92609923143c97e719d3360a301232e69419cbe922739ec61d4c18»
+    абзац: «@D0344:P0008:0-354 sha256=4d1764e38619b08d546754962652331ebd3786cf3284dfa3926507604586e5ca»
+  фрагмент [P0009]: «@D0344:P0009:180-254 sha256=dc3602718edeec7cd162d04b7f1e8bd2c65bac861dd3c26d4030a920d40ef84b»
+    абзац: «@D0344:P0009:0-461 sha256=a02db3a16ef19da385f7e98f831c39f26a06e53d56241624cf1de0d4cf035468»
+  твердження статті: «Kanati Agentic SOC» — SUPPORTS → «Microsoft 365» (actual, positive); «MDR Essentials» — SUPPORTS → «Microsoft 365» (actual, positive); «inherent vulnerabilities» — AFFECTS → «Microsoft 365» (actual, positive)
+
+ГРУПА G063 (згадок 2)
+M021: «Microsoft Azure» (product) | альтернативні назви: «Azure» | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0025]: «@D0113:P0025:310-409 sha256=01f43e83e6309b0e2b0774b9fbe8ebce0d1ad42b02a2225dc25959bd1b1a1dcf»
+    абзац: «…@D0113:P0025:9-609 sha256=4c1f8748bc69060c13fd509a4a7a7793ac34db116aa25265255fabfb3f145dc3»
+  твердження статті: «Unit 8200» — USES → «Microsoft Azure» (actual, positive); «Storm-2949» — TARGETS → «Microsoft Azure» (actual, positive)
+M022: «Azure Foundry» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d» (2026-03-23)
+  фрагмент [P0018]: «@D0382:P0018:0-168 sha256=4fb492579e0d4543e9c9783991546b4b63c72fb3d1acb95f4e642cec12d7f5b8»
+    абзац: «@D0382:P0018:0-419 sha256=75c102af25158df4fd61b4e02ad692e35663ef67e6fa3eb6e88560c2685dc40a»
+  твердження статті: «Defend AI» — SUPPORTS → «Azure Foundry» (actual, positive)
+
+ГРУПА G064 (згадок 2)
+M023: «ShinyHunters» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0007]: «@D0113:P0007:160-263 sha256=62415820edde4c194ea80bfacddf9463a0c5db2b3c9b55210fc4872002473137»
+    абзац: «@D0113:P0007:0-309 sha256=b452d47d150911d2d99a0a08c264c205cf0a0ee5f7d38357bd83685a04883ef0»
+  твердження статті: «ShinyHunters» — TARGETS → «Instructure» (actual, positive); «ShinyHunters» — TARGETS → «Canvas» (actual, positive)
+M024: «ShinyHunters» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0021]: «@D0124:P0021:197-245 sha256=a0823872486e334dc5d6bb7dd1a8c7781f8487198c7c05f4b7b6792f3939099c»
+    абзац: «@D0124:P0021:0-461 sha256=1e209cb1c555098a81be2dd767a4a816da966992ab5808351f81c72c55a15b01»
+  фрагмент [P0032]: «@D0124:P0032:172-253 sha256=9db9b98d1447a996d47724681965c86896ad4d45b1a5cdecccb7567a3ff440a7»
+    абзац: «@D0124:P0032:0-409 sha256=cc8af22db819110cc666af9cded7d56f1851678e18737b7d5218096dfd29d0d7»
+  твердження статті: «cyberattack on 7-Eleven» — ATTRIBUTED_TO → «ShinyHunters» (actual, positive); «data breach» — ATTRIBUTED_TO → «ShinyHunters» (actual, positive)
+
+ГРУПА G065 (згадок 2)
+M025: «CVE-2026-35616» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0008]: «@D0113:P0008:266-394 sha256=c43919a412bceff5eeab484815b65166fa390f5bacf6b742012b25151b648b6e»
+    абзац: «@D0113:P0008:0-394 sha256=844d44f19890288d84c6dced1c6bfda772d916b59740239d96c4e97b0855d14a»
+  твердження статті: «CVE-2026-35616» — AFFECTS → «FortiClient EMS» (actual, positive)
+M026: «CVE-2026-35616» (vulnerability) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0010]: «@D0124:P0010:263-354 sha256=a8b919492bbb7c59672a7c4a98505fcb1e10b6d8d3b7a2970396517e1e4f340a»
+    абзац: «@D0124:P0010:0-532 sha256=830b3e03059e02eff748332a5ce781da95821f64dd35029770347ec14031b11a»
+  твердження статті: «CVE-2026-35616» — AFFECTS → «FortiClient EMS» (actual, positive)
+
+ГРУПА G066 (згадок 2)
+M027: «Apple» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0041]: «@D0124:P0041:57-136 sha256=8f32e26c3f0388727704ac9301303b2424aba27095210212f60f75e7d671da32»
+    абзац: «@D0124:P0041:0-316 sha256=8f3a8c0ac0b5fa3ea8d1e61b3ab93e791e4b11daef772fe9f7783bdf4338ad84»
+  твердження статті: «Apple» — DEVELOPS → «post-quantum cryptography implementations» (actual, positive)
+M028: «Apple» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0026]: «@D0194:P0026:206-366 sha256=2fc20271b2b7f684cd55317d8e3148ec554e1710348222b397c2984a1687baa5»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «Apple» — MEMBER_OF → «restricted working group» (actual, positive)
+
+ГРУПА G067 (згадок 4)
+M029: «OpenAI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0031]: «@D0124:P0031:0-60 sha256=674e655a0e44e47721eafe96f42767fe3428a297f3ee83a651746aa14720ed5b»
+    абзац: «@D0124:P0031:0-444 sha256=ec6a818764fcc988cdc19d57db982b07c9028948b7430c6ceda0f9519ddb19f1»
+  твердження статті: «OpenAI» — MITIGATES → «election misinformation» (planned, positive)
+M030: «OpenAI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0004]: «@D0195:P0004:0-141 sha256=173960de935218c37fe9c2005774603811850baaaab129fa57254134130d88af»
+    абзац: «@D0195:P0004:0-292 sha256=b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c»
+  твердження статті: «OpenAI» — DEVELOPS → «Daybreak» (actual, positive); «OpenAI» — DEVELOPS → «Daybreak» (planned, positive); «OpenAI» — PROVIDES → «Daybreak» (actual, positive)
+M031: «OpenAI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bb45b8fbec2562f2f47b940e166d846abb1e67fb2ef648ca21258c4185618108» (2026-04-28)
+  фрагмент [P0033]: «@D0245:P0033:396-498 sha256=f7fc141d97b08919bff95a243101f0e25a2d35a7a770619ef7e54967f59d7eb6»
+    абзац: «…@D0245:P0033:76-676 sha256=477165d5b1d50915f2541000854ae4c23e4f14de84f84f2ea84d51ffa44389de»
+  твердження статті: «OpenAI» — DEVELOPS → «ChatGPT» (actual, positive)
+M032: «OpenAI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0033]: «@D0457:P0033:178-211 sha256=d0401e6206caecc6433b2af6fdce00b718a69087084717dda06f06637249a975»
+    абзац: «@D0457:P0033:0-335 sha256=e1c70be79400264caac3267094228571bb6ea48e9a503b6f8ef76a8a198cbaae»
+  твердження статті: «OpenAI» — DEVELOPS → «GPT-5.4» (actual, positive)
+
+ГРУПА G068 (згадок 2)
+M033: «Trend Micro» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0008]: «@D0124:P0008:148-244 sha256=303fede85206636fc73a19cf5e9381e5b901e44cf14049a03ec2b13007b3f10d»
+    абзац: «@D0124:P0008:0-358 sha256=bfa11af0c781800b222e8537fd666c1f3765cac1ccaa55920eb29c433ddef671»
+  твердження статті: «Trend Micro» — DEVELOPS → «Trend Micro Apex One» (actual, positive); «Trend Micro» — REPORTS_ON → «CVE-2026-34926» (actual, positive)
+M034: «Trend Micro» (organization) | альтернативні назви: «Trend Micro Incorporated»; «Trend» | стаття: «TITLE_SHA256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b» (2026-02-18)
+  фрагмент [P0005]: «@D0532:P0005:36-233 sha256=3fb557800affebf1e9625915a38c98d2ce2ce8eb0590bbd31ed82e952d2aa1e2»
+    абзац: «@D0532:P0005:0-332 sha256=ec5deba275ad7cd8141d5fa0eba6c0acd4cf4e6af9a22d5923b59c9f0455ed13»
+  фрагмент [P0015]: «@D0532:P0015:0-107 sha256=0c7b38380c79f4ebd6be68d55c49a6b389305f814b70e11d01ea08302a7ba1a4»
+  твердження статті: «Trend Micro» — DETECTS → «bring your own vulnerable driver attacks» (actual, positive); «Trend Micro» — DETECTS → «cyber threats» (actual, positive); «Trend Micro» — LOCATED_IN → «U.S.» (actual, negative)
+
+ГРУПА G069 (згадок 2)
+M035: «Android» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0038]: «@D0124:P0038:357-447 sha256=50ea9f0ed32c3ca9c6abe992e6063df66b0170c97fcb99749c24616b2ac8c38f»
+    абзац: «@D0124:P0038:0-448 sha256=e20ac0a574366324e0fb7ab2123ddd71af5c7a6ca163cbfa8261bacf1311f124»
+  твердження статті: «F-Secure Internet Security» — SUPPORTS → «Android» (actual, positive); «TotalAV Mobile Security» — SUPPORTS → «Android» (actual, positive)
+M036: «Android» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296» (2026-04-02)
+  фрагмент [P0021]: «@D0338:P0021:49-112 sha256=38fb038bee0fbfa1ad62290d270d28b8ee7879469d782d9877a965641b304ae3»
+    абзац: «@D0338:P0021:0-208 sha256=f6a8ef411329f7a6d3ed2a36e2512e4e0cf8460ab4a5acddfa7bd02d0fc879b7»
+  твердження статті: «malicious information- gathering app» — AFFECTS → «Android» (actual, positive)
+
+ГРУПА G070 (згадок 4)
+M037: «ChatGPT» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0031]: «@D0124:P0031:0-60 sha256=674e655a0e44e47721eafe96f42767fe3428a297f3ee83a651746aa14720ed5b»
+    абзац: «@D0124:P0031:0-444 sha256=ec6a818764fcc988cdc19d57db982b07c9028948b7430c6ceda0f9519ddb19f1»
+M038: «ChatGPT» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bb45b8fbec2562f2f47b940e166d846abb1e67fb2ef648ca21258c4185618108» (2026-04-28)
+  фрагмент [P0033]: «@D0245:P0033:249-335 sha256=0cfabe15ca24f524c1b0022932345fd9ec2eca08cd3cdaac21022d117397af37»
+    абзац: «@D0245:P0033:0-600 sha256=c0fa21294257f238e10661b3197c50dac977067d4bb6130effe6def0539e5034…»
+  твердження статті: «Chinese law enforcement» — USES → «ChatGPT» (actual, positive); «OpenAI» — DEVELOPS → «ChatGPT» (actual, positive); «fake Chen» — USES → «ChatGPT» (actual, positive)
+M039: «ChatGPT Enterprise» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d» (2026-03-23)
+  фрагмент [P0007]: «@D0382:P0007:445-627 sha256=2ab34be04e16643f11f4cc8a1be4265f91d9e34a517d5d6e37291cf626a465c6»
+    абзац: «…@D0382:P0007:168-768 sha256=b8e1f43e76214d541a4e9de18498c38ae5a01b74cef99de3460df57a522d4dfe»
+M040: «ChatGPT» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0015]: «@D0480:P0015:0-83 sha256=2f49a6302061b18b9336851607edfd6df5d134a2a48335ae721f67485cc285e2»
+    абзац: «@D0480:P0015:0-191 sha256=15079406414da4838686ae2ac899f6a37d7afb4bf37203884e686250545d8038»
+  твердження статті: «Infostealer malware» — AFFECTS → «ChatGPT» (actual, positive)
+
+КІНЕЦЬ ГРУП

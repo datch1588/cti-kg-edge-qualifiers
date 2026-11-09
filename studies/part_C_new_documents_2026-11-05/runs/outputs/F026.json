@@ -1,0 +1,610 @@
+{
+  "run_id": "F026",
+  "target_doc_id": "D0051",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "$4.2 billion cybersecurity deal",
+      "entity_type": "event",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0001", "start": 0, "end": 80, "sha256": "60b1a32d776af6d2f87cd392be03115e95f396f770a09cd95c5c29e7b8dd864f"}},
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0017", "start": 0, "end": 170, "sha256": "feae5415f63d408932fa262ae7ef31c7d778d8657f7ad99f8780fdad3a65522f"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Austin, Texas",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 255, "sha256": "218fd9218f58d101dfe1998e051383721fa42fe3fbf446a250f20fb4e09b0bc9"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "Hanover, Maryland",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 33, "end": 126, "sha256": "9308f4123954174c47b195d76f90507ee6b7dc86ed40ca8020e00eece7545462"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "Accenture",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0002", "start": 0, "end": 117, "sha256": "4a4cf40f51a1161e59ff1f6effb6b8ff93d344c28b1f794218917a9268e2501b"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Dragos",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 33, "end": 187, "sha256": "dd608c3e20f1fd2288d2f7f1083bc792245bbabb567aa4d0ab8a6f212062b085"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "NetRise",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 257, "end": 327, "sha256": "21a836bdc69a78b973b286c673b7711420e6cdc0f11750581977d5d885f439c0"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "runZero",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 255, "sha256": "218fd9218f58d101dfe1998e051383721fa42fe3fbf446a250f20fb4e09b0bc9"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "critical infrastructure",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0002", "start": 118, "end": 328, "sha256": "44bbc743dc65fb2c4c03a4942e9f3d7ae33626e9eb69790dd9d8cfcace4adb36"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "industrial operations",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0002", "start": 118, "end": 328, "sha256": "44bbc743dc65fb2c4c03a4942e9f3d7ae33626e9eb69790dd9d8cfcace4adb36"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "OT cybersecurity services",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0015", "start": 122, "end": 230, "sha256": "b89790ea65504a58decad1a3654ac137eb225b73a2f4e646ccc72c9b7e7ff874"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "software supply chain dataset",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0005", "start": 0, "end": 107, "sha256": "4624c0638b1660aab8b1bf9d4d769b1f274a7c529d7a2b5cca2d185b1a207f01"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "HD Moore",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 255, "sha256": "218fd9218f58d101dfe1998e051383721fa42fe3fbf446a250f20fb4e09b0bc9"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "Julie Sweet",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0008", "start": 213, "end": 271, "sha256": "23ba00af8b9b27cd201159e4d767b41363128f26c3e68d313d2e3d75d36bb6d2"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "Michael Scott",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 333, "end": 401, "sha256": "41c9ea2414ead74d96148ef6b088c750762c0fe8740b72b7709200775e8cf1dd"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "Robert M. Lee",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 0, "end": 78, "sha256": "bc49e99640c5576c7f4100bd28ed108fd60d8bed37b3da525182a2b3343fb8b9"}}
+      ]
+    },
+    {
+      "id": "n016",
+      "label": "Thomas Pace",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 257, "end": 327, "sha256": "21a836bdc69a78b973b286c673b7711420e6cdc0f11750581977d5d885f439c0"}}
+      ]
+    },
+    {
+      "id": "n017",
+      "label": "Dragos Platform",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0003", "start": 0, "end": 98, "sha256": "384a98d798b57d01f2e576f783f54be8edfcb87136b1a171d2d74e53ea65c794"}}
+      ]
+    },
+    {
+      "id": "n018",
+      "label": "AI",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0007", "start": 0, "end": 124, "sha256": "9b543c4bfd258fe117c88bc721f330446ad13c2a2fff810dba456afa9e8619b7"}}
+      ]
+    },
+    {
+      "id": "n019",
+      "label": "attack-surface intelligence",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 151, "end": 252, "sha256": "6cef74514aecb108c98a535dc56e85e3d69b3b6ceee096cffaef32b51d89ba7a"}}
+      ]
+    },
+    {
+      "id": "n020",
+      "label": "cloud-connected devices",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 158, "sha256": "2abdca00ff3860cf9cd1d64d56f86abab4e472054f2beea877886cdfe45db1a3"}}
+      ]
+    },
+    {
+      "id": "n021",
+      "label": "exposure assessment",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 151, "end": 252, "sha256": "6cef74514aecb108c98a535dc56e85e3d69b3b6ceee096cffaef32b51d89ba7a"}}
+      ]
+    },
+    {
+      "id": "n022",
+      "label": "firmware-level visibility",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0005", "start": 0, "end": 107, "sha256": "4624c0638b1660aab8b1bf9d4d769b1f274a7c529d7a2b5cca2d185b1a207f01"}}
+      ]
+    },
+    {
+      "id": "n023",
+      "label": "industrial control systems",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 158, "sha256": "2abdca00ff3860cf9cd1d64d56f86abab4e472054f2beea877886cdfe45db1a3"}}
+      ]
+    },
+    {
+      "id": "n024",
+      "label": "Internet of Things",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 158, "sha256": "2abdca00ff3860cf9cd1d64d56f86abab4e472054f2beea877886cdfe45db1a3"}}
+      ]
+    },
+    {
+      "id": "n025",
+      "label": "IT infrastructure",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 158, "sha256": "2abdca00ff3860cf9cd1d64d56f86abab4e472054f2beea877886cdfe45db1a3"}}
+      ]
+    },
+    {
+      "id": "n026",
+      "label": "OT threat detection",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 0, "end": 150, "sha256": "4d1d810b5d74b6c254d5c60ac7b2ee3a56886e7f56564c8984d50b3153465f9f"}}
+      ]
+    },
+    {
+      "id": "n027",
+      "label": "sensors",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 158, "sha256": "2abdca00ff3860cf9cd1d64d56f86abab4e472054f2beea877886cdfe45db1a3"}}
+      ]
+    },
+    {
+      "id": "n028",
+      "label": "xOT",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 160, "end": 244, "sha256": "d88afa11a1df9d3b4d1e9e8252a4794c5a9830c5150a35c5c8404de4591ae1e0"}}
+      ]
+    },
+    {
+      "id": "n029",
+      "label": "adversary operations",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0007", "start": 0, "end": 124, "sha256": "9b543c4bfd258fe117c88bc721f330446ad13c2a2fff810dba456afa9e8619b7"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n004",
+      "target": "n008",
+      "relation_type": "PROTECTS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "stated aim of Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0002", "start": 0, "end": 234, "sha256": "f739bf0171e2a45a850f1c90d04eaea5775653bd87b5d4e262b7325147eaf43e"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n004",
+      "target": "n009",
+      "relation_type": "PROTECTS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "stated aim of Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0002", "start": 0, "end": 234, "sha256": "f739bf0171e2a45a850f1c90d04eaea5775653bd87b5d4e262b7325147eaf43e"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n004",
+      "target": "n010",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0015", "start": 122, "end": 230, "sha256": "b89790ea65504a58decad1a3654ac137eb225b73a2f4e646ccc72c9b7e7ff874"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n005",
+      "target": "n003",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 33, "end": 126, "sha256": "9308f4123954174c47b195d76f90507ee6b7dc86ed40ca8020e00eece7545462"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n005",
+      "target": "n017",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 0, "end": 150, "sha256": "4d1d810b5d74b6c254d5c60ac7b2ee3a56886e7f56564c8984d50b3153465f9f"}},
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0005", "start": 254, "end": 325, "sha256": "2b89ebfbe29e294b47ae5e0acd48fba7ebecffd0cbad6f483c394df1e409b2ba"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n005",
+      "target": "n026",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 0, "end": 150, "sha256": "4d1d810b5d74b6c254d5c60ac7b2ee3a56886e7f56564c8984d50b3153465f9f"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n006",
+      "target": "n002",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 257, "end": 327, "sha256": "21a836bdc69a78b973b286c673b7711420e6cdc0f11750581977d5d885f439c0"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n006",
+      "target": "n005",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "planned structure under Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 0, "end": 187, "sha256": "5f2981474e89397b9b4c4ef5a28ee483e910ba2f3485d1218a95a696f9d9e806"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n006",
+      "target": "n011",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0005", "start": 0, "end": 107, "sha256": "4624c0638b1660aab8b1bf9d4d769b1f274a7c529d7a2b5cca2d185b1a207f01"}}
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "n006",
+      "target": "n022",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0005", "start": 0, "end": 107, "sha256": "4624c0638b1660aab8b1bf9d4d769b1f274a7c529d7a2b5cca2d185b1a207f01"}}
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "n007",
+      "target": "n002",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 255, "sha256": "218fd9218f58d101dfe1998e051383721fa42fe3fbf446a250f20fb4e09b0bc9"}}
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "n007",
+      "target": "n005",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "planned structure under Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 0, "end": 187, "sha256": "5f2981474e89397b9b4c4ef5a28ee483e910ba2f3485d1218a95a696f9d9e806"}}
+      ]
+    },
+    {
+      "id": "e013",
+      "source": "n007",
+      "target": "n019",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 151, "end": 252, "sha256": "6cef74514aecb108c98a535dc56e85e3d69b3b6ceee096cffaef32b51d89ba7a"}}
+      ]
+    },
+    {
+      "id": "e014",
+      "source": "n007",
+      "target": "n021",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0004", "start": 151, "end": 252, "sha256": "6cef74514aecb108c98a535dc56e85e3d69b3b6ceee096cffaef32b51d89ba7a"}}
+      ]
+    },
+    {
+      "id": "e015",
+      "source": "n012",
+      "target": "n007",
+      "relation_type": "LEADS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 255, "sha256": "218fd9218f58d101dfe1998e051383721fa42fe3fbf446a250f20fb4e09b0bc9"}}
+      ]
+    },
+    {
+      "id": "e016",
+      "source": "n012",
+      "target": "n005",
+      "relation_type": "MEMBER_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "planned structure under Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 188, "end": 437, "sha256": "81c4346b7784f2af3ee147c3c681fa9c259a693cccfc7cf58697d82b49c1e6ac"}}
+      ]
+    },
+    {
+      "id": "e017",
+      "source": "n013",
+      "target": "n004",
+      "relation_type": "LEADS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0008", "start": 213, "end": 271, "sha256": "23ba00af8b9b27cd201159e4d767b41363128f26c3e68d313d2e3d75d36bb6d2"}}
+      ]
+    },
+    {
+      "id": "e018",
+      "source": "n014",
+      "target": "n005",
+      "relation_type": "MEMBER_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "planned structure under Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 329, "end": 437, "sha256": "0964b7c1b6bc7e8d72504ad1a34d13cb02381b857898b72a1311e85ffb27a146"}}
+      ]
+    },
+    {
+      "id": "e019",
+      "source": "n014",
+      "target": "n006",
+      "relation_type": "MEMBER_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 333, "end": 401, "sha256": "41c9ea2414ead74d96148ef6b088c750762c0fe8740b72b7709200775e8cf1dd"}}
+      ]
+    },
+    {
+      "id": "e020",
+      "source": "n015",
+      "target": "n005",
+      "relation_type": "LEADS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 0, "end": 78, "sha256": "bc49e99640c5576c7f4100bd28ed108fd60d8bed37b3da525182a2b3343fb8b9"}},
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0011", "start": 235, "end": 295, "sha256": "5b79b4c7a45d3b9618f985f371943f3eb6cf873ff0e62bcac353294c99eb38d3"}}
+      ]
+    },
+    {
+      "id": "e021",
+      "source": "n016",
+      "target": "n006",
+      "relation_type": "LEADS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 257, "end": 327, "sha256": "21a836bdc69a78b973b286c673b7711420e6cdc0f11750581977d5d885f439c0"}}
+      ]
+    },
+    {
+      "id": "e022",
+      "source": "n016",
+      "target": "n005",
+      "relation_type": "MEMBER_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "planned structure under Accenture's acquisition of Dragos, runZero and NetRise",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0010", "start": 257, "end": 437, "sha256": "115ff4145bf5ea706aabf40dad7a2d6f166e8b6149097a699f984ddb155cb19d"}}
+      ]
+    },
+    {
+      "id": "e023",
+      "source": "n020",
+      "target": "n028",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 244, "sha256": "8c2618eb5b79b21562fe580ff031f8564cfc7df1a32efae8fb213af229ed87ef"}}
+      ]
+    },
+    {
+      "id": "e024",
+      "source": "n023",
+      "target": "n028",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 244, "sha256": "8c2618eb5b79b21562fe580ff031f8564cfc7df1a32efae8fb213af229ed87ef"}}
+      ]
+    },
+    {
+      "id": "e025",
+      "source": "n024",
+      "target": "n028",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 244, "sha256": "8c2618eb5b79b21562fe580ff031f8564cfc7df1a32efae8fb213af229ed87ef"}}
+      ]
+    },
+    {
+      "id": "e026",
+      "source": "n025",
+      "target": "n028",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 244, "sha256": "8c2618eb5b79b21562fe580ff031f8564cfc7df1a32efae8fb213af229ed87ef"}}
+      ]
+    },
+    {
+      "id": "e027",
+      "source": "n027",
+      "target": "n028",
+      "relation_type": "PART_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0006", "start": 0, "end": 244, "sha256": "8c2618eb5b79b21562fe580ff031f8564cfc7df1a32efae8fb213af229ed87ef"}}
+      ]
+    },
+    {
+      "id": "e028",
+      "source": "n029",
+      "target": "n018",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0051", "paragraph_id": "D0051:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0051:P0007", "start": 0, "end": 124, "sha256": "9b543c4bfd258fe117c88bc721f330446ad13c2a2fff810dba456afa9e8619b7"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

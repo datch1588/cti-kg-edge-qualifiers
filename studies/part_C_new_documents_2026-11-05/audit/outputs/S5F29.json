@@ -1,0 +1,31 @@
+{
+ "audit_file": "S5F29",
+ "target_doc_id": "D0253",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0015 і P0017: паролі виманюють через фішинг, вони «still phishable», і це подано як чинний стан."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0013: понад 50% користувачів сервісів Google у Великій Британії мають зареєстрований passkey, отже Google підтримує passkey."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: вхід через passkey підтверджується PIN-кодом телефону."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: passkey спрацьовує після підтвердження PIN-кодом телефону."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 і P0009: passkey стійкий до зламів, а викрадені дані зі зламаного сервісу нападнику не придатні."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0025: менеджер паролів створює й безпечно зберігає паролі, це його функція."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: вхід через passkey підтверджується біометрією, наприклад розпізнаванням обличчя."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: passkey неможливо викрасти фішинговою атакою, тож полярність negative правильна."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020–P0021: «proof of liveness» не дає обійти біометричну перевірку за допомогою зображень."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: NCSC заявив, що паролі недостатньо безпечні проти сучасних кіберзагроз."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "P0016: Cybernews заявили, що знайшли мільярди облікових даних, тож полярність negative хибна."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "I", "reason": "Те, що паролі вразливі до фішингу, стаття подає як чинний стан («still phishable», P0017), а не як можливість, тож possible хибне."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 і P0009: passkey стійкий до зламів, бо приватний ключ зберігається на пристрої."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: «The UK's National Cyber Security Centre»."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016: за двофакторної автентифікації користувач надає ще один спосіб підтвердження разом із паролем."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016: дослідники Cybernews заявили, що знайшли мільярди облікових даних; це переказ заяви, тож actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 і P0007: passkey стійкий до фішингу, його неможливо викрасти фішинговою атакою."},
+  {"item_id": "E018", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: це passkey протидіє зламам, а не зломи протидіють passkey."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016: дослідники Cybernews повідомили про знайдені мільярди облікових даних."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: Чізмон каже, що паролі досі можна виманити фішингом і що вони незручні."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0027: Nordpass описано як застосунок-менеджер паролів, що безпечно їх зберігає."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: Дейв Чізмон — старший технічний експерт NCSC."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: Алан Вудвард — професор кібербезпеки в Університеті Суррею."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: «proof of liveness» захищає розпізнавання обличчя, не даючи обдурити його зображеннями."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "P0026: фішингові атаки підступом змушують жертву завантажити шкідливе ПЗ, і це подано як типову поведінку."}
+ ]
+}

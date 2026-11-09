@@ -1,0 +1,41 @@
+{
+  "run_id": "F091",
+  "target_doc_id": "D0398",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "RSAC 2026", "entity_type": "event", "aliases": ["RSACTM2026 Conference"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0001", "start": 0, "end": 127, "sha256": "050a0d694485b5d629f58831aacec6629f18e4e949e06fb70ddd8b3c38ca0119"}},
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0005", "start": 127, "end": 209, "sha256": "340a51021a8aa0f04e5e456360cc4ba8b4ccb5a0bf843c13d87efbdbb64073b6"}}
+    ]},
+    {"id": "n002", "label": "The Five Most Dangerous New Attack Techniques: Crucial Tips for Defenders", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0010", "start": 0, "end": 73, "sha256": "808e746471f2deb6c0fc7526fb81bdffb7ab1a166e6eb7033385da745d995b90"}}
+    ]},
+    {"id": "n003", "label": "SANS Institute", "entity_type": "organization", "aliases": ["SANS"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0005", "start": 48, "end": 125, "sha256": "edc67de714c8d7f4d3214a3a30ed8304164a06fcb2d83f4ba9719bb596e75257"}}
+    ]},
+    {"id": "n004", "label": "2026 Cybersecurity Workforce Research Report", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0006", "start": 76, "end": 146, "sha256": "d3d518bc83a6f588d47cd8f960dd70a258d4ee814ad509b1fd4cf665f2a44c55"}}
+    ]},
+    {"id": "n005", "label": "Global Information Assurance Certification", "entity_type": "other", "aliases": ["GIAC"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0034", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0034", "start": 0, "end": 116, "sha256": "cab83fa1ebe336e82733455bf12ca30c73681960bd41c0b3bdf018d40f73c98a"}}
+    ]},
+    {"id": "n006", "label": "James Lyne", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0007", "start": 112, "end": 150, "sha256": "91af5d94cb4217d32ed37039853d99794c24ea318981d45d09b7c514c9eaf692"}}
+    ]},
+    {"id": "n007", "label": "Rob T. Lee", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0023", "start": 48, "end": 102, "sha256": "9f492c1af6a52866d211487699649c6e1a19c0c9bcf8d25c6079be9a30e97104"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n002", "target": "n001", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0005", "start": 127, "end": 287, "sha256": "c8c911db6cec3e3442c29b5bd4497b99b6fb39bcb8b3e2f60c07d091fe48c9d3"}}
+    ]},
+    {"id": "e002", "source": "n003", "target": "n004", "relation_type": "DEVELOPS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0006", "start": 76, "end": 146, "sha256": "d3d518bc83a6f588d47cd8f960dd70a258d4ee814ad509b1fd4cf665f2a44c55"}}
+    ]},
+    {"id": "e003", "source": "n006", "target": "n003", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0398", "paragraph_id": "D0398:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0398:P0007", "start": 112, "end": 150, "sha256": "91af5d94cb4217d32ed37039853d99794c24ea318981d45d09b7c514c9eaf692"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

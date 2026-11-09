@@ -1,0 +1,180 @@
+RESOLVER_FILE: R04
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 7, згадок 35)
+
+ГРУПА G013 (згадок 11)
+M001: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  твердження статті: «Anthropic» — DEVELOPS → «Fable 5» (actual, positive); «Anthropic» — DEVELOPS → «Mythos 5» (actual, positive)
+M002: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0019]: «@D0045:P0019:55-129 sha256=aae100ba4759c12cf24166b45602d2b8f9c3e0044d2ad01b1088844a7f6f0912»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  твердження статті: «Anthropic» — DEVELOPS → «Mythos» (actual, positive)
+M003: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0016]: «@D0046:P0016:0-87 sha256=d180fb34537a2b90a4b2504341172932ac710e1942828c0b1f7a56b8336dbcd3»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  твердження статті: «Anthropic» — DEVELOPS → «Fable 5» (actual, positive); «Anthropic» — DEVELOPS → «Mythos» (actual, positive)
+M004: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0022]: «@D0113:P0022:44-141 sha256=3498ef4f603f46080e7c871af1eb25d7955123fe7e8034483d580c9127d5d6e1»
+    абзац: «@D0113:P0022:0-511 sha256=3e0f806262f935c1caee4c4cee36e029d67ee49056be02b26debfb03eb6bc89c»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Mythos Preview» (actual, positive)
+M005: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0019]: «@D0124:P0019:0-65 sha256=fb0fedc88c7219f8b14d01fc731622e850696c6f678123c4fe9a485a3943fe3e»
+    абзац: «@D0124:P0019:0-401 sha256=22ff237afde10b0dc77e6779b61e14ce9a9307003e367251dedf24bf1f7b8957»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Opus 4.8» (actual, positive); «Anthropic» — DEVELOPS → «security-guidance plugin» (actual, positive); «Anthropic» — PROVIDES → «Mythos-class models» (planned, positive)
+M006: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0024]: «@D0194:P0024:0-148 sha256=2a99b490b9ea0f31b85c8ab62d089e55c1a3de0012d7a767e30dafc653d646b8»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Mythos» (actual, positive); «Anthropic» — PROVIDES → «Claude» (actual, positive); «Anthropic» — PROVIDES → «Claude Mythos» (actual, positive)
+M007: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0007]: «@D0195:P0007:102-195 sha256=94711b95b6a7b23d7834a45079adf529e1960bcbc4e3eb609bdfcccd892dd9df»
+    абзац: «@D0195:P0007:0-326 sha256=57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b»
+  твердження статті: «Anthropic» — DEVELOPS → «Project Glasswing» (actual, positive); «Anthropic» — DEVELOPS → «Claude Mythos» (actual, positive); «Anthropic» — PROVIDES → «Claude Mythos» (actual, positive)
+M008: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0007]: «@D0250:P0007:41-168 sha256=60cf79ebb9306bda4e3dfb243b1d45eea613204e768f87a1edc66602a8954b53»
+    абзац: «@D0250:P0007:0-232 sha256=2d54d7ec95e485709a895cb77b8da4c2a1b283831fe8db0b6ef4ad4ff8db8c75»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude» (actual, positive); «Anthropic» — DEVELOPS → «Mythos» (actual, positive); «Anthropic» — OPERATES → «Project Glasswing» (actual, positive)
+M009: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0024]: «@D0457:P0024:62-195 sha256=f6edf66bc22a124e917e389139bf4b708f6d0ac88a919645423e919e3b6cdd63»
+    абзац: «@D0457:P0024:0-281 sha256=46357a55b489d7db484b8e0cead6f96030334e74d2498c7a49572ccb7db6a524»
+  твердження статті: «Anthropic» — PROVIDES → «Claude» (actual, positive)
+M010: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0007]: «@D0514:P0007:1187-1289 sha256=4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1»
+    абзац: «…@D0514:P0007:938-1538 sha256=866d0817823c53d0980a781ce596c91f4bc9110b482ba41df8eec29ceccde767…»
+  твердження статті: «Anthropic» — PROVIDES → «Claude Code Security» (actual, positive)
+M011: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0006]: «@D0587:P0006:130-329 sha256=9c2dc6b4646b366e4bcdd970818c4c57ee0a3e3690900d5e345459840b629f2a»
+    абзац: «@D0587:P0006:0-406 sha256=dd4de36854b8bfea0425f1c6251c3ef41e06675f1784e075e248ada6f9baf320»
+
+ГРУПА G014 (згадок 5)
+M012: «CISA» (organization) | альтернативні назви: «Critical Infrastructure Security and Resilience» | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0028]: «@D0018:P0028:0-109 sha256=d1127636b06e705f92d2483420abdce8d8752ab6724ea3756a22afacfd584e4e»
+    абзац: «@D0018:P0028:0-241 sha256=4eb8a4806c3f473ceb754ff2a89e8bfcf3e51e0602dc4c9e2f9d1123a7537670»
+M013: «Cybersecurity and Infrastructure Security Agency» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:721-802 sha256=4ef91b7fdc740a875c07bbb58c0300a8c803ce083045e1860e8096c44cc4b262»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «Cybersecurity and Infrastructure Security Agency» — MEMBER_OF → «Five Eyes» (actual, positive); «Nick Andersen» — LEADS → «Cybersecurity and Infrastructure Security Agency» (actual, positive)
+M014: «CISA» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0008]: «@D0124:P0008:0-62 sha256=d235e1f98e5f767e1a821fed7b4669aaf0afa9dd66d69906e48abd77cd852fff»
+    абзац: «@D0124:P0008:0-358 sha256=bfa11af0c781800b222e8537fd666c1f3765cac1ccaa55920eb29c433ddef671»
+  твердження статті: «CISA» — WARNS_ABOUT → «CVE-2026-34926» (actual, positive)
+M015: «Cybersecurity and Infrastructure Security Agency» (organization) | альтернативні назви: «CISA» | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0012]: «@D0166:P0012:202-305 sha256=9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba»
+    абзац: «@D0166:P0012:0-384 sha256=142b834853a17f2e7ee5b812dd67b8057c23e1006ea401cfcea2755a671a8cce»
+  твердження статті: «Cybersecurity and Infrastructure Security Agency» — OPERATES → «joint task force» (planned, positive); «Cybersecurity and Infrastructure Security Agency» — PART_OF → «Department of Homeland Security» (actual, positive); «Cybersecurity and Infrastructure Security Agency» — REPORTS_ON → «CCP-backed cyber threats» (recommended, positive)
+M016: «Cybersecurity and Infrastructure Security Agency» (organization) | альтернативні назви: «CISA» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0006]: «@D0550:P0006:13-79 sha256=8052459a80e01c282cd6506cc30eb8e9fc6b650fff26df37f79ce67202389613»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+  твердження статті: «Cybersecurity and Infrastructure Security Agency» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive); «Cybersecurity and Infrastructure Security Agency» — PROTECTS → «critical infrastructure» (actual, positive); «Cybersecurity and Infrastructure Security Agency» — PROTECTS → «industrial control systems» (actual, positive)
+
+ГРУПА G015 (згадок 7)
+M017: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0029]: «@D0018:P0029:634-771 sha256=f8e3ba2ff97c51695ca87f1ce4576854e428b2fba64605b227042c8aebeca6a0»
+    абзац: «…@D0018:P0029:402-1002 sha256=9b21e17c24ed70153db5c050175559fb5d7a0a30ba4f575dd05e2608bd1d85c2…»
+M018: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0025]: «@D0124:P0025:235-274 sha256=54d249035b779ff4771e3751f0d1ff2be44d68da6ad13b691686bd717f355516»
+    абзац: «@D0124:P0025:0-275 sha256=be158db4ceac83a453529a886cb5a28aec158580cae9682269fbb4e4e8c9e5c4»
+  твердження статті: «FBI» — WARNS_ABOUT → «typosquatting» (actual, positive); «FBI» — WARNS_ABOUT → «Silent Ransom Group» (actual, positive)
+M019: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+  фрагмент [P0005]: «@D0137:P0005:0-60 sha256=e9fd4ce9cd5f0bd808ab567b64e30b5f26f5c6c824f4493da0517a5e58c35d3c»
+    абзац: «@D0137:P0005:0-216 sha256=5185066725190ef3ca0df67f7d53e781c8e8b24bb7aa171f18105c6759a142de»
+  фрагмент [P0011]: «@D0137:P0011:43-110 sha256=610317af62f3e34865ef1dc8bb8dc98132133215d5c2a905ce50c055a599cff9»
+    абзац: «@D0137:P0011:0-175 sha256=3ccce421ef034f0068223a99b90d7f9a2296feb1c745f118585ac9772bb295d9»
+  твердження статті: «FBI» — DEVELOPS → «technology capable of disabling problem drones mid-flight» (actual, positive); «FBI» — OPERATES → «special operations center» (actual, positive); «FBI» — PROVIDES → «technology capable of disabling problem drones mid-flight» (actual, positive)
+M020: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+  фрагмент [P0011]: «@D0391:P0011:0-132 sha256=e54efc31586a153a1b03d9d6fdc8bbcef8509192ea76a6243bba6083afea6f1e»
+    абзац: «@D0391:P0011:0-309 sha256=97a0f7a5834dc26b51b433c6a8b7b42e5447fefa3fd7f53e455514e4a06e0925»
+  твердження статті: «FBI Baltimore Field Office» — PART_OF → «FBI» (actual, positive); «FBI Cyber Division» — PART_OF → «FBI» (actual, positive); «Kash Patel» — LEADS → «FBI» (actual, positive)
+M021: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0005]: «@D0418:P0005:0-108 sha256=518860859de55d6c8389150a9453bff4d9fd632d22f63b60732e355a9d6a56a9»
+    абзац: «@D0418:P0005:0-155 sha256=1f5bc0fbce99d22010d70a37cc1cc428ad5d03a9095c017c2b701f1bcc53321d»
+  твердження статті: «FBI» — WARNS_ABOUT → «California drone threat» (actual, positive)
+M022: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0025]: «@D0424:P0025:40-164 sha256=abe5e8130c15b306458c8ca45818f934f5effb0ea7f697908bf469e252bad8d0»
+    абзац: «@D0424:P0025:0-287 sha256=18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75»
+  твердження статті: «James Turgal» — MEMBER_OF → «FBI» (actual, positive); «Shaun Williams» — MEMBER_OF → «FBI» (actual, positive)
+M023: «Federal Bureau of Investigation» (organization) | альтернативні назви: «FBI» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0006]: «@D0550:P0006:140-213 sha256=0e7e84db85f65678667f6051e33c93a6f5c13353cca78ac391d6c5d25fade48f»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+  твердження статті: «Federal Bureau of Investigation» — DEVELOPS → «Secure Connectivity Principles for Operational Technology» (actual, positive); «Federal Bureau of Investigation» — PROVIDES → «Secure Connectivity Principles for Operational Technology» (actual, positive); «Brett Leatherman» — MEMBER_OF → «Federal Bureau of Investigation» (actual, positive)
+
+ГРУПА G016 (згадок 5)
+M024: «Five Eyes intelligence alliance» (organization) | альтернативні назви: «Five Eyes» | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0012]: «@D0018:P0012:23-162 sha256=9139ddbdd896ced28ba68c41cedb5f5730fa74f4e44d447828a9812db64ded73»
+    абзац: «@D0018:P0012:0-448 sha256=5a3c26a97935129c60cceb0abb3c946f5fce326ecce7afc261e530472d8cb1ce»
+  фрагмент [P0050]: «@D0018:P0050:0-103 sha256=0a8abaecc71251692818dc43369ffd4586f85aed06cc81b9e9b26e045726c298»
+  твердження статті: «Australia» — MEMBER_OF → «Five Eyes intelligence alliance» (actual, positive); «Canada» — MEMBER_OF → «Five Eyes intelligence alliance» (actual, positive); «New Zealand» — MEMBER_OF → «Five Eyes intelligence alliance» (actual, positive)
+M025: «Five Eyes» (organization) | альтернативні назви: «Five Eyes alliance» | стаття: «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24)
+  фрагмент [P0001]: «@D0036:P0001:0-62 sha256=74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9»
+  фрагмент [P0004]: «@D0036:P0004:0-183 sha256=ba5c3af0a45fc5f9a468102afa2679892f409907cc39166d7f7d4d35072f71c4»
+    абзац: «@D0036:P0004:0-600 sha256=93f97806d8cdb3d1b8e6b6bb4dc59917925d8f1c355e84193a5b590ddc66acc6…»
+  твердження статті: «Australia» — MEMBER_OF → «Five Eyes» (actual, positive); «Canada» — MEMBER_OF → «Five Eyes» (actual, positive); «New Zealand» — MEMBER_OF → «Five Eyes» (actual, positive)
+M026: «Five Eyes» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0002]: «@D0043:P0002:0-92 sha256=8cfea9ab574c5a2e575c215dd0acc99e9791ad96c3f38973a81a409e8f1ec188»
+    абзац: «@D0043:P0002:0-242 sha256=1d8ecf84de7a71e338e6d2bb5b1b497f0e611cdbef64691ca5ca44f995d8ec80»
+  фрагмент [P0024]: «@D0043:P0024:0-65 sha256=c99dfc489bdd9b4f3e8960347ec59d3d6ba4754d18c98df75241610be7af06f8»
+    абзац: «@D0043:P0024:0-600 sha256=0610aaa30c79548c4f40c10049ca399dabdf1f2b5bd0cb59e6b46a08329165ad…»
+  твердження статті: «Australian Cyber Security Centre» — MEMBER_OF → «Five Eyes» (actual, positive); «Canadian Centre for Cyber Security» — MEMBER_OF → «Five Eyes» (actual, positive); «Cybersecurity and Infrastructure Security Agency» — MEMBER_OF → «Five Eyes» (actual, positive)
+M027: «Five Eyes» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0005]: «@D0045:P0005:0-63 sha256=588b0b1775b41538539fba9a97163c05dff2a8d00f5409552ea606391cd7aeb8»
+    абзац: «@D0045:P0005:0-257 sha256=29109ae0138df7df662a80657f6ea229532e9d961ee2c4110e5d1f8966ad72be»
+  твердження статті: «Australia» — MEMBER_OF → «Five Eyes» (actual, positive); «Canada» — MEMBER_OF → «Five Eyes» (actual, positive); «New Zealand» — MEMBER_OF → «Five Eyes» (actual, positive)
+M028: «Five Eyes» (organization) | альтернативні назви: «FVEY» | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0008]: «@D0046:P0008:0-141 sha256=e50559bb35bc6cfee56019a821729f5f3ecd4c34db610f788327efc85ca48e4d»
+    абзац: «@D0046:P0008:0-297 sha256=5d4e2ce87fe2d40d0c89179ad9074539fa4439c1967085cab97eb6cb74fe502e»
+  твердження статті: «Australia» — MEMBER_OF → «Five Eyes» (actual, positive); «Canada» — MEMBER_OF → «Five Eyes» (actual, positive); «New Zealand» — MEMBER_OF → «Five Eyes» (actual, positive)
+
+ГРУПА G017 (згадок 3)
+M029: «National Security Agency» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0017]: «@D0018:P0017:0-84 sha256=0d46fe982b0e91d3b247c2349161c2876006d5f17a85568da49d31cdb5effabe»
+    абзац: «@D0018:P0017:0-218 sha256=4e33245f4b0bdc59fa818c0a29cfc6a81361e1ab7b30bc413f230ac45b1d810d»
+  твердження статті: «National Security Agency» — WARNS_ABOUT → «AI» (actual, positive)
+M030: «National Security Agency» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+  фрагмент [P0024]: «@D0043:P0024:654-720 sha256=e434fba8cc85a1109b511d6bb49f58c2b0aad936f00b10aee5a291b751336168»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  твердження статті: «National Security Agency» — MEMBER_OF → «Five Eyes» (actual, positive)
+M031: «National Security Agency» (organization) | альтернативні назви: «NSA» | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0006]: «@D0608:P0006:0-98 sha256=1075db53428348ef6232a4eb6bf50ce761f5aa7d27e96813d204ed147e3df890»
+    абзац: «@D0608:P0006:0-190 sha256=23a9e1cf63c0b98a7bd6bb92c7dc219e04a9e4b47166dc6b1fae0fd769e487e5»
+  фрагмент [P0028]: «@D0608:P0028:0-74 sha256=3c9d59d62c5a2c340fa46d112032aa3167d866e2760f1c4afbad6e99e2df027b»
+    абзац: «@D0608:P0028:0-244 sha256=6984fbfbe0c387c580844115913c52d0d26a8522dbc08032570838becc0d397c»
+  твердження статті: «Joshua M. Rudd» — LEADS → «National Security Agency» (planned, positive)
+
+ГРУПА G018 (згадок 2)
+M032: «The Record» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0032]: «@D0018:P0032:0-179 sha256=1778da9eb0eef1d8e2582d65d83c5b7fad8d9840160b9f23aca906d49a128be2»
+    абзац: «@D0018:P0032:0-245 sha256=3c77f7a497ae872bc3655b3ec849e0e6088cce1da9d1edf6bb117fd59a94d53e»
+  твердження статті: «The Record» — REPORTS_ON → «Volt Typhoon» (actual, positive)
+M033: «The Record» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0014]: «@D0262:P0014:140-218 sha256=dc1912537c4a0d92b17874713b6c594e4eb39046b62f280a4814d24000047120»
+    абзац: «@D0262:P0014:0-219 sha256=ff12d4e50e32f24a12b9e2f4be97cb1e4dfe8606c1d6a233cfc9357c709613a1»
+  твердження статті: «The Record» — REPORTS_ON → «indirect cyber threats» (actual, positive)
+
+ГРУПА G019 (згадок 2)
+M034: «Trump administration» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0009]: «@D0018:P0009:140-250 sha256=4d04f387692046315da37bcc637165bc59dee44e2361a9cecebaa081421757c6»
+    абзац: «@D0018:P0009:0-251 sha256=e58f106e6fc0c67c1bc89a5d6e8c00e3b4687e7270387966ea7df1cda790e708»
+M035: «Trump administration» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0031]: «@D0427:P0031:1-84 sha256=9a495c64995eb318bc4caae910d1b70439ea026c45810ea244ec1f66993c4275»
+    абзац: «@D0427:P0031:0-240 sha256=0a73ce056d8d74593b07eb8a22bc77212471990e99c3361c355651cd434e6b61»
+
+КІНЕЦЬ ГРУП

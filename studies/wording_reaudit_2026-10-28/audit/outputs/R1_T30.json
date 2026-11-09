@@ -1,0 +1,16 @@
+{
+ "audit_file": "R1_T30",
+ "target_doc_id": "D0327",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає це як факт, але в D0327:P0032 сказано лише, що шкідливий трафік «may be directed» на порт 2222, тобто це можливість."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає це як факт, але в D0327:P0032 сказано лише, що шкідливий трафік «may be directed» на порт 102, тобто це можливість."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання каже «possibly», а D0327:P0007 подає як факт, що актори «are conducting exploitation activity targeting internet-facing OT devices»."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "D0327:P0018 з посиланням на оцінку відомств стверджує, що група «is conducting this activity to cause disruptive effects within the United States», тобто це actual, як і у формулюванні."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0327:P0032 як факт сказано, що актори розгорнули Dropbear SSH, «to enable them to gain remote access through port 22»."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає причинний звʼязок як факт, але в D0327:P0028 сказано, що ескалація сталася «likely in response to hostilities», тобто причина лише ймовірна."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0327:P0032 сказано, що актори «may also be targeting» пристрої інших виробників, зокрема Siemens S7 PLC, тобто це можливість, як і у формулюванні."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає причинний звʼязок як факт, але в D0327:P0028 сказано, що ескалація сталася «likely in response to hostilities» зі США, тобто причина лише ймовірна."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає це як факт, але в D0327:P0032 сказано лише, що шкідливий трафік «may be directed» на порт 44818, тобто це можливість."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає це як факт, але в D0327:P0032 сказано лише, що шкідливий трафік «may be directed» на порт 502, тобто це можливість."}
+ ]
+}

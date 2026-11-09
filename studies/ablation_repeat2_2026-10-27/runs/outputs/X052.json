@@ -1,0 +1,50 @@
+{
+ "run_id": "X052",
+ "target_doc_id": "D0320",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "malicious prompts", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0007", "start": 290, "end": 388, "sha256": "e93050225279f8c0e55266a1915b1f8809da1505c0f51522fa189efec12ac4fe"}}
+  ]},
+  {"id": "n002", "label": "phishing attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 59, "end": 203, "sha256": "f8df4883fb62d43299f7f311ba93a9373682bb3cdef73ff9aaf24e720642224d"}}
+  ]},
+  {"id": "n003", "label": "reconnaissance", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 59, "end": 203, "sha256": "f8df4883fb62d43299f7f311ba93a9373682bb3cdef73ff9aaf24e720642224d"}}
+  ]},
+  {"id": "n004", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0002", "start": 25, "end": 106, "sha256": "74d4f2db33adedc672b69989511af57eed115879cabdd138a0c67ffc6d097841"}}
+  ]},
+  {"id": "n005", "label": "TrendAI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0002", "start": 113, "end": 246, "sha256": "73df83835f6f09dcdc73f40be4ab4f8f852c85d8e5b69b90ff90498aba3a8609"}}
+  ]},
+  {"id": "n006", "label": "AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0002", "start": 25, "end": 106, "sha256": "74d4f2db33adedc672b69989511af57eed115879cabdd138a0c67ffc6d097841"}}
+  ]},
+  {"id": "n007", "label": "AI systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0007", "start": 290, "end": 388, "sha256": "e93050225279f8c0e55266a1915b1f8809da1505c0f51522fa189efec12ac4fe"}}
+  ]},
+  {"id": "n008", "label": "cybercriminals", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 0, "end": 131, "sha256": "ae3d51e6a089af35c776907ac2ad7eb97feb6da1d4ace2d02a5518d28572306c"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n007", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "IT decision-makers", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0007", "start": 290, "end": 388, "sha256": "e93050225279f8c0e55266a1915b1f8809da1505c0f51522fa189efec12ac4fe"}}
+  ]},
+  {"id": "e002", "source": "n005", "target": "n008", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 0, "end": 131, "sha256": "ae3d51e6a089af35c776907ac2ad7eb97feb6da1d4ace2d02a5518d28572306c"}},
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0002", "start": 199, "end": 246, "sha256": "9151544376547fd3e59a16b5236b8faed7ca8c5dbe5bd2ddc7b7458ce59d2851"}}
+  ]},
+  {"id": "e003", "source": "n008", "target": "n002", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "TrendAI study", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 59, "end": 203, "sha256": "f8df4883fb62d43299f7f311ba93a9373682bb3cdef73ff9aaf24e720642224d"}}
+  ]},
+  {"id": "e004", "source": "n008", "target": "n003", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "TrendAI study", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 59, "end": 203, "sha256": "f8df4883fb62d43299f7f311ba93a9373682bb3cdef73ff9aaf24e720642224d"}}
+  ]},
+  {"id": "e005", "source": "n008", "target": "n006", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "TrendAI study", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0320", "paragraph_id": "D0320:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0320:P0006", "start": 0, "end": 131, "sha256": "ae3d51e6a089af35c776907ac2ad7eb97feb6da1d4ace2d02a5518d28572306c"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

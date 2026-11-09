@@ -1,0 +1,29 @@
+{
+ "audit_file": "S1T06",
+ "target_doc_id": "D0598",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 автори порівнюють імовірність кампанії Wocao, отриману їхнім підходом, із вручну побудованими деревами атак і подають це як виконане."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 подає як загальний факт, що APT проводять кампанії, зокрема операцію WannaCry."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 подає як загальний факт, що APT проводять кампанії, зокрема операцію Dream Job."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 імовірність кампаній оцінюють процедурами на даних бази знань MITRE і застосовують це до «all MITRE Enterprise campaigns», тож ці кампанії подано як записи бази MITRE."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 наводить WannaCry як приклад кампаній, які проводять APT, тобто приписує її APT як факт."},
+  {"item_id": "E006", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: за P0002 відкритий інструмент ґрунтується на логіці cATM, а не логіка cATM використовує інструмент."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 автори порівнюють імовірність кампанії Dream Job, отриману їхнім підходом, із вручну побудованими деревами атак і подають це як виконане."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Ідентифікатор і DOI arXiv, історія версій та адреса arxiv.org у P0003–P0006 засвідчують, що препринт arXiv:2410.06692 розміщено на arXiv."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 сказано «we quantify the likelihood of all MITRE Enterprise campaigns», і це подано як виконане."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 наводить Wocao як приклад кампаній, які проводять APT, тобто приписує її APT як факт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок у P0002 є (WannaCry названо прикладом кампаній APT), але стаття його стверджує, а не заперечує, тож полярність negative хибна."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 називає Dream Job кампанією MITRE («Wocao and Dream Job MITRE campaigns»), модель якої згенеровано автоматично з даних MITRE, тобто її задокументовано в базі знань MITRE."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 подає як загальний факт, що APT проводять кампанії, зокрема операцію Wocao."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 серед внесків статті названо «proposing an open-source tool», і це подано як виконане."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 наводить Dream Job як приклад кампаній, які проводять APT, тобто приписує її APT як факт."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 запропонована методологія автоматичного моделювання «captures any attack campaign via template attack tree models»."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0003 прямо сказано «Cite as: arXiv:2410.06692 [cs.CR]»."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0004 остання версія в історії подань, v4 (вона ж поточна за P0003), подана 22 Jan 2026."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0002 відкритий інструмент виконує порівняння на основі логіки cATM, тобто використовує її; це властивість засобу, подана як факт."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 сказано «an open-source tool to perform these comparisons based on the cATM logic», тобто інструмент ґрунтується на логіці cATM."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0002 оцінювання виконано «via data-driven procedures on the MITRE knowledge-base», тобто стаття використовує дані бази знань MITRE."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 називає Wocao кампанією MITRE («Wocao and Dream Job MITRE campaigns»), модель якої згенеровано автоматично з даних MITRE, тобто її задокументовано в базі знань MITRE."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0004 першу версію (v1) подано 9 Oct 2024."}
+ ]
+}

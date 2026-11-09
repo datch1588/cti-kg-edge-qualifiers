@@ -1,0 +1,178 @@
+AUDIT_BATCH: N02
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N02-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N02-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N02-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 2 (TARGET_DOC_ID: D0574) ===
+DOC_ID: D0574
+PUBLICATION_DATE: 2026-02-03
+SOURCE_URL: https://www.pravda.com.ua/eng/news/2026/02/03/8019272/
+TITLE_SHA256: 18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4
+BEGIN_DOCUMENT
+[D0574:P0001] sha256:18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4
+[D0574:P0002] sha256:54b5720b9ee1c8553e1a73f64a1aa2e91ea9f39d455a8e0d48f0465f7c0ebcdd
+[D0574:P0003] sha256:e960489ef1e1a8ef4e28c088c8f78d690131dfe1b467a3f1f9ef55ffb176ebf7
+[D0574:P0004] sha256:4edf55c006667eabff2a17588a46e35f245ffbf33fb69f175b9c0b388991490b
+[D0574:P0005] sha256:52124feeed6a5eb2df06e7cc20b3ce554dab040def18a9120bf7062ff2d0e03c
+[D0574:P0006] sha256:d47137da1dc1c8713e507b283e37c8b2a1280a9034c33d70db6ed128d9016630
+[D0574:P0007] sha256:06a2a35dbdf9c3b72244e3a3679c54ff1ca52f6e6367f6c839b17806ae5e4535
+[D0574:P0008] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0009] sha256:1aa38b27670f0bcfa8261a171d82236d8cf976538170565c58834e9e70ed0416
+[D0574:P0010] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0011] sha256:3c1bdcf36341a79cd420d3c93b882c081d0dc910e0c027031d3f077e8e072dc7
+[D0574:P0012] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0013] sha256:5ddbda4b8e18eaf671f62c8e42a9fe70fe5361371a1e98af44254d12b4040cc3
+[D0574:P0014] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0015] sha256:b9816cca7dd171ed4ae7c4ac5e5988d2ebc34c0011032046ee874ed2847d55db
+[D0574:P0016] sha256:b13e85eb02be73713f81a2373e66e65d96473cf219d619dc40d8b635581e8010
+[D0574:P0017] sha256:d8a7f067daef3e36f74a4f15a5b45fb1cd0cd7af78ce15da52662fdbfe72bdfd
+[D0574:P0018] sha256:eb11d0b2989b316cfa230ff67b4e9d1088326e49ef3e3c0b6468dc4b2f5b9983
+[D0574:P0019] sha256:e88699fa23c78487babbd8f19c715dc2d70972569e1010b836a0b9d17f87991a
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (14)
+N02-E001: «Denys Shmyhal» — reports on → «missile strike» | форма: actual, positive
+N02-E002: «large-scale Russian attack» — targets → «Kyiv's energy infrastructure» | форма: actual, positive
+N02-E003: «large-scale Russian attack» — affects → «Darnytskyi» | форма: actual, positive
+N02-E004: «missile strike» — affects → «Kyiv power plant» | форма: actual, positive
+N02-E005: «Dniprovskyi» — affects → «Russian attack on Kyiv's energy infrastructure» | форма: actual, positive
+N02-E006: «large-scale Russian attack» — affects → «Dniprovskyi» | форма: actual, positive
+N02-E007: «Russian attack on Kyiv's energy infrastructure» — affects → «Darnytskyi» | форма: actual, positive
+N02-E008: «Kyiv power plant» — located in → «Kyiv» | форма: actual, positive
+N02-E009: «cyber threats» — affects → «energy sector» | форма: actual, positive
+N02-E010: «Russian forces» — targets → «Kyiv power plant» | форма: actual, positive
+N02-E011: «missile strike» — attributed to → «Russian forces» | форма: actual, positive
+N02-E012: «Mark Rutte» — leads → «NATO» | форма: actual, positive
+N02-E013: «Russian attack on Kyiv's energy infrastructure» — affects → «Dniprovskyi» | форма: actual, positive
+N02-E014: «Mark Rutte» — leads → «NATO» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 2 (TARGET_DOC_ID: D0319) ===
+DOC_ID: D0319
+PUBLICATION_DATE: 2026-04-09
+SOURCE_URL: https://www.theregister.co.uk/2026/04/08/cynthia_kaiser_interview/
+TITLE_SHA256: 31c8efdfe0f123f3076f2f5dace53dcd31045f8967c66feef8a7e39b76e35281
+BEGIN_DOCUMENT
+[D0319:P0001] sha256:31c8efdfe0f123f3076f2f5dace53dcd31045f8967c66feef8a7e39b76e35281
+[D0319:P0002] sha256:23e3c3dcc0c4679dcf8c5f8929affdbd03b29d7f3078ecd1cba1be1c5bef36e7
+[D0319:P0003] sha256:1299dcc93933099a2fa264d507f10136e755aadfb670c2027c98f7d341e3f028
+[D0319:P0004] sha256:9d0cc076da0128de9398ec4776c5cd0b30c5e1983f904791bdd0bf610ef7f368
+[D0319:P0005] sha256:e1cbc6f28e31a9df3977d7d8937ccc67e9d263d16ba7e12066dca1adb8c1a506
+[D0319:P0006] sha256:0873a70ec83829b5781b3c3d4f994c024998c5235cfee98b347e8ffc53906b30
+[D0319:P0007] sha256:2dda7893e7cd62c4581bf199187c219832af5b647e90aae1ad98be95601589fb
+[D0319:P0008] sha256:2287bebe7591c62e316a2b161b05c6e398020d3a55e447a803abf8f681f9cbe0
+[D0319:P0009] sha256:dfe35e0235b065d31b59f5096bddc742d3e82f780b203dd554cf3821a5a88aa6
+[D0319:P0010] sha256:d85f81c6e77ddb21f51b9c15626ec9f1a1d3cb87fa39ef0f83556642f823ef1c
+[D0319:P0011] sha256:6b301a0a76a82b3e41afa12882f1c3a4bf78d9c47728c2cb9b662da89a7aba34
+[D0319:P0012] sha256:4b79fe57585e64440853b8c52207ddf3254ce9989a7650630b4733f21c22a801
+[D0319:P0013] sha256:ba63af47a3daedf687985eece5a8bc8ba7f0c915829ffc2eb4135b3994f02172
+[D0319:P0014] sha256:5cabd96ff6261c493171ff7c28d5cdbe4523c8562a83c2621b57bff63ecd1ca3
+[D0319:P0015] sha256:4654d03c5f1e1041175ed5a2291f5e93cd13abeb5b22dd24c9c065d37fcbfbe6
+[D0319:P0016] sha256:79ecbe3c703613431193c39a70c2e0c11f4ef50602af4840f34fa72a8499048b
+[D0319:P0017] sha256:04b089216519510bf4b5872fb306fb4be7ef16640a862b45368d13168145c679
+[D0319:P0018] sha256:71820eabe2769f55708e76c2608efd99fed0a069b8f295202654d25a9e2b0071
+[D0319:P0019] sha256:4ea2f2f1c38d636eb3131d47213c32a1dd68195a052b8bc3fc146a74d6af9ecf
+[D0319:P0020] sha256:bf6792483bffbcf3969fdf950094574c7630c1ca90ca3a57d90f8c7a6aa2b775
+[D0319:P0021] sha256:418d165f11369edc5ddc507cbd1834d7140c9163442d409195497740675e6fad
+[D0319:P0022] sha256:a67d0b30c566c380d76b9af0aa187c3bf392e9de1460b36c2ee884248fb20345
+[D0319:P0023] sha256:603f28af161a57102cedcaac6659e375e0009ef2c2ccff82b31104181bd6a093
+[D0319:P0024] sha256:f7ed6b87ca2528f260c788bbff31d251938dd839747c25780bc651261e24f252
+[D0319:P0025] sha256:67bc4831d4dc20f6649ec9a11081326bf5eaa49f22dbcb3411468df731749cfa
+[D0319:P0026] sha256:a5f3be22714af55d5e9dd2b880486b92ead7ae7b886152ed67ca26f69d7f3c38
+[D0319:P0027] sha256:38407f097e71eabff22aa08dad9f6f723dc22d6e6ff0224eb7d8bf25fe886098
+[D0319:P0028] sha256:b7b7f30122e42f9c5b8b2b0d601bd23e49d7561b54376cccd90e14020f64c791
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (44)
+N02-E015: «Sicarii» — uses → «Sicarii encryptor» | форма: actual, positive
+N02-E016: «Cynthia Kaiser» — reports on → «Pay2Key attack» | форма: actual, positive
+N02-E017: «Halcyon Ransomware Research Center» — mitigates → «ransomware» | форма: planned, positive
+N02-E018: «Halcyon Ransomware Research Center» — mitigates → «ransomware» | форма: planned, negative
+N02-E019: «Albania attacks of 2022» — attributed to → «Iran» | форма: actual, positive
+N02-E020: «Sicarii» — uses → «AI» | форма: actual, positive
+N02-E021: «Cynthia Kaiser» — reports on → «Pay2Key infection» | форма: actual, positive
+N02-E022: «Halcyon» — reports on → «Akira» | форма: actual, positive
+N02-E023: «hospitals» — targets → «ransomware» | форма: actual, positive
+N02-E024: «Sicarii» — uses → «agent» | форма: possible, negative
+N02-E025: «Albania attacks of 2022» — affects → «online public services» | форма: actual, positive
+N02-E026: «Israel» — targets → «Iran» | форма: actual, positive
+N02-E027: «Pay2Key infection» — attributed to → «Pay2Key» | форма: actual, positive
+N02-E028: «US» — targets → «Iran» | форма: actual, positive
+N02-E029: «Iran's Ministry of Intelligence and Security» — located in → «Iran» | форма: actual, positive
+N02-E030: «Halcyon Ransomware Research Center» — part of → «Halcyon» | форма: actual, negative
+N02-E031: «Cynthia Kaiser» — reports on → «Albania attacks of 2022» | форма: actual, positive
+N02-E032: «China» — targets → «critical infrastructure» | форма: actual, positive
+N02-E033: «US healthcare organization» — targets → «Pay2Key infection» | форма: actual, positive
+N02-E034: «Pay2Key infection» — targets → «US healthcare organization» | форма: actual, positive
+N02-E035: «Sicarii» — uses → «AI» | форма: possible, positive
+N02-E036: «Pay2Key» — targets → «US healthcare organization» | форма: actual, positive
+N02-E037: «Cynthia Kaiser» — member of → «FBI's cyber division» | форма: actual, positive
+N02-E038: «US healthcare organization» — located in → «US» | форма: actual, positive
+N02-E039: «extortion attacks» — affects → «American businesses and consumers» | форма: actual, positive
+N02-E040: «Pay2Key» — uses → «compromised admin account» | форма: actual, positive
+N02-E041: «Iran» — uses → «espionage» | форма: actual, positive
+N02-E042: «Halcyon» — reports on → «Pay2Key infection» | форма: actual, positive
+N02-E043: «ransomware» — targets → «hospitals» | форма: actual, positive
+N02-E044: «Halcyon Ransomware Research Center» — part of → «Halcyon» | форма: actual, positive
+N02-E045: «online public services» — located in → «Albania» | форма: actual, positive
+N02-E046: «Pay2Key attack» — targets → «US healthcare organization» | форма: actual, positive
+N02-E047: «Cynthia Kaiser» — member of → «FBI» | форма: actual, positive
+N02-E048: «FBI's cyber division» — part of → «FBI» | форма: actual, positive
+N02-E049: «Cynthia Kaiser» — leads → «Halcyon Ransomware Research Center» | форма: actual, positive
+N02-E050: «Albania attacks of 2022» — affects → «Albania» | форма: actual, positive
+N02-E051: «Pay2Key attack» — attributed to → «Pay2Key» | форма: actual, positive
+N02-E052: «Sicarii» — uses → «Sicarii encryptor» | форма: possible, positive
+N02-E053: «decryption tool» — uses → «"checkpoint" system» | форма: actual, positive
+N02-E054: «Cynthia Kaiser» — warns about → «ransomware» | форма: actual, positive
+N02-E055: «Pay2Key» — uses → «ransomware» | форма: actual, positive
+N02-E056: «Halcyon» — reports on → «Pay2Key attack» | форма: actual, positive
+N02-E057: «ransomware» — affects → «American businesses and consumers» | форма: actual, positive
+N02-E058: «Akira» — uses → «ransomware» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+КІНЕЦЬ ФАЙЛУ N02. Усього записів у файлі: 58 (від N02-E001 до N02-E058).

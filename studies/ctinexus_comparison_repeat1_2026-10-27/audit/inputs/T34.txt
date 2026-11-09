@@ -1,0 +1,94 @@
+AUDIT_FILE: T34
+TARGET_DOC_ID: D0320
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0320
+PUBLICATION_DATE: 2026-04-08
+SOURCE_URL: http://www.uniindia.net/four-out-of-five-firms-deploy-ai-under-pressure-trendai-report/business-economy/news/3803304.html
+TITLE_SHA256: 1062da279f6b70cb86b77365f0aa03ddef2107823e00a08b18ac7118b7bf8c98
+BEGIN_DOCUMENT
+[D0320:P0001] sha256:1062da279f6b70cb86b77365f0aa03ddef2107823e00a08b18ac7118b7bf8c98
+[D0320:P0002] sha256:2f50c895d58bcbc433b04318b1207385a85683ba301d6accc6ea2ca9cea8bce4
+[D0320:P0003] sha256:8909564e5552319a2ec37bd507b0839b7ed21e9e0d0f8d2be7b449cb8836f6e0
+[D0320:P0004] sha256:5f07a8985e367a083cb826a2f60c1a6b410e67aa0cd6549a869b9a9298b01d2f
+[D0320:P0005] sha256:2fd747293333471e39b87e182fabec55f555270771afe1b08205f3d45a0c40c7
+[D0320:P0006] sha256:5160b4a8476fe74e77ebc553a17e3143389fcf3cb28ea4c6784448fab5ee8193
+[D0320:P0007] sha256:98da917ae7579d9d718a3c12dc5785675df5dc4c6f5cca5b5f0f29019528aad6
+[D0320:P0008] sha256:5fa6d6ee55aaab0e74573062be4fa8f7a6ceb99ffd0522afad81e733383d3e16
+[D0320:P0009] sha256:1db270902b3959ecdfe41a7426620651c4e1ec34cea1a41d0ccd19611780d3ad
+[D0320:P0010] sha256:b51b6884c5b2c34c2646c8191d17207431fc8120203363a45b4e5c59ca173dcf
+[D0320:P0011] sha256:2abcab1c7a1883ddd6f7fdfd0a68fc0a1ccec1e976f9733c36aebe1b3b5219c9
+[D0320:P0012] sha256:7a7d6043ee3757449bb697d6da6b386fdf8d99fae8696a46dbcd7054363a7a9a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (27)
+E001: «cybercriminals» — use AI to enhance → «phishing attacks» | форма: actual, positive
+E002: «agentic AI systems» — pose risk of → «lack of auditability» | форма: actual, positive
+E003: «agentic AI systems» — pose risk of → «abuse of trusted AI agents» | форма: actual, positive
+E004: «TrendAI study» — surveyed → «3,700 business and IT decision-makers» | форма: actual, positive
+E005: «cybercriminals» — uses → «phishing attacks» | форма: actual, positive
+E006: «TrendAI study» — was conducted by → «TrendAI» | форма: actual, positive
+E007: «TrendAI study» — included respondents from → «India» | форма: actual, positive
+E008: «cybercriminals» — uses → «reconnaissance» | форма: actual, positive
+E009: «AI kill switch» — shuts down → «AI systems» | форма: actual, positive
+E010: «TrendAI» — reports on → «cybercriminals» | форма: actual, positive
+E011: «IT managers» — about half support → «AI kill switch» | форма: actual, positive
+E012: «malicious prompts» — affects → «AI systems» | форма: possible, positive
+E013: «AI deployments» — create vulnerabilities across → «enterprise systems» | форма: actual, positive
+E014: «cybercriminals» — use AI to automate → «reconnaissance» | форма: actual, positive
+E015: «agentic AI systems» — expand → «attack surface» | форма: actual, positive
+E016: «cybercriminals» — uses → «AI» | форма: actual, positive
+E017: «agentic AI systems» — could strengthen → «cyber defence» | форма: actual, positive
+E018: «firms in India» — approved under pressure despite known risks → «AI deployments» | форма: actual, positive
+E019: «AI systems» — affects → «malicious prompts» | форма: possible, positive
+E020: «agentic AI systems» — pose risk of → «exposure of sensitive data» | форма: actual, positive
+E021: «cybercriminals» — leverage → «AI» | форма: actual, positive
+E022: «UNI India» — reported → «TrendAI study» | форма: actual, positive
+E023: «UNI India» — reported from → «Bengaluru» | форма: actual, positive
+E024: «malicious prompts» — could compromise → «AI systems» | форма: actual, positive
+E025: «TrendAI study» — was reported on → «April 8, 2026» | форма: actual, positive
+E026: «AI kill switch» — shuts down → «AI systems» | форма: actual, negative
+E027: «enterprises» — face rise of → «shadow AI tools» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

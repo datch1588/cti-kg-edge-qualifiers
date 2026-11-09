@@ -1,0 +1,181 @@
+RESOLVER_FILE: R09
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 7, згадок 37)
+
+ГРУПА G050 (згадок 10)
+M001: «Cyberattack on Moldova medical payments database» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0019]: «@D0113:P0019:0-144 sha256=b03ccec74866b905d319627d83c3d80b8115e90d13f5c39ac4a8095e5f08c944»
+    абзац: «@D0113:P0019:0-355 sha256=28304d95eb7a95ee3c984ae4418c7e6d458ff31e389930ea6d127418c26cc043»
+  твердження статті: «Cybersecurity Agency» — REPORTS_ON → «Cyberattack on Moldova medical payments database» (actual, positive)
+M002: «cyberattack on 7-Eleven» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0021]: «@D0124:P0021:0-76 sha256=ad7b30ed9e1da0135f641f2a4d10684c516676a7f948ece337058527471cea2a»
+    абзац: «@D0124:P0021:0-461 sha256=1e209cb1c555098a81be2dd767a4a816da966992ab5808351f81c72c55a15b01»
+  твердження статті: «cyberattack on 7-Eleven» — AFFECTS → «7-Eleven» (actual, positive); «cyberattack on 7-Eleven» — ATTRIBUTED_TO → «ShinyHunters» (actual, positive); «Have I Been Pwned» — REPORTS_ON → «cyberattack on 7-Eleven» (actual, positive)
+M003: «cyberattack on a heating plant» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0015]: «@D0262:P0015:123-264 sha256=02eaa35d8f4cbe6b4e729e6b61af1aa4545033c687542bbb194d630a12848519»
+    абзац: «@D0262:P0015:0-265 sha256=be0d2101ace0583e5b108f1aa78000f6c37af4d662678b058a11a44a6108be6f»
+  твердження статті: «Sweden» — REPORTS_ON → «cyberattack on a heating plant» (actual, positive); «cyberattack on a heating plant» — ATTRIBUTED_TO → «pro-Russian group» (actual, positive); «cyberattack on a heating plant» — TARGETS → «heating plant» (actual, positive)
+M004: «pro-Russian cyberattack on thermal power plant» (incident) | альтернативні назви: «pro-Russian cyberattack» | стаття: «TITLE_SHA256:4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338» (2026-04-15)
+  фрагмент [P0001]: «@D0290:P0001:0-83 sha256=4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338»
+  фрагмент [P0007]: «@D0290:P0007:0-79 sha256=161a3a369f8a063e0446e4774dbea361b5a9ad698df16c5aad212a1c2319fe35»
+    абзац: «@D0290:P0007:0-177 sha256=8ad46ec6b18214a4f5eefe929975317c8cb48555e39fab45c8cc7a0b51dca652»
+  твердження статті: «Sweden» — MITIGATES → «pro-Russian cyberattack on thermal power plant» (actual, positive); «pro-Russian cyberattack on thermal power plant» — AFFECTS → «thermal power plant» (actual, negative); «pro-Russian cyberattack on thermal power plant» — AFFECTS → «thermal power plant» (planned, positive)
+M005: «recent cyberattack» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0017]: «@D0424:P0017:0-57 sha256=a31f35c6ea04ca7cbacad09b8973846147d1fa9d85d4e7dc9de37f007c9e04ad»
+    абзац: «@D0424:P0017:0-239 sha256=57cb26e4ad361eac471614251990ad480c95433ee8f60db99d88a1063c7395c3»
+  твердження статті: «recent cyberattack» — ATTRIBUTED_TO → «Iran» (possible, positive); «recent cyberattack» — TARGETS → «nuclear research facility» (actual, positive); «Polish authorities» — REPORTS_ON → «recent cyberattack» (actual, positive)
+M006: «significant cyberattack» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0004]: «@D0424:P0004:0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»
+    абзац: «@D0424:P0004:0-409 sha256=a7340ae5cb8ace8a084878b50bf4584398546d33fee03d1701d926dbc0e89aeb»
+  твердження статті: «significant cyberattack» — ATTRIBUTED_TO → «Handala» (actual, positive); «significant cyberattack» — ATTRIBUTED_TO → «Pro-Iranian hackers» (actual, positive); «significant cyberattack» — TARGETS → «Stryker» (actual, positive)
+M007: «Stryker cyberattack» (incident) | альтернативні назви: «Stryker attack» | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0020]: «@D0427:P0020:0-41 sha256=deed530bce856d5149d66fb3bcb6b4b2d5d92915c43dbd728683baef6cbbf4cb»
+  фрагмент [P0039]: «@D0427:P0039:0-37 sha256=93f696f237a84eda39926d5cd8fc48d2ec16df3bf9fce889f6be23f689ab7130»
+  фрагмент [P0010]: «@D0427:P0010:0-138 sha256=60e64fb5f9256903969a94285ce835a0fded6a3d80be79b2bdedcbf59ba13303»
+  твердження статті: «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive); «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive); «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive)
+M008: «cyberattack originating in Iran» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0013]: «@D0468:P0013:1146-1238 sha256=92956d32eb1bcaca84eaff5c50afcafb007aa58c3bf66cbf48dc54a09be6cbd7»
+    абзац: «…@D0468:P0013:817-1417 sha256=e88655dc18127b3e91b211224aab8f5acb06f01e20af69f2e213b513fcc99aea»
+  твердження статті: «cyberattack originating in Iran» — TARGETS → «strategic food reserve» (actual, positive); «Jordanian National Cyber Security Centre» — MITIGATES → «cyberattack originating in Iran» (actual, positive)
+M009: «cyberattack» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0055]: «@D0505:P0055:0-107 sha256=1a7cda664ea48a419fff375b3493f6d636d5f15c6a897fd7d78da8079f7ee5db»
+  твердження статті: «cyberattack» — AFFECTS → «Penanshin Air Express» (actual, positive); «cyberattack» — AFFECTS → «core operational database» (actual, negative); «cyberattack» — ATTRIBUTED_TO → «ransomware group» (actual, positive)
+M010: «ongoing cyberattack on Singapore» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0019]: «@D0505:P0019:65-172 sha256=008eb577caf3b34b37af66aaee16b874eef438a3b387c5a811677416b97d724e»
+    абзац: «@D0505:P0019:0-242 sha256=ed24c676204b90107ef2a6ce9cd11bbeff1db6bf40b4a0c9d6528f3b8afb2b42»
+  твердження статті: «ongoing cyberattack on Singapore» — ATTRIBUTED_TO → «UNC3886» (actual, positive); «ongoing cyberattack on Singapore» — TARGETS → «Singapore» (actual, positive); «K Shanmugam» — REPORTS_ON → «ongoing cyberattack on Singapore» (actual, positive)
+
+ГРУПА G051 (згадок 5)
+M011: «Cisco Talos» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0027]: «@D0113:P0027:100-218 sha256=2bd5e2040504b45921a003c302129671a0dd659d03d2e592154ac797ff3839c4»
+    абзац: «@D0113:P0027:0-565 sha256=a25491f3a7d0569d7e664c199aedb506a8132f3a2186dd9bc75254313a5349b8»
+  твердження статті: «Cisco Talos» — REPORTS_ON → «Cisco Catalyst SD-WAN vulnerabilities» (actual, positive)
+M012: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0004]: «@D0124:P0004:0-68 sha256=0171ca5a751ac2449122ae7ce856f323ab34f181152dd9d076e36f3fb6d5f0b0»
+    абзац: «@D0124:P0004:0-477 sha256=3dbe4ca93f78226dea376b7215ea2779d3f9cf97271c1674137c6faf3fab21f1»
+  твердження статті: «Cisco» — REPORTS_ON → «multi-turn AI attacks» (actual, positive); «Cisco's AI threat intelligence team» — PART_OF → «Cisco» (actual, positive)
+M013: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0017]: «@D0195:P0017:0-162 sha256=fbb414c68bc6b8a2ef182ee2b18b11550bcb429ccfaa71deda24609f38257a73»
+  твердження статті: «Cisco» — DEVELOPS → «Daybreak» (actual, positive)
+M014: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0018]: «@D0250:P0018:61-216 sha256=0ab126f4b900c21aab38d0c3e632a8ef0c36e3329e047bf4c1af29fcf95252c8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+M015: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0015]: «@D0457:P0015:0-77 sha256=2b06fa4420b44aa91ed2a54aa53715bab3e920b4e5e3996053cf2de523462bb3»
+    абзац: «@D0457:P0015:0-450 sha256=d5be78e9fb5b7ee547fd96b8a392f30efd39dce6d86e669cd1775358a4e3d676»
+  твердження статті: «Cisco» — REPORTS_ON → «CVE-2026-20122» (actual, positive); «Cisco» — REPORTS_ON → «CVE-2026-20128» (actual, positive)
+
+ГРУПА G052 (згадок 3)
+M016: «Europol» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0010]: «@D0113:P0010:75-171 sha256=fb2b7e241d91bc26d08a1e7c751407b9af8c0fcc9be4df9c887663e4fb5d5877»
+    абзац: «@D0113:P0010:0-472 sha256=04896efdf4e40f400a10507afac2c691a0d861ca6f6ad1aa3a217e72ad91bedc»
+  твердження статті: «Europol» — MITIGATES → «digital foreign interference» (actual, positive)
+M017: «Europol» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0044]: «@D0457:P0044:208-341 sha256=e8852df4cf8b9b763a9b571fb1b2b833493750fc8e7f1aa5108a821479144ba0»
+    абзац: «@D0457:P0044:0-341 sha256=58ebfbe0590bececac9963d014272ecec2ff0d291b9b7d08e8a7ba4069eefcdb»
+  твердження статті: «Europol» — MITIGATES → «LeakBase» (actual, positive)
+M018: «Europol» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca» (2026-01-25)
+  фрагмент [P0038]: «@D0593:P0038:145-255 sha256=59cc9fca5a642851982690be911b649cabaec927e3170f590299d97b79b32213»
+    абзац: «@D0593:P0038:0-255 sha256=ae8cba817493ef8f4154b47d27a5b6f9fb10c8f0e4835f928d360b87b8cfa201»
+
+ГРУПА G053 (згадок 9)
+M019: «Google» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0023]: «@D0113:P0023:71-207 sha256=a11ca4393b84999b5b9d905159ba9b5eeb3fddfb9728e37d6f9d4810fa9daff1»
+    абзац: «@D0113:P0023:0-421 sha256=cee8ef5f87f5622e91b16ae919b1e453470eb53171ef993369757ffe3bd5c6ad»
+  твердження статті: «Google» — MITIGATES → «Glassworm» (actual, positive)
+M020: «Google Cloud» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0043]: «@D0124:P0043:73-151 sha256=f9898565df5665d5161fb9428ae5dcf2cac73ef119d67cf634ce89d502dd541f»
+    абзац: «@D0124:P0043:0-453 sha256=aae9ac68a96c74b9e7965a46270fe5792864f701064edceb7aace9da087ab28d»
+  твердження статті: «Google Cloud» — DEVELOPS → «AI Threat Defense» (actual, positive)
+M021: «Google Threat Intelligence Group» (organization) | альтернативні назви: «GTIG» | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0022]: «@D0124:P0022:210-293 sha256=a2e4afb45a03e1f126f80f697cb0ea4084c12ef16c192f13919465b30d842aa3»
+    абзац: «@D0124:P0022:0-445 sha256=451c75fba0d7505bf19ca1f7d5f4f3dff4bb000e280d2b66048aab97e25f35a5»
+  твердження статті: «Google Threat Intelligence Group» — REPORTS_ON → «phishing-as-a-service» (actual, positive)
+M022: «Google» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0026]: «@D0194:P0026:206-366 sha256=2fc20271b2b7f684cd55317d8e3148ec554e1710348222b397c2984a1687baa5»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «Google» — MEMBER_OF → «restricted working group» (actual, positive)
+M023: «Google» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0028]: «@D0457:P0028:0-71 sha256=ada6e1f6e9e81fcd6f96a48faf9530663ed597d7317678ffbc00006527a457bd»
+    абзац: «@D0457:P0028:0-499 sha256=07857b18b70c3ff92b94a63d28a1e6d6c3cd9010d9792adb411f1a0bd0e86d3b»
+  твердження статті: «Google» — DEVELOPS → «Chrome» (actual, positive); «Google's Threat Intelligence Group» — PART_OF → «Google» (actual, positive)
+M024: «Google's Threat Intelligence Group» (organization) | альтернативні назви: «GTIG» | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0011]: «@D0457:P0011:306-379 sha256=2e623b7736a5f2b7638229828a3ae6b266dd75ce72c2f29c9847d028b5ba9177»
+    абзац: «@D0457:P0011:0-379 sha256=50a9a9784555c5bab95d51b536ab712a46f256da57502086f1541c1156968d2f»
+  твердження статті: «Google's Threat Intelligence Group» — PART_OF → «Google» (actual, positive); «Google's Threat Intelligence Group» — REPORTS_ON → «Coruna» (actual, positive)
+M025: «Google» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+  фрагмент [P0020]: «@D0478:P0020:27-131 sha256=3a864d8204db04146836de089f976b151fdb595473a149116c5060a6550d790a»
+    абзац: «@D0478:P0020:0-294 sha256=87e909c14d7509e9afc63a9c5673b9cb0e1bba95e5a7f6e7b84a1412fe414c1a»
+  твердження статті: «Google» — OPERATES → «data centres» (actual, positive)
+M026: «Google» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0010]: «@D0505:P0010:0-113 sha256=9f7c62bdbe8e7fbb02ad7b4faa6452a172e93ca29c673fc70081469e9f2b99c5»
+  твердження статті: «Mandiant» — PART_OF → «Google» (actual, positive); «Lim Yihao» — MEMBER_OF → «Google» (actual, positive)
+M027: «Google Threat Intelligence Group» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0011]: «@D0505:P0011:181-308 sha256=d486e30954c04071e792784bf9846fb5f496e59e039beb9ef046abf38babbdda»
+    абзац: «@D0505:P0011:0-309 sha256=ed21bbcf6d5a3156c49a63c495ad62582f4116c6c0a61c3d872ce47e64a0bc6b»
+  твердження статті: «Lim Yihao» — MEMBER_OF → «Google Threat Intelligence Group» (actual, positive)
+
+ГРУПА G054 (згадок 2)
+M028: «Group-IB» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0034]: «@D0113:P0034:56-205 sha256=785ebc170a4093736a8f88b203d464408cf5a16b5a6bb654b3e10fd103b6e52c»
+    абзац: «@D0113:P0034:0-585 sha256=6557e83173f1fd9d084a2fabc5f945f28c962d923dc639d4994dca26313c8112»
+  твердження статті: «Group-IB» — REPORTS_ON → «GHOST STADIUM» (actual, positive)
+M029: «Group-IB» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0032]: «@D0505:P0032:0-102 sha256=7ea3f3e97e0e36f4b1508a5e42464369f13412af3ba20226c4a91780a8ce861b»
+    абзац: «@D0505:P0032:0-196 sha256=2e9d91d0709dd50b9c384a2f9506cd448ed5794629999edc538a9383357fbbe6»
+  твердження статті: «Jennifer Soh» — MEMBER_OF → «Group-IB» (actual, positive)
+
+ГРУПА G055 (згадок 3)
+M030: «IBM» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0016]: «@D0113:P0016:253-314 sha256=d9294197e003b8a897779c9a94dd8dffd7b2e74ec5b2e97382a81a91bc209234»
+    абзац: «@D0113:P0016:0-330 sha256=1f8c2159f2c43e598524e156429d565e1a08561fdc1f0d24acb49fa5fb436078»
+  твердження статті: «IBM» — MITIGATES → «Breach of Sistemi Informativi» (actual, positive)
+M031: «IBM» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad» (2026-04-17)
+  фрагмент [P0005]: «@D0277:P0005:44-226 sha256=6d04b3d45d3b07e66a3eabb54826b6928cbe6c632b154e9d1d4b1f0dfe946bba»
+  твердження статті: «IBM» — MITIGATES → «Agentic Attacks» (actual, positive); «IBM» — PROVIDES → «IBM Autonomous Security» (actual, positive); «IBM» — PROVIDES → «IBM cybersecurity assessment» (planned, positive)
+M032: «IBM» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0006]: «@D0480:P0006:37-108 sha256=cb9e6af44c1d89edd57e21a3038d0107d27edc56ad60772ab8a8155db0b0d0a5»
+    абзац: «@D0480:P0006:0-498 sha256=e40b9f6ca4c5df2bbff9c3395b978fb84d45e78b8c63504807ca41a8d17ecf9d»
+  твердження статті: «IBM ASEAN» — PART_OF → «IBM» (actual, positive); «IBM X-Force» — PART_OF → «IBM» (actual, positive); «Mark Hughes» — MEMBER_OF → «IBM» (actual, positive)
+
+ГРУПА G056 (згадок 5)
+M033: «Islamic Revolutionary Guards Corps» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0010]: «@D0113:P0010:135-223 sha256=e6019f3a63402027262d81d5dfd8d51cece252c782c7b45ada3fbb54d67908ee»
+    абзац: «@D0113:P0010:0-472 sha256=04896efdf4e40f400a10507afac2c691a0d861ca6f6ad1aa3a217e72ad91bedc»
+M034: «IRGC» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0055]: «@D0418:P0055:101-229 sha256=4fd5d571c47c90f2bfdf67464988d2a684261c1acb98b916486a011a06c2ac5b»
+    абзац: «@D0418:P0055:0-250 sha256=89477564f0f5a5a2d076ad34f275a536f606ab1baac3845c3ace5a14a6a83888»
+  твердження статті: «IRGC» — TARGETS → «West» (actual, positive); «IRGC» — USES → «cyber attacks» (actual, positive)
+M035: «IRGC Quds Force» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0058]: «@D0418:P0058:10-100 sha256=3a37b2ce4c6c93b2a6897fbc1cb2116146372d22aa926a64abc6e3c714003978»
+    абзац: «@D0418:P0058:0-295 sha256=de9db90333ac1c056498ffface2a5b920c507ba4f1ba567df89ade352d2b5965»
+  твердження статті: «IRGC Quds Force» — LOCATED_IN → «Europe» (actual, positive)
+M036: «IRGC» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0007]: «@D0468:P0007:720-775 sha256=0f1898e8758dfb5a203ba5ff7c7d66cd7df4cbbe9acffd39a50f7ef656048685»
+    абзац: «…@D0468:P0007:368-968 sha256=9010eb1f329fa3076955e680d5d0fb5dff1fdd81bda2270a83f577a191ca0ebc»
+  твердження статті: «cyber warfare headquarters» — PART_OF → «IRGC» (actual, positive); «cyber-electronic command» — PART_OF → «IRGC» (actual, positive); «intelligence directorate» — PART_OF → «IRGC» (actual, positive)
+M037: «Islamic Revolutionary Guard Corps» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0061]: «@D0608:P0061:63-157 sha256=0d844549e071b45456cdabc841eb86e44d332c76ac27ccb1321ff6e68d211a58»
+    абзац: «@D0608:P0061:0-248 sha256=73c42fe806df78f1146d56c2c84f55a98f4eb3c4f774b35eb5abdb79228cf161»
+  твердження статті: «Islamic Revolutionary Guard Corps» — PART_OF → «Iran» (actual, positive); «Islamic Revolutionary Guard Corps» — TARGETS → «critical infrastructure» (actual, positive)
+
+КІНЕЦЬ ГРУП

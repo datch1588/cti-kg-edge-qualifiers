@@ -1,0 +1,28 @@
+{
+ "audit_file": "S2T06",
+ "target_doc_id": "D0598",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 сказано «(3) proposing an open-source tool», тобто стаття пропонує інструмент із відкритим кодом, і цей внесок подано як здійснений."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0004 першу версію [v1] датовано «Wed, 9 Oct 2024», тобто статтю вперше подано 9 жовтня 2024 року, і це подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 Dream Job названо однією з «MITRE campaigns», моделі яких згенеровано з даних MITRE, тобто кампанію зафіксовано в базі знань MITRE, і це подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0004 останню версію [v4] датовано «Thu, 22 Jan 2026», а P0003 називає v4 «this version», і це подано як факт."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 каже «Advanced Persistent Threats carry out attack campaigns - e.g. operations ... WannaCry», тобто приписує WannaCry APT, і подає це як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 прямо каже, що Advanced Persistent Threats проводять кампанії, зокрема WannaCry, і подає це як факт."},
+  {"item_id": "E007", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: за P0002 інструмент працює на основі cATM logic («open-source tool ... based on the cATM logic»), а не логіка використовує інструмент."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 каже «an open-source tool to perform these comparisons based on the cATM logic», тобто інструмент ґрунтується на cATM logic, а це властивість інструмента, отже actual."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0003 сказано «Cite as: arXiv:2410.06692», тобто статтю ідентифіковано цим номером, і це подано як факт."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0002 інструмент виконує порівняння на основі cATM logic, тобто використовує цю логіку, а це властивість інструмента, отже actual."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 називає Wocao серед кампаній, які проводять Advanced Persistent Threats, тобто приписує її APT, і подає це як факт."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 каже «quantifying the likelihood of attack campaigns via data-driven procedures on the MITRE knowledge-base», тобто підхід статті застосовує до бази знань MITRE процедури, що спираються на дані, і подає це як здійснене."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок WannaCry з APT стаття стверджує (P0002) і ніде не заперечує, тож полярність negative хибна."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 каже «we quantify the likelihood of all MITRE Enterprise campaigns» і подає це як здійснене."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 каже «compare the likelihood of the Wocao and Dream Job MITRE campaigns ... against manually-built attack tree models» і подає це як здійснене."},
+  {"item_id": "E016", "triple_verdict": "I", "form_verdict": "—", "reason": "Стаття лише вживає назву «MITRE knowledge-base» і ніде не каже, що MITRE підтримує чи веде цю базу, тож звʼязок «maintains» можна лише вгадати з назви."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0002 стаття порівнює ймовірність кампаній Wocao і Dream Job із моделями, побудованими вручну, і подає це як здійснене."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 називає Wocao серед операцій, які проводять Advanced Persistent Threats, і подає це як факт."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 Wocao названо «MITRE campaign», модель якої згенеровано з даних MITRE, тобто кампанію зафіксовано в базі знань MITRE, і це подано як факт."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 називає Dream Job серед операцій, які проводять Advanced Persistent Threats, і подає це як факт."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 подає Dream Job як кампанію, яку проводять Advanced Persistent Threats, тобто приписує її APT, і подає це як факт."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0002 стаття вводить методологію, «that captures any attack campaign via template attack tree models», і подає цей внесок як здійснений, отже actual."}
+ ]
+}

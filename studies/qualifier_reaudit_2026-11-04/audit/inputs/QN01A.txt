@@ -1,0 +1,217 @@
+AUDIT_FILE: QN01A
+TARGET_DOC_ID: D0595
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0595
+PUBLICATION_DATE: 2026-01-24
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/cybersecurity-risks-autonomous-iot-swarms/
+TITLE_SHA256: 9fc414fdb6b545553a60b1cbf695fc1ed4b45ba9457a2041cdfcf18a7427ef0b
+BEGIN_DOCUMENT
+[D0595:P0001] sha256:9fc414fdb6b545553a60b1cbf695fc1ed4b45ba9457a2041cdfcf18a7427ef0b
+[D0595:P0002] sha256:a9a2f53ca7e8b36900744357bc49479577216b8a1ff39ab2fb8d09ea5d50c893
+[D0595:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0595:P0004] sha256:ee02df782edb70d0bdb76726311c40274db78beb4db514e851c120f1911c8aa5
+[D0595:P0005] sha256:ff15853b5b0eb020fc6513e15a21b20b2346739120b0bf58a35ca455cfff6029
+[D0595:P0006] sha256:fae85e24721a891b36bc8e3230f5809125910b18a1eb9ea81589b3b4e234a742
+[D0595:P0007] sha256:71e6ab97e72ecddd9218c96fd840cc98540abd86ba57ce54dfd4dd3d67691ecf
+[D0595:P0008] sha256:023b08360011338979a5b4b61801d75462179bc64c230831bbaee8ad0dce9335
+[D0595:P0009] sha256:4276cbf3d11f139f9bf6ff2eab07a782ed62a8eb660570ed4c9c356ce5e9b3f4
+[D0595:P0010] sha256:a732b45ec1d9af9aa2e9ac3cc43c0cd8281436508614e2a5276bac0d3f0642bd
+[D0595:P0011] sha256:9c9686fbf9ca5cfcb459083ee23cf0885f2a521b1b0df8fed7af39a1812501ae
+[D0595:P0012] sha256:d154c8139e1f15112ea67364516bb4e126a978623e82196da1fa00d570a04a8e
+[D0595:P0013] sha256:d8a77620028cc3e5ad58ca5ce72ee48a6493abb022889b55e390bca902b3c59d
+[D0595:P0014] sha256:74ad7ee7c6e8d1b86dbd0b587051ecbaf4fd90368158fc50f0bc84d1edc66469
+[D0595:P0015] sha256:04faa7d0fd0aac687f10618ec1414c8f1fd94af6cf37f456dbb1958d57ae8d53
+[D0595:P0016] sha256:086b0b777f5181029b1e838068e18d53b60743ee9a981648e5f2b0454001a210
+[D0595:P0017] sha256:dccc874db3178fecd1199e9c3328f04c18c7d6be0410bdeb8933293a07acffb0
+[D0595:P0018] sha256:2026ea28519b07a1b7ed2839137ce5120db08aaba32064fe32ffcd8db81c26cf
+[D0595:P0019] sha256:07747e67540e50080b47e21500a1113fcf3b80438989d7f3dbfa5af62f9c4362
+[D0595:P0020] sha256:530f4e20254b715ffbaf03c363e54726c0fc643676cfef79ce082952fddff24d
+[D0595:P0021] sha256:c2402d594e569bd4e049970a700d709b834a5313b27fb74c8a46bd98781cf62e
+[D0595:P0022] sha256:16cda8397a15c6b3adc94e32d3f182bd52c314d3954da86b01aceb19e5bf51fd
+[D0595:P0023] sha256:ba639958a044c7d42856d72af208812b1c0e73bd36ae8f20a59555ab9929bf52
+[D0595:P0024] sha256:fcbf2faf08c3269b45ff527e69ed1efb73116d7b83acb30be600c48294c489a3
+[D0595:P0025] sha256:0a47438cb6e3c1241b2676c895c6bae717e144d728485873b275630114b9f68e
+[D0595:P0026] sha256:aa118d10aaf0d839011e40fe0f7c476450c8ae6be8364d161a709d0cf3ed001a
+[D0595:P0027] sha256:71f74bb51b264ecda0fbc5cd438e171cc102f8865baa3c5b6ae65ff55cedb558
+[D0595:P0028] sha256:731db154d9eceed4a74a9bf9902ef1557e6dd4351fe1c634d651cb4a3844d36e
+[D0595:P0029] sha256:abbcd96418f62661298e224b132058437113eadf8a716bd9c68d07a5084afb80
+[D0595:P0030] sha256:145e96ef361960d65be10dd60eafb3a00ac4e8e70ccfc256ea1d6b80c8fe1bc0
+[D0595:P0031] sha256:58e992ddb850580e96d62b748dfa24e450828e36fd1611f8ca27a532a5aad65f
+[D0595:P0032] sha256:0ea10eff84d991d18b4ad3457c9909eed890c4411a7908891a8ca9d6524a5d31
+[D0595:P0033] sha256:5e89352fd462437cf71d7d95043189f9823df2851f7314e6073f980340c51063
+[D0595:P0034] sha256:4c5029ca1e4db09063f41e0117c3a9a05a83970f76bb276a06d0d11bff7927f0
+[D0595:P0035] sha256:a58c095ced608daeffd5ae0acbe24356e37a2d650b051807fb78ffa483519be1
+[D0595:P0036] sha256:6ccb1f3ebf39a67b7816b3f7571837ebb877db37b0b2086336ece39780bde29c
+[D0595:P0037] sha256:d107efb5e51e8e18efebb18bc28a2aacb0f15cb3b801a55b172c80bfa173b10a
+[D0595:P0038] sha256:61f4c1d314ff05cca767cbf3d7fbc43648fdb2a8e7080e9de7ab6f51c3125a75
+[D0595:P0039] sha256:9dc2fa58ca1916b14078884e8e0d680f6b25442e210c70c2c86646ef60a46c7e
+[D0595:P0040] sha256:ebfabcc5558576868d81716e1332820d95e67aa7728ee2a55aeef9cb9d435ada
+[D0595:P0041] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0595:P0042] sha256:221242c481efe1ba5ec6b17855204d07414f50505859115e54089b9f5b97d008
+[D0595:P0043] sha256:beb3b155fc25b31eef9f1ccaf1b4aee40bc8444b5eccc8c1cbd865814a578f47
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 27, вузлів 3)
+E001: «malicious code» — affects → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0026] «@112-238 sha256=24e83065f64ec525215984af94fbac614b006fd451941ef17195c212196b1062»
+E002: «cascading failures» — affects → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0016] «@0-161 sha256=25d2dd77bc1803fe0e4faaf960d2e6c5567731010d02856a86a626a655caecdd»
+E003: «lack of encryption» — enables → «impersonate nodes» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E004: «Weak authentication» — enables → «impersonate nodes» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E005: «injecting false environmental data» — affects → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0014] «@13-140 sha256=581fd22633766547b9b7605b61d6e0ade37f5b789d83a6413ae7a6477e2a4550»
+E006: «poorly implemented trust mechanisms» — enables → «impersonate nodes» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E007: «state-sponsored actors» — targets → «autonomous IoT swarms» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0010] «@0-148 sha256=2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d»
+E008: «Weak authentication» — enables → «inject rogue devices» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E009: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0010] «@0-106 sha256=3d19b929b8643dd2e847b9c5fc9454df5312178194d863f1682e17341a92c62b»
+E010: «Weak authentication» — enables → «inject rogue devices» | форма: possible, positive
+  атрибуція: — | час події: «2026-01-24» | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E011: «cascading failures» — affects → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0016] «@0-107 sha256=48efb4be2638645a03588ced18d2d401612a30fcb8926568005294634a85cd51»
+E012: «state-sponsored actors» — targets → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0010] «@0-148 sha256=2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d»
+E013: «poorly implemented trust mechanisms» — enables → «impersonate nodes» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E014: «Weak authentication» — enables → «inject rogue devices» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E015: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: actual, positive
+  атрибуція: — | час події: «2026-01-24» | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E016: «lack of encryption» — enables → «inject rogue devices» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E017: «lack of encryption» — enables → «impersonate nodes» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E018: «Cybercriminals» — targets → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0010] «@0-148 sha256=2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d»
+E019: «Weak authentication» — enables → «impersonate nodes» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E020: «Cybercriminals» — targets → «autonomous IoT swarms» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0010] «@0-148 sha256=2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d»
+E021: «injecting false environmental data» — targets → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0014] «@0-141 sha256=22e15ec2955a78940750f1e5b919a42f94851ad2c174a2586aa29ac7496c8b05»
+E022: «inject rogue devices» — targets → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E023: «behavioral manipulation» — affects → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0013] «@0-262 sha256=d8a77620028cc3e5ad58ca5ce72ee48a6493abb022889b55e390bca902b3c59d»
+E024: «behavioral manipulation» — targets → «autonomous IoT swarms» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0013] «@0-262 sha256=d8a77620028cc3e5ad58ca5ce72ee48a6493abb022889b55e390bca902b3c59d»
+E025: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E026: «lack of encryption» — enables → «inject rogue devices» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+E027: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0595:P0015] «@163-323 sha256=66231f3828a01ffcff909a0e918fee07ced3249310e5b99dc682d3bdaff38669»
+V001: «autonomous IoT swarms» (technology) | альтернативні назви: «autonomous swarms»; «swarm systems»
+V002: «Internet of Things» (technology) | альтернативні назви: «IoT»
+V003: «autonomous IoT swarms» (technology) | альтернативні назви: «autonomous IoT swarm»; «autonomous swarms»
+КІНЕЦЬ ЗАПИСІВ

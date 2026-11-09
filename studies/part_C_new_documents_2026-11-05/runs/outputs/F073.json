@@ -1,0 +1,240 @@
+{
+  "run_id": "F073",
+  "target_doc_id": "D0534",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "ransomware",
+      "entity_type": "malware_class",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 390, "end": 503, "sha256": "b685421a6a34dd7381b839f1e78a7fbc32afe2fea173799959de2f847e538f6e"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Google Threat Intelligence Group",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0003", "start": 37, "end": 106, "sha256": "43d71f35e1b572bb9a0ecc84b440412eb2dec2e81418d74b7bd07d89954e17ca"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "defense ecosystem",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 108, "end": 258, "sha256": "609c753387f44e5a98374961256b5eeb24f03b774e92f864f0307e5fda3a4894"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "defense industrial base",
+      "entity_type": "other",
+      "aliases": ["DIB"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0001", "start": 0, "end": 66, "sha256": "9f37080676227cab26508f9dc159e5682433e3f5d7ca88fad692d0cceee99853"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0002", "start": 0, "end": 72, "sha256": "025072935d1e059d877cc21b3bb3e3f8141af94076fb3fa52b2ef7d169dace62"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "defense supply chain",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 390, "end": 503, "sha256": "b685421a6a34dd7381b839f1e78a7fbc32afe2fea173799959de2f847e538f6e"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "detection",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 273, "end": 399, "sha256": "3dfff7b9396408049501f1643fbd91f8d47ac31802980dd02fab50aeadedb2c8"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "MITRE ATT&CK",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0009", "start": 0, "end": 61, "sha256": "7831c3751aa0ad65a7374665de457e50dda2bb095151c1ab9d8b7d8c6036a6f1"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Luke McNamara",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0003", "start": 0, "end": 167, "sha256": "ef5ed4f3df85b908bf5c3862e09dd08808d80b0ba29caf21762734015a5dd8f6"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "GitHub",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0010", "start": 158, "end": 293, "sha256": "2ed909031078ed026ac8995ad87f2b3e6efb9956a3495069da17b5ad1b71a1a2"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "LinkedIn",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0010", "start": 158, "end": 293, "sha256": "2ed909031078ed026ac8995ad87f2b3e6efb9956a3495069da17b5ad1b71a1a2"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "identity segregation",
+      "entity_type": "technology",
+      "aliases": ["segregation of identities"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 53, "end": 208, "sha256": "3b8870e86111b7e572ecae893e4f79c9dee472cd44deffdb971b4bc38500002c"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 210, "end": 310, "sha256": "9c3538a80cb0a45f36cd8fc69762a5641873ba5039e4e85a869a1bd0f17c7b22"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "rigorous authentication",
+      "entity_type": "technology",
+      "aliases": ["rigorous authentication control"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 53, "end": 208, "sha256": "3b8870e86111b7e572ecae893e4f79c9dee472cd44deffdb971b4bc38500002c"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 210, "end": 310, "sha256": "9c3538a80cb0a45f36cd8fc69762a5641873ba5039e4e85a869a1bd0f17c7b22"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "threat actors",
+      "entity_type": "threat_actor",
+      "aliases": ["adversaries", "attackers"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 0, "end": 107, "sha256": "7b2e9f11ff2ae0e6986da20745132a92e950a249669edbe111f425ed0e186d7f"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0006", "start": 278, "end": 392, "sha256": "4120b0b892b2b664aab0d57e65d8e4af5434c30f21a18d3019eb183674ecd44a"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0003", "start": 108, "end": 167, "sha256": "6a959e6cb673dadea9313132b59bd397037aba8af873d51e317c12b6c4d25bf2"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "extortion attacks",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 390, "end": 503, "sha256": "b685421a6a34dd7381b839f1e78a7fbc32afe2fea173799959de2f847e538f6e"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n001",
+      "target": "n005",
+      "relation_type": "AFFECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Luke McNamara",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 390, "end": 503, "sha256": "b685421a6a34dd7381b839f1e78a7fbc32afe2fea173799959de2f847e538f6e"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n008",
+      "target": "n002",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0003", "start": 37, "end": 106, "sha256": "43d71f35e1b572bb9a0ecc84b440412eb2dec2e81418d74b7bd07d89954e17ca"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n011",
+      "target": "n006",
+      "relation_type": "ENABLES",
+      "modality": "conditional",
+      "polarity": "positive",
+      "attribution": "Luke McNamara",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 210, "end": 400, "sha256": "98739a4268aa22a5cfc8d4119c2854b0c752046fe82e9e4dee7a53a14851b91a"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n012",
+      "target": "n006",
+      "relation_type": "ENABLES",
+      "modality": "conditional",
+      "polarity": "positive",
+      "attribution": "Luke McNamara",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0008", "start": 210, "end": 400, "sha256": "98739a4268aa22a5cfc8d4119c2854b0c752046fe82e9e4dee7a53a14851b91a"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n013",
+      "target": "n003",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Luke McNamara",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 108, "end": 258, "sha256": "609c753387f44e5a98374961256b5eeb24f03b774e92f864f0307e5fda3a4894"}},
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0003", "start": 37, "end": 167, "sha256": "6c6f078a703549785ce48a7cdc4d6d5b559e0bc6cbbf87c727cd4a65b5c6eb0e"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n013",
+      "target": "n004",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0002", "start": 0, "end": 214, "sha256": "f28186f65b8478bf89950747f0b420e7cbf9552f312ee706e2258e24c8664bbe"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n014",
+      "target": "n005",
+      "relation_type": "AFFECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Luke McNamara",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0534", "paragraph_id": "D0534:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0534:P0007", "start": 390, "end": 503, "sha256": "b685421a6a34dd7381b839f1e78a7fbc32afe2fea173799959de2f847e538f6e"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

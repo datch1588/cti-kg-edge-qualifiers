@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T07",
+ "target_doc_id": "D0633",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0633:P0002 автори прямо кажуть «we propose SecureDyn-FL», тобто подають це як здійснений факт, і формулювання без маркерів цьому відповідає."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0633:P0002 як факт сказано про «rapid proliferation of Internet of Things (IoT) devices across domains such as ... healthcare networks», тож форма actual, positive збігається."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання містить маркер можливості «possibly», а в D0633:P0002 стаття без застережень подає, що фреймворк призначений для «adaptation to heterogeneous non-IID data via personalized learning» і що стратегія «improves model adaptation under non-IID data», тобто це actual, а не possible."}
+ ]
+}

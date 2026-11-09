@@ -1,0 +1,17 @@
+{
+ "audit_file": "R1_T23",
+ "target_doc_id": "D0432",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «threaten» не має маркерів і подає загрозу як факт, а в P0008 сказано лише про зростання ризику (raising the risk) того, що ці об'єкти можуть бути втягнуті в цифровий хаос, тобто це можливість."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0029 hack-and-leak operations названо «another possibility», що відповідає можливості у формулюванні «may use»."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0023 критичну інфраструктуру названо «likely targets», що відповідає формулюванню «likely target»."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly claimed» подає це як можливість, а в P0009 (і P0002) прямо сказано, що хакери взяли на себе відповідальність за атаку на Stryker, тобто це факт."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0009 сказано, що вони «have targeted ... industrial facilities in Israel», це здійснений факт, як і у формулюванні «targeted»."},
+  {"item_id": "W006", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0029 сказано «This can include denial-of-service attacks», тобто це можливість, як і в «may use»."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «prevent» не має маркерів, а в P0029 сказано, що дефейси «can prevent» компанію від спілкування з клієнтами, тобто це лише можливість."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0024 сказано, що проіранські хакери «openly discuss their plans in Telegram», це чинний стан речей, як і у формулюванні."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0023 ці організації названо «likely targets», що відповідає формулюванню «likely target»."},
+  {"item_id": "W010", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0022 сказано, що атака «may have ties to Iran», що збігається з формулюванням."},
+  {"item_id": "W011", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0029 дефейси сайтів перелічено серед можливих атак («This can include ...»), що відповідає «may use»."}
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "run_id": "F130",
+ "target_doc_id": "D0356",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "eMerge Americas 2026", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0004", "start": 38, "end": 158, "sha256": "1bc88e019d77bda8fef4a596b68cf4a0fa0541ca9d18cb15c945fa3617d0ad31"}}]},
+  {"id": "n002", "label": "Boston", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0012", "start": 490, "end": 557, "sha256": "852e299924f425f54f5cf2d35c80e16c0e5db094098d778f4ad76e2af0a6e525"}}]},
+  {"id": "n003", "label": "Miami", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0005", "start": 256, "end": 318, "sha256": "bbaf1807784cfb9ef92e5365e84f63149669c064bb40bbb8f9911be8a6dd978a"}}]},
+  {"id": "n004", "label": "South Florida", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0005", "start": 75, "end": 140, "sha256": "a86f1f31a589a00a7fb9d2574177eba2b7660cc003098c4fe403538022c17114"}}]},
+  {"id": "n005", "label": "eMerge Americas", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0013", "start": 22, "end": 172, "sha256": "2f832faed5dcc7f92900c207e42eb30d9af0689ad6728f84abea1882c3dbbbce"}}]},
+  {"id": "n006", "label": "Mastercard", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0010", "start": 17, "end": 109, "sha256": "c71b18b437257fb5282753d5fdfc99638094eef21332c743e95ce66506775737"}}]},
+  {"id": "n007", "label": "Recorded Future", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0012", "start": 22, "end": 89, "sha256": "e04ffb8973a7bcee0435a5b31f4c6c19cc1fd3e7f5738280ecdfb399986f2c47"}}]},
+  {"id": "n008", "label": "Johan Gerber", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0007", "start": 121, "end": 198, "sha256": "b90b7f9a7e9fb41b813e8571f7fc05aec86d5feb79263ea2154e5d7c80fee2b7"}}]},
+  {"id": "n009", "label": "Melissa Medina", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0008", "start": 85, "end": 143, "sha256": "fb5db3c0b7b421743e96ed259b5cb09d16e5d8e60c34bb39119d16b1daea84e2"}}]},
+  {"id": "n010", "label": "Intelligence Cloud", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0012", "start": 90, "end": 208, "sha256": "79ba5240c86ef65fac3dc0875084adb4b16c03eb03d0209797b1ec76714b5671"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n003", "relation_type": "LOCATED_IN", "attribution": "Melissa Medina", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0008", "start": 422, "end": 529, "sha256": "1954a85cdd94063ffc480e94847108db63cf7fd155db57d1acc7162f86a8ad7c"}}]},
+  {"id": "e002", "source": "n007", "target": "n002", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0012", "start": 490, "end": 636, "sha256": "992b0383221733ac3e3b5f757263f505b39aff6c8ea9fa5c1d88fb689cea55b6"}}]},
+  {"id": "e003", "source": "n007", "target": "n006", "relation_type": "PART_OF", "attribution": "", "event_time": "In 2024", "event_scope": "Mastercard acquisition of Recorded Future", "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0006", "start": 0, "end": 93, "sha256": "b0cbca6e8416f70682bd991e06c7b9f43ce3cf058944660923ba7bd74f0327e8"}}]},
+  {"id": "e004", "source": "n007", "target": "n010", "relation_type": "PROVIDES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0012", "start": 90, "end": 208, "sha256": "79ba5240c86ef65fac3dc0875084adb4b16c03eb03d0209797b1ec76714b5671"}}]},
+  {"id": "e005", "source": "n009", "target": "n005", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0356", "paragraph_id": "D0356:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0356:P0008", "start": 85, "end": 143, "sha256": "fb5db3c0b7b421743e96ed259b5cb09d16e5d8e60c34bb39119d16b1daea84e2"}}]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,206 @@
+AUDIT_FILE: QN15A
+TARGET_DOC_ID: D0319
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0319
+PUBLICATION_DATE: 2026-04-09
+SOURCE_URL: https://www.theregister.co.uk/2026/04/08/cynthia_kaiser_interview/
+TITLE_SHA256: 31c8efdfe0f123f3076f2f5dace53dcd31045f8967c66feef8a7e39b76e35281
+BEGIN_DOCUMENT
+[D0319:P0001] sha256:31c8efdfe0f123f3076f2f5dace53dcd31045f8967c66feef8a7e39b76e35281
+[D0319:P0002] sha256:23e3c3dcc0c4679dcf8c5f8929affdbd03b29d7f3078ecd1cba1be1c5bef36e7
+[D0319:P0003] sha256:1299dcc93933099a2fa264d507f10136e755aadfb670c2027c98f7d341e3f028
+[D0319:P0004] sha256:9d0cc076da0128de9398ec4776c5cd0b30c5e1983f904791bdd0bf610ef7f368
+[D0319:P0005] sha256:e1cbc6f28e31a9df3977d7d8937ccc67e9d263d16ba7e12066dca1adb8c1a506
+[D0319:P0006] sha256:0873a70ec83829b5781b3c3d4f994c024998c5235cfee98b347e8ffc53906b30
+[D0319:P0007] sha256:2dda7893e7cd62c4581bf199187c219832af5b647e90aae1ad98be95601589fb
+[D0319:P0008] sha256:2287bebe7591c62e316a2b161b05c6e398020d3a55e447a803abf8f681f9cbe0
+[D0319:P0009] sha256:dfe35e0235b065d31b59f5096bddc742d3e82f780b203dd554cf3821a5a88aa6
+[D0319:P0010] sha256:d85f81c6e77ddb21f51b9c15626ec9f1a1d3cb87fa39ef0f83556642f823ef1c
+[D0319:P0011] sha256:6b301a0a76a82b3e41afa12882f1c3a4bf78d9c47728c2cb9b662da89a7aba34
+[D0319:P0012] sha256:4b79fe57585e64440853b8c52207ddf3254ce9989a7650630b4733f21c22a801
+[D0319:P0013] sha256:ba63af47a3daedf687985eece5a8bc8ba7f0c915829ffc2eb4135b3994f02172
+[D0319:P0014] sha256:5cabd96ff6261c493171ff7c28d5cdbe4523c8562a83c2621b57bff63ecd1ca3
+[D0319:P0015] sha256:4654d03c5f1e1041175ed5a2291f5e93cd13abeb5b22dd24c9c065d37fcbfbe6
+[D0319:P0016] sha256:79ecbe3c703613431193c39a70c2e0c11f4ef50602af4840f34fa72a8499048b
+[D0319:P0017] sha256:04b089216519510bf4b5872fb306fb4be7ef16640a862b45368d13168145c679
+[D0319:P0018] sha256:71820eabe2769f55708e76c2608efd99fed0a069b8f295202654d25a9e2b0071
+[D0319:P0019] sha256:4ea2f2f1c38d636eb3131d47213c32a1dd68195a052b8bc3fc146a74d6af9ecf
+[D0319:P0020] sha256:bf6792483bffbcf3969fdf950094574c7630c1ca90ca3a57d90f8c7a6aa2b775
+[D0319:P0021] sha256:418d165f11369edc5ddc507cbd1834d7140c9163442d409195497740675e6fad
+[D0319:P0022] sha256:a67d0b30c566c380d76b9af0aa187c3bf392e9de1460b36c2ee884248fb20345
+[D0319:P0023] sha256:603f28af161a57102cedcaac6659e375e0009ef2c2ccff82b31104181bd6a093
+[D0319:P0024] sha256:f7ed6b87ca2528f260c788bbff31d251938dd839747c25780bc651261e24f252
+[D0319:P0025] sha256:67bc4831d4dc20f6649ec9a11081326bf5eaa49f22dbcb3411468df731749cfa
+[D0319:P0026] sha256:a5f3be22714af55d5e9dd2b880486b92ead7ae7b886152ed67ca26f69d7f3c38
+[D0319:P0027] sha256:38407f097e71eabff22aa08dad9f6f723dc22d6e6ff0224eb7d8bf25fe886098
+[D0319:P0028] sha256:b7b7f30122e42f9c5b8b2b0d601bd23e49d7561b54376cccd90e14020f64c791
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 29, вузлів 1)
+E001: «Pay2Key infection» — attributed to → «Pay2Key» | форма: actual, positive
+  атрибуція: — | час події: «late February» | контекст події: вузол «Pay2Key infection» (incident)
+  фрагменти: [D0319:P0009] «@32-197 sha256=d45de0324d9482533eb254ed4b7c5ebf1f6262c16eedf7ee938a635a70cc82ab»
+E002: «FBI's cyber division» — part of → «FBI» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0008] «@14-91 sha256=9f4f2ad9959ee1e32a9e218ddcde1bee9fd0c674aadeb2542d521d975eb00d6b»
+E003: «Albania attacks of 2022» — attributed to → «Iran» | форма: actual, positive
+  атрибуція: «Cynthia Kaiser» | час події: «2022» | контекст події: вузол «Albania attacks of 2022» (incident)
+  фрагменти: [D0319:P0015] «@1-201 sha256=be6931a47cc51c1903dfc2b16fb0ef1c9b6565fcea18909714dba9b28b687092»
+E004: «FBI's cyber division» — part of → «FBI» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0008] «@0-91 sha256=d757a29c656e26a3a2c82df041a3180c94d7fd49acfb5abe46ccd5a81696968d»
+E005: «Cynthia Kaiser» — reports on → «Albania attacks of 2022» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Albania attacks of 2022» (incident)
+  фрагменти: [D0319:P0015] «@1-201 sha256=be6931a47cc51c1903dfc2b16fb0ef1c9b6565fcea18909714dba9b28b687092»
+E006: «ransomware» — affects → «American businesses and consumers» | форма: actual, positive
+  атрибуція: — | час події: «last year» | контекст події: —
+  фрагменти: [D0319:P0008] «@228-369 sha256=74bc10d9bfc1c9aa6e2bb74beb3ba48c2fe4a9393bc1eb89ace4bcb9c1b45beb»
+E007: «Cynthia Kaiser» — member of → «FBI» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0005] «@83-186 sha256=b9a840962a1415a089283a0104c70288edc9db8ff211a9e8ec548d232b351694»; [D0319:P0006] «@1-74 sha256=b9e6766fa7903bb19199ab2246c31499835c4be27065d5613f3a5cefbec2dba8»
+E008: «Pay2Key» — uses → «ransomware» | форма: actual, positive
+  атрибуція: «Halcyon» | час події: «late February» | контекст події: вузол «Pay2Key infection» (incident)
+  фрагменти: [D0319:P0011] «@118-339 sha256=7c972a2582dbfab394f9fc90626aadb9f359e0d54adf5a53b7f6b7860fc1eb94»
+E009: «Halcyon» — reports on → «Akira» | форма: actual, positive
+  атрибуція: — | час події: «over the last 12 months» | контекст події: —
+  фрагменти: [D0319:P0018] «@201-378 sha256=c265e8c1684ddfdc36134c5e992b94d46d5acbe21b6ce0160d186644f1cada8a»
+E010: «Pay2Key attack» — attributed to → «Pay2Key» | форма: actual, positive
+  атрибуція: — | час події: «late February» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0009] «@93-197 sha256=a6abd53babcece88d50dd47634f2e63b5818975a3be238411ce295483d67cae0»
+E011: «Albania attacks of 2022» — affects → «online public services» | форма: actual, positive
+  атрибуція: — | час події: «2022» | контекст події: вузол «Albania attacks of 2022» (incident)
+  фрагменти: [D0319:P0013] «@331-434 sha256=d90df780d04b5bd57750502a1d79dbd2c90736f36b2d40278e22932c2407006c»
+E012: «Cynthia Kaiser» — leads → «Halcyon Ransomware Research Center» | форма: actual, positive
+  атрибуція: — | час події: «June 2025» | контекст події: —
+  фрагменти: [D0319:P0005] «@223-346 sha256=91146c1a91bf96a8eb5b1f8561a503ebcb6a6c6d94268a1ee7bbeba850e67b13»; [D0319:P0008] «@0-155 sha256=c2cf90b9d9b36054b0036053662564784a710bf8e5e023186094cafc54e8eb88»
+E013: «China» — targets → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Cynthia Kaiser» | час події: «at the time» | контекст події: «China pre-positioning on critical infrastructure»
+  фрагменти: [D0319:P0006] «@115-220 sha256=a341616cb30e6ede40be34e761c83d39a0a9aa65c6b659ec0dde615213714d0e»
+E014: «Pay2Key» — targets → «US healthcare organization» | форма: actual, positive
+  атрибуція: — | час події: «late February» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0013] «@143-434 sha256=9c97c5424bf8db77f31f52fe797f2f8493145c242a1e1bd9dc03bc85df2394df»
+E015: «Pay2Key attack» — attributed to → «Pay2Key» | форма: actual, positive
+  атрибуція: — | час події: «2026-04-09» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0009] «@93-197 sha256=a6abd53babcece88d50dd47634f2e63b5818975a3be238411ce295483d67cae0»
+E016: «Halcyon» — reports on → «Akira» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0018] «@201-378 sha256=c265e8c1684ddfdc36134c5e992b94d46d5acbe21b6ce0160d186644f1cada8a»
+E017: «ransomware» — targets → «hospitals» | форма: actual, positive
+  атрибуція: «Cynthia Kaiser» | час події: «today» | контекст події: —
+  фрагменти: [D0319:P0007] «@198-303 sha256=206746046debeb04b6d4dc03e7d11684386829a0fef4eb8492ad90d8f5669e6b»
+E018: «Pay2Key» — uses → «compromised admin account» | форма: actual, positive
+  атрибуція: «Halcyon» | час події: «several days before the attack» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0011] «@118-257 sha256=07ffe6120b899b9d0e929e407f8e64dc31e6caac3ac85d757c4201c94ca1a606»
+E019: «Halcyon Ransomware Research Center» — part of → «Halcyon» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0008] «@92-154 sha256=15a988954e1379bc4b86eb6a63466bd2d8a4fa70d7cbcefa23a0b9a315cabeb5»
+E020: «extortion attacks» — affects → «American businesses and consumers» | форма: actual, positive
+  атрибуція: — | час події: «last year» | контекст події: —
+  фрагменти: [D0319:P0008] «@228-368 sha256=147dc6f17bc80d5c0e64fdf7027e60e3a40e16991e9ae65b7cac67822a7c3cce»
+E021: «Cynthia Kaiser» — leads → «Halcyon Ransomware Research Center» | форма: actual, positive
+  атрибуція: «Iran's Ministry of Intelligence and Security» | час події: «June 2025» | контекст події: —
+  фрагменти: [D0319:P0005] «@223-346 sha256=91146c1a91bf96a8eb5b1f8561a503ebcb6a6c6d94268a1ee7bbeba850e67b13»; [D0319:P0008] «@0-155 sha256=c2cf90b9d9b36054b0036053662564784a710bf8e5e023186094cafc54e8eb88»
+E022: «US healthcare organization» — located in → «US» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0009] «@93-197 sha256=a6abd53babcece88d50dd47634f2e63b5818975a3be238411ce295483d67cae0»
+E023: «Akira» — uses → «ransomware» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0018] «@11-200 sha256=e2ac89f1f3d1cffd85d1ce15ae1c500523e2b79760529e9918cfe76e24bab3b9»
+E024: «US» — targets → «Iran» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «US and Israel military strikes against Iran»
+  фрагменти: [D0319:P0011] «@0-117 sha256=dd1735aca22ed9231e2b0835aef285df7129b66da8edb51b50d77cc57ba2db15»
+E025: «Pay2Key attack» — targets → «US healthcare organization» | форма: actual, positive
+  атрибуція: — | час події: «late February» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0009] «@93-197 sha256=a6abd53babcece88d50dd47634f2e63b5818975a3be238411ce295483d67cae0»; [D0319:P0016] «@0-69 sha256=987e8efea84bf3db4bdad30bb198dd2b70a05c3ce7408240b221a037cfe3978d»
+E026: «Halcyon Ransomware Research Center» — mitigates → «ransomware» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0008] «@156-250 sha256=0b09b85e041fd4e75eb0fb1ffbf7e6402e8857222a05f234c40cce135c74e946»
+E027: «Pay2Key» — targets → «US healthcare organization» | форма: actual, positive
+  атрибуція: — | час події: «late February» | контекст події: вузол «Pay2Key attack» (incident)
+  фрагменти: [D0319:P0009] «@93-197 sha256=a6abd53babcece88d50dd47634f2e63b5818975a3be238411ce295483d67cae0»; [D0319:P0010] «@102-148 sha256=057028788fb842f598eb066d1d388aa36adef4ffdbdc92b8ea295ed30abe536e»
+E028: «Sicarii» — uses → «AI» | форма: actual, positive
+  атрибуція: «Cynthia Kaiser» | час події: — | контекст події: —
+  фрагменти: [D0319:P0024] «@1-80 sha256=ea4d0a01fda51488b34666cb8c59835867c019ebd6bef85c0d90a25cd802307f»
+E029: «Sicarii» — uses → «Sicarii encryptor» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0319:P0021] «@109-234 sha256=b632116c31e7fa7773a849e87ccf6b916ed4149e98ac4f73b3aa597ea8cda03d»
+V001: «Albania attacks of 2022» (incident) | альтернативні назви: «2022 intrusion»
+КІНЕЦЬ ЗАПИСІВ

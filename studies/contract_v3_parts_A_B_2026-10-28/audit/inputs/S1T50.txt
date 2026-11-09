@@ -1,0 +1,140 @@
+AUDIT_FILE: S1T50
+TARGET_DOC_ID: D0120
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0120
+PUBLICATION_DATE: 2026-06-01
+SOURCE_URL: https://www.bleepingcomputer.com/news/security/race-against-time-why-faster-vulnerability-alerts-matter/
+TITLE_SHA256: a9970849376383ab750e002222dc5990008bd6e7f12ea6ad6a2277c2370900e1
+BEGIN_DOCUMENT
+[D0120:P0001] sha256:a9970849376383ab750e002222dc5990008bd6e7f12ea6ad6a2277c2370900e1
+[D0120:P0002] sha256:e886853546903a3b455bad887d1c3517a3687674fcf7e05c91b4cebb72222417
+[D0120:P0003] sha256:e42f57e380e5cf382ceaf43e376dead3b155c0289833916e9fe79efddac913e7
+[D0120:P0004] sha256:31e119497816a94ad8807ab59937c27a86ba317f4c131597dc16c8cdae191623
+[D0120:P0005] sha256:e0082d282c47a2a17ca4780fd8cef351fe005c59ca3287a31abd99fd9ec5060f
+[D0120:P0006] sha256:39485101c7fe531f0369811bc0631c75f08ba53581bac2375ceca18ea5e19537
+[D0120:P0007] sha256:83485fb5eff9cfbd900ee20a8f9f848a5cdb2cc49c9aaa8fd93ad7feafd936c6
+[D0120:P0008] sha256:14810cd127e4978204b59625eb78175eff8afa0d7d01d487e6c33010a13a2dcb
+[D0120:P0009] sha256:da0896bbab586e3cc99e8af24c0ddaf15b173fe55037a04df2ce05daf7251c97
+[D0120:P0010] sha256:f6d3ef7e4a6f51cb6b869d64af71ad40ea3377c2a5fc44fef56c835e2175d68d
+[D0120:P0011] sha256:0bff28669dce73e7c2aff94c6fe25c1c9f4e3cb04516aaff581a4de626747479
+[D0120:P0012] sha256:3bfdb457d24a8c6aa0f324718efbbd655637f03ae1f39605888a2f36165332ab
+[D0120:P0013] sha256:9d74e61fef833052d54d019f7242bd7ad02a268a90413602cf85536047cf2aca
+[D0120:P0014] sha256:d51b95f92ba888f2ca2adf9a6289cb8b4a189f7b54ac1b0e5f129346c28cf90b
+[D0120:P0015] sha256:b0b0134af7d939075a2a1d1cb769730d223abc8d479cd1c42e3004bb3bc8f99e
+[D0120:P0016] sha256:fba0ca0ff0b0eb0eab27f158de079ad46b3388ae285d8cf0cc031dd7325d52a0
+[D0120:P0017] sha256:4f02b86df858745063a1749bb15c004ad9d3194af74af40b709da2a95639ca1d
+[D0120:P0018] sha256:12057b241c23debfdef0f0d784dca3ae2a6bc06065b5a406ab98126f77be09be
+[D0120:P0019] sha256:47197f00c276c47eaa81703f833a96b896da23acd95715718dba190af60387e9
+[D0120:P0020] sha256:0caa93a734e811773c139ac9863b00f96baa2649c80d018b73025bfc5a663aa1
+[D0120:P0021] sha256:bbb439bce956acafbb09b3e3f0c774503c417e86d6ea5d56ea3a356bfd554350
+[D0120:P0022] sha256:9f276223b6fc06ea1c1b8b77220a19e59dccbb42337c6dfea860c0c7993c9d23
+[D0120:P0023] sha256:7ae0576795225a159bccd60371dacf5d5690818743fec131bf25d220f32f0ce4
+[D0120:P0024] sha256:9e89a5899fbe953e734a5e2197a08da5ef1cad50727629020436e255c88eecd6
+[D0120:P0025] sha256:9139ce92089756c27628918d77d8ccf9498b3f2838536f20af5a84c929cfbf7c
+[D0120:P0026] sha256:3cda7eb1d553e5979abce81a638fbe3c8b4c810cc25e14d9890c597a740a9ce0
+[D0120:P0027] sha256:395cf6ca9e29471a93804ec50bfe743c589db757af4b7917db69d43ee540449c
+[D0120:P0028] sha256:b3f20c9913a70181387fdee97d6a9e753066022fa4acb3f04d749023a99ebedd
+[D0120:P0029] sha256:7658f717e48455759493c2f218af0a82cbf6fe01f6c7d746e061b4419b586c3c
+[D0120:P0030] sha256:1c01ab90735997ce7b787124fef6f29f84d8f073f41d145d3d43d436f0036f55
+[D0120:P0031] sha256:02d7c55ce081a27ab18a5c5f1fbdca269a9254326fea665a098c87e8de852e2d
+[D0120:P0032] sha256:cbec071924c7aea1266f1276fc73122f9ceb24c1cbc6bb01ab36585f75e701fa
+[D0120:P0033] sha256:313ebcf7d5b82f354c262e18a7b20b4e6abbc7439d8e197de6295b04998bf275
+[D0120:P0034] sha256:e5ecbb9120b259460e199200c39e7a2696a192afb9b78ab2c0865a18079cb7b4
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (43)
+E001: «SecAlerts» — supports → «Slack» | форма: actual, positive
+E002: «Race Against Time: Why Faster Vulnerability Alerts Matter» — published on → «June 1, 2026» | форма: actual, positive
+E003: «SecAlerts» — supports → «SBOM» | форма: actual, positive
+E004: «SecAlerts» — supports → «Webhook» | форма: actual, negative
+E005: «RCE vulnerability» — affects → «VPN application» | форма: possible, positive
+E006: «SecAlerts» — delivers alerts via → «email» | форма: possible, positive
+E007: «exploited vulnerabilities» — rose by around 30% between → «2023 and 2025» | форма: actual, positive
+E008: «Race Against Time: Why Faster Vulnerability Alerts Matter» — sponsored by → «SecAlerts» | форма: actual, positive
+E009: «SecAlerts» — delivers alerts via → «Jira» | форма: actual, positive
+E010: «one-line local scan» — runs on → «Mac» | форма: actual, positive
+E011: «SecAlerts» — delivers alerts via → «Teams» | форма: actual, positive
+E012: «SecAlerts» — supports → «Windows» | форма: actual, negative
+E013: «Race Against Time: Why Faster Vulnerability Alerts Matter» — published by → «BleepingComputer» | форма: actual, positive
+E014: «new vulnerabilities» — increased by 67% between → «2023 and 2025» | форма: actual, positive
+E015: «critical RCE» — disclosed in → «widely used VPN application» | форма: actual, positive
+E016: «one-line local scan» — runs on → «Linux» | форма: actual, positive
+E017: «median time from CVE disclosure to exploit» — was → «4.2 months in 2023» | форма: actual, positive
+E018: «SecAlerts» — supports → «email» | форма: actual, positive
+E019: «SecAlerts» — supports → «Windows» | форма: actual, positive
+E020: «large enterprises» — use → «SecAlerts» | форма: actual, positive
+E021: «SecAlerts» — delivers alerts via → «Slack» | форма: actual, positive
+E022: «NVD» — experienced delays publishing → «vulnerability information» | форма: actual, positive
+E023: «critical RCE» — exploited within → «24 hours» | форма: actual, positive
+E024: «SecAlerts» — supports → «one-line local scan» | форма: actual, positive
+E025: «SecAlerts» — delivers alerts with frequency → «hourly to monthly» | форма: actual, positive
+E026: «attackers» — exploits → «critical RCE vulnerability» | форма: possible, positive
+E027: «NVD» — has given up on → «lower priority vulnerabilities» | форма: actual, positive
+E028: «SecAlerts» — supports → «Webhook» | форма: actual, positive
+E029: «SecAlerts» — delivers alerts via → «Webhook» | форма: actual, positive
+E030: «Adobe zero-days» — affect → «Adobe» | форма: actual, positive
+E031: «SecAlerts» — delivers alerts via → «email» | форма: actual, positive
+E032: «critical RCE vulnerability» — affects → «VPN application» | форма: possible, positive
+E033: «SecAlerts» — supports → «Mac» | форма: actual, positive
+E034: «Slack» — supports → «SecAlerts» | форма: actual, positive
+E035: «median time from CVE disclosure to exploit» — dropped to → «1.6 days» | форма: actual, positive
+E036: «SecAlerts» — supports → «Jira» | форма: actual, positive
+E037: «SecAlerts» — can filter → «Adobe zero-days» | форма: actual, positive
+E038: «SecAlerts» — supports → «Linux» | форма: actual, positive
+E039: «SecAlerts» — supports → «SBOM upload» | форма: actual, positive
+E040: «SecAlerts» — does not rely solely on → «NVD» | форма: actual, positive
+E041: «one-line local scan» — runs on → «Windows» | форма: actual, positive
+E042: «SecAlerts» — supports → «Teams» | форма: actual, positive
+E043: «SecAlerts» — provides → «Instant Vulnerability Alerts» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

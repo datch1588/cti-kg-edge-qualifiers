@@ -1,0 +1,114 @@
+{
+ "run_id": "R092",
+ "target_doc_id": "D0198",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "harvesting now and decrypting later", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 44, "end": 179, "sha256": "18b2034aae60407f7267fcae3661207e9cd8984c827ed003c420596e5293d7d4"}}
+  ]},
+  {"id": "n002", "label": "Australia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n003", "label": "data breaches", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0009", "start": 255, "end": 393, "sha256": "db2440f9e8c454b8bfe6851d2cdb4b5d69b362365a1d3d59b96c6d5d79685411"}}
+  ]},
+  {"id": "n004", "label": "ASPI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0015", "start": 0, "end": 45, "sha256": "47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442"}}
+  ]},
+  {"id": "n005", "label": "Australian companies", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0009", "start": 255, "end": 393, "sha256": "db2440f9e8c454b8bfe6851d2cdb4b5d69b362365a1d3d59b96c6d5d79685411"}}
+  ]},
+  {"id": "n006", "label": "Australian Signals Directorate", "entity_type": "organization", "aliases": ["ASD"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 265, "end": 536, "sha256": "1cdd112f965551b7d7a418672a9f49db07716fbb494b73a640555b0871af520d"}}
+  ]},
+  {"id": "n007", "label": "Defence", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 156, "end": 262, "sha256": "0d254b81c9cbd957a63ca5527e8d51cfeb74e65e650e0c2e3156a47001da15bc"}}
+  ]},
+  {"id": "n008", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 536, "end": 699, "sha256": "6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561"}}
+  ]},
+  {"id": "n009", "label": "Defence's networks", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+  ]},
+  {"id": "n010", "label": "defensive cyber capabilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 137, "end": 264, "sha256": "52bcd4bbced6d21f20f24a86bece3697d740a824f015e51768f7735befb6e88a"}}
+  ]},
+  {"id": "n011", "label": "Integrated Investment Program", "entity_type": "other", "aliases": ["IIP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n012", "label": "National Defence Strategy", "entity_type": "other", "aliases": ["NDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n013", "label": "offensive cyber capabilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0013", "start": 322, "end": 512, "sha256": "cf7fd9d50233c2f92373a5976450435d71536f58061c174554f2970e7a8e444f"}}
+  ]},
+  {"id": "n014", "label": "Redspice", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0006", "start": 233, "end": 412, "sha256": "4bbc29179a879af82ab923df4376ad6edc725d5630f2c70205a1cfd041130546"}}
+  ]},
+  {"id": "n015", "label": "Gatra Priyandita", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0015", "start": 0, "end": 45, "sha256": "47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442"}}
+  ]},
+  {"id": "n016", "label": "advanced encryption", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+  ]},
+  {"id": "n017", "label": "artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0004", "start": 0, "end": 184, "sha256": "3c6b57149a705d0a5ce5ea2c9142ee9c4555d69a8cf85965a41101907070783e"}},
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 0, "end": 77, "sha256": "08f85e70f7248da476dbc1ec46c63da718c5c5b7b4c2cea2ed51cd8f2c0e4465"}}
+  ]},
+  {"id": "n018", "label": "quantum capability", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 44, "end": 179, "sha256": "18b2034aae60407f7267fcae3661207e9cd8984c827ed003c420596e5293d7d4"}}
+  ]},
+  {"id": "n019", "label": "quantum-resistant cryptography", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 180, "end": 304, "sha256": "6e5db37dc81e41df98d23fee100b3a781e3fa28e572dc0c95308188fcaa3fe88"}}
+  ]},
+  {"id": "n020", "label": "zero-trust architecture", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+  ]},
+  {"id": "n021", "label": "authoritarian regimes", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 536, "end": 699, "sha256": "6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561"}}
+  ]},
+  {"id": "n022", "label": "Espionage", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 536, "end": 699, "sha256": "6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561"}}
+  ]},
+  {"id": "n023", "label": "foreign interference", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 536, "end": 699, "sha256": "6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n005", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0009", "start": 255, "end": 393, "sha256": "db2440f9e8c454b8bfe6851d2cdb4b5d69b362365a1d3d59b96c6d5d79685411"}}
+  ]},
+  {"id": "e002", "source": "n006", "target": "n019", "relation_type": "USES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "by 2030", "event_scope": "ASD transition to quantum-resistant cryptography", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 180, "end": 304, "sha256": "6e5db37dc81e41df98d23fee100b3a781e3fa28e572dc0c95308188fcaa3fe88"}}
+  ]},
+  {"id": "e003", "source": "n007", "target": "n009", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0006", "start": 508, "end": 683, "sha256": "92231970be57c06c268f5ca028b69c74cd780efade8bb27e958daf889a9d5885"}}
+  ]},
+  {"id": "e004", "source": "n014", "target": "n017", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 78, "end": 264, "sha256": "7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15"}}
+  ]},
+  {"id": "e005", "source": "n015", "target": "n004", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0015", "start": 0, "end": 45, "sha256": "47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442"}}
+  ]},
+  {"id": "e006", "source": "n016", "target": "n009", "relation_type": "PROTECTS", "modality": "planned", "polarity": "positive", "attribution": "IIP", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+  ]},
+  {"id": "e007", "source": "n017", "target": "n010", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2026", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 78, "end": 264, "sha256": "7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15"}}
+  ]},
+  {"id": "e008", "source": "n017", "target": "n013", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2026", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 78, "end": 264, "sha256": "7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15"}}
+  ]},
+  {"id": "e009", "source": "n018", "target": "n001", "relation_type": "ENABLES", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 44, "end": 179, "sha256": "18b2034aae60407f7267fcae3661207e9cd8984c827ed003c420596e5293d7d4"}}
+  ]},
+  {"id": "e010", "source": "n020", "target": "n009", "relation_type": "PROTECTS", "modality": "planned", "polarity": "positive", "attribution": "IIP", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+  ]},
+  {"id": "e011", "source": "n021", "target": "n008", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "NDS", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 536, "end": 699, "sha256": "6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561"}},
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0005", "start": 316, "end": 361, "sha256": "17ae75e7b116343dcc57b6176d74ab0346a5187518d6ddcfaec0d03593ee0deb"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

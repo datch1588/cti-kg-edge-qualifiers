@@ -1,0 +1,84 @@
+AUDIT_FILE: R2_T08
+TARGET_DOC_ID: D0520
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0520
+PUBLICATION_DATE: 2026-02-24
+SOURCE_URL: https://en.antaranews.com/news/405774/blackpanda-japan-announces-strategic-partnership-with-softbank-to-strengthen-cyber-incident-response-in-japan
+TITLE_SHA256: bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+BEGIN_DOCUMENT
+[D0520:P0001] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0002] sha256:1a7e4fe171ea85c93ae3fcd7cc35022cad75cc4221085ba50dfcf8737f4d79ba
+[D0520:P0003] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0004] sha256:a91f1ffad53e875298238ad880425cfae5af042ce1d642ab24a4ab44a8bda5e9
+[D0520:P0005] sha256:3b870de3d6b8944a8e4e19d3aea34af26f2c62532590caf94ed38ffabae0e7d6
+[D0520:P0006] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0007] sha256:a8d2c0c087c0d995189da30af3526b87306f0fb014c30e44c494bdf0c933ad62
+[D0520:P0008] sha256:e8a9a9b250d60593b283371ce686c79aa607a2ea3680467f7d1ded5c78bb3ad2
+[D0520:P0009] sha256:ed9b34e35a9ce2fbc5b9783aa0ffb7d187e8ce968a2c6693676f622f01a81dda
+[D0520:P0010] sha256:349914bb6126ddc013a41ac93d458bb228327f026ffa21442b240b06ffc21a48
+[D0520:P0011] sha256:0bc734a054d6c0383577a505b76c03812c79b7bbad8eb11f9d42f5a45b690b12
+[D0520:P0012] sha256:421406413508a02f874dfd0c4ccb048ce5bf7c8a96a59d91c7f1e42c66bd74e3
+[D0520:P0013] sha256:db8ddc3f51c5f772ae099cc2776a763a54b39dd6d39081be345554fa6d1702b1
+[D0520:P0014] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0015] sha256:1e40fad743472e4978c3fa0521be352976c8e5830ff8c30ad727a3506382b0b2
+[D0520:P0016] sha256:8c6e8619b647081cc331e41be3063e0ec84abb7ee9df3a129a418cf3a494d765
+[D0520:P0017] sha256:771f2812f0b52f6a63ae53c60615b25ba167e2344e07ea4bf3702b37efcc7c78
+[D0520:P0018] sha256:4f8902fc99ac4bd44a6dd890058f522a8ccee49ca86a710b4ba5d48fe44693ef
+[D0520:P0019] sha256:a16da9ce5b0e7e53011aeb005280a0b87599dcec7e734fd55931d3cde9b4fe38
+[D0520:P0020] sha256:e72454aec3efc837fb988bc9cdb52e0ea971e07e5d25926fa6dca1ee565e26b8
+[D0520:P0021] sha256:2c024674fb1e5a8e01b30671020acc606171d1c99b5cda2f3a442acfc8546008
+[D0520:P0022] sha256:13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511
+[D0520:P0023] sha256:d0f9f7047c9367aff35f7db8a4c42ab074e63d606a23d4d497eb7c8053009cb5
+[D0520:P0024] sha256:03fdbdb0d5b1259acb46cd79ee31cb7469c413bcc92a1af35c5d6a548e006b1c
+[D0520:P0025] sha256:679ea9a6942c380d09ac59862c1bc4fb8b6475ebeeaa53e6c2c1a93b129ffbbe
+[D0520:P0026] sha256:272e797600110f73eb1e225952d391f02c095d488db157e2277c29821e808727
+[D0520:P0027] sha256:6fed45d441c9550821d2b54db6356f2f5b6f79ce90491301c45d7533343f69f0
+[D0520:P0028] sha256:5ba821a50a8beb4ad636670aab5875dcbdbd7336171e47eaae6950990f9c7b63
+[D0520:P0029] sha256:1e313b8dc75ad92a974651741fa55237d509fe88b0dd20100fdc62eaf7bde695
+[D0520:P0030] sha256:ed57066cf6ef3cfdecf68fa11b3f38130063220ea1c65bfc881186a14a2677de
+[D0520:P0031] sha256:bba9318e9977d02fdac560d2684e54b48734c4a15ae085303731fd2cd5fe6a85
+[D0520:P0032] sha256:6e9fbe8b49a2f384cb1ac5d22e13589c6bd36ea018c969926d0f31a009e27405
+[D0520:P0033] sha256:ef4565b1591d4d4b77d67b55e760b7da00b5a7273f81dd50424b6484b2749abc
+[D0520:P0034] sha256:ee5a63192faf14d685972262f7f29b7ead440e57ece8a87aec718433dd9ccd2e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (6)
+W001: «SoftBank Corp» — will provide → «Blackpanda's IR-1 solution»
+W002: «IR-1» — helps companies prepare for, respond to, and recover from → «cyber attacks»
+W003: «compromised companies» — may become stepping stone for → «further attacks»
+W004: «Blackpanda» — possibly is pioneering → «A2I (Assurance-to-Insurance) model»
+W005: «SoftBank Corp» — supports → «Japanese companies facing cyber threats»
+W006: «SoftBank Corp» — will provide → «incident response services against cyber attacks»
+КІНЕЦЬ ЗАПИСІВ

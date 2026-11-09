@@ -1,0 +1,127 @@
+AUDIT_FILE: S5F21
+TARGET_DOC_ID: D0456
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0456
+PUBLICATION_DATE: 2026-03-09
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6316597
+TITLE_SHA256: 423a34e6ddc820588fd14b1baf99b1275a9923ddd3f19c7734981b81cc5cec32
+BEGIN_DOCUMENT
+[D0456:P0001] sha256:423a34e6ddc820588fd14b1baf99b1275a9923ddd3f19c7734981b81cc5cec32
+[D0456:P0002] sha256:d9e058b09aaffc9d252bef069d2b7978cc28d4cce43c68fdc3a142c42dd43755
+[D0456:P0003] sha256:1a45035e969ea6fe1c3ed6b61eae2c3dc5ba8dd6763bd90043f38e571d38c518
+[D0456:P0004] sha256:ab3efca924235809f53ba443345c28061fe226dc48785f2bbcff7f7e3c47f86c
+[D0456:P0005] sha256:aae4248b6a5e2004337961f4f940032807acf8ce121eb677c107cc1a8cb54c70
+[D0456:P0006] sha256:71bc7c11f529709df895b26761b3cec8b89dd6841f44e8b98d57027d11ff4e1c
+[D0456:P0007] sha256:5c3c1b203916d2e058a6d6b64ae6f6beb5396f6cad4b80704d58b8fce880d734
+[D0456:P0008] sha256:cc645a47f2c395a2b74df9633d99afd57f8fd0c6700a210cdec928fd53d2779c
+[D0456:P0009] sha256:637767a0c337f2f2870ecfbf13352ca43231a10d407602e084d6d70460b7f0b1
+[D0456:P0010] sha256:3c83f8b8619b3f47801f92058684bbd4552f8a934ca6149ffc8e0f84851b3ccf
+[D0456:P0011] sha256:f742ac12e25a87e61a8140c335bbf679aec7b2ab37cb6dfc8aa354301ca1d663
+[D0456:P0012] sha256:af924371f864a4168130149b403393610e6c9c0f0d551400e6fadd7597253564
+[D0456:P0013] sha256:3c75866790f528478ed290f265a29389c62c4c7dcea40a554c5a22e8209fc8d2
+[D0456:P0014] sha256:5afe45504f2256e7f542fec0aa613d267743997b3e4204ad79c05f70a489ed88
+[D0456:P0015] sha256:588eadb816845c886a27b9910cde82331a58f5b5b83d8236486b7ecfc12cd4fd
+[D0456:P0016] sha256:a8c00cc59134493c6df4810c12665aed257a6413e4654c48a198235c64d0c715
+[D0456:P0017] sha256:030f69eb5761caabb85d8d20893b29fab0f5c82dac57a593e640090946bb6851
+[D0456:P0018] sha256:c9899686122f0ecc24847beb5cca0341b4a28f7c50f81179dffadbfb5fdc741b
+[D0456:P0019] sha256:430e9eb9700b59e281994b2be42b407ef061c807ab62697945ee263a4b370773
+[D0456:P0020] sha256:8eb5bafa92d772fd8861ab4ed357e854571d16bb814267600a60caa596f1fa32
+[D0456:P0021] sha256:851a458948067789a2e192d2396b0e6b4498a1c19ccd0a4f466dd3747ada94df
+[D0456:P0022] sha256:9e830ce06fd10cd216947ebc89ce9782e432887898f0cf6760c9618ad182a001
+[D0456:P0023] sha256:b833f637681fc3c2847a55eaba6dcaa10a44896acdec26980d7de4fab8e1d237
+[D0456:P0024] sha256:327e351a0f35d6bac530aeb00c483f3aca37484712ec675bbf4cc5ec1994c282
+[D0456:P0025] sha256:ada2c7320025a75a626ef34230ef57f9e5d6b77c2059a8cabbe8692ef821acca
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (39)
+E001: «CACTER Secure Email Gateway» — detects → «Business Email Compromise» | форма: actual, positive
+E002: «dynamic URL inspection» — mitigates → «malicious link attacks» | форма: actual, positive
+E003: «CACTER Secure Email Gateway» — uses → «large language models» | форма: actual, positive
+E004: «CACTER Secure Email Gateway» — mitigates → «malware» | форма: actual, positive
+E005: «CACTER Secure Email Gateway» — uses → «multimodal analysis technologies» | форма: actual, positive
+E006: «CACTER Secure Email Gateway» — detects → «Business Email Compromise» | форма: actual, negative
+E007: «CACTER Secure Email Gateway» — mitigates → «phishing» | форма: actual, positive
+E008: «CACTER Secure Email Gateway» — mitigates → «spam» | форма: actual, positive
+E009: «Tim Lin» — warns about → «social engineering» | форма: actual, positive
+E010: «CACTER Secure Email Gateway» — detects → «phishing attacks» | форма: actual, positive
+E011: «Tim Lin» — member of → «Coremail» | форма: actual, positive
+E012: «multi-factor authentication» — mitigates → «account misuse» | форма: actual, positive
+E013: «principle of least privilege» — mitigates → «account misuse» | форма: actual, positive
+E014: «CACTER Secure Email Gateway» — uses → «deep semantic understanding» | форма: actual, positive
+E015: «CACTER Secure Email Gateway» — uses → «dynamic URL inspection» | форма: actual, positive
+E016: «CACTER Secure Email Gateway» — detects → «spam» | форма: actual, positive
+E017: «Coremail» — provides → «CACTER Secure Email Gateway» | форма: actual, positive
+E018: «multi-factor authentication» — mitigates → «account misuse» | форма: recommended, positive
+E019: «CACTER Secure Email Gateway» — detects → «malware» | форма: actual, positive
+E020: «CACTER Secure Email Gateway» — mitigates → «malicious link attacks» | форма: actual, positive
+E021: «Tim Lin» — warns about → «generative AI» | форма: actual, positive
+E022: «CACTER Secure Email Gateway» — uses → «attacker profiling» | форма: actual, positive
+E023: «dynamic URL inspection» — mitigates → «malicious link attacks» | форма: actual, negative
+E024: «access control» — mitigates → «account misuse» | форма: actual, positive
+E025: «CACTER Secure Email Gateway» — detects → «phishing» | форма: actual, positive
+E026: «anti-phishing simulation service» — part of → «CACTER» | форма: actual, positive
+E027: «permission management» — mitigates → «account misuse» | форма: recommended, positive
+E028: «CACTER Secure Email Gateway» — uses → «zero-shot threat detection» | форма: possible, positive
+E029: «CACTER Secure Email Gateway» — uses → «multimodal analysis» | форма: actual, positive
+E030: «permission management» — mitigates → «account misuse» | форма: actual, positive
+E031: «CACTER Secure Email Gateway» — uses → «machine learning» | форма: actual, positive
+E032: «CACTER Secure Email Gateway» — uses → «zero-shot threat detection» | форма: actual, positive
+E033: «access control» — mitigates → «account misuse» | форма: recommended, positive
+E034: «CACTER Secure Email Gateway» — protects → «email» | форма: actual, positive
+E035: «CACTER» — provides → «anti-phishing simulation service» | форма: actual, positive
+E036: «CACTER Secure Email Gateway» — mitigates → «Business Email Compromise» | форма: actual, positive
+E037: «principle of least privilege» — mitigates → «account misuse» | форма: recommended, positive
+E038: «CACTER Secure Email Gateway» — uses → «multimodal correlation analysis» | форма: actual, positive
+E039: «Business Email Compromise» — mitigates → «CACTER Secure Email Gateway» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

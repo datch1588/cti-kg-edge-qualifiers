@@ -1,0 +1,114 @@
+{
+ "run_id": "Y008",
+ "target_doc_id": "D0523",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0006", "start": 359, "end": 537, "sha256": "0024e99dec94b2b6ad77c12523cf01794fa3f1260e8295863c1fb4b442c0feac"}}
+  ]},
+  {"id": "n002", "label": "Asia Pacific", "entity_type": "location", "aliases": ["APAC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0004", "start": 204, "end": 335, "sha256": "d513f6d5cd7f85a90454cd6a5218d3a61ef69babea88e1b54c41e025c1b8569d"}}
+  ]},
+  {"id": "n003", "label": "Concentrix", "entity_type": "organization", "aliases": ["Concentrix Corporation"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0004", "start": 106, "end": 203, "sha256": "c5485e7e9e26af9bd6fb8dc14e8c4c283c59de58f71c4ff9970a8195e6f9aaea"}},
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0016", "start": 0, "end": 109, "sha256": "07dc2dc0aa69ba731c0e6bddc36c8f8dcb1a5cbd87ab46f5a9a51e38428b5b37"}}
+  ]},
+  {"id": "n004", "label": "Proofpoint", "entity_type": "organization", "aliases": ["Proofpoint, Inc."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0004", "start": 40, "end": 161, "sha256": "512600ebb9a91db297c7e05c050764a0f19905432f6a16942957f518d1ee3551"}}
+  ]},
+  {"id": "n005", "label": "2025 Voice of the CISO report", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0006", "start": 206, "end": 358, "sha256": "a1f51fdfbf4cafb47b065f6fbc8552db22f827609685f1fccf3a26e5f54a4105"}}
+  ]},
+  {"id": "n006", "label": "Security Operations Centre", "entity_type": "other", "aliases": ["SOC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 28, "end": 171, "sha256": "73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9"}}
+  ]},
+  {"id": "n007", "label": "Nelson Soon", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0008", "start": 139, "end": 243, "sha256": "5d6ab370811a03821d92be61541acabe4270fb2d28feb041a0ec0c15caa821c8"}}
+  ]},
+  {"id": "n008", "label": "Rishi Rajpal", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 324, "end": 410, "sha256": "c2c52efe862a6ebe4355ff5218dfa13336094382764cec3bef3e9e73cf2b6674"}}
+  ]},
+  {"id": "n009", "label": "collaboration and data security platform", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0012", "start": 403, "end": 567, "sha256": "969717688e08a6e6c249e587b9ab5d70d49f469921c957392398804dff028872"}}
+  ]},
+  {"id": "n010", "label": "collaboration security and data protection solutions", "entity_type": "product", "aliases": ["collaboration and data protection solutions"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 28, "end": 171, "sha256": "73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9"}},
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0003", "start": 0, "end": 109, "sha256": "9ce2d468b0e214824a708abaa468193f0893be9e7c4e7f0282a414e78d41d6cf"}}
+  ]},
+  {"id": "n011", "label": "human- and agent-centric security platform", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 276, "end": 415, "sha256": "706e68fb31cf5fd7eec7c5fd2e35fb41b6336c3edba371e48004aaf0994cdc75"}}
+  ]},
+  {"id": "n012", "label": "people- centric security platform", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 112, "end": 204, "sha256": "d0dbefab46df6912c1dbfd28d12cdf7408f2e5ffa3942791b933f9fa02b360d5"}}
+  ]},
+  {"id": "n013", "label": "data loss", "entity_type": "threat_category", "aliases": ["loss of sensitive data"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0012", "start": 304, "end": 402, "sha256": "f8d89e0400a35e4d3f095958be776e5d24c4dc566395d19e951532a40d443333"}},
+   {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0006", "start": 538, "end": 663, "sha256": "37bb6fb044124b92edbe8e7de2a1411c2a4f0cb9e5a232a1175cdad28c505f7e"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n006", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 28, "end": 171, "sha256": "73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9"}}
+   ]},
+  {"id": "e002", "source": "n003", "target": "n010", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "strategic partnership between Proofpoint and Concentrix",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0003", "start": 0, "end": 173, "sha256": "f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57"}}
+   ]},
+  {"id": "e003", "source": "n003", "target": "n010", "relation_type": "USES",
+   "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "strategic partnership between Proofpoint and Concentrix",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 0, "end": 275, "sha256": "4ae0815feb45225b3f476bae2e8a87a037bdb81fef825797bc5f60bb4687330a"}}
+   ]},
+  {"id": "e004", "source": "n003", "target": "n012", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Rishi Rajpal", "event_time": "", "event_scope": "strategic partnership between Proofpoint and Concentrix",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 112, "end": 321, "sha256": "3d2e81022bcaf80e0563b805652d872d84960cbbf5f814626ea97cec70364c87"}},
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 324, "end": 410, "sha256": "c2c52efe862a6ebe4355ff5218dfa13336094382764cec3bef3e9e73cf2b6674"}}
+   ]},
+  {"id": "e005", "source": "n004", "target": "n013", "relation_type": "MITIGATES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0012", "start": 172, "end": 402, "sha256": "6a851aeafaea6ef40ce121ff7a7ae10c6c944d888a7ad44121c1d7a697ff1fa1"}}
+   ]},
+  {"id": "e006", "source": "n004", "target": "n009", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0012", "start": 403, "end": 567, "sha256": "969717688e08a6e6c249e587b9ab5d70d49f469921c957392398804dff028872"}}
+   ]},
+  {"id": "e007", "source": "n004", "target": "n010", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 28, "end": 171, "sha256": "73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9"}}
+   ]},
+  {"id": "e008", "source": "n004", "target": "n011", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0005", "start": 276, "end": 415, "sha256": "706e68fb31cf5fd7eec7c5fd2e35fb41b6336c3edba371e48004aaf0994cdc75"}}
+   ]},
+  {"id": "e009", "source": "n004", "target": "n012", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "Rishi Rajpal", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 112, "end": 204, "sha256": "d0dbefab46df6912c1dbfd28d12cdf7408f2e5ffa3942791b933f9fa02b360d5"}}
+   ]},
+  {"id": "e010", "source": "n004", "target": "n013", "relation_type": "REPORTS_ON",
+   "modality": "actual", "polarity": "positive", "attribution": "Proofpoint's 2025 Voice of the CISO report", "event_time": "in the past year", "event_scope": "Proofpoint's 2025 Voice of the CISO report findings on loss of sensitive data by Indian CISOs",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0006", "start": 206, "end": 358, "sha256": "a1f51fdfbf4cafb47b065f6fbc8552db22f827609685f1fccf3a26e5f54a4105"}},
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0006", "start": 538, "end": 745, "sha256": "1e10de062e10625efef3749ca753f8f3968e5596cc0777f77d9052fa78d6bffc"}}
+   ]},
+  {"id": "e011", "source": "n007", "target": "n004", "relation_type": "MEMBER_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0008", "start": 139, "end": 243, "sha256": "5d6ab370811a03821d92be61541acabe4270fb2d28feb041a0ec0c15caa821c8"}}
+   ]},
+  {"id": "e012", "source": "n008", "target": "n003", "relation_type": "MEMBER_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0523", "paragraph_id": "D0523:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0523:P0009", "start": 324, "end": 410, "sha256": "c2c52efe862a6ebe4355ff5218dfa13336094382764cec3bef3e9e73cf2b6674"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

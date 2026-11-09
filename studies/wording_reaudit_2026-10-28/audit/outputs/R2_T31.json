@@ -1,0 +1,11 @@
+{
+ "audit_file": "R2_T31",
+ "target_doc_id": "D0268",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0268:P0007 SEALSQ наголошує, що найефективніший захід — інтеграція PQC безпосередньо в кремній, тобто стаття подає це як позицію-рекомендацію компанії, що відповідає формулюванню «advocates»."},
+  {"item_id": "W002", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0268:P0005 Project Glasswing названо ініціативою «to secure critical software», тобто подано мету, а не досягнутий результат, що відповідає формулюванню «aims to secure»."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання містить маркер можливості «possibly», а D0268:P0008 стверджує як факт, що апаратний підхід «ensures» роботу з ключами в захищеному середовищі, «protecting from unauthorized access», без жодного припущення."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "U", "reason": "Формулювання без маркерів подає вбудовування як здійснений факт, але в D0268:P0007 вбудовування PQC у secure microcontrollers описано як підхід, який SEALSQ радить («By embedding…»), а D0268:P0011 стверджує фактичне вбудовування лише в «our semiconductor solutions», без згадки мікроконтролерів, тож форму однозначно визначити не вдалося."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0268:P0007 прямо стверджено, що immutable root of trust «cannot be altered, bypassed, or extracted—even by AI-driven attacks», тобто стаття заперечує звʼязок як факт, так само як і формулювання."}
+ ]
+}

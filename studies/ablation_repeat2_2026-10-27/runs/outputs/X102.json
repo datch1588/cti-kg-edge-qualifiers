@@ -1,0 +1,120 @@
+{
+  "run_id": "X102",
+  "target_doc_id": "D0569",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Center for Cybersecurity Policy and Law",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 354, "end": 520, "sha256": "2783d4c257392db1dda05782d1d981f5b8b456afc24f3756ddc08484bc12942e"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Private companies",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0007", "start": 0, "end": 84, "sha256": "7e4efedbd1cba264959a09f0a4b6bfbaaaa46e64af8131325543e3a03e8ecd88"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "common policy frameworks",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 327, "end": 450, "sha256": "bf222ee810d2c248511a3cc11c77794654442f5d7726069caafdaef017751950"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "national digital infrastructure",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0007", "start": 0, "end": 84, "sha256": "7e4efedbd1cba264959a09f0a4b6bfbaaaa46e64af8131325543e3a03e8ecd88"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Secure by design",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0019", "start": 0, "end": 84, "sha256": "f092c3c8d4f1d6a6675df653841f055b743db63240490e6c805070b4a8e58c2f"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Security operations centers",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0022", "start": 0, "end": 77, "sha256": "25eb6e4de3c0a8ac829f8c32a19f324f71709b9aba08029fbc7566c30ca80fad"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "Artificial intelligence",
+      "entity_type": "technology",
+      "aliases": ["AI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0005", "start": 216, "end": 368, "sha256": "ce7dc5af61d9c7ec7cdb718bd3611c43ac008a566fbb26e03d7286487c119fde"}},
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0015", "start": 84, "end": 236, "sha256": "7599ad982d555536dc33babeced507556d1c76fb5bcb92b5c091eb66c042fcae"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "enterprise IT security",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0021", "start": 0, "end": 150, "sha256": "0a6fbef08a8fab52f5a6613ca9e804b2756c9ceaa18a4cd8695cd523c4eac428"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "operational technology security",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0021", "start": 0, "end": 150, "sha256": "0a6fbef08a8fab52f5a6613ca9e804b2756c9ceaa18a4cd8695cd523c4eac428"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n001",
+      "target": "n003",
+      "relation_type": "DEVELOPS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 327, "end": 521, "sha256": "ff879cf85bb41ceab67cad3c1c2e704bc39c7f301df716ee6ad4ae8ab8d39dc3"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n002",
+      "target": "n004",
+      "relation_type": "OPERATES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0007", "start": 0, "end": 84, "sha256": "7e4efedbd1cba264959a09f0a4b6bfbaaaa46e64af8131325543e3a03e8ecd88"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

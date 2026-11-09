@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T25",
+ "target_doc_id": "D0405",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0405:P0012 сказано, що механізми на статичних індикаторах «may struggle to recognise altered versions of known malware», тобто це подано як можливість, що збігається з «may struggle» у формулюванні."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0405:P0008 сказано, що ці операції «often involve ... custom malware», і це загальне твердження, подане як факт, тож actual, positive збігається з формулюванням без маркерів."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly research concluded in» подає звʼязок як можливість, а в D0405:P0009 прямо сказано, що дослідження «concluded in February 2026», тобто це здійснений факт (actual)."}
+ ]
+}

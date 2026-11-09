@@ -1,0 +1,29 @@
+{
+ "audit_file": "S5F30",
+ "target_doc_id": "D0242",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: frontier AI автоматизує запуск складних багатоетапних атак, подано як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: без негайного посилення захисту MSMEs можуть зазнати ransomware-атак — наслідок явної умови."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: CERT-In попередив про можливі ransomware-атаки; попередження подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок засобу з протидією загрозам подано як твердження про важливість/роль (actual), порада впровадити засіб не робить його recommended."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: CERT-In попередив про можливі витоки даних; попередження подано як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: інструменти виявлення загроз названо важливими для протидії автоматизованим загрозам — actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: витоки даних загрожують MSMEs за умови відсутності посилення захисту — conditional."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: CERT-In рекомендував фірмам з обмеженими ресурсами розгортати інструменти виявлення загроз."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0001/P0006: MSMEs опинилися під прицілом AI-загроз, подано як чинний стан."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: «India's cybersecurity watchdog, CERT-In»."},
+  {"item_id": "E011", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: MSMEs розташовані в Індії, а не Індія в MSMEs."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: бізнес закликають вести детальні журнали — recommended."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004/P0008: MSMEs під найвищим ризиком і можуть зазнати атак — possible."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006/P0008: «India's MSMEs»."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: безперервний моніторинг мережі названо важливим для протидії загрозам — actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "I", "reason": "Роль patch management у захисті подано як твердження про звʼязок (actual), а не як пораду."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "I", "reason": "Полярність хибна: стаття радить використовувати інструменти виявлення загроз, заперечення немає."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "Ефективність моніторингу проти загроз подано як твердження про важливість (actual), не recommended."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: журнали «essential for forensic analysis» — actual."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: CERT-In рекомендував фірмам підтримувати безперервний моніторинг мережі."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: CERT-In видав попередження щодо AI-загроз."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: patch management протидіє експлуатації незалатаного ПЗ AI-інструментами — actual."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: порада наголошує на потребі ретельного patch management для фірм — recommended."}
+ ]
+}

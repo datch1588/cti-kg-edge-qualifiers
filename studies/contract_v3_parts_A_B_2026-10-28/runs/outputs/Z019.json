@@ -1,0 +1,92 @@
+{
+  "run_id": "Z019",
+  "target_doc_id": "D0332",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Artificial Intelligence",
+      "entity_type": "technology",
+      "aliases": ["AI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0005", "start": 95, "end": 232, "sha256": "2e3b7199aed590e5cc0b5a6d4b51499ebc363d6076def55d6f249e1891e6e63a"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "attack emulation",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0019", "start": 0, "end": 98, "sha256": "baa877e7793b63929806348ad579479be0594b337a9caeceb6d40ead01865cb1"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "automation",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0025", "start": 0, "end": 81, "sha256": "5bd297d537f32fcd00ce25cc9ea51d00381512f1732dd1f9686c480d84c15dde"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "Continuous Threat Exposure Management",
+      "entity_type": "technology",
+      "aliases": ["CTEM"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0006", "start": 0, "end": 217, "sha256": "e675b43e613ddc92bdf0c660c50b5db20d359bc72215ce1bcb8505aeed635bcb"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "threat simulations",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0019", "start": 0, "end": 98, "sha256": "baa877e7793b63929806348ad579479be0594b337a9caeceb6d40ead01865cb1"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n004",
+      "target": "n002",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0019", "start": 0, "end": 98, "sha256": "baa877e7793b63929806348ad579479be0594b337a9caeceb6d40ead01865cb1"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n004",
+      "target": "n003",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0025", "start": 0, "end": 81, "sha256": "5bd297d537f32fcd00ce25cc9ea51d00381512f1732dd1f9686c480d84c15dde"}},
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0014", "start": 0, "end": 215, "sha256": "8790019f3e4f87e238d385c448ed20279e02c9d46d35578c654f26f7b109c9be"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n004",
+      "target": "n005",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0332", "paragraph_id": "D0332:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0332:P0019", "start": 0, "end": 98, "sha256": "baa877e7793b63929806348ad579479be0594b337a9caeceb6d40ead01865cb1"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

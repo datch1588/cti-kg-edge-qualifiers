@@ -1,0 +1,129 @@
+AUDIT_FILE: R2_T30
+TARGET_DOC_ID: D0327
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0327
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a
+TITLE_SHA256: 5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+BEGIN_DOCUMENT
+[D0327:P0001] sha256:5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+[D0327:P0002] sha256:0c2540a5c672eae6ac9bb09c7d7c7bec68dd0cce863e0012110dd872ad70b001
+[D0327:P0003] sha256:4520083fc3914960791c7c9feafe2c58d1094645da53102a86b58c981e260176
+[D0327:P0004] sha256:dddab21467c06402b7516a4df95fb4ad646d0134ac39763c2895f3ca3912f46d
+[D0327:P0005] sha256:7a2573266033dc4de5846fc724746fb34255a3ad3031feae9a3aafc79ee745d8
+[D0327:P0006] sha256:920458eccafe500aa00a9bae40096ea40a14397336c37662b27beef108c02a6e
+[D0327:P0007] sha256:286acccd18bc0e790317f74706628acc5faa9f86c40876d2ea48b415f58b5ccf
+[D0327:P0008] sha256:e76fe174228ba61f7cdf2dd9fbab4af4c0793527660253012672194d1fe3189d
+[D0327:P0009] sha256:d52b22db2f498fa09483ca6c25365710fd3692a2fdda55e41e54d16fbafee4d1
+[D0327:P0010] sha256:9ef13554ff038106bba631fd1ac61ad55bd98c14108c60acf97a64040c2ef6a8
+[D0327:P0011] sha256:583bd0190b19e4c589e8ddf0cabbe91caad258b2851401f6a4df7a5c82f0f7a9
+[D0327:P0012] sha256:02ab0dc2773b96b00f82e15a03ad4f09da537cecf95b76cd1d6d572ba9e49c55
+[D0327:P0013] sha256:796d85360f1d13eaca085782fb147b2604c4f0c5ea8eabcfd0b366ad05c5e431
+[D0327:P0014] sha256:62511035a9408d4e0a267246b0ce61dc7f098f9a5b17c855af5dd0523551369d
+[D0327:P0015] sha256:42ca0a3e42f0119f35653459de1aa3437ae6f5ec1c2798a8433c964a39984e45
+[D0327:P0016] sha256:2bb16ee1ce4bf3a77882e1e74b7fcd599c79e463c5b90414ac7d8c5a505ed550
+[D0327:P0017] sha256:53e6adbe51b6cf6424aeeaafa05a1f17edfa0d106a7b58bc9cddab63d5a5f1ac
+[D0327:P0018] sha256:ea5b9ea01818ff077bcd0c006594c4b3aaa501e0b21f4abac1b316f7c1790d97
+[D0327:P0019] sha256:408a76f4aeaff4a258c2bc1b088c81ab4c7fc74acaea83026b54a0b407e3460d
+[D0327:P0020] sha256:624af301c3e6626a012ed00798af780a9cedb5e8ab9db8a0279bd76c622c3c59
+[D0327:P0021] sha256:11552e14c3b3f7810d6d803c5eb3350f07a26da7de53f03516dbd7766e09c4e7
+[D0327:P0022] sha256:a6ec59a5a8b8e74d49700bb42cde19065d8a3926ab7e7501228070e87d69a01b
+[D0327:P0023] sha256:b4993be61761c20cd8a5e427ffa13a0f63891750fe3ed026483fade0520b89b8
+[D0327:P0024] sha256:278d74cee03a0faba41edef0087c814ed963602ffe6bfc16b1bbe897b8c4f322
+[D0327:P0025] sha256:8cda29e58c1fbd6a66864a99aa89133d5472066b80fa53ca4c49f885f7683327
+[D0327:P0026] sha256:0d102211325b10c63f43b6134bd4b4fce0893e6e45dfd52aa86cd9fce49207b1
+[D0327:P0027] sha256:c3aa64f2c244df90446ac7905efb5891abdb4a3034ab7cffdca797240ddda826
+[D0327:P0028] sha256:4cf075249ba858e94c6bb14963617fad4446d121f30bcbbd9e88d633e069e574
+[D0327:P0029] sha256:02e11c14fba69545c857be8ae5203c6eed6bf94eb15857c228364a2a8440e1a6
+[D0327:P0030] sha256:bffe4e94011a64eccf966b22c2a55550acfadf75471ac05881efc987e36e2f93
+[D0327:P0031] sha256:932214f9874176bb0d86e59b4f292290b73040cb39146f6b78bb8e94da396c32
+[D0327:P0032] sha256:449ad04ea160f4da6aad9118e3f9902e8ea45f4460c28591db7fdad83796333b
+[D0327:P0033] sha256:13ad88631da88be7e7cfeaa0d04e174f50a1c4481db991c750b2a39fe7b62037
+[D0327:P0034] sha256:f44f33cb14b0d7376c60f02438793cad4a0498871f1d50cdd8e5cb9bdb10ba76
+[D0327:P0035] sha256:3e640996b940621379b86cab573c9c9bd0ebb678cf352b155d415a377d239cec
+[D0327:P0036] sha256:223bc63bcf071e0847c5131d5ae4d974bf8a904b4ca07a5b573f8cfdab13cbfc
+[D0327:P0037] sha256:946e9729305d337ac458b9fea9299f057a3d755802e2eadd8adfe2466c3926cc
+[D0327:P0038] sha256:42cfb7659fdd8f732a41d71ec7dd193e4d3d2f39d6f4bfdadab83d385e3d7591
+[D0327:P0039] sha256:52d4266318408cabc622230fe87c9251a6d1806bea1554b75dd1e5df754fe137
+[D0327:P0040] sha256:27fecb19b64015f9af31eadf0dac2667771af88469d245ab172ac741bf59f454
+[D0327:P0041] sha256:5c38acf3270137eddff51c0b2faf220fbaf32c9db6c1b19abf41cd03ad20d3dd
+[D0327:P0042] sha256:77a07c396f8263aac1219e29eeda120f01b342f7655a908d9cd1ece1e6d82d3d
+[D0327:P0043] sha256:b75105c0e1c3b5d9fbeb1b5ebf366c723f6f2dca93657aa7c950755a1b35fe93
+[D0327:P0044] sha256:ad9b5d6c2311f83a7f88964272a61734bef5035c46a4a80b3946cd8733dfb2b7
+[D0327:P0045] sha256:bc77a5e4053976aa2485b04a1c89651446189fedbd031515f4e67ae8eac095a0
+[D0327:P0046] sha256:2c0db6d112d31ef2b3f27cdfc2ff1e223229f19a3a6a0d16cfa9b1c3c3b7310a
+[D0327:P0047] sha256:94b07aff0327ecb384df7e14f4d2db1cb791e50b0b8461c672ec86ea05801e10
+[D0327:P0048] sha256:78590f2bc22d892acc1cfa91450829991bcf04ef02d636fa53557ea56dfd9649
+[D0327:P0049] sha256:54ecd727fb12dfc8ec2765b8dde79fe211245c0d56446d80685adea45c118797
+[D0327:P0050] sha256:b9361d3bfc4ad2b6ad3d957f2bdb35ecfc2ac7e8464d44bfbf59ad7b10a6aba3
+[D0327:P0051] sha256:07134b1c969ea4a4e1f1c963066e8b59d4054e9220dab830afb75147852037e5
+[D0327:P0052] sha256:ccd44fc48264fc0298914f31d6306ce0d5b8edef792b177afd286ecce30ad663
+[D0327:P0053] sha256:817766654bd51bf74847c313585ec47b40f982a28416eb42d077ee4c11a37dc6
+[D0327:P0054] sha256:a95749d1585c035a49b172c8a45138527a6d1c86f18e379128a327084fc30c27
+[D0327:P0055] sha256:bb8b12c8b14cfda913b3d4127f921f5417d5112ec5085cda4d6c5afe0a802401
+[D0327:P0056] sha256:cff1c76574b0d498e2b5334bb92ea6b7a4b508927445038923c8f628c79c18d9
+[D0327:P0057] sha256:1aadbede701fedad6684afcb877302bf50879a65e47c02093310155ff82e5117
+[D0327:P0058] sha256:0eb5a285ecdfc41a293a6970507bb93f4102bae33d1c65bcf9ee26f02168eb80
+[D0327:P0059] sha256:87d34c41b64a865e31ab6a305997422361e8a30cfe935c9d6ddbac28d5491c4d
+[D0327:P0060] sha256:f269c3832e9d2a1edaaeb93704c9851e32975c1aa0a7fb2111731d6ace3af2be
+[D0327:P0061] sha256:eaeb20fc590c69a1ebdd290926481ce7bb1557afda4b08c22267fd30fac1d340
+[D0327:P0062] sha256:1b1e3f24959eca2e4ccaf00154d042c8843a6f82007deec9f38ce6134dc73616
+[D0327:P0063] sha256:3a1ea8de3b89274657a48b0cfec6875bbb6dc5485b318b1d8ec45808ec9e51a4
+[D0327:P0064] sha256:470d3a4769e1dfb41541d5bfb391002a3e7cd0176a4b6d288df2e0835742038d
+[D0327:P0065] sha256:93a91c1347e8a2d3ce554cf8f13e70d8c5e9bb8f1ab88c1a109de72e4e69327b
+[D0327:P0066] sha256:403c6f6e6040e3ed578a47ef86fb4df7fedd688fd6261a5a95dfcd2b951399a0
+[D0327:P0067] sha256:e55a2d3506cd9a04f4bddf766dd9bcfe88dc8bedef3327d296992930cce97057
+[D0327:P0068] sha256:74db14c635e2203500ba9e1023df9648134b1a909753876376fbf907ac45d7b9
+[D0327:P0069] sha256:8438667ba18605169bd460a84e76df8612272dbdd74df6581c918d78dab0c189
+[D0327:P0070] sha256:0dad3aea4a091e81787adcfcc11b005913b3f6ce278eb5d4074ad8d0b1189a0f
+[D0327:P0071] sha256:b723a76576be2cfa68308aa48ba93274382177c7aa600d7542fbfc6263027e78
+[D0327:P0072] sha256:07a85e3cc4b1e0e4dc5b6fafebf1394eb3338f2878f388324fe4c08b8d31d38f
+[D0327:P0073] sha256:ba9447360aecf349ad831242211d183e01f5301ceead8ba7a7578ab9d8b44143
+[D0327:P0074] sha256:199bc967af7c44ff498760153bd4fc8c880feb48e7ee236a90e58f5f543cf845
+[D0327:P0075] sha256:c08fb77976ec2c5e0c477b005a3f1bc0405bd65714d5156da83fd19b05750d4d
+[D0327:P0076] sha256:4e82d0807ad0ac443c284c649f6eb4f7ef8e2f1aa60556a5c34daa9dd6c0238b
+[D0327:P0077] sha256:ceb59b69bc12739c0ff6739cb068554b45f27caf01822f751e11021fd270890b
+[D0327:P0078] sha256:86c9855e7c5c5ddfffecf1f9d7ce1bddfbb8deb566ed418a82eb6d3ac72e7955
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (7)
+W001: «Iranian-affiliated APT actors» — never uses → «Remote Access Tools T1219»
+W002: «Iranian-affiliated APT actors» — used → «185.82.73[.]171»
+W003: «Iranian-affiliated APT actors» — directs traffic to → «port 2222»
+W004: «Iranian-affiliated APT actors» — directs traffic to → «port 102»
+W005: «Iranian-affiliated APT actors» — directs traffic to → «port 44818»
+W006: «Iranian-affiliated APT actors» — directs traffic to → «port 502»
+W007: «Iranian-affiliated APT actors» — may target → «Siemens S7 PLC»
+КІНЕЦЬ ЗАПИСІВ

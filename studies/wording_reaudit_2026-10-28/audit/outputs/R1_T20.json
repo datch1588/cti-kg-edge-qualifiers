@@ -1,0 +1,21 @@
+{
+ "audit_file": "R1_T20",
+ "target_doc_id": "D0448",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0017 прямо як факт сказано, що багато пристроїв «do not have strong cybersecurity protections», а формулювання «lack» передає саме цей чинний стан."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «imposes» подає вимоги як чинні, а в P0018 сказано, що обов'язкові вимоги лише будуть («there will be») після набрання чинності у 2027 році, тобто це заплановане."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0021 сказано «it could break the public encryption systems», тобто як можливість, і формулювання «could break» передає ту саму форму."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «puts at risk» передає ризик, а в P0025 оборонні секрети теж подано лише як такі, що «potentially at risk», тобто як можливість."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «puts at risk» передає ризик, а в P0025 урядові комунікації теж подано лише як такі, що «potentially at risk»."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never protect» заперечне, а в P0021 зв'язок стверджено: системи шифрування «protect our online conversations»."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У формулюванні «enters into force in» немає маркера плану, а в P0018 набрання чинності у 2027 році подано як подію за графіком у майбутньому, тобто як заплановане."},
+  {"item_id": "W008", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «puts at risk» передає ризик, а в P0025 персональні дані теж подано лише як такі, що «potentially at risk»."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0019 сказано, що скоординована атака «could disable an entire national electricity grid», тобто як можливість, що й передає «could disable»."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «applies across» подає дію акта в ЄС як чинну, а в P0018 вимоги щодо пристроїв, що продаються в ЄС, лише будуть («there will be») після набрання чинності у 2027 році."},
+  {"item_id": "W011", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «puts at risk» передає ризик, а в P0025 криптографічні ключі теж подано лише як такі, що «potentially at risk»."},
+  {"item_id": "W012", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «target» без маркерів подає атаки як факт, а в P0007 сказано лише, що кібератаки на критичну інфраструктуру стають «increasingly likely», тобто йдеться про ймовірність."},
+  {"item_id": "W013", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «to be embedded in» передає потребу, а в P0022–P0023 вбудовування квантово-стійкого захисту подано як рекомендацію («the time to embed... is now», «we have to start preparing now»)."},
+  {"item_id": "W014", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «targets» подає атаку на інфраструктуру розумного обліку як факт, а в P0019 таку скоординовану атаку описано лише як гіпотетичний сценарій («could disable»)."},
+  {"item_id": "W015", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0020 як факт сказано, що Thales протистоїть («is confronting») виклику, пов'язаному зі зброєю, якої ще немає, тобто квантовим комп'ютером, і це відповідає формулюванню без маркерів."}
+ ]
+}

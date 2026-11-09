@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T18",
+ "target_doc_id": "D0435",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає встановлення через вразливості як факт без маркерів, а в D0435:P0014 сказано лише, що зловмисники «may also exploit software vulnerabilities», тобто це можливість (possible)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0435:P0008 повідомлено, що працівники не могли отримати доступ до internal software, а в D0435:P0011 — що знищення даних позбавило доступу до систем, тож стаття подає це як факт (actual, positive)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never disrupted» заперечує звʼязок, а в D0435:P0006 Stryker підтвердила глобальний збій своїх систем Microsoft унаслідок кібератаки, тобто стаття звʼязок стверджує (actual, positive)."}
+ ]
+}

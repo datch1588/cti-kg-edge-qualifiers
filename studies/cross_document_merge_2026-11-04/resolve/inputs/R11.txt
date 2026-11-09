@@ -1,0 +1,206 @@
+RESOLVER_FILE: R11
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 15, згадок 38)
+
+ГРУПА G071 (згадок 4)
+M001: «Cursor» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0016]: «@D0124:P0016:115-170 sha256=2ec7217574d77bb62a5c2960c5e20b71d74f35c67af1e6676e4e3fdc0f81a1b2»
+    абзац: «@D0124:P0016:0-391 sha256=3fe9094715fc9ee3efce2235368b754e7c1a7771f2536640b513b5e5e728ed66»
+  твердження статті: «OpenHack» — SUPPORTS → «Cursor» (actual, positive)
+M002: «Cursor» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d» (2026-03-23)
+  фрагмент [P0006]: «@D0382:P0006:0-111 sha256=22d0028dcb9fddc1d8c5ea516d447f07fa2e5a2c64f765514b2fcd855008fe19»
+    абзац: «@D0382:P0006:0-218 sha256=29a6c507e21b67bc822d5c80200725fc492c4e02844732b4abc8d4a79d2c9646»
+M003: «Cursor» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0048]: «@D0457:P0048:67-127 sha256=863b0c0a58de48b04784cdd53912219abab9e0e916579eeca4c629efba2c0c3b»
+    абзац: «@D0457:P0048:0-345 sha256=1a11dd15dac2497c08d63fd93cb604b38d00eb390f756ed8dd12fee5490935c4»
+  твердження статті: «Cursor» — PROVIDES → «Cursor Automations» (actual, positive)
+M004: «Cursor Automations» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0048]: «@D0457:P0048:67-127 sha256=863b0c0a58de48b04784cdd53912219abab9e0e916579eeca4c629efba2c0c3b»
+    абзац: «@D0457:P0048:0-345 sha256=1a11dd15dac2497c08d63fd93cb604b38d00eb390f756ed8dd12fee5490935c4»
+  твердження статті: «Cursor» — PROVIDES → «Cursor Automations» (actual, positive); «Cursor Automations» — USES → «AI agents» (actual, positive)
+
+ГРУПА G072 (згадок 2)
+M005: «iOS» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0038]: «@D0124:P0038:357-447 sha256=50ea9f0ed32c3ca9c6abe992e6063df66b0170c97fcb99749c24616b2ac8c38f»
+    абзац: «@D0124:P0038:0-448 sha256=e20ac0a574366324e0fb7ab2123ddd71af5c7a6ca163cbfa8261bacf1311f124»
+  твердження статті: «F-Secure Internet Security» — SUPPORTS → «iOS» (actual, positive); «TotalAV Mobile Security» — SUPPORTS → «iOS» (actual, positive)
+M006: «iOS» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0011]: «@D0457:P0011:59-148 sha256=5478d3e470aaf200441e1ed9f92d23a228612e476312c02b57b3dda174ad1bca»
+    абзац: «@D0457:P0011:0-379 sha256=50a9a9784555c5bab95d51b536ab712a46f256da57502086f1541c1156968d2f»
+  твердження статті: «Coruna» — AFFECTS → «iOS» (actual, positive)
+
+ГРУПА G073 (згадок 3)
+M007: «Law enforcement» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+  фрагмент [P0017]: «@D0137:P0017:0-93 sha256=c1f1b9fc6836c911a477a3f57ba79af67d634f16d87ea4dba3ddd94cf8cd3e26»
+    абзац: «@D0137:P0017:0-160 sha256=982d2aba44f5c340b5127a011d85e74eaf0918c89d8f6ac87e3d578d78f13ba2»
+  твердження статті: «Law enforcement» — MITIGATES → «online radicalization» (actual, positive)
+M008: «Chinese law enforcement» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bb45b8fbec2562f2f47b940e166d846abb1e67fb2ef648ca21258c4185618108» (2026-04-28)
+  фрагмент [P0033]: «@D0245:P0033:445-582 sha256=66e7f0e08ce4074bbf0bc64a067fb7c75cdec29017ca88f503cd6e4aa2aaedcc»
+    абзац: «…@D0245:P0033:76-676 sha256=477165d5b1d50915f2541000854ae4c23e4f14de84f84f2ea84d51ffa44389de»
+  твердження статті: «Chinese law enforcement» — USES → «ChatGPT» (actual, positive)
+M009: «law enforcement agencies» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0030]: «@D0457:P0030:186-260 sha256=8bbb55a21546dedf176e034a2b90578d6bc7ff62b3f9a78d0cc50768d2e2dd05»
+    абзац: «@D0457:P0030:0-260 sha256=9dc5a4d43c06c3b82a0d2de5f849e45f87c576d2ef34d83eab79e87040f3492c»
+  твердження статті: «law enforcement agencies» — MITIGATES → «Tycoon 2FA» (actual, positive)
+
+ГРУПА G074 (згадок 2)
+M010: «Kash Patel» (person) | альтернативні назви: «Patel» | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+  фрагмент [P0005]: «@D0137:P0005:0-60 sha256=e9fd4ce9cd5f0bd808ab567b64e30b5f26f5c6c824f4493da0517a5e58c35d3c»
+    абзац: «@D0137:P0005:0-216 sha256=5185066725190ef3ca0df67f7d53e781c8e8b24bb7aa171f18105c6759a142de»
+  фрагмент [P0014]: «@D0137:P0014:0-100 sha256=53f8cf191c93df92090b9ce513b207ce21a3f7192ad876439f4e8ca929b120ef»
+    абзац: «@D0137:P0014:0-167 sha256=76662e68ddb1d4ea71395eb0daf7f64e891019a4d34d88667e253d3034789d84»
+  твердження статті: «Kash Patel» — LEADS → «FBI» (actual, positive); «Kash Patel» — WARNS_ABOUT → «China» (actual, positive); «Kash Patel» — WARNS_ABOUT → «Iran» (actual, positive)
+M011: «Kash Patel» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+  фрагмент [P0007]: «@D0391:P0007:120-148 sha256=84b92c64437c3124c9829ade37627cc780ab92095678ae5816560cb48a9310d4»
+    абзац: «@D0391:P0007:0-379 sha256=82508645c88b4feae67e1e7052f7a0e7299a74ad204ca0df8b5b327e88757859»
+  твердження статті: «Kash Patel» — LEADS → «FBI» (actual, positive)
+
+ГРУПА G075 (згадок 2)
+M012: «Chatham House» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f» (2026-05-23)
+  фрагмент [P0019]: «@D0154:P0019:12-80 sha256=75a3d6bdc4c952a2de722182e947bcea31da1307a05d8f4ad8002723d9925a3c»
+    абзац: «@D0154:P0019:0-157 sha256=1d48325334423a6b540faaa02382ce15543e377d9a09c7ab7510f7dd32ac4c95»
+  твердження статті: «Keir Giles» — MEMBER_OF → «Chatham House» (actual, positive)
+M013: «Chatham House» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01)
+  фрагмент [P0007]: «@D0228:P0007:199-290 sha256=8f417130e7054f62a2f1db95045e9052127a610da39376185903e22bfd8a573f»
+    абзац: «@D0228:P0007:0-453 sha256=f170722b928ae4e5c40a0874211f9041fcf1fc0a36b26bb5be3e51313c5c2b47»
+  твердження статті: «Chatham House» — REPORTS_ON → «pattern of disruption» (actual, positive)
+
+ГРУПА G076 (згадок 3)
+M014: «NATO» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f» (2026-05-23)
+  фрагмент [P0008]: «@D0154:P0008:35-72 sha256=04647f19659a3e6a35867f30a2d48ca5bce6b9962587104c53b2dcc87de5873a»
+    абзац: «@D0154:P0008:0-140 sha256=7445bceeeab62dee8aeef3cfd4abad388ca6d5eb7e5af810c7a505b797bf5a2c»
+M015: «NATO» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4730371ee511f5719f0d6eb81f5e10e8802d6523f010cf035fa459d75e9a2d95» (2026-02-13)
+  фрагмент [P0013]: «@D0541:P0013:280-450 sha256=0349c0c59cdcf9761c883ce8ab455ff6cdb53150e532b7bcbac4b089615506a8»
+    абзац: «@D0541:P0013:0-560 sha256=21fd0e76f4f9696a4a99a7bcfb02b588ee1e6377299ca721bdcc65ff3397e806»
+  фрагмент [P0006]: «@D0541:P0006:142-296 sha256=2f67004df849b8b4c7669c1fecf206c8c475eee6aab45f947f143c0998c79832»
+    абзац: «@D0541:P0006:0-429 sha256=85a4c2fb9a1b6c6947ce27a0fa977924d07bda1c33bee180c568d495d8cd54d7»
+M016: «NATO» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0032]: «@D0663:P0032:0-176 sha256=f5e8b1bcf6c46b2dedcc248ad47949631aa1a5ac3eeead4b415a3b344722dddb»
+  твердження статті: «NATO» — WARNS_ABOUT → «China» (actual, positive)
+
+ГРУПА G077 (згадок 2)
+M017: «RUSI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f» (2026-05-23)
+  фрагмент [P0071]: «@D0154:P0071:16-76 sha256=aaec2e41c7b597af51143705c4b5017afa11a65b8f4ea5d17b74fa4e78cc3c71»
+    абзац: «@D0154:P0071:0-184 sha256=68fca5d99abe7cbe0acac0c1eb2c9ad32f2f98aee14f2b356122fec970b0338a»
+  твердження статті: «Hamish Mundell» — MEMBER_OF → «RUSI» (actual, positive)
+M018: «RUSI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0041]: «@D0418:P0041:0-54 sha256=76572ac88ee038a4fc87db8ab1b541794afb925a102cbc412840e533119e5b8a»
+    абзац: «@D0418:P0041:0-152 sha256=99796ba7e4043c7c71ad47bd15b8ba45998c455643bb763d5280616e351af10c»
+  твердження статті: «Sidharth Kaushal» — MEMBER_OF → «RUSI» (actual, positive)
+
+ГРУПА G078 (згадок 2)
+M019: «John Healey» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f» (2026-05-23)
+  фрагмент [P0067]: «@D0154:P0067:28-127 sha256=1cddfe2ae78ce5eb7543d67538c7ab2b0cf7e7e8098e98a6f623ba4584f2c24b»
+    абзац: «@D0154:P0067:0-176 sha256=c4eca3d7196fcb409e3ec7e6945a38e28390dbb69bb646768e1658225c734df4»
+  твердження статті: «John Healey» — REPORTS_ON → «"covert" operation» (actual, positive)
+M020: «John Healey» (person) | альтернативні назви: «Healey» | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0051]: «@D0418:P0051:0-110 sha256=362dee2dec46a44413655b50be4a191f482336945d98ae4816a36d642ebf36c2»
+    абзац: «@D0418:P0051:0-156 sha256=48b7fa57938d7c21b3c8c944cf4416e8d0fbfa91b198b208e152b775d71c548b»
+  фрагмент [P0054]: «@D0418:P0054:0-33 sha256=58e6db964b15df217a4ef4ed6748fe1519404bdddc60fa76096b8ea6778ea9fa»
+    абзац: «@D0418:P0054:0-234 sha256=51334db6e5de842790f04eb403b5a3573c752f63f18b1d4388ff16ac18bae3d2»
+  твердження статті: «John Healey» — WARNS_ABOUT → «Iran» (actual, positive)
+
+ГРУПА G079 (згадок 2)
+M021: «Ollie Whitehouse» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20)
+  фрагмент [P0027]: «@D0165:P0027:0-47 sha256=2646cfe0219163708fabdab95c05b4cac2c10721c7a5d5b39e4f603e96f498ce»
+  твердження статті: «Ollie Whitehouse» — MEMBER_OF → «National Cyber Security Centre» (actual, positive)
+M022: «Ollie Whitehouse» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0009]: «@D0550:P0009:254-305 sha256=49b20dec3af3edb332d4f65c0810288573d877d5f3188ce2cb4d60239870bb53»
+    абзац: «@D0550:P0009:0-600 sha256=dbb06894f7c3f090b67b385c8b2fe153be617b16bedb37dce1e6082728f4934b…»
+  твердження статті: «Ollie Whitehouse» — MEMBER_OF → «NCSC-UK» (actual, positive)
+
+ГРУПА G080 (згадок 2)
+M023: «American economy» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0005]: «@D0166:P0005:76-203 sha256=7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048»
+    абзац: «@D0166:P0005:0-281 sha256=c21a9f10f12efe710217cfe4e5a66181c25f06cc0e815419215ddc472e72f3a7»
+  твердження статті: «China» — TARGETS → «American economy» (planned, positive)
+M024: «economy» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0006]: «@D0197:P0006:80-178 sha256=b1767473f2013acb7c62fa4e499009560348d5a800074389eaae5217533abfa7»
+    абзац: «@D0197:P0006:0-212 sha256=20a4809fa14d66210151936aa3da90c1ee7016f1a6dc3d4f13fd814d75c54c82»
+  твердження статті: «UK government» — PROTECTS → «economy» (actual, positive); «UK cyber security sector» — PROTECTS → «economy» (actual, positive)
+
+ГРУПА G081 (згадок 2)
+M025: «communications» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:199-331 sha256=92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «Volt Typhoon» — TARGETS → «communications» (actual, positive)
+M026: «communications and transmission» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0011]: «@D0663:P0011:0-255 sha256=22f8f773914a9baf8ababf9433ca0954370201ac029473bd153dd2b32d295472»
+  фрагмент [P0029]: «@D0663:P0029:115-228 sha256=02bc50c2357c0a3eba24736a94b5e38311e37cb1af31c23f691a62900ba0f925»
+    абзац: «@D0663:P0029:0-246 sha256=44f919d7d8f154c5032cd72afadc7b822b98e9d77cd35d96d0b80de9388fbac0»
+  твердження статті: «China's cyberarmy» — TARGETS → «communications and transmission» (actual, positive)
+
+ГРУПА G082 (згадок 3)
+M027: «Salt Typhoon» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0005]: «@D0166:P0005:186-281 sha256=63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339»
+    абзац: «@D0166:P0005:0-281 sha256=c21a9f10f12efe710217cfe4e5a66181c25f06cc0e815419215ddc472e72f3a7»
+  твердження статті: «Salt Typhoon» — ATTRIBUTED_TO → «Chinese Communist Party» (actual, positive)
+M028: «Salt Typhoon» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0006]: «@D0587:P0006:0-129 sha256=0e6ceb41b2154cf7acef64f6e6cb5c4b475134f84a6fbf43eea8d2a703cfd4d4»
+    абзац: «@D0587:P0006:0-406 sha256=dd4de36854b8bfea0425f1c6251c3ef41e06675f1784e075e248ada6f9baf320»
+  твердження статті: «Salt Typhoon» — USES → «long-term, covert access» (actual, positive)
+M029: «Salt Typhoon» (campaign) | альтернативні назви: — | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0044]: «@D0608:P0044:0-166 sha256=4e8c8c0f53ffee5832782778bc4cfa7cf0a952508b37b78a10edee7226018335»
+  твердження статті: «Salt Typhoon» — ATTRIBUTED_TO → «China» (actual, positive); «Salt Typhoon» — TARGETS → «AT&T» (actual, positive); «Salt Typhoon» — TARGETS → «T-Mobile» (actual, positive)
+
+ГРУПА G083 (згадок 3)
+M030: «NVIDIA» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0026]: «@D0194:P0026:206-366 sha256=2fc20271b2b7f684cd55317d8e3148ec554e1710348222b397c2984a1687baa5»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «NVIDIA» — MEMBER_OF → «restricted working group» (actual, positive)
+M031: «Nvidia» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0018]: «@D0250:P0018:61-216 sha256=0ab126f4b900c21aab38d0c3e632a8ef0c36e3329e047bf4c1af29fcf95252c8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+M032: «NVIDIA» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b» (2026-02-18)
+  фрагмент [P0016]: «@D0532:P0016:0-65 sha256=e93a9e69e04ecd37c1ecc031e62b3b6a695b2959731f21eb7606a23805c35c6d»
+    абзац: «@D0532:P0016:0-326 sha256=4eab5a159d86336d86ff2c84be1904f6116bef03f9e84d5643b564464a217428»
+
+ГРУПА G084 (згадок 2)
+M033: «Cloudflare» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0017]: «@D0195:P0017:0-162 sha256=fbb414c68bc6b8a2ef182ee2b18b11550bcb429ccfaa71deda24609f38257a73»
+  твердження статті: «Cloudflare» — DEVELOPS → «Daybreak» (actual, positive)
+M034: «Cloudflare» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0042]: «@D0457:P0042:71-132 sha256=55c04992bf5e634c7849d20568dcaa28d03abca3a880636881b848956b107c1e»
+    абзац: «@D0457:P0042:0-580 sha256=7948803d6ae3251cc3061fe2303dfa8317e24f3cdfb0dee527cb6d013528875c»
+  твердження статті: «Cloudforce One» — PART_OF → «Cloudflare» (actual, positive)
+
+ГРУПА G085 (згадок 4)
+M035: «EU» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0018]: «@D0195:P0018:179-326 sha256=784ae5ec5738d0ca3ff1a2397985d736386cbaba8509cb569c19b63016752841»
+    абзац: «@D0195:P0018:0-501 sha256=5d0368a6105a64f0aff0b5650ed9b2534c159fc630d3b8551068bbc7929b4552»
+M036: «European Union» (organization) | альтернативні назви: «EU» | стаття: «TITLE_SHA256:4730371ee511f5719f0d6eb81f5e10e8802d6523f010cf035fa459d75e9a2d95» (2026-02-13)
+  фрагмент [P0003]: «@D0541:P0003:173-303 sha256=b41b683dd1aef8b7e394b9b4dcab49bae8846975e1139a502c6ea56f887f8eca»
+    абзац: «@D0541:P0003:0-473 sha256=7e33bbe7873cb4c12dd750131405c6ecf1b690c713370f997988ad512bed136d»
+  фрагмент [P0028]: «@D0541:P0028:0-135 sha256=9556393c8b59e12f7252cecc1bf1438d86cd0987aeef50f2dd1e7b266ef73722»
+    абзац: «@D0541:P0028:0-320 sha256=418843c743390f66aea96ef43d9ee6647c180f9c58617db39b37f248b77456db»
+  твердження статті: «Union entities» — PART_OF → «European Union» (actual, positive)
+M037: «Union entities» (organization) | альтернативні назви: «European Union institutions, bodies, offices, and agencies» | стаття: «TITLE_SHA256:4730371ee511f5719f0d6eb81f5e10e8802d6523f010cf035fa459d75e9a2d95» (2026-02-13)
+  фрагмент [P0003]: «@D0541:P0003:173-303 sha256=b41b683dd1aef8b7e394b9b4dcab49bae8846975e1139a502c6ea56f887f8eca»
+    абзац: «@D0541:P0003:0-473 sha256=7e33bbe7873cb4c12dd750131405c6ecf1b690c713370f997988ad512bed136d»
+  фрагмент [P0027]: «@D0541:P0027:380-481 sha256=793a54b91489f6bad4b3d9a8b10ac00a32eeeed50d21439860dd7d124b314f85»
+    абзац: «@D0541:P0027:0-481 sha256=cf43518b062c6ae5cb9571acfd9652eb0be7a63899172dd12497c0a5a287ebf6»
+  твердження статті: «Union entities» — PART_OF → «European Union» (actual, positive)
+M038: «EU» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0032]: «@D0663:P0032:0-176 sha256=f5e8b1bcf6c46b2dedcc248ad47949631aa1a5ac3eeead4b415a3b344722dddb»
+  твердження статті: «EU» — WARNS_ABOUT → «China» (actual, positive)
+
+КІНЕЦЬ ГРУП

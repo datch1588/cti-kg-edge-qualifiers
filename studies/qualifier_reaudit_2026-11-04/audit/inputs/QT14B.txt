@@ -1,0 +1,229 @@
+AUDIT_FILE: QT14B
+TARGET_DOC_ID: D0445
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0445
+PUBLICATION_DATE: 2026-03-11
+SOURCE_URL: https://economictimes.indiatimes.com/news/international/us/can-iran-drones-attack-california-on-us-west-coast-or-will-it-launch-another-cyberattack-fbi-alert-on-iran-drone-threat-in-california-explained-warning-police-departments-use-of-drones-by-criminal-groups-near-us-mexico-border/articleshow/129478938.cms
+TITLE_SHA256: b3fe5d25632751cac4c318b707bbbdb8209a2dbf9271ce94685df1ec33c51daf
+BEGIN_DOCUMENT
+[D0445:P0001] sha256:b3fe5d25632751cac4c318b707bbbdb8209a2dbf9271ce94685df1ec33c51daf
+[D0445:P0002] sha256:05b3465ab4a0319580f5275d643cf3667c2d44539bd57310c4bba3059fd33eca
+[D0445:P0003] sha256:8eb3755381519d7f0479d75446e56e20084834c0460d7ec94926932372ea6c47
+[D0445:P0004] sha256:51180e8d62e16d34dc634e6da26aebcbf098c7f1ef5faa7b3eea55d9db6b3477
+[D0445:P0005] sha256:27b922a2d7eae59679237064c235ad446235cc6db13ed0761796415a641cca8d
+[D0445:P0006] sha256:225d29f6201e1a635684a6dc0e7a65d164c7ffe48588a421fc27b067a55bb02e
+[D0445:P0007] sha256:047d9e173323a7909c18deb319a8494603fe19f4fd37e00bdda5ee97da90dc98
+[D0445:P0008] sha256:8db71ed28b0f2f1432561e8d8a0dc3878f2da540c53a2ab82335b6f716da2ef3
+[D0445:P0009] sha256:a067f416cd57159491c6dc94ff274120bf4495e7a7d332d88b34c68c75905a5f
+[D0445:P0010] sha256:798acf8d08c28bcdf455110dffab00d5b04d5ba94da5d6c8780d9221c9a56813
+[D0445:P0011] sha256:b15f203443f160ab57eeff29df17d24066ae1cbd747e34473a54a9d00a785aa9
+[D0445:P0012] sha256:6c76b73f8d76c6224ba562012236c64b2e6fe57282726599ba96f37b8cba3725
+[D0445:P0013] sha256:baded1a38396d52b9e7e868c11960108d360dcc408134f1327ebff6150a7e040
+[D0445:P0014] sha256:ec828a1a83d9c29919b7f52615c91291ed0b1546aefdb1142e8d9a12aabe7149
+[D0445:P0015] sha256:6d26f633129ec519f55224d18684b0595af39e91146c562968228f8637a14205
+[D0445:P0016] sha256:b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5
+[D0445:P0017] sha256:212aa64d5f0795e18d496579d19eb8283c53a4bdde7f8f78638807f4c351f75a
+[D0445:P0018] sha256:4a90392746071f207d47bde7db952cee43bf44692cee28ebfb7cc8d5bde370a4
+[D0445:P0019] sha256:ba2b48055cc4f5ec2a25bd17e68f2daf00b82925894680fae5ec20ab93c1b4c1
+[D0445:P0020] sha256:fd01e0e05f52d3b783038ced28097b03d98719cb1e2515fced69a32a675d203f
+[D0445:P0021] sha256:eb6cf2823102165f9fe49f5cb9aa93c16c12d907c30d6dd1a8eba7ab4f566866
+[D0445:P0022] sha256:6cfd50073a1b8dcc73b438225b3c9a61e89c3ddde148c2d737b864a29ea8288f
+[D0445:P0023] sha256:4b8ed19b5fbad17395ec75869d5b30f434219a78473eeef7ad689a3f20490052
+[D0445:P0024] sha256:91756e35da5b761f2e818faa51a1626adc9c35371be1b51ae0be085b1acb4533
+[D0445:P0025] sha256:8bdddaa985387c81129585466ddd9e0bc363b38cc86fbcc953963624cff55ef0
+[D0445:P0026] sha256:d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5
+[D0445:P0027] sha256:f7edb50cfddcdddcfba2891c8f26ac4aeede9f9de6a445859df49b7c66d188c8
+[D0445:P0028] sha256:890231b9c4f123de0ee5a3658e953e7ec1abafcac6dabfce2154a55b8ddafa17
+[D0445:P0029] sha256:eeb30184f41fdbd7e93d55e9ec9df21a11d2bf471a1b5356c0db1ddf848b3a47
+[D0445:P0030] sha256:5108cd5dca28171cc455304cb1dd32531c627865bb2b0f9348cea99796a8662e
+[D0445:P0031] sha256:0cff615bed08ee4e8f1dfaffefeb42052d7cd539d9d263fc3b88e239e4bb6e1a
+[D0445:P0032] sha256:9bb3459ae76d3c4ad4ce401048f8e3db20e2c8d6bd9233d47779c412ea19c665
+[D0445:P0033] sha256:d513dc6262647efafb9e63268a5cfaf258e9db1bd72046647dbe6b07a1b307f5
+[D0445:P0034] sha256:e167d8ae014795c55b8ec6852af5fd7113375e152cc9eb052390c67eb4d5a2bb
+[D0445:P0035] sha256:44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9
+[D0445:P0036] sha256:d285f99e0bcf4cf9756fdfb9f166319895126c0fdcfcbb446109931ce2b9b7ff
+[D0445:P0037] sha256:4bada4abda51cb86354a364751d250fe281f940e23237ebe3183db9c3cd33c2e
+[D0445:P0038] sha256:d027162fac4c4d28e9dd7cc47053b7fbf3e6bbaf42bd275f5e04d1babcfd0e2d
+[D0445:P0039] sha256:8274069f1bd014849a7077ebf5409eabdfd942753ad89aaed4b8016a2f616832
+[D0445:P0040] sha256:d4b73301d7eeaef490dd0df7bd2672128e60557cc079eb76fda21681a05af87c
+[D0445:P0041] sha256:7b371e6db2221308e6aa9e427f9775d498c8cea4a0438a7afe6cd500f19abac5
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 31, вузлів 5)
+E001: «Trump administration» — targets → «Iran» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0445:P0025] «@88-175 sha256=2dd253d5899518d39394772b7f092613d8f64131192e02c5b7741cb0cbb76d6b»
+E002: «Iran» — located in → «Mexico» | форма: actual, positive
+  атрибуція: «John Cohen» | час події: — | контекст події: —
+  фрагменти: [D0445:P0032] «@124-301 sha256=39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715»
+E003: «Iran» — located in → «South America» | форма: actual, positive
+  атрибуція: «John Cohen» | час події: — | контекст події: —
+  фрагменти: [D0445:P0032] «@124-301 sha256=39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715»
+E004: «Iran» — uses → «unmanned aerial vehicles» | форма: conditional, positive
+  атрибуція: «FBI» | час події: — | контекст події: «alleged Iranian drone attack plan against California described in FBI alert»
+  фрагменти: [D0445:P0017] «@211-303 sha256=53666ac44b678f7182df0dca07caef4c1611f91a24969bb798646f2b23a1c40c»; [D0445:P0019] «@54-232 sha256=046293863cfc18f39566b43e52a7f951993c3065328344deeb591afebda44656»
+E005: «Iran» — uses → «drones» | форма: planned, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast»
+  фрагменти: [D0445:P0019] «@0-233 sha256=fd618200aac156d677519bddaf3a478f170c93148f32c975a8a04ad41f2112b6»; [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»
+E006: «FBI» — warns about → «drone attack» | форма: actual, positive
+  атрибуція: — | час події: «at the end of February» | контекст події: «FBI alert on alleged Iranian drone attack plan against California»
+  фрагменти: [D0445:P0004] «@90-176 sha256=c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe»; [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»; [D0445:P0025] «@0-87 sha256=f986542ea04848fd63fc50eb1cb5360e632198e9203850e9bc30ab9380474ba1»
+E007: «Iran» — targets → «California» | форма: conditional, positive
+  атрибуція: «FBI» | час події: — | контекст події: «alleged Iranian drone attack plan against California described in FBI alert»
+  фрагменти: [D0445:P0015] «@187-319 sha256=f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6»; [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E008: «US intelligence agencies» — warns about → «cyberattack» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «possible Iranian cyber operations against American systems, companies, or infrastructure»
+  фрагменти: [D0445:P0021] «@117-264 sha256=f9c646cf7edbea848ccf8dc283d6e727af91dde35f9a4bc1f1e515925c4239d4»
+E009: «Iran» — targets → «California» | форма: unknown, positive
+  атрибуція: «officials» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California»
+  фрагменти: [D0445:P0019] «@301-407 sha256=2603a40762b9d81656df825842f5109ba4048784ab1622052a2f430e5fc48378»; [D0445:P0033] «@295-398 sha256=7d6fa19380fa64acaef578f9858229b203e14c69f799b9c0bd08ae2b2edfc61e»
+E010: «Iran» — targets → «California» | форма: possible, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast»
+  фрагменти: [D0445:P0004] «@90-227 sha256=80d29d26d6e91e4fb6fe50570a61f68f31986f8270f8e630ac3e639ac5d35e3a»
+E011: «Israel» — targets → «Iran» | форма: possible, positive
+  атрибуція: «US intelligence officials» | час події: — | контекст події: «hypothetical US or Israeli strikes against Iran»
+  фрагменти: [D0445:P0033] «@95-294 sha256=ddd3e9566f24497e926941ee5ff1e2508ce27856bf2b69a4451bddfda785024b»
+E012: «Mexican drug cartels» — uses → «drone attack» | форма: planned, positive
+  атрибуція: «bulletin from September 2025» | час події: — | контекст події: «cartel leaders' approved drone attacks against US law enforcement and military personnel near the US-Mexico border»
+  фрагменти: [D0445:P0030] «@212-407 sha256=68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066»
+E013: «Iran» — uses → «drones» | форма: planned, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California»
+  фрагменти: [D0445:P0019] «@54-233 sha256=69ca5a4f21e1a1b031adf504ba2dac148dd55e7d25fc310a1fcbb6c4de4dde42»; [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»
+E014: «Mohair-10» — located in → «Iran» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0445:P0014] «@206-377 sha256=c8b10de7769631de5e3f06c295e126c166562c21f2d2168e78a59879882ec77c»
+E015: «United States» — targets → «Iran» | форма: possible, positive
+  атрибуція: «US intelligence officials» | час події: — | контекст події: —
+  фрагменти: [D0445:P0033] «@95-294 sha256=ddd3e9566f24497e926941ee5ff1e2508ce27856bf2b69a4451bddfda785024b»
+E016: «Israel» — targets → «Iran» | форма: possible, positive
+  атрибуція: «US intelligence officials» | час події: — | контекст події: —
+  фрагменти: [D0445:P0033] «@95-294 sha256=ddd3e9566f24497e926941ee5ff1e2508ce27856bf2b69a4451bddfda785024b»
+E017: «United States» — targets → «Iran» | форма: possible, positive
+  атрибуція: «FBI» | час події: — | контекст події: «hypothetical US strikes against Iran named as condition in the FBI alert»
+  фрагменти: [D0445:P0015] «@187-319 sha256=f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6»; [D0445:P0017] «@211-303 sha256=53666ac44b678f7182df0dca07caef4c1611f91a24969bb798646f2b23a1c40c»; [D0445:P0024] «@0-131 sha256=a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0»; [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E018: «Mexican drug cartels» — uses → «drone attack» | форма: possible, positive
+  атрибуція: «bulletin from September 2025» | час події: — | контекст події: «possible cartel drone attacks against US law enforcement and military personnel near the US-Mexico border»
+  фрагменти: [D0445:P0030] «@212-407 sha256=68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066»
+E019: «United States» — targets → «Iran» | форма: possible, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California»
+  фрагменти: [D0445:P0015] «@187-319 sha256=f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6»; [D0445:P0017] «@211-303 sha256=53666ac44b678f7182df0dca07caef4c1611f91a24969bb798646f2b23a1c40c»; [D0445:P0024] «@0-131 sha256=a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0»; [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E020: «Iran» — targets → «California» | форма: possible, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California»
+  фрагменти: [D0445:P0004] «@90-227 sha256=80d29d26d6e91e4fb6fe50570a61f68f31986f8270f8e630ac3e639ac5d35e3a»; [D0445:P0014] «@93-205 sha256=321cefd8f6fd854fb82b573001be1295972a2dd693168f20f63579ce82d3d7d6»
+E021: «Governor's Office of Emergency Services» — protects → «California» | форма: planned, positive
+  атрибуція: «office of Governor Gavin Newsom» | час події: — | контекст події: «California security preparations after FBI warning»
+  фрагменти: [D0445:P0027] «@144-362 sha256=c52c5d6b6c6e727f190ba603f6d5f0e4bcf245e2c99b4b7d62fe42e64c1d48b7»
+E022: «Iran» — targets → «California» | форма: conditional, positive
+  атрибуція: «FBI» | час події: — | контекст події: «alleged drone attack plan from a vessel near the US coast if the United States conducted strikes against Iran»
+  фрагменти: [D0445:P0015] «@187-319 sha256=f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6»; [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E023: «Iran» — uses → «drones» | форма: conditional, positive
+  атрибуція: «FBI alert» | час події: — | контекст події: «alleged drone attack plan from a vessel near the US coast if the United States conducted strikes against Iran»
+  фрагменти: [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»; [D0445:P0024] «@0-131 sha256=a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0»
+E024: «California» — located in → «US West Coast» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0445:P0001] «@0-89 sha256=b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5»
+E025: «John Cohen» — warns about → «drone attack» | форма: actual, positive
+  атрибуція: «John Cohen» | час події: — | контекст події: «possible Iranian drone attacks against California»
+  фрагменти: [D0445:P0032] «@302-396 sha256=b2e3a6a39ef9112f1ae8ebe06022c768a0b5a3ab0f2858d00ffbd51a99de7565»; [D0445:P0032] «@0-123 sha256=b0d9d3e7ad471cce72304e810661ef61102c41881f97d0ad1adafc83b10fc25e»
+E026: «Mexican drug cartels» — targets → «US law enforcement» | форма: possible, positive
+  атрибуція: «bulletin from September 2025» | час події: — | контекст події: «possible cartel drone attacks using explosives near the US-Mexico border»
+  фрагменти: [D0445:P0030] «@212-407 sha256=68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066»
+E027: «Iran» — uses → «drones» | форма: conditional, positive
+  атрибуція: «John Cohen» | час події: — | контекст події: «alleged drone attack plan from a vessel near the US coast if the United States conducted strikes against Iran»
+  фрагменти: [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»; [D0445:P0024] «@0-131 sha256=a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0»
+E028: «Iran» — uses → «drone attack» | форма: planned, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast»
+  фрагменти: [D0445:P0017] «@32-209 sha256=da027bfc1b8083f426f025851e90380e0a3a30a6f2b5bf9903427844d7bf2f93»; [D0445:P0022] «@54-239 sha256=a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd»; [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E029: «Iran» — uses → «drone attack» | форма: possible, positive
+  атрибуція: «FBI» | час події: — | контекст події: «FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast»
+  фрагменти: [D0445:P0004] «@90-176 sha256=c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe»
+E030: «Iran» — uses → «drone attack» | форма: conditional, positive
+  атрибуція: «FBI alert» | час події: — | контекст події: «alleged drone attack plan from a vessel near the US coast if the United States conducted strikes against Iran»
+  фрагменти: [D0445:P0035] «@0-174 sha256=44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9»
+E031: «Mohair-10» — located in → «Iran» | форма: actual, positive
+  атрибуція: «Iranian Defense Ministry» | час події: — | контекст події: —
+  фрагменти: [D0445:P0014] «@206-377 sha256=c8b10de7769631de5e3f06c295e126c166562c21f2d2168e78a59879882ec77c»
+V001: «Department of Homeland Security» (organization) | альтернативні назви: «FBI»
+V002: «drone attack» (attack_technique) | альтернативні назви: «drone strike»
+V003: «US intelligence agencies» (organization) | альтернативні назви: «intelligence agencies»; «Intelligence agencies»
+V004: «drone attack» (attack_technique) | альтернативні назви: «drone strike»; «drone strikes»; «drone attacks»
+V005: «cyberattack» (attack_technique) | альтернативні назви: «cyber operations»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,91 @@
+{
+ "A": {
+  "records": 786,
+  "actual_positive": 673,
+  "actual_positive_correct": 668,
+  "actual_positive_false_form": 0,
+  "other_form": 113,
+  "other_form_correct": 76,
+  "other_form_false_form": 28,
+  "other_form_form_U": 9,
+  "other_form_triple_not_C": 0
+ },
+ "A_other_form_by_label": {
+  "possible, positive": {
+   "n": 69,
+   "correct": 44,
+   "false_form": 17
+  },
+  "planned, positive": {
+   "n": 23,
+   "correct": 17,
+   "false_form": 5
+  },
+  "recommended, positive": {
+   "n": 8,
+   "correct": 4,
+   "false_form": 4
+  },
+  "conditional, positive": {
+   "n": 6,
+   "correct": 4,
+   "false_form": 2
+  },
+  "actual, negative": {
+   "n": 6,
+   "correct": 6,
+   "false_form": 0
+  },
+  "planned, negative": {
+   "n": 1,
+   "correct": 1,
+   "false_form": 0
+  }
+ },
+ "A_other_form_vs_C": {
+  "A_other_form": 113,
+  "same_triple_in_C": 42,
+  "no_same_triple_in_C": 71,
+  "C_verdicts_on_same_triple": {
+   "C/I": 20,
+   "C/C": 13,
+   "C/U": 8,
+   "U/—": 1
+  }
+ },
+ "B": {
+  "records": 1851,
+  "triple_C": 1803,
+  "false_form": 131,
+  "false_form_shared_with_A": 0
+ },
+ "C": {
+  "records": 672,
+  "triple_C": 659,
+  "false_form": 23,
+  "false_form_shared_with_A": 0
+ },
+ "A_only": {
+  "records": 295,
+  "correct": 257,
+  "other_form": 113
+ },
+ "C_only": {
+  "records": 181,
+  "correct": 141
+ },
+ "facts_layer_A_minus_C": {
+  "articles": 49,
+  "A": 0.9925595238095238,
+  "C": 0.9345238095238095,
+  "diff": 0.0580357142857143,
+  "ci95": [
+   0.033589711259614186,
+   0.08787982877979184
+  ]
+ },
+ "A_false_form_direction_manual": {
+  "стаття подає як факт": 26,
+  "інша нефактична форма": 2
+ }
+}

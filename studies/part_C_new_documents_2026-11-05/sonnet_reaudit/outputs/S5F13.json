@@ -1,0 +1,32 @@
+{
+ "audit_file": "S5F13",
+ "target_doc_id": "D0549",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: служба поєднує Wazuh Cloud з просунутими моделями машинного навчання."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Wazuh поєднує можливості SIEM і XDR."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: Wazuh використовує FIM серед своїх можливостей."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: виявлення вразливостей використовує дані Wazuh CTI."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: Wazuh використано для виявлення програми-вимагача Cephalus."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: Wazuh ідентифікує відомі CVE."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує використання SIEM, полярність має бути positive."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: Wazuh пропонує службу Wazuh AI analyst."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: служба поєднує Wazuh Cloud з моделями машинного навчання."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: у блозі Claude Haiku інтегровано в панель Wazuh."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: Wazuh застосовує виявлення шкідливого ПЗ."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент розгортається на Windows."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: Wazuh пропонує службу AI analyst."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: Wazuh пропонує виявлення вразливостей."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0026: Wazuh пропонує SCA."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: інтеграція Claude LLM у панель Wazuh."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Wazuh надає можливості для побудови кіберстійкості."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент розгортається на Linux."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: виявлення вразливостей Wazuh спирається на Wazuh CTI."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: служба призначена для користувачів Wazuh Cloud і поєднує з ним ML."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Wazuh поєднує можливості SIEM і XDR."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент розгортається на macOS."},
+  {"item_id": "E023", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: агент Wazuh підтримує macOS, а не навпаки."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: служба призначена для Wazuh Cloud і поєднує з ним ML."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: Wazuh може виявляти індикатори компрометації."},
+  {"item_id": "E026", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: Wazuh автоматично видаляє виконуваний файл Cephalus."}
+ ]
+}

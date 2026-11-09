@@ -1,0 +1,192 @@
+AUDIT_FILE: QT49A
+TARGET_DOC_ID: D0069
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0069
+PUBLICATION_DATE: 2026-06-12
+SOURCE_URL: https://www.nextgov.com/policy/2026/06/house-vote-puts-section-702-brink-historic-lapse-amid-fight-over-acting-spy-chief/414136/
+TITLE_SHA256: 983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+BEGIN_DOCUMENT
+[D0069:P0001] sha256:983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+[D0069:P0002] sha256:e80181a03d36305754701ab93f16a0dcf70b1c2e0588f9a25efbb4f1bb26b0e5
+[D0069:P0003] sha256:b187522810127ece794cb48c3e553520f063b79b154c9b6d83cc1c6d730ee8d4
+[D0069:P0004] sha256:8dc5b08d536f17aaec250f03384e508adae88191807d4e4ec84a9d033807e2e8
+[D0069:P0005] sha256:f259e65420e664107ad58dbb1b8a1658a17914faa0ed0f1439cee8cfa69c02b3
+[D0069:P0006] sha256:67773ccb7b19d2aeceb9092a1e3838f677dfebfce403896a9b991729f87a0598
+[D0069:P0007] sha256:f0f82c180d489f86808aebed93b64ff72659ef4bc7ef16bf1b6a14dc8a39fdb7
+[D0069:P0008] sha256:ea55264cad0744b7305d6bb8d67caf8372186470dcf8c7730a05c6b5e51d8643
+[D0069:P0009] sha256:34e1941448a3fcb3c07d9b82bc7e610741031595271c5a258af1b83126ff1527
+[D0069:P0010] sha256:f38242b0d96aa40ae3d47e8af0c6d0304b975af2b4b6ce14bd8f790940d7180f
+[D0069:P0011] sha256:9f05f7d0e94f2d913610d0e3cc3a77c2bea30cd014e51b72e361dd274ac09334
+[D0069:P0012] sha256:6d034e99a8c6e643aa090361e8ecc7ef62c596a28a300a1234d0d768ada16d59
+[D0069:P0013] sha256:d42b22cb3169b133de1f4f64840a0474823764a7c16678b7557a35ec5a661af4
+[D0069:P0014] sha256:0d0cfedf2f939a1e0effdbe89c21682cc417d541f5fe7a6a8f7a3d64d5776402
+[D0069:P0015] sha256:a19ec4b8de2ece4766895c708ea56bed65450d61c0b2120d5fea56235fec9e40
+[D0069:P0016] sha256:ce3b8a9162801d9864145572e1b4dc5313605f4c458f6b538ed2575b80082433
+[D0069:P0017] sha256:cac01b8f83f0395c30ed5abf0159cf0df4f399f0bd0704f9229b1a35a29b5e38
+[D0069:P0018] sha256:5f8ac9557843c6df242f6749f5921806f6f61347b343351056a2b1d2c1a2e23b
+[D0069:P0019] sha256:0e613c983c33226e388a80e2294bd3bc971cd7423fa317c47fafa1ed7df9a05a
+[D0069:P0020] sha256:6a1d4bf882175cf72b6618cfedea5c06ca1b49233540b4628c4be10b01e9b452
+[D0069:P0021] sha256:553baa2f7b505e928bc387513741eee6a455593993c6eb23996f21e81aaeea41
+[D0069:P0022] sha256:d9043b58a228ef3fb5b0d8b10da175179ab0a0ff8a819fb4f315e6df3c10566f
+[D0069:P0023] sha256:bacc752e9c931231fce5fa784e918a1a88bf6570e9e893da2703acfd72f450d6
+[D0069:P0024] sha256:dc18f3e3c7f04a315438eae99c2c70b2ec8cd6eda667391d9c182b7dd1ee3458
+[D0069:P0025] sha256:fc13334012fdff190409579062b043a45ddca1bd9f6b158f6518139f6713b502
+[D0069:P0026] sha256:3ac96c9cdb27a6c3cf90387ff1ad7a33c6ec93e3502603a8a3aab4d6bfde1abf
+[D0069:P0027] sha256:682cc4c5ec8af8c3ad99996ca20e009a8d2de317dbb9889ec5c3605da0378dab
+[D0069:P0028] sha256:52f7ed557459b03ddec2b137f586602ff539aa60851510d868da1bb8e8d9af62
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 21, вузлів 11)
+E001: «CIA» — uses → «Section 702» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0026] «@0-127 sha256=a55aa415dc801aa4c7b03bba8891b5aa968c4702f6a89429b40a9c54dc37b927»
+E002: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0004] «@12-88 sha256=aad73db8148694e05c47f4152e2a2d48d150e149ba7f2bc999c7e0ee37ea4a97»; [D0069:P0015] «@0-55 sha256=4fc218fb83ec633e883caeacf1b900d5fd007e8b71115fea7bc10ddcf166b2e0»
+E003: «Bill Pulte» — leads → «Office of the Director of National Intelligence» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «Bill Pulte's appointment as acting director of national intelligence»
+  фрагменти: [D0069:P0004] «@114-216 sha256=f4d74c3e38b3d22bf5fe8b4ec81d566fd5a40bdc40f258dcf21b1d7160378f94»
+E004: «Gabbard» — leads → «Office of the Director of National Intelligence» | форма: recommended, positive
+  атрибуція: «Mark Warner» | час події: — | контекст події: «acting leadership of the intelligence office through the transition»
+  фрагменти: [D0069:P0012] «@1-90 sha256=8f82af5f06059274798e0f3accef16e6c5b11ad9ab4eab886b1f300928daf7b1»
+E005: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0004] «@12-88 sha256=aad73db8148694e05c47f4152e2a2d48d150e149ba7f2bc999c7e0ee37ea4a97»
+E006: «Jim Himes» — member of → «House Intelligence Committee» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0013] «@126-226 sha256=cb05253b49087ae3c42e56dc6d9a64d62a31c025f23b11f4661ff156c15c233c»
+E007: «Glenn Gerstell» — warns about → «cyberattacks» | форма: actual, positive
+  атрибуція: «Glenn Gerstell» | час події: — | контекст події: «higher risk if the Section 702 authority lapses»
+  фрагменти: [D0069:P0023] «@0-122 sha256=a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea»
+E008: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0004] «@0-88 sha256=9d0c3c3a76239fb12fe934e0676795dd8a68af2d1aa02f4d71f7328931068914»; [D0069:P0015] «@0-104 sha256=286ccd60edb75fb00991d7c889aff26d217d28edfd98adbfe11e54c907575610»
+E009: «NSA» — uses → «Section 702» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0005] «@0-108 sha256=78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1»
+E010: «Democrats» — warns about → «abuse of intelligence tools» | форма: actual, positive
+  атрибуція: «Democrats» | час події: — | контекст події: —
+  фрагменти: [D0069:P0007] «@64-212 sha256=fc862ab32b2462aa2506f5b301d9a1730498b26319e0ec76cc0e1036f239634d»
+E011: «Glenn Gerstell» — member of → «NSA» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0021] «@0-71 sha256=553baa2f7b505e928bc387513741eee6a455593993c6eb23996f21e81aaeea41»
+E012: «Bill Pulte» — leads → «Office of the Director of National Intelligence» | форма: planned, positive
+  атрибуція: — | час події: «2026-06-12» | контекст події: «Bill Pulte's appointment as acting director of national intelligence»
+  фрагменти: [D0069:P0004] «@114-216 sha256=f4d74c3e38b3d22bf5fe8b4ec81d566fd5a40bdc40f258dcf21b1d7160378f94»
+E013: «Mark Warner» — member of → «Senate Intelligence Committee» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0009] «@0-95 sha256=95a0b23896ff849a34f6687c0fb621d65e1064b2b769ae5e80cb67858fceee07»
+E014: «Bill Pulte» — leads → «Office of the Director of National Intelligence» | форма: recommended, negative
+  атрибуція: «Mark Warner» | час події: — | контекст події: «condition for the Senate to take up a FISA extension»
+  фрагменти: [D0069:P0011] «@0-140 sha256=9f05f7d0e94f2d913610d0e3cc3a77c2bea30cd014e51b72e361dd274ac09334»
+E015: «Aaron Lukaas» — member of → «Office of the Director of National Intelligence» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0012] «@186-249 sha256=70598f40a996b4306e5232a4b3da134f2239e5834b032beb5e6d7990a08dc94c»; [D0069:P0012] «@57-174 sha256=ea28ce9ae5e56525f472287bee6ecc2499aaed51531531d2f12d2e280b45134b»
+E016: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0004] «@0-88 sha256=9d0c3c3a76239fb12fe934e0676795dd8a68af2d1aa02f4d71f7328931068914»; [D0069:P0015] «@0-177 sha256=e8ba8d4e9d7b9b4a31bdaa79fa3c06d86c9a3f3fb2f57511cc3e1b9ff9cd9b67»
+E017: «Glenn Gerstell» — warns about → «terror attacks» | форма: actual, positive
+  атрибуція: «Glenn Gerstell» | час події: — | контекст події: «statutory lapse of Section 702»
+  фрагменти: [D0069:P0023] «@0-122 sha256=a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea»
+E018: «Jay Clayton» — leads → «Office of the Director of National Intelligence» | форма: planned, positive
+  атрибуція: «Donald Trump» | час події: — | контекст події: «nomination of Jay Clayton as permanent director of national intelligence»
+  фрагменти: [D0069:P0004] «@176-425 sha256=54bf2de10c21b385062427aa6a055fb112a3507371aa012cd755d5f594b3cb51»
+E019: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+  атрибуція: «Donald Trump» | час події: — | контекст події: —
+  фрагменти: [D0069:P0004] «@0-88 sha256=9d0c3c3a76239fb12fe934e0676795dd8a68af2d1aa02f4d71f7328931068914»; [D0069:P0015] «@0-177 sha256=e8ba8d4e9d7b9b4a31bdaa79fa3c06d86c9a3f3fb2f57511cc3e1b9ff9cd9b67»
+E020: «NSA» — uses → «Section 702» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0005] «@0-108 sha256=78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1»; [D0069:P0026] «@0-127 sha256=a55aa415dc801aa4c7b03bba8891b5aa968c4702f6a89429b40a9c54dc37b927»
+E021: «Jim Himes» — member of → «House Intelligence Committee» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0069:P0013] «@126-204 sha256=f3ffac9c91a4a8570e86fb8e55152aa3c5a324cfa73cede140365ca19845405a»
+V001: «Senate Intelligence Committee» (organization) | альтернативні назви: «CIA»
+V002: «Glenn Gerstell» (person) | альтернативні назви: «Gerstell»
+V003: «Section 702» (other) | альтернативні назви: «702»
+V004: «House of Representatives» (organization) | альтернативні назви: «House»
+V005: «Bill Pulte» (person) | альтернативні назви: «Pulte»
+V006: «statutory lapse» (event) | альтернативні назви: «lapse»
+V007: «Jim Himes» (person) | альтернативні назви: «Himes»
+V008: «Foreign Intelligence Surveillance Act» (other) | альтернативні назви: «FISA»
+V009: «Section 702» (other) | альтернативні назви: «Section 702 of FISA»; «702»
+V010: «Jay Clayton» (person) | альтернативні назви: «Clayton»
+V011: «Section 702» (other) | альтернативні назви: «Section 702 of the Foreign Intelligence Surveillance Act»; «Section 702 of FISA»; «702»
+КІНЕЦЬ ЗАПИСІВ

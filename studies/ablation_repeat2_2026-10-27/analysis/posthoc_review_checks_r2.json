@@ -1,0 +1,128 @@
+{
+ "r1": {
+  "B_false_form_with_marker": 67,
+  "A": {
+   "records": 756,
+   "triple_c": 743,
+   "form_I": 15,
+   "form_U": 5,
+   "form_dash": 0,
+   "triple_U": 10,
+   "triple_I": 3,
+   "correct": 723,
+   "correct_actual_pos": 626,
+   "correct_nonactual": 97
+  },
+  "B": {
+   "records": 2112,
+   "triple_c": 2045,
+   "form_I": 170,
+   "form_U": 10,
+   "form_dash": 0,
+   "triple_U": 30,
+   "triple_I": 37,
+   "correct": 1865,
+   "correct_actual_pos": 1865,
+   "correct_nonactual": 0
+  },
+  "lenient_A-B_BASELINE": {
+   "n": 50,
+   "x": 95.6480189257921,
+   "y_lenient": 90.99374558877855,
+   "diff": 4.65427333701356,
+   "ci": [
+    1.3167627305742893,
+    7.934217952911336
+   ]
+  },
+  "lenient_A-B_ABLATION": {
+   "n": 50,
+   "x": 95.6480189257921,
+   "y_lenient": 90.99374558877855,
+   "diff": 4.65427333701356,
+   "ci": [
+    1.3107855911728397,
+    8.056941205241243
+   ]
+  }
+ },
+ "r2": {
+  "B_false_form_with_marker": 55,
+  "A": {
+   "records": 786,
+   "triple_c": 781,
+   "form_I": 28,
+   "form_U": 9,
+   "form_dash": 0,
+   "triple_U": 3,
+   "triple_I": 2,
+   "correct": 744,
+   "correct_actual_pos": 668,
+   "correct_nonactual": 76
+  },
+  "B": {
+   "records": 1851,
+   "triple_c": 1803,
+   "form_I": 131,
+   "form_U": 20,
+   "form_dash": 0,
+   "triple_U": 21,
+   "triple_I": 27,
+   "correct": 1652,
+   "correct_actual_pos": 1652,
+   "correct_nonactual": 0
+  },
+  "C": {
+   "records": 672,
+   "triple_c": 659,
+   "form_I": 23,
+   "form_U": 8,
+   "form_dash": 0,
+   "triple_U": 6,
+   "triple_I": 7,
+   "correct": 628,
+   "correct_actual_pos": 628,
+   "correct_nonactual": 0
+  },
+  "lenient_A-B_BASELINE": {
+   "n": 50,
+   "x": 94.57861355508582,
+   "y_lenient": 91.8509595025226,
+   "diff": 2.72765405256322,
+   "ci": [
+    -0.5631470952232187,
+    5.923285885323976
+   ]
+  },
+  "lenient_C-B_BASELINE": {
+   "n": 49,
+   "x": 91.97577246425733,
+   "y_lenient": 91.81220357400265,
+   "diff": 0.1635688902546728,
+   "ci": [
+    -3.1462464022569208,
+    3.2201854389772135
+   ]
+  },
+  "lenient_A-B_ABLATION": {
+   "n": 50,
+   "x": 94.57861355508582,
+   "y_lenient": 91.8509595025226,
+   "diff": 2.72765405256322,
+   "ci": [
+    -0.47032199058723745,
+    5.894775065654536
+   ]
+  },
+  "lenient_C-B_ABLATION": {
+   "n": 49,
+   "x": 91.97577246425733,
+   "y_lenient": 91.81220357400265,
+   "diff": 0.1635688902546728,
+   "ci": [
+    -3.147850271470301,
+    3.235748135250094
+   ]
+  }
+ }
+}

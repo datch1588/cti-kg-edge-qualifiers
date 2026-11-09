@@ -1,0 +1,194 @@
+AUDIT_BATCH: N09
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N09-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N09-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N09-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 3 (TARGET_DOC_ID: D0440) ===
+DOC_ID: D0440
+PUBLICATION_DATE: 2026-03-12
+SOURCE_URL: https://www.ibtimes.com/stryker-cyberattack-sparks-health-sector-alert-iran-linked-hackers-target-medtech-firm-serving-3799010
+TITLE_SHA256: 7ce3e5234af2dac2663e9e98901829a11852a52b4434866ac42dfe50839bac24
+BEGIN_DOCUMENT
+[D0440:P0001] sha256:7ce3e5234af2dac2663e9e98901829a11852a52b4434866ac42dfe50839bac24
+[D0440:P0002] sha256:3c76112cd1c982c8d2cba9610507cb924840108b250138fffa845c7949450d79
+[D0440:P0003] sha256:3473d295bd6aad3c81689606add106472623b984a434ef4c79ad02ba5eab6429
+[D0440:P0004] sha256:5b8c62837d25df3189844d9b5cbb2647728a64e9eaf28a3afc2e8b85e716999a
+[D0440:P0005] sha256:caf30e90e368d14bdb7cd58470c44378659273d3f89bf0039645ff9bc6bde6b8
+[D0440:P0006] sha256:f081b5cbfaac3d9d1bf31680d4fb03ddab2d99b67778be80f4fad07b8a1e81f4
+[D0440:P0007] sha256:7067fc083f60e95f9f9ae12e466b3a05c7917d3c2b71c8af9246e5aff221d419
+[D0440:P0008] sha256:e67f28c898368cffb706763894e7be4e4647173c541e1a17dfa4161e79ebd1d6
+[D0440:P0009] sha256:a9299b9b13cd746254c315f0e091331981635b52078135d202a3cbf4f3c94813
+[D0440:P0010] sha256:84df0af09e14683cd9e020fffcccd6ec4968c49b99c5bd4bf0d5d1e5ab71e8ef
+[D0440:P0011] sha256:c60144c3b5f25456a43e782143a78539b4a7c8903db1acadb9fefe832fc4ddb2
+[D0440:P0012] sha256:a4fe50b6c72ef6637014302b677ef0d3eb566d51e1c896d33e976158e96d7faa
+[D0440:P0013] sha256:5a7326637d1b563bcb06722dbadeefae572af2468ba412957a0a00f126e5a6d0
+[D0440:P0014] sha256:38e8d2235b7d9205c67cd0ee709ccecb5118d238b0cd9a91cf4c8af1b934defc
+[D0440:P0015] sha256:36d6545ca5be5124ceae9e09a905e991143537377899a3d2435fca9da87cc270
+[D0440:P0016] sha256:92aa64443c8bd904348ebdd6c1a6dbeccd0134546cef0996587a52a4bbd644dd
+[D0440:P0017] sha256:54409cbff6c73de08691a7b27e9cd7d0de992e369e2e7caeb30ada5978ac3b25
+[D0440:P0018] sha256:4815ceb1c582d8c759df549988413e2b6d6a0f0e4eeed86ef6ee0340ba8f0567
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (13)
+N09-E001: «Stryker cyberattack» — attributed to → «Handala» | форма: actual, positive
+N09-E002: «Stryker Corporation» — mitigates → «Stryker cyberattack» | форма: actual, positive
+N09-E003: «Stryker Corporation» — provides → «orthopaedic implants» | форма: actual, positive
+N09-E004: «Stryker Corporation» — provides → «surgical instruments» | форма: actual, positive
+N09-E005: «Stryker cyberattack» — attributed to → «Handala» | форма: actual, negative
+N09-E006: «US» — located in → «Stryker Corporation» | форма: actual, positive
+N09-E007: «Stryker cyberattack» — targets → «Stryker Corporation» | форма: actual, positive
+N09-E008: «Stryker cyberattack» — targets → «Stryker Corporation» | форма: actual, negative
+N09-E009: «The Wall Street Journal» — reports on → «Stryker cyberattack» | форма: actual, positive
+N09-E010: «Stryker cyberattack» — affects → «Stryker Corporation» | форма: actual, positive
+N09-E011: «Stryker cyberattack» — uses → «wiper malware» | форма: actual, positive
+N09-E012: «Stryker Corporation» — provides → «hospital robotics» | форма: actual, positive
+N09-E013: «Stryker Corporation» — located in → «US» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 3 (TARGET_DOC_ID: D0419) ===
+DOC_ID: D0419
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://amp.theguardian.com/world/2026/mar/13/uk-signs-rebooted-defence-agreement-to-protect-irish-waters
+TITLE_SHA256: 3962942d29e4154627a65aeccbe2c31d7e2892e4e8a58035a462da15c9beaff5
+BEGIN_DOCUMENT
+[D0419:P0001] sha256:3962942d29e4154627a65aeccbe2c31d7e2892e4e8a58035a462da15c9beaff5
+[D0419:P0002] sha256:58d9f34f259138a72f997f1aa17afb01db241754a56cba0565d787cd2c4097b6
+[D0419:P0003] sha256:965705ebc66a0205d4bbf06c0255a63c313339246fd524a7d19f85bbeb2dca64
+[D0419:P0004] sha256:751509316bbc500dce875a9442a439b2c8c89eb99ff581c2b26c8345f0022278
+[D0419:P0005] sha256:c641811481f48ccfdac94118481296354ed80105514e4bbafe40fb01f41c065c
+[D0419:P0006] sha256:4c05d5153060a77bd0f451b387e3038af43253721225c7f87adedbe82cd30dff
+[D0419:P0007] sha256:61a8ee9f9887aea8bf763aa1267dafce68b41ec86a23da2562a8b221b3cc50dc
+[D0419:P0008] sha256:b7589cf4aa51e39b4b2ea602dbe342c8a69a97bfd393bcc0d39966e66bf69f8a
+[D0419:P0009] sha256:ca2ddb9b832b89fcacec37ee12d5e8ce0ea0029b5cde606c02722a8ea0457e01
+[D0419:P0010] sha256:432c5aa25f9658b43d61fd8b16a0c60320e6037732ee0f21dc1921ec388df758
+[D0419:P0011] sha256:5ef7ad38307b2eca0f01b1097af169e188dd4ea519e3f13efdb141316804aef7
+[D0419:P0012] sha256:82d1c4e7e4aca7029365494415db0ee872e2392948dc40e76fbad69cf4a24a89
+[D0419:P0013] sha256:9c0a0d9ba78728f814014f5b91d854bc7845d68fe66555b5c99ae12e0ab95de7
+[D0419:P0014] sha256:f045ae38dd914cbff247bed37e3af00b243627181cee3270491e97e40c03eab2
+[D0419:P0015] sha256:3c82b8576755b68f1ee17e38036c5527e1b30c69ba3252a1068d543bbff19055
+[D0419:P0016] sha256:10ce78f7bdf947e38bae79b51201614d1a4f8c573b3fadf350d56d2220316bcc
+[D0419:P0017] sha256:280a12b3015068b442eb406959cecf0590d10fdbd85f11f09f64b041cf9f9e5e
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (27)
+N09-E014: «defence agreement» — mitigates → «cyber-threats» | форма: actual, positive
+N09-E015: «defence agreement» — protects → «Irish waters» | форма: actual, negative
+N09-E016: «John Healey» — warns about → «cyber-threats» | форма: actual, positive
+N09-E017: «defence agreement» — protects → «Irish waters» | форма: planned, positive
+N09-E018: «Royal Navy» — protects → «Irish waters» | форма: possible, positive
+N09-E019: «French» — protects → «Dublin» | форма: planned, positive
+N09-E020: «defence agreement» — mitigates → «sabotage» | форма: planned, positive
+N09-E021: «cyber-threats» — warns about → «John Healey» | форма: actual, positive
+N09-E022: «coordinated response mechanism» — mitigates → «subsea communication cable incidents» | форма: actual, positive
+N09-E023: «defence agreement» — mitigates → «sabotage» | форма: actual, positive
+N09-E024: «Ireland-UK summit» — located in → «Cork» | форма: actual, negative
+N09-E025: «Ireland-UK summit» — located in → «Cork» | форма: actual, positive
+N09-E026: «defence agreement» — protects → «Irish waters» | форма: actual, positive
+N09-E027: «sabotage» — targets → «undersea cables» | форма: possible, positive
+N09-E028: «incidents in the Irish Sea» — located in → «Irish Sea» | форма: actual, positive
+N09-E029: «second post-Brexit Ireland-UK summit» — located in → «Cork» | форма: actual, positive
+N09-E030: «transatlantic cables» — located in → «Ireland» | форма: actual, positive
+N09-E031: «Ireland» — member of → «Nato» | форма: actual, negative
+N09-E032: «Russia» — targets → «undersea cables» | форма: possible, positive
+N09-E033: «subsea communication cable incidents» — affects → «Ireland» | форма: possible, positive
+N09-E034: «defence agreement» — protects → «undersea cables» | форма: actual, positive
+N09-E035: «defence agreement» — mitigates → «cyber-threats» | форма: planned, positive
+N09-E036: «coordinated response mechanism» — part of → «defence agreement» | форма: actual, positive
+N09-E037: «Russian spy ship» — located in → «Irish Sea» | форма: actual, positive
+N09-E038: «defence agreement» — mitigates → «subsea communication cable incidents» | форма: planned, positive
+N09-E039: «defence agreement» — protects → «undersea cables» | форма: planned, positive
+N09-E040: «subsea communication cable incidents» — affects → «UK» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 3 (TARGET_DOC_ID: D0149) ===
+DOC_ID: D0149
+PUBLICATION_DATE: 2026-05-26
+SOURCE_URL: https://nournews.ir/en/news/319985
+TITLE_SHA256: 312e00dbdcbd3cc770b53467541d66209d47d0eefc24320bd51310c9ed5ebf1b
+BEGIN_DOCUMENT
+[D0149:P0001] sha256:312e00dbdcbd3cc770b53467541d66209d47d0eefc24320bd51310c9ed5ebf1b
+[D0149:P0002] sha256:f8a317de908473366bf37cb859129bd2e41697dbb83df1e74439a1c9fa7ce2b7
+[D0149:P0003] sha256:0be1f7d454d6c878834aceaff00d01bc0e2ca4b091c0240db40611ab75c2a330
+[D0149:P0004] sha256:acc49338315ec161bc7ba047dfe4197718c1c34117e0faab8a780e868bd032ad
+[D0149:P0005] sha256:eac0bdfb3ab2e6c80658b261df2465d7eb267a01999a22dfc25dca7cb45f9426
+[D0149:P0006] sha256:1fcd40417f6543e20109175ddf979d53a062f285d047f38a76237295fb5128db
+[D0149:P0007] sha256:7b315c01923fa27e32ce761233e903b75c9f8bde751449bd139445eac714cff7
+[D0149:P0008] sha256:6a1f6c67b9a16bea162f9342cc7eb9d76beadccf34f5d81bf60721cafdb75bab
+[D0149:P0009] sha256:28210b3024b0f28c3f613dd41f0dd9176d1c43cea211f0a5fa5e79407cd0bf94
+[D0149:P0010] sha256:5830bd8d982dbfdf9311fe3a2acedefe7b49353419c2fb805ab27a44e4102836
+[D0149:P0011] sha256:9ede8cb6db10b19b1d06f8ea8a9bbf374050e6a901a4da52082beaff9419145e
+[D0149:P0012] sha256:087396735dc33ad36c8da91ad6984270cc0082ce21c3943d2c814911e46badc4
+[D0149:P0013] sha256:d41d984f76bbbb01a3bac2c31817815571e915aa612b7a8a794c59572fd122b7
+[D0149:P0014] sha256:e25383e942314f10ac98a4ad36d9ac9b4689f091fb58feded1b6730e482d2691
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (21)
+N09-E041: «largest crypto hack in history» — affects → «Bybit» | форма: actual, positive
+N09-E042: «hackers» — uses → «social engineering» | форма: possible, positive
+N09-E043: «attack on May 22, 2025» — affects → «Cetus» | форма: actual, positive
+N09-E044: «hackers» — uses → «breaches of developer accounts» | форма: possible, positive
+N09-E045: «hackers» — uses → «advanced malware» | форма: possible, positive
+N09-E046: «social engineering» — uses → «hackers» | форма: actual, positive
+N09-E047: «$223 million attack» — affects → «Cetus» | форма: actual, positive
+N09-E048: «cyberattacks» — targets → «cryptocurrency industry» | форма: actual, positive
+N09-E049: «vulnerabilities» — affects → «smart contracts» | форма: actual, positive
+N09-E050: «incident recorded on November 3, 2025» — affects → «Balancer» | форма: actual, positive
+N09-E051: «attack on April 18, 2026» — affects → «Kelp DAO» | форма: actual, positive
+N09-E052: «vulnerabilities» — affects → «decentralized financial infrastructures» | форма: possible, positive
+N09-E053: «Visual Capitalist» — reports on → «cyberattacks» | форма: actual, positive
+N09-E054: «Bybit» — uses → «offline multi-signature storage system» | форма: actual, positive
+N09-E055: «malware» — enables → «largest crypto hack in history» | форма: actual, positive
+N09-E056: «hackers» — uses → «social engineering» | форма: actual, negative
+N09-E057: «hackers» — uses → «malware» | форма: actual, positive
+N09-E058: «vulnerabilities» — affects → «decentralized financial infrastructures» | форма: actual, positive
+N09-E059: «hackers» — uses → «social engineering» | форма: actual, positive
+N09-E060: «hackers» — uses → «breaches of developer accounts» | форма: actual, positive
+N09-E061: «largest crypto hack in history» — affects → «Bybit» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+КІНЕЦЬ ФАЙЛУ N09. Усього записів у файлі: 61 (від N09-E001 до N09-E061).

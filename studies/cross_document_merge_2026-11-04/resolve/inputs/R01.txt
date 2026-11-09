@@ -1,0 +1,164 @@
+RESOLVER_FILE: R01
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 3, згадок 34)
+
+ГРУПА G001 (згадок 3)
+M001: «National Crime Agency» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b1363dc62885d0c4757b389344186b4e6ffde03dfd75e4955ab7e06017c137b7» (2026-06-30)
+  фрагмент [P0014]: «@D0006:P0014:90-244 sha256=e361dfa3fcb65d30fefdb7c56ef959f67186a5c610f14782bc2d314415dfd862»
+    абзац: «@D0006:P0014:0-244 sha256=ff8e14cebab2a5aca0f7f071ffd60687dc329ab19efa56df1d1db36bf8eb146c»
+M002: «National Cybersecurity Alliance» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0038]: «@D0457:P0038:251-372 sha256=81615af921f61e4e207088caec9d28487bc182b2c83f6b3b42a7fcbcddef15c6»
+    абзац: «@D0457:P0038:0-523 sha256=340e31862b7f4f3ece199bcff91a60b4ef00bd7279e2672b7a433046043b3f54»
+M003: «National Crime Agency» (organization) | альтернативні назви: «NCA» | стаття: «TITLE_SHA256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca» (2026-01-25)
+  фрагмент [P0070]: «@D0593:P0070:0-143 sha256=1d7208ba89033f57347a957377ba060acd1d749cd7754d0f9fc59dfe85caecab»
+    абзац: «@D0593:P0070:0-183 sha256=11800d2e320110a03f5612f5e7fe2804cc39ec036daade395f9256149136a37f»
+  твердження статті: «Graeme Biggar» — LEADS → «National Crime Agency» (actual, positive)
+
+ГРУПА G002 (згадок 28)
+M004: «public» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:b1363dc62885d0c4757b389344186b4e6ffde03dfd75e4955ab7e06017c137b7» (2026-06-30)
+  фрагмент [P0011]: «@D0006:P0011:0-138 sha256=6387cc2a5743966ca3d690c3dc12c17ddca4decd77ffbc64e7ae1b9362dff93d»
+    абзац: «@D0006:P0011:0-265 sha256=a0679affb305bb7a1d31f73923a4d3a7c6f68292668e217ad25af5fe65821cc8»
+  твердження статті: «cyber criminals» — TARGETS → «public» (possible, positive)
+M005: «critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0019]: «@D0018:P0019:32-101 sha256=880c743e67735228b817fcba2846721d1b20d038b28fccf37b185f35c00ba064»
+    абзац: «@D0018:P0019:0-221 sha256=4e82e1a4ce5c3eb721da1b52a7000834e6657aa9b198ff8680db984f22774f26»
+  твердження статті: «AI» — AFFECTS → «critical infrastructure» (possible, positive); «AI-driven defense systems» — PROTECTS → «critical infrastructure» (recommended, positive); «Nation-state hackers» — TARGETS → «critical infrastructure» (actual, positive)
+M006: «energy» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0020]: «@D0018:P0020:53-182 sha256=48790bf968bf46c3770e72f3143e33864cfb6d8718ddbd2b737efad88c4b0987»
+    абзац: «@D0018:P0020:0-183 sha256=9e678ddf9a7a42ab2a86f021e243983328306ce6b5e4d3e283d9ef4c0677b329»
+  твердження статті: «ransomware» — TARGETS → «energy» (actual, positive)
+M007: «critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24)
+  фрагмент [P0004]: «@D0036:P0004:493-652 sha256=e17ef7aa4f1356f32b76c86d403844d9aa924fbed1fcc9968d49085256b155b5»
+    абзац: «…@D0036:P0004:52-652 sha256=ffef6eea41b0398f49f1804ec7fb95448ffb3224a137c4411b46268733c40ce6»
+  твердження статті: «geopolitical cyber risks» — AFFECTS → «critical infrastructure» (possible, positive)
+M008: «infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+  фрагмент [P0013]: «@D0137:P0013:26-97 sha256=476f1a2e49b2fc4d258a0a4810bf976556991e82900cb200263bb8866a99f088»
+    абзац: «@D0137:P0013:0-286 sha256=2628167dd957ca8fc2ac46ebfc82df645186626a777a1bab971341ae388ecb6f»
+  твердження статті: «cyber actors» — TARGETS → «infrastructure» (actual, positive)
+M009: «critical infrastructure sectors» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:199-331 sha256=92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «Volt Typhoon» — TARGETS → «critical infrastructure sectors» (actual, positive)
+M010: «energy» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+  фрагмент [P0006]: «@D0166:P0006:199-331 sha256=92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10»
+    абзац: «@D0166:P0006:0-331 sha256=ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca»
+  твердження статті: «Volt Typhoon» — TARGETS → «energy» (actual, positive)
+M011: «critical national infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0011]: «@D0197:P0011:131-226 sha256=579f3997ee3ea35003cefba6dd05c3b558c4c23d0c32d1d48f716c2fe98c5d70»
+    абзац: «@D0197:P0011:0-359 sha256=2f816e6648ab74c288ae8e93abb8b153028f9571fc75070ec8c33690b22f0494»
+  твердження статті: «UK government» — PROTECTS → «critical national infrastructure» (planned, positive)
+M012: «digital infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:5639e3dd302497ed41d3f8f2581c8076c1d499cedb3c8004a2d8087332254fec» (2026-04-24)
+  фрагмент [P0030]: «@D0252:P0030:0-142 sha256=d43a860207d4b2c439f5c04576c7da5108156ae62cd38c9368b1d7bb4711e131»
+    абзац: «@D0252:P0030:0-341 sha256=5b557b86849b21b839d9c194515b9a93764b41fe53de7b6fc6d7dd780c9fc063»
+  твердження статті: «electricity instability» — AFFECTS → «digital infrastructure» (actual, positive)
+M013: «public-sector digital infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:5639e3dd302497ed41d3f8f2581c8076c1d499cedb3c8004a2d8087332254fec» (2026-04-24)
+  фрагмент [P0035]: «@D0252:P0035:182-268 sha256=77d33e97b085be85de0ff8bcfe226f8ad0bbf6d33000e767158007ef5213c356»
+    абзац: «@D0252:P0035:0-399 sha256=3beffbfc91c2b9d2e36cf5206b87bf91c810e047cf56023dd3bf822db3547d28»
+  твердження статті: «targeted attacks» — TARGETS → «public-sector digital infrastructure» (actual, positive)
+M014: «energy systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0011]: «@D0262:P0011:245-303 sha256=afc73ea39a1eb229b3650365d6d99a383f5b0bc86cb9e7f3be069ef9f6d03235»
+    абзац: «@D0262:P0011:0-330 sha256=7de1287bfb7a4513c19f0cc1afb08240bbd5fa47da931aa6607f40279f319b56»
+  твердження статті: «Russia» — TARGETS → «energy systems» (actual, positive)
+M015: «critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0060]: «@D0418:P0060:12-75 sha256=8e46332da65e095610fe84087894589ac228e70afd9f0b4f0ce071f6a9204703»
+    абзац: «@D0418:P0060:0-220 sha256=b704e921ec4be984fd54a2d8489e51562a7ab3dd8dfdb198699b300bbeb270fa»
+  твердження статті: «counter-drone defences» — PROTECTS → «critical infrastructure» (recommended, positive)
+M016: «financial infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0012]: «@D0468:P0012:415-461 sha256=0d017ebf42639fefea1c70b82915348d3a57b2ed9023b7cf13c038226452821f»
+    абзац: «…@D0468:P0012:138-738 sha256=d7ebc4bab9389ba28022071b163796e334d08e275cd4cff6b2efc05961abab23…»
+  твердження статті: «Predatory Sparrow» — TARGETS → «financial infrastructure» (actual, positive)
+M017: «energy infrastructure supporting compute» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+  фрагмент [P0016]: «@D0478:P0016:292-423 sha256=c7685338aba34d327690c123b081b6f1c4409d662f50ad6d5ba9ace88f169011»
+    абзац: «@D0478:P0016:0-423 sha256=110ac83ea4330199c826bbf8195fe938afb4a8e65a4516f1bf3fb5e2760c234f»
+  твердження статті: «Iran» — TARGETS → «energy infrastructure supporting compute» (possible, positive)
+M018: «Critical National Infrastructures» (other) | альтернативні назви: «CNI» | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0016]: «@D0493:P0016:177-291 sha256=e38c2cc93d82e2b777cfd51fed4819c57336c78b3977845bcc4889816da635e5»
+    абзац: «@D0493:P0016:0-291 sha256=dcbb0c04f8552fd5e06169b41aa58697ebe31431bc705de26b3fac8717e59b5f»
+  твердження статті: «energy grids» — PART_OF → «Critical National Infrastructures» (actual, positive); «financial systems» — PART_OF → «Critical National Infrastructures» (actual, positive); «telecommunications networks» — PART_OF → «Critical National Infrastructures» (actual, positive)
+M019: «energy grids» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0016]: «@D0493:P0016:177-291 sha256=e38c2cc93d82e2b777cfd51fed4819c57336c78b3977845bcc4889816da635e5»
+    абзац: «@D0493:P0016:0-291 sha256=dcbb0c04f8552fd5e06169b41aa58697ebe31431bc705de26b3fac8717e59b5f»
+  твердження статті: «energy grids» — PART_OF → «Critical National Infrastructures» (actual, positive); «nation-state actors» — TARGETS → «energy grids» (actual, positive)
+M020: «Western infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0015]: «@D0493:P0015:107-193 sha256=8ef34bd6037e32f05156106c86706ba27a6c398a4b16b7a00ce2e6b59eeff90f»
+    абзац: «@D0493:P0015:0-193 sha256=d5fc2acf3bb8e69dc6f68979edf8801a2103c481577031cecf1344290738d38a»
+  твердження статті: «Iran» — TARGETS → «Western infrastructure» (actual, positive); «North Korea» — TARGETS → «Western infrastructure» (actual, positive); «Russia» — TARGETS → «Western infrastructure» (actual, positive)
+M021: «critical information infrastructure» (other) | альтернативні назви: «CII» | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0005]: «@D0505:P0005:67-160 sha256=87aa0dd0e2e54dd15e8ae0269366f6d985a53e2d480e5e5f8563d62502979969»
+    абзац: «@D0505:P0005:0-218 sha256=a5c3fe1e4ada546a7bdb215f6a3fbaf8d92577d107e92e9afeba11dd98e1a19c»
+  твердження статті: «clandestine cyber operations» — TARGETS → «critical information infrastructure» (actual, positive)
+M022: «Public Sector Governance Act» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0078]: «@D0505:P0078:0-146 sha256=d3733464e40422cef8be8523951ec095a3bf3b7e111272da871e9dfba0e04169»
+    абзац: «@D0505:P0078:0-241 sha256=72e2353ac9e2a77a87109d12bbab4b83d30611d83b55e1b6bd2796d1c12c8f31»
+M023: «Requirements for IT Infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0021]: «@D0539:P0021:68-194 sha256=0249939e6715da8283e765015adb8487e3c5e6e1654084b05c5bbd5d5d5ab6fb»
+    абзац: «@D0539:P0021:0-194 sha256=2bd9318746a8f1af7f04fbe938b78e60868bd8fbdd5e2cb59cfd2fd36724cadc»
+M024: «critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+  фрагмент [P0008]: «@D0550:P0008:284-374 sha256=5e31ef46ff9754886b21800abeb0df18f858c19f357d86b47822fef31b8b83dc»
+    абзац: «…@D0550:P0008:29-629 sha256=8872119649a6b944355b53bf93188288a00c512df1e3a206905593f10f69ef94…»
+  твердження статті: «Cybersecurity and Infrastructure Security Agency» — PROTECTS → «critical infrastructure» (actual, positive); «Secure Connectivity Principles for Operational Technology» — PROTECTS → «critical infrastructure» (actual, positive)
+M025: «critical national infrastructure» (other) | альтернативні назви: «CNI» | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+  фрагмент [P0015]: «@D0575:P0015:404-489 sha256=0df02bb8dec01e1c8e6c1c819b2d01f72b3ed72db7766d440e829941d9cf7db1»
+    абзац: «@D0575:P0015:0-544 sha256=c7b0f987e5361780f04a0625c7c99e196dc6f92275dcc89d3dd0064b329d23bf»
+  твердження статті: «Russia» — TARGETS → «critical national infrastructure» (actual, positive)
+M026: «critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0007]: «@D0587:P0007:0-148 sha256=1ee9766cf3c0f97b0ecb89a30c55932fa00f03d9b10cb8b90ac0b419a51d37cb»
+    абзац: «@D0587:P0007:0-357 sha256=23da2ca7885a9aa73cacf54584feae97194c4429c618b0221345554d6e128125»
+  твердження статті: «energy grids» — PART_OF → «critical infrastructure» (actual, positive); «telecommunications networks» — PART_OF → «critical infrastructure» (actual, positive); «AI-driven cyberattacks» — TARGETS → «critical infrastructure» (actual, positive)
+M027: «energy grids» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0007]: «@D0587:P0007:0-148 sha256=1ee9766cf3c0f97b0ecb89a30c55932fa00f03d9b10cb8b90ac0b419a51d37cb»
+    абзац: «@D0587:P0007:0-357 sha256=23da2ca7885a9aa73cacf54584feae97194c4429c618b0221345554d6e128125»
+  твердження статті: «energy grids» — PART_OF → «critical infrastructure» (actual, positive); «AI-driven cyberattacks» — TARGETS → «energy grids» (actual, positive)
+M028: «governance» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0015]: «@D0587:P0015:145-296 sha256=b5b50a077dffae8f2dc9f7f97c06186f2e73bacd3089ee34af58c9fc3f9ba35a»
+    абзац: «@D0587:P0015:0-464 sha256=1cdb6d8290062b1421647cd800297fa655164cdb2849a8c646c3b4085a33e6e4»
+  твердження статті: «governance» — MITIGATES → «data poisoning» (actual, positive); «governance» — MITIGATES → «abuse» (actual, positive); «governance» — MITIGATES → «espionage» (actual, positive)
+M029: «critical infrastructure» (other) | альтернативні назви: «critical infrastructures» | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0042]: «@D0608:P0042:215-265 sha256=5182f9763a37bd2fcc1f7b94d4c2d6bb33ada3bdfaa2f55148b09cd83fc65b03»
+    абзац: «@D0608:P0042:0-419 sha256=60afed070407e4a432f242445cc4088545e8fb2511a2154b7b54ddb27bda7e66»
+  фрагмент [P0005]: «@D0608:P0005:0-76 sha256=56053edc6f2178e3eedb6c2e29f65121a657418b82d0fc7bf9d0b76808d49413»
+    абзац: «@D0608:P0005:0-255 sha256=c87287dfb8da02f5ea94085706f03ef576fbda44d26ad9e54b17031b78bee5b3»
+  твердження статті: «Volt Typhoon» — TARGETS → «critical infrastructure» (actual, positive); «China» — TARGETS → «critical infrastructure» (actual, positive); «China» — TARGETS → «critical infrastructure» (actual, positive)
+M030: «energy sector» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0014]: «@D0663:P0014:25-143 sha256=a14a74274681ed77909f691c50f3f5248a8e7e464207f490bea2a657683daafb»
+    абзац: «@D0663:P0014:0-219 sha256=6ddcd2e7592b98a1cf21a3038b7d3016c6f4f287eb9f7b97de69c974b90aebdd»
+  твердження статті: «China's cyberarmy» — TARGETS → «energy sector» (actual, positive)
+M031: «Taiwan's critical infrastructure» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0009]: «@D0663:P0009:0-133 sha256=d831dc7854a834fb1c7882dc861909788d66f896263e596188397d08ad5df0e9»
+    абзац: «@D0663:P0009:0-185 sha256=fa6d39195ce56d5df921d01b6fed4fd5885c067ca85a60f58ad6225f76f8670b»
+  твердження статті: «DDoS» — AFFECTS → «Taiwan's critical infrastructure» (planned, positive); «China» — TARGETS → «Taiwan's critical infrastructure» (actual, positive); «China» — TARGETS → «Taiwan's critical infrastructure» (actual, positive)
+
+ГРУПА G003 (згадок 3)
+M032: «cyber criminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:b1363dc62885d0c4757b389344186b4e6ffde03dfd75e4955ab7e06017c137b7» (2026-06-30)
+  фрагмент [P0036]: «@D0006:P0036:115-215 sha256=d5e8efc1fd62cb10ea3ebfeb7e36ae203fa2886a84105e2b7af093343365f1dc»
+    абзац: «@D0006:P0036:0-215 sha256=07a7438507aaff54fce856f80cb515884d0a0baf6ca7d91104bbea4ca2b39eb8»
+  твердження статті: «cyber criminals» — TARGETS → «Major sporting occasions» (actual, positive); «cyber criminals» — TARGETS → «public» (possible, positive); «cyber criminals» — TARGETS → «IT system» (possible, positive)
+M033: «criminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0019]: «@D0045:P0019:134-225 sha256=ca464568fc211289fd9cd2e6c5fa12c0218ea56deef681c7a9ee8294b60ed1ea»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  твердження статті: «criminals» — USES → «Mythos» (possible, positive)
+M034: «cyber criminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0014]: «@D0197:P0014:130-264 sha256=d7f3ae818e2742099839fe1510e8f23fb6a8c73b6871a2c037f735ff952f5d72»
+    абзац: «@D0197:P0014:0-465 sha256=d58b31ff37645db875a352050abf53b507e4e8bd267e26ada3517cdb451179e1»
+  твердження статті: «cyber criminals» — USES → «AI models» (actual, positive)
+
+КІНЕЦЬ ГРУП

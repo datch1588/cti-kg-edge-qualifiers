@@ -1,0 +1,180 @@
+AUDIT_FILE: XM02
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CROSSDOC)
+
+Завдання
+Ти перевіряєш граф знань, побудований з кількох статей про кібербезпеку. Нижче наведено записи одного виду. Оціни кожен запис окремо лише за показаними фрагментами й абзацами статей та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Записи перемішані; звідки який запис і як його отримано, тобі невідомо й не має значення. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Вид записів: злиті твердження
+Кожен запис — ребро графа, злите із записів кількох статей. Для ребра показано твердження «суб'єкт — відношення → об'єкт» з формою (модальність, полярність) і полями атрибуції, часу й контексту події, а для кожного запису — його статтю, назви учасників у цій статті, фрагменти й абзаци:
+S001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність> | атрибуція: «…» | час події: «…» | контекст події: «…»
+  запис 1: стаття «назва статті» (дата): «суб'єкт у статті» — відношення → «об'єкт у статті»
+    фрагмент [P0005]: «…»
+    абзац: «…»
+  запис 2: …
+Тире замість значення означає, що поле порожнє.
+
+merge_verdict:
+- C — кожен запис за своїми фрагментами подає саме це твердження: ті самі сутності, те саме відношення в тому самому напрямі й ту саму форму.
+- I — хоча б один запис подає інше твердження: іншу сутність, інше відношення чи напрям, іншу модальність чи полярність, або його фрагменти цього твердження не подають.
+- U — неоднозначність, яку не вдалося усунути за показаними текстами.
+Відношення оцінюй за змістом, а не за дослівним збігом слів. Атрибуцію, час і контекст події тут не оцінюй.
+Не став C за замовчуванням: для кожного запису перевір кожен запис ребра.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{"audit_file": "значення AUDIT_FILE", "verdicts": [{"item_id": "S001", "merge_verdict": "C", "reason": "коротко, українською"}]}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення українською; для кожного вердикту I чи U обов'язково назви, що саме не так чи чого бракує. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (записів 14)
+
+S001: «United States» — MEMBER_OF → «Five Eyes» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25): «United States» — MEMBER_OF → «Five Eyes intelligence alliance»
+    фрагмент [P0012]: «@D0018:P0012:23-162 sha256=9139ddbdd896ced28ba68c41cedb5f5730fa74f4e44d447828a9812db64ded73»
+    абзац: «@D0018:P0012:0-448 sha256=5a3c26a97935129c60cceb0abb3c946f5fce326ecce7afc261e530472d8cb1ce»
+  запис 2: стаття «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24): «U.S.» — MEMBER_OF → «Five Eyes»
+    фрагмент [P0004]: «@D0036:P0004:0-128 sha256=842b08e3a95eabee2bd3749a66b9713072d4a72ab421aac25af1782508597f4a»
+    абзац: «@D0036:P0004:0-600 sha256=93f97806d8cdb3d1b8e6b6bb4dc59917925d8f1c355e84193a5b590ddc66acc6…»
+  запис 3: стаття «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23): «United States» — MEMBER_OF → «Five Eyes»
+    фрагмент [P0008]: «@D0046:P0008:0-141 sha256=e50559bb35bc6cfee56019a821729f5f3ecd4c34db610f788327efc85ca48e4d»
+    абзац: «@D0046:P0008:0-297 sha256=5d4e2ce87fe2d40d0c89179ad9074539fa4439c1967085cab97eb6cb74fe502e»
+  запис 4: стаття «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21): «United States» — MITIGATES → «pre-positioning»
+    фрагмент [P0012]: «@D0608:P0012:0-190 sha256=cb4b86f6893a7a78a647e125d3fa3520bf7b80c1b143997045f03bfc5847bb52»
+    абзац: «@D0608:P0012:0-264 sha256=aa38c3849e60ebb834aabd4c42c7826097d68becaf2b01f1812c5589fb7482c4»
+
+S002: «National Cyber Security Centre» — LOCATED_IN → «UK» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20): «National Cyber Security Centre» — LOCATED_IN → «UK»
+    фрагмент [P0006]: «@D0165:P0006:0-163 sha256=da609eda86576416b789043c8340577c196e8354b79843ed401611c9b5d17f2f»
+    абзац: «@D0165:P0006:0-378 sha256=69d9dae89b60e5cfea29b717d8f2e270daf7c5ef3850bbba33bed4c745715d66»
+  запис 2: стаття «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01): «UK National Cyber Security Centre» — LOCATED_IN → «UK»
+    фрагмент [P0005]: «@D0228:P0005:0-152 sha256=6c9aa7563e6e7559526cdec64104d3ff68f6551cc0743269146780cfe8fac4bb»
+    абзац: «@D0228:P0005:0-569 sha256=18f5136eae6b3cdaa84c305b85f47e60e798b56f61cc8ff37ea8e1d984d58f26»
+  запис 3: стаття «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04): «National Cyber Security Centre» — LOCATED_IN → «UK»
+    фрагмент [P0018]: «@D0478:P0018:0-66 sha256=026e89c4db455c26a7af9b3a94fe636b3eb3d46908bdfcc272a1961e7c3496b0»
+    абзац: «@D0478:P0018:0-225 sha256=581e5999cb3c8b5f73388d9395d04904a0dc8bb8c3ab3814e095816f1509ca8b»
+  запис 4: стаття «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03): «National Cyber Security Centre» — LOCATED_IN → «UK»
+    фрагмент [P0015]: «@D0493:P0015:0-46 sha256=de2a063c53e2c9acbfdf89699881983f17ab0f0e7e1aadabdede187d4e0364dc»
+    абзац: «@D0493:P0015:0-193 sha256=d5fc2acf3bb8e69dc6f68979edf8801a2103c481577031cecf1344290738d38a»
+  запис 5: стаття «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11): «NCSC-UK» — LOCATED_IN → «United Kingdom»
+    фрагмент [P0006]: «@D0550:P0006:81-138 sha256=c42b1a98582cd1aa533ddf7531205be4eeab4f055a70330d8000a956e542737e»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+
+S003: «threat intelligence» — PART_OF → «CrowdStrike Falcon platform» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01): «threat intelligence» — PART_OF → «CrowdStrike Falcon platform»
+    фрагмент [P0013]: «@D0343:P0013:31-286 sha256=ca5d5be83d35f669d0707bab488e4931451b9865c3b1942d84499ad66a8b51a8»
+  запис 2: стаття «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25): «threat intelligence» — PART_OF → «CrowdStrike Falcon platform»
+    фрагмент [P0013]: «@D0514:P0013:0-286 sha256=081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617»
+
+S004: «National Cyber Security Centre» — PART_OF → «GCHQ» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20): «National Cyber Security Centre» — PART_OF → «Government Communications Headquarters»
+    фрагмент [P0006]: «@D0165:P0006:0-102 sha256=fe1cd4ff906c2e240b3edde7d246acfcb8bf211da182f706465b8f786fd78c1c»
+    абзац: «@D0165:P0006:0-378 sha256=69d9dae89b60e5cfea29b717d8f2e270daf7c5ef3850bbba33bed4c745715d66»
+  запис 2: стаття «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12): «National Cyber Security Centre» — PART_OF → «GCHQ»
+    фрагмент [P0017]: «@D0197:P0017:14-108 sha256=99a41b02f66a0e694bd4482192260b97ed320ebcaf1f18110a149d2960023c87»
+    абзац: «@D0197:P0017:0-177 sha256=d896f8e8b692f5642246873de169780e2a8ab020148b7462d2b5405f6752d5ea»
+
+S005: «CVE-2026-35616» — AFFECTS → «FortiClient EMS» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02): «CVE-2026-35616» — AFFECTS → «FortiClient EMS»
+    фрагмент [P0008]: «@D0113:P0008:266-394 sha256=c43919a412bceff5eeab484815b65166fa390f5bacf6b742012b25151b648b6e»
+    абзац: «@D0113:P0008:0-394 sha256=844d44f19890288d84c6dced1c6bfda772d916b59740239d96c4e97b0855d14a»
+  запис 2: стаття «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31): «CVE-2026-35616» — AFFECTS → «FortiClient EMS»
+    фрагмент [P0010]: «@D0124:P0010:263-354 sha256=a8b919492bbb7c59672a7c4a98505fcb1e10b6d8d3b7a2970396517e1e4f340a»
+    абзац: «@D0124:P0010:0-532 sha256=830b3e03059e02eff748332a5ce781da95821f64dd35029770347ec14031b11a»
+
+S006: «Adam Meyers» — MEMBER_OF → «CrowdStrike» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13): «Adam Meyers» — MEMBER_OF → «CrowdStrike»
+    фрагмент [P0035]: «@D0424:P0035:104-181 sha256=3f74c5117f31bc66a9e927053312a5b235896d6ad6bce04b6a5a78bf288dfc3e»
+    абзац: «@D0424:P0035:0-182 sha256=7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0»
+  запис 2: стаття «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27): «Adam Meyers» — MEMBER_OF → «CrowdStrike»
+    фрагмент [P0022]: «@D0505:P0022:0-106 sha256=741f39b6a81c210f3fa5a6f88505289586044f4574b2624fcc9328a22f0ec0d1»
+    абзац: «@D0505:P0022:0-190 sha256=9ff456b742e9a6eef6bf30d39c2049db383c135910f212be0bb036a9af864382»
+
+S007: «Anthropic» — DEVELOPS → «Mythos» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25): «Anthropic» — DEVELOPS → «Mythos 5»
+    фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  запис 2: стаття «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23): «Anthropic» — DEVELOPS → «Mythos»
+    фрагмент [P0019]: «@D0045:P0019:55-129 sha256=aae100ba4759c12cf24166b45602d2b8f9c3e0044d2ad01b1088844a7f6f0912»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  запис 3: стаття «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23): «Anthropic» — DEVELOPS → «Mythos»
+    фрагмент [P0016]: «@D0046:P0016:0-87 sha256=d180fb34537a2b90a4b2504341172932ac710e1942828c0b1f7a56b8336dbcd3»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+    фрагмент [P0006]: «@D0046:P0006:12-136 sha256=d35b537bb83a1621fe4f0d4878a41a13a28812f7e5908409de427a1a197cf3dc»
+    абзац: «@D0046:P0006:0-464 sha256=4a69a91de27b71c43f1607fbc48c2966543da8cbd407ad114a08ce1df847f6fa»
+  запис 4: стаття «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02): «Anthropic» — DEVELOPS → «Claude Mythos Preview»
+    фрагмент [P0022]: «@D0113:P0022:44-141 sha256=3498ef4f603f46080e7c871af1eb25d7955123fe7e8034483d580c9127d5d6e1»
+    абзац: «@D0113:P0022:0-511 sha256=3e0f806262f935c1caee4c4cee36e029d67ee49056be02b26debfb03eb6bc89c»
+  запис 5: стаття «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12): «Anthropic» — DEVELOPS → «Claude Mythos»
+    фрагмент [P0024]: «@D0194:P0024:0-148 sha256=2a99b490b9ea0f31b85c8ab62d089e55c1a3de0012d7a767e30dafc653d646b8»
+  запис 6: стаття «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12): «Anthropic» — DEVELOPS → «Claude Mythos»
+    фрагмент [P0004]: «@D0195:P0004:0-141 sha256=173960de935218c37fe9c2005774603811850baaaab129fa57254134130d88af»
+    абзац: «@D0195:P0004:0-292 sha256=b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c»
+  запис 7: стаття «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31): «Anthropic» — DEVELOPS → «security-guidance plugin»
+    фрагмент [P0024]: «@D0124:P0024:63-179 sha256=adcd927e1802994bb47b8e20d6dbc74d1d2d1fa0ec5affc7d2245300a64a12c3»
+    абзац: «@D0124:P0024:0-257 sha256=ff9df619bbef46c238a5ef7916bbdd1c55388f9435cda9a69ec74fe37a204c93»
+  запис 8: стаття «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25): «Anthropic» — DEVELOPS → «Mythos»
+    фрагмент [P0007]: «@D0250:P0007:41-168 sha256=60cf79ebb9306bda4e3dfb243b1d45eea613204e768f87a1edc66602a8954b53»
+    абзац: «@D0250:P0007:0-232 sha256=2d54d7ec95e485709a895cb77b8da4c2a1b283831fe8db0b6ef4ad4ff8db8c75»
+    фрагмент [P0053]: «@D0250:P0053:0-71 sha256=a82d66bdbb2014e3503e61d2ac6a0234ac8fc1b87df7f77088b27724eec1b6e6»
+
+S008: «Stryker» — LOCATED_IN → «United States» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13): «Stryker» — LOCATED_IN → «United States»
+    фрагмент [P0004]: «@D0424:P0004:24-130 sha256=47990b5ea27381b5171b3d54618df676ec2506c8c4c8719e8ad33b49b9ebf70d»
+    абзац: «@D0424:P0004:0-409 sha256=a7340ae5cb8ace8a084878b50bf4584398546d33fee03d1701d926dbc0e89aeb»
+  запис 2: стаття «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12): «Stryker» — LOCATED_IN → «U.S.»
+    фрагмент [P0010]: «@D0427:P0010:0-49 sha256=738393fbef2907e1f045151f0490d99cbd459cfc2c6448335080b77db78a0144»
+    абзац: «@D0427:P0010:0-138 sha256=60e64fb5f9256903969a94285ce835a0fded6a3d80be79b2bdedcbf59ba13303»
+
+S009: «New Zealand» — MEMBER_OF → «Five Eyes» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25): «New Zealand» — MEMBER_OF → «Five Eyes intelligence alliance»
+    фрагмент [P0012]: «@D0018:P0012:23-162 sha256=9139ddbdd896ced28ba68c41cedb5f5730fa74f4e44d447828a9812db64ded73»
+    абзац: «@D0018:P0012:0-448 sha256=5a3c26a97935129c60cceb0abb3c946f5fce326ecce7afc261e530472d8cb1ce»
+  запис 2: стаття «TITLE_SHA256:74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9» (2026-06-24): «New Zealand» — MEMBER_OF → «Five Eyes»
+    фрагмент [P0004]: «@D0036:P0004:0-128 sha256=842b08e3a95eabee2bd3749a66b9713072d4a72ab421aac25af1782508597f4a»
+    абзац: «@D0036:P0004:0-600 sha256=93f97806d8cdb3d1b8e6b6bb4dc59917925d8f1c355e84193a5b590ddc66acc6…»
+  запис 3: стаття «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23): «New Zealand» — MEMBER_OF → «Five Eyes»
+    фрагмент [P0005]: «@D0045:P0005:0-116 sha256=c21094062914da11082935b35f183d71cdf44cca5eaadaf70ee784d4bd98590b»
+    абзац: «@D0045:P0005:0-257 sha256=29109ae0138df7df662a80657f6ea229532e9d961ee2c4110e5d1f8966ad72be»
+  запис 4: стаття «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23): «New Zealand» — MEMBER_OF → «Five Eyes»
+    фрагмент [P0008]: «@D0046:P0008:0-141 sha256=e50559bb35bc6cfee56019a821729f5f3ecd4c34db610f788327efc85ca48e4d»
+    абзац: «@D0046:P0008:0-297 sha256=5d4e2ce87fe2d40d0c89179ad9074539fa4439c1967085cab97eb6cb74fe502e»
+
+S010: «CrowdStrike Falcon platform» — USES → «centralized telemetry» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01): «CrowdStrike Falcon platform» — USES → «centralized telemetry»
+    фрагмент [P0013]: «@D0343:P0013:31-286 sha256=ca5d5be83d35f669d0707bab488e4931451b9865c3b1942d84499ad66a8b51a8»
+  запис 2: стаття «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25): «CrowdStrike Falcon platform» — USES → «centralized telemetry»
+    фрагмент [P0013]: «@D0514:P0013:0-286 sha256=081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617»
+
+S011: «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23): «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate»
+    фрагмент [P0024]: «@D0043:P0024:295-382 sha256=22462dc79914eb803df6641052c78f363ee80645f99c7da2744dbc98d2aeb1b7»
+    абзац: «…@D0043:P0024:38-638 sha256=6e4af0b5565a686f10b2043ebfd81ba3a9604ea58257cc288ebf31f4adda398a…»
+  запис 2: стаття «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11): «Australian Cyber Security Centre» — PART_OF → «Australian Signals Directorate»
+    фрагмент [P0012]: «@D0550:P0012:248-326 sha256=3fbad0edc3e6dbbfbe72aca6a7519301c6cd8eef37884455b4db86044e0eac84»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+
+S012: «Ollie Whitehouse» — MEMBER_OF → «National Cyber Security Centre» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20): «Ollie Whitehouse» — MEMBER_OF → «National Cyber Security Centre»
+    фрагмент [P0027]: «@D0165:P0027:0-47 sha256=2646cfe0219163708fabdab95c05b4cac2c10721c7a5d5b39e4f603e96f498ce»
+  запис 2: стаття «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11): «Ollie Whitehouse» — MEMBER_OF → «NCSC-UK»
+    фрагмент [P0009]: «@D0550:P0009:254-305 sha256=49b20dec3af3edb332d4f65c0810288573d877d5f3188ce2cb4d60239870bb53»
+    абзац: «@D0550:P0009:0-600 sha256=dbb06894f7c3f090b67b385c8b2fe153be617b16bedb37dce1e6082728f4934b…»
+
+S013: «Richard Horne» — LEADS → «National Cyber Security Centre» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23): «Richard Horne» — LEADS → «National Cyber Security Centre»
+    фрагмент [P0024]: «@D0043:P0024:582-653 sha256=fff315880999d8ed93b4f7d1b305ba6e53ad28b9eb4cbf612fa15ac18450b812»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  запис 2: стаття «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23): «Richard Horne» — LEADS → «National Cyber Security Centre»
+    фрагмент [P0006]: «@D0262:P0006:36-93 sha256=f92697822d7bce5721fd56f1eac4ff498abff743398549a6f15952591e6e514e»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  запис 3: стаття «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17): «Dr Richard Horne» — LEADS → «National Cyber Security Centre»
+    фрагмент [P0025]: «@D0539:P0025:0-31 sha256=9c404b469a4685ef9b07a1bec7130edc805b964e65d8ee888dce9603a6267e0c»
+
+S014: «Anthropic» — PROVIDES → «Claude» | форма: actual, positive | атрибуція: — | час події: — | контекст події: —
+  запис 1: стаття «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12): «Anthropic» — PROVIDES → «Claude»
+    фрагмент [P0026]: «@D0194:P0026:40-147 sha256=7456c3d699c5383e61cd145b1f25d0f396db9224e1ce9ed2d4ad6d5e75b7a956»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  запис 2: стаття «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08): «Anthropic» — PROVIDES → «Claude»
+    фрагмент [P0024]: «@D0457:P0024:62-195 sha256=f6edf66bc22a124e917e389139bf4b708f6d0ac88a919645423e919e3b6cdd63»
+    абзац: «@D0457:P0024:0-281 sha256=46357a55b489d7db484b8e0cead6f96030334e74d2498c7a49572ccb7db6a524»
+
+КІНЕЦЬ ЗАПИСІВ

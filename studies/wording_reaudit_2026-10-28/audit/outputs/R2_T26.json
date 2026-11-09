@@ -1,0 +1,12 @@
+{
+ "audit_file": "R2_T26",
+ "target_doc_id": "D0294",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «block» подає блокування як факт, тоді як у D0294:P0050 сказано лише, що ці інструменти «can block many phishing attempts», тобто це можливість (possible)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «block» не має маркера можливості, а D0294:P0050 каже, що фільтри пошти лише «can block many phishing attempts» (possible)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never is also known as» заперечує звʼязок, тоді як D0294:P0030 прямо стверджує назву «SMS Phishing (Smishing)» (actual, positive)."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «exposes data to» подає це як факт, а D0294:P0048 каже, що публічні мережі лише «can expose your data to attackers» (possible)."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «blocks» подає блокування як факт, а D0294:P0050 каже лише, що антивірус та інші інструменти «can block many phishing attempts» (possible)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "D0294:P0058 подає як факт, що деякі зловмисники використовують голосові чи відеодіпфейки «to impersonate real people», що відповідає формі actual, positive."}
+ ]
+}

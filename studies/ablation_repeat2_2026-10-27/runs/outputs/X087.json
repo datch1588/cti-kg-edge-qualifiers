@@ -1,0 +1,131 @@
+{
+  "run_id": "X087",
+  "target_doc_id": "D0448",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "harvest now, decrypt later", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0024", "start": 0, "end": 139, "sha256": "43f319ee3a0497199753c13eda53238d7e13b331c2cd267868b66abd5aeb343e"}}
+    ]},
+    {"id": "n002", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0019", "start": 158, "end": 261, "sha256": "6ab60ec75dce5380007d403c5b87decdeb4b8b36469c18c541fd0db194278657"}}
+    ]},
+    {"id": "n003", "label": "conflict in Ukraine", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0019", "start": 158, "end": 261, "sha256": "6ab60ec75dce5380007d403c5b87decdeb4b8b36469c18c541fd0db194278657"}}
+    ]},
+    {"id": "n004", "label": "Mobile World Congress", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0006", "start": 0, "end": 101, "sha256": "d6d3ade461df6ae523fe5efe4790345098be4e77def19efb0743d2976a71fa18"}}
+    ]},
+    {"id": "n005", "label": "Q-Day", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0021", "start": 0, "end": 196, "sha256": "f80ab47fff2e106deece848686f0a98a79db4963753077a1ee66782a7d5adc4c"}}
+    ]},
+    {"id": "n006", "label": "Barcelona", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0009", "start": 89, "end": 157, "sha256": "517010f1cfe55615f69e2e82ba624e104c27dcc610aafa9df4c6505cf4e76e70"}}
+    ]},
+    {"id": "n007", "label": "Thales", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0006", "start": 0, "end": 101, "sha256": "d6d3ade461df6ae523fe5efe4790345098be4e77def19efb0743d2976a71fa18"}}
+    ]},
+    {"id": "n008", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0007", "start": 0, "end": 119, "sha256": "9544f2f5b22d988d31281b72156387db6a9416974170b32d2b6d081a7cee2464"}}
+    ]},
+    {"id": "n009", "label": "Cyber Resilience Act", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0018", "start": 55, "end": 201, "sha256": "40fb1bd9f8f00c008aff4adf4476d1fdf42765b3c7faad98faf4f7b00203c8b6"}}
+    ]},
+    {"id": "n010", "label": "encrypted communications", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0024", "start": 153, "end": 303, "sha256": "aaca3545875c9c27938515813f05870bc92fe4cd2caecb9c72b1642106898f44"}}
+    ]},
+    {"id": "n011", "label": "Eva Rudin", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0008", "start": 74, "end": 155, "sha256": "b0db4d92bedc5b7a9277d8c16936c6ae4996f3aba5cd9951764295109e3d451f"}}
+    ]},
+    {"id": "n012", "label": "eSIM cards", "entity_type": "product", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0027", "start": 0, "end": 226, "sha256": "ba9448b1ada32f5445cecc95bce65a73b6fc9bfc0f0a4cdb9a7fb1c4cf66aaef"}}
+    ]},
+    {"id": "n013", "label": "Artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0011", "start": 0, "end": 88, "sha256": "d8e40c996824b3985719ca29505a1087de5753b56c6ce41963c6781ab97f3f3e"}}
+    ]},
+    {"id": "n014", "label": "Connected devices", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0017", "start": 0, "end": 158, "sha256": "4361ce3804b211de6c3976670f79e053522adb23f307020f2e0c9910d26a96c2"}}
+    ]},
+    {"id": "n015", "label": "crypto agility", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0027", "start": 227, "end": 278, "sha256": "cc09c23c30e8e4ed7190a59850657f0c74331b289d8d86fd33711cb2143091c4"}}
+    ]},
+    {"id": "n016", "label": "machine learning", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0014", "start": 96, "end": 210, "sha256": "0914f4db6849a3b35b16fb666a2ea6ff1189d307e593bb202e3cfea89b5b86ea"}}
+    ]},
+    {"id": "n017", "label": "next-generation algorithms", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0028", "start": 166, "end": 328, "sha256": "e2fcfda4f613f3910454ad8b79d2b482b09f50ce31ec8634e9f95feec0c5cd54"}}
+    ]},
+    {"id": "n018", "label": "public encryption systems", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0021", "start": 68, "end": 196, "sha256": "8a0d39ce294a71172b17d93b179812dfd2ef3f677aa41bd2a1cac633110802fd"}}
+    ]},
+    {"id": "n019", "label": "quantum computer", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0021", "start": 0, "end": 112, "sha256": "1372568740decbd6c8ac066fdd0e48de749c6b07afc97eaa3c4463febe824532"}}
+    ]},
+    {"id": "n020", "label": "quantum-resistant cryptographic algorithms", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0027", "start": 0, "end": 226, "sha256": "ba9448b1ada32f5445cecc95bce65a73b6fc9bfc0f0a4cdb9a7fb1c4cf66aaef"}}
+    ]},
+    {"id": "n021", "label": "quantum-safe cryptography", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0028", "start": 0, "end": 165, "sha256": "2475529713adafa250e4b92459557ee3332aff635a3cc0bd66667e95aea623b1"}}
+    ]},
+    {"id": "n022", "label": "AI-powered attackers", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0012", "start": 0, "end": 118, "sha256": "50ec4de565f99a1034dd28fc8dcad6df959d070f2c58bc6a624ea12b4eab12e1"}}
+    ]},
+    {"id": "n023", "label": "Cyberattacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0007", "start": 0, "end": 119, "sha256": "9544f2f5b22d988d31281b72156387db6a9416974170b32d2b6d081a7cee2464"}}
+    ]},
+    {"id": "n024", "label": "sophisticated state and criminal actors", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0024", "start": 0, "end": 139, "sha256": "43f319ee3a0497199753c13eda53238d7e13b331c2cd267868b66abd5aeb343e"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n010", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "today", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0024", "start": 141, "end": 303, "sha256": "e8f5bd7c181025db04837a9de9680ee407ce2d693d171e61c22a568b42e43a0b"}}
+    ]},
+    {"id": "e002", "source": "n003", "target": "n002", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0019", "start": 158, "end": 261, "sha256": "6ab60ec75dce5380007d403c5b87decdeb4b8b36469c18c541fd0db194278657"}}
+    ]},
+    {"id": "e003", "source": "n004", "target": "n006", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0009", "start": 89, "end": 157, "sha256": "517010f1cfe55615f69e2e82ba624e104c27dcc610aafa9df4c6505cf4e76e70"}}
+    ]},
+    {"id": "e004", "source": "n007", "target": "n017", "relation_type": "DEVELOPS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0028", "start": 166, "end": 328, "sha256": "e2fcfda4f613f3910454ad8b79d2b482b09f50ce31ec8634e9f95feec0c5cd54"}}
+    ]},
+    {"id": "e005", "source": "n007", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Eva Rudin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0015", "start": 77, "end": 204, "sha256": "a4944c37bcd8f1542f368c9ab04cad48f943a81024997e024dfc5b5887dd5161"}},
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0014", "start": 0, "end": 94, "sha256": "613c6a74b2d003ed5e0162b456bb31d8b94be58c28ffb258e5dae9289795e9ff"}}
+    ]},
+    {"id": "e006", "source": "n007", "target": "n016", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0014", "start": 0, "end": 210, "sha256": "b9fb1bf35fbe0aea4e78d085d5ef25743b9b799d0d8e46bd53d1186b8be8a0ca"}}
+    ]},
+    {"id": "e007", "source": "n007", "target": "n021", "relation_type": "USES", "modality": "planned", "polarity": "positive", "attribution": "Thales", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0028", "start": 0, "end": 165, "sha256": "2475529713adafa250e4b92459557ee3332aff635a3cc0bd66667e95aea623b1"}}
+    ]},
+    {"id": "e008", "source": "n009", "target": "n014", "relation_type": "PROTECTS", "modality": "planned", "polarity": "positive", "attribution": "Eva Rudin", "event_time": "2027", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0018", "start": 55, "end": 201, "sha256": "40fb1bd9f8f00c008aff4adf4476d1fdf42765b3c7faad98faf4f7b00203c8b6"}}
+    ]},
+    {"id": "e009", "source": "n011", "target": "n007", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0008", "start": 74, "end": 155, "sha256": "b0db4d92bedc5b7a9277d8c16936c6ae4996f3aba5cd9951764295109e3d451f"}}
+    ]},
+    {"id": "e010", "source": "n011", "target": "n014", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Eva Rudin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0017", "start": 0, "end": 158, "sha256": "4361ce3804b211de6c3976670f79e053522adb23f307020f2e0c9910d26a96c2"}}
+    ]},
+    {"id": "e011", "source": "n011", "target": "n022", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Eva Rudin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0012", "start": 0, "end": 182, "sha256": "4163055dc49b2a745f1bf9a1649e0efe231917f391184c047267e278a3705c77"}}
+    ]},
+    {"id": "e012", "source": "n019", "target": "n018", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Q-Day", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0021", "start": 0, "end": 196, "sha256": "f80ab47fff2e106deece848686f0a98a79db4963753077a1ee66782a7d5adc4c"}}
+    ]},
+    {"id": "e013", "source": "n020", "target": "n012", "relation_type": "PROTECTS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0027", "start": 0, "end": 226, "sha256": "ba9448b1ada32f5445cecc95bce65a73b6fc9bfc0f0a4cdb9a7fb1c4cf66aaef"}}
+    ]},
+    {"id": "e014", "source": "n022", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Eva Rudin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0012", "start": 0, "end": 118, "sha256": "50ec4de565f99a1034dd28fc8dcad6df959d070f2c58bc6a624ea12b4eab12e1"}}
+    ]},
+    {"id": "e015", "source": "n023", "target": "n008", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0007", "start": 0, "end": 119, "sha256": "9544f2f5b22d988d31281b72156387db6a9416974170b32d2b6d081a7cee2464"}}
+    ]},
+    {"id": "e016", "source": "n024", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0448", "paragraph_id": "D0448:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0448:P0024", "start": 0, "end": 139, "sha256": "43f319ee3a0497199753c13eda53238d7e13b331c2cd267868b66abd5aeb343e"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

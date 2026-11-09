@@ -1,0 +1,192 @@
+AUDIT_FILE: QT04A
+TARGET_DOC_ID: D0655
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0655
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6277775
+TITLE_SHA256: 7f38448cbeb17d6773756404aad7460e03e7f79768aaa3aede895f74ad7d2890
+BEGIN_DOCUMENT
+[D0655:P0001] sha256:7f38448cbeb17d6773756404aad7460e03e7f79768aaa3aede895f74ad7d2890
+[D0655:P0002] sha256:0ad941d71f71d5d31ca91c5b5948f280ffae6a039d66b8b2e2a6c75b65171019
+[D0655:P0003] sha256:946e2cf3152a768295fb7daf7f4787a4ee53ae6e1377e05a81fd53c06ec62aef
+[D0655:P0004] sha256:abc1fb1ded9e8f7dd294c81e9d3253ae21cf12a0e662ffc9d183f90e4e0fd82d
+[D0655:P0005] sha256:d96e3b0517e6bcdb88b3149d9be235619776621a816d089684933e0e7eed3f13
+[D0655:P0006] sha256:3bb3c9de4351f36098257828b5a87cb810af2bb1fafabb3d7c5b9b0029d25a8c
+[D0655:P0007] sha256:35798f66ffeca440edd672186930280cb207a0dc552392a5deee54c5c1e8f9c5
+[D0655:P0008] sha256:fa4942f21db5fe854cc6552dfe4e1a5f9376d29c595eb46e3483ee903b454db4
+[D0655:P0009] sha256:f58fcdd1c77fc43266413975005e45682b7d36283889aec96c7627d76aafe168
+[D0655:P0010] sha256:a166e9490bedc7b8ee6205e5076701c03885c0a91e534010e297426f1cb9a713
+[D0655:P0011] sha256:e366a06bcc27c03c5c565c3ec532b917911e378ac3ae660a695fa4b446343b3e
+[D0655:P0012] sha256:879253ad4028a9dfbf84115b303452a54f41fc4ada7dcb097cf1388f60c0940a
+[D0655:P0013] sha256:c362f0858893304a94293b569a5e38a5aef735c17c8efbe8fe176891652406f7
+[D0655:P0014] sha256:fbd250537bfd0d07db85b43fd1ab4cdaa9bf32c349082863cf61407ba6a84c97
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 28, вузлів 4)
+E001: «Ensign InfoSecurity» — provides → «Agentic Security Operations Centre» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «launch of the Agentic SOC at GovWare 2025»
+  фрагменти: [D0655:P0006] «@0-129 sha256=dbdf72c9437296920b93125b5adc43b88dcc6a963d590143d715c5707e9786bf»
+E002: «Agentic Security Operations Centre (SOC)» — uses → «autonomous AI agents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@234-359 sha256=16175a951115c981dad18db4cd27fa67562678dae606fc01be118ce7fbde9582»
+E003: «attackers» — exploits → «broader ecosystem vulnerabilities» | форма: actual, positive
+  атрибуція: «International Business & Commercial» | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@1-166 sha256=f06377d261175ccc8346d48e47a3b5fa4702c41ac1c43897ff9c43b5f1d2c5c8»
+E004: «attackers» — uses → «AI» | форма: actual, positive
+  атрибуція: «Chua Zong Fu» | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@1-166 sha256=f06377d261175ccc8346d48e47a3b5fa4702c41ac1c43897ff9c43b5f1d2c5c8»
+E005: «Ensign InfoSecurity» — provides → «managed security services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0010] «@251-499 sha256=b0326ba92eeaa514dc12913f59cbb544daa39d6630f0312b889eedc2d7aa6aa7»
+E006: «Agentic Security Operations Centre» — uses → «autonomous AI agents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@234-359 sha256=16175a951115c981dad18db4cd27fa67562678dae606fc01be118ce7fbde9582»; [D0655:P0007] «@252-366 sha256=09fc56ef275a966503649ccb17ff4379c86a20740d58b030f09682b689200202»
+E007: «Ensign InfoSecurity» — located in → «Asia Pacific» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0003] «@320-416 sha256=59160be59c1804df09d17412da87d6c0fde20aa1799b725d475ca2c2724d02d4»
+E008: «International Business & Commercial» — part of → «Ensign InfoSecurity» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@169-274 sha256=144d08162309bf3f04964b61775847618b864eac72d2e33c31eb2ee68742ecd4»
+E009: «PIKOM Digital Excellence Awards 2025» — located in → «Malaysia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0012] «@72-197 sha256=f533ba8fbb511c60925fa7ad6a8c610c5bd96575267c7ab8ff2db5fdd046764c»
+E010: «Agentic Security Operations Centre» — uses → «autonomous AI agents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@234-359 sha256=16175a951115c981dad18db4cd27fa67562678dae606fc01be118ce7fbde9582»
+E011: «Chua Zong Fu» — leads → «International Business & Commercial» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@169-274 sha256=144d08162309bf3f04964b61775847618b864eac72d2e33c31eb2ee68742ecd4»
+E012: «PIKOM Digital Excellence Awards 2025» — located in → «Malaysia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0012] «@72-139 sha256=07d0a07cbe1b0eac2832c0a78eef6fd4c448126dc680756ae07869f8a6b43ac7»
+E013: «Ensign InfoSecurity» — located in → «Singapore» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0010] «@131-250 sha256=9232064f052f3702ac11da2021e109ab76135096b74313b1f75b632af21d9b03»
+E014: «Agentic Security Operations Centre» — uses → «adaptive AI» | форма: actual, positive
+  атрибуція: «Chua Zong Fu» | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@277-443 sha256=c49b02efaca3c8215038724b8662c4402d7e073be06034797a5fd8e11b11b352»
+E015: «attackers» — exploits → «broader ecosystem vulnerabilities» | форма: actual, positive
+  атрибуція: «Chua Zong Fu» | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@1-166 sha256=f06377d261175ccc8346d48e47a3b5fa4702c41ac1c43897ff9c43b5f1d2c5c8»
+E016: «Ensign InfoSecurity» — develops → «Agentic Security Operations Centre» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «launch of the Agentic SOC at GovWare 2025»
+  фрагменти: [D0655:P0006] «@54-233 sha256=dc105b001dea1ab0641b9740cdd2ec8e13dd041c9dbbb2537b1dac5b05972bbb»
+E017: «Ensign InfoSecurity» — provides → «Agentic Security Operations Centre (SOC)» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «launch of the Agentic SOC at GovWare 2025»
+  фрагменти: [D0655:P0006] «@54-129 sha256=ee2e8afc052bee96fed322a48f3680b0810a726403d784d2d800863bb584bf6a»
+E018: «Ensign InfoSecurity» — develops → «Agentic Security Operations Centre (SOC)» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «launch of the Agentic SOC at GovWare 2025»
+  фрагменти: [D0655:P0006] «@54-233 sha256=dc105b001dea1ab0641b9740cdd2ec8e13dd041c9dbbb2537b1dac5b05972bbb»
+E019: «Chua Zong Fu» — leads → «International Business & Commercial» | форма: actual, positive
+  атрибуція: — | час події: «2026-01-07» | контекст події: —
+  фрагменти: [D0655:P0008] «@169-274 sha256=144d08162309bf3f04964b61775847618b864eac72d2e33c31eb2ee68742ecd4»
+E020: «Ensign InfoSecurity» — located in → «Asia Pacific» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0003] «@320-416 sha256=59160be59c1804df09d17412da87d6c0fde20aa1799b725d475ca2c2724d02d4»; [D0655:P0010] «@26-130 sha256=ea0b952acb0a3211c5f6f2e688a1440649051f532ba4b2e6eaaf922449f96f8b»
+E021: «Agentic Security Operations Centre» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@234-449 sha256=a68c8bd843b07e42782a1f551512227276ca5214286b0cbadb3fb306e1db1802»
+E022: «The Cybersecurity Awards 2025» — located in → «Singapore» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0012] «@203-278 sha256=6ad0b0bc77370e19e87a10328347ddce65554fcd079466e5cbc8cb05d5b5f70e»
+E023: «Ensign InfoSecurity» — located in → «Asia Pacific» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0010] «@26-130 sha256=ea0b952acb0a3211c5f6f2e688a1440649051f532ba4b2e6eaaf922449f96f8b»
+E024: «Ensign InfoSecurity» — develops → «Agentic Security Operations Centre» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@54-233 sha256=dc105b001dea1ab0641b9740cdd2ec8e13dd041c9dbbb2537b1dac5b05972bbb»
+E025: «Agentic Security Operations Centre (SOC)» — uses → «adaptive AI» | форма: actual, positive
+  атрибуція: «Chua Zong Fu» | час події: — | контекст події: —
+  фрагменти: [D0655:P0008] «@277-443 sha256=c49b02efaca3c8215038724b8662c4402d7e073be06034797a5fd8e11b11b352»
+E026: «Ensign InfoSecurity» — provides → «cybersecurity advisory and assurance services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0010] «@251-499 sha256=b0326ba92eeaa514dc12913f59cbb544daa39d6630f0312b889eedc2d7aa6aa7»
+E027: «Charles Ng» — leads → «Ensign InfoSecurity» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0005] «@194-256 sha256=ebc321173d128e274bed7f0ab11e9e5fccbced57aeed07cfa7cd56e70e38e752»
+E028: «Agentic Security Operations Centre (SOC)» — detects → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0655:P0006] «@234-449 sha256=a68c8bd843b07e42782a1f551512227276ca5214286b0cbadb3fb306e1db1802»
+V001: «Agentic Security Operations Centre (SOC)» (product) | альтернативні назви: «Agentic SOC»
+V002: «Ensign InfoSecurity» (organization) | альтернативні назви: «Ensign»
+V003: «Agentic Security Operations Centre» (product) | альтернативні назви: «Agentic SOC»
+V004: «adaptive AI» (technology) | альтернативні назви: «AI»
+КІНЕЦЬ ЗАПИСІВ

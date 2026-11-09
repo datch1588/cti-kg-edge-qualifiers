@@ -1,0 +1,31 @@
+{
+ "audit_file": "S5F29",
+ "target_doc_id": "D0253",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Паролі можна виманити через фішингові листи; подано як чинний стан."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "Понад 50% користувачів сервісів Google у Британії мають зареєстрований passkey, тобто Google його підтримує."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Passkey підтверджується біометрією або pin телефону, подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "Той самий зв'язок: pin телефону для підтвердження входу."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Навіть за злому застосунку passkey нікчемний для зловмисника; подано як властивість."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Менеджер паролів створює й безпечно зберігає паролі."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Розпізнавання обличчя названо методом підтвердження для passkey."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Passkey не можна вкрасти у фішинговій атаці; заперечення коректне."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "Пристрої мають proof of liveness, щоб зображення не використовували для обходу біометрії."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "NCSC заявило, що паролі недостатньо безпечні проти сучасних загроз."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Cybernews заявили, що знайшли дані; стаття не заперечує знахідки, полярність має бути positive."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття подає вразливість паролів до фішингу як чинний факт, а не як можливість."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Те саме, що й про злом застосунку: passkey знижує шкоду від витоків."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Сказано «The UK's National Cyber Security Centre»."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Двофакторна автентифікація вимагає додаткової перевірки разом із паролем."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Дослідники Cybernews заявили, що знайшли мільярди облікових даних."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Passkey не можна вкрасти у фішинговій атаці."},
+  {"item_id": "E018", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: passkey захищає від витоків, а не витоки від passkey."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Cybernews оприлюднили звіт про мільярди облікових даних."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "Чисмон каже, що паролі досі вразливі до фішингу й недосконалі."},
+  {"item_id": "E021", "triple_verdict": "I", "form_verdict": "—", "reason": "Nordpass лише названо менеджером паролів і джерелом статистики; захист паролів стосується самого продукту, а не його називає стаття підмінюючи суб'єкта прямо не стверджено для компанії."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "Чисмон — старший технічний експерт у NCSC."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "Вудворд — професор кібербезпеки в Університеті Суррея."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "C", "reason": "Proof of liveness захищає розпізнавання обличчя від підміни зображенням."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "Фішингові атаки спонукають завантажити шкідливе ПЗ."}
+ ]
+}

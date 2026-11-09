@@ -1,0 +1,226 @@
+AUDIT_FILE: QT33B
+TARGET_DOC_ID: D0235
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0235
+PUBLICATION_DATE: 2026-04-29
+SOURCE_URL: https://dailynigerian.com/cyberattacks-occur-after-every-39-seconds-ndpc-boss/
+TITLE_SHA256: 30065bf5eca3dcc5fd136526f438f537a0bcac8df864671f6289b8d821198b8f
+BEGIN_DOCUMENT
+[D0235:P0001] sha256:30065bf5eca3dcc5fd136526f438f537a0bcac8df864671f6289b8d821198b8f
+[D0235:P0002] sha256:e4237ff8b4be2e9fc62231630fd1efe051abffe09104d63fe13f796f60f01d91
+[D0235:P0003] sha256:f05c16be3b885cfda0a3535825b1a03107e03ec87bd7479699c433aba02d24cc
+[D0235:P0004] sha256:6caa33afced6283b671d1292a50d7658070731342b827ac63b696b9822307357
+[D0235:P0005] sha256:005c93b05ca03cf9d34057226abfb73deb8c17fb0e16328b1451525b4ed50b8d
+[D0235:P0006] sha256:1919df3875c52b2fe27f557affc26135318c288b8fe9e94c018d1611291d29d2
+[D0235:P0007] sha256:a29674b01a61f6f2335dc826bf3b92b14d50f245be8b79e3820b966287e4b2f9
+[D0235:P0008] sha256:0812441f8db28fd3501dc915cdfbd5a7a4cb04fec61a1e420300784eef0aefad
+[D0235:P0009] sha256:430647fab06f4d0cc77720e018df5e6730c854513c09875debf3c1e43268099e
+[D0235:P0010] sha256:293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82
+[D0235:P0011] sha256:e509cf52179fa8ebd00e26e759208fae5e574a8d1821f7b8edf42e4943fc0f67
+[D0235:P0012] sha256:6348b81d206820a7d469f335b1dc68a417e3ad9c9ed0d13bdad051298366c4c4
+[D0235:P0013] sha256:1985005b42f7f5b6e77800c1d6b7deab68d99016d90130e8d66d4f9dc8e4a273
+[D0235:P0014] sha256:230311f7d3274b3a7c230e25568a72193b634bc65094d867149e7c39ada4dc59
+[D0235:P0015] sha256:14880609074d219f012aa3355610f43df97321daf915b3a17ef48c2601bdb521
+[D0235:P0016] sha256:1558ae07e6072d3b6994c617831c2dd8280e1ba399761ce9f323fe89d575a5f2
+[D0235:P0017] sha256:952770de34036bed4b63252870e05330ff4e64857701e21712a2e974390836a2
+[D0235:P0018] sha256:ba844bc280244035ccc9e9cfdc4ac3a7d8349956733eb1dea528f1a99a99d565
+[D0235:P0019] sha256:ebabfede8e4e468da90d18f21597cea95a067ef77112db76b385ffd268bc4940
+[D0235:P0020] sha256:13b19c4adfaa8d188738c1cb02e00bedb53ed715ec6be8846da10b5607a71fe2
+[D0235:P0021] sha256:ce932c4fda769ceacfc442fe199f5a3283bd837fc69f782858d89bc25529b0ac
+[D0235:P0022] sha256:bac995bc8ee52836df2dcce36a2bc011204513346cbafc03743cfd18476a357f
+[D0235:P0023] sha256:9afcfd841c3b27d2928d69e059ffc79c9f1f5f93d54575f32580ca3cdd033198
+[D0235:P0024] sha256:c4f2013f9b1d160327d5942053a9fea0836d6402065bd27dac9a97cd53aac1b7
+[D0235:P0025] sha256:00666a15af43a1e33042db1f6a95ab988a28bffd6a610606a847dfbfbd119d04
+[D0235:P0026] sha256:b5097d6e2295618a7d8f87f69a3d315a59eb68a516fc99ca7edcb95d48a9cae4
+[D0235:P0027] sha256:b0d5eddb146037d05f2f6cd52180e0df99b77fc9d8ebf40df0c71b827cac9d39
+[D0235:P0028] sha256:5f3bdacbd38843a7fa82f4dfd04453956b3d21fe5217de846d1119695bff0f7f
+[D0235:P0029] sha256:f9e1af0407c65e37fc74a3de1457ea07c4c292ad56a62e457d93681b56e68a6b
+[D0235:P0030] sha256:df597a99a7e64480d9c81db734be2845ccff4a63d66e4eba13ebba942381414c
+[D0235:P0031] sha256:0a481a8dc8a8aa0efbf1ee6f2524dfe7c8b5b93369a2f98b4a671da8901e127b
+[D0235:P0032] sha256:361d66d0d29480205b56756b186cea08fc4a7be87bffe7c58cd20fa65f8fe65c
+[D0235:P0033] sha256:f727382f7a275150cce06989b2b20360ac95bb09e666025089af069c990aadef
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 33, вузлів 4)
+E001: «Vincent Olatunji» — reports on → «digital fraud schemes» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0010] «@0-146 sha256=293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82»
+E002: «Landmark Event Centre» — located in → «Lagos» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0027] «@0-170 sha256=b0d5eddb146037d05f2f6cd52180e0df99b77fc9d8ebf40df0c71b827cac9d39»
+E003: «IoT West Africa Conference and Data Centre Cloud Expo» — located in → «Landmark Event Centre» | форма: actual, positive
+  атрибуція: — | час події: «Wednesday» | контекст події: —
+  фрагменти: [D0235:P0006] «@59-161 sha256=1187ce693ffd451a6c4dc7a7c96b911355f2de270bed6444302107e5321b973d»
+E004: «Vincent Olatunji» — reports on → «cyberattacks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0005] «@0-122 sha256=3567e0c01cba812402c79ac4291e6e947604bd84e6e21513e0e805f721c621d5»
+E005: «data breach» — affects → «digital economy» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@0-109 sha256=22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159»
+E006: «Vincent Olatunji» — reports on → «Business Email Compromise» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0012] «@0-177 sha256=6348b81d206820a7d469f335b1dc68a417e3ad9c9ed0d13bdad051298366c4c4»
+E007: «Distributed Denial of Service» — affects → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0013] «@23-185 sha256=c18c86813fbb4232d62f8d71e549026e1a9a17411a1992eeb19d2a1906e001ad»
+E008: «phishing» — affects → «Nigeria» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: «2024» | контекст події: «financial losses in Nigeria in 2024»
+  фрагменти: [D0235:P0010] «@18-145 sha256=3e689f39782f0423c2823382b9d6f9b02d0ec25e9ec15df6f5a52ca9b4f89e27»
+E009: «ransomware» — affects → «Nigeria» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: «2024» | контекст події: «financial losses in Nigeria in 2024»
+  фрагменти: [D0235:P0010] «@0-146 sha256=293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82»
+E010: «data breach» — affects → «personal identifiable information» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@111-215 sha256=697e30a8d7f01188c64399928581f361ac818df2137e875c45feeada0af68a0e»
+E011: «data breaches» — affects → «personal identifiable information» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: «keynote address at the IoT West Africa Conference and Data Centre Cloud Expo»
+  фрагменти: [D0235:P0014] «@111-215 sha256=697e30a8d7f01188c64399928581f361ac818df2137e875c45feeada0af68a0e»
+E012: «Distributed Denial of Service» — affects → «telecoms» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0013] «@23-185 sha256=c18c86813fbb4232d62f8d71e549026e1a9a17411a1992eeb19d2a1906e001ad»
+E013: «cybercrime» — affects → «Nigeria» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0009] «@0-47 sha256=cdc4af5c3c647f22566aecfc91af16f328d9560a4888780cd226eda133d2f002»; [D0235:P0009] «@84-202 sha256=ba63efd8b1ce56bbc28628788a8ba4f3929c683f21cb49ec9c7456e0c5ec1d83»
+E014: «Landmark Event Centre» — located in → «Lagos» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0006] «@126-162 sha256=7e57a6900da9ff94ffc3175f4d6211afbc91aea16d77521d0f7e18bc69eb7bd6»
+E015: «Landmark Event Centre» — located in → «Lagos» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0006] «@113-162 sha256=ff003ae6a42b29c05f0a02abd341e75e653a48e59c9e7e103febddfb4c276950»
+E016: «Vincent Olatunji» — reports on → «data breaches» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@0-109 sha256=22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159»
+E017: «Vincent Olatunji» — reports on → «identity theft» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@0-109 sha256=22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159»
+E018: «data breach» — affects → «biometric data» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@111-216 sha256=5a1bbe418017de3d9a35959748e7694954bd4c3c37b9bc697231ada7f49c053a»
+E019: «data breach» — affects → «personal identifiable information» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@111-189 sha256=72d0c313fc8544b3af840cb834cec5baf54b8f75216bafb37d591780a41ee2bd»
+E020: «Nigeria» — located in → «Africa» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0009] «@0-82 sha256=da09864e321fd7e7c1c947b6b24016741108177664fec94ddb23acb91e8f1248»
+E021: «Vincent Olatunji» — reports on → «cybercrime» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0007] «@0-131 sha256=208d6662dcc9ea1bbe10e9c2f5c25a8cd686e9c207a95b94388d1a884fd4eab5»
+E022: «Distributed Denial of Service» — affects → «banking» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0013] «@23-185 sha256=c18c86813fbb4232d62f8d71e549026e1a9a17411a1992eeb19d2a1906e001ad»
+E023: «Vincent Olatunji» — warns about → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: «Wednesday» | контекст події: «keynote address at the IoT West Africa Conference and Data Centre Cloud Expo»
+  фрагменти: [D0235:P0004] «@97-218 sha256=aa569a25d1539485deb110eba17a432aa63c063ea0d310457f8871b4ae8fc71f»; [D0235:P0006] «@0-125 sha256=add7553f4fe51867f07ea7a86d4408ff0e16d8b513b530c8bf5f38c6ea6bfc89»
+E024: «cyberattacks» — targets → «Nigeria» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0009] «@0-124 sha256=c604fbebd807d622518bf81f1bf5d559def7096a21aa16b3ec1809c6b71c293e»
+E025: «Vincent Olatunji» — reports on → «ransomware» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0012] «@0-76 sha256=052d7aca95b69c17212eed871b22ebb5ebf7778eed65ddb874a97db32aa9cef6»
+E026: «cyber threats» — affects → «sovereignty» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0015] «@0-126 sha256=2dcef9c89783cf73d739bc4d83000b60b65f89de59261e9ac66a50b0ade1d647»
+E027: «Landmark Event Centre» — located in → «Lagos» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0006] «@59-161 sha256=1187ce693ffd451a6c4dc7a7c96b911355f2de270bed6444302107e5321b973d»
+E028: «Vincent Olatunji» — warns about → «cyber threats» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0004] «@97-217 sha256=41e8ae638560680331612e5b20a2e0fdcb285165d0cb8ac1b0e7c0c1519a207f»
+E029: «data breaches» — affects → «personal identifiable information» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0014] «@111-215 sha256=697e30a8d7f01188c64399928581f361ac818df2137e875c45feeada0af68a0e»
+E030: «ransomware» — affects → «Nigeria» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: «in 2024» | контекст події: «financial losses in Nigeria»
+  фрагменти: [D0235:P0010] «@18-145 sha256=3e689f39782f0423c2823382b9d6f9b02d0ec25e9ec15df6f5a52ca9b4f89e27»
+E031: «Vincent Olatunji» — leads → «Nigeria Data Protection Commission» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0235:P0004] «@0-116 sha256=5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423»
+E032: «cyber threats» — affects → «data infrastructure» | форма: actual, positive
+  атрибуція: «Vincent Olatunji» | час події: — | контекст події: —
+  фрагменти: [D0235:P0015] «@0-126 sha256=2dcef9c89783cf73d739bc4d83000b60b65f89de59261e9ac66a50b0ade1d647»
+E033: «IoT West Africa Conference and Data Centre Cloud Expo» — located in → «Landmark Event Centre» | форма: actual, positive
+  атрибуція: — | час події: «Wednesday» | контекст події: —
+  фрагменти: [D0235:P0006] «@52-162 sha256=973fc026fd9b34cd92d8164e37d74c745441537574c30249d988563c3efbf400»
+V001: «Distributed Denial of Service» (attack_technique) | альтернативні назви: «DDoS»
+V002: «critical infrastructure» (other) | альтернативні назви: «unauthorised access»
+V003: «cloud computing» (technology) | альтернативні назви: «cloud»
+V004: «Internet of Things» (technology) | альтернативні назви: «IoT»
+КІНЕЦЬ ЗАПИСІВ

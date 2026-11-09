@@ -1,0 +1,199 @@
+AUDIT_FILE: QT41B
+TARGET_DOC_ID: D0151
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0151
+PUBLICATION_DATE: 2026-05-26
+SOURCE_URL: https://www.manilatimes.net/2026/05/26/tmt-newswire/pr-newswire/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security/2351233
+TITLE_SHA256: 2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0
+BEGIN_DOCUMENT
+[D0151:P0001] sha256:2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0
+[D0151:P0002] sha256:5da59bd622ec1dbdc1565d883bbdc99e09db3a61da0eeae469b5979db0e4a158
+[D0151:P0003] sha256:c056050018c406afc2ee638887e0be14c94740dcf7c3a9309ce8e1e5ef77c69c
+[D0151:P0004] sha256:725f00df54afbf9d95596e2a8a517a8e8a434c50c3f868b6e79f5b4aa2a4c658
+[D0151:P0005] sha256:e92dee7dd03f0f72917b7e845832511ffebb4d9153f1a1e287d4a6f6c6f4a093
+[D0151:P0006] sha256:6eddd71c61524dc6066c3db391957ac774f86c8b98bc05454ef87bc6376f3da2
+[D0151:P0007] sha256:aaeaf564698a63d4b3f49a4e48227120b1c94edf6c0ef15d334e9d655ec729dd
+[D0151:P0008] sha256:c04d39f272a9b9cc956950fa54d88d14951017dd483995b74a89181c566d7e63
+[D0151:P0009] sha256:3b827e28d28ad1f6ac8a905ff825ed2c7ab92c0591a50073a7548000e2f5e715
+[D0151:P0010] sha256:ce8b5240b4b0b41987ef9d571891fba820a7962f444adb3a365521fe10ec82d1
+[D0151:P0011] sha256:2937218c40adfcf5dc1ef471325be684049c6d25d79a23f1c7b49dd3ed232f8f
+[D0151:P0012] sha256:8944404d53b2a5960efe0d6e6843f1bc0a4a65741b52ed0101a54919d493114f
+[D0151:P0013] sha256:22c19018ca6701ef172b15a02e781bc664fdb5c24435f55976bcc5b333802a96
+[D0151:P0014] sha256:8817eef1d6f79bb6ee30a4f5af4af19cf3e1a63fd513350f8ebb5ddfc7b0a726
+[D0151:P0015] sha256:ff0e64428fd2b24faed380f13db3bbc1febc1b62e15413d47dd6e09bcdd4d0ee
+[D0151:P0016] sha256:3d5224586649fc6c88be3398eae15878183356ab8b7a4b029d20dc3aad5187c9
+[D0151:P0017] sha256:e3488895bc302e46b651642b6ed24e35272baf9c845daffe14403c7ac5225089
+[D0151:P0018] sha256:3582d7293983c0fdadf9b0c015c7b4827751c0b02b39b4637dff30c31804fbfa
+[D0151:P0019] sha256:81edb2a1d256946c4d8db3a7f83220a45ff74a8497559448ebd32c517d4ad77c
+[D0151:P0020] sha256:3998fc5c05c85312537a0bd988dcb7064cb42d2510de4ad71d965fca23f07cf0
+[D0151:P0021] sha256:6f3b8363e9fc604d946f6599a03958301402224c2f63d13650e1e98fb3cfa599
+[D0151:P0022] sha256:320c4e8d361ff8f0db8924946719164bbfedf13193a6c98a82bb3c868495bf70
+[D0151:P0023] sha256:af210be989aacf722d0b17186c0b64bc5b3969a33b09bf4d2aa93c0f97d41517
+[D0151:P0024] sha256:c8f8eded188e95d7f1a252d486f61be482299af86945d09b6d6a6077252b5d0a
+[D0151:P0025] sha256:67a4ec6c270e5e5733dea276fd1c87488d89bf89874a40eee0a2bf548bb3a2d6
+[D0151:P0026] sha256:d6da03e5f96ec2106fb76f35882e8ed14c39518c3aa89d8ecca61fb5b171646f
+[D0151:P0027] sha256:ac83e28f7180896e2bf9324601a4579cea0d46121c43abd55057602b09c74c0e
+[D0151:P0028] sha256:6f155efa809673f0deb5ea72dd1481d1ccda905de44e1e1a7098d7f81fa03e47
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 27, вузлів 0)
+E001: «ransom attacks» — targets → «vehicles» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0013] «@13-103 sha256=e49d4b2438d0cfeff8cb094b501e3a3fc750abb655c00bb1f63fa4e2a01fcb49»
+E002: «Upstream» — provides → «resilience services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0020] «@188-384 sha256=efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2»
+E003: «ransom attacks» — targets → «remote vehicle command & control systems» | форма: actual, positive
+  атрибуція: — | час події: «mid-2025» | контекст події: «mid-2025 ransom attack in which attackers accessed remote vehicle command & control systems via the companion app»
+  фрагменти: [D0151:P0013] «@13-214 sha256=7a37266de556688bab7426c1f5a18dc08fa614bd9c76595559156224a45cca28»
+E004: «APIs» — enables → «cybersecurity incidents» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0016] «@83-229 sha256=b9f481e1d2b0ab82c90655da118dd9a58eb6124edb3ec2314bffd948c5667cff»
+E005: «ransomware» — affects → «Automotive and Smart Mobility» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: —
+  фрагменти: [D0151:P0001] «@0-125 sha256=2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0»
+E006: «cybersecurity incidents» — attributed to → «black hat actors» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0015] «@0-73 sha256=a3b0bd60cf8b48238a24828464d9f1e0ee5b2a6a8cd60d2e4580109f265b1ba2»
+E007: «Upstream» — reports on → «ransomware» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0001] «@0-125 sha256=2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0»; [D0151:P0012] «@258-380 sha256=1ec089bb930fa5f7682ec88846ebd9662f8f5aff7b91016dab81622310fb372e»
+E008: «Upstream» — provides → «data management platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0020] «@0-158 sha256=32aedb51874b2fa98bb9865b6cc983f2e762e21d386c0004e380d8348a66174d»
+E009: «automotive industry» — uses → «Physical AI» | форма: actual, positive
+  атрибуція: «Yoav Levy» | час події: — | контекст події: —
+  фрагменти: [D0151:P0009] «@1-113 sha256=a490dc6c72b160f1d02a68f557d2b84b6bff3635bdd3cb148c4a4f846f271d40»
+E010: «cybersecurity incidents» — affects → «mobility assets» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0018] «@0-85 sha256=a76d3d48f3d2539626639c108e90df6b1f357f7b2371b8b4e3ca22654fc3b3f0»
+E011: «Upstream» — reports on → «cybersecurity incidents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0005] «@201-282 sha256=c7a2f030475303c12d91cc1d0f474c0a2c921a1aa30fa1b80f0ddfff03a56563»; [D0151:P0006] «@0-207 sha256=6eddd71c61524dc6066c3db391957ac774f86c8b98bc05454ef87bc6376f3da2»
+E012: «Upstream» — reports on → «ransomware» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: —
+  фрагменти: [D0151:P0001] «@0-125 sha256=2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0»; [D0151:P0012] «@258-469 sha256=f71aa09ef2153f2c0fa8debc2508696ad9fe2479dc69faa2256296646885e7f1»
+E013: «Upstream» — protects → «connected vehicles» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0005] «@44-199 sha256=dfebd9047aa360def248e87481b6fa64b6d468e5ac6aaf903896c7aaa3ceee39»
+E014: «Upstream» — reports on → «cybersecurity incidents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «mid-2025 ransom attack on remote vehicle command & control systems via the companion app»
+  фрагменти: [D0151:P0005] «@201-282 sha256=c7a2f030475303c12d91cc1d0f474c0a2c921a1aa30fa1b80f0ddfff03a56563»; [D0151:P0006] «@0-207 sha256=6eddd71c61524dc6066c3db391957ac774f86c8b98bc05454ef87bc6376f3da2»
+E015: «XDR» — uses → «AI» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0005] «@54-129 sha256=2097d0a4465c692052c8b86757c7990ef7d0c9743ca4464633ab08bda736db86»; [D0151:P0020] «@231-304 sha256=a423d1bb5ab83dae140fb5cfae21306a5db5727af70d261601659a384526c044»
+E016: «Yoav Levy» — leads → «Upstream» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0009] «@207-253 sha256=220ee09e7cd565f5a34feda6ad4bacd7aa00f5e297444aca087f7b57ecbf0ab4»
+E017: «organized threat actors» — targets → «Automotive and Smart Mobility» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: —
+  фрагменти: [D0151:P0012] «@27-158 sha256=4a074dde576f55818bb30afe09ac93fdb0e6d8e41676476e895ab1e3acd33360»
+E018: «cybersecurity incidents» — uses → «telematics» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0016] «@0-72 sha256=d796a2c9620e230450b483488e945739b75a2dd7272353cf6c4aff8373fa137a»
+E019: «ransomware» — targets → «Automotive and Smart Mobility» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: —
+  фрагменти: [D0151:P0001] «@0-125 sha256=2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0»
+E020: «ransomware» — affects → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: —
+  фрагменти: [D0151:P0001] «@0-125 sha256=2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0»; [D0151:P0012] «@258-469 sha256=f71aa09ef2153f2c0fa8debc2508696ad9fe2479dc69faa2256296646885e7f1»
+E021: «Upstream» — reports on → «cybersecurity incidents» | форма: actual, positive
+  атрибуція: — | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0005] «@201-282 sha256=c7a2f030475303c12d91cc1d0f474c0a2c921a1aa30fa1b80f0ddfff03a56563»; [D0151:P0006] «@0-207 sha256=6eddd71c61524dc6066c3db391957ac774f86c8b98bc05454ef87bc6376f3da2»
+E022: «cybersecurity incidents» — uses → «cloud systems» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0016] «@0-72 sha256=d796a2c9620e230450b483488e945739b75a2dd7272353cf6c4aff8373fa137a»
+E023: «cybersecurity incidents» — affects → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+  атрибуція: — | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0006] «@0-126 sha256=d36b56ba35f012478feb2fe559f81442d94d7a4eed04831091b57dd6e4ab519e»
+E024: «attackers» — uses → «companion app» | форма: actual, positive
+  атрибуція: — | час події: «mid-2025» | контекст події: «mid-2025 ransom attack on remote vehicle command & control systems via the companion app»
+  фрагменти: [D0151:P0013] «@105-233 sha256=229d686037ba7a297331affedbab74a10b8d257f8638a6c33415be892c88646f»
+E025: «ransom attacks» — targets → «IT and enterprise systems» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0151:P0013] «@13-103 sha256=e49d4b2438d0cfeff8cb094b501e3a3fc750abb655c00bb1f63fa4e2a01fcb49»
+E026: «cybersecurity incidents» — attributed to → «black hat actors» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0015] «@0-74 sha256=4ca7bf3c41cf691f8929b72559ab1ec9607e2eaa0c224645590c4db37d8b46eb»
+E027: «cybersecurity incidents» — uses → «cloud systems» | форма: actual, positive
+  атрибуція: «Upstream» | час події: «2025» | контекст події: вузол «cybersecurity incidents» (incident)
+  фрагменти: [D0151:P0009] «@444-658 sha256=53e8fd353cb6efbc94be944120aede19602d807ec7d9ab52b7ce94c171f1c725»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,93 @@
+AUDIT_FILE: S5F09
+TARGET_DOC_ID: D0534
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0534
+PUBLICATION_DATE: 2026-02-18
+SOURCE_URL: https://www.helpnetsecurity.com/2026/02/18/luke-mcnamara-google-dib-defense-industrial-base-cybersecurity/
+TITLE_SHA256: 9f37080676227cab26508f9dc159e5682433e3f5d7ca88fad692d0cceee99853
+BEGIN_DOCUMENT
+[D0534:P0001] sha256:9f37080676227cab26508f9dc159e5682433e3f5d7ca88fad692d0cceee99853
+[D0534:P0002] sha256:f28186f65b8478bf89950747f0b420e7cbf9552f312ee706e2258e24c8664bbe
+[D0534:P0003] sha256:b0a8215275432ca79ee2025dbf510f8f1b728acab1e8162c48c0e853cb4e3db3
+[D0534:P0004] sha256:8f51e7439a37f84745163d86724bc6feb93fe024587a55d9c0e2e156690cb73a
+[D0534:P0005] sha256:356d22a7988301ccb59564869a6b66207fc6be784676b8e6255c484e8be466dd
+[D0534:P0006] sha256:f0fcd10f7d90f13be3161ff2899bdd42f9af0d4617d47a4d958e61470fc2b3dc
+[D0534:P0007] sha256:5cd80715f7480b08a5fdc96e8fc995b365f42d22bb5a455ad32e54d5b79a08c8
+[D0534:P0008] sha256:2b4254c0cd796770d791f90ce2bcda5528c37d6cb7c1c5bbd67c17865ad1968f
+[D0534:P0009] sha256:f2c8242c2d2eb8b5f708c7fb211ab7d0785e3ec6219860a5fe58af64e28f4cf9
+[D0534:P0010] sha256:784dbf362179a913ab067124b2b0ac04f42201a56aaa5dd6cef26f4629c7a9b8
+[D0534:P0011] sha256:8916b466a816dc01b59df49663bf4616333b68b1195468f07d56fdd598107aa1
+[D0534:P0012] sha256:af2bda8c1622ddb95f61e1250c1510be498857ed55360f66b7d62c599386b52f
+[D0534:P0013] sha256:d3206c7e53cf9c03bc2ada4ce02a7985d410e5c82be8e629180f7d2f329e1e76
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (17)
+E001: «intellectual property and R&D theft» — targets → «defense industrial base» | форма: actual, positive
+E002: «threat actors» — targets → «defense industrial base» | форма: actual, positive
+E003: «identity segregation» — enables → «detection» | форма: conditional, positive
+E004: «Luke McNamara» — member of → «Google Threat Intelligence Group» | форма: actual, positive
+E005: «Luke McNamara» — reports on → «ransomware» | форма: actual, positive
+E006: «ransomware» — affects → «defense supply chain» | форма: actual, positive
+E007: «rigorous authentication» — enables → «detection» | форма: conditional, positive
+E008: «ransomware» — affects → «defense supply chain» | форма: actual, negative
+E009: «cyber disruption» — targets → «defense industrial base» | форма: actual, positive
+E010: «Google Threat Intelligence Group» — member of → «Luke McNamara» | форма: actual, positive
+E011: «ransomware» — affects → «companies that provide dual-use components» | форма: actual, positive
+E012: «threat actors» — targets → «defense ecosystem» | форма: actual, positive
+E013: «companies that provide dual-use components» — provides → «drones» | форма: actual, positive
+E014: «extortion attacks» — affects → «companies that provide dual-use components» | форма: actual, positive
+E015: «extortion attacks» — affects → «defense supply chain» | форма: actual, positive
+E016: «staging access» — targets → «defense industrial base» | форма: actual, positive
+E017: «espionage» — targets → «government agencies» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

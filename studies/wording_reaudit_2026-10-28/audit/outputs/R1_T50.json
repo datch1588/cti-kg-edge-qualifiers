@@ -1,0 +1,12 @@
+{
+ "audit_file": "R1_T50",
+ "target_doc_id": "D0120",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly supports» подає підтримку як можливість, тоді як у D0120:P0020 завантаження SBOM («Upload an SBOM or spreadsheet») описано як наявну функцію SecAlerts, тобто actual."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0120:P0003 дата публікації статті «June 1, 2026» подана як факт, що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0120:P0015 і D0120:P0019 сказано, що SecAlerts отримує дані «rather than relying solely on NVD», тобто стаття так само заперечує виключну залежність від NVD як чинний стан."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає експлуатацію протягом 24 годин як подію, що сталася, а в D0120:P0004–P0005 це умовний ілюстративний сценарій, звернений до читача («Your company's...», «if you even have one»), тобто лише можливий розвиток подій, а не повідомлення про реальний випадок."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0120:P0021 стаття так само подає це як здатність користувача («allows you to cut out the noise using a range of filters... you can»), що відповідає маркеру «can» у формулюванні."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає розкриття вразливості у VPN-застосунку як факт, а в D0120:P0004 це вигаданий ілюстративний сценарій без конкретної вразливості чи продукту, тобто лише можлива ситуація, а не реальна подія."}
+ ]
+}

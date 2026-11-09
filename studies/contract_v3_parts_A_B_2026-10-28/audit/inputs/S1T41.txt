@@ -1,0 +1,176 @@
+AUDIT_FILE: S1T41
+TARGET_DOC_ID: D0151
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0151
+PUBLICATION_DATE: 2026-05-26
+SOURCE_URL: https://www.manilatimes.net/2026/05/26/tmt-newswire/pr-newswire/ransomware-attacks-on-automotive-and-smart-mobility-more-than-doubled-in-2025-according-to-new-research-by-upstream-security/2351233
+TITLE_SHA256: 2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0
+BEGIN_DOCUMENT
+[D0151:P0001] sha256:2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0
+[D0151:P0002] sha256:5da59bd622ec1dbdc1565d883bbdc99e09db3a61da0eeae469b5979db0e4a158
+[D0151:P0003] sha256:c056050018c406afc2ee638887e0be14c94740dcf7c3a9309ce8e1e5ef77c69c
+[D0151:P0004] sha256:725f00df54afbf9d95596e2a8a517a8e8a434c50c3f868b6e79f5b4aa2a4c658
+[D0151:P0005] sha256:e92dee7dd03f0f72917b7e845832511ffebb4d9153f1a1e287d4a6f6c6f4a093
+[D0151:P0006] sha256:6eddd71c61524dc6066c3db391957ac774f86c8b98bc05454ef87bc6376f3da2
+[D0151:P0007] sha256:aaeaf564698a63d4b3f49a4e48227120b1c94edf6c0ef15d334e9d655ec729dd
+[D0151:P0008] sha256:c04d39f272a9b9cc956950fa54d88d14951017dd483995b74a89181c566d7e63
+[D0151:P0009] sha256:3b827e28d28ad1f6ac8a905ff825ed2c7ab92c0591a50073a7548000e2f5e715
+[D0151:P0010] sha256:ce8b5240b4b0b41987ef9d571891fba820a7962f444adb3a365521fe10ec82d1
+[D0151:P0011] sha256:2937218c40adfcf5dc1ef471325be684049c6d25d79a23f1c7b49dd3ed232f8f
+[D0151:P0012] sha256:8944404d53b2a5960efe0d6e6843f1bc0a4a65741b52ed0101a54919d493114f
+[D0151:P0013] sha256:22c19018ca6701ef172b15a02e781bc664fdb5c24435f55976bcc5b333802a96
+[D0151:P0014] sha256:8817eef1d6f79bb6ee30a4f5af4af19cf3e1a63fd513350f8ebb5ddfc7b0a726
+[D0151:P0015] sha256:ff0e64428fd2b24faed380f13db3bbc1febc1b62e15413d47dd6e09bcdd4d0ee
+[D0151:P0016] sha256:3d5224586649fc6c88be3398eae15878183356ab8b7a4b029d20dc3aad5187c9
+[D0151:P0017] sha256:e3488895bc302e46b651642b6ed24e35272baf9c845daffe14403c7ac5225089
+[D0151:P0018] sha256:3582d7293983c0fdadf9b0c015c7b4827751c0b02b39b4637dff30c31804fbfa
+[D0151:P0019] sha256:81edb2a1d256946c4d8db3a7f83220a45ff74a8497559448ebd32c517d4ad77c
+[D0151:P0020] sha256:3998fc5c05c85312537a0bd988dcb7064cb42d2510de4ad71d965fca23f07cf0
+[D0151:P0021] sha256:6f3b8363e9fc604d946f6599a03958301402224c2f63d13650e1e98fb3cfa599
+[D0151:P0022] sha256:320c4e8d361ff8f0db8924946719164bbfedf13193a6c98a82bb3c868495bf70
+[D0151:P0023] sha256:af210be989aacf722d0b17186c0b64bc5b3969a33b09bf4d2aa93c0f97d41517
+[D0151:P0024] sha256:c8f8eded188e95d7f1a252d486f61be482299af86945d09b6d6a6077252b5d0a
+[D0151:P0025] sha256:67a4ec6c270e5e5733dea276fd1c87488d89bf89874a40eee0a2bf548bb3a2d6
+[D0151:P0026] sha256:d6da03e5f96ec2106fb76f35882e8ed14c39518c3aa89d8ecca61fb5b171646f
+[D0151:P0027] sha256:ac83e28f7180896e2bf9324601a4579cea0d46121c43abd55057602b09c74c0e
+[D0151:P0028] sha256:6f155efa809673f0deb5ea72dd1481d1ccda905de44e1e1a7098d7f81fa03e47
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (85)
+E001: «cybersecurity incidents» — attributed to → «black hat actors» | форма: actual, positive
+E002: «mid-2025 vehicle ransom attack» — took remote control of → «ignition» | форма: actual, positive
+E003: «APIs» — enables → «cybersecurity incidents» | форма: actual, positive
+E004: «494 publicly reported cybersecurity incidents» — involved → «data and privacy breaches» | форма: actual, positive
+E005: «Upstream» — is backed by → «MSI Insurance» | форма: actual, positive
+E006: «Upstream» — reports on → «organized threat actors» | форма: actual, positive
+E007: «Upstream» — provides → «data management platform» | форма: actual, positive
+E008: «Upstream» — provides → «SOC services» | форма: actual, positive
+E009: «2026 Global Automotive and Smart Mobility Cybersecurity Report» — includes analysis of activity on → «deep and dark web» | форма: actual, positive
+E010: «Upstream» — provides → «resilience services» | форма: actual, positive
+E011: «ransomware» — affects → «Automotive and Smart Mobility» | форма: actual, positive
+E012: «mid-2025 vehicle ransom attack» — gained access via → «companion app» | форма: actual, positive
+E013: «Upstream» — is backed by → «Glilot Capital Partners» | форма: actual, positive
+E014: «organized threat actors» — conducted large-scale coordinated attacks in → «2025» | форма: actual, positive
+E015: «Upstream» — provides → «data management platform» | форма: possible, positive
+E016: «data management platform» — uses → «AI» | форма: actual, positive
+E017: «2026 Global Automotive and Smart Mobility Cybersecurity Report» — was released on → «May 26, 2026» | форма: actual, positive
+E018: «AI architectures» — expanded attack surface of → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E019: «automotive industry» — uses → «Physical AI» | форма: actual, positive
+E020: «Alliance Ventures» — is associated with → «Nissan» | форма: actual, positive
+E021: «Upstream» — protects → «Physical AI» | форма: actual, positive
+E022: «mid-2025 vehicle ransom attack» — took remote control of → «door locks» | форма: actual, positive
+E023: «Upstream» — is backed by → «Cisco Investments» | форма: actual, positive
+E024: «494 publicly reported cybersecurity incidents» — targeted → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E025: «Upstream» — provides → «AI-powered cybersecurity detection and response platform (XDR)» | форма: possible, positive
+E026: «organized threat actors» — increasingly target → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E027: «Alliance Ventures» — is associated with → «Mitsubishi» | форма: actual, positive
+E028: «organized threat actors» — targets → «Automotive and Smart Mobility» | форма: actual, positive
+E029: «Upstream» — is backed by → «BMW» | форма: actual, positive
+E030: «The Manila Times» — republished announcement of → «2026 Global Automotive and Smart Mobility Cybersecurity Report» | форма: actual, positive
+E031: «494 publicly reported cybersecurity incidents» — were mostly conducted via → «remote attacks» | форма: actual, positive
+E032: «Upstream» — is backed by → «CRV» | форма: actual, positive
+E033: «cybersecurity incidents» — uses → «cloud systems» | форма: actual, positive
+E034: «AI-powered cybersecurity detection and response platform (XDR)» — is purpose-built for → «connected vehicles» | форма: actual, positive
+E035: «APIs» — drive escalation of cybersecurity risks in → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E036: «Upstream» — is backed by → «Maniv Mobility» | форма: actual, positive
+E037: «2026 Global Automotive and Smart Mobility Cybersecurity Report» — was announced in → «SHIBUYA, Japan» | форма: actual, positive
+E038: «autonomous vehicles» — are among first production-ready systems of → «Physical AI» | форма: actual, positive
+E039: «ransomware attacks» — more than doubled compared to → «2024» | форма: actual, positive
+E040: «black hat actors» — were attributed 65% of incidents in → «2024» | форма: actual, positive
+E041: «Upstream» — delivers → «cloud-based AI-powered data management platform» | форма: actual, positive
+E042: «mid-2025 vehicle ransom attack» — locked owners out of → «vehicles» | форма: actual, positive
+E043: «XDR» — uses → «AI» | форма: actual, positive
+E044: «494 publicly reported cybersecurity incidents» — had potential to impact → «mobility assets» | форма: actual, positive
+E045: «ransomware» — accounted for 44% of attacks on → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E046: «494 publicly reported cybersecurity incidents» — focused on → «business and operational disruption» | форма: actual, positive
+E047: «Physical AI» — is expanding attack surfaces of → «Automotive and Smart Mobility ecosystem» | форма: actual, positive
+E048: «Upstream» — is backed by → «Nationwide Insurance» | форма: actual, positive
+E049: «Alliance Ventures» — is associated with → «Renault» | форма: actual, positive
+E050: «ransom attacks» — are expanding into → «vehicles» | форма: actual, positive
+E051: «Upstream» — provides → «cyber threat intel» | форма: actual, positive
+E052: «cybersecurity incidents» — uses → «telematics» | форма: actual, positive
+E053: «Yoav Levy» — leads → «Upstream» | форма: actual, positive
+E054: «APIs» — enabled significant portion of → «494 publicly reported cybersecurity incidents» | форма: actual, positive
+E055: «mid-2025 vehicle ransom attack» — occurred in → «mid-2025» | форма: actual, positive
+E056: «PR Newswire» — published announcement of → «2026 Global Automotive and Smart Mobility Cybersecurity Report» | форма: actual, positive
+E057: «Upstream» — reports on → «ransomware» | форма: actual, positive
+E058: «Upstream» — reports on → «cybersecurity incidents» | форма: actual, positive
+E059: «Upstream» — is backed by → «Hyundai» | форма: actual, positive
+E060: «data management platform» — uses → «AI» | форма: actual, negative
+E061: «2026 Global Automotive and Smart Mobility Cybersecurity Report» — analyzes → «494 publicly reported cybersecurity incidents» | форма: actual, positive
+E062: «black hat actors» — were attributed 71% of → «494 publicly reported cybersecurity incidents» | форма: actual, positive
+E063: «Upstream» — provides → «API Security» | форма: actual, positive
+E064: «Upstream» — protects → «connected vehicles» | форма: actual, positive
+E065: «Upstream» — provides → «XDR» | форма: actual, positive
+E066: «Upstream» — released → «2026 Global Automotive and Smart Mobility Cybersecurity Report» | форма: actual, positive
+E067: «ransomware» — targets → «remote vehicle command & control systems» | форма: actual, positive
+E068: «494 publicly reported cybersecurity incidents» — involved attack vectors → «telematics and cloud systems» | форма: actual, positive
+E069: «financially motivated attack groups» — caused escalation in → «ransomware attacks» | форма: actual, positive
+E070: «Upstream» — is backed by → «Volvo Group» | форма: actual, positive
+E071: «ransomware» — was one of fastest-growing attack types in → «2025» | форма: actual, positive
+E072: «Upstream» — is backed by → «Salesforce Ventures» | форма: actual, positive
+E073: «Upstream» — is backed by → «Alliance Ventures» | форма: actual, positive
+E074: «Upstream» — provides → «AI-powered cybersecurity detection and response platform (XDR)» | форма: actual, positive
+E075: «SHIBUYA» — located in → «Japan» | форма: actual, positive
+E076: «494 publicly reported cybersecurity incidents» — occurred in → «2025» | форма: actual, positive
+E077: «Physical AI» — protects → «Upstream» | форма: actual, positive
+E078: «ransomware» — targets → «Automotive and Smart Mobility» | форма: actual, positive
+E079: «ransomware» — affects → «vehicles» | форма: actual, positive
+E080: «Yoav Levy» — is Co-Founder and CEO of → «Upstream» | форма: actual, positive
+E081: «Upstream» — reports on → «black hat actors» | форма: actual, positive
+E082: «cybersecurity incidents» — affects → «Automotive and Smart Mobility» | форма: actual, positive
+E083: «Upstream» — provides → «SOC services» | форма: actual, negative
+E084: «Salesforce Ventures» — is backed by → «Upstream» | форма: actual, positive
+E085: «mid-2025 vehicle ransom attack» — accessed → «remote vehicle command & control systems» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

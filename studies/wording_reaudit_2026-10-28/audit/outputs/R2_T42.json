@@ -1,0 +1,17 @@
+{
+ "audit_file": "R2_T42",
+ "target_doc_id": "D0160",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0007 запропонований законопроєкт «would create» міжвідомчу робочу групу, тобто це заплановане створення, і формулювання «would create» передає саме цю форму."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає керівництво групи директорами FBI як чинний стан, але робоча група лише передбачена законопроєктом, який ще не ухвалено (P0007 «would create», P0010 описує положення законопроєкту, P0014), тому стаття подає цей звʼязок як запланований."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «monitors» подає моніторинг як факт, а в P0007 законопроєкт лише «would create» групу «to monitor» Volt Typhoon, тобто це запланована функція."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «submits» подає звітування як факт, а в P0011 сказано «would submit reports and briefings to Congress», тобто це заплановано."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає виявлення, аналіз і реагування як здійснену діяльність, а в P0010 запропонована група лише «is intended to» сприяти цьому, тобто це запланована мета."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає склад групи як чинний стан, а P0010 описує положення законопроєкту про групу, яку ще не створено (P0007 «would create»), тому стаття подає цей звʼязок як запланований."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly issued warning» подає попередження як лише можливе, а в P0008 прямо сказано як факт: «In February 2024, the FBI and the CISA warned»."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «assesses» подає оцінювання як факт, а в P0011 група лише «would ... assess potential damage to U.S. critical infrastructure», тобто це заплановано."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0008 як факт сказано, що FBI і CISA у лютому 2024 року попередили про компрометацію мереж цим угрупованням (Volt Typhoon), і це відповідає формі actual, positive."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає керівництво групи директорами CISA як чинний стан, але групу лише передбачає ще не ухвалений законопроєкт (P0007 «would create», P0010 описує його положення), тому стаття подає цей звʼязок як запланований."},
+  {"item_id": "W011", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «monitors» подає моніторинг як факт, а в P0007 законопроєкт лише «would create» групу «to monitor Chinese state-sponsored cyber actors», тобто це запланована функція."}
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "audit_file": "S5F35",
+ "target_doc_id": "D0226",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Data poisoning названо серед ризиків, що їх становлять LLM та агентні системи ШІ; подано як чинний ризик."},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернений: стаття каже, що загрози ШІ націлені на енергетичну та комунікаційну інфраструктуру, а не навпаки."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття каже, що Академія національної розвідки розташована в Анкарі."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Те, що архітектура захищає критичну інфраструктуру, є описом її призначення (actual), а не порадою; recommended позначено помилково."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Prompt injection названо ризиком для LLM та агентних систем як чинний ризик."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Data poisoning названо ризиком для LLM та агентних систем."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Talha Kose — керівник (head) Національної академії розвідки Туреччини."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Цілі загроз охоплюють окремих користувачів; подано як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "Цілі загроз охоплюють оборонні ланцюги постачання; подано як факт."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "Model inference attacks названо серед ризиків LLM та агентних систем."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "Розкриття чутливої інформації названо серед ризиків LLM та агентних систем."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що фінансові системи є ціллю, тому negative суперечить тексту."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Архітектура описана як така, що захищає критичну інфраструктуру: функція подана як actual."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "Захист даних громадян — опис функції архітектури (actual), порада впровадити не робить цей зв'язок recommended."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Prompt injection названо ризиком для LLM та агентних систем."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Цілі загроз охоплюють державні установи; подано як факт."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Цілі загроз охоплюють енергетичну та комунікаційну інфраструктуру; подано як факт."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "Розкриття чутливої інформації названо ризиком для LLM та агентних систем."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Надмірна довіра до виходів моделей названа ризиком LLM та агентних систем."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "Надмірні дозволи названо ризиком LLM та агентних систем."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "Model inference attacks названо ризиком для LLM та агентних систем."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "Цілі загроз охоплюють фінансові системи; подано як факт."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "Архітектура описана як така, що захищає дані громадян: функція подана як actual."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "C", "reason": "Надмірні дозволи названо ризиком LLM та агентних систем."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "Надмірна довіра до виходів моделей названа ризиком LLM та агентних систем."},
+  {"item_id": "E026", "triple_verdict": "C", "form_verdict": "C", "reason": "Анкара названа столицею Туреччини."}
+ ]
+}

@@ -1,0 +1,118 @@
+AUDIT_FILE: S5F45
+TARGET_DOC_ID: D0112
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0112
+PUBLICATION_DATE: 2026-06-02
+SOURCE_URL: https://www.infoworld.com/article/4179874/infected-red-hat-npm-packages-expose-developer-credentials-2.html
+TITLE_SHA256: f7b203ade55c4dad9da3a78b260a73d0292531bb7a91daa19fb7b7b81de01564
+BEGIN_DOCUMENT
+[D0112:P0001] sha256:f7b203ade55c4dad9da3a78b260a73d0292531bb7a91daa19fb7b7b81de01564
+[D0112:P0002] sha256:7a69549cbcfa37c3fde7a1a7f6f332865d06355c114bb3d818f02cdcc0d13f7f
+[D0112:P0003] sha256:f4a23f7baa9bbfb741d101e660db34bda67e1a871d4e3a8b31c0966dded18cdf
+[D0112:P0004] sha256:f8c9755bccb0a3ac19574e82e8af1e0e9d9b049c356df4d726a3de258c75994a
+[D0112:P0005] sha256:0feab4bbf5ea51279020930efc9c5b6cd7f4d126e2356247b34ebc5ec5850f35
+[D0112:P0006] sha256:9b9824a717e75206e025d77caa9811aeba05200f9abf1a1a7cec953b55cce0ae
+[D0112:P0007] sha256:c79d5b0c6c95aa3451f93d6d5f9a43d833f110bbca765f28e25c0fb0ddebff13
+[D0112:P0008] sha256:b5ba96798f33b0010ff8df6a290ac490dd49af81d0507271511ae9363e47d6b0
+[D0112:P0009] sha256:ba26822cb386e1896a44da28d933b8e6b4f0bd2d5bcec3fe7ce9415c4e191922
+[D0112:P0010] sha256:c9f3300a6a06f4078bca802a4831306a568a2da05cbdd3991f1d8ef510e3da8a
+[D0112:P0011] sha256:dbbe4368c52ae418813ec0d33230605a66fb90f53d637decc1a9d8442f986459
+[D0112:P0012] sha256:3f5430dcafa3bb9cd0d16f02e301726d2dea54363cd511907a86a8f55f012393
+[D0112:P0013] sha256:d19bce6c9196b0135bc4fe41b4043ecaf664dfba3cb6b4e1cdcbce8d637dc448
+[D0112:P0014] sha256:9f2c1d30c185bc0d65968e08bbd44b26497af4e5bfc2091413fb04b46d07b5ea
+[D0112:P0015] sha256:69b59119fe53edd4b29b307adb111f25d35a14134415b7978e6fb1a28cfd7f70
+[D0112:P0016] sha256:5ece82b7c31f26448022f2025cd493c026682b69670633dfef4baaa2fb669ce8
+[D0112:P0017] sha256:8975b45b6e2ea973b923d35345b0de8bf1039fe20f7ba2e7da3085f6802395ab
+[D0112:P0018] sha256:2c355ac717f49d35900a834716423db2831c421924229edbf4da228244490e13
+[D0112:P0019] sha256:81b06b2a8dff355b167407a34b75002aae822448b5b066aa68b8dc5e2235520d
+[D0112:P0020] sha256:8259f2b872000d21a6983f3d045b8586c27475bc61b277cefc171c47d35042f8
+[D0112:P0021] sha256:a520f82c12239a2c17e2b4db38f6afbe64aa0a035a404429152f8ca077ad1bd3
+[D0112:P0022] sha256:55e31c39f1ba7d53570a9b9a9f5102176c8b76751258a93baf31b47925e4a344
+[D0112:P0023] sha256:b8c8618af1329e08760db70f45fe40e2ceb4196ca42ee2bc09fa4220269c1fa2
+[D0112:P0024] sha256:eafc758b4a3f4b8f60bb364ec4cea197cc6dbf4ad566b73682efc40092b2c308
+[D0112:P0025] sha256:2429b1357e9a520bbfb79afcf2823910209b30d3493a63df786aa46efa6db38e
+[D0112:P0026] sha256:15328fe329182315a2ca316e28bcf557d4cae52fda5f52682a20b507fc477d9c
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (29)
+E001: «Mini Shai-Hulud» — affects → «npm» | форма: actual, positive
+E002: «Miasma» — uses → «supply chain attack» | форма: actual, positive
+E003: «Shai-Hulud» — uses → «persistence» | форма: actual, positive
+E004: «Miasma» — uses → «Mini Shai-Hulud» | форма: actual, positive
+E005: «Mini Shai-Hulud» — uses → «credential theft» | форма: actual, positive
+E006: «Miasma» — uses → «GitHub Actions» | форма: actual, positive
+E007: «supply chain attack» — targets → «npm» | форма: actual, positive
+E008: «Shai-Hulud» — affects → «npm» | форма: actual, positive
+E009: «OX Security» — reports on → «Miasma» | форма: actual, positive
+E010: «TeamPCP» — provides → «Mini Shai-Hulud» | форма: actual, positive
+E011: «Miasma» — uses → «credential theft» | форма: actual, positive
+E012: «Miasma» — targets → «Red Hat npm packages» | форма: actual, positive
+E013: «Miasma» — uses → «SLSA provenance attestations» | форма: actual, positive
+E014: «Red Hat» — operates → «@redhat-cloud-services» | форма: actual, positive
+E015: «Miasma» — uses → «Shai-Hulud» | форма: possible, positive
+E016: «Miasma» — targets → «Red Hat npm packages» | форма: actual, negative
+E017: «Wiz» — reports on → «Miasma» | форма: actual, positive
+E018: «Red Hat npm packages» — part of → «@redhat-cloud-services» | форма: actual, positive
+E019: «Miasma» — targets → «Red Hat Cloud Services» | форма: actual, positive
+E020: «Shai-Hulud» — uses → «credential theft» | форма: actual, positive
+E021: «@redhat-cloud-services» — part of → «npm» | форма: actual, positive
+E022: «Miasma» — uses → «GitHub Actions» | форма: possible, positive
+E023: «Miasma» — reports on → «Wiz» | форма: actual, positive
+E024: «TeamPCP» — targets → «TanStack» | форма: actual, positive
+E025: «Mini Shai-Hulud» — attributed to → «TeamPCP» | форма: actual, positive
+E026: «Miasma» — uses → «OpenID Connect» | форма: actual, positive
+E027: «Shai-Hulud» — affects → «Red Hat npm packages» | форма: actual, positive
+E028: «Miasma» — uses → «GitHub OpenID Connect (OIDC)» | форма: actual, positive
+E029: «Wiz» — reports on → «Mini Shai-Hulud» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

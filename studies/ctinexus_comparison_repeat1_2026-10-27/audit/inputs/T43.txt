@@ -1,0 +1,139 @@
+AUDIT_FILE: T43
+TARGET_DOC_ID: D0099
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0099
+PUBLICATION_DATE: 2026-06-04
+SOURCE_URL: https://www.prnewswire.com/news-releases/zerofox-positioned-as-a-leader-and-ace-performer-in-the-spark-matrix-tm-digital-threat-intelligence-management-dtim-2026-by-qks-group-302791535.html
+TITLE_SHA256: 893291881955f001f0c928726f8fb24de79288bf77497e98de8fd722edf9a1e4
+BEGIN_DOCUMENT
+[D0099:P0001] sha256:893291881955f001f0c928726f8fb24de79288bf77497e98de8fd722edf9a1e4
+[D0099:P0002] sha256:5cff06277681fc88d2a05148a36d65e41ff7dfaf7f7ea9fc143f84d52f1ecfce
+[D0099:P0003] sha256:ee8857b2fd375bce7fe52fb7c61ca693715de30e653094cd2d3ed4cb91e479ae
+[D0099:P0004] sha256:8c2f2d5c1c4b1f9012abbf2305a8fd5c60d6d7504b2d43064389ff8ef78eb3af
+[D0099:P0005] sha256:42607c4222e5aa2384851d1742b9d70767c1f301036ca5d0dbe1b0fe5582bf10
+[D0099:P0006] sha256:f844d086a8a5b266855c55b7728a1879654308920a1ce4891d68a7649531c8cb
+[D0099:P0007] sha256:9c2e01c724f2a053c312d3303891631d9b3643e80e3dccba795a5ec1398ee275
+[D0099:P0008] sha256:33b81222c9d1499fbad5ae52db5184eda2f3bdb212ba3c4043b9263ca3e92166
+[D0099:P0009] sha256:f2d94ea8e54f888a74670dbbe5f50b015a795bfae66561207b74a8253cab301d
+[D0099:P0010] sha256:5d3758556a7814616639de8e1a7b17466c11fabc37eaaf4bf2488ae5223d635c
+[D0099:P0011] sha256:a64dadd4ecc0d9d409f37ec7abc583491af5707b367a2e2511aa71d76f5e4819
+[D0099:P0012] sha256:78bf0b0266756db081ea8040a89b02ed801be8b1b1b98fa2a4b4a59b2bf72dc3
+[D0099:P0013] sha256:d405309474778adf7cf009f5ab0ad0ce88f969b6220bec0e21d9077563153ba7
+[D0099:P0014] sha256:84264e5d7fe5a3f2f485b85d170e079394678a622ce71303a9adf303ceb6af7e
+[D0099:P0015] sha256:9b718cf077bad5b7836c7b22d01b87b70edeb695c589995a8b89054101d83899
+[D0099:P0016] sha256:f77b10160a96dbdebbc6a7aeae20f0f74a9430fb0b6d86c092ac082959747041
+[D0099:P0017] sha256:cdaed8506db60122eb244d8b2877eb9337a1f114d1a36791164c45d53af2b0e9
+[D0099:P0018] sha256:932f62af9246bf3cbc7abd83d888435aa02cc7616abcb01a34453aa6d3849bdf
+[D0099:P0019] sha256:5d5e5fcf4a2c5cb3a055c7d8e606e746ed32976b2fd9d0940e2c5bd5cdc2a0da
+[D0099:P0020] sha256:4757ce1952a542012edb6d8c2de42436f6a25434c078a01529a76730021ca1fe
+[D0099:P0021] sha256:9e86ad7f894c8917eae32107ccd1abc4c835955c133cb02865efd1b7aaa7e86b
+[D0099:P0022] sha256:9b3f75732486a07d48e4775d99801ff1840d91e2899ab41a2c0911fe1abef4fe
+[D0099:P0023] sha256:0cff3567e8a4e6118a62b739bbf97f0068dc5b4673dec107566ea6dc0eac01d2
+[D0099:P0024] sha256:dda8ad8ef95bc9c670fa1334f39c6544c7624163ad46a92905a2633629faddb0
+[D0099:P0025] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0099:P0026] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0099:P0027] sha256:faff4cd30d78b13cd4661e75adfc365bf7891361c9d079de3ccd826bff59ec3d
+[D0099:P0028] sha256:76e7e34925d136d200527aecf397d82021915da0aac2f16b1a1053bd0e6b9705
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (56)
+E001: «ZeroFox» — unifies → «Executive Protection» | форма: actual, positive
+E002: «Russ Bentley» — member of → «ZeroFox» | форма: actual, positive
+E003: «ZeroFox» — enables automated takedowns of → «fake accounts» | форма: actual, positive
+E004: «QKS Group» — offers → «SPARK Plus analyst advisory platform» | форма: actual, positive
+E005: «ZeroFox platform» — is enriched by → «DarkOps intelligence» | форма: actual, positive
+E006: «QKS Group» — located in → «Pune» | форма: actual, positive
+E007: «ZeroFox platform» — integrates intelligence from → «social media» | форма: actual, positive
+E008: «QKS Group» — announced on → «June 4, 2026» | форма: actual, positive
+E009: «QKS Group» — provides → «SPARK Matrix» | форма: actual, positive
+E010: «ZeroFox» — provides → «Attack Surface Intelligence» | форма: actual, positive
+E011: «QKS Group» — published → «SPARK Matrix: Digital Threat Intelligence Management (DTIM), 2026» | форма: actual, positive
+E012: «ZeroFox» — focuses on → «external threat intelligence» | форма: actual, positive
+E013: «ZeroFox» — enables automated takedowns of → «phishing sites» | форма: actual, positive
+E014: «ZeroFox» — provides → «Physical Security Intelligence» | форма: possible, positive
+E015: «QKS Group» — is located in → «Pune, India» | форма: actual, positive
+E016: «ZeroFox» — provides → «ASM» | форма: actual, positive
+E017: «ZeroFox» — provides → «Executive Protection» | форма: actual, positive
+E018: «ZeroFox» — mitigates → «phishing» | форма: actual, positive
+E019: «ZeroFox platform» — integrates intelligence from → «domains» | форма: actual, positive
+E020: «ZeroFox» — unifies → «Cyber Threat Intelligence» | форма: actual, positive
+E021: «ZeroFox» — provides → «digital risk protection» | форма: actual, positive
+E022: «threat intelligence» — combines → «ZeroFox platform» | форма: actual, positive
+E023: «ZeroFox» — provides → «automated takedowns» | форма: actual, positive
+E024: «ZeroFox platform» — combines → «threat intelligence» | форма: actual, positive
+E025: «ZeroFox platform» — integrates intelligence from → «deep and dark web» | форма: actual, positive
+E026: «ZeroFox» — follows → «discover-validate-disrupt model» | форма: actual, positive
+E027: «ZeroFox platform» — combines → «DRP» | форма: actual, positive
+E028: «Kunal Kumar» — member of → «QKS Group» | форма: actual, positive
+E029: «ZeroFox platform» — combines → «ASM» | форма: actual, positive
+E030: «QKS Group» — named as Leader and Ace Performer → «ZeroFox» | форма: actual, positive
+E031: «ZeroFox» — focuses on → «digital risk protection» | форма: actual, positive
+E032: «ZeroFox» — enables automated takedowns of → «malicious infrastructure» | форма: actual, positive
+E033: «ZeroFox platform» — integrates intelligence from → «app stores» | форма: actual, positive
+E034: «PR Newswire» — published press release on → «2026.06.04» | форма: actual, positive
+E035: «ZeroFox» — provides → «Cyber Threat Intelligence» | форма: actual, positive
+E036: «ZeroFox» — provides → «fraud mitigation» | форма: actual, positive
+E037: «ZeroFox» — unifies → «Brand and Domain Protection» | форма: actual, positive
+E038: «SPARK Matrix» — provides → «QKS Group» | форма: actual, positive
+E039: «ZeroFox» — serves customers in → «finance, media, retail, manufacturing, healthcare, and government» | форма: actual, positive
+E040: «ZeroFox» — positioned as Leader and Ace Performer in → «SPARK Matrix: Digital Threat Intelligence Management (DTIM), 2026» | форма: actual, positive
+E041: «QKS Group» — offers → «QKS Community» | форма: actual, positive
+E042: «ZeroFox» — unifies → «Attack Surface Intelligence» | форма: actual, positive
+E043: «SPARK Matrix: Digital Threat Intelligence Management (DTIM), 2026» — provides competitive analysis and ranking of → «DTIM vendors» | форма: actual, positive
+E044: «Digital Threat Intelligence Management (DTIM)» — provides contextual insights into → «threat actors, campaigns, and tactics» | форма: actual, positive
+E045: «QKS Group» — offers → «QKS Intelligence» | форма: actual, positive
+E046: «ZeroFox» — mitigates → «fraud» | форма: actual, positive
+E047: «ZeroFox» — unifies → «Physical Security Intelligence» | форма: actual, positive
+E048: «Digital Threat Intelligence Management (DTIM)» — provides contextual insights into → «threat actors, campaigns, and tactics» | форма: actual, negative
+E049: «ZeroFox» — provides → «deep external threat visibility» | форма: actual, positive
+E050: «Pune» — located in → «India» | форма: actual, positive
+E051: «ZeroFox» — has → «over a decade of SaaS expertise» | форма: actual, positive
+E052: «QKS Group» — offers → «SPARK Matrix evaluation framework» | форма: actual, positive
+E053: «ZeroFox» — provides → «Physical Security Intelligence» | форма: actual, positive
+E054: «Russ Bentley» — member of → «ZeroFox» | форма: actual, negative
+E055: «Digital Threat Intelligence Management (DTIM)» — delivers visibility into → «external threats targeting an organization's digital-facing assets» | форма: actual, positive
+E056: «ZeroFox» — provides → «Brand and Domain Protection» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

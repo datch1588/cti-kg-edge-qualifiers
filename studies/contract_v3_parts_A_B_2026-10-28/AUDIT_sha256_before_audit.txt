@@ -1,0 +1,14 @@
+зафіксовано 2026-10-28T21:44:23Z (до запуску аудиторів; усі 200 запусків мають валідний вихід: runs/check.json, valid 200; clean 181, ще 19 — запис <synthetic> після успішного Write, перевірено scripts/verify_synthetic_v3.py, див. «Відхилення після фіксації», п. 1)
+8a96279dff1b45ed57b757b7cecb69d708c2b8223d99b53788b512388f5789b3  PROTOCOL_UA.md
+efa6a159f58f1ed752d024c3eb676b74ed9cce9258738306336d8503e9df9177  scripts/build_audit_v3.py
+9b384840a8854534bf4233a3a5965f82e40188cac3812dc39c99d49c1c9a6f64  scripts/check_v3.py
+3996f44dc61e3d304d21b9ee143c98f527a943b7748a0ab0ebd2b4d8218f2251  scripts/analyze_v3.py
+41cc0756a417858dd1a85520720b4cb8d05dd79637fb464fa18bfbbfcc679020  scripts/verify_synthetic_v3.py
+91aba1c6f5e5e382d609a885ddfa989b03175b8ae9bd29f969098e756d07e052  prompts/audit_instructions_v3_uk.txt
+dadcac30ccea89e59b3e753e926b56c4774cb1ce304e2b9750d2c2d802a238d3  prompts/audit_task_uk.txt
+a7c9c4c27781e582d35d4cfe09f47da847875fcd06c860cbe2f54649dac55f1c  keys/audit_key.json
+0d7b419322f5d80e2b63f9de8e0d46a4a073832031b7a1b5d70b05570f43715c  runs/check.json
+f5352afdc477edff723536115efc2059b97ebd77341629dcfeef44569ab11e95  analysis/verify_synthetic.txt
+917aaa6a3afd943bc8bef703cdc419964e07562a95b125bcf6dc0ab19b50e713  runs/outputs (хеш переліку хешів, 200 файлів)
+8dd4e874dbd73ea5eccaf45f9d547afc95ec6f49e6ca51e149633085db218bae  audit/inputs (хеш переліку хешів, 125 файлів)
+PROTOCOL_UA.md змінено після фіксації лише в розділі «Відхилення після фіксації» (пункт 1).

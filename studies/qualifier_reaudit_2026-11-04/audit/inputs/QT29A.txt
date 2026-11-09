@@ -1,0 +1,233 @@
+AUDIT_FILE: QT29A
+TARGET_DOC_ID: D0289
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0289
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/hims-hers-data-breach-2026-what-happened-and-why-it-matters/
+TITLE_SHA256: 41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+BEGIN_DOCUMENT
+[D0289:P0001] sha256:41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+[D0289:P0002] sha256:604ce0f10deb5fd3e5f7838ad96464e8b0031456b75ab3cf3201464b3241fb7b
+[D0289:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0004] sha256:ecd154fae8eff04f22fd4c4b61fb6429badf8e828066541cddc81cf4ed99ef6e
+[D0289:P0005] sha256:9f86568e0c7353e89415f5a71eeb5fcaff6fba5f5475ae94fb76fdf57cb0b327
+[D0289:P0006] sha256:5f90b9586f494ef7a460f898671216a8afeb4877948a63e5ba7127e14d727c07
+[D0289:P0007] sha256:1bb37376321beea0a4691462cffcb47c0686d7b7a7f912e0fc67ede9a9cd90ba
+[D0289:P0008] sha256:2b2c514f71bb088aa1a5eb89f0e151c79aa20b2469502975e15a283bf9a6e75f
+[D0289:P0009] sha256:4d4a2f7d5213edc6e5109721107b2905d6b32beab7ea19029f0abd4eb4954237
+[D0289:P0010] sha256:6abcb83bcb9335a88ea8242f0e4110ac2c81397be7413d13fe7a1dc0d5aa3696
+[D0289:P0011] sha256:3590a0886332de2349b4a62ffbb3d7cef662601c6c12674504369a8e1875b7cd
+[D0289:P0012] sha256:09011dd4684fe114c86b1bf6f589ec9dfd3596fccc2cd518079a7b3078d1293f
+[D0289:P0013] sha256:51677db3dd1b252dabc57c85c6c090d0ab92a569bfa2a9b3fec186a6f3a4ee84
+[D0289:P0014] sha256:cc6ee268ad2eb5455a499140813d951fce9d8b682bd1fc58e0df29f0ff3153e7
+[D0289:P0015] sha256:7b4df4296989133d3526a187a7bca5c91d2332f3ae3ca79762bb2259fdb928e1
+[D0289:P0016] sha256:406b68bcb56824a1223bb5de7b53f04b241f4a0455a543ec090d277190169a4f
+[D0289:P0017] sha256:57d342c5488b93d4e582e83054ff74f8c3a85f46a763d46dbb76ef522528ddbe
+[D0289:P0018] sha256:17b75e20421df65d978cc3141809356b2a19224621ce2251278290000f5bc80c
+[D0289:P0019] sha256:6597e683895ce5ae92a64ef97998e71605da83712e47c9fb7dd2db7bc905a45a
+[D0289:P0020] sha256:b931121cedf72e2b23bf0942dd799d3d7b68be47564b7420763cb4d74134da68
+[D0289:P0021] sha256:14368b223c7c2c60f38b05a39489d05f13f76f50f303f1a09162ae5dd877525f
+[D0289:P0022] sha256:c604b33edaf6347c35ceda57d32abc3f261dc48f7860dd23d88809d3be787303
+[D0289:P0023] sha256:44ec0e7c88c683a4c444474b7785029ac6f36b36c8bd302b5f4357cac3d75b83
+[D0289:P0024] sha256:eb10d945b58de6f46fbb0086609ae739b9ca63579bc13863b80b26d2e2ceb261
+[D0289:P0025] sha256:25db46de38b5681d764bad7ece876e009593379596245ac99e9c165fb0abfbfe
+[D0289:P0026] sha256:3e8b5476cf1af379d8d7e6d020c926a61e3da0fd9b22a524833f7615b44de5f4
+[D0289:P0027] sha256:fc060985e0240c162f20dcd78a8510b2f4031f37546fe1b535d85f574c63875f
+[D0289:P0028] sha256:184500290f777c0076588ffae25d024c8856b4f2f7959a63bbab42dca753a639
+[D0289:P0029] sha256:973de897dbb8d5ba671adb4b74355823b40745c7b13e3521a4e0e110704a4143
+[D0289:P0030] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0031] sha256:49741f6fa3dab917f342e2cac0dacf218768a6956309c65e49c8378a9e548609
+[D0289:P0032] sha256:48229aa32ec086785c260e85744916e6ef3bda6f6b3e88b27a7b2ba1337c2e7f
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 36, вузлів 3)
+E001: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: actual, positive
+  атрибуція: — | час події: «By early April» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0019] «@0-90 sha256=43661bb00d408566c52ab125348e305499ed25b5a9e01add0905eeefede71aad»
+E002: «Hims & Hers» — uses → «third-party customer service platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0026] «@273-394 sha256=21ea114857c01ca6bdcedc289902e1fc54c549e8dbdcae1fed059c7df69fa8d4»
+E003: «ShinyHunters» — uses → «social engineering» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0014] «@88-213 sha256=66faed98efe32a29434a6333039dae0730a403d53de4b832a54e97c968d8abd9»
+E004: «Hims & Hers» — detects → «Hims & Hers data breach» | форма: actual, positive
+  атрибуція: — | час події: «February 5» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0006] «@165-274 sha256=738299251b8043c73bedd78f3a26ea713176298aec5824f8a423aaf04a7c204f»; [D0289:P0018] «@164-262 sha256=c9d6ac8add981b82a451eab300efc859ed76b50801655fd5d8855aa15c4ad8eb»
+E005: «Hims & Hers data breach» — targets → «employees» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0007] «@128-259 sha256=d55a4aa8452a8f544de0d2b31f7fbeb73732f7f3cd409e7eae3b0dfb9f424659»; [D0289:P0009] «@281-434 sha256=74aa9f7413b2f2547b27925d4d24ff2ee0ac7047638219e0107548c849987b49»
+E006: «Hims & Hers data breach» — affects → «customer support data» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0010] «@0-85 sha256=74c48907b7b850cfceea72305fbbb919d29316335f4ce3c3b6eb275fc5d8564a»
+E007: «Hims & Hers» — protects → «third-party customer service platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0020] «@0-135 sha256=1756e1523aa588faf3c636a5eafa59d0f281917acaefa2b442fa5596a587b122»
+E008: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: actual, positive
+  атрибуція: — | час події: «early 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@0-167 sha256=1e10f0a248c900b4321e7d140fc2066f7e390cfad8b3c20cfea10e093f835805»
+E009: «Hims & Hers data breach» — affects → «customer support data» | форма: actual, positive
+  атрибуція: — | час події: «between February 4 and February 7, 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0010] «@0-85 sha256=74c48907b7b850cfceea72305fbbb919d29316335f4ce3c3b6eb275fc5d8564a»; [D0289:P0028] «@216-344 sha256=57df0b65fda7a429d13a909092b667dd841d346327b8b9efa54fb9bced6c4765»
+E010: «Hims & Hers data breach» — affects → «single sign-on account» | форма: actual, positive
+  атрибуція: «Hims & Hers» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0008] «@154-309 sha256=516f339ddab2e4ad3113b8dce80022c3194d8a9f2cfb7914a46785223b9c587a»
+E011: «Hims & Hers data breach» — affects → «third-party customer service platform» | форма: actual, positive
+  атрибуція: — | час події: «between February 4 and February 7, 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0006] «@0-164 sha256=19bca0e66f867db2e42e49eb8176cc0481f51f6c2f73596cd6d3e5af7e7186e9»
+E012: «Hims & Hers data breach» — attributed to → «ShinyHunters» | форма: possible, positive
+  атрибуція: «Reports» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0014] «@0-87 sha256=786200fed2f25195808e6e5e5cc9d3c6f25c6f58b22027e445deb20f78621e2e»; [D0289:P0015] «@188-317 sha256=71cd354fb60e2ea8b23a07ddb306b5abb9a769cf090e3066c7d931c3faf9b396»
+E013: «Hims & Hers» — protects → «electronic medical records» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0028] «@216-344 sha256=57df0b65fda7a429d13a909092b667dd841d346327b8b9efa54fb9bced6c4765»
+E014: «Hims & Hers data breach» — affects → «Hims & Hers» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@75-166 sha256=04e5e4e0b990cf2118bfcf2a05e27188ad517d04c9fd79c3ff5b7c902f484fc3»
+E015: «Hims & Hers» — uses → «third-party customer service platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0006] «@0-164 sha256=19bca0e66f867db2e42e49eb8176cc0481f51f6c2f73596cd6d3e5af7e7186e9»; [D0289:P0016] «@102-188 sha256=2be02332be323286e27b89e6ed974865174077d15d979de739add807298fbd2e»
+E016: «Hims & Hers data breach» — attributed to → «ShinyHunters» | форма: possible, positive
+  атрибуція: — | час події: «between February 4 and February 7, 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0014] «@0-87 sha256=786200fed2f25195808e6e5e5cc9d3c6f25c6f58b22027e445deb20f78621e2e»; [D0289:P0015] «@188-317 sha256=71cd354fb60e2ea8b23a07ddb306b5abb9a769cf090e3066c7d931c3faf9b396»
+E017: «Hims & Hers data breach» — affects → «electronic medical records» | форма: actual, negative
+  атрибуція: «Hims & Hers» | час події: «between February 4 and February 7, 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@168-240 sha256=c27e6bc706e3c9a7d1feedb88fb79419819e2bb4773ba1049b32f9feb0a33f0e»; [D0289:P0011] «@148-260 sha256=69c0880fb3660093d896259adc6a479a3a243832edd8b2e408f38718eaee2db6»
+E018: «Hims & Hers data breach» — affects → «electronic medical records» | форма: actual, negative
+  атрибуція: «Hims & Hers» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@168-240 sha256=c27e6bc706e3c9a7d1feedb88fb79419819e2bb4773ba1049b32f9feb0a33f0e»; [D0289:P0011] «@148-260 sha256=69c0880fb3660093d896259adc6a479a3a243832edd8b2e408f38718eaee2db6»
+E019: «Hims & Hers data breach» — affects → «single sign-on account» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0008] «@154-309 sha256=516f339ddab2e4ad3113b8dce80022c3194d8a9f2cfb7914a46785223b9c587a»
+E020: «Hims & Hers data breach» — attributed to → «ShinyHunters» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0014] «@0-87 sha256=786200fed2f25195808e6e5e5cc9d3c6f25c6f58b22027e445deb20f78621e2e»; [D0289:P0015] «@188-317 sha256=71cd354fb60e2ea8b23a07ddb306b5abb9a769cf090e3066c7d931c3faf9b396»
+E021: «Hims & Hers» — provides → «credit monitoring services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0020] «@0-135 sha256=1756e1523aa588faf3c636a5eafa59d0f281917acaefa2b442fa5596a587b122»; [D0289:P0020] «@228-335 sha256=ee67b027363cba52cd4260e685ee9f31913f8d3b74bb99f8f4da416cd9419c00»
+E022: «Hims & Hers» — uses → «third-party customer service platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0006] «@66-163 sha256=d7999227f42e35451d10efb8cdd8519b0a35b024c4fcf54de36e4e4051b40eba»; [D0289:P0016] «@102-188 sha256=2be02332be323286e27b89e6ed974865174077d15d979de739add807298fbd2e»
+E023: «Hims & Hers data breach» — uses → «social engineering» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0007] «@0-127 sha256=68600212ce143654b23fa78f567d899babaa5d81304318fc6f05e80c409102fd»; [D0289:P0008] «@0-55 sha256=23952772b87f6f74e091ae607a2bba8558fb62b8b458bd33c4f51bd019dfdfed»
+E024: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: actual, positive
+  атрибуція: — | час події: «By early April» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@75-166 sha256=04e5e4e0b990cf2118bfcf2a05e27188ad517d04c9fd79c3ff5b7c902f484fc3»; [D0289:P0019] «@0-90 sha256=43661bb00d408566c52ab125348e305499ed25b5a9e01add0905eeefede71aad»
+E025: «ShinyHunters» — targets → «cloud services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0014] «@88-213 sha256=66faed98efe32a29434a6333039dae0730a403d53de4b832a54e97c968d8abd9»
+E026: «Hims & Hers data breach» — affects → «customer support data» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0010] «@0-85 sha256=74c48907b7b850cfceea72305fbbb919d29316335f4ce3c3b6eb275fc5d8564a»; [D0289:P0016] «@367-447 sha256=9d455f6bba1827e1caefe0f5c136f0adcf03f8edf6c30cbb3dd6215fcb3ebfac»
+E027: «Hims & Hers data breach» — affects → «electronic medical records» | форма: actual, negative
+  атрибуція: «Hims & Hers» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@174-240 sha256=ba708e4f6f9e02d602148c30bdc568642d4852d0838e88789b27739f2fe550af»; [D0289:P0011] «@148-260 sha256=69c0880fb3660093d896259adc6a479a3a243832edd8b2e408f38718eaee2db6»
+E028: «credit monitoring services» — mitigates → «identity theft» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0289:P0020] «@228-335 sha256=ee67b027363cba52cd4260e685ee9f31913f8d3b74bb99f8f4da416cd9419c00»
+E029: «credit monitoring services» — mitigates → «identity theft» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0020] «@228-335 sha256=ee67b027363cba52cd4260e685ee9f31913f8d3b74bb99f8f4da416cd9419c00»
+E030: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: actual, positive
+  атрибуція: — | час події: «early April» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0019] «@0-90 sha256=43661bb00d408566c52ab125348e305499ed25b5a9e01add0905eeefede71aad»
+E031: «Hims & Hers data breach» — uses → «social engineering» | форма: actual, positive
+  атрибуція: — | час події: «between February 4 and February 7, 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0007] «@0-127 sha256=68600212ce143654b23fa78f567d899babaa5d81304318fc6f05e80c409102fd»; [D0289:P0008] «@0-55 sha256=23952772b87f6f74e091ae607a2bba8558fb62b8b458bd33c4f51bd019dfdfed»
+E032: «Hims & Hers data breach» — affects → «doctor- patient communications» | форма: actual, negative
+  атрибуція: «Hims & Hers» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0011] «@148-260 sha256=69c0880fb3660093d896259adc6a479a3a243832edd8b2e408f38718eaee2db6»
+E033: «Hims & Hers data breach» — affects → «electronic medical records» | форма: actual, negative
+  атрибуція: «Hims & Hers» | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0011] «@148-260 sha256=69c0880fb3660093d896259adc6a479a3a243832edd8b2e408f38718eaee2db6»
+E034: «Hims & Hers» — provides → «credit monitoring services» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0020] «@228-335 sha256=ee67b027363cba52cd4260e685ee9f31913f8d3b74bb99f8f4da416cd9419c00»
+E035: «ShinyHunters» — uses → «social engineering» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0014] «@88-213 sha256=66faed98efe32a29434a6333039dae0730a403d53de4b832a54e97c968d8abd9»
+E036: «Hims & Hers data breach» — affects → «Hims & Hers» | форма: actual, positive
+  атрибуція: «Hims & Hers» | час події: «In early 2026» | контекст події: вузол «Hims & Hers data breach» (incident)
+  фрагменти: [D0289:P0004] «@0-167 sha256=1e10f0a248c900b4321e7d140fc2066f7e390cfad8b3c20cfea10e093f835805»
+V001: «electronic medical records» (other) | альтернативні назви: «medical records»
+V002: «social engineering» (attack_technique) | альтернативні назви: «phishing»
+V003: «Hims & Hers data breach» (incident) | альтернативні назви: «Hims & Hers breach»
+КІНЕЦЬ ЗАПИСІВ

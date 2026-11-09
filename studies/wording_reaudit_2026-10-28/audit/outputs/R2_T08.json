@@ -1,0 +1,12 @@
+{
+ "audit_file": "R2_T08",
+ "target_doc_id": "D0520",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0520:P0005 сказано «SoftBank will provide incident response services ... including Blackpanda's IR-1 solution», тобто надання подано як заплановане, що відповідає «will provide»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0520:P0005 IR-1 описано загальним твердженням як факт («which helps companies across Japan prepare for, respond to, and recover from cyber attacks»), що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0520:P0009 сказано «compromised companies may unknowingly become a stepping stone for further attacks», тобто це можливість, що відповідає «may»."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly is pioneering» передає лише можливість, а D0520:P0030 стверджує це як факт («We are pioneering the A2I ... model»)."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «supports» без маркерів подає підтримку як чинний факт, але D0520:P0005 каже лише, що партнерство «is designed to support» компанії, а саме надання послуг SoftBank подано як майбутнє («will provide»), тобто це намір чи план."},
+  {"item_id": "W006", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0520:P0005 сказано «SoftBank will provide incident response services against cyber attacks», тобто це подано як заплановане, що відповідає «will provide»."}
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "audit_file": "S5F41",
+ "target_doc_id": "D0131",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття радить, що кожна організація має розглянути тabletop-вправи як частину стратегії (P0032), тож recommended підтверджено."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття каже, що організації стикаються з ризиками витоків даних, заперечення зв'язку немає, тож полярність negative хибна."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації стикаються з ризиками від ransomware, тобто possible, positive."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації стикаються з ризиками витоків даних, тобто possible, positive."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації стикаються з ризиками фішингових кампаній, тобто possible, positive."},
+  {"item_id": "E006", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернений: у статті ransomware впливає на організації, а не організації на ransomware."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0014: ransomware affects organizations across all sectors подано як факт, actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: організації стикаються з ризиками внутрішніх загроз, тобто possible, positive."}
+ ]
+}

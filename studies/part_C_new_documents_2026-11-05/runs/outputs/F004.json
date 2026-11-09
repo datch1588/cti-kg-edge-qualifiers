@@ -1,0 +1,58 @@
+{
+ "run_id": "F004",
+ "target_doc_id": "D0073",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "electromagnetic jamming", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 0, "end": 123, "sha256": "fddd06d8ba7fde044b32a48fddd968ea4cbc6dcf5091d22a38b7eea85f08b291"}}
+  ]},
+  {"id": "n002", "label": "AH-64E Apache", "entity_type": "product", "aliases": ["AH-64E"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0004", "start": 0, "end": 141, "sha256": "abafb5ad0d4a7a4c59c54897a737186c0a199bf71b016fcdf3aa4b250f7441d1"}},
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0019", "start": 0, "end": 59, "sha256": "21b8d746f466cb91c055cded950725bb1abcab8c68fb469915e0bf4400eea1ab"}}
+  ]},
+  {"id": "n003", "label": "drone swarms", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0004", "start": 142, "end": 280, "sha256": "af5611776299c1179a3016e017e3a13bd296e320384da7c2077278a06ac64606"}}
+  ]},
+  {"id": "n004", "label": "Manned-Unmanned Teaming", "entity_type": "technology", "aliases": ["MUM-T"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0016", "start": 0, "end": 183, "sha256": "71f49dfb8f3b1fa5a59df8900705bb763d220f8a848a5e38874019356c658870"}}
+  ]},
+  {"id": "n005", "label": "remote-controlled drones", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 0, "end": 123, "sha256": "fddd06d8ba7fde044b32a48fddd968ea4cbc6dcf5091d22a38b7eea85f08b291"}}
+  ]},
+  {"id": "n006", "label": "unmanned systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 215, "end": 319, "sha256": "8a17868685ff088238ccbd400f5600a1db1f0d29457cb1e8ab69b4b8ab26b766"}}
+  ]},
+  {"id": "n007", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 215, "end": 319, "sha256": "8a17868685ff088238ccbd400f5600a1db1f0d29457cb1e8ab69b4b8ab26b766"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n005", "relation_type": "AFFECTS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 0, "end": 123, "sha256": "fddd06d8ba7fde044b32a48fddd968ea4cbc6dcf5091d22a38b7eea85f08b291"}}
+   ]},
+  {"id": "e002", "source": "n002", "target": "n003", "relation_type": "OPERATES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0004", "start": 26, "end": 221, "sha256": "711cd3b6636453e15c68bdb2f7c877bf8f52968d020d71dc27ac81b6416912d9"}},
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0019", "start": 162, "end": 329, "sha256": "b1b9fac8697b4bd565a47e5297b801f65392dc6d6df5db232324dd8dd53ea4ac"}}
+   ]},
+  {"id": "e003", "source": "n002", "target": "n004", "relation_type": "USES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0016", "start": 0, "end": 82, "sha256": "c847d6b7af34c8e4cb0a11378c727b01d62f952fef65103832a9dacb781c760d"}}
+   ]},
+  {"id": "e004", "source": "n003", "target": "n001", "relation_type": "USES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0019", "start": 162, "end": 329, "sha256": "b1b9fac8697b4bd565a47e5297b801f65392dc6d6df5db232324dd8dd53ea4ac"}}
+   ]},
+  {"id": "e005", "source": "n007", "target": "n006", "relation_type": "AFFECTS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0073", "paragraph_id": "D0073:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0073:P0022", "start": 215, "end": 319, "sha256": "8a17868685ff088238ccbd400f5600a1db1f0d29457cb1e8ab69b4b8ab26b766"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

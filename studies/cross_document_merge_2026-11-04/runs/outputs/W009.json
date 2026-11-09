@@ -1,0 +1,451 @@
+{
+  "run_id": "W009",
+  "target_doc_id": "D0057",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "AI-based social engineering attacks",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0018", "start": 89, "end": 221, "sha256": "34d8399974386b0a00cabbe1c82366232f06ae29c693fd0dbe6a61691f4c3269"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "brain-jacking",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0023", "start": 246, "end": 448, "sha256": "838788c5148c5f5843537f24265a632e52edebbc414948377d6256da2dbc5453"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "direct interface exploitation",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0023", "start": 0, "end": 164, "sha256": "3e0e75988a111aa762158de461ccf9881053e760d7e8d7301a9f8836a44f5be1"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "phishing",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0019", "start": 98, "end": 255, "sha256": "d1cc8c902b2bc4ee058f6d57d844739b6030bc00c8744ff92c55e31283718595"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Social engineering",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 0, "end": 149, "sha256": "d9deca08c056cf73a897479799a99109ac3216770029166724bca129c651d11b"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "third-party supply chain compromises",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0023", "start": 717, "end": 862, "sha256": "f0622ed4d1cc8a09734562dcb28dca3e82ab1b8b32138a387f6627b2e459a1b5"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "Tradecraft based on humans-first",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0017", "start": 354, "end": 468, "sha256": "0690d663f3a27054261c3979dbb6c369236159b3623ddad11ae297edc588b9a9"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Experian",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "UNESCO",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0028", "start": 415, "end": 610, "sha256": "17769027faefae1b0950a1171175344a1d727d03a1ad4892a8ea297427bed936"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "Cyber Kill Chain",
+      "entity_type": "other",
+      "aliases": ["kill chain"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0001", "start": 0, "end": 109, "sha256": "d18bd49eb357144c0b7e69d303e1014b28bc3eb5d5141aba2a67ebb369165a1d"}},
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0017", "start": 0, "end": 151, "sha256": "87ba04a48221c56d9b9b3df44eb7c29610fc086981af2c5013e11aacc05a1e16"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "GDPR",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0025", "start": 43, "end": 175, "sha256": "9c4e0a31a1d0ff0ab5807cf8c8a11cc1270323f4d7f839262def9b0afbcf4e05"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "ISO/IEC 27001 Annex A",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0024", "start": 0, "end": 175, "sha256": "1daee6fff5c1ae18b6aaece7e7d5baee3023fa7be6449c94493e5a73bcd92593"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "monitoring employees",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0028", "start": 415, "end": 610, "sha256": "17769027faefae1b0950a1171175344a1d727d03a1ad4892a8ea297427bed936"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "neural data",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0015", "start": 739, "end": 800, "sha256": "3bca71b0d20f03451d9f53499006d1597a9b4235fac7a0631aa8190eafff4529"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "neural telemetry",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0029", "start": 352, "end": 499, "sha256": "d371b0bf1f157742a7bec2e3719a8937a83b3e6936ffe4811aa645bdaa110d57"}}
+      ]
+    },
+    {
+      "id": "n016",
+      "label": "NIST SP 800- 60",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0024", "start": 0, "end": 175, "sha256": "1daee6fff5c1ae18b6aaece7e7d5baee3023fa7be6449c94493e5a73bcd92593"}}
+      ]
+    },
+    {
+      "id": "n017",
+      "label": "Tier-0",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0027", "start": 0, "end": 71, "sha256": "6363d61329b7f1082b91ca1d55e16f997c8338fe67dfe64153602a3c8bd2ad1e"}}
+      ]
+    },
+    {
+      "id": "n018",
+      "label": "autonomous agents",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "n019",
+      "label": "brain-computer interface",
+      "entity_type": "technology",
+      "aliases": ["BCI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0023", "start": 0, "end": 164, "sha256": "3e0e75988a111aa762158de461ccf9881053e760d7e8d7301a9f8836a44f5be1"}}
+      ]
+    },
+    {
+      "id": "n020",
+      "label": "CASB",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0026", "start": 208, "end": 287, "sha256": "61d0a37b32a9d379b814bbe9dca88b3f41549785e49e6b158178248a2bb43762"}}
+      ]
+    },
+    {
+      "id": "n021",
+      "label": "continuous authentication",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0014", "start": 271, "end": 348, "sha256": "051edbc501fc3cb0e1de53bd5cb69b1f23bb520e3dd30ab5d12e658247369b08"}}
+      ]
+    },
+    {
+      "id": "n022",
+      "label": "DLP",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0026", "start": 87, "end": 131, "sha256": "d98a48e1bffd0595c57cd01c9c285dc08b624a9e2ec8bbee7024adc73b939b31"}}
+      ]
+    },
+    {
+      "id": "n023",
+      "label": "EEG",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0012", "start": 0, "end": 131, "sha256": "7acef4c15995a88ecebb576a5ca1c4e21abfaeb83e92e949cf070a2a7524f3a7"}}
+      ]
+    },
+    {
+      "id": "n024",
+      "label": "keystroke dynamics",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0014", "start": 271, "end": 348, "sha256": "051edbc501fc3cb0e1de53bd5cb69b1f23bb520e3dd30ab5d12e658247369b08"}}
+      ]
+    },
+    {
+      "id": "n025",
+      "label": "neurotechnology",
+      "entity_type": "technology",
+      "aliases": ["neurotech"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0012", "start": 0, "end": 131, "sha256": "7acef4c15995a88ecebb576a5ca1c4e21abfaeb83e92e949cf070a2a7524f3a7"}},
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 0, "end": 149, "sha256": "d9deca08c056cf73a897479799a99109ac3216770029166724bca129c651d11b"}}
+      ]
+    },
+    {
+      "id": "n026",
+      "label": "adversaries",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0029", "start": 352, "end": 499, "sha256": "d371b0bf1f157742a7bec2e3719a8937a83b3e6936ffe4811aa645bdaa110d57"}}
+      ]
+    },
+    {
+      "id": "n027",
+      "label": "AI- generated synthetic accounts",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "n028",
+      "label": "nation-state actors",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0017", "start": 354, "end": 468, "sha256": "0690d663f3a27054261c3979dbb6c369236159b3623ddad11ae297edc588b9a9"}}
+      ]
+    },
+    {
+      "id": "n029",
+      "label": "classification gap",
+      "entity_type": "vulnerability",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0025", "start": 177, "end": 320, "sha256": "7a57fb6ebe0f6f9a317dac0ab81cbac655470249a970c142d4a597669fab4f25"}}
+      ]
+    },
+    {
+      "id": "n030",
+      "label": "vulnerability of brain-computer interface",
+      "entity_type": "vulnerability",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n003",
+      "target": "n019",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0023", "start": 0, "end": 164, "sha256": "3e0e75988a111aa762158de461ccf9881053e760d7e8d7301a9f8836a44f5be1"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n008",
+      "target": "n018",
+      "relation_type": "REPORTS_ON",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Experian 2026 Data Breach Industry Forecast",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n008",
+      "target": "n027",
+      "relation_type": "REPORTS_ON",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Experian 2026 Data Breach Industry Forecast",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n008",
+      "target": "n030",
+      "relation_type": "REPORTS_ON",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Experian 2026 Data Breach Industry Forecast",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 150, "end": 400, "sha256": "d34324288f56bcf4884d0cc8e616162eb3281e038cadbecc856936a1469eda29"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n009",
+      "target": "n013",
+      "relation_type": "WARNS_ABOUT",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "UNESCO standards",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0028", "start": 415, "end": 610, "sha256": "17769027faefae1b0950a1171175344a1d727d03a1ad4892a8ea297427bed936"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n014",
+      "target": "n010",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0001", "start": 0, "end": 109, "sha256": "d18bd49eb357144c0b7e69d303e1014b28bc3eb5d5141aba2a67ebb369165a1d"}},
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0017", "start": 0, "end": 282, "sha256": "0c7aa1416fba7cb038e368d9c15b4d95de0948e15e4cb4893e1272452c8c1a2b"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n021",
+      "target": "n024",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0014", "start": 271, "end": 348, "sha256": "051edbc501fc3cb0e1de53bd5cb69b1f23bb520e3dd30ab5d12e658247369b08"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n022",
+      "target": "n014",
+      "relation_type": "PROTECTS",
+      "modality": "recommended",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0030", "start": 0, "end": 210, "sha256": "8fe8d97d7e1b3ed73f272fe603f14228fe73608c57f1ea3a2d16cb26522163fd"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n026",
+      "target": "n029",
+      "relation_type": "EXPLOITS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0025", "start": 177, "end": 320, "sha256": "7a57fb6ebe0f6f9a317dac0ab81cbac655470249a970c142d4a597669fab4f25"}}
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "n026",
+      "target": "n015",
+      "relation_type": "TARGETS",
+      "modality": "possible",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0029", "start": 352, "end": 499, "sha256": "d371b0bf1f157742a7bec2e3719a8937a83b3e6936ffe4811aa645bdaa110d57"}}
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "n028",
+      "target": "n007",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0017", "start": 354, "end": 468, "sha256": "0690d663f3a27054261c3979dbb6c369236159b3623ddad11ae297edc588b9a9"}}
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "n030",
+      "target": "n019",
+      "relation_type": "AFFECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Experian 2026 Data Breach Industry Forecast",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0057", "paragraph_id": "D0057:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0057:P0022", "start": 198, "end": 333, "sha256": "1d23d4eb3947983dc2c07977834e784ad1a2a433f4facbecc04db6c06745c6fe"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

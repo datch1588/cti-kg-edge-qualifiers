@@ -1,0 +1,52 @@
+{
+  "run_id": "Y093",
+  "target_doc_id": "D0569",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Center for Cybersecurity Policy and Law",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 327, "end": 521, "sha256": "ff879cf85bb41ceab67cad3c1c2e704bc39c7f301df716ee6ad4ae8ab8d39dc3"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "common policy frameworks",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 327, "end": 521, "sha256": "ff879cf85bb41ceab67cad3c1c2e704bc39c7f301df716ee6ad4ae8ab8d39dc3"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "Artificial intelligence",
+      "entity_type": "technology",
+      "aliases": ["AI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0005", "start": 216, "end": 368, "sha256": "ce7dc5af61d9c7ec7cdb718bd3611c43ac008a566fbb26e03d7286487c119fde"}},
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0015", "start": 84, "end": 236, "sha256": "7599ad982d555536dc33babeced507556d1c76fb5bcb92b5c091eb66c042fcae"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n001",
+      "target": "n002",
+      "relation_type": "DEVELOPS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0569", "paragraph_id": "D0569:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0569:P0003", "start": 354, "end": 520, "sha256": "2783d4c257392db1dda05782d1d981f5b8b456afc24f3756ddc08484bc12942e"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

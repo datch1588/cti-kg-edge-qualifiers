@@ -1,0 +1,147 @@
+AUDIT_FILE: T14
+TARGET_DOC_ID: D0445
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0445
+PUBLICATION_DATE: 2026-03-11
+SOURCE_URL: https://economictimes.indiatimes.com/news/international/us/can-iran-drones-attack-california-on-us-west-coast-or-will-it-launch-another-cyberattack-fbi-alert-on-iran-drone-threat-in-california-explained-warning-police-departments-use-of-drones-by-criminal-groups-near-us-mexico-border/articleshow/129478938.cms
+TITLE_SHA256: b3fe5d25632751cac4c318b707bbbdb8209a2dbf9271ce94685df1ec33c51daf
+BEGIN_DOCUMENT
+[D0445:P0001] sha256:b3fe5d25632751cac4c318b707bbbdb8209a2dbf9271ce94685df1ec33c51daf
+[D0445:P0002] sha256:05b3465ab4a0319580f5275d643cf3667c2d44539bd57310c4bba3059fd33eca
+[D0445:P0003] sha256:8eb3755381519d7f0479d75446e56e20084834c0460d7ec94926932372ea6c47
+[D0445:P0004] sha256:51180e8d62e16d34dc634e6da26aebcbf098c7f1ef5faa7b3eea55d9db6b3477
+[D0445:P0005] sha256:27b922a2d7eae59679237064c235ad446235cc6db13ed0761796415a641cca8d
+[D0445:P0006] sha256:225d29f6201e1a635684a6dc0e7a65d164c7ffe48588a421fc27b067a55bb02e
+[D0445:P0007] sha256:047d9e173323a7909c18deb319a8494603fe19f4fd37e00bdda5ee97da90dc98
+[D0445:P0008] sha256:8db71ed28b0f2f1432561e8d8a0dc3878f2da540c53a2ab82335b6f716da2ef3
+[D0445:P0009] sha256:a067f416cd57159491c6dc94ff274120bf4495e7a7d332d88b34c68c75905a5f
+[D0445:P0010] sha256:798acf8d08c28bcdf455110dffab00d5b04d5ba94da5d6c8780d9221c9a56813
+[D0445:P0011] sha256:b15f203443f160ab57eeff29df17d24066ae1cbd747e34473a54a9d00a785aa9
+[D0445:P0012] sha256:6c76b73f8d76c6224ba562012236c64b2e6fe57282726599ba96f37b8cba3725
+[D0445:P0013] sha256:baded1a38396d52b9e7e868c11960108d360dcc408134f1327ebff6150a7e040
+[D0445:P0014] sha256:ec828a1a83d9c29919b7f52615c91291ed0b1546aefdb1142e8d9a12aabe7149
+[D0445:P0015] sha256:6d26f633129ec519f55224d18684b0595af39e91146c562968228f8637a14205
+[D0445:P0016] sha256:b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5
+[D0445:P0017] sha256:212aa64d5f0795e18d496579d19eb8283c53a4bdde7f8f78638807f4c351f75a
+[D0445:P0018] sha256:4a90392746071f207d47bde7db952cee43bf44692cee28ebfb7cc8d5bde370a4
+[D0445:P0019] sha256:ba2b48055cc4f5ec2a25bd17e68f2daf00b82925894680fae5ec20ab93c1b4c1
+[D0445:P0020] sha256:fd01e0e05f52d3b783038ced28097b03d98719cb1e2515fced69a32a675d203f
+[D0445:P0021] sha256:eb6cf2823102165f9fe49f5cb9aa93c16c12d907c30d6dd1a8eba7ab4f566866
+[D0445:P0022] sha256:6cfd50073a1b8dcc73b438225b3c9a61e89c3ddde148c2d737b864a29ea8288f
+[D0445:P0023] sha256:4b8ed19b5fbad17395ec75869d5b30f434219a78473eeef7ad689a3f20490052
+[D0445:P0024] sha256:91756e35da5b761f2e818faa51a1626adc9c35371be1b51ae0be085b1acb4533
+[D0445:P0025] sha256:8bdddaa985387c81129585466ddd9e0bc363b38cc86fbcc953963624cff55ef0
+[D0445:P0026] sha256:d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5
+[D0445:P0027] sha256:f7edb50cfddcdddcfba2891c8f26ac4aeede9f9de6a445859df49b7c66d188c8
+[D0445:P0028] sha256:890231b9c4f123de0ee5a3658e953e7ec1abafcac6dabfce2154a55b8ddafa17
+[D0445:P0029] sha256:eeb30184f41fdbd7e93d55e9ec9df21a11d2bf471a1b5356c0db1ddf848b3a47
+[D0445:P0030] sha256:5108cd5dca28171cc455304cb1dd32531c627865bb2b0f9348cea99796a8662e
+[D0445:P0031] sha256:0cff615bed08ee4e8f1dfaffefeb42052d7cd539d9d263fc3b88e239e4bb6e1a
+[D0445:P0032] sha256:9bb3459ae76d3c4ad4ce401048f8e3db20e2c8d6bd9233d47779c412ea19c665
+[D0445:P0033] sha256:d513dc6262647efafb9e63268a5cfaf258e9db1bd72046647dbe6b07a1b307f5
+[D0445:P0034] sha256:e167d8ae014795c55b8ec6852af5fd7113375e152cc9eb052390c67eb4d5a2bb
+[D0445:P0035] sha256:44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9
+[D0445:P0036] sha256:d285f99e0bcf4cf9756fdfb9f166319895126c0fdcfcbb446109931ce2b9b7ff
+[D0445:P0037] sha256:4bada4abda51cb86354a364751d250fe281f940e23237ebe3183db9c3cd33c2e
+[D0445:P0038] sha256:d027162fac4c4d28e9dd7cc47053b7fbf3e6bbaf42bd275f5e04d1babcfd0e2d
+[D0445:P0039] sha256:8274069f1bd014849a7077ebf5409eabdfd942753ad89aaed4b8016a2f616832
+[D0445:P0040] sha256:d4b73301d7eeaef490dd0df7bd2672128e60557cc079eb76fda21681a05af87c
+[D0445:P0041] sha256:7b371e6db2221308e6aa9e427f9775d498c8cea4a0438a7afe6cd500f19abac5
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (51)
+E001: «US intelligence agencies» — monitor → «Mexican drug cartels» | форма: actual, positive
+E002: «Iran» — considered launching → «unmanned aerial vehicles from an unidentified vessel off the US coastline» | форма: actual, positive
+E003: «Iran» — uses → «drone attack» | форма: conditional, positive
+E004: «Gandharv Walia» — authored → «Economic Times report» | форма: actual, positive
+E005: «Iran» — used drone strikes against → «targets in the Middle East» | форма: actual, positive
+E006: «Governor's Office of Emergency Services» — coordinates with → «state, local, and federal security officials» | форма: actual, positive
+E007: «Iranian Defense Ministry» — released image on → «Aug. 22, 2023» | форма: actual, positive
+E008: «Governor's Office of Emergency Services» — protects → «California» | форма: planned, positive
+E009: «ABC News» — reviewed → «FBI alert» | форма: actual, positive
+E010: «Iran» — has links and presence in → «South America» | форма: actual, positive
+E011: «John Cohen» — is contributor to → «ABC News» | форма: actual, positive
+E012: «Iranian Defense Ministry» — released image of → «Mohair-10» | форма: actual, positive
+E013: «bulletin» — published in → «September 2025» | форма: actual, positive
+E014: «Iran» — has → «drone technology» | форма: actual, positive
+E015: «Mexican drug cartels» — targets → «US law enforcement» | форма: possible, negative
+E016: «Mexican drug cartels» — approved → «drone attacks using explosives» | форма: actual, positive
+E017: «Governor's Office of Emergency Services» — protects → «California» | форма: actual, positive
+E018: «John Cohen» — is former intelligence head at → «Department of Homeland Security» | форма: actual, positive
+E019: «Iran» — uses → «cyberattack» | форма: possible, positive
+E020: «FBI» — warns about → «drone attack» | форма: actual, positive
+E021: «FBI alert» — distributed at → «end of February» | форма: actual, positive
+E022: «US intelligence officials» — worried about → «equipment pre-positioned on ships or land» | форма: actual, positive
+E023: «cyberattacks» — target → «networks, data, and digital services» | форма: actual, positive
+E024: «FBI alert» — shared with → «police departments in California» | форма: actual, positive
+E025: «drone attacks using explosives» — target → «US law enforcement and military personnel near the US-Mexico border» | форма: actual, positive
+E026: «FBI» — issued alert about → «Iran» | форма: actual, positive
+E027: «Iran» — targets → «Middle East» | форма: actual, positive
+E028: «drone attack» — uses → «Iran» | форма: actual, positive
+E029: «John Cohen» — warns about → «drone attack» | форма: actual, positive
+E030: «Iran» — allegedly planned → «drone attack» | форма: actual, positive
+E031: «Iranian Defense Ministry» — released image of → «Mohair-10» | форма: actual, negative
+E032: «Trump administration» — targets → «Iran» | форма: actual, positive
+E033: «Iran» — has links and presence in → «Mexico» | форма: actual, positive
+E034: «Mohair-10» — located in → «Iran» | форма: actual, positive
+E035: «Mohair-10» — is a → «drone» | форма: actual, positive
+E036: «Iran» — may try cyber operations against → «American systems, companies, or infrastructure» | форма: actual, positive
+E037: «John Cohen» — warns about → «drone attack» | форма: possible, positive
+E038: «California» — located in → «US West Coast» | форма: actual, positive
+E039: «Mexican drug cartels» — targets → «US law enforcement» | форма: possible, positive
+E040: «intelligence agencies» — warns about → «cyber operations» | форма: actual, positive
+E041: «Iran» — may target → «California» | форма: actual, positive
+E042: «Iran» — uses → «drone attack» | форма: actual, positive
+E043: «Iran» — uses → «drones» | форма: conditional, positive
+E044: «Trump administration» — launched operations against → «Iran» | форма: possible, positive
+E045: «Trump administration» — launched operations against → «Iran» | форма: actual, positive
+E046: «Iran» — targets → «California» | форма: conditional, positive
+E047: «drone attack» — targets → «California» | форма: actual, positive
+E048: «Mexican drug cartels» — uses → «drone attack» | форма: possible, positive
+E049: «Economic Times report» — published on → «Mar 12, 2026» | форма: actual, positive
+E050: «Office of Governor Gavin Newsom» — told → «ABC News» | форма: actual, positive
+E051: «Iran» — may launch → «cyberattack» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

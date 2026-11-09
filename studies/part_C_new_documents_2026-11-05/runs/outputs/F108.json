@@ -1,0 +1,55 @@
+{
+ "run_id": "F108",
+ "target_doc_id": "D0364",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Password Attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0022", "start": 74, "end": 178, "sha256": "34ec352ab1bdfa5759754e26674a8e98b5a65e7d1f78e7dc3b4c00a99b200cfe"}}]},
+  {"id": "n002", "label": "Phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0020", "start": 0, "end": 107, "sha256": "8886dca71aa78deaffdc922f7875f2bf839fcb5d4510aef67ace7509530b6110"}}]},
+  {"id": "n003", "label": "Social Engineering", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0023", "start": 133, "end": 186, "sha256": "a21e7f039cfcb5e780d95a2b6f318e3c53f24415f2d4865e5b3f726d6552af1b"}},
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0024", "start": 0, "end": 74, "sha256": "f2b8f15ecf167c38325f7822426ad0675c61478bcb8cf8f4a9289ef9efec395f"}}]},
+  {"id": "n004", "label": "Malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0021", "start": 0, "end": 77, "sha256": "de3e74746fddeb03df923b42fb313026b226855bd04f3139918a5f5ac3871bf2"}}]},
+  {"id": "n005", "label": "Ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0022", "start": 0, "end": 161, "sha256": "d9bfb18b3f91a1fd75a582438cf47615f33b42ddcdc4ba2ca82c8721c598b871"}}]},
+  {"id": "n006", "label": "company data", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "n007", "label": "Antivirus Software", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0040", "start": 86, "end": 111, "sha256": "fc3cbf636f5c5d11e2a7df0817286a46d0737c9cf09745a64b23631eab1a9494"}},
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0041", "start": 0, "end": 84, "sha256": "d28a5b3f389962c51f1350fa6dc82d6ee65abcb43bfb5c72aad77631df8d35ee"}}]},
+  {"id": "n008", "label": "Artificial intelligence", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0065", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0065", "start": 70, "end": 173, "sha256": "aa54e2ff0d8b05a91456fdf68781454f44f4fd45cd303205ef144378b694a96c"}}]},
+  {"id": "n009", "label": "cloud computing", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0065", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0065", "start": 70, "end": 173, "sha256": "aa54e2ff0d8b05a91456fdf68781454f44f4fd45cd303205ef144378b694a96c"}}]},
+  {"id": "n010", "label": "encryption", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "n011", "label": "firewalls", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "n012", "label": "Public Wi-Fi", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0041", "start": 85, "end": 126, "sha256": "f54dc5d74bc22dcbb303f342e923102163a0973bb2b36a48a0a921927edb9647"}}]},
+  {"id": "n013", "label": "secure connections", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "n014", "label": "smart devices", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0065", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0065", "start": 70, "end": 173, "sha256": "aa54e2ff0d8b05a91456fdf68781454f44f4fd45cd303205ef144378b694a96c"}}]},
+  {"id": "n015", "label": "Social media platforms", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0058", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0058", "start": 0, "end": 62, "sha256": "d7b2a97db55e13ea94d7bec82881e28db6464dc516ca49a117304ab1fc0a9880"}}]},
+  {"id": "n016", "label": "Two- Factor Authentication", "entity_type": "technology", "aliases": ["2FA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0037", "start": 62, "end": 104, "sha256": "21d4f25f8d7f8aaff214c3b5141dcc3a688c79edf1b93c81858f04b438033f49"}},
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0038", "start": 0, "end": 151, "sha256": "ca2914d242684b648dada31fcb8753454e98e00a23c9fd9f2c31877581e32694"}}]},
+  {"id": "n017", "label": "Cybercriminals", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0015", "start": 93, "end": 171, "sha256": "9467dc174a9a72735a576021c354b35e351864a29fe1baef2f255bcb45c70d6e"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n010", "target": "n006", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "e002", "source": "n011", "target": "n006", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "e003", "source": "n013", "target": "n006", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0049", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0049", "start": 0, "end": 93, "sha256": "7f54b062f7160a5da377c0a0ac62f7bf06777f90d2249e7f1162d20fbdc8777d"}}]},
+  {"id": "e004", "source": "n017", "target": "n015", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0364", "paragraph_id": "D0364:P0058", "quote_ref": {"match": "exact", "paragraph_id": "D0364:P0058", "start": 0, "end": 62, "sha256": "d7b2a97db55e13ea94d7bec82881e28db6464dc516ca49a117304ab1fc0a9880"}}]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,133 @@
+AUDIT_FILE: S1T08
+TARGET_DOC_ID: D0520
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0520
+PUBLICATION_DATE: 2026-02-24
+SOURCE_URL: https://en.antaranews.com/news/405774/blackpanda-japan-announces-strategic-partnership-with-softbank-to-strengthen-cyber-incident-response-in-japan
+TITLE_SHA256: bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+BEGIN_DOCUMENT
+[D0520:P0001] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0002] sha256:1a7e4fe171ea85c93ae3fcd7cc35022cad75cc4221085ba50dfcf8737f4d79ba
+[D0520:P0003] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0004] sha256:a91f1ffad53e875298238ad880425cfae5af042ce1d642ab24a4ab44a8bda5e9
+[D0520:P0005] sha256:3b870de3d6b8944a8e4e19d3aea34af26f2c62532590caf94ed38ffabae0e7d6
+[D0520:P0006] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0007] sha256:a8d2c0c087c0d995189da30af3526b87306f0fb014c30e44c494bdf0c933ad62
+[D0520:P0008] sha256:e8a9a9b250d60593b283371ce686c79aa607a2ea3680467f7d1ded5c78bb3ad2
+[D0520:P0009] sha256:ed9b34e35a9ce2fbc5b9783aa0ffb7d187e8ce968a2c6693676f622f01a81dda
+[D0520:P0010] sha256:349914bb6126ddc013a41ac93d458bb228327f026ffa21442b240b06ffc21a48
+[D0520:P0011] sha256:0bc734a054d6c0383577a505b76c03812c79b7bbad8eb11f9d42f5a45b690b12
+[D0520:P0012] sha256:421406413508a02f874dfd0c4ccb048ce5bf7c8a96a59d91c7f1e42c66bd74e3
+[D0520:P0013] sha256:db8ddc3f51c5f772ae099cc2776a763a54b39dd6d39081be345554fa6d1702b1
+[D0520:P0014] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0015] sha256:1e40fad743472e4978c3fa0521be352976c8e5830ff8c30ad727a3506382b0b2
+[D0520:P0016] sha256:8c6e8619b647081cc331e41be3063e0ec84abb7ee9df3a129a418cf3a494d765
+[D0520:P0017] sha256:771f2812f0b52f6a63ae53c60615b25ba167e2344e07ea4bf3702b37efcc7c78
+[D0520:P0018] sha256:4f8902fc99ac4bd44a6dd890058f522a8ccee49ca86a710b4ba5d48fe44693ef
+[D0520:P0019] sha256:a16da9ce5b0e7e53011aeb005280a0b87599dcec7e734fd55931d3cde9b4fe38
+[D0520:P0020] sha256:e72454aec3efc837fb988bc9cdb52e0ea971e07e5d25926fa6dca1ee565e26b8
+[D0520:P0021] sha256:2c024674fb1e5a8e01b30671020acc606171d1c99b5cda2f3a442acfc8546008
+[D0520:P0022] sha256:13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511
+[D0520:P0023] sha256:d0f9f7047c9367aff35f7db8a4c42ab074e63d606a23d4d497eb7c8053009cb5
+[D0520:P0024] sha256:03fdbdb0d5b1259acb46cd79ee31cb7469c413bcc92a1af35c5d6a548e006b1c
+[D0520:P0025] sha256:679ea9a6942c380d09ac59862c1bc4fb8b6475ebeeaa53e6c2c1a93b129ffbbe
+[D0520:P0026] sha256:272e797600110f73eb1e225952d391f02c095d488db157e2277c29821e808727
+[D0520:P0027] sha256:6fed45d441c9550821d2b54db6356f2f5b6f79ce90491301c45d7533343f69f0
+[D0520:P0028] sha256:5ba821a50a8beb4ad636670aab5875dcbdbd7336171e47eaae6950990f9c7b63
+[D0520:P0029] sha256:1e313b8dc75ad92a974651741fa55237d509fe88b0dd20100fdc62eaf7bde695
+[D0520:P0030] sha256:ed57066cf6ef3cfdecf68fa11b3f38130063220ea1c65bfc881186a14a2677de
+[D0520:P0031] sha256:bba9318e9977d02fdac560d2684e54b48734c4a15ae085303731fd2cd5fe6a85
+[D0520:P0032] sha256:6e9fbe8b49a2f384cb1ac5d22e13589c6bd36ea018c969926d0f31a009e27405
+[D0520:P0033] sha256:ef4565b1591d4d4b77d67b55e760b7da00b5a7273f81dd50424b6484b2749abc
+[D0520:P0034] sha256:ee5a63192faf14d685972262f7f29b7ead440e57ece8a87aec718433dd9ccd2e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (36)
+E001: «Blackpanda Japan» — is part of → «Blackpanda» | форма: actual, positive
+E002: «ransomware» — affects → «supply chains» | форма: actual, positive
+E003: «Blackpanda» — provides → «IR-1» | форма: actual, positive
+E004: «Blackpanda Japan» — supports → «Japanese companies» | форма: actual, positive
+E005: «Blackpanda» — offers → «IR-1» | форма: actual, positive
+E006: «Blackpanda Japan» — provides → «incident response» | форма: actual, positive
+E007: «Blackpanda Japan» — strengthens cyber incident response in → «Japan» | форма: actual, positive
+E008: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — published on → «February 24, 2026» | форма: actual, positive
+E009: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — issued from → «Singapore» | форма: actual, positive
+E010: «IR-1» — mitigates → «cyber attacks» | форма: actual, positive
+E011: «SoftBank Corp» — provides → «incident response» | форма: planned, positive
+E012: «Gene Yu» — leads → «Blackpanda» | форма: actual, positive
+E013: «Blackpanda Japan» — announced partnership on → «February 24, 2026» | форма: actual, positive
+E014: «SoftBank Corp» — provides → «IR-1» | форма: planned, positive
+E015: «Hiroki Taketsuna» — leads → «AI Platform Development Division» | форма: actual, positive
+E016: «Blackpanda» — develops → «A2I» | форма: actual, positive
+E017: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — sourced from → «Blackpanda» | форма: actual, positive
+E018: «Blackpanda» — provides → «cyber insurance» | форма: actual, positive
+E019: «Blackpanda» — provides cyber incident response across → «Asia» | форма: actual, positive
+E020: «ransomware» — affects → «supply chains» | форма: actual, negative
+E021: «IR-1» — provides → «SoftBank Corp» | форма: planned, positive
+E022: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — distributed via → «PRNewswire» | форма: actual, positive
+E023: «SoftBank Corp» — supports → «Japanese companies» | форма: actual, positive
+E024: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — published by → «ANTARA» | форма: possible, positive
+E025: «Blackpanda» — mitigates → «cyber attacks» | форма: actual, positive
+E026: «AI Platform Development Division» — part of → «SoftBank Corp» | форма: actual, positive
+E027: «SoftBank Corp» — will provide → «IR-1» | форма: actual, positive
+E028: «Masaki Hiraoka» — leads → «Blackpanda Japan» | форма: actual, positive
+E029: «IR-1» — helps companies prepare for, respond to, and recover from → «cyber attacks» | форма: actual, positive
+E030: «Blackpanda» — located in → «Asia» | форма: actual, positive
+E031: «Blackpanda» — is accredited insurance coverholder of → «Lloyd's of London» | форма: actual, positive
+E032: «Blackpanda Japan» — announces strategic partnership with → «SoftBank Corp» | форма: actual, positive
+E033: «Blackpanda Japan Announces Strategic Partnership with SoftBank to Strengthen Cyber Incident Response in Japan» — published by → «ANTARA» | форма: actual, positive
+E034: «Blackpanda» — provides → «incident response» | форма: actual, positive
+E035: «IR-1» — helps companies across → «Japan» | форма: actual, positive
+E036: «A2I» — mitigates → «cyber attacks» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,391 @@
+AUDIT_FILE: XC04
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CROSSDOC)
+
+Завдання
+Ти перевіряєш граф знань, побудований з кількох статей про кібербезпеку. Нижче наведено записи одного виду. Оціни кожен запис окремо лише за показаними фрагментами й абзацами статей та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Записи перемішані; звідки який запис і як його отримано, тобі невідомо й не має значення. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Вид записів: вузли
+Кожен запис — вузол графа, складений зі згадок у різних статтях.
+K001: вузол із 3 згадок
+Для кожної згадки показано назву, тип, альтернативні назви з її статті, назву й дату статті, фрагмент і абзац, з якого його взято:
+  згадка 1: «назва» (тип) | альтернативні назви: «…»; «…» | стаття: «назва статті» (дата)
+    фрагмент [P0005]: «…»
+    абзац: «…»
+Тире замість альтернативних назв означає, що їх немає.
+
+cluster_verdict:
+- C — усі згадки позначають ту саму сутність: ту саму організацію, особу, групу, продукт, сімейство ПЗ, вразливість, подію чи поняття.
+- I — хоча б одна згадка позначає іншу сутність: наприклад, продукт і його розробника, особу та її організацію, сімейство ПЗ і групу атакувальників, ціле й частину, різні організації чи події з подібними назвами, загальне позначення й конкретну сутність.
+- U — неоднозначність, яку не вдалося усунути за показаними текстами.
+Однакова назва сама по собі не є доказом: перевір за фрагментами, що йдеться про ту саму сутність. Тип згадки не оцінюй: різні типи не роблять вузол хибним, якщо сутність та сама.
+Не став C за замовчуванням: для кожного запису перевір кожну згадку.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{"audit_file": "значення AUDIT_FILE", "verdicts": [{"item_id": "K001", "cluster_verdict": "C", "reason": "коротко, українською"}]}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення українською; для кожного вердикту I чи U обов'язково назви, що саме не так чи чого бракує. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (записів 29)
+
+K001: вузол із 2 згадок
+  згадка 1: «Group-IB» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0034]: «@D0113:P0034:56-205 sha256=785ebc170a4093736a8f88b203d464408cf5a16b5a6bb654b3e10fd103b6e52c»
+    абзац: «@D0113:P0034:0-585 sha256=6557e83173f1fd9d084a2fabc5f945f28c962d923dc639d4994dca26313c8112»
+  згадка 2: «Group-IB» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+    фрагмент [P0032]: «@D0505:P0032:0-102 sha256=7ea3f3e97e0e36f4b1508a5e42464369f13412af3ba20226c4a91780a8ce861b»
+    абзац: «@D0505:P0032:0-196 sha256=2e9d91d0709dd50b9c384a2f9506cd448ed5794629999edc538a9383357fbbe6»
+
+K002: вузол із 2 згадок
+  згадка 1: «Government Communications Headquarters» (organization) | альтернативні назви: «GCHQ» | стаття: «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20)
+    фрагмент [P0006]: «@D0165:P0006:43-102 sha256=69cdd988d4f256125f76884dab0a6343a1883de5a836669bc37701f6f6c884fb»
+    абзац: «@D0165:P0006:0-378 sha256=69d9dae89b60e5cfea29b717d8f2e270daf7c5ef3850bbba33bed4c745715d66»
+  згадка 2: «GCHQ» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+    фрагмент [P0017]: «@D0197:P0017:14-108 sha256=99a41b02f66a0e694bd4482192260b97ed320ebcaf1f18110a149d2960023c87»
+    абзац: «@D0197:P0017:0-177 sha256=d896f8e8b692f5642246873de169780e2a8ab020148b7462d2b5405f6752d5ea»
+
+K003: вузол із 5 згадок
+  згадка 1: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa» (2026-06-26)
+    фрагмент [P0009]: «@D0014:P0009:225-385 sha256=cfe689f3dc9b19506a979bb16869f1765989b329e8eb8353089cc4b35903715c»
+    абзац: «@D0014:P0009:0-460 sha256=4dfb4f53251f2338d0a3a4cdf8c3b1a27426a982c44ef0a39d6e616a7ce5dcda»
+  згадка 2: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0019]: «@D0124:P0019:0-65 sha256=fb0fedc88c7219f8b14d01fc731622e850696c6f678123c4fe9a485a3943fe3e»
+    абзац: «@D0124:P0019:0-401 sha256=22ff237afde10b0dc77e6779b61e14ce9a9307003e367251dedf24bf1f7b8957»
+  згадка 3: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+    фрагмент [P0026]: «@D0194:P0026:40-147 sha256=7456c3d699c5383e61cd145b1f25d0f396db9224e1ce9ed2d4ad6d5e75b7a956»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  згадка 4: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+    фрагмент [P0014]: «@D0250:P0014:0-113 sha256=a251fc59315938a8ed7f7f77f9ef8e89cbf41d2b285f3b459db793ae7baa6e76»
+  згадка 5: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+    фрагмент [P0024]: «@D0457:P0024:0-61 sha256=1df061ed1c644e68509b9d9500f9ce05cfd8f51f4dd6ceb9c3149b846e59a405»
+    абзац: «@D0457:P0024:0-281 sha256=46357a55b489d7db484b8e0cead6f96030334e74d2498c7a49572ccb7db6a524»
+
+K004: вузол із 11 згадок
+  згадка 1: «Mythos 5» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+    фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  згадка 2: «Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+    фрагмент [P0019]: «@D0045:P0019:91-157 sha256=5f05f6cf4e1ae715393af2add16b79ae37e6e8a09cdc6f4f5ac1faabb5d71c38»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  згадка 3: «Mythos» (product) | альтернативні назви: «Mythos 5»; «Claude Mythos» | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+    фрагмент [P0016]: «@D0046:P0016:195-279 sha256=af1069d70c856cbace658701e01693e34bf28b7c4746c735730fcb4940c68723»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  згадка 4: «Claude Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0022]: «@D0113:P0022:44-141 sha256=3498ef4f603f46080e7c871af1eb25d7955123fe7e8034483d580c9127d5d6e1»
+    абзац: «@D0113:P0022:0-511 sha256=3e0f806262f935c1caee4c4cee36e029d67ee49056be02b26debfb03eb6bc89c»
+  згадка 5: «Claude Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0039]: «@D0124:P0039:11-58 sha256=7fbb409b60ecda08522828342f1476bc4e32f14057324242455d1c2617dd14a1»
+    абзац: «@D0124:P0039:0-271 sha256=ec7aa981d235ac63ae6ea72a8cc10ed25b5e37261d8981d77b915494f3e9891f»
+  згадка 6: «Claude Mythos» (product) | альтернативні назви: «Mythos» | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+    фрагмент [P0024]: «@D0194:P0024:0-148 sha256=2a99b490b9ea0f31b85c8ab62d089e55c1a3de0012d7a767e30dafc653d646b8»
+  згадка 7: «Claude Mythos» (product) | альтернативні назви: «Mythos» | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+    фрагмент [P0004]: «@D0195:P0004:0-141 sha256=173960de935218c37fe9c2005774603811850baaaab129fa57254134130d88af»
+    абзац: «@D0195:P0004:0-292 sha256=b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c»
+  згадка 8: «Claude Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+    фрагмент [P0007]: «@D0195:P0007:102-195 sha256=94711b95b6a7b23d7834a45079adf529e1960bcbc4e3eb609bdfcccd892dd9df»
+    абзац: «@D0195:P0007:0-326 sha256=57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b»
+  згадка 9: «Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+    фрагмент [P0015]: «@D0197:P0015:56-152 sha256=c392ac6d16e6cb7020b2bf1797562f39eb28fea701d616f02dcb2e0671b7ee92»
+    абзац: «@D0197:P0015:0-484 sha256=e264d76dde86dff0c24ff9796be69dcb8fe4a87e927a51a4f87f952d1c192f5c»
+  згадка 10: «Mythos» (product) | альтернативні назви: «Claude Mythos» | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+    фрагмент [P0007]: «@D0250:P0007:41-232 sha256=7481139bde1c6339ee0c4adc3de2de52bd07188e1f09e043b5a04804cad80180»
+  згадка 11: «Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+    фрагмент [P0018]: «@D0250:P0018:61-145 sha256=910dba55f2046c938dc18e6552e56ef0076062ccb50e17f0ae361b834a45c5e8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+
+K005: вузол із 3 згадок
+  згадка 1: «Google Threat Intelligence Group» (organization) | альтернативні назви: «GTIG» | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0022]: «@D0124:P0022:210-293 sha256=a2e4afb45a03e1f126f80f697cb0ea4084c12ef16c192f13919465b30d842aa3»
+    абзац: «@D0124:P0022:0-445 sha256=451c75fba0d7505bf19ca1f7d5f4f3dff4bb000e280d2b66048aab97e25f35a5»
+  згадка 2: «Google's Threat Intelligence Group» (organization) | альтернативні назви: «GTIG» | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+    фрагмент [P0011]: «@D0457:P0011:306-379 sha256=2e623b7736a5f2b7638229828a3ae6b266dd75ce72c2f29c9847d028b5ba9177»
+    абзац: «@D0457:P0011:0-379 sha256=50a9a9784555c5bab95d51b536ab712a46f256da57502086f1541c1156968d2f»
+  згадка 3: «Google Threat Intelligence Group» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+    фрагмент [P0011]: «@D0505:P0011:181-308 sha256=d486e30954c04071e792784bf9846fb5f496e59e039beb9ef046abf38babbdda»
+    абзац: «@D0505:P0011:0-309 sha256=ed21bbcf6d5a3156c49a63c495ad62582f4116c6c0a61c3d872ce47e64a0bc6b»
+
+K006: вузол із 2 згадок
+  згадка 1: «cloud workloads» (technology) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+    фрагмент [P0012]: «@D0343:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  згадка 2: «cloud workloads» (technology) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+    фрагмент [P0012]: «@D0514:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+
+K007: вузол із 2 згадок
+  згадка 1: «Canadian Centre for Cyber Security» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+    фрагмент [P0024]: «@D0043:P0024:383-475 sha256=1e43be4df7242e25f8eab04fe9333c13ef4cde7413c0d5e9a5e2069adb191f91»
+    абзац: «…@D0043:P0024:129-729 sha256=ffb2fe697944646999cdcb8e054af120e037fd280dd19b3c1535319fe2cc9ea4…»
+  згадка 2: «Canadian Centre for Cyber Security» (organization) | альтернативні назви: «Cyber Centre» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+    фрагмент [P0012]: «@D0550:P0012:327-376 sha256=edbafc74902d433bc3b81e2c122b932bb74021a7db84b6cc9cac1d9cef531716»
+    абзац: «@D0550:P0012:0-535 sha256=4948e203784ec1cdfcf173b1ce4a3ba02d6e15113a93c09b5fbfeb98df4f2824»
+
+K008: вузол із 2 згадок
+  згадка 1: «Model Context Protocol» (technology) | альтернативні назви: «MCP» | стаття: «TITLE_SHA256:94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa» (2026-06-26)
+    фрагмент [P0013]: «@D0014:P0013:87-214 sha256=bda42cd8adabd2da713bc61cd5b54a5d7df7eb32e828991fd3f013c55598638b»
+    абзац: «@D0014:P0013:0-214 sha256=2b04c1695e4a3210496147052525a233615d2a6e1e6d9094a51f4c2567239f5a»
+  згадка 2: «MCP» (technology) | альтернативні назви: — | стаття: «TITLE_SHA256:b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750» (2026-01-07)
+    фрагмент [P0039]: «@D0648:P0039:151-237 sha256=ddf801e3d85526292770a0ee48761faf5306e14f6ddbc95f78fff4b988251df7»
+    абзац: «@D0648:P0039:0-237 sha256=8cf6b7988640c920c48fc7262276e250c7dc64d918ed6bbd4fb3a7fdbad34002»
+
+K009: вузол із 4 згадок
+  згадка 1: «Department of Homeland Security» (organization) | альтернативні назви: «U.S. Department of Homeland Security»; «DHS» | стаття: «TITLE_SHA256:d1e9b87f10b767e0527bd90a21521fe4886334fbe98feb2369fc0af92cd307b2» (2026-06-09)
+    фрагмент [P0004]: «@D0077:P0004:0-114 sha256=bbb2abfc4e724f4efe49a4cccb48fe7be8db42c921ce342cac1117c4f1d5f652»
+    абзац: «@D0077:P0004:0-186 sha256=1bd840f12a1cd9b3c2e2394ab972d92cd22b0cfb9ec92607fdc330d601e034c0»
+  згадка 2: «Department of Homeland Security» (organization) | альтернативні назви: «DHS» | стаття: «TITLE_SHA256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2» (2026-05-20)
+    фрагмент [P0014]: «@D0166:P0014:0-146 sha256=4f71068a5e9c6eaba62ae02eb297213d08dbde684b900aecc63817003861ad10»
+    абзац: «@D0166:P0014:0-257 sha256=13c884a387e0457df547c6d1c4d321fb70b59726297b46615e9dcdc40a404294»
+  згадка 3: «Department of Homeland Security» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+    фрагмент [P0030]: «@D0424:P0030:0-122 sha256=84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76»
+  згадка 4: «Department of Homeland Security» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+    фрагмент [P0019]: «@D0468:P0019:0-70 sha256=c79513cfd708212f4471bd6070d4f5df36768b8a191dc593a4b266ecaae672ea»
+    абзац: «@D0468:P0019:0-600 sha256=79c98369f640db7243a76f05404620bfd3387b57c9330c6335d73872e8316557…»
+
+K010: вузол із 2 згадок
+  згадка 1: «ShinyHunters» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0007]: «@D0113:P0007:160-263 sha256=62415820edde4c194ea80bfacddf9463a0c5db2b3c9b55210fc4872002473137»
+    абзац: «@D0113:P0007:0-309 sha256=b452d47d150911d2d99a0a08c264c205cf0a0ee5f7d38357bd83685a04883ef0»
+  згадка 2: «ShinyHunters» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0021]: «@D0124:P0021:197-245 sha256=a0823872486e334dc5d6bb7dd1a8c7781f8487198c7c05f4b7b6792f3939099c»
+    абзац: «@D0124:P0021:0-461 sha256=1e209cb1c555098a81be2dd767a4a816da966992ab5808351f81c72c55a15b01»
+
+K011: вузол із 2 згадок
+  згадка 1: «Linux» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741» (2026-06-03)
+    фрагмент [P0002]: «@D0107:P0002:683-867 sha256=d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48»
+    абзац: «…@D0107:P0002:475-1075 sha256=a30988235c05a49b7d6817047373cc018193f37c10219b9ed3e719af501998a4…»
+  згадка 2: «Linux» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0040]: «@D0113:P0040:310-374 sha256=6cbccdb2f9accf5455b805ccee435f038a97d3b6fda827c1ce69b3da6da9138b»
+    абзац: «@D0113:P0040:0-492 sha256=4ee831d2e4fe3104a5d3853daf71304305a99d3a8fed0835ef62aadfc5abd43d»
+
+K012: вузол із 2 згадок
+  згадка 1: «UNC3886» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+    фрагмент [P0019]: «@D0505:P0019:65-172 sha256=008eb577caf3b34b37af66aaee16b874eef438a3b387c5a811677416b97d724e»
+    абзац: «@D0505:P0019:0-242 sha256=ed24c676204b90107ef2a6ce9cd11bbeff1db6bf40b4a0c9d6528f3b8afb2b42»
+  згадка 2: «UNC3886» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+    фрагмент [P0028]: «@D0663:P0028:0-136 sha256=8b9c056e97eaf246209a626a74a6eccf4b37704cbdae8380d4ea49609e5a8174»
+
+K013: вузол із 4 згадок
+  згадка 1: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0004]: «@D0124:P0004:0-68 sha256=0171ca5a751ac2449122ae7ce856f323ab34f181152dd9d076e36f3fb6d5f0b0»
+    абзац: «@D0124:P0004:0-477 sha256=3dbe4ca93f78226dea376b7215ea2779d3f9cf97271c1674137c6faf3fab21f1»
+  згадка 2: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+    фрагмент [P0017]: «@D0195:P0017:0-162 sha256=fbb414c68bc6b8a2ef182ee2b18b11550bcb429ccfaa71deda24609f38257a73»
+  згадка 3: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+    фрагмент [P0018]: «@D0250:P0018:61-216 sha256=0ab126f4b900c21aab38d0c3e632a8ef0c36e3329e047bf4c1af29fcf95252c8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+  згадка 4: «Cisco» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+    фрагмент [P0015]: «@D0457:P0015:0-77 sha256=2b06fa4420b44aa91ed2a54aa53715bab3e920b4e5e3996053cf2de523462bb3»
+    абзац: «@D0457:P0015:0-450 sha256=d5be78e9fb5b7ee547fd96b8a392f30efd39dce6d86e669cd1775358a4e3d676»
+
+K014: вузол із 2 згадок
+  згадка 1: «Kash Patel» (person) | альтернативні назви: «Patel» | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+    фрагмент [P0005]: «@D0137:P0005:0-60 sha256=e9fd4ce9cd5f0bd808ab567b64e30b5f26f5c6c824f4493da0517a5e58c35d3c»
+    абзац: «@D0137:P0005:0-216 sha256=5185066725190ef3ca0df67f7d53e781c8e8b24bb7aa171f18105c6759a142de»
+  згадка 2: «Kash Patel» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+    фрагмент [P0007]: «@D0391:P0007:120-148 sha256=84b92c64437c3124c9829ade37627cc780ab92095678ae5816560cb48a9310d4»
+    абзац: «@D0391:P0007:0-379 sha256=82508645c88b4feae67e1e7052f7a0e7299a74ad204ca0df8b5b327e88757859»
+
+K015: вузол із 2 згадок
+  згадка 1: «Mark Hughes» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad» (2026-04-17)
+    фрагмент [P0015]: «@D0277:P0015:126-209 sha256=09486da63c3ec63f9107832ff9ca604d63713c1c803736fd816daad306a2fa2f»
+    абзац: «@D0277:P0015:0-339 sha256=e88c5ca3950b2e42729f02ac1d756fc3a5be27d4c420e57ca3000ef6b1a77a80»
+  згадка 2: «Mark Hughes» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+    фрагмент [P0012]: «@D0480:P0012:76-149 sha256=5f91d5a72cc505d1679ff2fda5154ea35ce834e4f88437d63e66049b051af271»
+    абзац: «@D0480:P0012:0-561 sha256=0b5cc581006dde899ecd05e12978142a9215230a65629e2118f89b0bdb2194f5»
+
+K016: вузол із 7 згадок
+  згадка 1: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+    фрагмент [P0029]: «@D0018:P0029:634-771 sha256=f8e3ba2ff97c51695ca87f1ce4576854e428b2fba64605b227042c8aebeca6a0»
+    абзац: «…@D0018:P0029:402-1002 sha256=9b21e17c24ed70153db5c050175559fb5d7a0a30ba4f575dd05e2608bd1d85c2…»
+  згадка 2: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0025]: «@D0124:P0025:235-274 sha256=54d249035b779ff4771e3751f0d1ff2be44d68da6ad13b691686bd717f355516»
+    абзац: «@D0124:P0025:0-275 sha256=be158db4ceac83a453529a886cb5a28aec158580cae9682269fbb4e4e8c9e5c4»
+  згадка 3: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+    фрагмент [P0005]: «@D0137:P0005:0-60 sha256=e9fd4ce9cd5f0bd808ab567b64e30b5f26f5c6c824f4493da0517a5e58c35d3c»
+    абзац: «@D0137:P0005:0-216 sha256=5185066725190ef3ca0df67f7d53e781c8e8b24bb7aa171f18105c6759a142de»
+  згадка 4: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+    фрагмент [P0011]: «@D0391:P0011:0-132 sha256=e54efc31586a153a1b03d9d6fdc8bbcef8509192ea76a6243bba6083afea6f1e»
+    абзац: «@D0391:P0011:0-309 sha256=97a0f7a5834dc26b51b433c6a8b7b42e5447fefa3fd7f53e455514e4a06e0925»
+  згадка 5: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+    фрагмент [P0005]: «@D0418:P0005:0-108 sha256=518860859de55d6c8389150a9453bff4d9fd632d22f63b60732e355a9d6a56a9»
+    абзац: «@D0418:P0005:0-155 sha256=1f5bc0fbce99d22010d70a37cc1cc428ad5d03a9095c017c2b701f1bcc53321d»
+  згадка 6: «FBI» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+    фрагмент [P0025]: «@D0424:P0025:40-164 sha256=abe5e8130c15b306458c8ca45818f934f5effb0ea7f697908bf469e252bad8d0»
+    абзац: «@D0424:P0025:0-287 sha256=18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75»
+  згадка 7: «Federal Bureau of Investigation» (organization) | альтернативні назви: «FBI» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+    фрагмент [P0006]: «@D0550:P0006:140-213 sha256=0e7e84db85f65678667f6051e33c93a6f5c13353cca78ac391d6c5d25fade48f»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+
+K017: вузол із 2 згадок
+  згадка 1: «identities» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+    фрагмент [P0012]: «@D0343:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  згадка 2: «identities» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+    фрагмент [P0012]: «@D0514:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+
+K018: вузол із 11 згадок
+  згадка 1: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+    фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  згадка 2: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+    фрагмент [P0019]: «@D0045:P0019:55-129 sha256=aae100ba4759c12cf24166b45602d2b8f9c3e0044d2ad01b1088844a7f6f0912»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  згадка 3: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+    фрагмент [P0016]: «@D0046:P0016:0-87 sha256=d180fb34537a2b90a4b2504341172932ac710e1942828c0b1f7a56b8336dbcd3»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  згадка 4: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0022]: «@D0113:P0022:44-141 sha256=3498ef4f603f46080e7c871af1eb25d7955123fe7e8034483d580c9127d5d6e1»
+    абзац: «@D0113:P0022:0-511 sha256=3e0f806262f935c1caee4c4cee36e029d67ee49056be02b26debfb03eb6bc89c»
+  згадка 5: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0019]: «@D0124:P0019:0-65 sha256=fb0fedc88c7219f8b14d01fc731622e850696c6f678123c4fe9a485a3943fe3e»
+    абзац: «@D0124:P0019:0-401 sha256=22ff237afde10b0dc77e6779b61e14ce9a9307003e367251dedf24bf1f7b8957»
+  згадка 6: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+    фрагмент [P0024]: «@D0194:P0024:0-148 sha256=2a99b490b9ea0f31b85c8ab62d089e55c1a3de0012d7a767e30dafc653d646b8»
+  згадка 7: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+    фрагмент [P0007]: «@D0195:P0007:102-195 sha256=94711b95b6a7b23d7834a45079adf529e1960bcbc4e3eb609bdfcccd892dd9df»
+    абзац: «@D0195:P0007:0-326 sha256=57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b»
+  згадка 8: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+    фрагмент [P0007]: «@D0250:P0007:41-168 sha256=60cf79ebb9306bda4e3dfb243b1d45eea613204e768f87a1edc66602a8954b53»
+    абзац: «@D0250:P0007:0-232 sha256=2d54d7ec95e485709a895cb77b8da4c2a1b283831fe8db0b6ef4ad4ff8db8c75»
+  згадка 9: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+    фрагмент [P0024]: «@D0457:P0024:62-195 sha256=f6edf66bc22a124e917e389139bf4b708f6d0ac88a919645423e919e3b6cdd63»
+    абзац: «@D0457:P0024:0-281 sha256=46357a55b489d7db484b8e0cead6f96030334e74d2498c7a49572ccb7db6a524»
+  згадка 10: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+    фрагмент [P0007]: «@D0514:P0007:1187-1289 sha256=4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1»
+    абзац: «…@D0514:P0007:938-1538 sha256=866d0817823c53d0980a781ce596c91f4bc9110b482ba41df8eec29ceccde767…»
+  згадка 11: «Anthropic» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+    фрагмент [P0006]: «@D0587:P0006:130-329 sha256=9c2dc6b4646b366e4bcdd970818c4c57ee0a3e3690900d5e345459840b629f2a»
+    абзац: «@D0587:P0006:0-406 sha256=dd4de36854b8bfea0425f1c6251c3ef41e06675f1784e075e248ada6f9baf320»
+
+K019: вузол із 2 згадок
+  згадка 1: «iOS» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0038]: «@D0124:P0038:357-447 sha256=50ea9f0ed32c3ca9c6abe992e6063df66b0170c97fcb99749c24616b2ac8c38f»
+    абзац: «@D0124:P0038:0-448 sha256=e20ac0a574366324e0fb7ab2123ddd71af5c7a6ca163cbfa8261bacf1311f124»
+  згадка 2: «iOS» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+    фрагмент [P0011]: «@D0457:P0011:59-148 sha256=5478d3e470aaf200441e1ed9f92d23a228612e476312c02b57b3dda174ad1bca»
+    абзац: «@D0457:P0011:0-379 sha256=50a9a9784555c5bab95d51b536ab712a46f256da57502086f1541c1156968d2f»
+
+K020: вузол із 2 згадок
+  згадка 1: «Trend Micro» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0008]: «@D0124:P0008:148-244 sha256=303fede85206636fc73a19cf5e9381e5b901e44cf14049a03ec2b13007b3f10d»
+    абзац: «@D0124:P0008:0-358 sha256=bfa11af0c781800b222e8537fd666c1f3765cac1ccaa55920eb29c433ddef671»
+  згадка 2: «Trend Micro» (organization) | альтернативні назви: «Trend Micro Incorporated»; «Trend» | стаття: «TITLE_SHA256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b» (2026-02-18)
+    фрагмент [P0005]: «@D0532:P0005:36-233 sha256=3fb557800affebf1e9625915a38c98d2ce2ce8eb0590bbd31ed82e952d2aa1e2»
+    абзац: «@D0532:P0005:0-332 sha256=ec5deba275ad7cd8141d5fa0eba6c0acd4cf4e6af9a22d5923b59c9f0455ed13»
+
+K021: вузол із 3 згадок
+  згадка 1: «credential theft» (attack_technique) | альтернативні назви: — | стаття: «TITLE_SHA256:bb45b8fbec2562f2f47b940e166d846abb1e67fb2ef648ca21258c4185618108» (2026-04-28)
+    фрагмент [P0054]: «@D0245:P0054:0-78 sha256=bd767861ae62bf5adc45436090a2f2c457601a58c4b1786e3ff9b0b28df0f937»
+    абзац: «@D0245:P0054:0-272 sha256=915f8c1bcebb016f995c704f01a9b8b482066c91b04a1e5cc96b1740ca0fc06a»
+  згадка 2: «credential theft» (attack_technique) | альтернативні назви: — | стаття: «TITLE_SHA256:5639e3dd302497ed41d3f8f2581c8076c1d499cedb3c8004a2d8087332254fec» (2026-04-24)
+    фрагмент [P0014]: «@D0252:P0014:1-140 sha256=cc8de3e623485f551d9dc6e7270077ddc91f86fbb1752fd036436d4908cbb193»
+  згадка 3: «credential theft» (attack_technique) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+    фрагмент [P0011]: «@D0344:P0011:0-122 sha256=ef51fadf5c56b66915b134018afcf4f3ec6b372fef4f5966e328af30cf957bb9»
+    абзац: «@D0344:P0011:0-600 sha256=899f182bc1e4dc370bd69cc5367188fbf91738a62364cf81677cbec0e7850245…»
+
+K022: вузол із 2 згадок
+  згадка 1: «Parliament» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+    фрагмент [P0011]: «@D0197:P0011:18-129 sha256=8e4e4668d16be523cbc95129866774de194742f1a8f3689de5497c75cc300313»
+    абзац: «@D0197:P0011:0-359 sha256=2f816e6648ab74c288ae8e93abb8b153028f9571fc75070ec8c33690b22f0494»
+  згадка 2: «UK Parliament» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+    фрагмент [P0019]: «@D0468:P0019:708-792 sha256=e5ecb34d5d5aa7874c7040be4b93466a99bf473250de82bc7b9671540d16ea76»
+    абзац: «…@D0468:P0019:450-1050 sha256=7cdf26b686ba36a5c1f7639e9335f1f6962ee957379dca6bb9d2648059f108e5…»
+
+K023: вузол із 4 згадок
+  згадка 1: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+    фрагмент [P0014]: «@D0197:P0014:335-429 sha256=3a4233a6a62227b4b461499e7d2b4777f6635d4ad56b0e17604d5d9b174d35ca»
+    абзац: «@D0197:P0014:0-465 sha256=d58b31ff37645db875a352050abf53b507e4e8bd267e26ada3517cdb451179e1»
+  згадка 2: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+    фрагмент [P0006]: «@D0539:P0006:0-119 sha256=42daddffbea63219745b05a65418c8b2cac413f44dff5310a24bf74dd3b041f9»
+  згадка 3: «National Security Agency» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+    фрагмент [P0024]: «@D0043:P0024:654-720 sha256=e434fba8cc85a1109b511d6bb49f58c2b0aad936f00b10aee5a291b751336168»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  згадка 4: «UK businesses» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+    фрагмент [P0014]: «@D0575:P0014:186-255 sha256=62b34a4bc38dd2e8ac99c4795a7d6dc0fec1a6591361457928824347d07e2cf3»
+    абзац: «@D0575:P0014:0-340 sha256=b31a55d2b49cd256baad1f2b23078b0b52fde6baab4fc19af4cc2bbdf42dac8a»
+
+K024: вузол із 3 згадок
+  згадка 1: «Dmitri Alperovitch» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+    фрагмент [P0012]: «@D0343:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  згадка 2: «Cameron Finnigan» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca» (2026-01-25)
+    фрагмент [P0026]: «@D0593:P0026:0-124 sha256=63dee5867bf61db8d9bea20be557795709d000e5495aec9b6320bfa2a854c636»
+    абзац: «@D0593:P0026:0-201 sha256=b9bbcfb26e5388a1a36dce3fee55fc1fbc7482dbfbbeb2fb82e0d6a86a1cba90»
+  згадка 3: «Dmitri Alperovitch» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+    фрагмент [P0012]: «@D0514:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+
+K025: вузол із 3 згадок
+  згадка 1: «Richard Horne» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+    фрагмент [P0024]: «@D0043:P0024:582-653 sha256=fff315880999d8ed93b4f7d1b305ba6e53ad28b9eb4cbf612fa15ac18450b812»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  згадка 2: «Richard Horne» (person) | альтернативні назви: «Horne» | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+    фрагмент [P0006]: «@D0262:P0006:74-188 sha256=d657d7c7ced395cf900929811dfcf4b8283326554e7edc11ab88100ce275e10e»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  згадка 3: «Dr Richard Horne» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+    фрагмент [P0025]: «@D0539:P0025:0-31 sha256=9c404b469a4685ef9b07a1bec7130edc805b964e65d8ee888dce9603a6267e0c»
+
+K026: вузол із 11 згадок
+  згадка 1: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff» (2026-06-23)
+    фрагмент [P0024]: «@D0043:P0024:582-653 sha256=fff315880999d8ed93b4f7d1b305ba6e53ad28b9eb4cbf612fa15ac18450b812»
+    абзац: «…@D0043:P0024:202-802 sha256=c5b3f4244b61f4192ee62e906944e315f2101a1038de960f8119654539465f23»
+  згадка 2: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559» (2026-05-20)
+    фрагмент [P0006]: «@D0165:P0006:0-102 sha256=fe1cd4ff906c2e240b3edde7d246acfcb8bf211da182f706465b8f786fd78c1c»
+    абзац: «@D0165:P0006:0-378 sha256=69d9dae89b60e5cfea29b717d8f2e270daf7c5ef3850bbba33bed4c745715d66»
+  згадка 3: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+    фрагмент [P0017]: «@D0197:P0017:0-177 sha256=d896f8e8b692f5642246873de169780e2a8ab020148b7462d2b5405f6752d5ea»
+  згадка 4: «UK National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5» (2026-05-01)
+    фрагмент [P0005]: «@D0228:P0005:0-152 sha256=6c9aa7563e6e7559526cdec64104d3ff68f6551cc0743269146780cfe8fac4bb»
+    абзац: «@D0228:P0005:0-569 sha256=18f5136eae6b3cdaa84c305b85f47e60e798b56f61cc8ff37ea8e1d984d58f26»
+  згадка 5: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+    фрагмент [P0006]: «@D0262:P0006:36-125 sha256=59c7d3f3a50575493a32c0442c255a80aa6132ca30c53b5f1be848631d4b7417»
+    абзац: «@D0262:P0006:0-286 sha256=0d44f8eb6e33f90886071e470c7e2c680c41d8aeb9aa4b66b535039564825157»
+  згадка 6: «National Cyber Security Centre» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+    фрагмент [P0019]: «@D0468:P0019:284-356 sha256=44c95fa01613d8cb8eddf761b5813eaf4a11eb50ca66e8005ab21bc1d9570513»
+    абзац: «…@D0468:P0019:20-620 sha256=555ad39a546783a8b3f4c793045eb11653e31e8efaeb96cbcb4d4692164299a0…»
+  згадка 7: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+    фрагмент [P0018]: «@D0478:P0018:0-66 sha256=026e89c4db455c26a7af9b3a94fe636b3eb3d46908bdfcc272a1961e7c3496b0»
+    абзац: «@D0478:P0018:0-225 sha256=581e5999cb3c8b5f73388d9395d04904a0dc8bb8c3ab3814e095816f1509ca8b»
+  згадка 8: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+    фрагмент [P0015]: «@D0493:P0015:9-69 sha256=43e22a80ecbbbf93a3efeef0ad32167bc9d816abdc0f35e9555b872d3055f40b»
+    абзац: «@D0493:P0015:0-193 sha256=d5fc2acf3bb8e69dc6f68979edf8801a2103c481577031cecf1344290738d38a»
+  згадка 9: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+    фрагмент [P0016]: «@D0539:P0016:0-130 sha256=0313eccc78dc782da34a7be5b3e86492f098191c27ff27d747cd6054249dc9bb»
+    абзац: «@D0539:P0016:0-265 sha256=49c6c4ac1181d58cb0eadfbbe1a797bce8886d5e002be0e049811dc2496868cc»
+  згадка 10: «NCSC-UK» (organization) | альтернативні назви: «National Cyber Security Centre»; «UK NCSC»; «NCSC» | стаття: «TITLE_SHA256:981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8» (2026-02-11)
+    фрагмент [P0006]: «@D0550:P0006:81-138 sha256=c42b1a98582cd1aa533ddf7531205be4eeab4f055a70330d8000a956e542737e»
+    абзац: «@D0550:P0006:0-493 sha256=a28611f1e62f029f5c22ac3d71b25453e357ae6518c98d7287350d0fc0ceebe4»
+  згадка 11: «National Cyber Security Centre» (organization) | альтернативні назви: «NCSC» | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+    фрагмент [P0015]: «@D0575:P0015:182-301 sha256=87c90250df7edcd09bbeac25372922ed8eab4bd590c9f9c900de580e96bc9b19»
+    абзац: «@D0575:P0015:0-544 sha256=c7b0f987e5361780f04a0625c7c99e196dc6f92275dcc89d3dd0064b329d23bf»
+
+K027: вузол із 3 згадок
+  згадка 1: «endpoints» (technology) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+    фрагмент [P0012]: «@D0514:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  згадка 2: «Frontier AI models» (technology) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0004]: «@D0124:P0004:0-68 sha256=0171ca5a751ac2449122ae7ce856f323ab34f181152dd9d076e36f3fb6d5f0b0»
+    абзац: «@D0124:P0004:0-477 sha256=3dbe4ca93f78226dea376b7215ea2779d3f9cf97271c1674137c6faf3fab21f1»
+  згадка 3: «frontier AI models» (technology) | альтернативні назви: «frontier models» | стаття: «TITLE_SHA256:c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad» (2026-04-17)
+    фрагмент [P0006]: «@D0277:P0006:0-97 sha256=41ac333455c27fbb81bc12271ed655fc8cc3681a65168b7c7f3356925792d088»
+    абзац: «@D0277:P0006:0-567 sha256=26093b6aab04683395ad7866b58ae8d05b0c132dd622dd6c2ce4fab4fbfc318a»
+
+K028: вузол із 2 згадок
+  згадка 1: «Iranian government» (organization) | альтернативні назви: «Iranian state»; «Tehran» | стаття: «TITLE_SHA256:bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296» (2026-04-02)
+    фрагмент [P0004]: «@D0338:P0004:0-106 sha256=2c5bfa61e0670da8ad94120b254a448cbdbda0a2ed33191e06a10e5c1c65456d»
+  згадка 2: «Iranian government» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+    фрагмент [P0043]: «@D0427:P0043:80-173 sha256=cf19c1c332ff55fd10e87480cf88a72b62c355c8c3ec738006ddd959b5f25c4b»
+    абзац: «@D0427:P0043:0-185 sha256=608c6beb29f90a4c25bd9da1054e63683fb0bfbbd964d99ab288267602994858»
+
+K029: вузол із 3 згадок
+  згадка 1: «2026 FIFA World Cup» (event) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+    фрагмент [P0034]: «@D0113:P0034:85-146 sha256=a93be0e7dd931172eb9c0d15e6e37623384da2e557c7593ff1147dc9af60f4eb»
+    абзац: «@D0113:P0034:0-585 sha256=6557e83173f1fd9d084a2fabc5f945f28c962d923dc639d4994dca26313c8112»
+  згадка 2: «2026 FIFA World Cup» (event) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+    фрагмент [P0030]: «@D0124:P0030:135-191 sha256=3d2d7e1349d5f71262ed600cfc25299deb93a4144c5be18b8200c14b72ea0138»
+    абзац: «@D0124:P0030:0-453 sha256=24feb3597a919f5a77e8073beeef5169f3097d97b6c369094d05fff8b48ea9f8»
+  згадка 3: «World Cup» (event) | альтернативні назви: «2026 World Cup»; «FIFA World Cup 2026» | стаття: «TITLE_SHA256:9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402» (2026-05-29)
+    фрагмент [P0005]: «@D0137:P0005:98-215 sha256=034b7de6ea14624c2f93fe833a04ed63c89553b6bae83134fa37929a5c865460»
+    абзац: «@D0137:P0005:0-216 sha256=5185066725190ef3ca0df67f7d53e781c8e8b24bb7aa171f18105c6759a142de»
+
+КІНЕЦЬ ЗАПИСІВ

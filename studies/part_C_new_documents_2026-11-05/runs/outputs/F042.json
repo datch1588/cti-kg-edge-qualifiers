@@ -1,0 +1,119 @@
+{
+  "run_id": "F042",
+  "target_doc_id": "D0010",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "cyber sabotage", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0007", "start": 153, "end": 226, "sha256": "5a4c12770e0249e83d58c22f1d17864c23cf5544d59554c7a0189f300e041a8c"}}
+    ]},
+    {"id": "n002", "label": "Australia", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0008", "start": 0, "end": 81, "sha256": "19f1886093b58feb31969b16e5e8db08cad2b464e22d00c931f2f01ce72eb868"}}
+    ]},
+    {"id": "n003", "label": "attack on a critical infrastructure operator's network", "entity_type": "incident", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "n004", "label": "Australia's Security Intelligence Organization", "entity_type": "organization", "aliases": ["ASIO"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "n005", "label": "critical infrastructure operator", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "n006", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0005", "start": 0, "end": 70, "sha256": "0af1725402d6ca3224984a8f89381ae10645d4b7614d5f3fc10834b2cd015aa1"}}
+    ]},
+    {"id": "n007", "label": "login details and passwords", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0007", "start": 0, "end": 152, "sha256": "2f3e81fe73bd6517cbd89ddba47f012471aa22e6da96cf497c0f64c544411312"}}
+    ]},
+    {"id": "n008", "label": "Mike Burgess", "entity_type": "person", "aliases": ["Burgess"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 127, "end": 261, "sha256": "21eb917368e46ab5d9b649ee8bc6f6a95cbb0e4578a61f082796aa3d13a7fb53"}},
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0008", "start": 0, "end": 81, "sha256": "19f1886093b58feb31969b16e5e8db08cad2b464e22d00c931f2f01ce72eb868"}}
+    ]},
+    {"id": "n009", "label": "State-sponsored actors", "entity_type": "threat_actor", "aliases": ["state actors", "hackers"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 127, "end": 261, "sha256": "21eb917368e46ab5d9b649ee8bc6f6a95cbb0e4578a61f082796aa3d13a7fb53"}},
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0007", "start": 0, "end": 152, "sha256": "2f3e81fe73bd6517cbd89ddba47f012471aa22e6da96cf497c0f64c544411312"}},
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0008", "start": 0, "end": 81, "sha256": "19f1886093b58feb31969b16e5e8db08cad2b464e22d00c931f2f01ce72eb868"}}
+    ]},
+    {"id": "n010", "label": "cyberattacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0006", "start": 0, "end": 171, "sha256": "d125fca433fa6549e93a824826d6068e5b05585a18cb9bd732df32e3cdbb2b86"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n003", "target": "n005", "relation_type": "AFFECTS",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 261, "sha256": "fcbbd077024c6fb3756ed0a7adf5cf57d59d92e322d6448ff792066d1b828a10"}}
+    ]},
+    {"id": "e002", "source": "n003", "target": "n009", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 261, "sha256": "fcbbd077024c6fb3756ed0a7adf5cf57d59d92e322d6448ff792066d1b828a10"}}
+    ]},
+    {"id": "e003", "source": "n003", "target": "n005", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "e004", "source": "n004", "target": "n003", "relation_type": "DISCOVERS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "e005", "source": "n004", "target": "n002", "relation_type": "LOCATED_IN",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 126, "sha256": "60b9b09efeeca2dd5e75e483172d957904784ac0fedfbd1f977bcdfeb860674c"}}
+    ]},
+    {"id": "e006", "source": "n004", "target": "n001", "relation_type": "MITIGATES",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0007", "start": 153, "end": 226, "sha256": "5a4c12770e0249e83d58c22f1d17864c23cf5544d59554c7a0189f300e041a8c"}}
+    ]},
+    {"id": "e007", "source": "n008", "target": "n004", "relation_type": "LEADS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 261, "sha256": "fcbbd077024c6fb3756ed0a7adf5cf57d59d92e322d6448ff792066d1b828a10"}}
+    ]},
+    {"id": "e008", "source": "n008", "target": "n003", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 261, "sha256": "fcbbd077024c6fb3756ed0a7adf5cf57d59d92e322d6448ff792066d1b828a10"}}
+    ]},
+    {"id": "e009", "source": "n008", "target": "n009", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0003", "start": 0, "end": 100, "sha256": "671e05170ca81b15d8d44adf2d13394457eddb051ebd7579ccc66c6419f76c01"}},
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0008", "start": 0, "end": 81, "sha256": "19f1886093b58feb31969b16e5e8db08cad2b464e22d00c931f2f01ce72eb868"}}
+    ]},
+    {"id": "e010", "source": "n008", "target": "n010", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "this week", "event_scope": "presentation of ASIO's annual threat assessment",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0006", "start": 0, "end": 171, "sha256": "d125fca433fa6549e93a824826d6068e5b05585a18cb9bd732df32e3cdbb2b86"}}
+    ]},
+    {"id": "e011", "source": "n009", "target": "n002", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0008", "start": 0, "end": 81, "sha256": "19f1886093b58feb31969b16e5e8db08cad2b464e22d00c931f2f01ce72eb868"}}
+    ]},
+    {"id": "e012", "source": "n009", "target": "n005", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 0, "end": 261, "sha256": "fcbbd077024c6fb3756ed0a7adf5cf57d59d92e322d6448ff792066d1b828a10"}}
+    ]},
+    {"id": "e013", "source": "n009", "target": "n007", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0007", "start": 0, "end": 152, "sha256": "2f3e81fe73bd6517cbd89ddba47f012471aa22e6da96cf497c0f64c544411312"}}
+    ]},
+    {"id": "e014", "source": "n009", "target": "n001", "relation_type": "USES",
+     "modality": "planned", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "n003",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0004", "start": 127, "end": 261, "sha256": "21eb917368e46ab5d9b649ee8bc6f6a95cbb0e4578a61f082796aa3d13a7fb53"}}
+    ]},
+    {"id": "e015", "source": "n010", "target": "n006", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "Mike Burgess", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0010", "paragraph_id": "D0010:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0010:P0006", "start": 0, "end": 171, "sha256": "d125fca433fa6549e93a824826d6068e5b05585a18cb9bd732df32e3cdbb2b86"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

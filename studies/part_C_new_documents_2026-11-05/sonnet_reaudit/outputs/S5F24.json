@@ -1,0 +1,30 @@
+{
+ "audit_file": "S5F24",
+ "target_doc_id": "D0364",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття подає 2FA як факт про захист облікового запису; порада ввімкнути не робить сам зв'язок захисту рекомендацією, тож recommended хибне."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "«Using firewalls... is essential for protecting company data» — твердження про роль засобу, actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "I", "reason": "Зв'язок secure connections захищає дані подано як твердження про роль (actual), а не як пораду; recommended хибне."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "Твердження про суттєву роль захищених з'єднань для захисту даних компанії, actual."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "«Regular backups ensure that you don't lose important files» — actual."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Антивірус «can detect and remove threats» — здатність засобу, actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Шифрування названо суттєвим для захисту даних компанії, actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "2FA не дає отримати доступ до облікового запису без другого кроку, actual."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "Те, що резервні копії оберігають файли, подано як факт; рекомендація стосується лише дії, тож recommended хибне."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує захисту фаєрволами, а стверджує його; negative хибне."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Здатність антивіруса виявляти загрози подано як факт, а не як можливість."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Фішинг — обман із метою отримати особисту інформацію, actual."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Соціальна інженерія маніпулює людьми, щоб викрасти конфіденційну інформацію, actual."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Many individuals have lost data because of ransomware — actual."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Шкідливе ПЗ призначене пошкоджувати систему чи отримувати до неї доступ, actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Businesses have lost important data because of ransomware — actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Ransomware блокує файли, actual."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "Роль шифрування подано як твердження про важливість (actual), а не як пораду; recommended хибне."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Соцмережі — поширена ціль кіберзлочинців, actual."},
+  {"item_id": "E020", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: програма-вимагач зачіпає бізнес, а не бізнес зачіпає програму-вимагач."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "Hackers often target regular users — типова поведінка, actual."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "Антивірус виявляє й видаляє загрози до завдання шкоди, тобто пом'якшує їх; actual."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "I", "reason": "Здатність антивіруса знешкоджувати загрози подано як факт, а не як можливість."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "I", "reason": "Роль фаєрволів для захисту даних подано як твердження (actual); порада фокусуватися на заходах не робить сам зв'язок рекомендацією."}
+ ]
+}

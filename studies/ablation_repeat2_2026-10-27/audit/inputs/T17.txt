@@ -1,0 +1,98 @@
+AUDIT_FILE: T17
+TARGET_DOC_ID: D0388
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0388
+PUBLICATION_DATE: 2026-03-21
+SOURCE_URL: https://www.aninews.in/news/business/csa-xcon-2026-brings-together-innovation-ethical-hacking-and-next-gen-cyber-defence20260321162017
+TITLE_SHA256: bdb9f7982b16f3f41bb1a0daf6d131a846db47da9fddad4f4012a3162a81334e
+BEGIN_DOCUMENT
+[D0388:P0001] sha256:bdb9f7982b16f3f41bb1a0daf6d131a846db47da9fddad4f4012a3162a81334e
+[D0388:P0002] sha256:3be18acf7290e2a3950369a5fdbcd5a0d3f3ad1af0613607b64850d0823123b9
+[D0388:P0003] sha256:f1d618906e9461cb19db8f03ba7b4de3c12f329d959885d97941bda09b5ef086
+[D0388:P0004] sha256:b4cfefbd3b83686c3df6ab4d40d5d21bd043f246712b54a3d60e2e92de0d1500
+[D0388:P0005] sha256:6140e6e92af9c840e2c8e451887cd6b0398baf94e39e26afc4509850aabc6430
+[D0388:P0006] sha256:43bb5182022e09e861851a50bb1b186a6b9a9c84f49618e941b677157db7ed09
+[D0388:P0007] sha256:08e48005691682d73e654ddd3773bb8ca5461742de731f220971a5a85827e682
+[D0388:P0008] sha256:26deb56ff557c9e9231231b8a116f3cfcc27ecfd2d946aa53f51dc073d2f4224
+[D0388:P0009] sha256:9ef9524289bd811e5a5638fc59d756ba00527c78ab7507fb91d9368e70d43ded
+[D0388:P0010] sha256:f3aad1399a37d91652848411af5456c75a4daf18ef754e6e0e68eb1dc951912d
+[D0388:P0011] sha256:ce9d6e7cc3d9961c9a8955b256e033cce2fd816b953e75c68ebf0524225a5fa0
+[D0388:P0012] sha256:3686634e7d19d23232d28ca264025acae7add85e0a1153258d64128a95b103da
+[D0388:P0013] sha256:9f7243300e832acfb2fe402e49e3bd70a7b5c6d50d24c3f8662bbffa56813487
+[D0388:P0014] sha256:750a2a3dfcb5f6fb1a4c1eb7abbc014ab14fd967602e842ec7b73631ae25199d
+[D0388:P0015] sha256:2dce5a8c6f215d435fea57a8e7c5b85ebd661b2da73fc6efc38824f96f278db7
+[D0388:P0016] sha256:bdd46907aacb3ddd632acba5e5d7d3d3f67cdb157fea26869de409365fb038fe
+[D0388:P0017] sha256:5047742d0a0dc42b20e496545c4c54f9a517eb59790f6dc17cb210286de215a5
+[D0388:P0018] sha256:d0186564d101d0a86735ed9427d5dc913fa146e836c07a440fcbc0e4625e3ba6
+[D0388:P0019] sha256:4ae58c76f9e5be192bf5efccc74d3f4d7d1eb4625e7ee8bfefe8af538ae637ae
+[D0388:P0020] sha256:b44871053d6a377f515400e39d8e2453b42e1470abfee280cc7661cf626f05f6
+[D0388:P0021] sha256:53b77da762867f84de4932191cd83b50632945c963cc54a9d3d3e0d8e1efb440
+[D0388:P0022] sha256:667b861175b359ecb1c8afbc0fb8d5994d81ae6e1de63f8745f38cf861d7924d
+[D0388:P0023] sha256:ddc4de87347bbf07483619d8e503e7e4e083c6c9065d0d0b66049850e71e6a2c
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (20)
+E001: «cybersecurity services» — provides → «IntelligenceX» | форма: actual, positive
+E002: «CSA XCON 2026» — took place at → «Dehradun» | форма: actual, positive
+E003: «Live Technical Deep Dive» — covered → «defense evasion techniques» | форма: actual, positive
+E004: «Cloud Security Alliance» — operates → «CSA XCON 2026» | форма: actual, positive
+E005: «Live Technical Deep Dive» — was part of → «CSA XCON 2026» | форма: actual, positive
+E006: «IntelligenceX» — supports → «advanced threat intelligence efforts» | форма: actual, negative
+E007: «Live Technical Deep Dive» — part of → «CSA XCON 2026» | форма: actual, positive
+E008: «IntelligenceX» — supports → «advanced threat intelligence efforts» | форма: actual, positive
+E009: «ANI» — published → «CSA XCON 2026 Brings Together Innovation, Ethical Hacking, and Next-Gen Cyber Defence» | форма: actual, positive
+E010: «Live Technical Deep Dive» — covered → «AI-powered threat detection» | форма: actual, positive
+E011: «CSA XCON 2026» — took place on → «13-14 March 2026» | форма: actual, positive
+E012: «Satyam Rastogi» — leads → «Cyber Security Alliance Uttarakhand» | форма: actual, positive
+E013: «Cloud Security Alliance» — organised → «CSA XCON 2026» | форма: actual, positive
+E014: «artificial intelligence» — enables → «defense systems» | форма: actual, positive
+E015: «CSA XCON 2026 Brings Together Innovation, Ethical Hacking, and Next-Gen Cyber Defence» — was updated on → «Mar 21, 2026» | форма: actual, positive
+E016: «IntelligenceX» — provides → «cybersecurity services» | форма: actual, positive
+E017: «VMPL» — provided → «CSA XCON 2026 Brings Together Innovation, Ethical Hacking, and Next-Gen Cyber Defence» | форма: actual, positive
+E018: «IntelligenceX» — was recognized at → «CSA XCON 2026» | форма: actual, positive
+E019: «CSA XCON 2026» — located in → «Dehradun» | форма: actual, positive
+E020: «Live Technical Deep Dive» — covered → «malware analysis» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

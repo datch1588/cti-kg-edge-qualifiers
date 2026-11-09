@@ -1,0 +1,55 @@
+{
+  "run_id": "Z055",
+  "target_doc_id": "D0026",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "PoK",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 232, "end": 331, "sha256": "52f9e7e32adeda647f8e7bc9fa87cf4495ab447bd914de28f4aae25c09ec0e28"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Election Commission",
+      "entity_type": "organization",
+      "aliases": ["EC"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 82, "end": 176, "sha256": "354cc32f1693da52b198832270b06cc48c75f38b717a4ed1c1d8f4ecab2c279b"}},
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 177, "end": 227, "sha256": "510744e4dbd9f4c5e63882a3fcffebf1b0699cf57d145e21ba7cf86b0e04ea6d"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "High Court",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 44, "end": 176, "sha256": "baaffcc496dfeef1fa9c0033748a28a9e10fabef51af25008f8d2a09078546be"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "Pakistan Tehreek-e-Insaf",
+      "entity_type": "organization",
+      "aliases": ["PTI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 0, "end": 78, "sha256": "53677002c33062bb97015b0a4c3351002e542bd26680b71852a4a3c83e4b50a2"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Imran Khan",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0026", "paragraph_id": "D0026:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0026:P0004", "start": 0, "end": 78, "sha256": "53677002c33062bb97015b0a4c3351002e542bd26680b71852a4a3c83e4b50a2"}}
+      ]
+    }
+  ],
+  "edges": [],
+  "context_passages_used": []
+}

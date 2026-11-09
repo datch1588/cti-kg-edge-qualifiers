@@ -1,0 +1,106 @@
+{
+ "run_id": "Z038",
+ "target_doc_id": "D0066",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "distributed denial-of-service", "entity_type": "attack_technique", "aliases": ["DDoS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 574, "end": 739, "sha256": "d811a3e0f46810137068dfc26f34dd2a7f43bf9413a9d818c0f3b7602a951687"}}
+  ]},
+  {"id": "n002", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 574, "end": 739, "sha256": "d811a3e0f46810137068dfc26f34dd2a7f43bf9413a9d818c0f3b7602a951687"}}
+  ]},
+  {"id": "n003", "label": "U.S.", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0035", "start": 0, "end": 155, "sha256": "582e46a13ecf6f691a587e494b88f602d84055d6eb4a2a22d81ed0c408a2b0f8"}}
+  ]},
+  {"id": "n004", "label": "Asia Pacific", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0027", "start": 0, "end": 118, "sha256": "c6bec89b62d30f891e506ccf64e3fd87d53aea4f520d298588bf05bbc5206dd4"}}
+  ]},
+  {"id": "n005", "label": "San Francisco", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0035", "start": 156, "end": 272, "sha256": "64764b298bdc51cad9720359d91e97aa73c16806b901aff552dee622e67347ed"}}
+  ]},
+  {"id": "n006", "label": "malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 574, "end": 739, "sha256": "d811a3e0f46810137068dfc26f34dd2a7f43bf9413a9d818c0f3b7602a951687"}}
+  ]},
+  {"id": "n007", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 574, "end": 739, "sha256": "d811a3e0f46810137068dfc26f34dd2a7f43bf9413a9d818c0f3b7602a951687"}},
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0025", "start": 0, "end": 173, "sha256": "778ceb0a573ab4ca3181b96a47fcbbcfa26de9f52a241e5e82814ebbfb5d13bd"}}
+  ]},
+  {"id": "n008", "label": "Grand View Research", "entity_type": "organization", "aliases": ["Grand View Research, Inc."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0002", "start": 0, "end": 42, "sha256": "39dbd9a4d72917485cde7180866bb802562a0543893b88b6968151513f4301e5"}},
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 264, "end": 416, "sha256": "684e6fea3bd7891bb5be279d157e2df9c1e0ab847dc0af44a6e9d23d0385f6b9"}}
+  ]},
+  {"id": "n009", "label": "Healthcare organizations", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0024", "start": 0, "end": 151, "sha256": "f3a882fcf0f4e17d44d42613a18bd46748a0b1acf75ebe9fa1e615b0b1444ab2"}}
+  ]},
+  {"id": "n010", "label": "Security teams", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0015", "start": 95, "end": 237, "sha256": "76210618140a2aeb5bc9000740469e0ff1a2beb49e8b6050c4c5ef5e540a1480"}}
+  ]},
+  {"id": "n011", "label": "SMEs", "entity_type": "other", "aliases": ["small and medium-sized enterprises"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0020", "start": 99, "end": 199, "sha256": "cfb1038cb219850ebb6eb1a8384207f127b341a6285e592291f63d8867bca42e"}}
+  ]},
+  {"id": "n012", "label": "AI-driven solutions", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0015", "start": 95, "end": 237, "sha256": "76210618140a2aeb5bc9000740469e0ff1a2beb49e8b6050c4c5ef5e540a1480"}}
+  ]},
+  {"id": "n013", "label": "artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0012", "start": 148, "end": 337, "sha256": "73ad349a91d60355bead003977cfb2a7e9d6c3dc897c0b29f5edb45b515e5b7d"}},
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0017", "start": 0, "end": 150, "sha256": "ca3e943110abbd70640505d7cae7e19efee625d5b2822b33428baa40917c40d1"}}
+  ]},
+  {"id": "n014", "label": "cloud security platforms", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0012", "start": 148, "end": 337, "sha256": "73ad349a91d60355bead003977cfb2a7e9d6c3dc897c0b29f5edb45b515e5b7d"}}
+  ]},
+  {"id": "n015", "label": "cloud-delivered security offerings", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "n016", "label": "endpoint security solutions", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "n017", "label": "machine learning", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0012", "start": 148, "end": 337, "sha256": "73ad349a91d60355bead003977cfb2a7e9d6c3dc897c0b29f5edb45b515e5b7d"}}
+  ]},
+  {"id": "n018", "label": "managed security services", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "n019", "label": "Cybercriminals", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0021", "start": 179, "end": 273, "sha256": "4e6797ddbbf6c06f047d53db3d0e5bd8d60995c267df2e0406160b3df873515d"}}
+  ]},
+  {"id": "n020", "label": "AI-enabled cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0005", "start": 574, "end": 739, "sha256": "d811a3e0f46810137068dfc26f34dd2a7f43bf9413a9d818c0f3b7602a951687"}}
+  ]},
+  {"id": "n021", "label": "data breaches", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0025", "start": 0, "end": 173, "sha256": "778ceb0a573ab4ca3181b96a47fcbbcfa26de9f52a241e5e82814ebbfb5d13bd"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n008", "target": "n003", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0035", "start": 0, "end": 155, "sha256": "582e46a13ecf6f691a587e494b88f602d84055d6eb4a2a22d81ed0c408a2b0f8"}}
+  ]},
+  {"id": "e002", "source": "n008", "target": "n005", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0035", "start": 156, "end": 272, "sha256": "64764b298bdc51cad9720359d91e97aa73c16806b901aff552dee622e67347ed"}}
+  ]},
+  {"id": "e003", "source": "n010", "target": "n012", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0015", "start": 95, "end": 237, "sha256": "76210618140a2aeb5bc9000740469e0ff1a2beb49e8b6050c4c5ef5e540a1480"}}
+  ]},
+  {"id": "e004", "source": "n011", "target": "n015", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "e005", "source": "n011", "target": "n016", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "e006", "source": "n011", "target": "n018", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0022", "start": 13, "end": 187, "sha256": "3c45f0675be346e267739ab12358afa75b66101611a368c3f66cb6866be582f2"}}
+  ]},
+  {"id": "e007", "source": "n014", "target": "n013", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0012", "start": 148, "end": 337, "sha256": "73ad349a91d60355bead003977cfb2a7e9d6c3dc897c0b29f5edb45b515e5b7d"}}
+  ]},
+  {"id": "e008", "source": "n014", "target": "n017", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0012", "start": 148, "end": 337, "sha256": "73ad349a91d60355bead003977cfb2a7e9d6c3dc897c0b29f5edb45b515e5b7d"}}
+  ]},
+  {"id": "e009", "source": "n019", "target": "n009", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0024", "start": 0, "end": 151, "sha256": "f3a882fcf0f4e17d44d42613a18bd46748a0b1acf75ebe9fa1e615b0b1444ab2"}}
+  ]},
+  {"id": "e010", "source": "n019", "target": "n011", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Grand View Research, Inc.", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0066", "paragraph_id": "D0066:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0066:P0021", "start": 110, "end": 273, "sha256": "83da1bdea8cd28e16a6abbb45fb1e05c1fc2e8e0a25855963e80678131fd7c74"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

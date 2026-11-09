@@ -1,0 +1,225 @@
+AUDIT_FILE: QT39A
+TARGET_DOC_ID: D0198
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0198
+PUBLICATION_DATE: 2026-05-11
+SOURCE_URL: https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/
+TITLE_SHA256: 0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+BEGIN_DOCUMENT
+[D0198:P0001] sha256:0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+[D0198:P0002] sha256:2e8115ded6d3fe87b8865c341db0a97a4457f45d09ef91ab159ad80361eeb267
+[D0198:P0003] sha256:6562eb4289bc9d809ebf70bd729ece6bfc4499db889399d0cb9a6b644f8e4a8d
+[D0198:P0004] sha256:276d47b532a777d1f4630865a7a20b1d801278b1b86809765fca789f4ba3811e
+[D0198:P0005] sha256:ae5618fe17e75052335a087a53825be52111494bd2ecb5f47deef188a4b2ef23
+[D0198:P0006] sha256:e8d41303beca519afcd2a40457340ec1ddc1ba8631127e4dd9d26eb69a325d2d
+[D0198:P0007] sha256:b781074844edff36d4c1e37e8fc00727dbc30bdf57581aed556476e35d998b27
+[D0198:P0008] sha256:7b44918a0724d02fa19089c9af7679a60db9ea7dc448d1a2afbcdc14e77cdec5
+[D0198:P0009] sha256:ef63072e5a12794545fa2b5ee40d74a2fa126ee6a313797e5f4f347ea0a6504d
+[D0198:P0010] sha256:ec945c4dc77a11d85627264415207f0be3ea815164d18cd2f1657633f0cf4687
+[D0198:P0011] sha256:e4a6d4d1aa3319da70da4be1638874e7028e5fa5dad92a68766f351416a80252
+[D0198:P0012] sha256:d25b40103ff389b99011800d0582e6df83adfaeef2757cedc038cd4b0130bc36
+[D0198:P0013] sha256:45bbdb6be62138accd2d184f9975ccbb8d42bf3aba6fdd9ac544e0ec6788e93b
+[D0198:P0014] sha256:d95082a2ee57f3e40e3050662a346e26a872fd4d0baf57d293ac5a883f0f4ff5
+[D0198:P0015] sha256:47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442
+[D0198:P0016] sha256:8703d8054f7581deb089dd7c43ffab6ac3f96f00fb65328faff85ebb7bbae551
+[D0198:P0017] sha256:1cf5d06433a6f71099b22bbb0ed527f99ba22595e2ca956891a4b4451cb6c26a
+[D0198:P0018] sha256:b8aada94edac40931e664cb48cf267fb926770267a5612e468f5204a85629a61
+[D0198:P0019] sha256:4de763f1a2e40709584e760a21cc40246f129143ab4086e4ade82115eee60a11
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 37, вузлів 5)
+E001: «artificial intelligence» — enables → «offensive cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: «2026» | контекст події: —
+  фрагменти: [D0198:P0008] «@137-264 sha256=52bcd4bbced6d21f20f24a86bece3697d740a824f015e51768f7735befb6e88a»
+E002: «Defence» — operates → «Defence's networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0006] «@508-683 sha256=92231970be57c06c268f5ca028b69c74cd780efade8bb27e958daf889a9d5885»
+E003: «zero-trust architecture» — protects → «Defence's networks» | форма: actual, positive
+  атрибуція: «IIP» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E004: «data breaches» — affects → «Australian companies» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «data breaches» (incident)
+  фрагменти: [D0198:P0009] «@255-393 sha256=db2440f9e8c454b8bfe6851d2cdb4b5d69b362365a1d3d59b96c6d5d79685411»
+E005: «authoritarian regimes» — targets → «critical infrastructure» | форма: possible, positive
+  атрибуція: «National Defence Strategy (NDS)» | час події: — | контекст події: —
+  фрагменти: [D0198:P0005] «@536-699 sha256=6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561»; [D0198:P0005] «@316-535 sha256=051daa1b1f2ed9bcd13c035e6d4ec6be4f86f35c7f0b49af6cf661dacc226f0e»
+E006: «Redspice» — uses → «artificial intelligence» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0008] «@78-264 sha256=7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15»
+E007: «Redspice» — uses → «artificial intelligence» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0008] «@78-136 sha256=6e6b80a5bddf03c85f0f85144cde6c123a685206aa35d8753f65bb9a1c47a191»
+E008: «authoritarian regimes» — targets → «critical infrastructure» | форма: actual, positive
+  атрибуція: «Gatra Priyandita» | час події: — | контекст події: —
+  фрагменти: [D0198:P0005] «@536-699 sha256=6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561»
+E009: «legacy components» — part of → «classified communications infrastructure» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-335 sha256=eb2558ab7214904f9bdb4a0e142c1f34d1c968c1f6eabd3212e6f55af325eeef»
+E010: «Redspice» — uses → «artificial intelligence» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0013] «@147-321 sha256=0dcf41b91dc666e02b766055e26cf759ed2491d455f9a6681889276e10385113»
+E011: «zero-trust architecture» — protects → «Defence's networks» | форма: planned, positive
+  атрибуція: «Integrated Investment Program (IIP)» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E012: «Defence» — uses → «zero-trust architecture» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@619-746 sha256=055fcfc9713d9d633a9338716a7269bc9be17cd8a08a5da0de00c5677da3b3f8»; [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E013: «legacy components» — part of → «classified communications infrastructure» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-250 sha256=20578bc4b4ff9bfa661738a0bf3ffc639c243510abf7a7c577a7731817a8e68e»
+E014: «artificial intelligence» — enables → «offensive cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: «2026» | контекст події: —
+  фрагменти: [D0198:P0008] «@78-264 sha256=7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15»
+E015: «artificial intelligence» — enables → «defensive cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: «In 2026» | контекст події: —
+  фрагменти: [D0198:P0008] «@78-264 sha256=7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15»
+E016: «authoritarian regimes» — targets → «critical infrastructure» | форма: actual, positive
+  атрибуція: «NDS» | час події: — | контекст події: —
+  фрагменти: [D0198:P0005] «@536-699 sha256=6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561»
+E017: «advanced encryption» — protects → «Defence's networks» | форма: planned, positive
+  атрибуція: «IIP» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E018: «Defence» — uses → «zero-trust architecture» | форма: recommended, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0013] «@35-146 sha256=f6997b420f6c728886fe649450aaa42d274a1c0875b069bfe1957186670e773e»; [D0198:P0013] «@147-321 sha256=0dcf41b91dc666e02b766055e26cf759ed2491d455f9a6681889276e10385113»
+E019: «quantum capability» — enables → «harvesting now and decrypting later» | форма: conditional, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0011] «@44-179 sha256=18b2034aae60407f7267fcae3661207e9cd8984c827ed003c420596e5293d7d4»
+E020: «adversaries» — uses → «AI-enabled discovery tools» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@336-483 sha256=14b1dcae9615ed3a84f308eabb5ca8840f30fc52d52f1ea634ffc25c7abe8b4a»
+E021: «authoritarian regimes» — targets → «critical infrastructure» | форма: actual, positive
+  атрибуція: «NDS» | час події: — | контекст події: —
+  фрагменти: [D0198:P0005] «@536-699 sha256=6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561»; [D0198:P0005] «@363-535 sha256=2a87285d885865bd6db6c0546c66560424d77a5910cefa6cf140c49701f6819d»
+E022: «artificial intelligence» — enables → «offensive cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: «In 2026» | контекст події: —
+  фрагменти: [D0198:P0008] «@78-264 sha256=7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15»
+E023: «legacy components» — part of → «defence logistics» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-335 sha256=eb2558ab7214904f9bdb4a0e142c1f34d1c968c1f6eabd3212e6f55af325eeef»
+E024: «data breaches» — affects → «Australian companies» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «data breaches» (incident)
+  фрагменти: [D0198:P0009] «@297-393 sha256=198e91b613ca7544b70aa7f81e02de9e82ed4fd01022a0669d5ce5d6f3f3c407»
+E025: «data breaches» — affects → «Australian companies» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0009] «@255-393 sha256=db2440f9e8c454b8bfe6851d2cdb4b5d69b362365a1d3d59b96c6d5d79685411»
+E026: «Gatra Priyandita» — member of → «ASPI» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0015] «@0-45 sha256=47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442»
+E027: «legacy components» — part of → «defence logistics» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-250 sha256=20578bc4b4ff9bfa661738a0bf3ffc639c243510abf7a7c577a7731817a8e68e»
+E028: «Defence» — uses → «zero-trust architecture» | форма: planned, positive
+  атрибуція: «IIP» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@619-746 sha256=055fcfc9713d9d633a9338716a7269bc9be17cd8a08a5da0de00c5677da3b3f8»; [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E029: «authoritarian regimes» — targets → «critical infrastructure» | форма: possible, positive
+  атрибуція: «NDS» | час події: — | контекст події: —
+  фрагменти: [D0198:P0005] «@536-699 sha256=6112afd64626b104384c2dd632f75185958689bdb46887de5d743a6c5eccd561»; [D0198:P0005] «@316-361 sha256=17ae75e7b116343dcc57b6176d74ab0346a5187518d6ddcfaec0d03593ee0deb»
+E030: «Defence» — operates → «Defence's networks» | форма: actual, positive
+  атрибуція: — | час події: «2026-05-11» | контекст події: —
+  фрагменти: [D0198:P0006] «@508-683 sha256=92231970be57c06c268f5ca028b69c74cd780efade8bb27e958daf889a9d5885»
+E031: «legacy components» — part of → «command-and- control architecture» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-335 sha256=eb2558ab7214904f9bdb4a0e142c1f34d1c968c1f6eabd3212e6f55af325eeef»
+E032: «artificial intelligence» — enables → «defensive cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: «2026» | контекст події: —
+  фрагменти: [D0198:P0008] «@78-264 sha256=7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15»
+E033: «Australian Signals Directorate» — uses → «quantum-resistant cryptography» | форма: planned, positive
+  атрибуція: — | час події: «by 2030» | контекст події: «ASD transition to quantum-resistant cryptography»
+  фрагменти: [D0198:P0011] «@180-304 sha256=6e5db37dc81e41df98d23fee100b3a781e3fa28e572dc0c95308188fcaa3fe88»
+E034: «advanced encryption» — protects → «Defence's networks» | форма: actual, positive
+  атрибуція: «IIP» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E035: «zero-trust architecture» — protects → «Defence's networks» | форма: planned, positive
+  атрибуція: «IIP» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E036: «advanced encryption» — protects → «Defence's networks» | форма: planned, positive
+  атрибуція: «Integrated Investment Program (IIP)» | час події: — | контекст події: —
+  фрагменти: [D0198:P0007] «@44-267 sha256=5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89»
+E037: «legacy components» — part of → «command-and- control architecture» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0198:P0010] «@102-250 sha256=20578bc4b4ff9bfa661738a0bf3ffc639c243510abf7a7c577a7731817a8e68e»
+V001: «defensive cyber capabilities» (other) | альтернативні назви: «command-and- control architecture»
+V002: «Australian Signals Directorate» (organization) | альтернативні назви: «ASD»
+V003: «artificial intelligence» (technology) | альтернативні назви: «AI»
+V004: «Integrated Investment Program» (other) | альтернативні назви: «IIP»
+V005: «National Defence Strategy» (other) | альтернативні назви: «NDS»
+КІНЕЦЬ ЗАПИСІВ

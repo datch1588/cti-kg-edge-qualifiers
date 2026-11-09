@@ -1,0 +1,132 @@
+{
+ "run_id": "Y058",
+ "target_doc_id": "D0017",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "deepfakes", "entity_type": "attack_technique", "aliases": ["deepfake"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "n002", "label": "impersonation", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}}]},
+  {"id": "n003", "label": "phishing attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}}]},
+  {"id": "n004", "label": "spear phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "n005", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 0, "end": 98, "sha256": "80845dcabcd9f8747b299319c69109059d7392b98b29872267511c7884f8d290"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0014", "start": 134, "end": 175, "sha256": "29372a9c2ad40f26e9d1c027734d9c357f114d6e1ca09ab16654ed16aeae2564"}}]},
+  {"id": "n006", "label": "National Summit on Telecom Security in the AI and Quantum Age", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 425, "end": 544, "sha256": "cf2b34bf3164b87f2f188b21b493f2b109e30887399e197a47e3d8966d3c7f71"}}]},
+  {"id": "n007", "label": "New Delhi", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 0, "end": 98, "sha256": "80845dcabcd9f8747b299319c69109059d7392b98b29872267511c7884f8d290"}}]},
+  {"id": "n008", "label": "Cyber Security Association of India", "entity_type": "organization", "aliases": ["CSAI"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 34, "end": 145, "sha256": "8cab3df962ef1d6a4f962fa2b60d498eb2e700e0b689480f5fcda327e2d8e9b8"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 465, "end": 544, "sha256": "d63fb5d4e11a32179abb498ab748f78a0e3e08f948391b6b7ba2fcc80d5cb0b6"}}]},
+  {"id": "n009", "label": "government", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 131, "end": 209, "sha256": "3800d4d4e68b24f5d95c61a72a10a524d4858ef3c88d436fbcc078012423c79a"}}]},
+  {"id": "n010", "label": "Ministry of External Affairs", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 23, "end": 118, "sha256": "310128673a2406b05e3346f4dd599ad20ddf7d38470a0ffd82ccf96cbc811aa1"}}]},
+  {"id": "n011", "label": "critical sectors", "entity_type": "other", "aliases": ["critical sector"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0008", "start": 0, "end": 137, "sha256": "119fa8224d5ed8be40b6510227896d51e7d37063d9bb409894c2ae80a7866256"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 131, "end": 209, "sha256": "3800d4d4e68b24f5d95c61a72a10a524d4858ef3c88d436fbcc078012423c79a"}}]},
+  {"id": "n012", "label": "digital infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0007", "start": 0, "end": 156, "sha256": "e440b458d33e9232708d37648c4ea623450dceb5cbf3f4bed334fb8c0a69076b"}}]},
+  {"id": "n013", "label": "global cooperation", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 56, "end": 145, "sha256": "2227b5817df4178ff3f436ed1592e5fd5b78e3c8173b8f2444e1eeb46273fb10"}}]},
+  {"id": "n014", "label": "private sector", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 1, "end": 78, "sha256": "e724f6e427d5f5f87e2bc5a7f86c5f4ceb4750e6c20df0246d9104e20f1ce0a6"}}]},
+  {"id": "n015", "label": "telecom", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0008", "start": 0, "end": 137, "sha256": "119fa8224d5ed8be40b6510227896d51e7d37063d9bb409894c2ae80a7866256"}}]},
+  {"id": "n016", "label": "whole of nation", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0007", "start": 0, "end": 156, "sha256": "e440b458d33e9232708d37648c4ea623450dceb5cbf3f4bed334fb8c0a69076b"}}]},
+  {"id": "n017", "label": "Ashwini Bhardwaj", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 23, "end": 118, "sha256": "310128673a2406b05e3346f4dd599ad20ddf7d38470a0ffd82ccf96cbc811aa1"}}]},
+  {"id": "n018", "label": "Rajesh Pant", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 34, "end": 145, "sha256": "8cab3df962ef1d6a4f962fa2b60d498eb2e700e0b689480f5fcda327e2d8e9b8"}}]},
+  {"id": "n019", "label": "availability", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "n020", "label": "CIA", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "n021", "label": "confidentiality", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 170, "end": 280, "sha256": "13e8bc16c7b1e205f2f988e124e2aad007c4ef755211a6965414d8e9d53651ee"}}]},
+  {"id": "n022", "label": "integrity", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "n023", "label": "telecom security", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 938, "end": 1047, "sha256": "0a5d205eb62a2432e2ded2c261831fa32ebc6f0d5424dbe7ec410e48f6e22448"}}]},
+  {"id": "n024", "label": "artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 341, "end": 423, "sha256": "30d7716b97de42dc4383a9a44fc5e0b2b3bc2043b32da5b6fbb1d2a6f5b59a7c"}}]},
+  {"id": "n025", "label": "internet connectivity", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0011", "start": 127, "end": 221, "sha256": "b3bd2ae7d11f86f7d4c19211f0297284b101268a9feb2a5d37a72a3a741db23b"}}]},
+  {"id": "n026", "label": "quantum computing", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 160, "end": 280, "sha256": "4c5a2e650361c83592c5b9275fb304e9ead497f167263f17cda3ffe283f49afc"}}]},
+  {"id": "n027", "label": "satellite-based systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0012", "start": 105, "end": 202, "sha256": "68253e6923414e41aec16bcc428474a696b1e73dadc42a4019b283be23acb1c1"}}]},
+  {"id": "n028", "label": "sea cables", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0012", "start": 105, "end": 202, "sha256": "68253e6923414e41aec16bcc428474a696b1e73dadc42a4019b283be23acb1c1"}}]},
+  {"id": "n029", "label": "telecom infrastructure", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0011", "start": 127, "end": 221, "sha256": "b3bd2ae7d11f86f7d4c19211f0297284b101268a9feb2a5d37a72a3a741db23b"}}]},
+  {"id": "n030", "label": "telecom networks", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 56, "end": 145, "sha256": "2227b5817df4178ff3f436ed1592e5fd5b78e3c8173b8f2444e1eeb46273fb10"}}]},
+  {"id": "n031", "label": "telephone network", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 672, "end": 770, "sha256": "d971a0275501bb9ddc400fdfcad33166b8ef1a251a6667a503dda0b635e4138b"}}]},
+  {"id": "n032", "label": "terrestrial networks", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0012", "start": 105, "end": 202, "sha256": "68253e6923414e41aec16bcc428474a696b1e73dadc42a4019b283be23acb1c1"}}]},
+  {"id": "n033", "label": "fraud", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "n034", "label": "nation-state actors", "entity_type": "threat_category", "aliases": ["nation-state"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0008", "start": 0, "end": 137, "sha256": "119fa8224d5ed8be40b6510227896d51e7d37063d9bb409894c2ae80a7866256"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 80, "end": 129, "sha256": "2d9373cc279c50498fdb09868d7e65c98b6fbf8f72a8bca1fb8baa13348bcae5"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n007", "target": "n005", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 0, "end": 98, "sha256": "80845dcabcd9f8747b299319c69109059d7392b98b29872267511c7884f8d290"}}]},
+  {"id": "e002", "source": "n009", "target": "n011", "relation_type": "PROTECTS", "modality": "recommended", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 131, "end": 209, "sha256": "3800d4d4e68b24f5d95c61a72a10a524d4858ef3c88d436fbcc078012423c79a"}}]},
+  {"id": "e003", "source": "n013", "target": "n030", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "Ashwini Bhardwaj", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 56, "end": 145, "sha256": "2227b5817df4178ff3f436ed1592e5fd5b78e3c8173b8f2444e1eeb46273fb10"}}]},
+  {"id": "e004", "source": "n016", "target": "n012", "relation_type": "PROTECTS", "modality": "recommended", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0007", "start": 0, "end": 156, "sha256": "e440b458d33e9232708d37648c4ea623450dceb5cbf3f4bed334fb8c0a69076b"}}]},
+  {"id": "e005", "source": "n017", "target": "n010", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0010", "start": 23, "end": 118, "sha256": "310128673a2406b05e3346f4dd599ad20ddf7d38470a0ffd82ccf96cbc811aa1"}}]},
+  {"id": "e006", "source": "n018", "target": "n008", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 34, "end": 145, "sha256": "8cab3df962ef1d6a4f962fa2b60d498eb2e700e0b689480f5fcda327e2d8e9b8"}}]},
+  {"id": "e007", "source": "n018", "target": "n026", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "on Thursday", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 147, "end": 280, "sha256": "eca2b0a4603de8ba5e771e24438bf9b015b8a0acc11bd26d982886412906f09c"}}]},
+  {"id": "e008", "source": "n019", "target": "n020", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "e009", "source": "n021", "target": "n020", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "e010", "source": "n022", "target": "n020", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 558, "end": 670, "sha256": "fbbcfa55f80f1ff263b5312b94a2bef606474a8e093b378531124e1ddf1cff10"}}]},
+  {"id": "e011", "source": "n024", "target": "n001", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "e012", "source": "n024", "target": "n004", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "e013", "source": "n024", "target": "n033", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 161, "end": 247, "sha256": "8f7eaa56c51f0b69de032b45ca8c0e06c5ddcfd5264bb1d4bc4baeffd52a5446"}}]},
+  {"id": "e014", "source": "n024", "target": "n001", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 21, "end": 113, "sha256": "69cef143c508fab74b15358b3536ae0721b5749a505d3a19aa53099242351794"}}]},
+  {"id": "e015", "source": "n024", "target": "n002", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}},
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0006", "start": 21, "end": 113, "sha256": "69cef143c508fab74b15358b3536ae0721b5749a505d3a19aa53099242351794"}}]},
+  {"id": "e016", "source": "n024", "target": "n003", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 1049, "end": 1165, "sha256": "864dbb1072f28637b6281c34d52ad5fb0b4db5a9fc1ca8560765ca7dfc7d6de5"}}]},
+  {"id": "e017", "source": "n026", "target": "n021", "relation_type": "AFFECTS", "modality": "conditional", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 856, "end": 935, "sha256": "5fff04e34a13bba497f13d69e34e911a4210a69bffe05efc288b31b8c3ba56c9"}}]},
+  {"id": "e018", "source": "n026", "target": "n021", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 170, "end": 280, "sha256": "13e8bc16c7b1e205f2f988e124e2aad007c4ef755211a6965414d8e9d53651ee"}}]},
+  {"id": "e019", "source": "n026", "target": "n023", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0005", "start": 160, "end": 225, "sha256": "ad8059789421409db4f0d61b485760edc9c4a56213f7691ad6e1e9c01f65958a"}}]},
+  {"id": "e020", "source": "n029", "target": "n025", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Ashwini Bhardwaj", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0011", "start": 127, "end": 221, "sha256": "b3bd2ae7d11f86f7d4c19211f0297284b101268a9feb2a5d37a72a3a741db23b"}}]},
+  {"id": "e021", "source": "n034", "target": "n011", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0008", "start": 0, "end": 137, "sha256": "119fa8224d5ed8be40b6510227896d51e7d37063d9bb409894c2ae80a7866256"}}]},
+  {"id": "e022", "source": "n034", "target": "n014", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "today", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0009", "start": 1, "end": 78, "sha256": "e724f6e427d5f5f87e2bc5a7f86c5f4ceb4750e6c20df0246d9104e20f1ce0a6"}}]},
+  {"id": "e023", "source": "n034", "target": "n015", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Rajesh Pant", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0017", "paragraph_id": "D0017:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0017:P0008", "start": 0, "end": 137, "sha256": "119fa8224d5ed8be40b6510227896d51e7d37063d9bb409894c2ae80a7866256"}}]}
+ ],
+ "context_passages_used": []
+}

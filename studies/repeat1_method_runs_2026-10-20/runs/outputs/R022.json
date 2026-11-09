@@ -1,0 +1,46 @@
+{
+ "run_id": "R022",
+ "target_doc_id": "D0598",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Dream Job", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 238, "end": 284, "sha256": "65dcf6d01a8fb38b7b06e066e16f44f1ab5967a0e62fee8f93ad39afef3a3394"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1267, "end": 1332, "sha256": "bf3ac31b09e94664861a1fe8d15e3ed0714db7d2cd79b673b4959b2c416173a0"}}
+  ]},
+  {"id": "n002", "label": "WannaCry", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 238, "end": 284, "sha256": "65dcf6d01a8fb38b7b06e066e16f44f1ab5967a0e62fee8f93ad39afef3a3394"}}
+  ]},
+  {"id": "n003", "label": "Wocao", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 238, "end": 284, "sha256": "65dcf6d01a8fb38b7b06e066e16f44f1ab5967a0e62fee8f93ad39afef3a3394"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1267, "end": 1332, "sha256": "bf3ac31b09e94664861a1fe8d15e3ed0714db7d2cd79b673b4959b2c416173a0"}}
+  ]},
+  {"id": "n004", "label": "MITRE", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1192, "end": 1261, "sha256": "543475cecbce4258771c98c1162b66a0e71542bd8f6fd43fda3a9597245605f9"}}
+  ]},
+  {"id": "n005", "label": "MITRE knowledge-base", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 848, "end": 949, "sha256": "a64652ea38ed12bf3ffaf4ee232010407bd90a3e1ad6848295b8aee8e9dbdbfd"}}
+  ]},
+  {"id": "n006", "label": "attack trees", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0001", "start": 20, "end": 87, "sha256": "07c95dc059bdeb58e28fae59e6c532224b6c55c66232c596d64522d337903819"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 955, "end": 1098, "sha256": "88996173b5e559b6693745470beef9952432dbb2684e9fc16e25d120e44206ea"}}
+  ]},
+  {"id": "n007", "label": "cATM logic", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0001", "start": 20, "end": 87, "sha256": "07c95dc059bdeb58e28fae59e6c532224b6c55c66232c596d64522d337903819"}},
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1108, "end": 1190, "sha256": "0f34523196b6bc56a2bda37704c5a2ffd96e97058ffded85f0faa885785ebf33"}}
+  ]},
+  {"id": "n008", "label": "Advanced Persistent Threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 181, "end": 235, "sha256": "ad89f082a4360fb67ce77cc226784405e636dc19e8dc03d7fa89cab2152ca303"}}
+  ]},
+  {"id": "n009", "label": "open-source tool", "entity_type": "tool", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1108, "end": 1190, "sha256": "0f34523196b6bc56a2bda37704c5a2ffd96e97058ffded85f0faa885785ebf33"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n009", "target": "n007", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0598", "paragraph_id": "D0598:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0598:P0002", "start": 1108, "end": 1190, "sha256": "0f34523196b6bc56a2bda37704c5a2ffd96e97058ffded85f0faa885785ebf33"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

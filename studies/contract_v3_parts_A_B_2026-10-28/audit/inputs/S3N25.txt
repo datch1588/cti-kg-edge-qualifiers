@@ -1,0 +1,135 @@
+AUDIT_FILE: S3N25
+TARGET_DOC_ID: D0045
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0045
+PUBLICATION_DATE: 2026-06-23
+SOURCE_URL: https://www.theregister.com/security/2026/06/23/five-eyes-spooks-warn-ai-means-infosec-incidents-can-become-major-operational-and-financial-crises/5259916
+TITLE_SHA256: ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a
+BEGIN_DOCUMENT
+[D0045:P0001] sha256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a
+[D0045:P0002] sha256:d0cc142b46da2863be070684a81a6eb5c0642c6c5f84ac931224fda1c25bdc50
+[D0045:P0003] sha256:960fdeba507721dad78e8c6099488404f2babbda33d53a084c5419a4832f5626
+[D0045:P0004] sha256:d4025d491b6b630c7e1d236e003d29d39c8caa307816f74f9672c35cfcc703b4
+[D0045:P0005] sha256:29109ae0138df7df662a80657f6ea229532e9d961ee2c4110e5d1f8966ad72be
+[D0045:P0006] sha256:445203311592210c2d728cd74870a4ead3faf5475d481323a6355f6064604056
+[D0045:P0007] sha256:3def0f43375ecaf26c07fcf42f448543bd7d15d0beff944c7d04f36b6747456a
+[D0045:P0008] sha256:2d63d2c7349baaec3242fd99cafa2c08e62fe323d1ffb93dfe3cafd2cdb8c9dc
+[D0045:P0009] sha256:395ca725fbeaa8b82307b2ddbfb2507953b752838ce1ca3fd15177a4328dad5f
+[D0045:P0010] sha256:273550d9231c57414b94bcca7e9e1149f906e52e7ccf604521ce258c8b50c252
+[D0045:P0011] sha256:6fa64a0568ccb9d3643512d7789b050b264b340adcc375b595211c3b08ca30a9
+[D0045:P0012] sha256:03667a9796607350633e86e9f6e5f7289d3121d7f86f1ff2c975bca2d93af114
+[D0045:P0013] sha256:4f10fff37ec7a4d526ae0159b74b49995fe92987dd487dbfde72b7a6b70eabc0
+[D0045:P0014] sha256:40e0db2fe1dc67fe72858529024a5e22fe4aa3add02decaecf040d80661c7899
+[D0045:P0015] sha256:1a04648d1a92ae8b15e432290c08c79be343a05efae57fc56490085718762cdc
+[D0045:P0016] sha256:46968410ecbdf342c06bed60167a0f8ae26e97958f402a8a923e94eba14ed41d
+[D0045:P0017] sha256:5156427be8152f284d8e0f38867b99673e8c03c69a58926bb80e8db0b4a018df
+[D0045:P0018] sha256:9ad5b9d8f32ad294ebfcb6e17e07424bbe3ccb395c6c71e4b26745849490e947
+[D0045:P0019] sha256:410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993
+[D0045:P0020] sha256:adc68fec6e65766734776acc60ce32363f38c2bdef15e4fa581907bdd0935686
+[D0045:P0021] sha256:8711cd5613ce57998463a8d1a40b4c529236f6368417039ab7caa7b15b803005
+[D0045:P0022] sha256:c570066c8296fc1d91dd76534afe5a5c4aa87faea356832c6a902f5adf3dab8e
+[D0045:P0023] sha256:943d48a2f2289ceda32085ee6a551df22d4da47db0ed3ec1e2b778d969afa329
+[D0045:P0024] sha256:981ab75a8943d8d4e3e6b84d2171fb8a80c2fb0d2ebea3cd4d19a1f9644f298c
+[D0045:P0025] sha256:622f8640357ab4a2137847e7831a76547fd904ba1fc2e6fec9effc1b036fdd51
+[D0045:P0026] sha256:ee93927d04afa48dae230ca2de52f24f0333ca79a98db0cdf39659ef5fe8e876
+[D0045:P0027] sha256:ecfc0a1715c7b3547557ff2b0013f7da647a8001f29a8f0dfc34a748f3a3d366
+[D0045:P0028] sha256:08099878decba342ccd0b5b850b6abd85361aa3de6c368694dbbc5ba43e961fa
+[D0045:P0029] sha256:523967362701ea7919fe1eca184c4c923e922d29a48418507dfa457632009459
+[D0045:P0030] sha256:49a351d9538c511be5962d0dcf39fa02121fa6ec9abee72e003662549c02cdc1
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (42)
+E001: «The Register» — published → «Five Eyes spooks warn AI means infosec incidents can become 'major operational and financial crises'» | форма: actual, positive
+E002: «Preparedness» — mitigates → «Breaches» | форма: actual, positive
+E003: «New Zealand» — member of → «Five Eyes» | форма: actual, positive
+E004: «Australia» — member of → «Five Eyes» | форма: actual, negative
+E005: «AI tools» — detects → «vulnerabilities» | форма: actual, positive
+E006: «Five Eyes spooks warn AI means infosec incidents can become 'major operational and financial crises'» — was published on → «23 Jun 2026» | форма: actual, positive
+E007: «Five Eyes cybersecurity advice» — warns of → «AI-powered attacks» | форма: actual, positive
+E008: «Anthropic» — develops → «Mythos» | форма: actual, positive
+E009: «Five Eyes» — includes → «New Zealand» | форма: actual, positive
+E010: «agentic AI» — enables → «cyber-attacks» | форма: possible, positive
+E011: «Five Eyes cybersecurity advice» — recommends addressing → «legacy systems» | форма: actual, positive
+E012: «Canada» — member of → «Five Eyes» | форма: actual, positive
+E013: «Five Eyes cybersecurity advice» — recommends reducing → «attack surface» | форма: actual, positive
+E014: «Anthropic» — revealed → «Mythos» | форма: actual, positive
+E015: «operational systems» — have → «long update cycles» | форма: actual, positive
+E016: «AI-powered attacks» — uses → «AI» | форма: actual, positive
+E017: «Five Eyes cybersecurity advice» — recommends strengthening → «identity and access controls» | форма: actual, positive
+E018: «Five Eyes» — includes → «UK» | форма: actual, positive
+E019: «Australia» — member of → «Five Eyes» | форма: actual, positive
+E020: «Five Eyes cybersecurity advice» — recommends accelerating → «patching processes» | форма: actual, positive
+E021: «AI-powered attacks» — warns about → «Five Eyes» | форма: actual, positive
+E022: «AI tools» — mitigates → «incidents» | форма: actual, positive
+E023: «Five Eyes intelligence agencies» — issued → «Five Eyes cybersecurity advice» | форма: actual, positive
+E024: «agentic AI» — enables → «cyber-attacks» | форма: actual, positive
+E025: «UK» — member of → «Five Eyes» | форма: actual, negative
+E026: «generative and agentic AI» — enables → «cyber-attacks» | форма: actual, positive
+E027: «Five Eyes» — warns about → «cyber threats» | форма: actual, positive
+E028: «unsupported legacy systems» — are easy targets for → «cyber-attacks» | форма: actual, positive
+E029: «Generative and agentic AI» — can fuel → «new and unusually potent cyber-attacks» | форма: actual, positive
+E030: «Five Eyes cybersecurity advice» — recommends enforcing → «strong authentication» | форма: actual, positive
+E031: «Five Eyes» — includes → «Canada» | форма: actual, positive
+E032: «Mythos» — finds → «software flaws» | форма: actual, positive
+E033: «Five Eyes» — includes → «USA» | форма: actual, positive
+E034: «Frontier AI models» — accelerate speed, scale, and sophistication of → «AI-powered attacks» | форма: actual, positive
+E035: «UK» — member of → «Five Eyes» | форма: actual, positive
+E036: «Five Eyes» — includes → «Australia» | форма: actual, positive
+E037: «AI tools» — detect earlier → «vulnerabilities» | форма: actual, positive
+E038: «AI» — shortens time between vulnerability discovery and → «vulnerability exploitation» | форма: actual, positive
+E039: «Five Eyes» — warns about → «AI-powered attacks» | форма: actual, positive
+E040: «Mythos» — is restricted behind → «regwall» | форма: actual, positive
+E041: «USA» — member of → «Five Eyes» | форма: actual, positive
+E042: «Five Eyes cybersecurity advice» — warns of → «AI-powered attacks» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ

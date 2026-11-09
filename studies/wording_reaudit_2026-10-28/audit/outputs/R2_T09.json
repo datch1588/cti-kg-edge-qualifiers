@@ -1,0 +1,14 @@
+{
+ "audit_file": "R2_T09",
+ "target_doc_id": "D0523",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrated into» подає інтеграцію як здійснений факт, а в D0523:P0005 сказано, що Concentrix «will integrate» ці рішення в межах щойно оголошеного партнерства, тобто це план (заголовок P0003 у теперішньому часі лише підсумовує анонс)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrates» без маркерів означає actual, а в D0523:P0005 стаття каже, що Concentrix «will integrate» рішення із захисту даних Proofpoint, тобто це заплановано."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrates» подає звʼязок як чинний факт, а в D0523:P0005 інтеграцію рішень collaboration security описано як майбутню дію («will integrate»), тобто planned."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «collaborates across» без маркерів означає actual, а в D0523:P0004 сказано «the two companies will collaborate across Asia Pacific», тобто співпрацю в регіоні заплановано."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrated into» подає інтеграцію як здійснену, а в D0523:P0005 сказано, що Concentrix «will integrate» рішення із захисту даних у свої SOC-пропозиції, тобто це план."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0523:P0010 стаття подає «Proofpoint's continued investment in the APAC region» як чинний стан речей, що відповідає формулюванню «invests in» (actual, positive)."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never secures» заперечує звʼязок, а в D0523:P0012 стаття стверджує, що Proofpoint захищає взаємодію «across email, cloud and collaboration tools», тобто полярність хибна."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «collaborates across» означає actual, а в D0523:P0004 стаття каже, що обидві компанії «will collaborate across Asia Pacific», тобто це заплановано."}
+ ]
+}

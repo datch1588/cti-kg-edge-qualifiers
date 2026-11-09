@@ -1,0 +1,48 @@
+{
+ "run_id": "Z010",
+ "target_doc_id": "D0595",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "behavioral manipulation", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0013", "start": 0, "end": 78, "sha256": "7bc4cd23931c286dbedd1356cdadae02619497cdf11a3a2025642e0e350e04ed"}}
+  ]},
+  {"id": "n002", "label": "autonomous IoT swarms", "entity_type": "technology", "aliases": ["autonomous swarms", "swarm systems", "Swarm-Based IoT Systems"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0005", "start": 0, "end": 125, "sha256": "64b0cc1498877bc597a309a60335fc1210f769750af698e6ab2d65d94d0d0d41"}},
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0004", "start": 264, "end": 458, "sha256": "819e03d430adaa57689d865eda875b6057e9d8ac08e419fb44f78c1ddf053075"}}
+  ]},
+  {"id": "n003", "label": "decentralized decision-making", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0007", "start": 0, "end": 146, "sha256": "8da56734954f662dc55a24f7c5ba0bb203e6053b2bc9d96df947d82c1e95a8e3"}}
+  ]},
+  {"id": "n004", "label": "Cybercriminals", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0010", "start": 0, "end": 106, "sha256": "3d19b929b8643dd2e847b9c5fc9454df5312178194d863f1682e17341a92c62b"}}
+  ]},
+  {"id": "n005", "label": "state-sponsored actors", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0010", "start": 0, "end": 106, "sha256": "3d19b929b8643dd2e847b9c5fc9454df5312178194d863f1682e17341a92c62b"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0013", "start": 0, "end": 262, "sha256": "d8a77620028cc3e5ad58ca5ce72ee48a6493abb022889b55e390bca902b3c59d"}}
+   ]},
+  {"id": "e002", "source": "n002", "target": "n003", "relation_type": "USES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0007", "start": 0, "end": 146, "sha256": "8da56734954f662dc55a24f7c5ba0bb203e6053b2bc9d96df947d82c1e95a8e3"}}
+   ]},
+  {"id": "e003", "source": "n004", "target": "n002", "relation_type": "TARGETS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0010", "start": 0, "end": 148, "sha256": "2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d"}},
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0009", "start": 273, "end": 323, "sha256": "42cb8c0540b3254be5220fbb2c10295a2c236b6c16e23044ef31a99e4898a32c"}}
+   ]},
+  {"id": "e004", "source": "n005", "target": "n002", "relation_type": "TARGETS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0010", "start": 0, "end": 148, "sha256": "2abe4bc0323d3b587bd2a6aff058ea0fc46e5571a383d4b410aaa516faa5085d"}},
+    {"role": "TARGET", "doc_id": "D0595", "paragraph_id": "D0595:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0595:P0009", "start": 273, "end": 323, "sha256": "42cb8c0540b3254be5220fbb2c10295a2c236b6c16e23044ef31a99e4898a32c"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

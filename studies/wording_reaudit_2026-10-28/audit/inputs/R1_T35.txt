@@ -1,0 +1,148 @@
+AUDIT_FILE: R1_T35
+TARGET_DOC_ID: D0154
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0154
+PUBLICATION_DATE: 2026-05-23
+SOURCE_URL: https://www.thesun.co.uk/news/39164907/uk-frontline-war-russia-putin-attack-experts-warn/
+TITLE_SHA256: 54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f
+BEGIN_DOCUMENT
+[D0154:P0001] sha256:54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f
+[D0154:P0002] sha256:8e197dd8bf5954ff1579adb2555170e5bf3f3087111cb43aa8d5eaea35876d62
+[D0154:P0003] sha256:157fbb380f98da3d1fa59e5c674f6e252821cfba58c049c7b3030632082dbea3
+[D0154:P0004] sha256:da7d09224b6939dcd00986ff2f628312a79ee7b720982884ccc2198d78678a1f
+[D0154:P0005] sha256:b071ba156fc6d4f7461007dbfefadec535d2c7a942ea1cf2aae22fef8bdc8365
+[D0154:P0006] sha256:edc298f140806b80b3368e147d7f4f6e3fa555ee95e23fabfe70eae106264a50
+[D0154:P0007] sha256:88f211708f958b49573e331e777b20cd9889b3ef4b7a5aa8e4e62de26d053e31
+[D0154:P0008] sha256:7445bceeeab62dee8aeef3cfd4abad388ca6d5eb7e5af810c7a505b797bf5a2c
+[D0154:P0009] sha256:b058705a74efc0d8b6dcf0c3ece836887295784ec5e14dfdfe99a7c09a52eb5a
+[D0154:P0010] sha256:41a44748964f9867f94081d07f210c00039519a955d2b88d3488f4320e43d2d2
+[D0154:P0011] sha256:3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55
+[D0154:P0012] sha256:f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420
+[D0154:P0013] sha256:ffdcbc9a64431a5ce85e4ebbca9e1ed91d8a60fe69e99bd4011f41ed903797b3
+[D0154:P0014] sha256:b710d6924e46517002caeea6b934db04914ed98ad631cb742afc42903fc2eb31
+[D0154:P0015] sha256:7cc7a592a7ac18a00ed6f0adfb756803a46d47a19364c2648e7e6d686bce20a2
+[D0154:P0016] sha256:725e398c1af12226889798c24f143d900f701f760145b1fbbd701459f5aa827a
+[D0154:P0017] sha256:7c84f4e5d75139da16ff2c162b7b38e88e4b69d406f5325f837ede545e1f64ca
+[D0154:P0018] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0019] sha256:1d48325334423a6b540faaa02382ce15543e377d9a09c7ab7510f7dd32ac4c95
+[D0154:P0020] sha256:d3b4ecd788b2cabf44614be432bbe729c810fe7a43fe544a57a0eed639a39217
+[D0154:P0021] sha256:3dd59b34d3c9b0005ae94a44f9df80e123912359fe317e7ad5360bd1177672b0
+[D0154:P0022] sha256:ab5d10cc4438803b7c090c7c54acb1750774d97939e8ee0216471212e564f491
+[D0154:P0023] sha256:26eb9ea9776defa442d5cf095647bac6ef21d613a211e6808a223353eba47368
+[D0154:P0024] sha256:1b014bfcb56098fdcc95e822656f900a9eb890525dbdb4f690674e265c9dad73
+[D0154:P0025] sha256:5cf47a55b3b24f9a7ac2ab0cfb5a394a6f57886514377219f2e28be94df2e3b7
+[D0154:P0026] sha256:c557d54003148fbc4d138f20348903f0c8882010f13dc507072b853f8875b3c5
+[D0154:P0027] sha256:f7200d835d225dadd2660be160fd48a215a9fa8b4da0991bd0d6bdf03730e7fc
+[D0154:P0028] sha256:e2e326c570894a56adc9cb1229f59725ddd845555b517bdda9fe8a735592c0ed
+[D0154:P0029] sha256:3ace355d3e2b17d1c81eb3a83fe8ce04f4b581de60a4071ccdc15725464789d8
+[D0154:P0030] sha256:13e4bb74c9054d9b95ff0b11165e991b1478817d9cd02fbdec8a4afc975fc425
+[D0154:P0031] sha256:12bbc1f8fcb5d0aa1c97c2303fa1e5e817355f8e28f6483c8b45f6872dd57244
+[D0154:P0032] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0033] sha256:7e4c951ff770cae6c171deae724b36d12d1922216e695ad5db8c110f3b819dde
+[D0154:P0034] sha256:41a4457c3239efef970da2658653f28a036fd19d93e132f52c6b65064d1adb08
+[D0154:P0035] sha256:3fca80478a8519c991cea4bebda63c27bba0a59554cace4c28103bd510365dd4
+[D0154:P0036] sha256:d60d664fc04579cf19daec9f93eff54cc0a91ea961f0e79eef0f61183ad2ca34
+[D0154:P0037] sha256:33b69ba0b667270e1a9f35950e5265790c9c194850a781ad9afeaa709844bae7
+[D0154:P0038] sha256:0af7c77df1858bb85cb0194931d8ac156e3a65a1ac9460242664a80c7f062e2e
+[D0154:P0039] sha256:62c26626b71558c73d6350ba6d8871aa3b72c7f2ec2912eab6cf3ec165ce946d
+[D0154:P0040] sha256:5b5674691d56be180653894a2083d2d90b96d6777d2f9c71cffe62172a95d59e
+[D0154:P0041] sha256:96bea3034db33819e4dfbd70cd9d97a3958bc0187372861994080e040bd6afa4
+[D0154:P0042] sha256:3a865abbe150dd47c550fa40fa0158f0e4d665059342d38c2a86b7250c8caa42
+[D0154:P0043] sha256:02c63ab5b554f757a0ec45819c82a22d94fbc7fb7ffc74a5e2ba57859be9d633
+[D0154:P0044] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0045] sha256:09e9b6fa7c57d09e8fd2a70bca5c310b67212dc5c4d7b3c969648e71c470951a
+[D0154:P0046] sha256:4ef6fc5777a1c3802670ed7f1285baab102f87afee2f8da105bc75b8fbebb982
+[D0154:P0047] sha256:786bb98653659333ff85fd35c9bba0c63b1cd619893c658342e96720f9c034ed
+[D0154:P0048] sha256:54abcb6a8cc1ddec9e063e1b66957de84006ffa5d50129b34ee3b750889ee647
+[D0154:P0049] sha256:b0bc778729e3404eb31720cf9d9f0eedeafa3afb0e622404a3a26ab8e335c97d
+[D0154:P0050] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0051] sha256:22e98e1401368cf1168ab407a487914c6ecadba7e4384a086a630bbdd7c060b8
+[D0154:P0052] sha256:a3d53ad408ab608a3d5062be3e4341b69c47ed60627600707472593fb1643e96
+[D0154:P0053] sha256:565ab9b2e5afce489a86b3b530927a045c7e17e0626ea726522a16960acca498
+[D0154:P0054] sha256:082e4174a7b0dcb298156601d9ec2fe78433e6ad0fffeb368d9d21d6d76f66dd
+[D0154:P0055] sha256:65a5a37ed323d7c8067e991f58dc1f87e543b292ad898be27f8ba974b7fac961
+[D0154:P0056] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0057] sha256:cd39bf574606c8a26b9b666c2fd85be584f2d12dfb1abf15a4b2d3f0eb05577b
+[D0154:P0058] sha256:6498cb06706499e59963e3bb151d4f346d0481fed75b5bbd98d9239b868bb3ec
+[D0154:P0059] sha256:b7e4e712987b4be93b626e7b7e4cec3fa04a6e804e113f12e31077ff7564abb1
+[D0154:P0060] sha256:3ee10a4acd86b9e66a6b35f109b0e3d87ae41e970f9e3df74c6920f815862569
+[D0154:P0061] sha256:8d984df6849ac538bfadeb2f8eca5162d1313b75e14642a93973a5504a58c19a
+[D0154:P0062] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0063] sha256:cc1314283a2102a5122616b34a8c8255406a8b6c9d745e9bf5cb4d4cf9003b33
+[D0154:P0064] sha256:48b89e52a007c3125c1187cd285d588b9856ffe61f63433c1394bbffd108dcc6
+[D0154:P0065] sha256:02cdde472b410b066a93c57363111e1a3d1423e35db019fe0553485fc1a66439
+[D0154:P0066] sha256:26b6724969a83644894fefd9b7ad9664d989145896075adbbbc52cea37f83db7
+[D0154:P0067] sha256:c4eca3d7196fcb409e3ec7e6945a38e28390dbb69bb646768e1658225c734df4
+[D0154:P0068] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0069] sha256:08202a853b65630e7b93c33f4eb421927d0593f7126cacf4a4ba3ed093a5919d
+[D0154:P0070] sha256:f4e94f35f44741f032836692fa5133a3dfaeea96ca7703de5875b255de7c1f7f
+[D0154:P0071] sha256:68fca5d99abe7cbe0acac0c1eb2c9ad32f2f98aee14f2b356122fec970b0338a
+[D0154:P0072] sha256:a175b10f32baaf95c88517a4502044865d583dd5e67b370821c7fc805eb456fb
+[D0154:P0073] sha256:7e9257c3a8adccc3013b82e3c5069a893f2c5e78eaaa07083fcc411437210bca
+[D0154:P0074] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0075] sha256:395e6748ce8169dae4c69177e6f8d796ca18798c929a7bd249d3acfd5ef6d28a
+[D0154:P0076] sha256:ce9d597c5054a97a58a56c04fb351321d4d1f7b241426d7b63ab93103d1b5237
+[D0154:P0077] sha256:76a385423a6cdcce201f770f3417243c6e6efee1fff98f4d2319281eb4252b51
+[D0154:P0078] sha256:5e050b349a3cb4156247baa4c2fc6300e53f09c643ae022ca102aa13648f37fb
+[D0154:P0079] sha256:69be8f36e3df7f1712f45afb161079d7763da90e960bda34231792d8334d5ec0
+[D0154:P0080] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0081] sha256:039cb86c1ac678f1b2bfc90e5bb742ed288db30d19de59c975cb9860e20d0b3d
+[D0154:P0082] sha256:3eeb167153c89d52c780c34bc37b550fbe081c87997ae63709f1ecdbe87cadf2
+[D0154:P0083] sha256:8f40fef838a49b8d69d6e0b8930263bfec435fee190088bb299e1881689a40c3
+[D0154:P0084] sha256:9e8bb9c6381fa72e18560ee4a477b03d19aff297bd0ce4c933a3f59395c3e3f2
+[D0154:P0085] sha256:5e2231746534886397938b7e296f7784088d12acd49a4e2ce6c4355605a3e56a
+[D0154:P0086] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0087] sha256:6ba8960223850b65e4a9f11966d3eaa0947d396555e0ee8bfa6b11bbb4882581
+[D0154:P0088] sha256:832dbff563ff7bcbf7cd0ecfd02cf0ddb78e40ece301c916051d2675462be454
+[D0154:P0089] sha256:2552e4a9b86abd2f25582c6d58f5943af077e43d8fee2d35013979aaceafe2d8
+[D0154:P0090] sha256:50c725e2acc9916a92c8e42e0caa85adeed04d03597046279d5935c997dde213
+[D0154:P0091] sha256:167905bdfbfa3c8494358fb7e3d0b558a50474db906af5fe7a71d4dfe96cb97a
+[D0154:P0092] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0154:P0093] sha256:37fd34d6c058793b94bf1621f19335bda2472f1722b2c5d4f5e7764d29bef86a
+[D0154:P0094] sha256:7dce003e6d4c31da7c0157cb057187d81a49e8e326b82e971fcd1973f4537358
+[D0154:P0095] sha256:73e5d58b8460915a2ca9db43716a9b9099be8a507c1485c594eebb7162ca4633
+[D0154:P0096] sha256:88f211708f958b49573e331e777b20cd9889b3ef4b7a5aa8e4e62de26d053e31
+[D0154:P0097] sha256:1a2a67535e2cf5a8970362c6c192206cf776e444044158a4f81b3704805b278a
+[D0154:P0098] sha256:b16716fac5c00eea08ad50276f3479c7d9d137e0fb8f1e99f6dcdc035a0a4ced
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (6)
+W001: «Russia» — accused of planning to host Ukrainian drone launch centres → «Latvia»
+W002: «Kremlin» — aims to influence the politics of → «Baltic states»
+W003: «Russia» — seeks to deter from supporting Ukraine → «Baltic states»
+W004: «mysterious drone sightings» — possibly occurred near → «critical infrastructure»
+W005: «Russia» — seeks to divide → «Baltic states»
+W006: «Russia» — used → «GUGI spy submarines»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,167 @@
+AUDIT_FILE: S3N01
+TARGET_DOC_ID: D0595
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0595
+PUBLICATION_DATE: 2026-01-24
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/cybersecurity-risks-autonomous-iot-swarms/
+TITLE_SHA256: 9fc414fdb6b545553a60b1cbf695fc1ed4b45ba9457a2041cdfcf18a7427ef0b
+BEGIN_DOCUMENT
+[D0595:P0001] sha256:9fc414fdb6b545553a60b1cbf695fc1ed4b45ba9457a2041cdfcf18a7427ef0b
+[D0595:P0002] sha256:a9a2f53ca7e8b36900744357bc49479577216b8a1ff39ab2fb8d09ea5d50c893
+[D0595:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0595:P0004] sha256:ee02df782edb70d0bdb76726311c40274db78beb4db514e851c120f1911c8aa5
+[D0595:P0005] sha256:ff15853b5b0eb020fc6513e15a21b20b2346739120b0bf58a35ca455cfff6029
+[D0595:P0006] sha256:fae85e24721a891b36bc8e3230f5809125910b18a1eb9ea81589b3b4e234a742
+[D0595:P0007] sha256:71e6ab97e72ecddd9218c96fd840cc98540abd86ba57ce54dfd4dd3d67691ecf
+[D0595:P0008] sha256:023b08360011338979a5b4b61801d75462179bc64c230831bbaee8ad0dce9335
+[D0595:P0009] sha256:4276cbf3d11f139f9bf6ff2eab07a782ed62a8eb660570ed4c9c356ce5e9b3f4
+[D0595:P0010] sha256:a732b45ec1d9af9aa2e9ac3cc43c0cd8281436508614e2a5276bac0d3f0642bd
+[D0595:P0011] sha256:9c9686fbf9ca5cfcb459083ee23cf0885f2a521b1b0df8fed7af39a1812501ae
+[D0595:P0012] sha256:d154c8139e1f15112ea67364516bb4e126a978623e82196da1fa00d570a04a8e
+[D0595:P0013] sha256:d8a77620028cc3e5ad58ca5ce72ee48a6493abb022889b55e390bca902b3c59d
+[D0595:P0014] sha256:74ad7ee7c6e8d1b86dbd0b587051ecbaf4fd90368158fc50f0bc84d1edc66469
+[D0595:P0015] sha256:04faa7d0fd0aac687f10618ec1414c8f1fd94af6cf37f456dbb1958d57ae8d53
+[D0595:P0016] sha256:086b0b777f5181029b1e838068e18d53b60743ee9a981648e5f2b0454001a210
+[D0595:P0017] sha256:dccc874db3178fecd1199e9c3328f04c18c7d6be0410bdeb8933293a07acffb0
+[D0595:P0018] sha256:2026ea28519b07a1b7ed2839137ce5120db08aaba32064fe32ffcd8db81c26cf
+[D0595:P0019] sha256:07747e67540e50080b47e21500a1113fcf3b80438989d7f3dbfa5af62f9c4362
+[D0595:P0020] sha256:530f4e20254b715ffbaf03c363e54726c0fc643676cfef79ce082952fddff24d
+[D0595:P0021] sha256:c2402d594e569bd4e049970a700d709b834a5313b27fb74c8a46bd98781cf62e
+[D0595:P0022] sha256:16cda8397a15c6b3adc94e32d3f182bd52c314d3954da86b01aceb19e5bf51fd
+[D0595:P0023] sha256:ba639958a044c7d42856d72af208812b1c0e73bd36ae8f20a59555ab9929bf52
+[D0595:P0024] sha256:fcbf2faf08c3269b45ff527e69ed1efb73116d7b83acb30be600c48294c489a3
+[D0595:P0025] sha256:0a47438cb6e3c1241b2676c895c6bae717e144d728485873b275630114b9f68e
+[D0595:P0026] sha256:aa118d10aaf0d839011e40fe0f7c476450c8ae6be8364d161a709d0cf3ed001a
+[D0595:P0027] sha256:71f74bb51b264ecda0fbc5cd438e171cc102f8865baa3c5b6ae65ff55cedb558
+[D0595:P0028] sha256:731db154d9eceed4a74a9bf9902ef1557e6dd4351fe1c634d651cb4a3844d36e
+[D0595:P0029] sha256:abbcd96418f62661298e224b132058437113eadf8a716bd9c68d07a5084afb80
+[D0595:P0030] sha256:145e96ef361960d65be10dd60eafb3a00ac4e8e70ccfc256ea1d6b80c8fe1bc0
+[D0595:P0031] sha256:58e992ddb850580e96d62b748dfa24e450828e36fd1611f8ca27a532a5aad65f
+[D0595:P0032] sha256:0ea10eff84d991d18b4ad3457c9909eed890c4411a7908891a8ca9d6524a5d31
+[D0595:P0033] sha256:5e89352fd462437cf71d7d95043189f9823df2851f7314e6073f980340c51063
+[D0595:P0034] sha256:4c5029ca1e4db09063f41e0117c3a9a05a83970f76bb276a06d0d11bff7927f0
+[D0595:P0035] sha256:a58c095ced608daeffd5ae0acbe24356e37a2d650b051807fb78ffa483519be1
+[D0595:P0036] sha256:6ccb1f3ebf39a67b7816b3f7571837ebb877db37b0b2086336ece39780bde29c
+[D0595:P0037] sha256:d107efb5e51e8e18efebb18bc28a2aacb0f15cb3b801a55b172c80bfa173b10a
+[D0595:P0038] sha256:61f4c1d314ff05cca767cbf3d7fbc43648fdb2a8e7080e9de7ab6f51c3125a75
+[D0595:P0039] sha256:9dc2fa58ca1916b14078884e8e0d680f6b25442e210c70c2c86646ef60a46c7e
+[D0595:P0040] sha256:ebfabcc5558576868d81716e1332820d95e67aa7728ee2a55aeef9cb9d435ada
+[D0595:P0041] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0595:P0042] sha256:221242c481efe1ba5ec6b17855204d07414f50505859115e54089b9f5b97d008
+[D0595:P0043] sha256:beb3b155fc25b31eef9f1ccaf1b4aee40bc8444b5eccc8c1cbd865814a578f47
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (61)
+E001: «behavioral monitoring» — detects deviations in → «autonomous IoT swarms» | форма: actual, positive
+E002: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: actual, positive
+E003: «attackers» — exploit → «load balancing» | форма: actual, positive
+E004: «injecting false environmental data» — affects → «autonomous IoT swarms» | форма: possible, positive
+E005: «Weak authentication» — enables → «inject rogue devices» | форма: actual, positive
+E006: «static credentials» — can be extracted and reused across → «autonomous IoT swarms» | форма: actual, positive
+E007: «compromised node» — causes → «cascading failures» | форма: actual, positive
+E008: «Weak authentication» — enables → «impersonate nodes» | форма: actual, positive
+E009: «attackers» — exploit → «adaptive algorithms» | форма: actual, positive
+E010: «cybercriminals» — are drawn to → «autonomous IoT swarms» | форма: actual, positive
+E011: «weak authentication» — allows → «rogue device injection» | форма: actual, positive
+E012: «secure boot» — protects → «autonomous IoT swarms» | форма: actual, positive
+E013: «autonomous IoT swarms» — are operational by → «2026» | форма: actual, positive
+E014: «poorly implemented trust mechanisms» — enables → «impersonate nodes» | форма: actual, positive
+E015: «Cybersecurity Risks Created by Autonomous IoT Swarms» — examines threats to → «autonomous IoT swarms» | форма: possible, positive
+E016: «Weak authentication» — enables → «inject rogue devices» | форма: possible, positive
+E017: «poorly implemented trust mechanisms» — enables → «impersonate nodes» | форма: possible, positive
+E018: «behavioral manipulation» — targets → «autonomous IoT swarms» | форма: possible, positive
+E019: «behavioral manipulation» — affects → «autonomous IoT swarms» | форма: possible, positive
+E020: «attackers» — interfere with → «update mechanisms» | форма: actual, positive
+E021: «inject rogue devices» — enables → «poorly implemented trust mechanisms» | форма: possible, positive
+E022: «lack of encryption» — enables → «impersonate nodes» | форма: possible, positive
+E023: «state-sponsored actors» — are drawn to → «autonomous IoT swarms» | форма: actual, positive
+E024: «swarm communication protocols» — suffer from → «weak authentication» | форма: actual, positive
+E025: «traditional intrusion detection systems» — may not recognize → «behavioral manipulation» | форма: actual, positive
+E026: «swarm communication protocols» — suffer from → «poorly implemented trust mechanisms» | форма: actual, positive
+E027: «Cybercriminals» — targets → «autonomous IoT swarms» | форма: actual, positive
+E028: «attackers» — could manipulate → «traffic control swarms» | форма: actual, positive
+E029: «state-sponsored actors» — targets → «autonomous IoT swarms» | форма: possible, positive
+E030: «poorly implemented trust mechanisms» — enables → «inject rogue devices» | форма: possible, positive
+E031: «Cybersecurity Risks Created by Autonomous IoT Swarms» — published on → «2026.01.24» | форма: actual, positive
+E032: «swarm communication protocols» — present attack surface of → «autonomous IoT swarms» | форма: actual, positive
+E033: «firmware integrity checks» — protect → «autonomous IoT swarms» | форма: actual, positive
+E034: «cascading failures» — affects → «autonomous IoT swarms» | форма: possible, positive
+E035: «Cybersecurity Risks Created by Autonomous IoT Swarms» — examines threats to → «autonomous IoT swarms» | форма: actual, positive
+E036: «attackers» — target → «outdated nodes» | форма: actual, positive
+E037: «autonomous IoT swarms» — targets → «Cybercriminals» | форма: actual, positive
+E038: «cryptographically signed updates» — protect → «autonomous IoT swarms» | форма: actual, positive
+E039: «state-sponsored actors» — targets → «autonomous IoT swarms» | форма: actual, negative
+E040: «attackers» — use → «behavioral manipulation» | форма: actual, positive
+E041: «attackers» — could manipulate → «irrigation swarms» | форма: actual, positive
+E042: «injecting false environmental data» — targets → «autonomous IoT swarms» | форма: possible, positive
+E043: «false environmental data» — causes rerouting, shutdown or overload of → «autonomous IoT swarms» | форма: actual, positive
+E044: «compromised update process» — introduces → «malicious code» | форма: actual, positive
+E045: «IoT devices» — run → «minimal operating systems with limited security features» | форма: actual, positive
+E046: «lack of encryption» — enables → «inject rogue devices» | форма: actual, positive
+E047: «Cybercriminals» — targets → «autonomous IoT swarms» | форма: possible, positive
+E048: «malicious code» — affects → «autonomous IoT swarms» | форма: possible, positive
+E049: «swarm communication protocols» — suffer from → «lack of encryption» | форма: actual, positive
+E050: «Weak authentication» — enables → «impersonate nodes» | форма: possible, positive
+E051: «Weak authentication» — enables → «inject rogue devices» | форма: actual, negative
+E052: «Cybersecurity Risks Created by Autonomous IoT Swarms» — published by → «Anonymous Hackers» | форма: actual, positive
+E053: «malicious code» — spreads across → «autonomous IoT swarms» | форма: actual, positive
+E054: «inject rogue devices» — targets → «autonomous IoT swarms» | форма: possible, positive
+E055: «weak authentication» — allows → «node impersonation» | форма: actual, positive
+E056: «behavioral manipulation» — targets → «autonomous IoT swarms» | форма: actual, positive
+E057: «attackers» — inject → «false environmental data» | форма: actual, positive
+E058: «lack of encryption» — enables → «impersonate nodes» | форма: actual, positive
+E059: «autonomous IoT swarms» — uses → «decentralized decision-making» | форма: actual, positive
+E060: «lack of encryption» — enables → «inject rogue devices» | форма: possible, positive
+E061: «state-sponsored actors» — targets → «autonomous IoT swarms» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

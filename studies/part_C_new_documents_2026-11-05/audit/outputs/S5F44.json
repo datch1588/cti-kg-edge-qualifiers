@@ -1,0 +1,22 @@
+{
+ "audit_file": "S5F44",
+ "target_doc_id": "D0071",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0006: Адхікарі приєднався до C3iHub і найнятий там інженером, це подано як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006/P0011: Адхікарі виявив вразливості в порталі OSM CBSE, подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006/P0022: вразливості знайдено саме в порталі OSM, це чинний стан."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0012: Адхікарі повідомив про вразливості (flagging, reporting the issues), подано як факт."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: security vulnerabilities in the OSM portal — вразливості стосуються порталу, факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: C3iHub — один із провідних центрів кібербезпеки Індії, подано як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0006: «IIT Kanpur's C3iHub», «C3iHub, IIT Kanpur» — центр є частиною IIT Kanpur."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: «Rather than exploiting the flaws» — текст стверджує, що він не експлуатував вразливості, тож negative правильно."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: вразливості безпеки в порталі OSM, подано як факт."},
+  {"item_id": "E010", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: членом C3iHub є Адхікарі, а не C3iHub — членом Адхікарі."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006/P0011: портал OSM названо порталом CBSE, яким користуються школи, тобто CBSE ним керує; це чинний стан."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Адхікарі виявив вразливості безпеки, подано як факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0011: «CBSE's OSM portal» — портал належить CBSE, чинний стан."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що C3iHub — центр Індії, а запис позначено negative."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: Адхікарі повідомив про виявлені вразливості, подано як факт."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0011: вразливості «could have impacted the security of sensitive academic data if left unaddressed» — наслідок за явною умовою, тому conditional."}
+ ]
+}

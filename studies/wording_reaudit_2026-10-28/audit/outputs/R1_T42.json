@@ -1,0 +1,19 @@
+{
+ "audit_file": "R1_T42",
+ "target_doc_id": "D0160",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0007 запропонований законопроєкт «would create an interagency task force», тобто створення лише заплановане, і «would create» це передає."},
+  {"item_id": "W002", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0011 робоча група «would submit reports and briefings... that address the tactics of Chinese state-sponsored actors», тобто це заплановане, як і в «would address»."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «led by» подає керівництво як чинний факт, але за D0160:P0007 робоча група ще лише «would create», а D0160:P0010 описує положення законопроєкту, який Сенат іще не ухвалив (P0014), тому звʼязок заплановний, а не фактичний."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне («never is member of»), а D0160:P0012 стверджує, що Скотт — «a member of the Senate Committee on Homeland Security»."},
+  {"item_id": "W005", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0011 «The task force would submit reports and briefings to Congress» — це заплановане, і «would submit» це передає."},
+  {"item_id": "W006", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "За D0160:P0010 група «is intended to facilitate collaboration... to detect, analyze and respond to Chinese-linked cyber threats», тобто це запланована мета, як і в «would»."},
+  {"item_id": "W007", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "За D0160:P0007 законопроєкт «would create an interagency task force to monitor... Volt Typhoon», тобто моніторинг лише запланований, як і в «would monitor»."},
+  {"item_id": "W008", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0006 це «a bill to prepare U.S. critical infrastructure» (а в P0001 «bill aims to»), тобто мета законопроєкту, яку «aims to prepare» і передає."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0009 це гіпотетичний сценарій («imagine if», «Think of a world in which the CCP were able to launch a cyber-attack»), і «could launch» передає саме можливість."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «includes representatives from» подає склад групи як чинний факт, хоча за D0160:P0007 і P0010 це лише положення неухваленого законопроєкту про групу, яку «would create», тобто звʼязок заплановний."},
+  {"item_id": "W011", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0008 «In February 2024, the FBI and the CISA warned that the cyber group compromised networks» — це здійснений факт попередження."},
+  {"item_id": "W012", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "За D0160:P0007 робоча група, яку законопроєкт «would create», має «monitor Chinese state-sponsored cyber actors», тобто це заплановане, як і в «would monitor»."},
+  {"item_id": "W013", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0160:P0006 «Sen. Rick Scott is proposing a bill», а в P0007 «recently announced legislation», тобто внесення законопроєкту — здійснений факт."}
+ ]
+}

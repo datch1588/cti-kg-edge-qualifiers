@@ -1,0 +1,91 @@
+{
+  "run_id": "X100",
+  "target_doc_id": "D0494",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 164, "end": 270, "sha256": "687695df7ef775f0e4a7af29a6fe773b3ee14c94b7f785c37eb421c30d086b61"}}
+    ]},
+    {"id": "n002", "label": "scams", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0015", "start": 188, "end": 327, "sha256": "2185775366461f8c3fdd23d2779d0176daede46ccb7b2d377eacecafee86a00b"}}
+    ]},
+    {"id": "n003", "label": "Indonesia", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 203, "end": 271, "sha256": "9f42ea7947f89622f72ff3638a07b2c8fb0afa0046937a9e7241441d1951c9a9"}}
+    ]},
+    {"id": "n004", "label": "Japan", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 0, "end": 128, "sha256": "7b4ed9f01615792a4261d235b1d767a4a1e82ccbdbb247ccaa7a45bc8f186eb0"}}
+    ]},
+    {"id": "n005", "label": "Philippines", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 203, "end": 271, "sha256": "9f42ea7947f89622f72ff3638a07b2c8fb0afa0046937a9e7241441d1951c9a9"}}
+    ]},
+    {"id": "n006", "label": "United States", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0015", "start": 152, "end": 276, "sha256": "a7bbb5d056c7b83e2817879bfcb72b95d44c64b1139b718b82b803c075893b93"}}
+    ]},
+    {"id": "n007", "label": "Vietnam", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 203, "end": 271, "sha256": "9f42ea7947f89622f72ff3638a07b2c8fb0afa0046937a9e7241441d1951c9a9"}}
+    ]},
+    {"id": "n008", "label": "earthquake and tsunami in Japan", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 0, "end": 128, "sha256": "7b4ed9f01615792a4261d235b1d767a4a1e82ccbdbb247ccaa7a45bc8f186eb0"}}
+    ]},
+    {"id": "n009", "label": "Asia and the Pacific", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0008", "start": 0, "end": 79, "sha256": "d713174384f9cd15853a1da664eb0ed669b9b0b9d13be5bb30a49fd76ce273c3"}}
+    ]},
+    {"id": "n010", "label": "Southeast Asia", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 72, "end": 201, "sha256": "d0790190a2b658ff7cf3d12fd24828ccc45cd9710916cd2902ece1fab7d985bf"}}
+    ]},
+    {"id": "n011", "label": "malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 164, "end": 270, "sha256": "687695df7ef775f0e4a7af29a6fe773b3ee14c94b7f785c37eb421c30d086b61"}}
+    ]},
+    {"id": "n012", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 72, "end": 201, "sha256": "d0790190a2b658ff7cf3d12fd24828ccc45cd9710916cd2902ece1fab7d985bf"}}
+    ]},
+    {"id": "n013", "label": "ASEAN", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0022", "start": 0, "end": 169, "sha256": "1dbbee2979cbbba43fe8b195723cef28dac3d0d00f5fc09e8c5a3e9c9a3e2e66"}}
+    ]},
+    {"id": "n014", "label": "government agencies", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0015", "start": 152, "end": 276, "sha256": "a7bbb5d056c7b83e2817879bfcb72b95d44c64b1139b718b82b803c075893b93"}}
+    ]},
+    {"id": "n015", "label": "UN Office for Disaster Risk Reduction", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0017", "start": 73, "end": 255, "sha256": "d606b00915ba2c5cd3a0a9eeb86da42d4e2e579ca49b0bd5e0e95531e18bf606"}}
+    ]},
+    {"id": "n016", "label": "World Economic Forum", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0006", "start": 88, "end": 304, "sha256": "a20217af85d33a83c4331975c850c738d656c0f47c4104fb9aef0861d089b345"}}
+    ]},
+    {"id": "n017", "label": "cyber criminals", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 129, "end": 309, "sha256": "ca19f5ea9f543a5cae0c3596a88d0eb24fed0c2c9e8e33738e47fb5836b21c59"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n008", "target": "n004", "relation_type": "LOCATED_IN",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2011", "event_scope": "n008",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 0, "end": 128, "sha256": "7b4ed9f01615792a4261d235b1d767a4a1e82ccbdbb247ccaa7a45bc8f186eb0"}}
+    ]},
+    {"id": "e002", "source": "n012", "target": "n010", "relation_type": "AFFECTS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In 2024", "event_scope": "roughly 135,000 ransomware attacks in Southeast Asia in 2024",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0009", "start": 0, "end": 202, "sha256": "6914b8f2802538023413102888a20d600e9d5a6dd45f4fee6e62eb679fcf8bbf"}}
+    ]},
+    {"id": "e003", "source": "n014", "target": "n006", "relation_type": "LOCATED_IN",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0015", "start": 152, "end": 276, "sha256": "a7bbb5d056c7b83e2817879bfcb72b95d44c64b1139b718b82b803c075893b93"}}
+    ]},
+    {"id": "e004", "source": "n014", "target": "n002", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "warnings about heightened digital threats following hurricanes and wildfires in the United States",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0015", "start": 152, "end": 327, "sha256": "d721c851e910d5a89adc2b13bad3db873c53a1e0007f6da6ee04e820e05b3285"}}
+    ]},
+    {"id": "e005", "source": "n017", "target": "n001", "relation_type": "USES",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In weeks following the earthquake", "event_scope": "phishing and malware schemes disguised as disaster relief efforts after the 2011 earthquake and tsunami in Japan",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 129, "end": 309, "sha256": "ca19f5ea9f543a5cae0c3596a88d0eb24fed0c2c9e8e33738e47fb5836b21c59"}}
+    ]},
+    {"id": "e006", "source": "n017", "target": "n011", "relation_type": "USES",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "In weeks following the earthquake", "event_scope": "phishing and malware schemes disguised as disaster relief efforts after the 2011 earthquake and tsunami in Japan",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0494", "paragraph_id": "D0494:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0494:P0012", "start": 129, "end": 309, "sha256": "ca19f5ea9f543a5cae0c3596a88d0eb24fed0c2c9e8e33738e47fb5836b21c59"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

@@ -1,0 +1,74 @@
+{
+ "run_id": "F122",
+ "target_doc_id": "D0225",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "MITRE ATT&CK(R) Evaluations", "entity_type": "event", "aliases": ["MITRE ATT&CK Evaluations", "ATT&CK(R) Evaluations", "Evals"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0005", "start": 154, "end": 227, "sha256": "ddbc392e521265cd4f6947428a4f0ef8a5a66f4724d0a6ba55ba2de0a9998418"}},
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0014", "start": 107, "end": 272, "sha256": "0fa0a94101390c5c1ee4e53e39e9432f4b3abcacc119d14337663822211e5c42"}}
+  ]},
+  {"id": "n002", "label": "indicator of compromise", "entity_type": "indicator", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0010", "start": 414, "end": 480, "sha256": "e53c861d93e40776d7312b00aa1aae8421e7833e1457ad802c5a902fcc5f61cd"}}
+  ]},
+  {"id": "n003", "label": "Field Effect", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0005", "start": 39, "end": 152, "sha256": "6f6b2432f2d59d5e2536e1c1ae5728a0825cba4b238e35edff40d14d6f0739c9"}}
+  ]},
+  {"id": "n004", "label": "MITRE", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0014", "start": 0, "end": 106, "sha256": "276b9e8ad456a1c251cdb97aea898dfca808b001574543f6e1a8bd8ae7501144"}}
+  ]},
+  {"id": "n005", "label": "Matt Holland", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0008", "start": 113, "end": 181, "sha256": "b69e64ede7d9f92bb27c47c55bc0394036a8e40582f2ad7a6187d853220c3bec"}}
+  ]},
+  {"id": "n006", "label": "MDR platform", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0007", "start": 41, "end": 141, "sha256": "af21fdf52cfdb3c9217e31162727c648149080ec7c1fc3cd05126d4ca96895fc"}}
+  ]},
+  {"id": "n007", "label": "AI-driven analytics", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0012", "start": 0, "end": 185, "sha256": "5e7377dd6f6cebbcfa5b17c82d70bc824beb7d01dae81f1ce84a0ff1954d85c7"}}
+  ]},
+  {"id": "n008", "label": "expert-led threat intelligence", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0012", "start": 0, "end": 185, "sha256": "5e7377dd6f6cebbcfa5b17c82d70bc824beb7d01dae81f1ce84a0ff1954d85c7"}}
+  ]},
+  {"id": "n009", "label": "managed detection and response", "entity_type": "technology", "aliases": ["MDR"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0005", "start": 53, "end": 152, "sha256": "7e3e5c6ce69bff806f39a558e0867dd3c43e6d2d7228216fa3e5e9fc661f55a1"}}
+  ]},
+  {"id": "n010", "label": "smart federated compute", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0017", "start": 88, "end": 201, "sha256": "9b9837d462152edafbb05fcc55d00d046458275c3ce508f24e17579aeca1e6be"}}
+  ]},
+  {"id": "n011", "label": "advanced threat behaviors", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0007", "start": 92, "end": 215, "sha256": "2f10562aa697307cb42ee72220737df834733f96474964cb947a49052d4d2cd0"}}
+  ]},
+  {"id": "n012", "label": "agentic attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0017", "start": 359, "end": 431, "sha256": "78b63f2a2e52510d8652f9c51680f4976e8b7e40cee88fe9998d5993b76160ff"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n006", "relation_type": "DEVELOPS", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0012", "start": 0, "end": 185, "sha256": "5e7377dd6f6cebbcfa5b17c82d70bc824beb7d01dae81f1ce84a0ff1954d85c7"}}
+  ]},
+  {"id": "e002", "source": "n003", "target": "n012", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0017", "start": 359, "end": 487, "sha256": "886acc6392670ecaa128e2cb50a851c53e48183f2b4cd29549ea90590b96914c"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n009", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0017", "start": 0, "end": 87, "sha256": "77bed999f6e102e9dada7e6404e74df93a44e6eb8d38924228d2e02e8755a71b"}}
+  ]},
+  {"id": "e004", "source": "n003", "target": "n007", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0012", "start": 0, "end": 185, "sha256": "5e7377dd6f6cebbcfa5b17c82d70bc824beb7d01dae81f1ce84a0ff1954d85c7"}}
+  ]},
+  {"id": "e005", "source": "n003", "target": "n008", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0012", "start": 0, "end": 185, "sha256": "5e7377dd6f6cebbcfa5b17c82d70bc824beb7d01dae81f1ce84a0ff1954d85c7"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n003", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0008", "start": 113, "end": 181, "sha256": "b69e64ede7d9f92bb27c47c55bc0394036a8e40582f2ad7a6187d853220c3bec"}}
+  ]},
+  {"id": "e007", "source": "n006", "target": "n002", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "2024", "event_scope": "2024 participation in the MITRE ATT&CK(R) Evaluations", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0010", "start": 303, "end": 480, "sha256": "6c0770f99889e2048119f9f617221b5f01e70e8279f20ec6b9d113d999e7f519"}}
+  ]},
+  {"id": "e008", "source": "n006", "target": "n011", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0007", "start": 41, "end": 215, "sha256": "75adcb6f86499c50a9c47a6a0c9a13065b0cbd99d353daecf2465f194b538417"}}
+  ]},
+  {"id": "e009", "source": "n006", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Field Effect", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0225", "paragraph_id": "D0225:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0225:P0017", "start": 88, "end": 201, "sha256": "9b9837d462152edafbb05fcc55d00d046458275c3ce508f24e17579aeca1e6be"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

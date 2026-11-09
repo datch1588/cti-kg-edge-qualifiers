@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T03",
+ "target_doc_id": "D0584",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly reported» подає звʼязок як можливий, тоді як у D0584:P0010 дані ENISA про 18,2 відсотка атак на операційні технології переказано з посиланням на джерело як факт (actual)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «aim to» передає чинну мету без маркерів можливості чи плану, що відповідає D0584:P0011, де за даними відомства прямо сказано, що їхня мета — порушити надання послуг (actual, positive)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «attacked» без маркерів відповідає D0584:P0012, де як здійснений факт сказано, що у серпні 2025 року російські хактивісти неодноразово атакували ГЕС у Гданську."}
+ ]
+}

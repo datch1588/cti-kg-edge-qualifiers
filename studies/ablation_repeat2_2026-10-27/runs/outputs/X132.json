@@ -1,0 +1,101 @@
+{
+ "run_id": "X132",
+ "target_doc_id": "D0235",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Business Email Compromise", "entity_type": "attack_technique", "aliases": ["BEC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 78, "end": 176, "sha256": "f460bca87536f24c94923f1fd06769899cf98d0a51f6d50949b3ebfe2d96ceeb"}}
+  ]},
+  {"id": "n002", "label": "Distributed Denial of Service", "entity_type": "attack_technique", "aliases": ["DDoS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 98, "sha256": "69d7e9f3360043f89c0099508993151e44c7a49332da7b8fbe0477eb576c3cdc"}}
+  ]},
+  {"id": "n003", "label": "identity theft", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 0, "end": 109, "sha256": "22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159"}}
+  ]},
+  {"id": "n004", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 18, "end": 151, "sha256": "f58f97ce6e4b70059725287012b491c81b0c6ccf490367012951ae3aecdb3572"}}
+  ]},
+  {"id": "n005", "label": "social engineering", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 18, "end": 151, "sha256": "f58f97ce6e4b70059725287012b491c81b0c6ccf490367012951ae3aecdb3572"}}
+  ]},
+  {"id": "n006", "label": "Nigeria", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0009", "start": 0, "end": 124, "sha256": "c604fbebd807d622518bf81f1bf5d559def7096a21aa16b3ec1809c6b71c293e"}}
+  ]},
+  {"id": "n007", "label": "IoT West Africa Conference and Data Centre Cloud Expo", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 0, "end": 125, "sha256": "add7553f4fe51867f07ea7a86d4408ff0e16d8b513b530c8bf5f38c6ea6bfc89"}}
+  ]},
+  {"id": "n008", "label": "Lagos", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 59, "end": 162, "sha256": "7e098204d679e5f35bf55337a8f75770c2fa2f86264cade763cc29ca883da23e"}}
+  ]},
+  {"id": "n009", "label": "Landmark Event Centre", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 59, "end": 162, "sha256": "7e098204d679e5f35bf55337a8f75770c2fa2f86264cade763cc29ca883da23e"}}
+  ]},
+  {"id": "n010", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 0, "end": 76, "sha256": "052d7aca95b69c17212eed871b22ebb5ebf7778eed65ddb874a97db32aa9cef6"}}
+  ]},
+  {"id": "n011", "label": "Nigeria Data Protection Commission", "entity_type": "organization", "aliases": ["NDPC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 116, "sha256": "5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0029", "start": 0, "end": 68, "sha256": "5929fe4c7d9ff99ed2c147dcd2dd65da3d5aca9fa7f296fc723551737f8972b5"}}
+  ]},
+  {"id": "n012", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 100, "end": 185, "sha256": "b619ae0f445bf05620498c3966f65abc49dd915b5dc7345478f45b339a762bf1"}}
+  ]},
+  {"id": "n013", "label": "personal identifiable information", "entity_type": "other", "aliases": ["PII"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 215, "sha256": "697e30a8d7f01188c64399928581f361ac818df2137e875c45feeada0af68a0e"}}
+  ]},
+  {"id": "n014", "label": "Vincent Olatunji", "entity_type": "person", "aliases": ["Olatunji"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 116, "sha256": "5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 0, "end": 125, "sha256": "add7553f4fe51867f07ea7a86d4408ff0e16d8b513b530c8bf5f38c6ea6bfc89"}}
+  ]},
+  {"id": "n015", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 118, "end": 217, "sha256": "b187529355cd544c1d013b8768f82aafb299a5ad50defd457547e059f6b26437"}}
+  ]},
+  {"id": "n016", "label": "data breach", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 133, "end": 244, "sha256": "89e20aad35ba154c85a90aa67d6d9511d37d051a13706115b9551e7eeb6a5717"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n012", "relation_type": "AFFECTS",
+   "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 185, "sha256": "c18c86813fbb4232d62f8d71e549026e1a9a17411a1992eeb19d2a1906e001ad"}}
+   ]},
+  {"id": "e002", "source": "n004", "target": "n006", "relation_type": "AFFECTS",
+   "attribution": "Vincent Olatunji", "event_time": "2024", "event_scope": "financial losses in Nigeria exceeding 12 billion in 2024",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}
+   ]},
+  {"id": "e003", "source": "n007", "target": "n009", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "Wednesday", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 59, "end": 162, "sha256": "7e098204d679e5f35bf55337a8f75770c2fa2f86264cade763cc29ca883da23e"}}
+   ]},
+  {"id": "e004", "source": "n009", "target": "n008", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 59, "end": 162, "sha256": "7e098204d679e5f35bf55337a8f75770c2fa2f86264cade763cc29ca883da23e"}}
+   ]},
+  {"id": "e005", "source": "n010", "target": "n006", "relation_type": "AFFECTS",
+   "attribution": "Vincent Olatunji", "event_time": "2024", "event_scope": "financial losses in Nigeria exceeding 12 billion in 2024",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}
+   ]},
+  {"id": "e006", "source": "n014", "target": "n011", "relation_type": "LEADS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 116, "sha256": "5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423"}}
+   ]},
+  {"id": "e007", "source": "n014", "target": "n015", "relation_type": "WARNS_ABOUT",
+   "attribution": "", "event_time": "Wednesday", "event_scope": "keynote address at the IoT West Africa Conference and Data Centre Cloud Expo",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 97, "end": 218, "sha256": "aa569a25d1539485deb110eba17a432aa63c063ea0d310457f8871b4ae8fc71f"}},
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 0, "end": 125, "sha256": "add7553f4fe51867f07ea7a86d4408ff0e16d8b513b530c8bf5f38c6ea6bfc89"}}
+   ]},
+  {"id": "e008", "source": "n016", "target": "n013", "relation_type": "AFFECTS",
+   "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 215, "sha256": "697e30a8d7f01188c64399928581f361ac818df2137e875c45feeada0af68a0e"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

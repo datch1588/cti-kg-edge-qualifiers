@@ -1,0 +1,14 @@
+{
+ "audit_file": "R1_T28",
+ "target_doc_id": "D0305",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0033 Microsoft каже, що організації should treat suspicious remote worker activity as a potential insider risk, тобто це рекомендація, як і у формулюванні «advises»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає це як факт, але P0023 каже лише, що generative AI can help attackers convert malware into different programming languages, тобто це можливість, а не зафіксоване використання."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає це як факт, але P0024 каже лише, що attackers can use AI to build phishing websites (можливість), а спостереженим фактом там названо створення fake company websites, а не phishing websites."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «detects» не має маркерів, тоді як P0035 подає це як можливість: strong antivirus software can detect malware."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає це як факт, але P0024 обережне: in some experiments malware appeared capable of dynamically generating scripts, тобто це лише видима здатність, а не встановлений факт."},
+  {"item_id": "W006", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0037 сказано, що multi-factor authentication can stop many account takeovers, тобто це можливість, як і «can stop» у формулюванні."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0031 це подано як факт: The company uses threat intelligence systems to monitor attacker activity."},
+  {"item_id": "W008", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання додає «possibly», хоча стаття ніде не сумнівається в цьому звʼязку: у P0007 це report from Microsoft Threat Intelligence, а в P0027 той самий документ без застережень названо the Microsoft report."}
+ ]
+}

@@ -1,0 +1,170 @@
+RESOLVER_FILE: R03
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 3, згадок 35)
+
+ГРУПА G010 (згадок 23)
+M001: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa» (2026-06-26)
+  фрагмент [P0009]: «@D0014:P0009:225-385 sha256=cfe689f3dc9b19506a979bb16869f1765989b329e8eb8353089cc4b35903715c»
+    абзац: «@D0014:P0009:0-460 sha256=4dfb4f53251f2338d0a3a4cdf8c3b1a27426a982c44ef0a39d6e616a7ce5dcda»
+M002: «Fable 5» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  твердження статті: «Anthropic» — DEVELOPS → «Fable 5» (actual, positive)
+M003: «Mythos 5» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493» (2026-06-25)
+  фрагмент [P0010]: «@D0018:P0010:0-105 sha256=e0179e925d40be2944807441f0c649eac42fdc896100f797ad7031a3d9a68dc7»
+    абзац: «@D0018:P0010:0-241 sha256=a6204082639c0a1000e92931680be3f16a738a9b54dc309368f0f5b007bf2b95»
+  твердження статті: «Anthropic» — DEVELOPS → «Mythos 5» (actual, positive)
+M004: «Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a» (2026-06-23)
+  фрагмент [P0019]: «@D0045:P0019:91-157 sha256=5f05f6cf4e1ae715393af2add16b79ae37e6e8a09cdc6f4f5ac1faabb5d71c38»
+    абзац: «@D0045:P0019:0-225 sha256=410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993»
+  твердження статті: «Anthropic» — DEVELOPS → «Mythos» (actual, positive); «criminals» — USES → «Mythos» (possible, positive)
+M005: «Fable 5» (product) | альтернативні назви: «Claude Fable 5» | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0016]: «@D0046:P0016:88-194 sha256=9a5bca2f6e5b08f972b39d739e4355c5f5743ca526b9446a760c7837587a23ef»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  фрагмент [P0006]: «@D0046:P0006:12-136 sha256=d35b537bb83a1621fe4f0d4878a41a13a28812f7e5908409de427a1a197cf3dc»
+    абзац: «@D0046:P0006:0-464 sha256=4a69a91de27b71c43f1607fbc48c2966543da8cbd407ad114a08ce1df847f6fa»
+  твердження статті: «Anthropic» — DEVELOPS → «Fable 5» (actual, positive); «weaknesses» — AFFECTS → «Fable 5» (actual, positive)
+M006: «Mythos» (product) | альтернативні назви: «Mythos 5»; «Claude Mythos» | стаття: «TITLE_SHA256:4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe» (2026-06-23)
+  фрагмент [P0016]: «@D0046:P0016:195-279 sha256=af1069d70c856cbace658701e01693e34bf28b7c4746c735730fcb4940c68723»
+    абзац: «@D0046:P0016:0-550 sha256=4ceb8015e17e47d3e2174ab22f5ea0bf85d609199d57163195bd7f7bf4c47679»
+  фрагмент [P0006]: «@D0046:P0006:12-136 sha256=d35b537bb83a1621fe4f0d4878a41a13a28812f7e5908409de427a1a197cf3dc»
+    абзац: «@D0046:P0006:0-464 sha256=4a69a91de27b71c43f1607fbc48c2966543da8cbd407ad114a08ce1df847f6fa»
+  фрагмент [P0017]: «@D0046:P0017:148-313 sha256=71d3656976495c1ae1fb51d30549934228586ed6fc229bc25d9fcc89fa74c832»
+    абзац: «@D0046:P0017:0-423 sha256=296ed1802cfe2d53d6f57ebca668c6a296e7df778fa740ae5b354e084a3bdcf5»
+  твердження статті: «Anthropic» — DEVELOPS → «Mythos» (actual, positive); «Mythos» — DETECTS → «vulnerabilities» (actual, positive); «weaknesses» — AFFECTS → «Mythos» (possible, positive)
+M007: «Claude Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0022]: «@D0113:P0022:44-141 sha256=3498ef4f603f46080e7c871af1eb25d7955123fe7e8034483d580c9127d5d6e1»
+    абзац: «@D0113:P0022:0-511 sha256=3e0f806262f935c1caee4c4cee36e029d67ee49056be02b26debfb03eb6bc89c»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Mythos Preview» (actual, positive)
+M008: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0019]: «@D0124:P0019:0-65 sha256=fb0fedc88c7219f8b14d01fc731622e850696c6f678123c4fe9a485a3943fe3e»
+    абзац: «@D0124:P0019:0-401 sha256=22ff237afde10b0dc77e6779b61e14ce9a9307003e367251dedf24bf1f7b8957»
+M009: «Claude Code» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0016]: «@D0124:P0016:115-170 sha256=2ec7217574d77bb62a5c2960c5e20b71d74f35c67af1e6676e4e3fdc0f81a1b2»
+    абзац: «@D0124:P0016:0-391 sha256=3fe9094715fc9ee3efce2235368b754e7c1a7771f2536640b513b5e5e728ed66»
+  твердження статті: «OpenHack» — SUPPORTS → «Claude Code» (actual, positive); «security-guidance plugin» — SUPPORTS → «Claude Code» (actual, positive)
+M010: «Claude Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0039]: «@D0124:P0039:11-58 sha256=7fbb409b60ecda08522828342f1476bc4e32f14057324242455d1c2617dd14a1»
+    абзац: «@D0124:P0039:0-271 sha256=ec7aa981d235ac63ae6ea72a8cc10ed25b5e37261d8981d77b915494f3e9891f»
+M011: «Claude Opus 4.8» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0034]: «@D0124:P0034:83-121 sha256=3263c0ef809b76b3fa2cd2a0f92798e464301b10d4bc99440f82c240f35e6678»
+    абзац: «@D0124:P0034:0-350 sha256=12f1594a6cb6636e53b76cbe8b22232759aace1259ea7ff2e6ddbb2b2c458c5d»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Opus 4.8» (actual, positive)
+M012: «Mythos-class models» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0034]: «@D0124:P0034:36-82 sha256=15b0a37ac5abe3b357e833a96e0d656cefbc91d6ab8e4fc3eed29ca5d9ab7881»
+    абзац: «@D0124:P0034:0-350 sha256=12f1594a6cb6636e53b76cbe8b22232759aace1259ea7ff2e6ddbb2b2c458c5d»
+  твердження статті: «Anthropic» — PROVIDES → «Mythos-class models» (planned, positive)
+M013: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0026]: «@D0194:P0026:40-147 sha256=7456c3d699c5383e61cd145b1f25d0f396db9224e1ce9ed2d4ad6d5e75b7a956»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «Anthropic» — PROVIDES → «Claude» (actual, positive)
+M014: «Claude Mythos» (product) | альтернативні назви: «Mythos» | стаття: «TITLE_SHA256:ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394» (2026-05-12)
+  фрагмент [P0024]: «@D0194:P0024:0-148 sha256=2a99b490b9ea0f31b85c8ab62d089e55c1a3de0012d7a767e30dafc653d646b8»
+  фрагмент [P0026]: «@D0194:P0026:0-83 sha256=722bf77796f7e9a8e0fad19244f7b92104dc6ce67d0aac0e040c2a1bf51c3d57»
+    абзац: «@D0194:P0026:0-467 sha256=a00f26328f29c57f695efc27aa4ff7677be2c70d4e4f6fda76173ac43ae7d12c»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Mythos» (actual, positive); «Anthropic» — PROVIDES → «Claude Mythos» (actual, positive); «Mozilla» — USES → «Claude Mythos» (actual, positive)
+M015: «Claude Mythos» (product) | альтернативні назви: «Mythos» | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0004]: «@D0195:P0004:0-141 sha256=173960de935218c37fe9c2005774603811850baaaab129fa57254134130d88af»
+    абзац: «@D0195:P0004:0-292 sha256=b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c»
+  фрагмент [P0011]: «@D0195:P0011:0-178 sha256=de0d3a2d2244d9b962981a960854b486fe4f3280fd127dc4300e9c38155e50d7»
+    абзац: «@D0195:P0011:0-342 sha256=3fab93449e3cb33901e8aadc6438762588c91eef404f10b8692bb9558fc31e72»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude Mythos» (actual, positive); «Anthropic» — PROVIDES → «Claude Mythos» (actual, positive)
+M016: «Claude Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0007]: «@D0195:P0007:102-195 sha256=94711b95b6a7b23d7834a45079adf529e1960bcbc4e3eb609bdfcccd892dd9df»
+    абзац: «@D0195:P0007:0-326 sha256=57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b»
+  твердження статті: «Project Glasswing» — USES → «Claude Mythos Preview» (actual, positive); «Claude Mythos Preview» — DETECTS → «vulnerabilities» (actual, positive)
+M017: «Mythos» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051» (2026-05-12)
+  фрагмент [P0015]: «@D0197:P0015:56-152 sha256=c392ac6d16e6cb7020b2bf1797562f39eb28fea701d616f02dcb2e0671b7ee92»
+    абзац: «@D0197:P0015:0-484 sha256=e264d76dde86dff0c24ff9796be69dcb8fe4a87e927a51a4f87f952d1c192f5c»
+M018: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0014]: «@D0250:P0014:0-113 sha256=a251fc59315938a8ed7f7f77f9ef8e89cbf41d2b285f3b459db793ae7baa6e76»
+  твердження статті: «Anthropic» — DEVELOPS → «Claude» (actual, positive); «Mythos» — PART_OF → «Claude» (actual, positive)
+M019: «Mythos» (product) | альтернативні назви: «Claude Mythos» | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0007]: «@D0250:P0007:41-232 sha256=7481139bde1c6339ee0c4adc3de2de52bd07188e1f09e043b5a04804cad80180»
+  твердження статті: «Anthropic» — DEVELOPS → «Mythos» (actual, positive); «Andrew Bailey» — WARNS_ABOUT → «Mythos» (actual, positive); «Christine Lagarde» — WARNS_ABOUT → «Mythos» (actual, positive)
+M020: «Mythos Preview» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0018]: «@D0250:P0018:61-145 sha256=910dba55f2046c938dc18e6552e56ef0076062ccb50e17f0ae361b834a45c5e8»
+    абзац: «@D0250:P0018:0-428 sha256=fac83e88f5c6a8b2ea10d05209b71171169c17c5edfaa9a86c40e5d937a056dd»
+  твердження статті: «Anthropic» — PROVIDES → «Mythos Preview» (actual, positive); «Anthropic» — PROVIDES → «Mythos Preview» (planned, positive)
+M021: «Claude Code» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d» (2026-03-23)
+  фрагмент [P0006]: «@D0382:P0006:0-111 sha256=22d0028dcb9fddc1d8c5ea516d447f07fa2e5a2c64f765514b2fcd855008fe19»
+    абзац: «@D0382:P0006:0-218 sha256=29a6c507e21b67bc822d5c80200725fc492c4e02844732b4abc8d4a79d2c9646»
+M022: «Claude» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0024]: «@D0457:P0024:0-61 sha256=1df061ed1c644e68509b9d9500f9ce05cfd8f51f4dd6ceb9c3149b846e59a405»
+    абзац: «@D0457:P0024:0-281 sha256=46357a55b489d7db484b8e0cead6f96030334e74d2498c7a49572ccb7db6a524»
+  твердження статті: «widespread service outage» — AFFECTS → «Claude» (actual, positive); «Anthropic» — PROVIDES → «Claude» (actual, positive)
+M023: «Claude Code Security» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0007]: «@D0514:P0007:1187-1289 sha256=4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1»
+    абзац: «…@D0514:P0007:938-1538 sha256=866d0817823c53d0980a781ce596c91f4bc9110b482ba41df8eec29ceccde767…»
+  твердження статті: «Anthropic» — PROVIDES → «Claude Code Security» (actual, positive); «Claude Code Security» — USES → «AI» (actual, positive)
+
+ГРУПА G011 (згадок 4)
+M024: «Codex» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa» (2026-06-26)
+  фрагмент [P0009]: «@D0014:P0009:225-385 sha256=cfe689f3dc9b19506a979bb16869f1765989b329e8eb8353089cc4b35903715c»
+    абзац: «@D0014:P0009:0-460 sha256=4dfb4f53251f2338d0a3a4cdf8c3b1a27426a982c44ef0a39d6e616a7ce5dcda»
+M025: «Codex» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0016]: «@D0124:P0016:115-170 sha256=2ec7217574d77bb62a5c2960c5e20b71d74f35c67af1e6676e4e3fdc0f81a1b2»
+    абзац: «@D0124:P0016:0-391 sha256=3fe9094715fc9ee3efce2235368b754e7c1a7771f2536640b513b5e5e728ed66»
+  твердження статті: «OpenHack» — SUPPORTS → «Codex» (actual, positive)
+M026: «Codex» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0004]: «@D0195:P0004:142-292 sha256=d2ef0f716dda341201083a8978bede3523f7ccc31491c9f2caa48c4d39f2f232»
+    абзац: «@D0195:P0004:0-292 sha256=b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c»
+  твердження статті: «Daybreak» — USES → «Codex» (actual, positive)
+M027: «Codex security» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e» (2026-05-12)
+  фрагмент [P0009]: «@D0195:P0009:0-145 sha256=745282ab12bc13e9b4a49023bacb5211b4ed8dc78a4e0af535bf1968e7425efc»
+    абзац: «@D0195:P0009:0-539 sha256=527d52b3276ce34c73866981979ff90e13aebf98be9f777274afe063321a5155»
+  твердження статті: «Codex security» — DETECTS → «vulnerabilities» (actual, positive); «Codex security» — MITIGATES → «vulnerabilities» (actual, positive); «Codex security» — PART_OF → «Daybreak» (actual, positive)
+
+ГРУПА G012 (згадок 8)
+M028: «Windows Active Directory» (product) | альтернативні назви: «Active Directory» | стаття: «TITLE_SHA256:94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa» (2026-06-26)
+  фрагмент [P0017]: «@D0014:P0017:58-198 sha256=537a0a780a0f530127fbe473c5df4622bde1d6293abdec6d02e3e39072fb5808»
+    абзац: «@D0014:P0017:0-368 sha256=9e3dbbbdfcaf869011999e5ceffa950aa8bf4fd0712eb62ca6f7aaa53d3f0fa0»
+  фрагмент [P0016]: «@D0014:P0016:0-82 sha256=4e5cd8ab460e11533aa5a2df711ec62bb8a972931f2ac5ba74de2a5ee86d3b22»
+M029: «Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741» (2026-06-03)
+  фрагмент [P0002]: «@D0107:P0002:683-867 sha256=d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48»
+    абзац: «…@D0107:P0002:475-1075 sha256=a30988235c05a49b7d6817047373cc018193f37c10219b9ed3e719af501998a4…»
+  твердження статті: «Adaptive Computer Worms» — AFFECTS → «Windows» (actual, positive)
+M030: «Microsoft Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87» (2026-06-02)
+  фрагмент [P0041]: «@D0113:P0041:139-280 sha256=471ecf58f768336b839c112592a7aef11539f3e795c6cf287503a44972e4552f»
+    абзац: «@D0113:P0041:0-577 sha256=35452b3398eaffc6b7d27cd20c7e298e9e9ddd4bb712671efd32114ae7792058»
+  твердження статті: «GreenPlasma» — AFFECTS → «Microsoft Windows» (actual, positive); «YellowKey» — AFFECTS → «Microsoft Windows» (actual, positive)
+M031: «Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0038]: «@D0124:P0038:357-447 sha256=50ea9f0ed32c3ca9c6abe992e6063df66b0170c97fcb99749c24616b2ac8c38f»
+    абзац: «@D0124:P0038:0-448 sha256=e20ac0a574366324e0fb7ab2123ddd71af5c7a6ca163cbfa8261bacf1311f124»
+  твердження статті: «F-Secure Internet Security» — SUPPORTS → «Windows» (actual, positive); «TotalAV Mobile Security» — SUPPORTS → «Windows» (actual, positive)
+M032: «Windows 365 for Agents» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1» (2026-05-31)
+  фрагмент [P0046]: «@D0124:P0046:68-145 sha256=4c8ab3974fa7cc0a6bcc60d5a6ca0035232d8f8d0eb41209a0e8a7a90a1a6b5e»
+    абзац: «@D0124:P0046:0-356 sha256=d308a232020207f6852f3cb63c6bb7336f17afdfd90631302dbe1578791bd10c»
+  твердження статті: «Microsoft» — DEVELOPS → «Windows 365 for Agents» (actual, positive)
+M033: «Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0013]: «@D0344:P0013:353-438 sha256=935b1a500fac63f60eff606cefce67b0040ab2e35141eb3453d2667b35083cf5»
+    абзац: «…@D0344:P0013:95-695 sha256=00380869e7b98c3c32dce290f7057cd9a33410fe6d13fd06e0d4d9d0e1f18523…»
+  твердження статті: «MDR Essentials» — SUPPORTS → «Windows» (actual, positive)
+M034: «Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0030]: «@D0427:P0030:31-202 sha256=1f0fcce67bce255b525b61699517bfb488e5d6f5ea224ea2f7b99f6a3440cdad»
+  твердження статті: «Stryker cyberattack» — AFFECTS → «Windows» (actual, positive); «Microsoft» — DEVELOPS → «Windows» (actual, positive)
+M035: «Windows» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0041]: «@D0457:P0041:90-193 sha256=731e485e8c6b2dd2dd923d2e742dd1b8104d5ba90c4383042e74e39dc09c0aa8»
+    абзац: «@D0457:P0041:0-251 sha256=5085cd0f8cad36a284c112f5fdadc328aab4a91f387f04329246a1cc877a6d52»
+  твердження статті: «Defender deployment tool» — SUPPORTS → «Windows» (actual, positive)
+
+КІНЕЦЬ ГРУП

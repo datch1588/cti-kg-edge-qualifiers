@@ -1,0 +1,178 @@
+{
+ "run_id": "F067",
+ "target_doc_id": "D0112",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "credential theft", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 100, "end": 185, "sha256": "e02aa72c184f5e8ea7858669ecbcfad1f8e92dc30a0ba458c1f70933d6350c88"}}
+  ]},
+  {"id": "n002", "label": "persistence", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 100, "end": 185, "sha256": "e02aa72c184f5e8ea7858669ecbcfad1f8e92dc30a0ba458c1f70933d6350c88"}}
+  ]},
+  {"id": "n003", "label": "supply chain attack", "entity_type": "attack_technique", "aliases": ["software supply chain attacks"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0006", "start": 0, "end": 96, "sha256": "ea35254d8d32f78ff506c0e44e012529df13e7436715ac0f988186b7f4f60d16"}},
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 179, "end": 236, "sha256": "7ad8b6461c40160417a2cf0b8bb192c407de53ea1bc9fdc8b3df524dcbdb7b7f"}}
+  ]},
+  {"id": "n004", "label": "Megalodon", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0017", "start": 135, "end": 300, "sha256": "54d31527c08925d736a6bb4fba80ab97ede38423e1296bd6956e064559a62580"}}
+  ]},
+  {"id": "n005", "label": "Miasma", "entity_type": "campaign", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 58, "sha256": "2ed4f25f0329965c2ac9d14a2300f5ce80d6085dcea381c8991f52c1e87b3078"}}
+  ]},
+  {"id": "n006", "label": "Miasma: The Spreading Blight", "entity_type": "indicator", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0013", "start": 0, "end": 109, "sha256": "647a30dc851f2f498fab3abde4ef18f316a5f3f8b0bf6c8e7385260c34b03de1"}}
+  ]},
+  {"id": "n007", "label": "Mini Shai-Hulud", "entity_type": "malware", "aliases": ["(Mini) Shai-Hulud"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0012", "start": 0, "end": 76, "sha256": "39fa8fadd9ff0777b6fa7528349dc39b1cd3b54290eae4c59bae783e208fdf73"}},
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0012", "start": 183, "end": 275, "sha256": "4ccdfcde16b9f515fb02f85ee9c64a432223d3b0a94c65034abc5b1c826ccdab"}}
+  ]},
+  {"id": "n008", "label": "Shai-Hulud", "entity_type": "malware", "aliases": ["Shai Hulud"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 101, "end": 237, "sha256": "076ad3cc8d769f167e934cf179eaf95678fe59740815e01f04a5c815e20cfe2c"}},
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0009", "start": 262, "end": 298, "sha256": "bd6c9bf0f8a19c4e8c0016910efe60d7fd986347cc5a0b8b641b32f7f609e0b2"}}
+  ]},
+  {"id": "n009", "label": "OX Security", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0015", "start": 110, "end": 313, "sha256": "00f3c02019dde97dd5462211d8ce50a0edf596b15137e53d6ee8198236737bf4"}}
+  ]},
+  {"id": "n010", "label": "Red Hat", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0005", "start": 0, "end": 135, "sha256": "0feab4bbf5ea51279020930efc9c5b6cd7f4d126e2356247b34ebc5ec5850f35"}}
+  ]},
+  {"id": "n011", "label": "TanStack", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0017", "start": 0, "end": 66, "sha256": "35acdf3eb697b45b8d11b2068b74378e41837e03e28820b101c985a02f5b9fd2"}}
+  ]},
+  {"id": "n012", "label": "Wiz", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 58, "sha256": "2ed4f25f0329965c2ac9d14a2300f5ce80d6085dcea381c8991f52c1e87b3078"}}
+  ]},
+  {"id": "n013", "label": "@redhat-cloud-services", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0005", "start": 0, "end": 135, "sha256": "0feab4bbf5ea51279020930efc9c5b6cd7f4d126e2356247b34ebc5ec5850f35"}}
+  ]},
+  {"id": "n014", "label": "GitHub Actions", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 122, "end": 202, "sha256": "61efcf5acc079174d6ce7f3f2ffc5bcf05f33bba09d7a9a61603595016d136fd"}}
+  ]},
+  {"id": "n015", "label": "Red Hat Cloud Services", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0009", "start": 0, "end": 152, "sha256": "5fa307a10242f0032d95de04e6eec66f85991d1b08deff5051425a65b9b6bbb4"}}
+  ]},
+  {"id": "n016", "label": "Red Hat npm packages", "entity_type": "product", "aliases": ["Red Hat-related npm packages", "Red Hat Cloud Services-related npm packages"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0001", "start": 0, "end": 58, "sha256": "f7b203ade55c4dad9da3a78b260a73d0292531bb7a91daa19fb7b7b81de01564"}},
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 27, "end": 98, "sha256": "f41e05facafd8ab4256df89928d160e99a5671ffd738542fba71590d17eeb1ea"}},
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0006", "start": 97, "end": 161, "sha256": "a9bd9657b73f4e20495f1be4ccac9ec58fbd4ecce5ecec7efea9f4cc625a508b"}}
+  ]},
+  {"id": "n017", "label": "npm", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 179, "end": 236, "sha256": "7ad8b6461c40160417a2cf0b8bb192c407de53ea1bc9fdc8b3df524dcbdb7b7f"}}
+  ]},
+  {"id": "n018", "label": "OpenID Connect", "entity_type": "technology", "aliases": ["OIDC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 122, "end": 202, "sha256": "61efcf5acc079174d6ce7f3f2ffc5bcf05f33bba09d7a9a61603595016d136fd"}}
+  ]},
+  {"id": "n019", "label": "SLSA provenance attestations", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 207, "end": 301, "sha256": "34323b9698012cd81a026dd02c9f30b838a32c113f7bee81615ca80bf74ddca5"}}
+  ]},
+  {"id": "n020", "label": "TeamPCP", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0017", "start": 25, "end": 133, "sha256": "27d6d9927d2c5f4c58808951cecd9105881756cd1fbe7fc21fc581ed2c7e3401"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n017", "relation_type": "TARGETS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 113, "end": 236, "sha256": "6513bcc8e3dcce72f3ecb635a9d6db8c7da1bcd72b54eb334e7ce4760a2529ab"}}
+   ]},
+  {"id": "e002", "source": "n005", "target": "n016", "relation_type": "TARGETS",
+   "modality": "actual", "polarity": "positive", "attribution": "Security researchers from several cybersecurity outlets", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0006", "start": 0, "end": 253, "sha256": "9b9824a717e75206e025d77caa9811aeba05200f9abf1a1a7cec953b55cce0ae"}},
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 58, "sha256": "2ed4f25f0329965c2ac9d14a2300f5ce80d6085dcea381c8991f52c1e87b3078"}}
+   ]},
+  {"id": "e003", "source": "n005", "target": "n003", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Security researchers from several cybersecurity outlets", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0006", "start": 0, "end": 161, "sha256": "50621eceb0a9275858273136d9ffbe66d2bebbc696cba0c0db2655e524f3c0bd"}},
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 58, "sha256": "2ed4f25f0329965c2ac9d14a2300f5ce80d6085dcea381c8991f52c1e87b3078"}}
+   ]},
+  {"id": "e004", "source": "n005", "target": "n007", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0012", "start": 0, "end": 76, "sha256": "39fa8fadd9ff0777b6fa7528349dc39b1cd3b54290eae4c59bae783e208fdf73"}}
+   ]},
+  {"id": "e005", "source": "n005", "target": "n008", "relation_type": "USES",
+   "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 146, "sha256": "0f37237291a00df0a44a2611e864b487c9a5b02ec69288135bd7b593eb620ab0"}}
+   ]},
+  {"id": "e006", "source": "n005", "target": "n014", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 0, "end": 302, "sha256": "5ca92ba3ec9b6027713e43aa1997d9be5dda5743b62aeb0883f65ed3a096f580"}}
+   ]},
+  {"id": "e007", "source": "n005", "target": "n018", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 0, "end": 302, "sha256": "5ca92ba3ec9b6027713e43aa1997d9be5dda5743b62aeb0883f65ed3a096f580"}}
+   ]},
+  {"id": "e008", "source": "n005", "target": "n019", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0016", "start": 0, "end": 302, "sha256": "5ca92ba3ec9b6027713e43aa1997d9be5dda5743b62aeb0883f65ed3a096f580"}}
+   ]},
+  {"id": "e009", "source": "n007", "target": "n017", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "throughout the year", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0012", "start": 0, "end": 181, "sha256": "e551a14b2bc37ed2cc862bb3923b31b9ad3dcb357dceead32e7eb1e8e274ae04"}}
+   ]},
+  {"id": "e010", "source": "n007", "target": "n001", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Wiz", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0012", "start": 0, "end": 181, "sha256": "e551a14b2bc37ed2cc862bb3923b31b9ad3dcb357dceead32e7eb1e8e274ae04"}}
+   ]},
+  {"id": "e011", "source": "n008", "target": "n016", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "Researchers", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 0, "end": 98, "sha256": "546c9086ec1a2178f09925a6657a652552f79222290fc8b3683cd36557cadb8e"}}
+   ]},
+  {"id": "e012", "source": "n008", "target": "n017", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 101, "end": 237, "sha256": "076ad3cc8d769f167e934cf179eaf95678fe59740815e01f04a5c815e20cfe2c"}}
+   ]},
+  {"id": "e013", "source": "n008", "target": "n001", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Researchers", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 0, "end": 186, "sha256": "f4a23f7baa9bbfb741d101e660db34bda67e1a871d4e3a8b31c0966dded18cdf"}}
+   ]},
+  {"id": "e014", "source": "n008", "target": "n002", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Researchers", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0003", "start": 0, "end": 186, "sha256": "f4a23f7baa9bbfb741d101e660db34bda67e1a871d4e3a8b31c0966dded18cdf"}}
+   ]},
+  {"id": "e015", "source": "n009", "target": "n005", "relation_type": "REPORTS_ON",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0015", "start": 110, "end": 313, "sha256": "00f3c02019dde97dd5462211d8ce50a0edf596b15137e53d6ee8198236737bf4"}}
+   ]},
+  {"id": "e016", "source": "n010", "target": "n013", "relation_type": "OPERATES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0005", "start": 0, "end": 135, "sha256": "0feab4bbf5ea51279020930efc9c5b6cd7f4d126e2356247b34ebc5ec5850f35"}}
+   ]},
+  {"id": "e017", "source": "n012", "target": "n005", "relation_type": "REPORTS_ON",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0007", "start": 0, "end": 58, "sha256": "2ed4f25f0329965c2ac9d14a2300f5ce80d6085dcea381c8991f52c1e87b3078"}},
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0008", "start": 0, "end": 189, "sha256": "c959abf142a700d43dc26e7a682164992ad5d5ac5d61a83946dcf8b020e81fd1"}}
+   ]},
+  {"id": "e018", "source": "n016", "target": "n013", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0005", "start": 0, "end": 135, "sha256": "0feab4bbf5ea51279020930efc9c5b6cd7f4d126e2356247b34ebc5ec5850f35"}}
+   ]},
+  {"id": "e019", "source": "n020", "target": "n007", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0017", "start": 25, "end": 133, "sha256": "27d6d9927d2c5f4c58808951cecd9105881756cd1fbe7fc21fc581ed2c7e3401"}}
+   ]},
+  {"id": "e020", "source": "n020", "target": "n011", "relation_type": "TARGETS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "TeamPCP's earlier attack against TanStack",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0112", "paragraph_id": "D0112:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0112:P0017", "start": 0, "end": 134, "sha256": "5333f948a60fce2c800a2192c8a87b6f881906448cc1bdc017eba030158e33fe"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

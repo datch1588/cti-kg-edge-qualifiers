@@ -1,0 +1,1121 @@
+{
+ "article": "Ukrainian draft v6.37 (2026-11-05)",
+ "package_version": "0.4.0",
+ "checks": 109,
+ "matched": 109,
+ "all_match": true,
+ "bootstrap": {
+  "resamples": 10000,
+  "seed": "cti-kg-edge-qualifiers 0.4.0 independent bootstrap",
+  "tolerance_pp": 1.0
+ },
+ "results": [
+  {
+   "id": "T2.Method.1.records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 1: records per document",
+   "article": "15,12",
+   "computed": "15,12",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.1.correct_records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 1: correct records per document",
+   "article": "14,46",
+   "computed": "14,46",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.1.triple_confirmed",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 1: triple confirmed, % (mean over documents)",
+   "article": "97,8",
+   "computed": "97,8",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.1.correct_records",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 1: correct records, % (mean over documents)",
+   "article": "95,6",
+   "computed": "95,6",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.1.false_form",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 1: false form, % (formula (8), pooled)",
+   "article": "2,0",
+   "computed": "2,0",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.2.records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 2: records per document",
+   "article": "15,72",
+   "computed": "15,72",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.2.correct_records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 2: correct records per document",
+   "article": "14,88",
+   "computed": "14,88",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.2.triple_confirmed",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 2: triple confirmed, % (mean over documents)",
+   "article": "99,1",
+   "computed": "99,1",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.2.correct_records",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 2: correct records, % (mean over documents)",
+   "article": "94,6",
+   "computed": "94,6",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Method.2.false_form",
+   "section": "6.1, Table 2",
+   "quantity": "Method, repeat 2: false form, % (formula (8), pooled)",
+   "article": "3,6",
+   "computed": "3,6",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Ablation.2.records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Ablation, repeat 2: records per document",
+   "article": "13,44",
+   "computed": "13,44",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Ablation.2.correct_records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "Ablation, repeat 2: correct records per document",
+   "article": "12,56",
+   "computed": "12,56",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Ablation.2.triple_confirmed",
+   "section": "6.1, Table 2",
+   "quantity": "Ablation, repeat 2: triple confirmed, % (mean over documents)",
+   "article": "97,4",
+   "computed": "97,4",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Ablation.2.correct_records",
+   "section": "6.1, Table 2",
+   "quantity": "Ablation, repeat 2: correct records, % (mean over documents)",
+   "article": "92,0",
+   "computed": "92,0",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.Ablation.2.false_form",
+   "section": "6.1, Table 2",
+   "quantity": "Ablation, repeat 2: false form, % (formula (8), pooled)",
+   "article": "3,5",
+   "computed": "3,5",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.1.records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 1: records per document",
+   "article": "42,24",
+   "computed": "42,24",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.1.correct_records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 1: correct records per document",
+   "article": "37,30",
+   "computed": "37,30",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.1.triple_confirmed",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 1: triple confirmed, % (mean over documents)",
+   "article": "96,7",
+   "computed": "96,7",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.1.correct_records",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 1: correct records, % (mean over documents)",
+   "article": "87,3",
+   "computed": "87,3",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.1.false_form",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 1: false form, % (formula (8), pooled)",
+   "article": "8,3",
+   "computed": "8,3",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.2.records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 2: records per document",
+   "article": "37,02",
+   "computed": "37,02",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.2.correct_records_per_document",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 2: correct records per document",
+   "article": "33,04",
+   "computed": "33,04",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.2.triple_confirmed",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 2: triple confirmed, % (mean over documents)",
+   "article": "97,5",
+   "computed": "97,5",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.2.correct_records",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 2: correct records, % (mean over documents)",
+   "article": "88,0",
+   "computed": "88,0",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.CTINexus.2.false_form",
+   "section": "6.1, Table 2",
+   "quantity": "CTINexus, repeat 2: false form, % (formula (8), pooled)",
+   "article": "7,3",
+   "computed": "7,3",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T2.ablation_documents",
+   "section": "6.1, Table 2",
+   "quantity": "ablation: documents with records",
+   "article": "49",
+   "computed": "49",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json per_article",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r1",
+   "section": "6.1",
+   "quantity": "method − CTINexus, correct records, pp, repeat 1",
+   "article": "8,4",
+   "computed": "8,4",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r1.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output)",
+   "article": "[4,4; 12,5]",
+   "computed": "[4,4; 12,5]",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r1.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[4,4; 12,5]",
+   "computed": "[4,29; 12,47]",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r2",
+   "section": "6.1",
+   "quantity": "method − CTINexus, correct records, pp, repeat 2",
+   "article": "6,6",
+   "computed": "6,6",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r2.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output)",
+   "article": "[2,3; 10,9]",
+   "computed": "[2,3; 10,9]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_correct.r2.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[2,3; 10,9]",
+   "computed": "[2,37; 10,75]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r1",
+   "section": "6.1",
+   "quantity": "CTINexus − method, false form, pp, repeat 1",
+   "article": "6,3",
+   "computed": "6,3",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r1.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output, sign reversed)",
+   "article": "[3,0; 9,8]",
+   "computed": "[3,0; 9,8]",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r1.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[3,0; 9,8]",
+   "computed": "[3,01; 9,80]",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r2",
+   "section": "6.1",
+   "quantity": "CTINexus − method, false form, pp, repeat 2",
+   "article": "3,7",
+   "computed": "3,7",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r2.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output)",
+   "article": "[0,1; 7,2]",
+   "computed": "[0,1; 7,2]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.diff_ff.r2.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[0,1; 7,2]",
+   "computed": "[0,21; 7,23]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.ratio_correct.r1",
+   "section": "6.1",
+   "quantity": "CTINexus / method, correct records per document, repeat 1",
+   "article": "2,6",
+   "computed": "2,6",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.ratio_correct.r2",
+   "section": "6.1",
+   "quantity": "CTINexus / method, correct records per document, repeat 2",
+   "article": "2,2",
+   "computed": "2,2",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.decoys.r1",
+   "section": "6.1",
+   "quantity": "control records rejected, repeat 1",
+   "article": "237 of 240",
+   "computed": "237 of 240",
+   "source": "studies/ctinexus_comparison_repeat1_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.decoys.r2",
+   "section": "6.1",
+   "quantity": "control records rejected, repeat 2",
+   "article": "242 of 242",
+   "computed": "242 of 242",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.sens_markers.r2",
+   "section": "6.1",
+   "quantity": "check 1 (modal markers count as correct), method − CTINexus, pp, repeat 2",
+   "article": "2,7 [−0,6; 5,9]",
+   "computed": "2,7 [−0,6; 5,9]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/posthoc_review_checks_r2.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.sens_wording.r2",
+   "section": "6.1",
+   "quantity": "check 2 (form by relation wording), method − CTINexus, pp, repeat 2",
+   "article": "2,3 [−0,9; 5,5]",
+   "computed": "2,3 [−0,9; 5,5]",
+   "source": "studies/wording_reaudit_2026-10-28/analysis/analysis_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.other_auditor.agree",
+   "section": "6.1",
+   "quantity": "agreement of the other-developer auditor with the main audit, %",
+   "article": "94,6",
+   "computed": "94,6",
+   "source": "studies/independent_audit_repeat2_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.other_auditor.diff",
+   "section": "6.1",
+   "quantity": "method − CTINexus by the other-developer auditor, pp",
+   "article": "4,8 [−1,1; 10,6]",
+   "computed": "4,8 [−1,1; 10,6]",
+   "source": "studies/independent_audit_repeat2_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "5.2.other_auditor.sample",
+   "section": "5.2",
+   "quantity": "records in the other-developer audit sample / all records of repeat 2",
+   "article": "457 of 2761",
+   "computed": "457 of 2761",
+   "source": "studies/independent_audit_repeat2_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "5.2.other_auditor.decoys",
+   "section": "5.2",
+   "quantity": "control records in the other-developer audit",
+   "article": "30",
+   "computed": "30",
+   "source": "studies/independent_audit_repeat2_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_ff",
+   "section": "6.1",
+   "quantity": "ablation − method, false form, pp",
+   "article": "−0,1",
+   "computed": "−0,1",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_ff.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output)",
+   "article": "[−3,2; 3,3]",
+   "computed": "[−3,2; 3,3]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_ff.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[−3,2; 3,3]",
+   "computed": "[−3,22; 3,25]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_vs_ctinexus",
+   "section": "6.1",
+   "quantity": "ablation − CTINexus, correct records, pp",
+   "article": "4,1",
+   "computed": "4,1",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_vs_ctinexus.ci",
+   "section": "6.1",
+   "quantity": "95% CI (analysis output)",
+   "article": "[0,2; 8,1]",
+   "computed": "[0,2; 8,1]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.abl_vs_ctinexus.boot",
+   "section": "6.1",
+   "quantity": "95% CI, independent bootstrap",
+   "article": "[0,2; 8,1]",
+   "computed": "[0,26; 8,02]",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.1.nonactual_correct",
+   "section": "6.1",
+   "quantity": "correct method records with a form other than actual, positive (repeat 2)",
+   "article": "76",
+   "computed": "76",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.false_forms",
+   "section": "6.1",
+   "quantity": "false forms of the method (repeat 2)",
+   "article": "28",
+   "computed": "28",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/posthoc_form_errors.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.false_forms_nonactual",
+   "section": "6.1",
+   "quantity": "of them with modality other than actual",
+   "article": "28",
+   "computed": "28",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/posthoc_form_errors.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.1.false_forms_fact",
+   "section": "6.1",
+   "quantity": "of them where the document presents the relation as a fact",
+   "article": "26",
+   "computed": "26",
+   "source": "studies/ablation_repeat2_2026-10-27/analysis/posthoc_form_errors.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.docs",
+   "section": "6.2",
+   "quantity": "part B: documents with edges of both method variants",
+   "article": "24",
+   "computed": "24",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.ff_v3",
+   "section": "6.2",
+   "quantity": "part B: false form, contract v3 (records with confirmed triple)",
+   "article": "1,7 % (7 of 405)",
+   "computed": "1,7 % (7 of 405)",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.ff_v2",
+   "section": "6.2",
+   "quantity": "part B: false form, contract v2",
+   "article": "7,5 % (25 of 335)",
+   "computed": "7,5 % (25 of 335)",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q1",
+   "section": "6.2",
+   "quantity": "part B: Q1, v2 − v3, false form, pp",
+   "article": "5,7 [0,9; 12,1]",
+   "computed": "5,7 [0,9; 12,1]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q1.boot",
+   "section": "6.2",
+   "quantity": "part B: Q1 95% CI, independent bootstrap",
+   "article": "[0,9; 12,1]",
+   "computed": "[0,94; 12,04]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.2.B.more_correct",
+   "section": "6.2",
+   "quantity": "part B: correct records per document, v3 − v2",
+   "article": "3,5 [2,2; 4,9]",
+   "computed": "3,5 [2,2; 4,9]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.triple_share",
+   "section": "6.2",
+   "quantity": "part B: share of confirmed triples did not change significantly (CI covers 0)",
+   "article": "yes",
+   "computed": "yes",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q2",
+   "section": "6.2",
+   "quantity": "part B: Q2, correct records v3 vs CTINexus, % and difference, pp",
+   "article": "95,8 % vs 89,0 %, difference 6,8 [1,2; 11,6]",
+   "computed": "95,8 % vs 89,0 %, difference 6,8 [1,2; 11,6]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q2.boot",
+   "section": "6.2",
+   "quantity": "part B: Q2 95% CI, independent bootstrap",
+   "article": "[1,2; 11,6]",
+   "computed": "[1,26; 11,63]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.2.B.ratio",
+   "section": "6.2",
+   "quantity": "part B: CTINexus / v3, correct records per document",
+   "article": "2,0",
+   "computed": "2,0",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q3",
+   "section": "6.2",
+   "quantity": "part B: Q3, ablation false form and ablation − v3, pp",
+   "article": "4,5 % (13 of 290), 2,8 [−0,9; 6,0]",
+   "computed": "4,5 % (13 of 290), 2,8 [−0,9; 6,0]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.Q3.boot",
+   "section": "6.2",
+   "quantity": "part B: Q3 95% CI, independent bootstrap",
+   "article": "[−0,9; 6,0]",
+   "computed": "[−0,88; 6,08]",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "independent bootstrap, tolerance 1.0 pp",
+   "match": true
+  },
+  {
+   "id": "6.2.A.same_answers",
+   "section": "6.2",
+   "quantity": "part A: the same answers to Q1–Q3 as part B (Q1, Q2 established; Q3 not)",
+   "article": "yes",
+   "computed": "yes",
+   "source": "studies/contract_v3_parts_A_B_2026-10-28/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.other_auditor",
+   "section": "6.2",
+   "quantity": "part B, other-developer auditor: false form v3 vs v2, difference",
+   "article": "2,0 % (8 of 392) vs 10,0 % (33 of 330), 8,0 [2,6; 15,0], 24 documents",
+   "computed": "2,0 % (8 of 392) vs 10,0 % (33 of 330), 8,0 [2,6; 15,0], 24 documents",
+   "source": "studies/independent_audit_part_B_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.other_auditor.items",
+   "section": "6.2",
+   "quantity": "part B, other-developer auditor: records rated, control records found",
+   "article": "584; 85 of 86",
+   "computed": "584; 85 of 86",
+   "source": "studies/independent_audit_part_B_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.B.other_auditor.agree",
+   "section": "6.2",
+   "quantity": "part B: form agreement with the main audit (both confirmed the triple), %",
+   "article": "97,7",
+   "computed": "97,7",
+   "source": "studies/independent_audit_part_B_2026-10-28/analysis/independent_output.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.C.Q1.Opus",
+   "section": "6.2",
+   "quantity": "part C, auditor Opus: false form v3 vs v2, difference, documents",
+   "article": "0,8 % (6 of 713) vs 9,4 % (62 of 662), difference 8,5 [4,8; 13,0], 48",
+   "computed": "0,8 % (6 of 713) vs 9,4 % (62 of 662), difference 8,5 [4,8; 13,0], 48",
+   "source": "studies/part_C_new_documents_2026-11-05/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.C.Q1.Sonnet",
+   "section": "6.2",
+   "quantity": "part C, auditor Sonnet: false form v3 vs v2, difference, documents",
+   "article": "1,8 % (13 of 711) vs 7,4 % (49 of 660), difference 5,6 [1,6; 10,6], 48",
+   "computed": "1,8 % (13 of 711) vs 7,4 % (49 of 660), difference 5,6 [1,6; 10,6], 48",
+   "source": "studies/part_C_new_documents_2026-11-05/sonnet_reaudit/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.C.Q3.Opus",
+   "section": "6.2",
+   "quantity": "part C, auditor Opus: ablation − v3, false form, pp, documents",
+   "article": "3,3 [−0,8; 8,3], 49",
+   "computed": "3,3 [−0,8; 8,3], 49",
+   "source": "studies/part_C_new_documents_2026-11-05/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.2.C.Q3.Sonnet",
+   "section": "6.2",
+   "quantity": "part C, auditor Sonnet: ablation − v3, false form, pp, documents",
+   "article": "−0,1 [−2,7; 3,0], 49",
+   "computed": "−0,1 [−2,7; 3,0], 49",
+   "source": "studies/part_C_new_documents_2026-11-05/sonnet_reaudit/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.attribution_correct",
+   "section": "6.3, Table 3",
+   "quantity": "attribution correct: records; share, % [95% CI]",
+   "article": "1239; 93,9 [87,8; 98,3]",
+   "computed": "1239; 93,9 [87,8; 98,3]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.attribution_missed",
+   "section": "6.3, Table 3",
+   "quantity": "attribution missed: records; share, % [95% CI]",
+   "article": "3134; 3,3 [1,7; 5,1]",
+   "computed": "3134; 3,3 [1,7; 5,1]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.time_correct",
+   "section": "6.3, Table 3",
+   "quantity": "time correct: records; share, % [95% CI]",
+   "article": "567; 98,9 [97,2; 100,0]",
+   "computed": "567; 98,9 [97,2; 100,0]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.time_missed",
+   "section": "6.3, Table 3",
+   "quantity": "time missed: records; share, % [95% CI]",
+   "article": "3806; 3,7 [1,8; 6,0]",
+   "computed": "3806; 3,7 [1,8; 6,0]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.context_correct",
+   "section": "6.3, Table 3",
+   "quantity": "context correct: records; share, % [95% CI]",
+   "article": "1099; 87,0 [78,9; 93,7]",
+   "computed": "1099; 87,0 [78,9; 93,7]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.all_filled_fields_correct",
+   "section": "6.3, Table 3",
+   "quantity": "all filled fields correct: records; share, % [95% CI]",
+   "article": "4373; 95,1 [92,5; 97,3]",
+   "computed": "4373; 95,1 [92,5; 97,3]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.fragments_support_the_whole_record",
+   "section": "6.3, Table 3",
+   "quantity": "fragments support the whole record: records; share, % [95% CI]",
+   "article": "4205; 83,2 [78,4; 87,5]",
+   "computed": "4205; 83,2 [78,4; 87,5]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.edge_fully_correct",
+   "section": "6.3, Table 3",
+   "quantity": "edge fully correct: records; share, % [95% CI]",
+   "article": "4379; 71,0 [66,0; 75,9]",
+   "computed": "4379; 71,0 [66,0; 75,9]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.the_same_omissions_allowed",
+   "section": "6.3, Table 3",
+   "quantity": "the same, omissions allowed: records; share, % [95% CI]",
+   "article": "4379; 86,9 [83,4; 90,1]",
+   "computed": "4379; 86,9 [83,4; 90,1]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "T3.alternative_names_correct",
+   "section": "6.3, Table 3",
+   "quantity": "alternative names correct: records; share, % [95% CI]",
+   "article": "927; 99,5 [98,8; 99,9]",
+   "computed": "927; 99,5 [98,8; 99,9]",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json groups (all sets)",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "5.4.records",
+   "section": "5.4",
+   "quantity": "edge records and nodes with alternative names in the re-audit",
+   "article": "4379; 927",
+   "computed": "4379; 927",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "5.4.decoys",
+   "section": "5.4",
+   "quantity": "control records with a deliberately changed field",
+   "article": "353",
+   "computed": "353",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.3.frag_P",
+   "section": "6.3",
+   "quantity": "fragments support neither the triple nor the form, %",
+   "article": "4,1",
+   "computed": "4,1",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "7.frag_not_S",
+   "section": "7",
+   "quantity": "records with correct triple and form whose fragments do not support the whole record, %",
+   "article": "16,8",
+   "computed": "16,8",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.3.v3_vs_v2",
+   "section": "6.3",
+   "quantity": "fully correct records v3 vs v2; the same without omissions, %",
+   "article": "74,1 % vs 66,9 %; 90,2 % vs 82,7 %",
+   "computed": "74,1 % vs 66,9 %; 90,2 % vs 82,7 %",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.3.decoys",
+   "section": "6.3",
+   "quantity": "control records found by kind: range except replaced context; replaced context, %",
+   "article": "98,5–100,0; 83,0",
+   "computed": "98,5–100,0; 83,0",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.3.agreement",
+   "section": "6.3",
+   "quantity": "agreement with the audit of 6.2 on triple and form, %",
+   "article": "99,5; 99,1",
+   "computed": "99,5; 99,1",
+   "source": "studies/qualifier_reaudit_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.nodes",
+   "section": "6.4",
+   "quantity": "nodes; nodes joining several documents; of them specific entities",
+   "article": "1531; 187; 111",
+   "computed": "1531; 187; 111",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.specific",
+   "section": "6.4",
+   "quantity": "specific cross-document nodes judged correct (Wilson)",
+   "article": "111 of 111, 100,0 [96,7; 100,0]",
+   "computed": "111 of 111, 100,0 [96,7; 100,0]",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.general",
+   "section": "6.4",
+   "quantity": "general-concept nodes checked and judged correct",
+   "article": "20 of 20",
+   "computed": "20 of 20",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.pairs",
+   "section": "6.4",
+   "quantity": "unmerged candidate pairs that are the same entity (Wilson)",
+   "article": "19 of 146, 13,0 [8,5; 19,4]",
+   "computed": "19 of 146, 13,0 [8,5; 19,4]",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.pairs_missed",
+   "section": "6.4",
+   "quantity": "estimated missed merges among all unmerged candidate pairs",
+   "article": "56 [37; 84] of 430",
+   "computed": "56 [37; 84] of 430",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.pairs_missed.wilson",
+   "section": "6.4",
+   "quantity": "the same, recomputed as population × Wilson bounds",
+   "article": "56 [37; 84]",
+   "computed": "56 [37; 84]",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.audit_pairs",
+   "section": "6.4 (5.5)",
+   "quantity": "random unmerged candidate pairs given to the auditor",
+   "article": "150",
+   "computed": "150",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.triples",
+   "section": "6.4",
+   "quantity": "triples given by at least two documents; merged into one edge each",
+   "article": "39; 26",
+   "computed": "39; 26",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.merges",
+   "section": "6.4",
+   "quantity": "merges judged correct (Wilson)",
+   "article": "26 of 26, 100,0 [87,1; 100,0]",
+   "computed": "26 of 26, 100,0 [87,1; 100,0]",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.not_merged",
+   "section": "6.4",
+   "quantity": "triples left as several edges; of them with different forms",
+   "article": "13; 3",
+   "computed": "13; 3",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.form_decoys",
+   "section": "6.4",
+   "quantity": "control records with a changed form found",
+   "article": "2 of 3",
+   "computed": "2 of 3",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "6.4.contradictory",
+   "section": "6.4",
+   "quantity": "contradictory claims (positive and negative across documents)",
+   "article": "0",
+   "computed": "0",
+   "source": "studies/cross_document_merge_2026-11-04/analysis/results.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "3.4.records",
+   "section": "3.4 (step 4)",
+   "quantity": "method edge and node records re-checked against condition (5)",
+   "article": "7395; 9780",
+   "computed": "7395; 9780",
+   "source": "studies/acceptance_conditions_2026-11-05/acceptance_conditions_v633.json",
+   "comparison": "exact",
+   "match": true
+  },
+  {
+   "id": "3.4.rejected",
+   "section": "3.4 (step 4)",
+   "quantity": "records that a checking program would reject",
+   "article": "0",
+   "computed": "0",
+   "source": "studies/acceptance_conditions_2026-11-05/acceptance_conditions_v633.json",
+   "comparison": "exact",
+   "match": true
+  }
+ ],
+ "not_recomputed": [
+  {
+   "section": "6.1",
+   "quantity": "75 of the 76 correct non-actual method records have no correct counterpart in the ablation",
+   "reason": "needs the blinding keys (record-level system labels) of the ablation and repeat 2 study"
+  },
+  {
+   "section": "6.3",
+   "quantity": "wrong attributions concentrated in four documents (60 of 64 records), the kinds of those documents and of the wrong contexts",
+   "reason": "needs the blinding key of the qualifier re-audit (record-level sources) and the document texts"
+  },
+  {
+   "section": "6.4",
+   "quantity": "16 of the 19 same-entity pairs are general designations, 3 are specific entities (HM Government / UK government, Salt Typhoon, Volt Typhoon); 10 of the 13 unmerged triples differ in attribution, time or event context",
+   "reason": "needs the resolver and audit keys of the merge study"
+  }
+ ]
+}

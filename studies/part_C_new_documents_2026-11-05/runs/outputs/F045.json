@@ -1,0 +1,45 @@
+{
+ "run_id": "F045",
+ "target_doc_id": "D0463",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Canada", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0011", "start": 97, "end": 166, "sha256": "a5497af482508cede55f927b39d23d72aa2f17055c3bfddd1a8e5fa524d0cddf"}}
+  ]},
+  {"id": "n002", "label": "Japan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0011", "start": 97, "end": 166, "sha256": "a5497af482508cede55f927b39d23d72aa2f17055c3bfddd1a8e5fa524d0cddf"}}
+  ]},
+  {"id": "n003", "label": "Canada Japan Cyber Policy Dialogue", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+  ]},
+  {"id": "n004", "label": "Mark Carney", "entity_type": "person", "aliases": ["Mr. Carney"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0003", "start": 155, "end": 211, "sha256": "fd4574c5471cf315e102700e5c8b89cabe27dc064f9ba5403618a82dfaffecd3"}},
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+  ]},
+  {"id": "n005", "label": "Sanae Takaichi", "entity_type": "person", "aliases": ["Ms. Takaichi"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0005", "start": 10, "end": 68, "sha256": "c10c71911234dac44716b0e3f26eae8c9e0828dac2705f7c55d494d37a55072f"}},
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+  ]},
+  {"id": "n006", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n006", "relation_type": "MITIGATES",
+   "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "establishment of the Canada Japan Cyber Policy Dialogue by Carney and Takaichi",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+   ]},
+  {"id": "e002", "source": "n004", "target": "n006", "relation_type": "MITIGATES",
+   "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "establishment of the Canada Japan Cyber Policy Dialogue by Carney and Takaichi",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+   ]},
+  {"id": "e003", "source": "n005", "target": "n006", "relation_type": "MITIGATES",
+   "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "establishment of the Canada Japan Cyber Policy Dialogue by Carney and Takaichi",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

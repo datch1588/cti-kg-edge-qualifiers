@@ -1,0 +1,12 @@
+{
+ "audit_file": "R2_T34",
+ "target_doc_id": "D0320",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "conditional", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0008 kill switch описано як механізм, що вимикає системи «in case of failure or misuse», тобто лише за умови, і умовна форма формулювання цьому відповідає."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0002 і P0011 UNI India як факт повідомляє про результати дослідження TrendAI."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0007 сказано, що 46% ІТ-керівників попередили, що шкідливі промпти «could compromise AI systems», тобто це можливість."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly» подає це як можливість, а в D0320:P0005 як факт сказано, що реактивний режим «in many cases leads to the rise of» тіньових ШІ-інструментів у підприємствах."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «suffer from» подає це як факт, а в D0320:P0007 «lack of auditability» лише згадано серед ризиків, «flagged as major issues», тобто як можливу загрозу."},
+  {"item_id": "W006", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0007 близько половини респондентів вважають, що такі технології «could significantly strengthen cyber defence», тобто це можливість."}
+ ]
+}

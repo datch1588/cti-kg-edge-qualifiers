@@ -1,0 +1,190 @@
+AUDIT_FILE: S3N09
+TARGET_DOC_ID: D0382
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0382
+PUBLICATION_DATE: 2026-03-23
+SOURCE_URL: https://www.prnewswire.com/news-releases/straiker-secures-agents-building-agents-302721497.html
+TITLE_SHA256: 2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d
+BEGIN_DOCUMENT
+[D0382:P0001] sha256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d
+[D0382:P0002] sha256:4c84bdbe9b45fb696a1c2c054984d4b537b10899127befd9a15026f6863247b3
+[D0382:P0003] sha256:c66ddb4473e530da0514cf6c629d34a5d48941f43908078488db461aa7abf453
+[D0382:P0004] sha256:6b417ac6a774fa50295558b893463340b0e177aa7e044a6a7d337df3abed6766
+[D0382:P0005] sha256:de78a083c50f5e9d1b5402da3db19d26c03191a300b719cf74479d75d4596313
+[D0382:P0006] sha256:29a6c507e21b67bc822d5c80200725fc492c4e02844732b4abc8d4a79d2c9646
+[D0382:P0007] sha256:b07a3bb61c7104aee48cd1e2981af6167900866ec3d143c8cf060f5ade305608
+[D0382:P0008] sha256:3ec6f9338430666329e254bb49237db069f7224fea6e8490b0d36648efa7cc96
+[D0382:P0009] sha256:ddf403fa7c406a50d44ece215a9395cdd8e66d7a08b4187375f08f62e718b3f5
+[D0382:P0010] sha256:541b9510b41e44ef8500bbd2f05f7d0dccc9ead0b42ce8ce607e880ef41b6e86
+[D0382:P0011] sha256:d3a0d7f2aa656d15e69ade165abacef4cd1f33ea1f85e1cfd811899b6b17fd29
+[D0382:P0012] sha256:e08fddb68dab63ebc227835f31f248bba610c971befb704475805112028e4173
+[D0382:P0013] sha256:34bdf0dc64cf273591c7090f0bd8c72c3afb55402eacfa847d74bdaecf28d2ea
+[D0382:P0014] sha256:b258cc42a8845202f1cb7cf0294ae0084eda5b189563d8a12d12ea279d29862c
+[D0382:P0015] sha256:7a87e70a57f2946f3974debbd1f43be3c941c4907c21135eeee24351cbc82f97
+[D0382:P0016] sha256:e0d44f9dbec5f19222e42848f9019d4f24a83c4901708c7f69182cd1f15470f1
+[D0382:P0017] sha256:b2c361eb7885f23e2730a988f2256750142e8d0ed88444ba9beccafdc76c36d3
+[D0382:P0018] sha256:75c102af25158df4fd61b4e02ad692e35663ef67e6fa3eb6e88560c2685dc40a
+[D0382:P0019] sha256:5c2b836fa817f390324c05db43efa8e193490796343bc64388c30ccee9e9776a
+[D0382:P0020] sha256:90ed1ee8319cebac4257b303222417e72124e7b566b6b4862b51d3cb790b2ba9
+[D0382:P0021] sha256:241e1979f9caaef0445397770c24277402e81783b2c93e747b9298d4ea1bf5bd
+[D0382:P0022] sha256:e760a09f6822943ad19cbf1ac67fd8477275ee990d16e61d53776c2599953267
+[D0382:P0023] sha256:fb9c87f9219ddfb5b6ee265c73a33037c648cbf6765c2be9c2170bf77e6b61f8
+[D0382:P0024] sha256:5017e3930a44d44452895e464439fd3e5856b21c9608e61138c6134b79d5a1e5
+[D0382:P0025] sha256:74f0003cd5379e6a71a3758be477ae0d5e4ce1dfccfa32faf9361b1305554d57
+[D0382:P0026] sha256:cef280de8c937307358e810e2b1697f3b826a4f9f7b5080a7bc72f091d212ad0
+[D0382:P0027] sha256:4b69511709bb6c6f3de45baa696e6d7f7824055d4c186dd2f0c55c1cbc0e58ba
+[D0382:P0028] sha256:f7cef736b980b4988ca9ec27a585b86d125a4f74384dd52e96b52415f0bc2711
+[D0382:P0029] sha256:16d190ec76d318f8a916a506d18a5f363f0545cf186e1b82f7bc83a58b069c12
+[D0382:P0030] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0382:P0031] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0382:P0032] sha256:67f4feda66812472b340c3662cafb9e366e1fe3037df52cb8e563e1173b98b7e
+[D0382:P0033] sha256:c9b4bea314ce6543adf6fdf5a98eabf230272cfad2dea8a09a9a588387ab241b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (94)
+E001: «Defend AI» — secures → «custom-built agent platforms» | форма: actual, positive
+E002: «malicious MCP servers» — expose agents to → «supply chain risks» | форма: actual, positive
+E003: «Defend AI» — mitigates → «data exfiltration» | форма: actual, positive
+E004: «Defend AI» — secures → «coding agents» | форма: actual, positive
+E005: «Straiker» — provides → «Discover AI» | форма: actual, positive
+E006: «Defend AI» — provides → «Straiker» | форма: actual, positive
+E007: «Defend AI» — supports → «Azure Foundry» | форма: actual, negative
+E008: «Straiker» — provides → «Ascend AI» | форма: actual, positive
+E009: «Defend AI» — supports → «Microsoft Copilot Studio» | форма: actual, positive
+E010: «Discover AI» — flags → «unrestricted execution modes» | форма: actual, positive
+E011: «coding agents» — enables → «remote code execution» | форма: possible, positive
+E012: «ChatGPT Enterprise» — is a → «productivity agent» | форма: actual, positive
+E013: «Discover AI» — classifies by risk → «agent interactions» | форма: actual, positive
+E014: «Defend AI» — integrates via API with → «Microsoft Copilot Studio» | форма: actual, positive
+E015: «Discover AI» — identifies → «AI agents» | форма: actual, positive
+E016: «Defend AI» — integrates via API with → «Amazon Bedrock AgentCore» | форма: actual, positive
+E017: «Straiker» — develops → «OWASP Top 10 for Agentic Applications» | форма: actual, positive
+E018: «custom agents» — run on → «AWS Bedrock AgentCore» | форма: actual, positive
+E019: «Microsoft Copilot» — is a → «productivity agent» | форма: actual, positive
+E020: «RSAC 2026» — located in → «San Francisco» | форма: actual, positive
+E021: «Straiker» — launched → «Discover AI» | форма: actual, positive
+E022: «Straiker» — develops → «Defend AI» | форма: actual, positive
+E023: «Straiker» — expanded → «Defend AI» | форма: actual, positive
+E024: «EMA» — observed attackers shifting to → «'log-in' strategy» | форма: actual, positive
+E025: «Discover AI» — identifies → «MCPs» | форма: actual, positive
+E026: «Defend AI» — detects → «unauthorized actions» | форма: actual, positive
+E027: «Defend AI» — trained on → «real-world agent traces» | форма: actual, positive
+E028: «GitHub Copilot» — is a → «coding agent» | форма: possible, positive
+E029: «Straiker» — contributed to → «OWASP Top 10 for Agentic Applications» | форма: actual, positive
+E030: «PR Newswire» — published → «Straiker Secures Agents Building Agents» | форма: actual, positive
+E031: «Scott Clinton» — warns about → «behavior hijacking» | форма: actual, positive
+E032: «coding agents» — enables → «tool manipulation» | форма: actual, positive
+E033: «Defend AI» — protects → «productivity agents» | форма: actual, positive
+E034: «Straiker» — presents at RSAC 2026 in → «San Francisco» | форма: actual, positive
+E035: «Salesforce Agentforce» — is a → «productivity agent» | форма: actual, positive
+E036: «Defend AI» — integrates via API with → «Azure Foundry» | форма: actual, positive
+E037: «custom agents» — run on → «Azure Foundry» | форма: actual, positive
+E038: «coding agents» — create vectors for → «remote code execution» | форма: actual, positive
+E039: «Discover AI» — flags → «risky tool access» | форма: actual, positive
+E040: «productivity agents» — touch → «email» | форма: actual, positive
+E041: «Defend AI» — detects → «agentic threats» | форма: actual, positive
+E042: «Discover AI» — blocks → «malicious or compromised integrations» | форма: actual, positive
+E043: «Straiker» — presents at RSAC 2026 during → «March 23-26, 2026» | форма: actual, positive
+E044: «Straiker Secures Agents Building Agents» — published on → «March 23, 2026» | форма: actual, positive
+E045: «Defend AI» — supports → «inline gateway deployment» | форма: actual, positive
+E046: «Scott Clinton» — leads → «OWASP GenAI Security Project» | форма: actual, positive
+E047: «coding agents» — enables → «endpoint takeover» | форма: possible, positive
+E048: «coding agents» — enables → «data exfiltration» | форма: possible, positive
+E049: «Agentic AI» — introduces risk of → «privilege abuse» | форма: actual, positive
+E050: «Defend AI» — supports → «monitoring mode» | форма: actual, positive
+E051: «Straiker» — offers → «Ascend AI» | форма: actual, positive
+E052: «Discover AI» — uses → «12,000 MCP vulnerability databases» | форма: actual, positive
+E053: «agent skills» — enables → «tool manipulation» | форма: actual, positive
+E054: «Claude Code» — is a → «coding agent» | форма: actual, positive
+E055: «coding agents» — enables → «remote code execution» | форма: actual, positive
+E056: «Discover AI» — flags → «excessive permissions» | форма: actual, positive
+E057: «Straiker» — protects → «AI agents» | форма: actual, positive
+E058: «Discover AI» — detects → «MCP vulnerability» | форма: actual, positive
+E059: «Defend AI» — supports → «Amazon Bedrock AgentCore» | форма: actual, positive
+E060: «Straiker» — develops → «Defend AI» | форма: actual, negative
+E061: «Defend AI» — identifies → «malicious MCP servers» | форма: actual, positive
+E062: «Defend AI» — supports → «Azure Foundry» | форма: actual, positive
+E063: «coding agents» — enables → «data exfiltration» | форма: actual, positive
+E064: «coding agents» — create vectors for → «endpoint takeover» | форма: actual, positive
+E065: «Defend AI» — protects → «coding agents» | форма: actual, positive
+E066: «Agentic AI» — introduces risk of → «behavior hijacking» | форма: actual, positive
+E067: «MCP servers» — enables → «tool manipulation» | форма: actual, positive
+E068: «tool manipulation» — carried out through → «malicious MCP servers» | форма: actual, positive
+E069: «Scott Clinton» — warns about → «privilege abuse» | форма: actual, positive
+E070: «productivity agents» — touch → «CRM solutions» | форма: actual, positive
+E071: «OWASP GenAI Security Project» — developed → «OWASP Top 10 for Agentic Applications» | форма: actual, positive
+E072: «Ken Buckler» — member of → «EMA» | форма: actual, positive
+E073: «David Levin» — member of → «American Express Global Business Travel» | форма: actual, positive
+E074: «malicious MCP servers» — enables → «tool manipulation» | форма: possible, positive
+E075: «Defend AI» — detects → «malicious MCP servers» | форма: actual, positive
+E076: «coding agents» — enables → «endpoint takeover» | форма: actual, positive
+E077: «GitHub Copilot» — is a → «coding agent» | форма: actual, positive
+E078: «Defend AI» — detects → «tool misuse» | форма: actual, positive
+E079: «coding agents» — enables → «tool manipulation» | форма: possible, positive
+E080: «Straiker» — provides → «Defend AI» | форма: actual, positive
+E081: «coding agents» — create vectors for → «tool manipulation» | форма: actual, positive
+E082: «Defend AI» — secures → «productivity agents» | форма: actual, positive
+E083: «tool manipulation» — enables → «malicious MCP servers» | форма: possible, positive
+E084: «Straiker» — develops → «Discover AI» | форма: actual, positive
+E085: «Discover AI» — detects vulnerabilities in → «MCP servers» | форма: actual, positive
+E086: «Discover AI» — launched on → «March 23, 2026» | форма: actual, positive
+E087: «Defend AI» — prevents → «data exfiltration» | форма: actual, positive
+E088: «Defend AI» — detects → «prompt injection» | форма: actual, positive
+E089: «Defend AI» — protects → «custom-built agent platforms» | форма: actual, positive
+E090: «Cursor» — is a → «coding agent» | форма: actual, positive
+E091: «tool manipulation» — carried out through → «agent skills» | форма: actual, positive
+E092: «Scott Clinton» — leads → «OWASP GenAI Security Project» | форма: possible, positive
+E093: «coding agents» — create vectors for → «data exfiltration» | форма: actual, positive
+E094: «custom agents» — run on → «Microsoft Copilot Studio» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

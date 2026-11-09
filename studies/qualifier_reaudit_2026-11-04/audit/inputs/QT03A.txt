@@ -1,0 +1,237 @@
+AUDIT_FILE: QT03A
+TARGET_DOC_ID: D0584
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0584
+PUBLICATION_DATE: 2026-01-30
+SOURCE_URL: https://www.baltictimes.com/cyber_threats_from_hostile_countries_remained_elevated_last_year__but_the_intensity_of_activities_varied_-_sab/
+TITLE_SHA256: 081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+BEGIN_DOCUMENT
+[D0584:P0001] sha256:081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+[D0584:P0002] sha256:2a1fdf33fc955b90827a342c31cfe1847b11edea192bdfda90469fb87c0df2ad
+[D0584:P0003] sha256:f33b80ea1b6e2d4fa4cde26a124a0c05aedef88b19239f5a434ee510e45587be
+[D0584:P0004] sha256:1b345476c925405a8f3653c351277a898ea8f38bdc51e6654368d2a6c762e7c9
+[D0584:P0005] sha256:0616b1374a9ffb6c22ed8d551dff1284b66fb2e0618c7249cf56b9f1fad57960
+[D0584:P0006] sha256:065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385
+[D0584:P0007] sha256:63dc1acf61feb000d1220f179687ba5b9e22dff57f45855cf348a14984451b27
+[D0584:P0008] sha256:dc0ca6d27e77e4656974d4dd294f11cd9977d85586861f3ee3de3247c40a3a67
+[D0584:P0009] sha256:8adf7070c93b67074a11dd2608b6aec4e723f81f60378feea3904c83a4d84b81
+[D0584:P0010] sha256:6a12ea01daba2461dcbd97cfac90c0829ada114ea72c36a9b6cf81b2b76b46f8
+[D0584:P0011] sha256:f4d9efaa88b410f7efffc11b0f82c2fe2d40146aecbdb6a9950046e108becc2c
+[D0584:P0012] sha256:8a32c1b4ba640053f56f9980ffdffcda5a7718a4e6b7778cade39a9e5d65044f
+[D0584:P0013] sha256:554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272
+[D0584:P0014] sha256:4f281485195376645b3ccc95559ddb57c987f6ae3a1ae5167046364d945c0e6b
+[D0584:P0015] sha256:5322769fdf4948186266a6883dfd323b7fde0696866dfd40715eb1a9df08ed0b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 43, вузлів 3)
+E001: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+  атрибуція: — | час події: «In August 2025» | контекст події: «repeated attacks on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0012] «@0-124 sha256=e80ef77c22ef27096508ba8687a29e973ba33cdb25137ee7faf8325f274a68c1»
+E002: «vulnerabilities» — affects → «operational technologies» | форма: actual, positive
+  атрибуція: «SAB» | час події: «To date» | контекст події: —
+  фрагменти: [D0584:P0013] «@0-283 sha256=554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272»
+E003: «Cert.lv» — protects → «local elections» | форма: possible, positive
+  атрибуція: «SAB» | час події: «in 2025» | контекст події: —
+  фрагменти: [D0584:P0008] «@424-537 sha256=61276b58acae874d9d46351dae5622ffe6e319c1df5d982f9d30a4c3caf88e9b»; [D0584:P0008] «@343-422 sha256=311985b10b31338ffaf847f9b3ba2e57b3fb4ed682f0dfa3c3d606f5a2b33024»
+E004: «Cert.lv» — protects → «International Crimea Platform Summit» | форма: possible, positive
+  атрибуція: «SAB» | час події: «in 2024» | контекст події: —
+  фрагменти: [D0584:P0008] «@424-537 sha256=61276b58acae874d9d46351dae5622ffe6e319c1df5d982f9d30a4c3caf88e9b»; [D0584:P0008] «@199-335 sha256=f45494a7f03d4909821d159a15bf8890a3f3db7b63f82adf087a82336778854f»
+E005: «Constitution Protection Bureau» — warns about → «threats to operational technologies» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0009] «@0-106 sha256=b49b51a9868614eaf5cb336279f7abcd75fd11b993b1fbdeb20ebf79bdefa58a»; [D0584:P0010] «@179-393 sha256=b1679bedb841d8c717ef735f800828d48b74abf7bfaa8531e42e1183676d88d1»
+E006: «Russian hacktivists» — targets → «Latvia» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@0-160 sha256=3a896bf79279d87ac85c22e2302cece9b64fe3e4c0c67fa5e5d17803e65d0a17»
+E007: «Russian hacktivists» — uses → «remotely access» | форма: actual, positive
+  атрибуція: — | час події: «August 2025» | контекст події: «repeated attacks on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0012] «@16-221 sha256=c9cef84466b03ce416330212ffced6a48abbbf15e60c38984794dfe6b6b1eff5»
+E008: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@0-160 sha256=3a896bf79279d87ac85c22e2302cece9b64fe3e4c0c67fa5e5d17803e65d0a17»; [D0584:P0011] «@264-518 sha256=180bb3bc56787ac854f8f166fab0fe727f22d4f0ce3846d877e2e8ce134607ab»
+E009: «European Union Agency for Cybersecurity» — reports on → «cyberattacks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0010] «@394-572 sha256=848af08f82132ab5afb222590bbbcddfd16557a3bfb8c6f8e279de7346a2a52a»
+E010: «Cert.lv» — protects → «local elections» | форма: possible, positive
+  атрибуція: «SAB» | час події: «2025» | контекст події: «absence of malicious external attacks during the local elections»
+  фрагменти: [D0584:P0008] «@343-537 sha256=5669237d23174270d25f7da5ebe8d196c5e1f0bc17aa69a8678146e5c07b99c9»
+E011: «hostile countries» — targets → «European Parliament elections» | форма: actual, negative
+  атрибуція: «SAB» | час події: «in 2024» | контекст події: «cyberattacks during the European Parliament elections»
+  фрагменти: [D0584:P0008] «@193-335 sha256=50c207e1c55abd7027c9007a6a211aa657f1ebb89f2b653e7eb66aae28fb0cb8»; [D0584:P0008] «@82-191 sha256=858d79fcf681d6779591c5ffe5184093726299cea163a54fb7b5d2ddbc20ad7f»
+E012: «Russian hacktivists» — targets → «Western countries» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@0-160 sha256=3a896bf79279d87ac85c22e2302cece9b64fe3e4c0c67fa5e5d17803e65d0a17»
+E013: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+  атрибуція: — | час події: «In August 2025» | контекст події: «repeated attacks by Russian hacktivists on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0007] «@0-72 sha256=31afd5f24537f64a56fada6028a126bc6b85c6d0c3d88a5e830460b3d2455027»
+E014: «European Union Agency for Cybersecurity» — reports on → «threats to operational technologies» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0010] «@394-590 sha256=50ecff358aa350d0853ac5f1b7d43db2fa6c3adb7f3c63c4694d3750c4cbb8da»
+E015: «Constitution Protection Bureau» — reports on → «vulnerabilities» | форма: actual, positive
+  атрибуція: «SAB» | час події: «To date» | контекст події: —
+  фрагменти: [D0584:P0013] «@0-283 sha256=554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272»
+E016: «hostile countries» — targets → «International Crimea Platform Summit» | форма: actual, negative
+  атрибуція: «SAB» | час події: «in 2024» | контекст події: «cyberattacks during the International Crimea Platform Summit»
+  фрагменти: [D0584:P0008] «@193-335 sha256=50c207e1c55abd7027c9007a6a211aa657f1ebb89f2b653e7eb66aae28fb0cb8»; [D0584:P0008] «@82-191 sha256=858d79fcf681d6779591c5ffe5184093726299cea163a54fb7b5d2ddbc20ad7f»
+E017: «Cert.lv» — protects → «International Crimea Platform Summit» | форма: possible, positive
+  атрибуція: «SAB» | час події: «2024» | контекст події: «absence of significant cyberattacks during the International Crimea Platform Summit»
+  фрагменти: [D0584:P0008] «@199-537 sha256=cf19a2e0e684416f20740e77295b672d62177fbc565d4050ee446279ddc9796d»
+E018: «intrusion attempts» — affects → «national security interests» | форма: actual, positive
+  атрибуція: — | час події: «In 2025» | контекст події: —
+  фрагменти: [D0584:P0006] «@0-228 sha256=065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385»
+E019: «Russia» — targets → «Latvia» | форма: actual, positive
+  атрибуція: — | час події: «Last year» | контекст події: —
+  фрагменти: [D0584:P0007] «@0-72 sha256=31afd5f24537f64a56fada6028a126bc6b85c6d0c3d88a5e830460b3d2455027»
+E020: «Cert.lv» — protects → «European Parliament elections» | форма: possible, positive
+  атрибуція: «SAB» | час події: «in 2024» | контекст події: —
+  фрагменти: [D0584:P0008] «@424-537 sha256=61276b58acae874d9d46351dae5622ffe6e319c1df5d982f9d30a4c3caf88e9b»; [D0584:P0008] «@199-335 sha256=f45494a7f03d4909821d159a15bf8890a3f3db7b63f82adf087a82336778854f»
+E021: «malicious code» — affects → «national security interests» | форма: actual, positive
+  атрибуція: — | час події: «In 2025» | контекст події: —
+  фрагменти: [D0584:P0006] «@0-228 sha256=065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385»
+E022: «vulnerabilities» — affects → «operational technologies» | форма: actual, positive
+  атрибуція: «SAB» | час події: «To date» | контекст події: —
+  фрагменти: [D0584:P0013] «@0-151 sha256=93140b4abf1364632c6a8c0047ebf5f70069ddc9bcd71c7a693427fc43bdb00f»
+E023: «Russian hacktivists» — targets → «industrial control systems» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@0-160 sha256=3a896bf79279d87ac85c22e2302cece9b64fe3e4c0c67fa5e5d17803e65d0a17»
+E024: «compromised equipment» — affects → «national security interests» | форма: actual, positive
+  атрибуція: — | час події: «In 2025» | контекст події: —
+  фрагменти: [D0584:P0006] «@0-228 sha256=065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385»
+E025: «hydroelectric power plant» — located in → «Gdansk» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0012] «@58-123 sha256=bd89ec4982e9cf7f66d12d2cd6d60c14958c7dea5a4c5b436f19d7ba09cbe3cb»
+E026: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+  атрибуція: — | час події: «August 2025» | контекст події: «repeated attacks on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0012] «@0-124 sha256=e80ef77c22ef27096508ba8687a29e973ba33cdb25137ee7faf8325f274a68c1»
+E027: «hostile countries» — targets → «Latvia» | форма: actual, positive
+  атрибуція: «SAB» | час події: «last year» | контекст події: —
+  фрагменти: [D0584:P0003] «@7-279 sha256=6be00ad7e0c20f4c680fe2e1764e6e4433402892f4ededb1f8097b147a60fa74»
+E028: «Constitution Protection Bureau» — reports on → «hostile countries» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0003] «@7-279 sha256=6be00ad7e0c20f4c680fe2e1764e6e4433402892f4ededb1f8097b147a60fa74»
+E029: «Constitution Protection Bureau» — reports on → «vulnerabilities» | форма: actual, positive
+  атрибуція: «European Union Agency for Cybersecurity» | час події: — | контекст події: —
+  фрагменти: [D0584:P0013] «@0-283 sha256=554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272»
+E030: «attacks on service availability» — affects → «national security interests» | форма: actual, positive
+  атрибуція: — | час події: «In 2025» | контекст події: —
+  фрагменти: [D0584:P0006] «@0-228 sha256=065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385»
+E031: «hydroelectric power plant» — located in → «Gdansk» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0012] «@67-123 sha256=fbe5929dd8e375b1646d74015cd8fac00cc2a840dac512ffbd19c62c5c87bdc9»
+E032: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+  атрибуція: — | час події: «In August 2025» | контекст події: «repeated attacks by Russian hacktivists on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0012] «@0-124 sha256=e80ef77c22ef27096508ba8687a29e973ba33cdb25137ee7faf8325f274a68c1»
+E033: «hostile countries» — targets → «local elections» | форма: actual, negative
+  атрибуція: «SAB» | час події: «in 2025» | контекст події: «malicious external attacks during the local elections»
+  фрагменти: [D0584:P0008] «@82-191 sha256=858d79fcf681d6779591c5ffe5184093726299cea163a54fb7b5d2ddbc20ad7f»; [D0584:P0008] «@337-422 sha256=2440f20eee33e5c0ee16aeb16172b828f42933c6e6381148b354325f54fbb97b»
+E034: «hydroelectric power plant» — located in → «Gdansk» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0012] «@16-123 sha256=a97c8d5350ecb249ba5db71e15ae46cf7711cb217f34ad383ea4498ab6f37232»
+E035: «cyberattacks» — targets → «operational technologies» | форма: actual, positive
+  атрибуція: «ENISA» | час події: — | контекст події: —
+  фрагменти: [D0584:P0010] «@394-572 sha256=848af08f82132ab5afb222590bbbcddfd16557a3bfb8c6f8e279de7346a2a52a»
+E036: «Cert.lv» — protects → «European Parliament elections» | форма: possible, positive
+  атрибуція: «SAB» | час події: «2024» | контекст події: «absence of significant cyberattacks during the European Parliament elections»
+  фрагменти: [D0584:P0008] «@199-537 sha256=cf19a2e0e684416f20740e77295b672d62177fbc565d4050ee446279ddc9796d»
+E037: «Cert.lv» — mitigates → «targeted cyberattacks» | форма: possible, positive
+  атрибуція: «SAB» | час події: — | контекст події: «absence of targeted cyberattacks during large politically significant events in 2024 and 2025»
+  фрагменти: [D0584:P0008] «@424-537 sha256=61276b58acae874d9d46351dae5622ffe6e319c1df5d982f9d30a4c3caf88e9b»; [D0584:P0008] «@82-191 sha256=858d79fcf681d6779591c5ffe5184093726299cea163a54fb7b5d2ddbc20ad7f»
+E038: «European Union Agency for Cybersecurity» — reports on → «cyberattacks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «repeated attacks by Russian hacktivists on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0010] «@394-572 sha256=848af08f82132ab5afb222590bbbcddfd16557a3bfb8c6f8e279de7346a2a52a»
+E039: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@264-518 sha256=180bb3bc56787ac854f8f166fab0fe727f22d4f0ce3846d877e2e8ce134607ab»
+E040: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: actual, positive
+  атрибуція: «SAB» | час події: — | контекст події: —
+  фрагменти: [D0584:P0011] «@0-160 sha256=3a896bf79279d87ac85c22e2302cece9b64fe3e4c0c67fa5e5d17803e65d0a17»; [D0584:P0011] «@377-518 sha256=eda4590f1bdbe985365ee79db902c20f120852efba9da802dc85d0d1dc029429»
+E041: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+  атрибуція: — | час події: «August 2025» | контекст події: «repeated attacks on a hydroelectric power plant in Gdansk»
+  фрагменти: [D0584:P0012] «@0-124 sha256=e80ef77c22ef27096508ba8687a29e973ba33cdb25137ee7faf8325f274a68c1»; [D0584:P0012] «@125-309 sha256=30f54183e674463619cfc7414b41c9d40933e1c1bab9f9d62f887d1d7f3c9172»
+E042: «Constitution Protection Bureau» — reports on → «vulnerabilities» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0013] «@0-283 sha256=554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272»
+E043: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0584:P0007] «@73-237 sha256=c9472da9d39121c6ce0aa26d8c5a5d81a8226eaa60a71ea595de770f4c39fffd»
+V001: «European Union Agency for Cybersecurity» (organization) | альтернативні назви: «ENISA»
+V002: «Constitution Protection Bureau» (organization) | альтернативні назви: «SAB»
+V003: «Russian hacktivists» (threat_actor) | альтернативні назви: «Russian so-called hacktivists»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,147 @@
+{
+ "run_id": "Z004",
+ "target_doc_id": "D0663",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "ClickFix", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0024", "start": 0, "end": 107, "sha256": "2657dde977bcb6ec3029a231922e572fe6e88d933da879359daf8f5f3da444bc"}}]},
+  {"id": "n002", "label": "DDoS", "entity_type": "attack_technique", "aliases": ["distributed denial- of-service"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0021", "start": 0, "end": 62, "sha256": "e83db05f0d600a8ff4009bba43ba5d30b12e4a678d477329f82fd57a4d32b804"}}]},
+  {"id": "n003", "label": "hardware and software vulnerability exploitation", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}}]},
+  {"id": "n004", "label": "identity-theft", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0027", "start": 0, "end": 158, "sha256": "f8a9ba4698eac7accc2c9702b7854e302f5a06b5b74f183ae97cdc4494f79656"}}]},
+  {"id": "n005", "label": "phishing e-mails", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0023", "start": 71, "end": 249, "sha256": "88494c9a5957c8d2e7621ee5773bb6f5b177b559699ab6498176321de23cee63"}}]},
+  {"id": "n006", "label": "social engineering", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0023", "start": 0, "end": 69, "sha256": "98311be1fc6a1ffc1e47fa3dc0f1d5eaaa07ca28fee6ea4aa625fc1a8a655d20"}}]},
+  {"id": "n007", "label": "supply chain attacks", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0026", "start": 0, "end": 63, "sha256": "0a152ba912180a945324551042409fea3a5e55a37f59f3c2b1039c65da792be9"}}]},
+  {"id": "n008", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0002", "start": 13, "end": 158, "sha256": "27c655d142d12e1f38db8440ac3eb66a40f500d2b93b017e94434a26f7a9c9c9"}}]},
+  {"id": "n009", "label": "Taiwan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0010", "start": 0, "end": 122, "sha256": "70a2b66953e664af176214bd688c1f3aae47f8f9836ff321940c449f9f03c4f4"}}]},
+  {"id": "n010", "label": "malicious relay nodes", "entity_type": "indicator", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0037", "start": 0, "end": 132, "sha256": "0c2f8fdf66103a9ea1035359509d9bf8b937fc5e5e00f5b3a719699da0862eec"}}]},
+  {"id": "n011", "label": "Indo-Pacific region", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0032", "start": 0, "end": 176, "sha256": "f5e8b1bcf6c46b2dedcc248ad47949631aa1a5ac3eeead4b415a3b344722dddb"}}]},
+  {"id": "n012", "label": "malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0025", "start": 0, "end": 122, "sha256": "d85c649da67e698fae8ff45a271d8e1b7acfdfb2bca19181a89bbd1cd23c4359"}}]},
+  {"id": "n013", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0031", "start": 0, "end": 156, "sha256": "a592f460815c83075947e65a3b8679eb3f2c2a3d5dc25f17c1925c82354754cf"}}]},
+  {"id": "n014", "label": "EU", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0032", "start": 0, "end": 176, "sha256": "f5e8b1bcf6c46b2dedcc248ad47949631aa1a5ac3eeead4b415a3b344722dddb"}}]},
+  {"id": "n015", "label": "major hospitals", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0031", "start": 0, "end": 90, "sha256": "4d0b12e2c29d079d65ccfa462f9234a6e770c85f6cd66483900dba8b45423018"}}]},
+  {"id": "n016", "label": "national intelligence community", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0006", "start": 0, "end": 136, "sha256": "91e164507d9d15d5dcc00b38cdae1d0b56bfd88e3f6d0ca80c762b7aa756f9ef"}}]},
+  {"id": "n017", "label": "National Security Bureau", "entity_type": "organization", "aliases": ["NSB"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0004", "start": 0, "end": 182, "sha256": "3abbc40f116f0393365188eb578f902d8edf498b7cae33f3d156c80735d0391c"}}]},
+  {"id": "n018", "label": "NATO", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0032", "start": 0, "end": 176, "sha256": "f5e8b1bcf6c46b2dedcc248ad47949631aa1a5ac3eeead4b415a3b344722dddb"}}]},
+  {"id": "n019", "label": "critical energy infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0004", "start": 184, "end": 302, "sha256": "cf899507f806503e260b4b952f650e2de17e037dcbe34490b903dcab17171613"}}]},
+  {"id": "n020", "label": "Taiwan's critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0009", "start": 0, "end": 175, "sha256": "4e2bdab61a46cc121c80af87788c61469589c4561283c6f7e60c460fd7370756"}}]},
+  {"id": "n021", "label": "ICT equipment", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0020", "start": 0, "end": 161, "sha256": "4d2aae5937ed59dd237a2f4bf3b367f4b474194ab5d710e847ebd7d46eabf787"}}]},
+  {"id": "n022", "label": "APT41", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "n023", "label": "BlackTech", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "n024", "label": "China's cyberarmy", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0004", "start": 0, "end": 131, "sha256": "8c36cad1c79558aaf4345b3ecae352bf7b8438a195dac6df4d215f79492b6434"}}]},
+  {"id": "n025", "label": "Chinese hackers", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0020", "start": 0, "end": 161, "sha256": "4d2aae5937ed59dd237a2f4bf3b367f4b474194ab5d710e847ebd7d46eabf787"}}]},
+  {"id": "n026", "label": "Flax Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "n027", "label": "Mustang Panda", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "n028", "label": "UNC3886", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "n029", "label": "botnets", "entity_type": "tool", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0021", "start": 64, "end": 170, "sha256": "364749f1820c87120925619e531625637b906d371e9471630de57b2c2cf74027"}}]},
+  {"id": "n030", "label": "hardware and software vulnerabilities", "entity_type": "vulnerability", "aliases": ["software and hardware vulnerabilities"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0016", "start": 0, "end": 118, "sha256": "4cf16ec876fd9f34d3fa656179b303d0f6d01395d21348f773de8179b31ce43c"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0019", "start": 0, "end": 159, "sha256": "e707d8d7781db7a5b357f9ec9b6378916c7e8ddb5a020fa7a4feb6ddc4215eb1"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n008", "target": "n030", "relation_type": "EXPLOITS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0016", "start": 0, "end": 240, "sha256": "8a7eacd8f57def9e87e5bb532a077465fc9bf87b5726541ab5b0410335c7c860"}}]},
+  {"id": "e002", "source": "n008", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "last year", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0002", "start": 13, "end": 158, "sha256": "27c655d142d12e1f38db8440ac3eb66a40f500d2b93b017e94434a26f7a9c9c9"}}]},
+  {"id": "e003", "source": "n013", "target": "n015", "relation_type": "AFFECTS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0031", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0031", "start": 0, "end": 90, "sha256": "4d0b12e2c29d079d65ccfa462f9234a6e770c85f6cd66483900dba8b45423018"}}]},
+  {"id": "e004", "source": "n017", "target": "n020", "relation_type": "PROTECTS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0037", "start": 68, "end": 321, "sha256": "0c1651e50bdfa16a54e48b930c1b6dd17874697c06c71c68908000f0dc4b69ec"}}]},
+  {"id": "e005", "source": "n017", "target": "n022", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "e006", "source": "n017", "target": "n023", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "e007", "source": "n017", "target": "n024", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 73, "sha256": "1c1d0c5e01bf7413d9cdf409204039b539f72f909b212fc3b287c735972631d0"}}]},
+  {"id": "e008", "source": "n017", "target": "n026", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "e009", "source": "n017", "target": "n027", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "e010", "source": "n017", "target": "n028", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "yesterday", "event_scope": "NSB report Analysis on China's Cyber Threats to Taiwan's Critical Infrastructure in 2025", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0005", "start": 0, "end": 191, "sha256": "55e711b48610babd595bce58dfac80d3da5095eab5d4aaf0c13f01fa543a9785"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}}]},
+  {"id": "e011", "source": "n020", "target": "n009", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0009", "start": 0, "end": 175, "sha256": "4e2bdab61a46cc121c80af87788c61469589c4561283c6f7e60c460fd7370756"}}]},
+  {"id": "e012", "source": "n022", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0029", "start": 0, "end": 245, "sha256": "68e4f443e84956de4d302c219105675a1fe921fa67643f74e66f37801d48d9b9"}}]},
+  {"id": "e013", "source": "n023", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0029", "start": 0, "end": 245, "sha256": "68e4f443e84956de4d302c219105675a1fe921fa67643f74e66f37801d48d9b9"}}]},
+  {"id": "e014", "source": "n024", "target": "n019", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "last year", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0004", "start": 0, "end": 302, "sha256": "01dce5f0ef84267bea6a96b095dc44a856824a02d1fe2844cbe42fbf33981370"}}]},
+  {"id": "e015", "source": "n024", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0004", "start": 0, "end": 182, "sha256": "3abbc40f116f0393365188eb578f902d8edf498b7cae33f3d156c80735d0391c"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0021", "start": 64, "end": 280, "sha256": "bdb758da3e51bf37c7b817e11bf5c531374207843ae0e29700e96d06f276e78c"}}]},
+  {"id": "e016", "source": "n024", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "last year", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0009", "start": 0, "end": 184, "sha256": "b5d1bb62b712973dfc957e5577a9d8e01dfc560340dbde2a14f8eb4b9c555f48"}}]},
+  {"id": "e017", "source": "n024", "target": "n002", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0021", "start": 0, "end": 170, "sha256": "ce00f7a41c9c3286d73462a66deaa6f264beda1003ab54289a183c4527d187b7"}}]},
+  {"id": "e018", "source": "n024", "target": "n003", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}}]},
+  {"id": "e019", "source": "n024", "target": "n005", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0023", "start": 71, "end": 266, "sha256": "ccb3a67edd53ebaff9ed2d72966f181f5488423bc6de834c5949063c420c2f2b"}}]},
+  {"id": "e020", "source": "n024", "target": "n006", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0023", "start": 0, "end": 130, "sha256": "e78bcd7f4ee7912b7a31a9c80b2274981a5771dd935ebcb3b2f630be39b02a01"}}]},
+  {"id": "e021", "source": "n024", "target": "n007", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0015", "start": 0, "end": 215, "sha256": "9717af6c8b36953a3bf55a218d1b28e3c818e5be78a79a7a81d0424efbfd13f6"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0026", "start": 0, "end": 205, "sha256": "04aca58ed1a7d4ea9333edd65dff27cb9581d1ff603765d4bae38717132ddfcd"}}]},
+  {"id": "e022", "source": "n024", "target": "n029", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0021", "start": 64, "end": 263, "sha256": "4f4fc51797421b30dc937c0f00cb2ea90b22561c0c80c1702824f680eae1111c"}}]},
+  {"id": "e023", "source": "n025", "target": "n021", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0020", "start": 0, "end": 161, "sha256": "4d2aae5937ed59dd237a2f4bf3b367f4b474194ab5d710e847ebd7d46eabf787"}}]},
+  {"id": "e024", "source": "n025", "target": "n004", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0027", "start": 0, "end": 158, "sha256": "f8a9ba4698eac7accc2c9702b7854e302f5a06b5b74f183ae97cdc4494f79656"}}]},
+  {"id": "e025", "source": "n025", "target": "n012", "relation_type": "USES", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0027", "start": 58, "end": 227, "sha256": "e8c454d83371859176a494a1045bf2c7af83d0fe0decf77550ab915096d6c907"}}]},
+  {"id": "e026", "source": "n026", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0029", "start": 0, "end": 245, "sha256": "68e4f443e84956de4d302c219105675a1fe921fa67643f74e66f37801d48d9b9"}}]},
+  {"id": "e027", "source": "n027", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0029", "start": 0, "end": 245, "sha256": "68e4f443e84956de4d302c219105675a1fe921fa67643f74e66f37801d48d9b9"}}]},
+  {"id": "e028", "source": "n028", "target": "n020", "relation_type": "TARGETS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0028", "start": 0, "end": 135, "sha256": "15e9e06a192626d7cefd863bc5b888b2d38f763923e393de0eef48674e4b26ae"}},
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0029", "start": 0, "end": 245, "sha256": "68e4f443e84956de4d302c219105675a1fe921fa67643f74e66f37801d48d9b9"}}]},
+  {"id": "e029", "source": "n030", "target": "n021", "relation_type": "AFFECTS", "attribution": "National Security Bureau", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0663", "paragraph_id": "D0663:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0663:P0019", "start": 0, "end": 226, "sha256": "a044ad43698f80b98ce5f502522ed99403859283f001dcf691a253cfbff0f047"}}]}
+ ],
+ "context_passages_used": []
+}

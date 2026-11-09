@@ -1,0 +1,23 @@
+{
+ "audit_file": "S5F09",
+ "target_doc_id": "D0534",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття каже, що кампанії проти DIB часто призначені для крадіжки IP та R&D, тобто це подано як типова поведінка."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "Загрозливі актори атакують увесь оборонний сектор, що подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "I", "reason": "Сегрегація ідентичностей перетворює захист на виявлення подано як властивість без умови «if», тож conditional хибне, має бути actual."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "McNamara названий заступником головного аналітика Google Threat Intelligence Group."},
+  {"item_id": "E005", "triple_verdict": "I", "form_verdict": "—", "reason": "Стаття не каже, що McNamara «reports on» ransomware; він лише згадує, що сектор часто потерпає від програм-вимагачів, відношення не конкретне."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Сектор часто уражається ransomware, що опосередковано впливає на оборонний ланцюг постачання, подано як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "I", "reason": "Суворий контроль автентифікації веде до виявлення подано як властивість без явної умови, тож conditional хибне, має бути actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує впливу ransomware на ланцюг постачання, а стверджує його, тож negative хибне."},
+  {"item_id": "E009", "triple_verdict": "I", "form_verdict": "—", "reason": "«Кібер-руйнування» не є суб'єктом, що атакує DIB; у статті DIB є ціллю кібер-руйнування, а запис плутає суб'єкт і дію."},
+  {"item_id": "E010", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: McNamara є членом GTIG, а не навпаки."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "Про компанії з дуальними компонентами сказано, що цей сектор часто уражається ransomware."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Актори атакують усю оборонну екосистему, що подано як факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Компанії, що постачають компоненти подвійного призначення, як-от дрони, подано як факт."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Сектор компаній з дуальними компонентами часто потерпає від вимагання, подано як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Ransomware та вимагання опосередковано впливають на оборонний ланцюг постачання, подано як факт."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Кампанії проти DIB часто призначені для підготовки доступу до майбутньої війни, подано як типова поведінка."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Шпигунські операції проти урядових агентств описані як чинна практика збирання розвідданих."}
+ ]
+}

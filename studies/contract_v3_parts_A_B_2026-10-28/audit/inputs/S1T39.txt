@@ -1,0 +1,152 @@
+AUDIT_FILE: S1T39
+TARGET_DOC_ID: D0198
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0198
+PUBLICATION_DATE: 2026-05-11
+SOURCE_URL: https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/
+TITLE_SHA256: 0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+BEGIN_DOCUMENT
+[D0198:P0001] sha256:0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+[D0198:P0002] sha256:2e8115ded6d3fe87b8865c341db0a97a4457f45d09ef91ab159ad80361eeb267
+[D0198:P0003] sha256:6562eb4289bc9d809ebf70bd729ece6bfc4499db889399d0cb9a6b644f8e4a8d
+[D0198:P0004] sha256:276d47b532a777d1f4630865a7a20b1d801278b1b86809765fca789f4ba3811e
+[D0198:P0005] sha256:ae5618fe17e75052335a087a53825be52111494bd2ecb5f47deef188a4b2ef23
+[D0198:P0006] sha256:e8d41303beca519afcd2a40457340ec1ddc1ba8631127e4dd9d26eb69a325d2d
+[D0198:P0007] sha256:b781074844edff36d4c1e37e8fc00727dbc30bdf57581aed556476e35d998b27
+[D0198:P0008] sha256:7b44918a0724d02fa19089c9af7679a60db9ea7dc448d1a2afbcdc14e77cdec5
+[D0198:P0009] sha256:ef63072e5a12794545fa2b5ee40d74a2fa126ee6a313797e5f4f347ea0a6504d
+[D0198:P0010] sha256:ec945c4dc77a11d85627264415207f0be3ea815164d18cd2f1657633f0cf4687
+[D0198:P0011] sha256:e4a6d4d1aa3319da70da4be1638874e7028e5fa5dad92a68766f351416a80252
+[D0198:P0012] sha256:d25b40103ff389b99011800d0582e6df83adfaeef2757cedc038cd4b0130bc36
+[D0198:P0013] sha256:45bbdb6be62138accd2d184f9975ccbb8d42bf3aba6fdd9ac544e0ec6788e93b
+[D0198:P0014] sha256:d95082a2ee57f3e40e3050662a346e26a872fd4d0baf57d293ac5a883f0f4ff5
+[D0198:P0015] sha256:47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442
+[D0198:P0016] sha256:8703d8054f7581deb089dd7c43ffab6ac3f96f00fb65328faff85ebb7bbae551
+[D0198:P0017] sha256:1cf5d06433a6f71099b22bbb0ed527f99ba22595e2ca956891a4b4451cb6c26a
+[D0198:P0018] sha256:b8aada94edac40931e664cb48cf267fb926770267a5612e468f5204a85629a61
+[D0198:P0019] sha256:4de763f1a2e40709584e760a21cc40246f129143ab4086e4ade82115eee60a11
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (70)
+E001: «Defence» — operates → «Defence's networks» | форма: actual, positive
+E002: «Australia's 2026 National Defence Strategy (NDS)» — demonstrates stronger commitment to → «cyber defence and capability» | форма: actual, positive
+E003: «zero-trust architecture» — protects → «Defence's networks» | форма: planned, positive
+E004: «authoritarian regimes» — targets → «critical infrastructure» | форма: possible, positive
+E005: «command-and-control architecture» — contains → «legacy components» | форма: actual, positive
+E006: «quantum capability» — enables → «harvesting now and decrypting later» | форма: conditional, positive
+E007: «critical infrastructure operators» — show uneven progress in → «post-quantum transition» | форма: actual, positive
+E008: «Gatra Priyandita» — member of → «ASPI» | форма: actual, positive
+E009: «Integrated Investment Program (IIP)» — names as approach for protecting Defence's networks → «advanced encryption» | форма: actual, positive
+E010: «Integrated Investment Program (IIP)» — names as approach for protecting Defence's networks → «zero-trust architecture» | форма: actual, positive
+E011: «Australia's 2026 National Defence Strategy (NDS)» — directs between A$27 billion and A$38 billion over the decade to → «cyber, space and electronic warfare» | форма: actual, positive
+E012: «major data breaches» — caused by → «third-party failures overseas» | форма: actual, positive
+E013: «data breaches» — affects → «Australian companies» | форма: actual, positive
+E014: «Australia» — needs to integrate offensive cyber capabilities into → «broader military operations and alliance frameworks» | форма: actual, positive
+E015: «legacy components» — are increasingly visible to → «AI-enabled discovery tools» | форма: actual, positive
+E016: «Australian Signals Directorate» — uses → «quantum-resistant cryptography» | форма: planned, positive
+E017: «perimeter-based models» — are increasingly inadequate against → «adversaries automating the discovery of vulnerabilities» | форма: actual, positive
+E018: «Australia's strategy of denial» — includes domain → «space» | форма: actual, positive
+E019: «legacy components» — part of → «command-and- control architecture» | форма: actual, positive
+E020: «authoritarian regimes» — targets → «critical infrastructure» | форма: possible, negative
+E021: «investment in offensive and intelligence-led cyber capabilities» — rose from between A$6.4 billion and A$8.4 billion to → «between A$10 billion and A$15 billion» | форма: actual, positive
+E022: «authoritarian regimes» — targets → «critical infrastructure» | форма: actual, positive
+E023: «Australian Signals Directorate (ASD)» — aims to complete quantum-resistant cryptography transition by → «2030» | форма: actual, positive
+E024: «Australia's defence logistics» — contains → «legacy components» | форма: actual, positive
+E025: «classified communications infrastructure» — contains → «legacy components» | форма: actual, positive
+E026: «artificial intelligence» — enables → «offensive cyber capabilities» | форма: possible, positive
+E027: «AI-enabled cyber tools» — map legacy exposure at machine speed across → «attack surfaces» | форма: actual, positive
+E028: «state and non-state actors» — were multiplying → «cyber capabilities» | форма: actual, positive
+E029: «legacy components» — part of → «classified communications infrastructure» | форма: actual, positive
+E030: «authoritarian regimes» — are increasingly willing and able to disrupt → «critical infrastructure» | форма: actual, positive
+E031: «Integrated Investment Program (IIP)» — describes as domain shaping the modern battlespace in real time → «cyber» | форма: actual, positive
+E032: «Australia's 2026 National Defence Strategy (NDS)» — warns of extreme levels of → «foreign interference» | форма: actual, positive
+E033: «advanced encryption» — protects → «Defence's networks» | форма: actual, positive
+E034: «Defence's networks» — protects → «advanced encryption» | форма: planned, positive
+E035: «Redspice» — uses AI for processing → «increasing data volumes» | форма: actual, positive
+E036: «Australian companies» — suffered → «major data breaches» | форма: actual, positive
+E037: «Defence» — uses → «zero-trust architecture» | форма: planned, positive
+E038: «advanced encryption» — protects → «Defence's networks» | форма: planned, positive
+E039: «NDS 2026 - More resourcing for a complex cyber threat environment» — published on → «12 May 2026» | форма: actual, positive
+E040: «Defence-adjacent entities» — show uneven progress in → «post-quantum transition» | форма: actual, positive
+E041: «Redspice» — develops → «offensive and intelligence-led cyber capabilities» | форма: actual, positive
+E042: «Redspice» — is → «Australia's signals intelligence and cyber uplift program» | форма: actual, positive
+E043: «Redspice» — uses AI for enabling → «offensive and defensive cyber capabilities» | форма: actual, positive
+E044: «Australian Signals Directorate (ASD)» — reports significant progress on → «Redspice» | форма: actual, positive
+E045: «zero-trust architecture» — protects → «Defence's networks» | форма: actual, positive
+E046: «Australia's 2026 National Defence Strategy (NDS)» — identifies as core enabler → «artificial intelligence» | форма: actual, positive
+E047: «harvest now, decrypt later» — makes readable → «encrypted data collected today» | форма: actual, positive
+E048: «Australia» — prioritizes engagement with → «Southeast Asian partners» | форма: actual, positive
+E049: «Australia's 2026 National Defence Strategy (NDS)» — warns of extreme levels of → «espionage» | форма: actual, positive
+E050: «Defence» — reports significant progress on → «Redspice» | форма: actual, positive
+E051: «legacy components» — part of → «defence logistics» | форма: actual, positive
+E052: «Gatra Priyandita» — authored → «NDS 2026 - More resourcing for a complex cyber threat environment» | форма: actual, positive
+E053: «legacy components» — are difficult to patch without → «operational disruption» | форма: actual, positive
+E054: «Australia's 2026 National Defence Strategy (NDS)» — is compared with → «2024 strategy» | форма: actual, positive
+E055: «Australian Signals Directorate (ASD)» — is transitioning to → «quantum-resistant cryptography» | форма: actual, positive
+E056: «Gatra Priyandita» — is senior analyst at → «ASPI» | форма: actual, positive
+E057: «post-quantum transition» — show uneven progress in → «Defence-adjacent entities» | форма: actual, positive
+E058: «legacy components» — part of → «classified communications infrastructure» | форма: actual, negative
+E059: «Australia's strategy of denial» — includes domain → «cyber» | форма: actual, positive
+E060: «NDS 2026 - More resourcing for a complex cyber threat environment» — published in → «The ASPI Strategist» | форма: actual, positive
+E061: «Defence» — needs concrete guidance on → «zero-trust implementation across Defence and its supply chain» | форма: actual, positive
+E062: «perimeter-based models» — trust → «users and devices inside the network boundary» | форма: actual, positive
+E063: «Integrated Investment Program (IIP)» — demonstrates stronger commitment to → «cyber defence and capability» | форма: actual, positive
+E064: «Redspice» — uses → «artificial intelligence» | форма: actual, positive
+E065: «Australia's 2026 National Defence Strategy (NDS)» — halved funding for hardening → «Defence's own network infrastructure» | форма: actual, positive
+E066: «artificial intelligence» — enables → «offensive cyber capabilities» | форма: actual, positive
+E067: «NDS 2026 - More resourcing for a complex cyber threat environment» — available at → «https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/» | форма: actual, positive
+E068: «artificial intelligence» — enables → «defensive cyber capabilities» | форма: actual, positive
+E069: «zero-trust architecture» — treats entities as → «untrustworthy by default» | форма: actual, positive
+E070: «Defence» — needs concrete guidance on → «zero-trust implementation across Defence and its supply chain» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ

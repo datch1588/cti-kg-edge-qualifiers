@@ -1,0 +1,11 @@
+{
+ "audit_file": "R2_T45",
+ "target_doc_id": "D0055",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "У D0055:P0023 сказано як факт, що Australian Federal Police declined to comment, тож маркер «possibly» у формулюванні хибно робить здійснену дію лише можливою."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "D0055:P0012 як факт заперечує, що Farleigh mill повністю працює з June 10 («have not been fully operational since June 10»), і заперечне формулювання це передає."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0055:P0017–P0018 з посиланням на звіт Check Point Research як факт подано, що Австралію названо четвертою за кількістю атак The Gentlemen країною, тож actual positive відповідає."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає атаку The Gentlemen на Mackay Sugar як факт, а стаття подає це лише як заяву угруповання, яку не перевірено незалежно і на користь якої мало доказів (D0055:P0011, P0015, P0019)."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "D0055:P0012 як факт заперечує, що Racecourse mill повністю працює з June 10, і заперечне формулювання це передає."}
+ ]
+}

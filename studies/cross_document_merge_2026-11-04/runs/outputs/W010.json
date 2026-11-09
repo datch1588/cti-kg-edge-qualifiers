@@ -1,0 +1,105 @@
+{
+  "run_id": "W010",
+  "target_doc_id": "D0074",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Russia",
+      "entity_type": "country",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0021", "start": 0, "end": 98, "sha256": "57848c93c34df4776632f4a9004d5204248ccdd91e9198d60fcc353b1524d602"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Check Point",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0019", "start": 0, "end": 167, "sha256": "34d5a989794a451c4e6d02c5909913ea0aba3cc51db39fa41a28a839c119e72c"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "CrowdStrike",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0019", "start": 0, "end": 167, "sha256": "34d5a989794a451c4e6d02c5909913ea0aba3cc51db39fa41a28a839c119e72c"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "F6",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0026", "start": 148, "end": 265, "sha256": "6dedbd15d0b6067fcbe484fa44cc9db1aaf4c26acd8f0fb61286a02cf734c7d6"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Fortinet",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0019", "start": 0, "end": 167, "sha256": "34d5a989794a451c4e6d02c5909913ea0aba3cc51db39fa41a28a839c119e72c"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Gartner",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0020", "start": 150, "end": 299, "sha256": "b525fb0bb6a9138d63c8c96c599632c0f066492fda6f6cbd10a7bcabfe548ad4"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "Palo Alto Networks",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0019", "start": 0, "end": 167, "sha256": "34d5a989794a451c4e6d02c5909913ea0aba3cc51db39fa41a28a839c119e72c"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Positive Technologies",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0021", "start": 0, "end": 200, "sha256": "572ad4e672b5ac60432a44c3edddf6023cc176eb55b1372fba2541372b73d49a"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "Solar",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0026", "start": 148, "end": 265, "sha256": "6dedbd15d0b6067fcbe484fa44cc9db1aaf4c26acd8f0fb61286a02cf734c7d6"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n008",
+      "target": "n001",
+      "relation_type": "LOCATED_IN",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0074", "paragraph_id": "D0074:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0074:P0021", "start": 0, "end": 98, "sha256": "57848c93c34df4776632f4a9004d5204248ccdd91e9198d60fcc353b1524d602"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

@@ -1,0 +1,139 @@
+AUDIT_FILE: S3N18
+TARGET_DOC_ID: D0159
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0159
+PUBLICATION_DATE: 2026-05-21
+SOURCE_URL: https://breakingdefense.com/2026/05/first-defense-critical-infrastructure-summit-aims-to-develop-repeatable-playbook/
+TITLE_SHA256: 6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+BEGIN_DOCUMENT
+[D0159:P0001] sha256:6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+[D0159:P0002] sha256:3343de4ef4c559a5cd5e51491b8027684b857d0ceecdb2cf2a49dbd799f58309
+[D0159:P0003] sha256:fe6e2b30651f4e57280e2afe90bf1a5d418f5152b594e744d536136c8b8d53b0
+[D0159:P0004] sha256:4c68f106c0fd35aeb1cf22955f0c73e188306a16e1e0dd393da066a04e85f8aa
+[D0159:P0005] sha256:767888feefae4c5abe1f05441f32c31833ac3e09d173a0afb2c63b6a7e6fa026
+[D0159:P0006] sha256:4c15835c8370ee70f07fa5f00dff73d72768211622fd973f84ced2e92cd5ac59
+[D0159:P0007] sha256:3a2ddc808b8ded81fc854b1686ceadf3f3441e4e968e307c8b405bf7bd395313
+[D0159:P0008] sha256:55e4c7c1ea5d9bc003f91bb3c36179ea09cd2a0da79de257d163df1daededc4d
+[D0159:P0009] sha256:cceba4eada9f75fe009f4baa03a41fee12f1b230b992a826abb1eb2d86c60b17
+[D0159:P0010] sha256:8bdd47abcd0743118121cb1296746b5145aec91c5ca68de63ec6de27b78fc192
+[D0159:P0011] sha256:288c18b6a6caa87436fe5e6f601eee035d2a037b83d7a1707d3f5c2743cc1672
+[D0159:P0012] sha256:6c796ec9c2812a6d2d631e3764b2175265c6a885548a7543ad929bb473a1b8d3
+[D0159:P0013] sha256:ea9fa4f9087d08545b1c7d8f40b9c49391f108770f03d58c1c400d2f9ca6bd26
+[D0159:P0014] sha256:31cf2671dc85ad541e709c971d91f76380ff4dea217d21e6e69109b8cf9c478e
+[D0159:P0015] sha256:1bf5a6128f88f8699b0a282c12561dab85ddfd3fb11c540865408346a7472beb
+[D0159:P0016] sha256:9114ba87f2d99eb41077fd34930ac43dec5d7967a5029111c1e9c07f83cf483e
+[D0159:P0017] sha256:3e4ac269f3f720620a0a9a3c06d02e3d076607ab80f6b1b1c6ee1a91d7543abe
+[D0159:P0018] sha256:2b5ff1ef41cc9131cbe6f2ee4276a7756720973a7d25faafd83575134999a08b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (58)
+E001: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: conditional, positive
+E002: «Army Cyber Institute» — located in → «West Point» | форма: actual, positive
+E003: «coordinated attacks» — targets → «Fort Bragg» | форма: possible, negative
+E004: «Operation Spider's Web» — located in → «Russia» | форма: actual, positive
+E005: «Brandon Pugh» — member of → «Army» | форма: actual, positive
+E006: «Daniel Driscoll» — is → «Army Secretary» | форма: actual, positive
+E007: «Operation Spider's Web» — targets → «Russia» | форма: actual, positive
+E008: «Daniel Driscoll» — leads → «Army» | форма: actual, positive
+E009: «coordinated attacks» — targets → «commercial electric stations» | форма: possible, positive
+E010: «82nd Airborne Division» — is known as → «9-1-1 force» | форма: actual, positive
+E011: «accidental hit to a fiberoptic line» — caused → «command and control degradation» | форма: actual, positive
+E012: «First Defense Critical Infrastructure summit aims to develop repeatable playbook» — published on → «May 21, 2026» | форма: actual, positive
+E013: «XVIII Airborne Corps» — part of → «Army» | форма: actual, positive
+E014: «drone demonstration» — held on → «March 31, 2026» | форма: actual, positive
+E015: «XVIII Airborne Corps» — located in → «Fort Bragg» | форма: actual, positive
+E016: «Army» — held → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+E017: «Defense Critical Infrastructure (DCI) Summit» — held at → «Fort Bragg» | форма: actual, positive
+E018: «critical infrastructure» — is owned and operated by → «private companies» | форма: actual, positive
+E019: «military» — operates → «critical infrastructure» | форма: actual, negative
+E020: «Brandon Pugh» — took down → «19 lessons learned» | форма: actual, positive
+E021: «Ukraine» — hid drones in boxes and shipped them behind enemy lines in → «Russia» | форма: possible, positive
+E022: «Army» — gamed out response to → «coordinated and simultaneous attack on an installation» | форма: actual, positive
+E023: «Operation Spider's Web» — occurred in → «Russia» | форма: actual, positive
+E024: «82nd Airborne Division» — part of → «XVIII Airborne Corps» | форма: actual, positive
+E025: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: actual, positive
+E026: «drone demonstration» — held at → «Fort Bragg» | форма: actual, positive
+E027: «cyberattacks» — targeted → «Supervisory Control and Data Acquisition systems» | форма: actual, positive
+E028: «coordinated attacks» — targets → «Fort Bragg» | форма: possible, positive
+E029: «Russia» — located in → «Operation Spider's Web» | форма: actual, positive
+E030: «First Defense Critical Infrastructure summit aims to develop repeatable playbook» — published by → «Breaking Defense» | форма: actual, positive
+E031: «First Defense Critical Infrastructure summit aims to develop repeatable playbook» — authored by → «Mark Pomerleau» | форма: actual, positive
+E032: «Ukraine» — conducted → «Operation Spider's Web» | форма: actual, positive
+E033: «Operation Spider's Web» — attributed to → «Ukraine» | форма: actual, positive
+E034: «private companies» — operates → «critical infrastructure» | форма: actual, positive
+E035: «Brandon Pugh» — develops → «DCI playbook» | форма: planned, positive
+E036: «Ukraine» — uses → «drones» | форма: actual, positive
+E037: «tabletop exercise» — part of → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+E038: «coordinated attacks» — uses → «drones» | форма: possible, positive
+E039: «Army» — aims to develop → «DCI playbook» | форма: actual, positive
+E040: «Operation Spider's Web» — located in → «Russia» | форма: actual, negative
+E041: «Brandon Pugh» — is principal cyber advisor to → «secretary of the Army» | форма: actual, positive
+E042: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: possible, positive
+E043: «XVIII Airborne Corps» — chosen to participate in → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+E044: «Operation Spider's Web» — located in → «Russia» | форма: possible, positive
+E045: «Fort Bragg» — is home station of → «XVIII Airborne Corps» | форма: actual, positive
+E046: «Operation Spider's Web» — targeted → «Russia» | форма: actual, positive
+E047: «Army Cyber Institute at West Point» — wrote down lessons learned from → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+E048: «Ukraine» — hid drones in boxes and shipped them behind enemy lines in → «Russia» | форма: actual, positive
+E049: «drones with explosive charges» — targeted → «commercial electric stations» | форма: actual, positive
+E050: «Operation Spider's Web» — impacted → «Russia's operational abilities» | форма: actual, positive
+E051: «Defense Critical Infrastructure (DCI) Summit» — used threat similar to → «Operation Spider's Web» | форма: actual, positive
+E052: «XVIII Airborne Corps» — includes → «82nd Airborne Division» | форма: actual, positive
+E053: «XVIII Airborne Corps» — hosted → «drone demonstration» | форма: actual, positive
+E054: «14 external partners» — participated in → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+E055: «Defense Critical Infrastructure (DCI) Summit» — located in → «Fort Bragg» | форма: actual, positive
+E056: «Ukraine» — targets → «Russia» | форма: actual, positive
+E057: «cyberattacks on Supervisory Control and Data Acquisition systems» — caused → «E. Coli outbreak» | форма: actual, positive
+E058: «government» — operates → «critical infrastructure» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ

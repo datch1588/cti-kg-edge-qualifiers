@@ -1,0 +1,105 @@
+AUDIT_FILE: S5F46
+TARGET_DOC_ID: D0064
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0064
+PUBLICATION_DATE: 2026-06-14
+SOURCE_URL: https://tribune.net.ph/2026/06/14/pnp-urges-cyber-defense-review-after-house-website-hack
+TITLE_SHA256: cdc5306814918d6b2abb2b069e61d6430c9abbde59b46c48bcdcc9e42cb9e704
+BEGIN_DOCUMENT
+[D0064:P0001] sha256:cdc5306814918d6b2abb2b069e61d6430c9abbde59b46c48bcdcc9e42cb9e704
+[D0064:P0002] sha256:c5abc1e18c60b129fbe4cc1a4c29bc72738d0699ae437fecf1e22bfa2e76e72a
+[D0064:P0003] sha256:7f8a7029a23ed161fb0d6531e257213d628f37f49e196ccb2df2eb72e700f30b
+[D0064:P0004] sha256:aba53c9232342873d42004cbebe5f33b492f62e8914f6f00db0707de70af4122
+[D0064:P0005] sha256:8d525e5f158b9afe05f3122af363ac67763bdc4e1395b46597b320c289766ce3
+[D0064:P0006] sha256:9da65f7028ab5a62898ad73bf06a09e8219d2f7a3cd9530e6af3e6888ffa32bd
+[D0064:P0007] sha256:7ad32030f939ed3e64b2866400637113325d8079c94fd646a69c55208556727f
+[D0064:P0008] sha256:10717189e77cdf3dfe505fb9f76ce0b0f9a37fe39541934b30c92479c0012d95
+[D0064:P0009] sha256:36dd5b49d904f77df4c223ede2f0405153dd4965a082e105d52d1a290908e010
+[D0064:P0010] sha256:5d3e2a9654b009d520388448bad608902a25a3399a01026fc845549ef3026054
+[D0064:P0011] sha256:6d05c37eac50bc3445de39ddfead062872da4c459b1a9f62d6ce61ed0c7eb563
+[D0064:P0012] sha256:3220a09878d5e5cb41827df814e7cbce4e4c58384443691e4450d1a0e128b3dd
+[D0064:P0013] sha256:800ec48cde1e7ea4dd142dd028780fb8f9f5c8676b9f068a04a1fda87ba75dfe
+[D0064:P0014] sha256:294116dac8f08e05c85b5171aeda11a7f1ebbc9f3c161dbfa0b8ff745c4c72c3
+[D0064:P0015] sha256:b822fe70f67eafa7ff08637e3ad0a855c219ce43484335a1b36a9a7db3a05c6f
+[D0064:P0016] sha256:8a08663a075d828dcac22b422428c4385b9a27f660189e43a28e0ea420d7687b
+[D0064:P0017] sha256:84b6544822485fbd5a3318d88bea86615b66d4418f7a7e40f1d2a4f720afc5de
+[D0064:P0018] sha256:b1a88ab0d94b274796da1c0be657e831c01a65b042632787166cbe3e45c2469d
+[D0064:P0019] sha256:7c8646a4d7787da397320f2989cb9b54078391a56d0aa0d07be8559c3cae92b3
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (23)
+E001: «security protocols» — mitigates → «hacking incident» | форма: actual, positive
+E002: «Nullsec Philippines» — targets → «Senate website» | форма: actual, positive
+E003: «Senate website hacking» — attributed to → «Nullsec Philippines» | форма: actual, positive
+E004: «hacking incident» — targets → «Senate website» | форма: actual, positive
+E005: «hacking incident» — affects → «confidential records» | форма: actual, negative
+E006: «Anti-Cybercrime Group» — part of → «Philippine National Police» | форма: actual, positive
+E007: «Senate website hacking» — reports on → «Senate Electronic Data Processing-Management Information System Bureau» | форма: actual, positive
+E008: «Nullsec Philippines» — uses → «social media» | форма: actual, positive
+E009: «House of Representatives» — operates → «House of Representatives' website» | форма: actual, positive
+E010: «Jose Melencio Nartatez Jr.» — warns about → «cyber threats» | форма: actual, positive
+E011: «Jose Melencio Nartatez Jr.» — leads → «Philippine National Police» | форма: actual, positive
+E012: «Senate» — operates → «Senate website» | форма: actual, positive
+E013: «House website hack» — attributed to → «group of hackers» | форма: actual, positive
+E014: «House website hack» — affects → «House of Representatives' website» | форма: actual, positive
+E015: «website defacement» — affects → «House of Representatives» | форма: actual, positive
+E016: «Anti-Cybercrime Group» — part of → «Philippine National Police» | форма: actual, negative
+E017: «Senate Electronic Data Processing-Management Information System Bureau» — reports on → «Senate website hacking» | форма: actual, positive
+E018: «hacking incident» — affects → «Senate» | форма: actual, positive
+E019: «Senate Electronic Data Processing-Management Information System Bureau» — reports on → «hacking incident» | форма: actual, positive
+E020: «hacking incident» — attributed to → «Nullsec Philippines» | форма: actual, positive
+E021: «Senate website hacking» — affects → «confidential records» | форма: actual, negative
+E022: «Senate Electronic Data Processing-Management Information System Bureau» — part of → «Senate» | форма: actual, positive
+E023: «Senate website hacking» — targets → «Senate website» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

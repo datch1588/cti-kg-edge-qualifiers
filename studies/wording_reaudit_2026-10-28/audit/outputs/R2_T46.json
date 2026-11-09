@@ -1,0 +1,14 @@
+{
+ "audit_file": "R2_T46",
+ "target_doc_id": "D0017",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0005 злам конфіденційності квантовими обчисленнями подано лише як гіпотетичну загрозу («if quantum is used to break this»), що відповідає формулюванню «could be used to break»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0005 зі слів Панта прямо сказано, що «quantum computing poses a challenge to telecom security», тобто це подано як чинний стан речей."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0006 сказано «AI can quickly detect ... a spear phishing email», тобто йдеться про можливість, як і у формулюванні «can detect»."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0005 сказано, що квантові обчислення «could affect the confidentiality of communications», тобто це можливість, як і у формулюванні."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0005 сказано, що ця технологія «can also help strengthen cybersecurity defences», тобто це можливість, що збігається з формулюванням."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never includes» заперечує звʼязок, а в D0017:P0012 стверджено, що дані проходять зокрема через «terrestrial networks», тобто стаття звʼязок стверджує."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0013 сказано, що вразливість в одній частині глобальної мережі «can impact other countries», тобто це можливість, як і у формулюванні."},
+  {"item_id": "W008", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0017:P0006 сказано «AI can quickly detect if it is a deepfake», тобто йдеться про можливість, що відповідає формулюванню «can detect»."}
+ ]
+}

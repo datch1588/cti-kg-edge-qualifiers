@@ -1,0 +1,94 @@
+{
+ "run_id": "Y055",
+ "target_doc_id": "D0107",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "WannaCry", "entity_type": "malware", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 209, "end": 282, "sha256": "ff07aacf22b5d137af4a403ca93d770215fc418feac027993dee9b543a67e759"}}
+  ]},
+  {"id": "n002", "label": "Adaptive Computer Worms", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0001", "start": 0, "end": 40, "sha256": "351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741"}},
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 411, "end": 516, "sha256": "deeb27990eff872d506483d3b6589d640441534599079a460818ba4ac65c63d3"}}
+  ]},
+  {"id": "n003", "label": "computer worm", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 105, "end": 208, "sha256": "5b5bf3cbc7bc2abf50e0ec6b237e841abace373601eb35aab54c0dab0757413e"}}
+  ]},
+  {"id": "n004", "label": "patching", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 288, "end": 348, "sha256": "fed751005125a2c46eedf7cffea88468247ec7fcaf0e514e792f9ff73a564d33"}}
+  ]},
+  {"id": "n005", "label": "Linux", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 778, "sha256": "8dddac5f88cda6fbf1737342d151bad7363cd2197a2f12b9453a343ef3cb4dcd"}}
+  ]},
+  {"id": "n006", "label": "Windows", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 778, "sha256": "8dddac5f88cda6fbf1737342d151bad7363cd2197a2f12b9453a343ef3cb4dcd"}}
+  ]},
+  {"id": "n007", "label": "AI Agents", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0001", "start": 0, "end": 40, "sha256": "351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741"}},
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 350, "end": 437, "sha256": "3ca98357fc0ebb339fcf624b3c18d019699c3cbd792aa638e0b1815eec3dfaa6"}}
+  ]},
+  {"id": "n008", "label": "centralized safety controls", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1113, "end": 1212, "sha256": "5c776d6f60cf8ee251eeac8d07d7c9cde02a7c70dc831dba5ed76e8d47ebe6cc"}}
+  ]},
+  {"id": "n009", "label": "commercial AI platform", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1060, "end": 1111, "sha256": "1a823cd9d68ed3f362b89a507381435b93d40fc50c7bbc5d94131dc4f0b93a3c"}}
+  ]},
+  {"id": "n010", "label": "IoT", "entity_type": "technology", "aliases": ["Internet of Things"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 778, "sha256": "8dddac5f88cda6fbf1737342d151bad7363cd2197a2f12b9453a343ef3cb4dcd"}}
+  ]},
+  {"id": "n011", "label": "large language models", "entity_type": "technology", "aliases": ["LLMs"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 518, "end": 640, "sha256": "6831744258ee09cdbbda8b9a9a6cffff502fc15bc9be112e0b0010e017291d2c"}}
+  ]},
+  {"id": "n012", "label": "rate limiting", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1113, "end": 1212, "sha256": "5c776d6f60cf8ee251eeac8d07d7c9cde02a7c70dc831dba5ed76e8d47ebe6cc"}}
+  ]},
+  {"id": "n013", "label": "service refusals", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1113, "end": 1212, "sha256": "5c776d6f60cf8ee251eeac8d07d7c9cde02a7c70dc831dba5ed76e8d47ebe6cc"}}
+  ]},
+  {"id": "n014", "label": "corporate network vulnerabilities", "entity_type": "vulnerability", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 780, "end": 866, "sha256": "ce6135a56881ec1f2fd572496a83a375c38960dc77456bf80182d7154a5abc8c"}}
+  ]},
+  {"id": "n015", "label": "predetermined vulnerabilities", "entity_type": "vulnerability", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 209, "end": 282, "sha256": "ff07aacf22b5d137af4a403ca93d770215fc418feac027993dee9b543a67e759"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n015", "relation_type": "EXPLOITS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 209, "end": 349, "sha256": "e657838a1a446620fc90eb2cc0e80d0b96f66a3725c700c822b620e248f91c0a"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n005", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "deployment of the worm on a network of Linux, Windows and IoT machines", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 867, "sha256": "d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48"}}
+  ]},
+  {"id": "e003", "source": "n002", "target": "n006", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "deployment of the worm on a network of Linux, Windows and IoT machines", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 867, "sha256": "d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48"}}
+  ]},
+  {"id": "e004", "source": "n002", "target": "n010", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "deployment of the worm on a network of Linux, Windows and IoT machines", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 867, "sha256": "d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48"}}
+  ]},
+  {"id": "e005", "source": "n002", "target": "n014", "relation_type": "EXPLOITS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "deployment of the worm on a network of Linux, Windows and IoT machines", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 683, "end": 867, "sha256": "d4a63aab5bd25d46ce6ad2f0009bc6e02dd1c744a178a16c5cd24293fd14fd48"}}
+  ]},
+  {"id": "e006", "source": "n002", "target": "n009", "relation_type": "USES", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1050, "end": 1213, "sha256": "aabf8ea0afd2bbcf8f00559c7e4087bc8f6b51a342be82237857b22219470f67"}}
+  ]},
+  {"id": "e007", "source": "n002", "target": "n011", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 518, "end": 682, "sha256": "56b6f763b5ce4135a2eb1888371335efa1361a6bca6f8ddfa7dd28d9bc1a8665"}}
+  ]},
+  {"id": "e008", "source": "n004", "target": "n001", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 209, "end": 349, "sha256": "e657838a1a446620fc90eb2cc0e80d0b96f66a3725c700c822b620e248f91c0a"}}
+  ]},
+  {"id": "e009", "source": "n007", "target": "n002", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0001", "start": 0, "end": 40, "sha256": "351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741"}},
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 350, "end": 517, "sha256": "9a8403b4ec83ab420ea185f1dbb992529e73fad135127a4010c2f97233460a76"}}
+  ]},
+  {"id": "e010", "source": "n008", "target": "n002", "relation_type": "MITIGATES", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1050, "end": 1213, "sha256": "aabf8ea0afd2bbcf8f00559c7e4087bc8f6b51a342be82237857b22219470f67"}}
+  ]},
+  {"id": "e011", "source": "n012", "target": "n002", "relation_type": "MITIGATES", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1050, "end": 1213, "sha256": "aabf8ea0afd2bbcf8f00559c7e4087bc8f6b51a342be82237857b22219470f67"}}
+  ]},
+  {"id": "e012", "source": "n013", "target": "n002", "relation_type": "MITIGATES", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0107", "paragraph_id": "D0107:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0107:P0002", "start": 1050, "end": 1213, "sha256": "aabf8ea0afd2bbcf8f00559c7e4087bc8f6b51a342be82237857b22219470f67"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,105 @@
+{
+ "run_id": "X120",
+ "target_doc_id": "D0166",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "China", "entity_type": "country", "aliases": ["Communist China"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 12, "end": 98, "sha256": "8d85fac4cef1a356bd5b773ff41169ed43b1c489cc3dd0eea86dc431dc64c284"}}
+  ]},
+  {"id": "n002", "label": "U.S.", "entity_type": "country", "aliases": ["America"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}}
+  ]},
+  {"id": "n003", "label": "Chinese Communist Party", "entity_type": "organization", "aliases": ["CCP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 233, "sha256": "5d08045ed1359dad0dbf411522b4482228e4d50fda65d7dc65bc6ec47ded26ff"}}
+  ]},
+  {"id": "n004", "label": "Congress", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 111, "end": 200, "sha256": "f773491e5eab5e7f0bbfddb46a9b3dc7313bdfee218e8581cc273f00afe912d5"}}
+  ]},
+  {"id": "n005", "label": "Cybersecurity and Infrastructure Security Agency", "entity_type": "organization", "aliases": ["CISA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 383, "sha256": "df96cefdc131d6087058ceb184fbfe9ab049c83e6c7fc78ba56766b89a726b4d"}}
+  ]},
+  {"id": "n006", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": ["DHS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 96, "sha256": "39a917c25b2a92c1bfd8596c38828db60c5030671af767620e31e50888c406c7"}}
+  ]},
+  {"id": "n007", "label": "Senate", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0016", "start": 103, "end": 163, "sha256": "72438e80660aff55aef0af3a05ad34d6cef9da9708158f8f775abeffd938d6a2"}}
+  ]},
+  {"id": "n008", "label": "U.S. government agencies", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 170, "sha256": "9480ef1a4cb5f04985f0f013be1a2b91bdbe38fddf0bf8bbdb4f060da1159c93"}}
+  ]},
+  {"id": "n009", "label": "U.S. House of Representatives", "entity_type": "organization", "aliases": ["House"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}}
+  ]},
+  {"id": "n010", "label": "communications", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 320, "sha256": "0214caa9ad9a581ae2b3379e5a918636648c9cc04a5e92c641a34401bf85ab65"}}
+  ]},
+  {"id": "n011", "label": "critical infrastructure sectors", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 320, "sha256": "0214caa9ad9a581ae2b3379e5a918636648c9cc04a5e92c641a34401bf85ab65"}}
+  ]},
+  {"id": "n012", "label": "energy", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 320, "sha256": "0214caa9ad9a581ae2b3379e5a918636648c9cc04a5e92c641a34401bf85ab65"}}
+  ]},
+  {"id": "n013", "label": "Strengthening Cyber Resilience Against State-Sponsored Threats Act", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 111, "end": 238, "sha256": "b49ffdd5f12a10890151106fa2371666ed950f4e6e52e2cb837694ca60766ad3"}}
+  ]},
+  {"id": "n014", "label": "transportation systems", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 320, "sha256": "0214caa9ad9a581ae2b3379e5a918636648c9cc04a5e92c641a34401bf85ab65"}}
+  ]},
+  {"id": "n015", "label": "water and wastewater systems", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 320, "sha256": "0214caa9ad9a581ae2b3379e5a918636648c9cc04a5e92c641a34401bf85ab65"}}
+  ]},
+  {"id": "n016", "label": "Andy Ogles", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}}
+  ]},
+  {"id": "n017", "label": "Rick Scott", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 0, "end": 51, "sha256": "86006e1d54f686bbe846b231790c2bfd245c9f8fd040e34f300f917006482fd6"}}
+  ]},
+  {"id": "n018", "label": "Salt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 209, "end": 281, "sha256": "55a5520092c78e4a7726c866c3e866deb62612a00e402ad0f36a9e255e64192c"}}
+  ]},
+  {"id": "n019", "label": "Volt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 209, "end": 281, "sha256": "55a5520092c78e4a7726c866c3e866deb62612a00e402ad0f36a9e255e64192c"}},
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 170, "sha256": "9480ef1a4cb5f04985f0f013be1a2b91bdbe38fddf0bf8bbdb4f060da1159c93"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}}
+  ]},
+  {"id": "e002", "source": "n005", "target": "n006", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 124, "end": 146, "sha256": "25e5666fb9254db24b00d26e646a0ad013b5fc86e963ca006b7fe3e3e9e729c5"}}
+  ]},
+  {"id": "e003", "source": "n008", "target": "n019", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "February 2024", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+  ]},
+  {"id": "e004", "source": "n016", "target": "n009", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 52, "end": 150, "sha256": "6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62"}}
+  ]},
+  {"id": "e005", "source": "n016", "target": "n001", "relation_type": "WARNS_ABOUT", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+  ]},
+  {"id": "e006", "source": "n017", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0017", "start": 0, "end": 51, "sha256": "86006e1d54f686bbe846b231790c2bfd245c9f8fd040e34f300f917006482fd6"}}
+  ]},
+  {"id": "e007", "source": "n017", "target": "n001", "relation_type": "WARNS_ABOUT", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+  ]},
+  {"id": "e008", "source": "n019", "target": "n010", "relation_type": "TARGETS", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 330, "sha256": "798ad06f780e0c13a573bc99766fa32c57c854f3893ad6d3a1953d763c063183"}}
+  ]},
+  {"id": "e009", "source": "n019", "target": "n011", "relation_type": "TARGETS", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 330, "sha256": "798ad06f780e0c13a573bc99766fa32c57c854f3893ad6d3a1953d763c063183"}}
+  ]},
+  {"id": "e010", "source": "n019", "target": "n012", "relation_type": "TARGETS", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 330, "sha256": "798ad06f780e0c13a573bc99766fa32c57c854f3893ad6d3a1953d763c063183"}}
+  ]},
+  {"id": "e011", "source": "n019", "target": "n014", "relation_type": "TARGETS", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 330, "sha256": "798ad06f780e0c13a573bc99766fa32c57c854f3893ad6d3a1953d763c063183"}}
+  ]},
+  {"id": "e012", "source": "n019", "target": "n015", "relation_type": "TARGETS", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon burrowed into IT environments of critical infrastructure sectors", "evidence": [
+   {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 330, "sha256": "798ad06f780e0c13a573bc99766fa32c57c854f3893ad6d3a1953d763c063183"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

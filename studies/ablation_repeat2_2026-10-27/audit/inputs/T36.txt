@@ -1,0 +1,111 @@
+AUDIT_FILE: T36
+TARGET_DOC_ID: D0166
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0166
+PUBLICATION_DATE: 2026-05-20
+SOURCE_URL: https://www.breitbart.com/politics/2026/05/20/exclusive-sen-rick-scott-rep-andy-ogles-americas-cybersecurity-cannot-be-an-easy-target-for-communist-china/
+TITLE_SHA256: 75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2
+BEGIN_DOCUMENT
+[D0166:P0001] sha256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2
+[D0166:P0002] sha256:273b15a56c10393ceadf940c9060d94134dfd9023a6dba428c4c836b814da9df
+[D0166:P0003] sha256:726755be556baa7f8257d307a1cfa8adb322db56abd8b758b0492b191c9a2dec
+[D0166:P0004] sha256:50bfc76937bab5d16add72519f040deb3953fe98e1293aab8d2f53fcf7ae89ad
+[D0166:P0005] sha256:c21a9f10f12efe710217cfe4e5a66181c25f06cc0e815419215ddc472e72f3a7
+[D0166:P0006] sha256:ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca
+[D0166:P0007] sha256:cd79542ff1b271bb3c184f0b9c36a2c180c2739965c25044de1e5a7b724db2e0
+[D0166:P0008] sha256:4e857c834434f47651dcc856ade228b5c828fc13645e79e3b10929781773a9da
+[D0166:P0009] sha256:2326d49b7bbc36d470bdab54641f664af3bbef30b528a263f5490cc58ae1eb83
+[D0166:P0010] sha256:0d4a989ca695d0a71754aa12293fe72997053adf3cad95573929125d0a0bc4f3
+[D0166:P0011] sha256:b09463f0212a15b9661e1f98cfd0855b0d6bee8da9f5f689fd26c61216605aa4
+[D0166:P0012] sha256:142b834853a17f2e7ee5b812dd67b8057c23e1006ea401cfcea2755a671a8cce
+[D0166:P0013] sha256:87db4e82ca4bacc9aea2c9edc9a2680dda5e7b2dc840c6dc14ab720f26bc9add
+[D0166:P0014] sha256:13c884a387e0457df547c6d1c4d321fb70b59726297b46615e9dcdc40a404294
+[D0166:P0015] sha256:d54bc618be5bb98fb662e6a8b80b7771bc0ecf9121a72e09d4052226dafb3790
+[D0166:P0016] sha256:f99700ee727b72b6ad975e4927c88b221574e403ae85e765c49446c7af5dc735
+[D0166:P0017] sha256:d85f0b84c825c514947459f683557ff048b0b61f42d980699aaee641f11beaa5
+[D0166:P0018] sha256:7b30bb12bc29cc2515927b0d4d77c52b3dcf12adb15778aae7000c908b4f18a7
+[D0166:P0019] sha256:f5fc9b74d9d470518cac594ea744ab9656f6fdd6c77793285e58e00a595ab3c7
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (37)
+E001: «Chinese Communist Party» — targets → «financial institutions» | форма: conditional, positive
+E002: «Rick Scott» — member of → «Senate» | форма: actual, positive
+E003: «Chinese Communist Party (CCP)» — could turn off → «internet» | форма: actual, positive
+E004: «America's Cybersecurity Cannot Be an Easy Target for Communist China» — discusses → «Salt Typhoon» | форма: actual, positive
+E005: «Volt Typhoon» — targets → «transportation systems» | форма: actual, positive
+E006: «Volt Typhoon» — was revealed in → «February 2024» | форма: actual, positive
+E007: «U.S. government agencies» — reports on → «Volt Typhoon» | форма: possible, positive
+E008: «Strengthening Cyber Resilience Against State-Sponsored Threats Act» — passed → «U.S. House of Representatives» | форма: actual, positive
+E009: «joint task force» — detects → «Volt Typhoon» | форма: planned, positive
+E010: «Volt Typhoon» — targets → «water and wastewater systems» | форма: actual, positive
+E011: «China» — targets → «U.S.» | форма: actual, positive
+E012: «America's Cybersecurity Cannot Be an Easy Target for Communist China» — discusses → «Volt Typhoon» | форма: actual, positive
+E013: «Salt Typhoon» — is backed by → «Chinese Communist Party (CCP)» | форма: actual, positive
+E014: «America's Cybersecurity Cannot Be an Easy Target for Communist China» — is published on → «20 May 2026» | форма: actual, positive
+E015: «Salt Typhoon» — targets → «U.S.» | форма: actual, positive
+E016: «America's Cybersecurity Cannot Be an Easy Target for Communist China» — discusses → «Volt Typhoon» | форма: actual, negative
+E017: «America's Cybersecurity Cannot Be an Easy Target for Communist China» — is published by → «Breitbart News Network» | форма: actual, positive
+E018: «Volt Typhoon» — targets → «energy» | форма: actual, positive
+E019: «U.S. government agencies» — reports on → «Volt Typhoon» | форма: actual, positive
+E020: «Rick Scott» — warns about → «China» | форма: actual, positive
+E021: «Cybersecurity and Infrastructure Security Agency (CISA)» — is part of → «Department of Homeland Security (DHS)» | форма: actual, positive
+E022: «U.S.» — targets → «China» | форма: actual, positive
+E023: «Volt Typhoon» — targets → «communications» | форма: actual, positive
+E024: «Chinese Communist Party (CCP)» — could launch cyber-attack targeting → «power and water» | форма: actual, positive
+E025: «Strengthening Cyber Resilience Against State-Sponsored Threats Act» — creates joint task force led by → «Cybersecurity and Infrastructure Security Agency (CISA)» | форма: actual, positive
+E026: «Volt Typhoon» — is backed by → «Chinese Communist Party (CCP)» | форма: actual, positive
+E027: «Communist China» — probes → «U.S. security» | форма: actual, positive
+E028: «Volt Typhoon» — targets → «critical infrastructure sectors» | форма: actual, positive
+E029: «Volt Typhoon» — burrowed into → «IT environments of key critical infrastructure sectors» | форма: actual, positive
+E030: «Cybersecurity and Infrastructure Security Agency» — part of → «Department of Homeland Security» | форма: actual, positive
+E031: «Cybersecurity and Infrastructure Security Agency (CISA)» — issues annual reports to → «Congress» | форма: actual, positive
+E032: «Chinese Communist Party (CCP)» — could block → «bank accounts» | форма: actual, positive
+E033: «Volt Typhoon» — targets → «U.S.» | форма: actual, positive
+E034: «Andy Ogles» — warns about → «China» | форма: actual, positive
+E035: «Andy Ogles» — member of → «U.S. House of Representatives» | форма: actual, positive
+E036: «Cybersecurity and Infrastructure Security Agency (CISA)» — leads task force to detect, analyze, and respond to → «Volt Typhoon» | форма: actual, positive
+E037: «U.S. government agencies» — revealed activity of → «Volt Typhoon» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

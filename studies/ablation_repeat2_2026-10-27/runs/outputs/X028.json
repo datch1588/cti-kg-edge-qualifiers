@@ -1,0 +1,71 @@
+{
+  "run_id": "X028",
+  "target_doc_id": "D0166",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "China", "entity_type": "country", "aliases": ["Communist China"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}}
+    ]},
+    {"id": "n002", "label": "U.S.", "entity_type": "country", "aliases": ["America"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 181, "sha256": "4f33358d1b5d7d4c7c64660b4266d6941e700ee45b16620e5647dec7196184d1"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 299, "end": 379, "sha256": "5392f7831479c55b8c0eee1053640e0462233986c35ba9622b94800350709f04"}}
+    ]},
+    {"id": "n003", "label": "Chinese Communist Party", "entity_type": "organization", "aliases": ["CCP"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n004", "label": "Cybersecurity and Infrastructure Security Agency", "entity_type": "organization", "aliases": ["CISA"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}
+    ]},
+    {"id": "n005", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": ["DHS"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 123, "sha256": "81d5edb9550f580e297bb8fea2f19e5d685e08feb8357282e1fd6e3b4b2f17c4"}}
+    ]},
+    {"id": "n006", "label": "joint task force", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}
+    ]},
+    {"id": "n007", "label": "U.S. government agencies", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+    ]},
+    {"id": "n008", "label": "critical infrastructure sectors", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 140, "end": 331, "sha256": "bda4c3c571dccfbbf32ed48f1aa326c8c89490894c7c0ad61e7bc1e28b41fd15"}}
+    ]},
+    {"id": "n009", "label": "financial institutions", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "n010", "label": "Strengthening Cyber Resilience Against State-Sponsored Threats Act", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 111, "end": 201, "sha256": "a8c815e4d0d43e476d4178a53372feb880100757462ad2647263685314cab4a9"}}
+    ]},
+    {"id": "n011", "label": "Salt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}}
+    ]},
+    {"id": "n012", "label": "Volt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}}
+    ]},
+    {"id": "e002", "source": "n003", "target": "n009", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "hypothetical CCP attack on U.S. financial institutions", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "e003", "source": "n004", "target": "n005", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 146, "sha256": "4f71068a5e9c6eaba62ae02eb297213d08dbde684b900aecc63817003861ad10"}}
+    ]},
+    {"id": "e004", "source": "n006", "target": "n012", "relation_type": "DETECTS", "modality": "planned", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "joint task force to be created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}
+    ]},
+    {"id": "e005", "source": "n007", "target": "n012", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "February 2024", "event_scope": "Volt Typhoon intrusion into IT environments of critical infrastructure sectors", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+    ]},
+    {"id": "e006", "source": "n011", "target": "n002", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 281, "sha256": "fc1ed2160b535bc906f34361bc79d1c6c57d935c166781b33e4517210613cf8f"}}
+    ]},
+    {"id": "e007", "source": "n012", "target": "n002", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 281, "sha256": "fc1ed2160b535bc906f34361bc79d1c6c57d935c166781b33e4517210613cf8f"}}
+    ]},
+    {"id": "e008", "source": "n012", "target": "n008", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "", "event_scope": "Volt Typhoon intrusion into IT environments of critical infrastructure sectors", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 101, "end": 331, "sha256": "9c92dd296abe7f6901ea5093466f699c64c7af6dcc175ac7293d2b56d6afd4a9"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

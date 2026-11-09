@@ -1,0 +1,102 @@
+AUDIT_FILE: S5F30
+TARGET_DOC_ID: D0242
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0242
+PUBLICATION_DATE: 2026-04-28
+SOURCE_URL: https://economictimes.indiatimes.com/news/new-updates/indian-cyberwatchdog-warns-msmes-are-facing-higher-ai-driven-cyber-attack-threats/articleshow/130580004.cms
+TITLE_SHA256: 7af47bd3f4e144db733056e52660d5f95d379da7d0441957dd59347d491be299
+BEGIN_DOCUMENT
+[D0242:P0001] sha256:7af47bd3f4e144db733056e52660d5f95d379da7d0441957dd59347d491be299
+[D0242:P0002] sha256:24872efc2c626e9183d01729e2610b18cbb1981ddb4cf8296cebdabfe7039370
+[D0242:P0003] sha256:8eb3755381519d7f0479d75446e56e20084834c0460d7ec94926932372ea6c47
+[D0242:P0004] sha256:437ca9e5b91f7c3decea60972c912464423f73d32bc9e6c9b9c888759c9c0674
+[D0242:P0005] sha256:5841a6a0802d78a4e7cd465ef418a2cb6c08162797b3796d7c74edf87c3335a0
+[D0242:P0006] sha256:42f3aef5b688ad2f9d225480b1984049842b0c8cf659ebaa01e9ff3c8581372e
+[D0242:P0007] sha256:99fb7d3e2ed9bb70d60535fb8237aff8e129746aa6f6d7372a16a546756b415d
+[D0242:P0008] sha256:ed7d282a1fee1b8d7c91ec10dc69ea6844eea9e214833d212caaaaa2e9f97aa0
+[D0242:P0009] sha256:43076477832912af828b5cf17e7de017ff62dd8c7dfae474eff79a0c556546fb
+[D0242:P0010] sha256:59294142b770300b31cb0e62feb3d76267c771de0fb86d8bba36a5b2cc200809
+[D0242:P0011] sha256:4b8ed19b5fbad17395ec75869d5b30f434219a78473eeef7ad689a3f20490052
+[D0242:P0012] sha256:4bada4abda51cb86354a364751d250fe281f940e23237ebe3183db9c3cd33c2e
+[D0242:P0013] sha256:d027162fac4c4d28e9dd7cc47053b7fbf3e6bbaf42bd275f5e04d1babcfd0e2d
+[D0242:P0014] sha256:8274069f1bd014849a7077ebf5409eabdfd942753ad89aaed4b8016a2f616832
+[D0242:P0015] sha256:1e279b45f6d08793d9d4aeb51dfae529cd0218719723e74ec670e013c248879d
+[D0242:P0016] sha256:b07fee9d1c4d741285bf35182a6481400df56ad2fb311c376e60fe8b387deeda
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (23)
+E001: «frontier AI» — enables → «multi- stage attacks» | форма: actual, positive
+E002: «ransomware» — affects → «MSMEs» | форма: conditional, positive
+E003: «CERT-In» — warns about → «ransomware» | форма: actual, positive
+E004: «threat detection tools» — mitigates → «AI-driven cyber threats» | форма: recommended, positive
+E005: «CERT-In» — warns about → «data breaches» | форма: actual, positive
+E006: «threat detection tools» — mitigates → «AI-driven cyber threats» | форма: actual, positive
+E007: «data breaches» — affects → «MSMEs» | форма: conditional, positive
+E008: «MSMEs» — uses → «threat detection tools» | форма: recommended, positive
+E009: «AI-driven cyber threats» — targets → «MSMEs» | форма: actual, positive
+E010: «CERT-In» — located in → «India» | форма: actual, positive
+E011: «India» — located in → «MSMEs» | форма: actual, positive
+E012: «MSMEs» — uses → «detailed logs» | форма: recommended, positive
+E013: «AI-driven cyber threats» — affects → «MSMEs» | форма: possible, positive
+E014: «MSMEs» — located in → «India» | форма: actual, positive
+E015: «continuous network monitoring» — mitigates → «AI-driven cyber threats» | форма: actual, positive
+E016: «patch management» — mitigates → «AI-driven cyber threats» | форма: recommended, positive
+E017: «MSMEs» — uses → «threat detection tools» | форма: recommended, negative
+E018: «continuous network monitoring» — mitigates → «AI-driven cyber threats» | форма: recommended, positive
+E019: «detailed logs» — enables → «forensic analysis» | форма: actual, positive
+E020: «MSMEs» — uses → «continuous network monitoring» | форма: recommended, positive
+E021: «CERT-In» — warns about → «AI-driven cyber threats» | форма: actual, positive
+E022: «patch management» — mitigates → «AI-driven cyber threats» | форма: actual, positive
+E023: «MSMEs» — uses → «patch management» | форма: recommended, positive
+КІНЕЦЬ ЗАПИСІВ

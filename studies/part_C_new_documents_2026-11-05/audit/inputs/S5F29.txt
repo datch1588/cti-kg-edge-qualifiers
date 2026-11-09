@@ -1,0 +1,118 @@
+AUDIT_FILE: S5F29
+TARGET_DOC_ID: D0253
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0253
+PUBLICATION_DATE: 2026-04-24
+SOURCE_URL: https://amp.theguardian.com/technology/2026/apr/24/what-is-a-passkey-how-does-it-work-and-why-is-it-better-than-a-password
+TITLE_SHA256: 9e5615c215c57b1268c96f2252ccde8050e3ebee962c4f9936bf43abf774c0b2
+BEGIN_DOCUMENT
+[D0253:P0001] sha256:9e5615c215c57b1268c96f2252ccde8050e3ebee962c4f9936bf43abf774c0b2
+[D0253:P0002] sha256:43d3e66bc3c5a5d03197d2bf6f24087e66d059646c54e6c53e597c905fff2f67
+[D0253:P0003] sha256:b405b5a69af823cf10d2db50661c3c8214b60074753dc87f6dbed6fb9f660314
+[D0253:P0004] sha256:365d600dc6660521553cda8464d96542604f5f7858a835a9eaf84eb48e59c5c5
+[D0253:P0005] sha256:a4d63b5ed3f39e040cb3bbb3f35f35343883ea8a853aa7ff2fb30641a0036e70
+[D0253:P0006] sha256:951d967aedf10fb15fdefb2fd6f519371f5951fd08df84a53505047c9f738129
+[D0253:P0007] sha256:b1057244af07bddaed8e190d271bc5a79fa3f1bc82459c2efa9e010c9eea6d64
+[D0253:P0008] sha256:a0514519b4eecfc5cee7192fdc74003e216e2edac1c4953bda170ded7cdaa89d
+[D0253:P0009] sha256:eff7b0a7c5bf9b833e5b84b9b679c1867d46b06a9bf1986ee98b5f73e27b4223
+[D0253:P0010] sha256:b23274aa6d2b1a1a157feb911dae19b8aff3acd42b81d58360ad2ef749460d15
+[D0253:P0011] sha256:1569bfab930583825457446be79fdf3999cebc3aff20446334c134f062124ced
+[D0253:P0012] sha256:527df1bf92558133b46073aad6e3172b83cfa1309511d097333adc7447e4b580
+[D0253:P0013] sha256:f93ec157691f0d66aee8bb731e7417d6705b7f9840e5c1df87da7aead1b4e86d
+[D0253:P0014] sha256:344eb532627c34876ef63a3929fa212260b9766535eca9c4b0e818fe2d0849c6
+[D0253:P0015] sha256:74240a738b4be4cf094758ee63a9aa91982308f8fb9478ebf03d65264d3669c8
+[D0253:P0016] sha256:1fc3202747e40b414b850353c6fceb1b89cfa74b5120e8b4520aa3ea5e93eee1
+[D0253:P0017] sha256:008ec4947579d495a7e9ade973f38fa6b87c8fbd00e9bb69bbb9e41eedd300a8
+[D0253:P0018] sha256:541f0a27d45f3e485792794a1153972a97d3e7132a633a52569de5db7b2a36d5
+[D0253:P0019] sha256:5215dfc557d39253450813815782775563eda053c500c1039b6a43c007e07534
+[D0253:P0020] sha256:cd4d1c4c0e43a6952a80b09c60e8b6b6a0fa2301bd1ce11e41c031287298450e
+[D0253:P0021] sha256:76b2896bf69daf0c0411e76f613b1fb001a359260a67c6456ce9422ead79bf35
+[D0253:P0022] sha256:19a754eb951c0924061d4307d8a79a8c4f3d54a50500ade7d0886fac9c671e50
+[D0253:P0023] sha256:345702448e253484e97cd7086b8cfd927b82dc848948226c66d21904e757b4b5
+[D0253:P0024] sha256:d5b40970de11f6c166a6c8cda9c9e30e8a4f4f0798fe57839b6dac1ce853551a
+[D0253:P0025] sha256:fecbc7f7fbb1dfebab528729b508df753dcd83e01a91a75ce11da5291a68879e
+[D0253:P0026] sha256:fddcc5506a381743c497bbc7e07c4421eb6e800ca4f64d95aa5078c47d4442a9
+[D0253:P0027] sha256:76bf874d0047b69deed69252a0979533e2fac78e0a83b1ad01f3cb691a85a25b
+[D0253:P0028] sha256:3c82b8576755b68f1ee17e38036c5527e1b30c69ba3252a1068d543bbff19055
+[D0253:P0029] sha256:8ac283a34c6ec648f314de5072d06cf25c27e08d8070a21df086eadf2c52748f
+[D0253:P0030] sha256:3a0b8110590a1f401358d08f03aa679e94563479344f5033f8d9687f38a44ceb
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (25)
+E001: «phishing» — targets → «password» | форма: actual, positive
+E002: «Google» — supports → «passkey» | форма: actual, positive
+E003: «passkey» — uses → «phone pin» | форма: actual, positive
+E004: «passkey» — uses → «pin» | форма: actual, positive
+E005: «passkey» — mitigates → «breaches» | форма: actual, positive
+E006: «password manager» — protects → «password» | форма: actual, positive
+E007: «passkey» — uses → «facial recognition» | форма: actual, positive
+E008: «phishing» — affects → «passkey» | форма: actual, negative
+E009: «proof of liveness» — mitigates → «Bypassing biometric checks» | форма: actual, positive
+E010: «National Cyber Security Centre» — warns about → «password» | форма: actual, positive
+E011: «Cybernews» — discovers → «billions of login credentials» | форма: actual, negative
+E012: «phishing» — targets → «password» | форма: possible, positive
+E013: «passkey» — mitigates → «data breaches» | форма: actual, positive
+E014: «National Cyber Security Centre» — located in → «UK» | форма: actual, positive
+E015: «two-factor authentication» — uses → «password» | форма: actual, positive
+E016: «Cybernews» — discovers → «billions of login credentials» | форма: actual, positive
+E017: «passkey» — mitigates → «phishing» | форма: actual, positive
+E018: «data breaches» — mitigates → «passkey» | форма: actual, positive
+E019: «Cybernews» — reports on → «billions of login credentials» | форма: actual, positive
+E020: «Dave Chismon» — warns about → «password» | форма: actual, positive
+E021: «Nordpass» — protects → «password» | форма: actual, positive
+E022: «Dave Chismon» — member of → «National Cyber Security Centre» | форма: actual, positive
+E023: «Alan Woodward» — member of → «Surrey University» | форма: actual, positive
+E024: «proof of liveness» — protects → «facial recognition» | форма: actual, positive
+E025: «phishing» — uses → «malicious software» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

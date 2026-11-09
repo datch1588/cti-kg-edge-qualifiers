@@ -1,0 +1,19 @@
+{
+ "audit_file": "R2_T29",
+ "target_doc_id": "D0289",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0013 сказано «Cybercriminals may use it for phishing attacks» (також P0021 «may use stolen data»), тобто це можливість, як і у формулюванні «may use»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "P0011 перелічує ці дані під «may include», проте P0010, P0016 і P0028 подають як факт те, що витекли дані служби підтримки («the exposure of customer support data»), отже форма actual, positive відповідає статті."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У P0011 компанія підтвердила, що «doctor-patient communications were not accessed», тобто це заперечений факт, як і у формулюванні «did not access»."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0011 сказано лише «The compromised data may include names», тобто стаття подає це як можливість, а формулювання «compromised» не має жодного маркера й стверджує факт."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0014 сказано «Reports suggest that ... ShinyHunters may be behind the attack», а P0015 додає, що це офіційно не підтверджено, тобто це припущення, як і «may be behind»."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0011 мейлінгові адреси подано лише під «may include», тобто як можливість, а формулювання «compromised» стверджує факт."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0013 сказано «may use it for ... identity theft» (також P0021 про identity theft як ризик), тобто це можливість, як і у формулюванні."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0020 як здійснену дію подано «Hims & Hers responded by ... notifying law enforcement authorities», що відповідає формі actual, positive."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0006 («The intrusion was detected on February 5») і P0018 виявлення 5 лютого подано як здійснений факт, а формулювання «possibly detected» робить його лише можливим."},
+  {"item_id": "W010", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0013 сказано «may use it for ... even blackmail in extreme cases», тобто це можливість, як і у формулюванні «may use»."},
+  {"item_id": "W011", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0011 email-адреси подано лише під «may include», тобто як можливість, а формулювання «compromised» стверджує факт."},
+  {"item_id": "W012", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0011 номери телефонів подано лише під «may include», тобто як можливість, а формулювання «compromised» стверджує факт."},
+  {"item_id": "W013", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У P0011 компанія підтвердила, що «electronic medical records ... were not accessed» (також P0004 і P0028), тобто це заперечений факт, як і у формулюванні «did not access»."}
+ ]
+}

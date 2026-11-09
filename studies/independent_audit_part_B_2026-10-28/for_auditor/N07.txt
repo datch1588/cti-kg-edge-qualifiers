@@ -1,0 +1,264 @@
+AUDIT_BATCH: N07
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N07-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N07-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N07-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 3 (TARGET_DOC_ID: D0347) ===
+DOC_ID: D0347
+PUBLICATION_DATE: 2026-03-31
+SOURCE_URL: https://www.thesun.co.uk/sport/38678889/world-cup-drone-cyber-threats-iran-war/
+TITLE_SHA256: 2dec3396c24d06550606b55914e9442eb50097cd6762d600e3829c4a00362845
+BEGIN_DOCUMENT
+[D0347:P0001] sha256:2dec3396c24d06550606b55914e9442eb50097cd6762d600e3829c4a00362845
+[D0347:P0002] sha256:e28a1d4c3f9f1537930249c7bca574b28f18f2ca2a238c165439f0fe13c74922
+[D0347:P0003] sha256:9a449d1d377a3c8dbfad44ffe5a4ceb0fa5d56ce8dc70fac50ec0774b9b6b649
+[D0347:P0004] sha256:cd31f1d9e2ff543a11f91f2c35d52235c6147938346bfcdf1584e30412c821a5
+[D0347:P0005] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0347:P0006] sha256:7f4a930700f43d3921d0e53306cc2f3bb3b0337d8a80bb54e9fb2303e6ae8798
+[D0347:P0007] sha256:91ef96c8a562c5a280802f04813c050b5d1ee36c31fa015d0dda7a3cb7da3628
+[D0347:P0008] sha256:1b48198583c05d5ec1f5fa0033d844d265d3b35cf689c4dbd0972746cdc102da
+[D0347:P0009] sha256:3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55
+[D0347:P0010] sha256:f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420
+[D0347:P0011] sha256:ffdcbc9a64431a5ce85e4ebbca9e1ed91d8a60fe69e99bd4011f41ed903797b3
+[D0347:P0012] sha256:b710d6924e46517002caeea6b934db04914ed98ad631cb742afc42903fc2eb31
+[D0347:P0013] sha256:7cc7a592a7ac18a00ed6f0adfb756803a46d47a19364c2648e7e6d686bce20a2
+[D0347:P0014] sha256:56569c529b2eee44f0ee253c1c592cc05aa2b428a455f1fd5b6db9f14d3b494e
+[D0347:P0015] sha256:fc9e39e3698c13e2b8104d81c6b6c4d3d636ae510ccff1183ee3576f4ab1d5ee
+[D0347:P0016] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0347:P0017] sha256:71aa733e85e0523e2b145339452316a290b27c16b5ad52d6ccaa0d00d5d916fd
+[D0347:P0018] sha256:1acdd6ff9fd307f6046ff83d505477339c7481780a2a3f66d9d23f56038d6239
+[D0347:P0019] sha256:911e1d2a13ae39959b7efbe47127eb012212f97e1fcd75feace475832cc10d69
+[D0347:P0020] sha256:0cabeba2518de1227f23ff0668cac25e44ff2b6e9bc38fd28e99af6c59ca06f7
+[D0347:P0021] sha256:e34784a7cbb603e103e6e63315bda5a72f4473b7251d99b08b72a813b1644594
+[D0347:P0022] sha256:9d3edc9419937457ad3964d7216ce14b68079d66da9fe7ff07df3cfaadb6af5d
+[D0347:P0023] sha256:2d8cbdfe73a912e608435c67869573868d59d9c99f2564106fc7267a95d8bda9
+[D0347:P0024] sha256:96932685f47f07e2e4ab49bd415be3e4177ef3578de971aac97c04bc625b5303
+[D0347:P0025] sha256:2498bb59696181e9851b8b0de15aef1a49c83893240a5029ecdcd4b96be55d97
+[D0347:P0026] sha256:602048d577393b35d49ff42433359b4ea67d3aa5ee5312779e9cdbb62da4e140
+[D0347:P0027] sha256:f5f60a9fbe17ba8ba248ba004466e56e00d0f48133687beea3d2eeca2e6ed8dc
+[D0347:P0028] sha256:e1d1f4cba7d905deb3d47db9c83e26113a5088e78973de4256d2f3e9b016c612
+[D0347:P0029] sha256:49d3a03f6e3f23d5e260641e893122322a579f6bbc9fedd6e2bdd1df81ef38a8
+[D0347:P0030] sha256:862ca5a78d7c99267477ee566d5917f85a071d4d7c9ffaa68a50c2b7e3809f72
+[D0347:P0031] sha256:cac8f4ee2d89d06a1eb843b45f26e16ec85c87f59e363805a6c5cf9ffe459862
+[D0347:P0032] sha256:a43a894645a9f2a1543e7b1d74eef8f9b8082d69c7970d150bea987d334a399b
+[D0347:P0033] sha256:bacd1c96ea23a9f942ebb6881c1d08e0df6a0503ffffce2426bc64cb02e7e6d1
+[D0347:P0034] sha256:e9e30a47ce8ab93d54be4e69ebb6b2c79a6c8e3e902cf7b24260ec9d6e8dd838
+[D0347:P0035] sha256:ae3cb7d6df7bbd1999bb336bd155241cb41e48b39fb77dd93a69534451075bf5
+[D0347:P0036] sha256:acc77aa75833539b283af0df1e1e5582008cf2ab3cc6853abdfa4b4a68b52373
+[D0347:P0037] sha256:9b2a1c82cd629e3b3b25662c73e3dd0070b5ed189325be136a20676c3623cf06
+[D0347:P0038] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0347:P0039] sha256:44d1b6f4b46e3b97b193bf3ff554378297ee862c52ee60e9280d62be11ee608f
+[D0347:P0040] sha256:84d2a4a4581b0eb0b06cb8dfe7005b960e23be2609af8fddda7bb3267cf0ec82
+[D0347:P0041] sha256:ccf2616d88adec5c6d0fde90fb32213df7b6fd3e30c2c70be089211f30585e44
+[D0347:P0042] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0347:P0043] sha256:9a83c6e77f78464a73e2fbbaf4a5a7deb1f365f90f83bc6e00337f9ee06121e6
+[D0347:P0044] sha256:764d80e9fd60d7049277426cfd204cf732bb620d22577797bc41e95b9bfdbeaf
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (13)
+N07-E001: «counter drone measures» — protects → «hotels» | форма: recommended, positive
+N07-E002: «World Cup» — located in → «Canada» | форма: actual, positive
+N07-E003: «cyber threats» — affects → «World Cup» | форма: actual, positive
+N07-E004: «counter drone measures» — protects → «stadiums» | форма: recommended, positive
+N07-E005: «war in Iran» — located in → «Iran» | форма: actual, positive
+N07-E006: «World Cup» — located in → «Mexico» | форма: actual, positive
+N07-E007: «Andrew Giuliani» — leads → «White House World Cup Task Force» | форма: actual, positive
+N07-E008: «White House World Cup Task Force» — leads → «Andrew Giuliani» | форма: actual, positive
+N07-E009: «counter drone measures» — protects → «fan festivals» | форма: recommended, positive
+N07-E010: «war in Iran» — located in → «Iran» | форма: actual, negative
+N07-E011: «cyber threats» — affects → «World Cup» | форма: possible, positive
+N07-E012: «World Cup» — located in → «US» | форма: actual, positive
+N07-E013: «Andrew Giuliani» — warns about → «attack drones» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 3 (TARGET_DOC_ID: D0343) ===
+DOC_ID: D0343
+PUBLICATION_DATE: 2026-04-01
+SOURCE_URL: https://www.defenseworld.net/2026/04/01/btc-capital-management-inc-has-17-67-million-stock-holdings-in-crowdstrike-crwd.html
+TITLE_SHA256: 8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5
+BEGIN_DOCUMENT
+[D0343:P0001] sha256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5
+[D0343:P0002] sha256:666b0bbcb42b1912ccdf75fd5f93f5ecd7f722a552fad4a42b135bc3175404a3
+[D0343:P0003] sha256:d5fa5b464c296a8309bdeaaff7628307a91551ece815148749c8a26993daf7b1
+[D0343:P0004] sha256:703870a1c0d2872f55be8bab1779cacd5794fb1a87df56309486c205a70f4256
+[D0343:P0005] sha256:f0c83fba8b9ae06bc48574277a65939d28e353d872b2b3f0e8e2847f5614ddf5
+[D0343:P0006] sha256:cccbba544a221193b107445af3697059c462e6659a96e62a78d1f750c5f72d9a
+[D0343:P0007] sha256:24cc4eb6c8f237d517d639cd31ea9556f51d044f1f18ff8841fa58b1f23ea7fc
+[D0343:P0008] sha256:073c163b98a0e1513ba64b68b385ef822ceda22ee17930aac00496f080baa76c
+[D0343:P0009] sha256:07398dcb3061470e461037fd2588f563e236c01dafbe6174b42e480c43ae57d6
+[D0343:P0010] sha256:f707e4d34ba5e3311c2454468eb349eb709672f347a2e1e173c13a1cdc6f5f81
+[D0343:P0011] sha256:ab40d05e8bfbb4247918941553872bf114111d714cf7abf462b4a70ee9171615
+[D0343:P0012] sha256:75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f
+[D0343:P0013] sha256:081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617
+[D0343:P0014] sha256:aafd08be94e261dccc38990e40cea7d8016a0f3cf67d3497f9b768c3db69f26a
+[D0343:P0015] sha256:0f985edef36a1759d4233fcb8b180139b3cd9b2ee1b5b6fd205ced612e42f7f0
+[D0343:P0016] sha256:5b8ac8c842b7a5fc36f106ca9487091e8d0a2092f4a7dc991c05bcc23b7f277f
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (20)
+N07-E014: «CrowdStrike Falcon platform» — uses → «centralized telemetry» | форма: actual, positive
+N07-E015: «threat intelligence» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+N07-E016: «device control» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+N07-E017: «cloud-native security solutions» — protects → «data» | форма: actual, positive
+N07-E018: «cloud-native security solutions» — protects → «cloud workloads» | форма: actual, positive
+N07-E019: «cloud-native security solutions» — protects → «identities» | форма: actual, positive
+N07-E020: «HCLTech» — provides → «Continuous Threat Exposure Management» | форма: planned, positive
+N07-E021: «endpoint protection» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+N07-E022: «cloud-native security solutions» — protects → «endpoints» | форма: actual, negative
+N07-E023: «cloud workloads» — protects → «cloud-native security solutions» | форма: actual, positive
+N07-E024: «cyber threats» — mitigates → «cloud-native security solutions» | форма: actual, positive
+N07-E025: «cloud-native security solutions» — protects → «identities» | форма: possible, positive
+N07-E026: «CrowdStrike» — provides → «CrowdStrike Falcon platform» | форма: actual, positive
+N07-E027: «cloud-native security solutions» — mitigates → «cyber threats» | форма: actual, positive
+N07-E028: «CrowdStrike» — located in → «Sunnyvale, California» | форма: actual, positive
+N07-E029: «CrowdStrike» — provides → «cloud-native security solutions» | форма: actual, positive
+N07-E030: «cloud-native security solutions» — protects → «endpoints» | форма: actual, positive
+N07-E031: «endpoint detection and response» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+N07-E032: «CrowdStrike» — provides → «Continuous Threat Exposure Management» | форма: planned, positive
+N07-E033: «CrowdStrike Falcon platform» — uses → «lightweight agents» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 3 (TARGET_DOC_ID: D0259) ===
+DOC_ID: D0259
+PUBLICATION_DATE: 2026-04-24
+SOURCE_URL: https://www.thesun.co.uk/tech/38913285/ditch-passwords-safer-alternatives-stop-hackers-gchq-warns/
+TITLE_SHA256: 9301e7b9d29b4477070066932935b06bd63704047e2bd9fb0ec1e92ba3bbbbb7
+BEGIN_DOCUMENT
+[D0259:P0001] sha256:9301e7b9d29b4477070066932935b06bd63704047e2bd9fb0ec1e92ba3bbbbb7
+[D0259:P0002] sha256:c6a5b5d1a76e32fd65981709ac3451037390d44274b77013adc87d48f3752fe0
+[D0259:P0003] sha256:6d2cae47531b836879ce2fc6e59bbbe729d680933f9c7e5281e5545e6d5cc647
+[D0259:P0004] sha256:673d27da987735bc630d792ae6a477d342e356878a2b84d94b539844de35ca30
+[D0259:P0005] sha256:97d0e06ec4e5109dc41cd7e8b298aa8a76485e28865b9d721df337a5c02978c3
+[D0259:P0006] sha256:cd31f1d9e2ff543a11f91f2c35d52235c6147938346bfcdf1584e30412c821a5
+[D0259:P0007] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0259:P0008] sha256:56487ee60c1f5061a7adb9696efede0759511f6176d046d5080eed7ed94c204d
+[D0259:P0009] sha256:6a32624994a06dc0377c701191a287cb901d8e2518ffb83eb503f90d03cd3abb
+[D0259:P0010] sha256:46eb42b689627ca4b606d680e4636b3666614d1371658a14cb6bce04f74069bb
+[D0259:P0011] sha256:3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55
+[D0259:P0012] sha256:f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420
+[D0259:P0013] sha256:ffdcbc9a64431a5ce85e4ebbca9e1ed91d8a60fe69e99bd4011f41ed903797b3
+[D0259:P0014] sha256:b710d6924e46517002caeea6b934db04914ed98ad631cb742afc42903fc2eb31
+[D0259:P0015] sha256:5d24f5bf7dc8178f489d45604aac9fbbf988f5e0c288312dfcb3c2f4192854db
+[D0259:P0016] sha256:440f6796fc6f630028b1c1f5811e636cbfa3dea20fb06fb1317ff37157fd6558
+[D0259:P0017] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0259:P0018] sha256:13b46d93710e4aaf3a734631c4c396dbff2404fe5899196f14453139b81f77d4
+[D0259:P0019] sha256:dbe6cdc2348c13f776bd2e223bc7bbadee0d59b5dbc1de096f9a5bb3611accb0
+[D0259:P0020] sha256:7cf227be161c59fda43a5876540c699bed6ecd2a40f1e9bb4b40e36ff383d85b
+[D0259:P0021] sha256:998c07dc3a4276b9e033d15c7b265ae102e0b21511b7192e539a8b91e3306fa0
+[D0259:P0022] sha256:b966c9b1e4fbaf4ee9e56b2de2a31b109e2f372e6935d6decef4fbd01c1c3a27
+[D0259:P0023] sha256:74aa0d95994f5a165cfc93c3be473c461dff595882a8841d57ef0fb917739af6
+[D0259:P0024] sha256:0a858f320186a4030881ba1a4a5a7d0d9fc169eb641a30ffc920557cac9f71d4
+[D0259:P0025] sha256:1a0c2fcace42683b661be22e5fa5ea117e40ea51b52ecd2bf87796bd8f39114f
+[D0259:P0026] sha256:62b82b7ddc3244eabd6fd766684fff07c37abd361525aa16fb59bf0bc40a6dad
+[D0259:P0027] sha256:991e3f082d4af7466ddbc2724b34cf726496b73170f47659a3b9bf1e23109dec
+[D0259:P0028] sha256:b402ea0e7bdcb1257fd1c95303d95fb9a73c1a8016f2160dcfe51b100a05fa36
+[D0259:P0029] sha256:1cba5c1555746bf762368b77cbe5bcef3a56a056a334ae746bfe53c7613a0584
+[D0259:P0030] sha256:0c93621b6685c47bf643644f78c35f777c3aa027ddc7bc238bddbe4128dd3020
+[D0259:P0031] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0259:P0032] sha256:57a653a306139155a1da5340d11684b91803e968732996a01702811640d2b4fc
+[D0259:P0033] sha256:6d1ecdadece0454c2e5a656fd7dd63383d1956603c9df4494a4b21d98dfe2181
+[D0259:P0034] sha256:ffed745e405dc4528be8d15e74280eeb2b012d3e9b7ab77e2725b87c5708cdf2
+[D0259:P0035] sha256:04ae4712eff4436a8430eb34726f41176ee1a1213f63f78190483a2bd7eb4739
+[D0259:P0036] sha256:962d581b1d522a618cc2ac3b88cc5ed11640de4961a54a41ce061d9ea5cd1452
+[D0259:P0037] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0259:P0038] sha256:84418331a998e8fb9643a008496d2f5619afbc032de1421f15c33343cef7c8df
+[D0259:P0039] sha256:e754da76aabf9579cd8bb6abf8b82239aae0d3c3c7ee68e44cebf70dc03b32ff
+[D0259:P0040] sha256:4302f7d4fcad322cd70389acb2f89326005b222d73e83a4fda31689e38780369
+[D0259:P0041] sha256:4a8997d9177298e401a93521c6b056b79d8fec048c4c78f915a8122973984ab8
+[D0259:P0042] sha256:deece2ec091f35d4908ae3960220f57cd410521f18c594b62488f45c0bd66b7f
+[D0259:P0043] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0259:P0044] sha256:dc69f78708d77819da3fbd204219fe53a4f2f3fd41ac9aafd51e9e5286657083
+[D0259:P0045] sha256:5d218a048ec86c117546072d8dacbf08b0e1ffc9f58d78dfd89b37f4f4c4b17d
+[D0259:P0046] sha256:a4d63b5ed3f39e040cb3bbb3f35f35343883ea8a853aa7ff2fb30641a0036e70
+[D0259:P0047] sha256:c157508915579f6861062ce9c05b99ca36edcb1b82b165d44fb257c636572181
+[D0259:P0048] sha256:1227d59a83b49cb70582fe93c1192dd22fe0fbcd6b6f9c21628adc412964a5f0
+[D0259:P0049] sha256:2798e116035505b1a5ee236713f18391696b86d6915bde72ed1d145121b4f8c9
+[D0259:P0050] sha256:0fc0cf2a1f7de99a215c5087128212865b2522fdd23a91ae9e99f44800fb1a99
+[D0259:P0051] sha256:263c6ab549e16b714bca48a577a593fc85d2ed451d82477f29126ff6e910e02c
+[D0259:P0052] sha256:bfe0b20fd07394225373a58372c80ee44fcf1ee6a236f9a0e002205ea63aa93c
+[D0259:P0053] sha256:b8b1e0b8d9adea6d4f7a393d6125e590abe0e488e0465e929b70cbc807cd54e9
+[D0259:P0054] sha256:49959a5f42884fae21e97ec96c165714a6e736c298e2a2785cd6fa737d589751
+[D0259:P0055] sha256:c790611100f2fa55c8537dbd83f8ef5a8d983e61b56fa392425e711c11694d62
+[D0259:P0056] sha256:90eb9ac67638f6b942a90c0d5bd5ed69678e37f9022bbb0b21b09da36e3287c7
+[D0259:P0057] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0259:P0058] sha256:916b7a8f182c8abf3d5df88556cacef070d243da7e631a151788294fa9183a7c
+[D0259:P0059] sha256:39279bc2ae40ac51eebacd84f143b296e20dddd2c46d071ffef82e5bfe0b42af
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (28)
+N07-E034: «passkeys» — uses → «biometric data» | форма: actual, positive
+N07-E035: «phishing attacks» — targets → «passwords» | форма: actual, negative
+N07-E036: «passkeys» — uses → «fingerprints» | форма: actual, positive
+N07-E037: «UK Government» — uses → «passkeys» | форма: actual, positive
+N07-E038: «passkeys» — uses → «cloud» | форма: possible, positive
+N07-E039: «National Cyber Security Centre» — warns about → «passwords» | форма: actual, positive
+N07-E040: «private key» — part of → «passkeys» | форма: actual, positive
+N07-E041: «Jonathon Ellison» — member of → «National Cyber Security Centre» | форма: actual, positive
+N07-E042: «phishing attacks» — targets → «login details» | форма: actual, positive
+N07-E043: «public key» — part of → «passkeys» | форма: actual, positive
+N07-E044: «NHS» — uses → «passkeys» | форма: possible, positive
+N07-E045: «cybercriminals» — uses → «passwords» | форма: conditional, positive
+N07-E046: «PayPal» — supports → «passkeys» | форма: actual, positive
+N07-E047: «phishing attacks» — targets → «passwords» | форма: actual, positive
+N07-E048: «National Cyber Security Centre» — part of → «GCHQ» | форма: actual, positive
+N07-E049: «National Cyber Security Centre» — part of → «GCHQ» | форма: actual, negative
+N07-E050: «PIN number» — uses → «passkeys» | форма: actual, positive
+N07-E051: «passkeys» — uses → «facial recognition» | форма: actual, positive
+N07-E052: «NHS» — uses → «passkeys» | форма: actual, positive
+N07-E053: «passkeys» — mitigates → «phishing attacks» | форма: actual, positive
+N07-E054: «cybercriminals» — uses → «passwords» | форма: actual, positive
+N07-E055: «GCHQ» — warns about → «passwords» | форма: actual, positive
+N07-E056: «eBay» — supports → «passkeys» | форма: actual, positive
+N07-E057: «device-level authentication» — uses → «biometric data» | форма: actual, positive
+N07-E058: «passkeys» — uses → «PIN number» | форма: actual, positive
+N07-E059: «passkeys» — uses → «device-level authentication» | форма: actual, positive
+N07-E060: «passkeys» — part of → «public key» | форма: actual, positive
+N07-E061: «UK» — uses → «passkeys» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+КІНЕЦЬ ФАЙЛУ N07. Усього записів у файлі: 61 (від N07-E001 до N07-E061).

@@ -1,0 +1,126 @@
+{
+  "run_id": "F060",
+  "target_doc_id": "D0516",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "compromised identities", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 157, "end": 310, "sha256": "9a96e212ce1f63052bba12ef36df46c465334f6fda1f60473f5a638fbb9f9ac7"}}
+    ]},
+    {"id": "n002", "label": "credential-theft", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 138, "end": 283, "sha256": "c119044c106d5882ee929c4f30fae81d15bc9b8dfadee1f57840b5600bb29498"}}
+    ]},
+    {"id": "n003", "label": "injecting malicious prompts", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 79, "end": 238, "sha256": "7dd33a234d4949d13c038a3195afd89b248e544e39c0f726006eebe83a529756"}}
+    ]},
+    {"id": "n004", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 138, "end": 283, "sha256": "c119044c106d5882ee929c4f30fae81d15bc9b8dfadee1f57840b5600bb29498"}}
+    ]},
+    {"id": "n005", "label": "reconnaissance", "entity_type": "attack_technique", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 138, "end": 283, "sha256": "c119044c106d5882ee929c4f30fae81d15bc9b8dfadee1f57840b5600bb29498"}}
+    ]},
+    {"id": "n006", "label": "malicious scripts", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 138, "end": 283, "sha256": "c119044c106d5882ee929c4f30fae81d15bc9b8dfadee1f57840b5600bb29498"}}
+    ]},
+    {"id": "n007", "label": "malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "n008", "label": "CrowdStrike", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0005", "start": 0, "end": 146, "sha256": "cb02bc26bd20fb2043330b9430bf1f8fde05cf9a25709e673ec629572bb98429"}}
+    ]},
+    {"id": "n009", "label": "2026 Global Threat Report", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0002", "start": 0, "end": 84, "sha256": "25994138f7461f4bd565d3ad12154fe450f96f3a63520cea5bacceeb43739595"}},
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0006", "start": 45, "end": 139, "sha256": "bd6ff48fa7fd4abdf49ba39305f4ff29b51c4934bb8bd6e1c7524a7e99f3b405"}}
+    ]},
+    {"id": "n010", "label": "AI development platforms", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 239, "end": 369, "sha256": "18a7d4bd2ce191dbaec7dbc127a898e1754d68b089ea3d56603acb9b13759257"}}
+    ]},
+    {"id": "n011", "label": "artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 0, "end": 205, "sha256": "8e48ac65b79900cb33965f65cbebf06040b8dd33ecf1ed13ed01f54704c6b93c"}}
+    ]},
+    {"id": "n012", "label": "cloud platforms", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 157, "end": 310, "sha256": "9a96e212ce1f63052bba12ef36df46c465334f6fda1f60473f5a638fbb9f9ac7"}}
+    ]},
+    {"id": "n013", "label": "generative AI tools", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 79, "end": 238, "sha256": "7dd33a234d4949d13c038a3195afd89b248e544e39c0f726006eebe83a529756"}}
+    ]},
+    {"id": "n014", "label": "legitimate services", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "n015", "label": "SaaS solutions", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 157, "end": 310, "sha256": "9a96e212ce1f63052bba12ef36df46c465334f6fda1f60473f5a638fbb9f9ac7"}}
+    ]},
+    {"id": "n016", "label": "trusted systems", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "n017", "label": "attackers", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "n018", "label": "threat actors", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0006", "start": 140, "end": 312, "sha256": "1b09c844b374938a18bf131a0ca7e3121f2fc4bbe703accf4352750e07412034"}},
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 79, "end": 238, "sha256": "7dd33a234d4949d13c038a3195afd89b248e544e39c0f726006eebe83a529756"}}
+    ]},
+    {"id": "n019", "label": "cyber intrusions", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0005", "start": 161, "end": 320, "sha256": "9f08cdcc067f18e7a5e512ea85d6348c3aef5bb0317260f645679f78c2e17bc2"}}
+    ]},
+    {"id": "n020", "label": "vulnerabilities in AI development platforms", "entity_type": "vulnerability", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 239, "end": 369, "sha256": "18a7d4bd2ce191dbaec7dbc127a898e1754d68b089ea3d56603acb9b13759257"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n008", "target": "n019", "relation_type": "REPORTS_ON", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0002", "start": 0, "end": 84, "sha256": "25994138f7461f4bd565d3ad12154fe450f96f3a63520cea5bacceeb43739595"}}
+    ]},
+    {"id": "e002", "source": "n008", "target": "n019", "relation_type": "WARNS_ABOUT", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0005", "start": 96, "end": 247, "sha256": "15b62d082c098a62ada95bb4f7a8eea523bb7475b9f2ab2bc1bde5eace4f76ca"}}
+    ]},
+    {"id": "e003", "source": "n017", "target": "n006", "relation_type": "DEVELOPS", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 110, "end": 283, "sha256": "b6809a56802d9e6017d27def622721f0793969549436032cc4327e8759c82634"}}
+    ]},
+    {"id": "e004", "source": "n017", "target": "n001", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 310, "sha256": "37046d6ceb6b79ae96486c3f406c1cffca97ff72148d3c6b26f1147350a21a2a"}}
+    ]},
+    {"id": "e005", "source": "n017", "target": "n002", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 110, "end": 283, "sha256": "b6809a56802d9e6017d27def622721f0793969549436032cc4327e8759c82634"}}
+    ]},
+    {"id": "e006", "source": "n017", "target": "n004", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 110, "end": 283, "sha256": "b6809a56802d9e6017d27def622721f0793969549436032cc4327e8759c82634"}}
+    ]},
+    {"id": "e007", "source": "n017", "target": "n005", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 110, "end": 283, "sha256": "b6809a56802d9e6017d27def622721f0793969549436032cc4327e8759c82634"}}
+    ]},
+    {"id": "e008", "source": "n017", "target": "n007", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "e009", "source": "n017", "target": "n011", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0012", "start": 110, "end": 283, "sha256": "b6809a56802d9e6017d27def622721f0793969549436032cc4327e8759c82634"}}
+    ]},
+    {"id": "e010", "source": "n017", "target": "n012", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 310, "sha256": "37046d6ceb6b79ae96486c3f406c1cffca97ff72148d3c6b26f1147350a21a2a"}}
+    ]},
+    {"id": "e011", "source": "n017", "target": "n014", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "e012", "source": "n017", "target": "n015", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 310, "sha256": "37046d6ceb6b79ae96486c3f406c1cffca97ff72148d3c6b26f1147350a21a2a"}}
+    ]},
+    {"id": "e013", "source": "n017", "target": "n016", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0015", "start": 60, "end": 156, "sha256": "fdbb1fcc33b97d4b0688fc9a0f5e210eb36d87a76e1c44e1380a42895b71982a"}}
+    ]},
+    {"id": "e014", "source": "n018", "target": "n020", "relation_type": "EXPLOITS", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 79, "end": 369, "sha256": "1e9ad6142efb801ad8b012344104f1ff937212dcb55fcf3f9aecaa06379d3bc0"}}
+    ]},
+    {"id": "e015", "source": "n018", "target": "n013", "relation_type": "TARGETS", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 0, "end": 238, "sha256": "7aba780bf1b92a0e6352391717964d3054078d010c1edabaebb7caf331999b9a"}}
+    ]},
+    {"id": "e016", "source": "n018", "target": "n003", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 79, "end": 238, "sha256": "7dd33a234d4949d13c038a3195afd89b248e544e39c0f726006eebe83a529756"}}
+    ]},
+    {"id": "e017", "source": "n018", "target": "n011", "relation_type": "USES", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0006", "start": 140, "end": 312, "sha256": "1b09c844b374938a18bf131a0ca7e3121f2fc4bbe703accf4352750e07412034"}}
+    ]},
+    {"id": "e018", "source": "n020", "target": "n010", "relation_type": "AFFECTS", "attribution": "CrowdStrike's 2026 Global Threat Report", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0516", "paragraph_id": "D0516:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0516:P0013", "start": 239, "end": 369, "sha256": "18a7d4bd2ce191dbaec7dbc127a898e1754d68b089ea3d56603acb9b13759257"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

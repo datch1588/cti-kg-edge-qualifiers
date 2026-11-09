@@ -1,0 +1,16 @@
+{"audit_file": "XM02", "verdicts": [
+{"item_id": "S001", "merge_verdict": "I", "reason": "Записи 1–3 підтримують членство США у Five Eyes, але запис 4 подає інше твердження: «United States» — MITIGATES → «pre-positioning», тобто інше відношення й інший об'єкт, до того ж лише як потребу («needs to»)."},
+{"item_id": "S002", "merge_verdict": "C", "reason": "Усі п'ять записів прямо називають NCSC британським центром («the UK's», «UK National Cyber Security Centre», «United Kingdom's»), тож кожен подає те саме твердження LOCATED_IN UK."},
+{"item_id": "S003", "merge_verdict": "C", "reason": "Обидва записи з тим самим фрагментом перелічують threat intelligence серед складників, які поєднує CrowdStrike Falcon platform, що відповідає PART_OF."},
+{"item_id": "S004", "merge_verdict": "C", "reason": "Обидва записи прямо кажуть, що National Cyber Security Centre є частиною GCHQ («a part of The Government Communications Headquarters (GCHQ)», «part of GCHQ»); це та сама сутність і те саме відношення."},
+{"item_id": "S005", "merge_verdict": "C", "reason": "Обидва записи описують CVE-2026-35616 як вразливість у FortiClient EMS («in FortiClient EMS»), тобто подають те саме твердження AFFECTS."},
+{"item_id": "S006", "merge_verdict": "C", "reason": "Обидва записи представляють Adam Meyers як керівника counter adversary operations у CrowdStrike, що підтримує його належність до CrowdStrike."},
+{"item_id": "S007", "merge_verdict": "I", "reason": "Запис 7 подає інший об'єкт: його фрагмент каже, що Anthropic представила «security-guidance plugin» для Claude Code, а не що Anthropic розробляє модель Mythos."},
+{"item_id": "S008", "merge_verdict": "C", "reason": "Обидва записи називають Stryker американською компанією («U.S. medical device company», «Major U.S. health care technology company»), що підтримує LOCATED_IN United States."},
+{"item_id": "S009", "merge_verdict": "C", "reason": "Усі чотири записи прямо перелічують New Zealand серед членів Five Eyes; «Five Eyes intelligence alliance» і «Five Eyes» позначають ту саму сутність."},
+{"item_id": "S010", "merge_verdict": "C", "reason": "Обидва записи з однаковим фрагментом кажуть, що CrowdStrike Falcon platform працює «through lightweight agents and centralized telemetry», тобто використовує централізовану телеметрію."},
+{"item_id": "S011", "merge_verdict": "C", "reason": "Запис 2 прямо подає «Australian Signals Directorate's Australian Cyber Security Centre», а запис 1 — посаду «Head Australian Cyber Security Centre, Australian Signals Directorate» у форматі підрозділ і відомство, як у сусідніх підписах; обидва подають PART_OF."},
+{"item_id": "S012", "merge_verdict": "C", "reason": "Обидва записи називають Ollie Whitehouse технічним директором NCSC («NCSC Chief Technology Officer»), тобто членом тієї самої організації National Cyber Security Centre (NCSC-UK)."},
+{"item_id": "S013", "merge_verdict": "C", "reason": "Усі три записи подають Richard Horne (Dr Richard Horne) як керівника National Cyber Security Centre («Chief Executive Officer», «chief», «CEO»), тобто те саме відношення LEADS."},
+{"item_id": "S014", "merge_verdict": "C", "reason": "Обидва записи подають, що Anthropic пропонує Claude: «markets the Claude series of large language models» і «its Claude AI platform», до якої звертаються користувачі."}
+]}

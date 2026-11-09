@@ -1,0 +1,154 @@
+AUDIT_FILE: S2T29
+TARGET_DOC_ID: D0289
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0289
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/hims-hers-data-breach-2026-what-happened-and-why-it-matters/
+TITLE_SHA256: 41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+BEGIN_DOCUMENT
+[D0289:P0001] sha256:41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+[D0289:P0002] sha256:604ce0f10deb5fd3e5f7838ad96464e8b0031456b75ab3cf3201464b3241fb7b
+[D0289:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0004] sha256:ecd154fae8eff04f22fd4c4b61fb6429badf8e828066541cddc81cf4ed99ef6e
+[D0289:P0005] sha256:9f86568e0c7353e89415f5a71eeb5fcaff6fba5f5475ae94fb76fdf57cb0b327
+[D0289:P0006] sha256:5f90b9586f494ef7a460f898671216a8afeb4877948a63e5ba7127e14d727c07
+[D0289:P0007] sha256:1bb37376321beea0a4691462cffcb47c0686d7b7a7f912e0fc67ede9a9cd90ba
+[D0289:P0008] sha256:2b2c514f71bb088aa1a5eb89f0e151c79aa20b2469502975e15a283bf9a6e75f
+[D0289:P0009] sha256:4d4a2f7d5213edc6e5109721107b2905d6b32beab7ea19029f0abd4eb4954237
+[D0289:P0010] sha256:6abcb83bcb9335a88ea8242f0e4110ac2c81397be7413d13fe7a1dc0d5aa3696
+[D0289:P0011] sha256:3590a0886332de2349b4a62ffbb3d7cef662601c6c12674504369a8e1875b7cd
+[D0289:P0012] sha256:09011dd4684fe114c86b1bf6f589ec9dfd3596fccc2cd518079a7b3078d1293f
+[D0289:P0013] sha256:51677db3dd1b252dabc57c85c6c090d0ab92a569bfa2a9b3fec186a6f3a4ee84
+[D0289:P0014] sha256:cc6ee268ad2eb5455a499140813d951fce9d8b682bd1fc58e0df29f0ff3153e7
+[D0289:P0015] sha256:7b4df4296989133d3526a187a7bca5c91d2332f3ae3ca79762bb2259fdb928e1
+[D0289:P0016] sha256:406b68bcb56824a1223bb5de7b53f04b241f4a0455a543ec090d277190169a4f
+[D0289:P0017] sha256:57d342c5488b93d4e582e83054ff74f8c3a85f46a763d46dbb76ef522528ddbe
+[D0289:P0018] sha256:17b75e20421df65d978cc3141809356b2a19224621ce2251278290000f5bc80c
+[D0289:P0019] sha256:6597e683895ce5ae92a64ef97998e71605da83712e47c9fb7dd2db7bc905a45a
+[D0289:P0020] sha256:b931121cedf72e2b23bf0942dd799d3d7b68be47564b7420763cb4d74134da68
+[D0289:P0021] sha256:14368b223c7c2c60f38b05a39489d05f13f76f50f303f1a09162ae5dd877525f
+[D0289:P0022] sha256:c604b33edaf6347c35ceda57d32abc3f261dc48f7860dd23d88809d3be787303
+[D0289:P0023] sha256:44ec0e7c88c683a4c444474b7785029ac6f36b36c8bd302b5f4357cac3d75b83
+[D0289:P0024] sha256:eb10d945b58de6f46fbb0086609ae739b9ca63579bc13863b80b26d2e2ceb261
+[D0289:P0025] sha256:25db46de38b5681d764bad7ece876e009593379596245ac99e9c165fb0abfbfe
+[D0289:P0026] sha256:3e8b5476cf1af379d8d7e6d020c926a61e3da0fd9b22a524833f7615b44de5f4
+[D0289:P0027] sha256:fc060985e0240c162f20dcd78a8510b2f4031f37546fe1b535d85f574c63875f
+[D0289:P0028] sha256:184500290f777c0076588ffae25d024c8856b4f2f7959a63bbab42dca753a639
+[D0289:P0029] sha256:973de897dbb8d5ba671adb4b74355823b40745c7b13e3521a4e0e110704a4143
+[D0289:P0030] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0031] sha256:49741f6fa3dab917f342e2cac0dacf218768a6956309c65e49c8378a9e548609
+[D0289:P0032] sha256:48229aa32ec086785c260e85744916e6ef3bda6f6b3e88b27a7b2ba1337c2e7f
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (59)
+E001: «attackers» — targeted → «employees» | форма: actual, positive
+E002: «attackers» — obtained access to → «single sign-on account» | форма: actual, positive
+E003: «cybercriminals» — may use stolen data for → «identity theft» | форма: actual, positive
+E004: «Hims & Hers data breach» — occurred between → «February 4 and February 7, 2026» | форма: actual, positive
+E005: «attackers» — impersonated → «trusted entities» | форма: actual, positive
+E006: «Hims & Hers data breach» — compromised → «phone numbers» | форма: actual, positive
+E007: «attackers» — tricked employees into revealing → «login credentials» | форма: actual, positive
+E008: «Hims & Hers data breach» — compromised → «mailing addresses» | форма: actual, positive
+E009: «Hims & Hers» — is → «telehealth platform» | форма: actual, positive
+E010: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: possible, positive
+E011: «ShinyHunters» — steals → «large amounts of data» | форма: actual, positive
+E012: «Hims & Hers» — provides → «credit monitoring services» | форма: actual, positive
+E013: «Hims & Hers data breach» — compromised → «customer support data» | форма: actual, positive
+E014: «third-party customer service platform» — used by → «Hims & Hers» | форма: actual, positive
+E015: «cybercriminals» — may use stolen data for → «phishing attacks» | форма: actual, positive
+E016: «ShinyHunters» — may be behind → «Hims & Hers data breach» | форма: actual, positive
+E017: «Hims & Hers» — reports on → «Hims & Hers data breach» | форма: actual, positive
+E018: «ShinyHunters» — targets → «cloud services» | форма: actual, positive
+E019: «Hims & Hers data breach» — compromised → «email addresses» | форма: actual, positive
+E020: «Hims & Hers data breach» — affects → «electronic medical records» | форма: actual, negative
+E021: «Hims & Hers data breach» — affects → «third-party customer service platform» | форма: actual, positive
+E022: «Anonymous Hackers» — published → «Hims & Hers Data Breach 2026: What Happened and Why It Matters» | форма: actual, positive
+E023: «ShinyHunters» — gains access to → «corporate systems» | форма: actual, positive
+E024: «Hims & Hers» — confirmed → «Hims & Hers data breach» | форма: actual, positive
+E025: «Hims & Hers data breach» — compromised → «names» | форма: actual, positive
+E026: «Hims & Hers» — uses → «third-party customer service platform» | форма: actual, positive
+E027: «Hims & Hers data breach» — affects → «Hims & Hers» | форма: actual, positive
+E028: «Hims & Hers» — protects → «electronic medical records» | форма: actual, positive
+E029: «single sign-on account» — used to enter → «connected customer service platform» | форма: actual, positive
+E030: «ShinyHunters» — uses → «social engineering» | форма: actual, positive
+E031: «ShinyHunters» — linked to → «multiple high-profile data breaches» | форма: actual, positive
+E032: «Hims & Hers data breach» — compromised → «details shared during customer support interactions» | форма: actual, positive
+E033: «Hims & Hers data breach» — affects → «doctor- patient communications» | форма: actual, negative
+E034: «Hims & Hers» — detects → «Hims & Hers data breach» | форма: actual, positive
+E035: «Hims & Hers data breach» — driven by → «social engineering» | форма: actual, positive
+E036: «hackers» — gained unauthorized access to → «third-party customer service platform» | форма: actual, positive
+E037: «ShinyHunters» — sells or leaks data → «online» | форма: actual, positive
+E038: «login credentials» — used to access → «customer support system» | форма: actual, positive
+E039: «attackers» — used → «login credentials» | форма: actual, positive
+E040: «cybercriminals» — may use stolen data for → «blackmail» | форма: possible, positive
+E041: «Hims & Hers data breach» — did not access → «doctor-patient communications» | форма: actual, positive
+E042: «Hims & Hers data breach» — affects → «customer support data» | форма: actual, positive
+E043: «Hims & Hers» — discovers → «Hims & Hers data breach» | форма: actual, positive
+E044: «Hims & Hers data breach» — uses → «social engineering» | форма: actual, positive
+E045: «Hims & Hers Data Breach 2026: What Happened and Why It Matters» — published on → «2026.04.16» | форма: actual, positive
+E046: «Hims & Hers data breach» — affects → «third-party customer service platform» | форма: actual, negative
+E047: «Hims & Hers» — offered → «credit monitoring services» | форма: actual, positive
+E048: «Hims & Hers» — protects → «third-party customer service platform» | форма: actual, positive
+E049: «third-party customer service platform» — affects → «Hims & Hers data breach» | форма: actual, positive
+E050: «Hims & Hers» — publicly disclosed the incident in → «early April 2026» | форма: actual, positive
+E051: «Hims & Hers data breach» — attributed to → «ShinyHunters» | форма: possible, positive
+E052: «Hims & Hers data breach» — exposed → «sensitive customer information» | форма: actual, positive
+E053: «Hims & Hers» — detected intrusion on → «February 5, 2026» | форма: actual, positive
+E054: «Hims & Hers» — discovers → «Hims & Hers data breach» | форма: actual, negative
+E055: «Hims & Hers» — notified → «law enforcement authorities» | форма: actual, positive
+E056: «cybercriminals» — may use stolen data for → «blackmail» | форма: actual, positive
+E057: «Hims & Hers data breach» — did not access → «electronic medical records» | форма: actual, positive
+E058: «customer support system» — stored → «customer support tickets» | форма: actual, positive
+E059: «credit monitoring services» — mitigates → «identity theft» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

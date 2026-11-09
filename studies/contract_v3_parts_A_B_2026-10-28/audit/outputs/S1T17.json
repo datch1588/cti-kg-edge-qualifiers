@@ -1,0 +1,24 @@
+{
+ "audit_file": "S1T17",
+ "target_doc_id": "D0388",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0006 Live Technical Deep Dive названо найпопулярнішим сегментом події CSA XCON 2026, і це подано як факт."},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "У P0011 визнання приписано події («The event recognized…»), а IntelligenceX «was recognized» без названого виконавця, тож Cloud Security Alliance як суб'єкт визнання — підміна події її організатором, якої текст не стверджує."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 каже, що Cloud Security Alliance організувала CSA XCON 2026, а P0006 — що учасники конференції працювали в exploitation labs, і це подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0012 Satyam Rastogi «serves as President» Cyber Security Alliance Uttarakhand, тобто очолює її як чинний стан."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Матеріал подано під позначкою ANI (P0002, P0003), а дисклеймер P0021 підтверджує, що ANI оприлюднила наданий їй прес-реліз, як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0005 і P0007 сесії конференції, організованої Cloud Security Alliance, охоплювали defense evasion techniques, і це подано як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0005 Cloud Security Alliance «organised» CSA XCON 2026, що за змістом відповідає «operates», і це подано як факт."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0017 сказано, що використання AI «enables development of better defense systems», — це загальне твердження, подане як факт."},
+  {"item_id": "E009", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: за P0006 Live Technical Deep Dive є сегментом CSA XCON 2026, а не конференція частиною цієї сесії."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 починається з дейтлайну «New Delhi [India], March 21», тож матеріал датовано з New Delhi як факт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0005 Cloud Security Alliance організувала дводенний кіберзахід CSA XCON 2026 у Dehradun, і це подано як факт."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0021 сказано «The above press release has been provided by VMPL», і це подано як факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок стаття стверджує (P0005: Cloud Security Alliance «organised» CSA XCON 2026), а не заперечує, тож полярність negative хибна."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0005 подія CSA XCON 2026 відбулася в Dehradun, і це подано як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0002 вказано «Updated: Mar 21, 2026 16:20 IST», тож час оновлення статті підтверджено як факт."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0005 і P0007 сесії конференції Cloud Security Alliance охоплювали AI-powered threat detection, і це подано як факт."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0021 ANI заявляє, що не відповідає за зміст цього прес-релізу; заперечення входить у саме відношення, тож positive правильна, а дисклеймер подано як чинну позицію (actual)."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0005 Cloud Security Alliance організувала конференцію, що відбулася 13-14 March 2026, і це подано як факт."}
+ ]
+}

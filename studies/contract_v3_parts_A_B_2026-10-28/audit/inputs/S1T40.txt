@@ -1,0 +1,242 @@
+AUDIT_FILE: S1T40
+TARGET_DOC_ID: D0224
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0224
+PUBLICATION_DATE: 2026-05-04
+SOURCE_URL: https://www.prnewswire.com/news-releases/agentic-ai-security-market-worth-13-52-billion-by-2032--marketsandmarkets-302761232.html
+TITLE_SHA256: f28e7ee9656a30b65d374f6f1eb6b59393c057904c11e02c784ac842709f34e6
+BEGIN_DOCUMENT
+[D0224:P0001] sha256:f28e7ee9656a30b65d374f6f1eb6b59393c057904c11e02c784ac842709f34e6
+[D0224:P0002] sha256:7656ce07e7471d195596a93a3f30f5db9d5347bdd9a71a32f3dd42e550644be1
+[D0224:P0003] sha256:bf732b70c17a7a19eea3b104e5b27d901c353092a1f2373626f6d8e8e1a62cce
+[D0224:P0004] sha256:19513e7e1c91152481f28e59bac68a479265cf245cf29590f5249718ebfe334d
+[D0224:P0005] sha256:0d0ef59e49a21eb8b38e0730326063e8706a96b1b5fac92bf2abd0092661a326
+[D0224:P0006] sha256:212aaca2fc77c6074373b5efb133b94e2f15408ebba07e637e33ada6e463c6b8
+[D0224:P0007] sha256:f12c72a5cfeae1d171c40d3393e1cb13fc4a63f804d7779ba7e5a10df939e2d7
+[D0224:P0008] sha256:5fd780867051d8765d703594160c9ab5586892b0f4b4aa8f973b5a2f3550cf64
+[D0224:P0009] sha256:6f54a216af9cd4f57294d835511b57b5b78983188e64f9ea7dc189ce821a64d4
+[D0224:P0010] sha256:274965b817af08813594575531a8c1af407a568b11feea66f883598199594f85
+[D0224:P0011] sha256:6dea570800c55af098846e76e43af1a66f36d0a1987a2e52368bae92e338c24c
+[D0224:P0012] sha256:55f3d81e4af5e091fda402507fdefdefa5b00219f8b1f2fe129d97f94f35fd2e
+[D0224:P0013] sha256:933da95dc1e529501c0624b74e2dfd43c54810a8e6e920018f13feccacc126a0
+[D0224:P0014] sha256:b90abeb2775a02ca44c311f9cc4e0f70f68dfd796580f0ddba8faf7014a61b65
+[D0224:P0015] sha256:26f8dacefef80509a937676a56cd439f0b2c4af12f19d4bbb6434eece78f4d0a
+[D0224:P0016] sha256:adc8fe41535709cc9c10117dc8a8050ce4c83308c634df14e84a8f164daecd6c
+[D0224:P0017] sha256:c08b0aa8e4153bfd75084aaef97eeb85666e54b5335f87b63335b9efeac6e6c3
+[D0224:P0018] sha256:5ab82cd1c53a309cabcc2df9df500d29f6ef05cd0e3fad434887a600d81b9088
+[D0224:P0019] sha256:9e7baad95501b92963696efaa34dd3a4671f04a611eef5d097a7205137234044
+[D0224:P0020] sha256:f302cf700aa0b3522e5853ab3b01828c36f71686f623e8f2541161dab0f7a7b7
+[D0224:P0021] sha256:a4504bbb0d09b258f4ec794442c870763556ad5bde4ef4ae396441dc6549ff30
+[D0224:P0022] sha256:bcec784c94bb76bf5c03b0e1b9eb0dea6c64f96d4295ad99903c27f7016ab2dd
+[D0224:P0023] sha256:619ed498f8a5ddb00a7cb3b2f19114ad36664ea62955fb01c21a64a65a6b2bac
+[D0224:P0024] sha256:62072266f698ff052d9fb060b9f597ac207a4580e9af503985225c9102cd445a
+[D0224:P0025] sha256:ff565ba67d044c3f92ea3946ab9977b4537df85a9ee1b89927518a6ddaf50c1d
+[D0224:P0026] sha256:73e0d62a103783473707a30ea945f2790505b7611af039dfd2ed5c359c683942
+[D0224:P0027] sha256:ed474ec6bb3454b31183725a912f9ccef2f260e799445d27c1cc9e3301539db7
+[D0224:P0028] sha256:e80cb75e664c6ebfaf620d86bed0f7e98401be91413f2fb01b9d6f00c5628adc
+[D0224:P0029] sha256:de79bf6ee3ec74b38e4ebe81f87b99eed6055696bf7d4e243b3e73bbccdde3bb
+[D0224:P0030] sha256:e4c80e76e091dcd8368f9e26ae5b3758d341d76af9e94f9a2139f81a739dafed
+[D0224:P0031] sha256:03a18b7c168bf9ead252e5b286c5495d8c6be286582183eda8c820cd3ae20319
+[D0224:P0032] sha256:8b1f9661ecaca5a15323862066199f4f98d4ac37e2df398e6e946859840eeca7
+[D0224:P0033] sha256:3cfba912f8a3e0befe0f9be6866847de395fec00751fb2f1ab3709790d88571a
+[D0224:P0034] sha256:99ecfa915a9724642771f1fcd551c8eb21285a3a37b71294b0fb460c8c74ab5d
+[D0224:P0035] sha256:ee0f89ca05e978de4a90611bb8e6eeaa55543772feb2c0713f99739f6e516e6e
+[D0224:P0036] sha256:2a7edf9be1d19ac1d3c8da3507b26e33ead231d79b6440051792d0af089ebcbc
+[D0224:P0037] sha256:9a74688f5980b060673fdfd2667311a429d43dcc3ed4f0952b8294ea22483ed8
+[D0224:P0038] sha256:13a632ce30f2cb6606f3d05e5ffa30fabc2934be8d5b5c46da84ad34a1e3709d
+[D0224:P0039] sha256:054aa3ede9375983463b73cffeb8a5f209d7a4bee9bc62b113c6842627fe0fa8
+[D0224:P0040] sha256:2f4eb30939a63cdee80ed59c2432d2d2ba2088534938aa20ac8c878209a61185
+[D0224:P0041] sha256:8854741246bc370b853cb41d0b56fa9ae4ae758baf25c99f8c699802330c041c
+[D0224:P0042] sha256:f59eb035de268037a04fd2070ccda0161935d3a4845359828df2589f76a459a0
+[D0224:P0043] sha256:ba251bd3615b00fa2a402a0422f9da41e02e5b5c5fbf8939910a1beba305894c
+[D0224:P0044] sha256:74392dd8d80bfd6aba6e31376b32e6e732a66d0dd18181352cc27e1be126aa1e
+[D0224:P0045] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0224:P0046] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0224:P0047] sha256:8b8f1a70cc7eee63fd6be6f295bd7da58abde713052de8fe4369b5d5c8d053b9
+[D0224:P0048] sha256:aeb229c3aa91c499b759a2bc0730afd6794e77b4c0d4311cdf77b04c1365284b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (131)
+E001: «HiddenLayer» — located in → «US» | форма: actual, positive
+E002: «DeepKeep» — is located in → «Israel» | форма: actual, positive
+E003: «Microsoft» — is located in → «US» | форма: actual, positive
+E004: «Cloudflare» — located in → «US» | форма: actual, positive
+E005: «CrowdStrike» — located in → «US» | форма: actual, positive
+E006: «Noma Security» — located in → «Israel» | форма: actual, positive
+E007: «Mindgard» — located in → «UK» | форма: actual, positive
+E008: «Cato Networks» — located in → «Israel» | форма: actual, positive
+E009: «MarketsandMarkets» — published → «Managed Detection and Response (MDR) Market - Global Forecast to 2031» | форма: actual, positive
+E010: «Usercentrics» — is located in → «Germany» | форма: actual, positive
+E011: «infrastructure-level security controls» — include → «continuous monitoring of infrastructure behavior» | форма: actual, positive
+E012: «SMEs» — uses → «autonomous systems» | форма: actual, positive
+E013: «inference attacks» — target → «AI training and inference environments» | форма: actual, positive
+E014: «SMEs» — adopt → «AI-native applications» | форма: actual, positive
+E015: «Noma Security» — is located in → «Israel» | форма: actual, positive
+E016: «Forbes» — recognized as one of America's Best Management Consulting Firms → «MarketsandMarkets» | форма: actual, positive
+E017: «US» — is located in → «Aembit» | форма: actual, positive
+E018: «SMEs» — are exposed to → «unauthorized agent actions» | форма: actual, positive
+E019: «Strata Identity» — is located in → «US» | форма: actual, positive
+E020: «Agentic AI Security Market - Global Forecast to 2032» — covers forecast period → «2026-2032» | форма: actual, positive
+E021: «PR Newswire» — distributed press release on → «Agentic AI Security Market - Global Forecast to 2032» | форма: actual, positive
+E022: «Geordie AI» — is located in → «UK» | форма: actual, positive
+E023: «AI-driven attacks» — are rising across → «Asia Pacific» | форма: actual, positive
+E024: «Strata Identity» — located in → «US» | форма: actual, positive
+E025: «data poisoning» — targets → «AI training and inference environments» | форма: actual, positive
+E026: «cyber threats» — targets → «AI training and inference environments» | форма: actual, positive
+E027: «data leakage» — affects → «SMEs» | форма: possible, positive
+E028: «cyberattacks» — uses → «AI-based techniques» | форма: actual, positive
+E029: «infrastructure-level vulnerability» — can impact → «entire AI stack» | форма: actual, positive
+E030: «Credo AI» — located in → «US» | форма: actual, positive
+E031: «infrastructure layer» — includes → «cloud platforms» | форма: actual, positive
+E032: «Credo AI» — is located in → «US» | форма: actual, positive
+E033: «NeuralTrust» — is located in → «Spain» | форма: actual, positive
+E034: «Palo Alto Networks» — located in → «US» | форма: actual, positive
+E035: «inference attacks» — exploit vulnerabilities in → «datasets, models, and runtime processes» | форма: actual, positive
+E036: «Holistic AI» — is located in → «UK» | форма: actual, positive
+E037: «Openlayer» — located in → «US» | форма: actual, positive
+E038: «IBM» — reported highest average cost of data breaches in → «Asia Pacific» | форма: actual, positive
+E039: «Astrix Security» — is located in → «Israel» | форма: actual, positive
+E040: «weekly cyberattacks on organizations in Asia» — leverage → «AI-based techniques» | форма: actual, positive
+E041: «Cloudflare» — is located in → «US» | форма: actual, positive
+E042: «MarketsandMarkets» — published → «Agentic AI Security Market - Global Forecast to 2032» | форма: actual, positive
+E043: «NeuralTrust» — located in → «Spain» | форма: possible, positive
+E044: «CrowdStrike» — is located in → «US» | форма: actual, positive
+E045: «IBM» — reports on → «data breaches» | форма: actual, positive
+E046: «SentinelOne» — located in → «US» | форма: actual, positive
+E047: «Enkrypt AI» — is located in → «US» | форма: actual, positive
+E048: «Pillar Security» — located in → «US» | форма: actual, positive
+E049: «Check Point Software Technologies» — reported high volume of weekly cyberattacks on → «organizations in Asia» | форма: actual, positive
+E050: «Lasso Security» — located in → «Israel» | форма: actual, negative
+E051: «model manipulation» — targets → «AI training and inference environments» | форма: actual, positive
+E052: «vulnerabilities in AI models» — affects → «SMEs» | форма: possible, positive
+E053: «SMEs» — are exposed to → «data leakage» | форма: actual, positive
+E054: «Microsoft» — located in → «US» | форма: actual, positive
+E055: «AI-driven attacks» — targets → «manufacturing» | форма: actual, positive
+E056: «Lasso Security» — is located in → «Israel» | форма: actual, positive
+E057: «Usercentrics» — located in → «Germany» | форма: actual, positive
+E058: «US» — located in → «Straiker» | форма: actual, positive
+E059: «Agentic AI Security Market - Global Forecast to 2032» — announced on → «May 4, 2026» | форма: actual, positive
+E060: «infrastructure layer» — includes → «data centers» | форма: actual, positive
+E061: «MarketsandMarkets» — operates → «KnowledgeStore» | форма: actual, positive
+E062: «Natoma» — is located in → «US» | форма: actual, positive
+E063: «MarketsandMarkets» — published → «Quantum Cryptography Market - Global Forecast to 2031» | форма: actual, positive
+E064: «Zenity» — located in → «Israel» | форма: actual, positive
+E065: «Natoma» — located in → «US» | форма: actual, positive
+E066: «infrastructure-level security controls» — include → «workload isolation» | форма: actual, positive
+E067: «Akto» — located in → «US» | форма: actual, positive
+E068: «AI-driven attacks» — target → «BFSI, telecom, and manufacturing sectors» | форма: actual, positive
+E069: «Zenity» — is located in → «Israel» | форма: actual, positive
+E070: «Holistic AI» — located in → «UK» | форма: actual, positive
+E071: «Agentic AI Security Market - Global Forecast to 2032» — identifies highest CAGR region → «Asia Pacific» | форма: actual, positive
+E072: «Descope» — located in → «US» | форма: actual, positive
+E073: «Openlayer» — is located in → «US» | форма: actual, positive
+E074: «data breaches» — affects → «Asia Pacific» | форма: actual, positive
+E075: «DeepKeep» — located in → «Israel» | форма: actual, positive
+E076: «Aembit» — is located in → «US» | форма: actual, positive
+E077: «Pillar Security» — is located in → «US» | форма: actual, positive
+E078: «Descope» — is located in → «US» | форма: actual, positive
+E079: «NeuralTrust» — located in → «Spain» | форма: actual, positive
+E080: «Straiker» — is located in → «US» | форма: actual, positive
+E081: «MarketsandMarkets» — is located in → «Delray Beach, Florida» | форма: actual, positive
+E082: «MarketsandMarkets» — published → «Application Security Market - Global Forecast to 2031» | форма: actual, positive
+E083: «Enkrypt AI» — located in → «US» | форма: actual, positive
+E084: «AI-native applications» — include → «agent-based automation» | форма: actual, positive
+E085: «infrastructure-level security controls» — include → «runtime protection» | форма: actual, positive
+E086: «Aembit» — located in → «US» | форма: actual, positive
+E087: «SMEs» — are exposed to → «vulnerabilities in AI models» | форма: actual, positive
+E088: «Okta» — located in → «US» | форма: actual, positive
+E089: «Securiti» — located in → «US» | форма: actual, positive
+E090: «Fiddler AI» — located in → «US» | форма: actual, positive
+E091: «AI-enabled cyber threats» — affects → «Asia Pacific» | форма: possible, positive
+E092: «infrastructure layer» — includes → «high-performance computing environments» | форма: actual, positive
+E093: «HiddenLayer» — is located in → «US» | форма: actual, positive
+E094: «Lasso Security» — located in → «Israel» | форма: actual, positive
+E095: «SentinelOne» — is located in → «US» | форма: actual, positive
+E096: «Astrix Security» — located in → «Israel» | форма: actual, positive
+E097: «cyberattacks» — targets → «Asia» | форма: actual, positive
+E098: «data poisoning» — exploits vulnerabilities in → «datasets, models, and runtime processes» | форма: actual, positive
+E099: «AI-driven attacks» — targets → «telecom» | форма: actual, positive
+E100: «Geordie AI» — located in → «UK» | форма: actual, positive
+E101: «MarketsandMarkets» — published → «Network Security Market - Global Forecast to 2030» | форма: actual, positive
+E102: «SMEs» — rely on → «AI-native security platforms» | форма: actual, positive
+E103: «Akto» — is located in → «US» | форма: actual, positive
+E104: «Trufoundry» — located in → «US» | форма: actual, positive
+E105: «Straiker» — located in → «US» | форма: actual, positive
+E106: «vulnerability at the infrastructure level» — affects → «AI stack» | форма: possible, positive
+E107: «SMEs» — uses → «AI-driven tools» | форма: actual, positive
+E108: «Securiti» — is located in → «US» | форма: actual, positive
+E109: «Check Point Software Technologies» — is located in → «Israel» | форма: actual, positive
+E110: «SMEs» — rely on → «managed security services» | форма: actual, positive
+E111: «data poisoning» — targets → «AI training and inference environments» | форма: possible, positive
+E112: «Promptfoo» — is located in → «US» | форма: actual, positive
+E113: «Okta» — is located in → «US» | форма: actual, positive
+E114: «Fiddler AI» — is located in → «US» | форма: actual, positive
+E115: «Trufoundry» — located in → «US» | форма: actual, negative
+E116: «Check Point Software Technologies» — reports on → «cyberattacks» | форма: actual, positive
+E117: «Cato Networks» — is located in → «Israel» | форма: actual, positive
+E118: «unauthorized agent actions» — affects → «SMEs» | форма: possible, positive
+E119: «MarketsandMarkets» — developed → «MarketsandMarkets SalesPlay» | форма: actual, positive
+E120: «Trufoundry» — is located in → «US» | форма: actual, positive
+E121: «MarketsandMarkets» — published → «Security Testing Market - Global Forecast to 2031» | форма: actual, positive
+E122: «model manipulation» — exploits vulnerabilities in → «datasets, models, and runtime processes» | форма: actual, positive
+E123: «Obsidian Security» — located in → «US» | форма: actual, positive
+E124: «AI-driven attacks» — targets → «Asia Pacific» | форма: actual, positive
+E125: «Promptfoo» — located in → «US» | форма: actual, positive
+E126: «Mindgard» — is located in → «UK» | форма: actual, positive
+E127: «Palo Alto Networks» — is located in → «US» | форма: actual, positive
+E128: «AI-driven attacks» — targets → «BFSI» | форма: actual, positive
+E129: «Agentic AI Security Market - Global Forecast to 2032» — identifies largest market share region → «North America» | форма: actual, positive
+E130: «Check Point Software Technologies» — located in → «Israel» | форма: actual, positive
+E131: «Obsidian Security» — is located in → «US» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

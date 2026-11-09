@@ -1,0 +1,110 @@
+AUDIT_FILE: S5F26
+TARGET_DOC_ID: D0288
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0288
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/password-manager-malware-a-hidden-threat-in-a-trust-based-digital-world/
+TITLE_SHA256: 5dfbe0580bb212f46571c246a429ad1ff7840f09fe3fa5a1fb24f2355467619f
+BEGIN_DOCUMENT
+[D0288:P0001] sha256:5dfbe0580bb212f46571c246a429ad1ff7840f09fe3fa5a1fb24f2355467619f
+[D0288:P0002] sha256:31f758d1d4009f33d187868ec12a0172b165aea96769aa4dfef6cd86736499b8
+[D0288:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0288:P0004] sha256:0642df5c7738c0f7f7ff7bdf097512121b7527a3fa24bf5a006556a22c2209b6
+[D0288:P0005] sha256:d35adf9d51f5be02ab88b721778815a1b8dca34110548cb5e457abd4363e8a6e
+[D0288:P0006] sha256:c0078e976fb136c8a957171a5dab839934d25d81843ccde6284e114babf47fd9
+[D0288:P0007] sha256:48f90bb830273e95a9fabee43fafab743aacd7807efc72abfc3660bfa8aa7210
+[D0288:P0008] sha256:ebfc26ca71dfdd716b9cdbdae163166ff5e35da64f6af4f56b510d4305489041
+[D0288:P0009] sha256:696cc844471dcb05ac36aa3c3f9f65f1b201674e6c09abd57c97e7c0e41f7a7f
+[D0288:P0010] sha256:6a13f199db00bb1d47f0d2b9f38b3fe6925ee0d0dd73d1b58c49cb7c80a7fed7
+[D0288:P0011] sha256:f59c189cd47ee726351db57d26a60b467ca18a6ab2544e4b5590a3268c9c3a64
+[D0288:P0012] sha256:455210edfedc4956541652741212033b9fcb5ea62b3724a051c4fb1609558b71
+[D0288:P0013] sha256:ed56622f05e91a86df8da48528627a7f27dff86f0a8c4a9c5f7c2c06b0566e8e
+[D0288:P0014] sha256:bd59368ae2bc8620474379163199a29a7e6be61bd6822dcb05a03a494b189824
+[D0288:P0015] sha256:ff8b13c2de0541c081a19106fe31d0e1ca3f81677693bb29c7960e7bc35b8803
+[D0288:P0016] sha256:e49e349bd82a482e12318765029dfc6eb27237fff675d464676293ce78208134
+[D0288:P0017] sha256:d733615c84cf7ed8b28405ed28f618776cae736e57d3bc15cfb3240c064116f2
+[D0288:P0018] sha256:0c9ecf40624ec0e6d3b2fe898f6f398d46dafaacb2936863afef254e3ede1ef0
+[D0288:P0019] sha256:5be7cbf8442fd96b5adb2184c3a63bb759ae3e7e2d5df8019f201a1b7c50621a
+[D0288:P0020] sha256:7c10e7f1d2c9da571fbea3e8171f7cebcbe6623f826d7f314a3ba0ffc5c279cc
+[D0288:P0021] sha256:e23054c33a1d63eca7b4a50e9b0b1713e7b989dd1c442a34ae9143edd87ec5dd
+[D0288:P0022] sha256:5c45eb657041ac63687286e20ea1f276acaaad458b74a7e5a46e06468adce373
+[D0288:P0023] sha256:1ee62bd282695414e94c30c5cc439182460b07f68493caa8c4f8a94f7e49dfd4
+[D0288:P0024] sha256:73c36599164b2d7b26fe40e5e05089e3d66eb0a0a1f90c039cfa88cd7f832310
+[D0288:P0025] sha256:62aadcc2d4af7b4317d6e97f6f01711deb37653d9b068bd2d5fa0262d27dd7aa
+[D0288:P0026] sha256:c76c67bcf40cdb7ee02956abf0d96ad3904cc1116ce42cb89827b6d8476efeb3
+[D0288:P0027] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0288:P0028] sha256:49741f6fa3dab917f342e2cac0dacf218768a6956309c65e49c8378a9e548609
+[D0288:P0029] sha256:a43b3e2352234b4493a87c9fe4760de7b0b560f073443a844d42f3dd82d6cfb6
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (18)
+E001: «Password manager malware» — uses → «memory scraping» | форма: actual, positive
+E002: «Password manager malware» — uses → «social engineering» | форма: actual, positive
+E003: «password manager malware» — targets → «browser extensions» | форма: actual, positive
+E004: «multi- factor authentication» — mitigates → «Password manager malware» | форма: recommended, positive
+E005: «Password manager malware» — exploits → «software vulnerabilities» | форма: actual, positive
+E006: «Password manager malware» — uses → «malvertising» | форма: actual, positive
+E007: «Password manager malware» — uses → «fake downloads» | форма: actual, positive
+E008: «Password manager malware» — uses → «compromised websites» | форма: actual, positive
+E009: «memory scraping» — uses → «Password manager malware» | форма: actual, positive
+E010: «cybercriminals» — uses → «fake password manager apps» | форма: actual, negative
+E011: «Password manager malware» — uses → «keylogging» | форма: actual, positive
+E012: «cybercriminals» — uses → «fake password manager apps» | форма: actual, positive
+E013: «antivirus and anti-malware tools» — detects → «Password manager malware» | форма: possible, positive
+E014: «Password manager malware» — uses → «keylogging techniques» | форма: actual, positive
+E015: «Password manager malware» — targets → «password managers» | форма: actual, positive
+E016: «antivirus and anti-malware tools» — detects → «password manager malware» | форма: actual, positive
+E017: «Password manager malware» — uses → «software bundling» | форма: actual, positive
+E018: «Password manager malware» — uses → «phishing emails» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

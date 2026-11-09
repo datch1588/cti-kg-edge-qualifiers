@@ -1,0 +1,136 @@
+AUDIT_FILE: S3N12
+TARGET_DOC_ID: D0347
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0347
+PUBLICATION_DATE: 2026-03-31
+SOURCE_URL: https://www.thesun.co.uk/sport/38678889/world-cup-drone-cyber-threats-iran-war/
+TITLE_SHA256: 2dec3396c24d06550606b55914e9442eb50097cd6762d600e3829c4a00362845
+BEGIN_DOCUMENT
+[D0347:P0001] sha256:2dec3396c24d06550606b55914e9442eb50097cd6762d600e3829c4a00362845
+[D0347:P0002] sha256:e28a1d4c3f9f1537930249c7bca574b28f18f2ca2a238c165439f0fe13c74922
+[D0347:P0003] sha256:9a449d1d377a3c8dbfad44ffe5a4ceb0fa5d56ce8dc70fac50ec0774b9b6b649
+[D0347:P0004] sha256:cd31f1d9e2ff543a11f91f2c35d52235c6147938346bfcdf1584e30412c821a5
+[D0347:P0005] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0347:P0006] sha256:7f4a930700f43d3921d0e53306cc2f3bb3b0337d8a80bb54e9fb2303e6ae8798
+[D0347:P0007] sha256:91ef96c8a562c5a280802f04813c050b5d1ee36c31fa015d0dda7a3cb7da3628
+[D0347:P0008] sha256:1b48198583c05d5ec1f5fa0033d844d265d3b35cf689c4dbd0972746cdc102da
+[D0347:P0009] sha256:3afdda2c098fc8346a9f2e0ba06ec9c6188411cf78cc7934cfd8b666ce632f55
+[D0347:P0010] sha256:f2488fd4ef4adbc6ac61300083f2c33980e48bb4bbf3c540ad760d61fc36f420
+[D0347:P0011] sha256:ffdcbc9a64431a5ce85e4ebbca9e1ed91d8a60fe69e99bd4011f41ed903797b3
+[D0347:P0012] sha256:b710d6924e46517002caeea6b934db04914ed98ad631cb742afc42903fc2eb31
+[D0347:P0013] sha256:7cc7a592a7ac18a00ed6f0adfb756803a46d47a19364c2648e7e6d686bce20a2
+[D0347:P0014] sha256:56569c529b2eee44f0ee253c1c592cc05aa2b428a455f1fd5b6db9f14d3b494e
+[D0347:P0015] sha256:fc9e39e3698c13e2b8104d81c6b6c4d3d636ae510ccff1183ee3576f4ab1d5ee
+[D0347:P0016] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0347:P0017] sha256:71aa733e85e0523e2b145339452316a290b27c16b5ad52d6ccaa0d00d5d916fd
+[D0347:P0018] sha256:1acdd6ff9fd307f6046ff83d505477339c7481780a2a3f66d9d23f56038d6239
+[D0347:P0019] sha256:911e1d2a13ae39959b7efbe47127eb012212f97e1fcd75feace475832cc10d69
+[D0347:P0020] sha256:0cabeba2518de1227f23ff0668cac25e44ff2b6e9bc38fd28e99af6c59ca06f7
+[D0347:P0021] sha256:e34784a7cbb603e103e6e63315bda5a72f4473b7251d99b08b72a813b1644594
+[D0347:P0022] sha256:9d3edc9419937457ad3964d7216ce14b68079d66da9fe7ff07df3cfaadb6af5d
+[D0347:P0023] sha256:2d8cbdfe73a912e608435c67869573868d59d9c99f2564106fc7267a95d8bda9
+[D0347:P0024] sha256:96932685f47f07e2e4ab49bd415be3e4177ef3578de971aac97c04bc625b5303
+[D0347:P0025] sha256:2498bb59696181e9851b8b0de15aef1a49c83893240a5029ecdcd4b96be55d97
+[D0347:P0026] sha256:602048d577393b35d49ff42433359b4ea67d3aa5ee5312779e9cdbb62da4e140
+[D0347:P0027] sha256:f5f60a9fbe17ba8ba248ba004466e56e00d0f48133687beea3d2eeca2e6ed8dc
+[D0347:P0028] sha256:e1d1f4cba7d905deb3d47db9c83e26113a5088e78973de4256d2f3e9b016c612
+[D0347:P0029] sha256:49d3a03f6e3f23d5e260641e893122322a579f6bbc9fedd6e2bdd1df81ef38a8
+[D0347:P0030] sha256:862ca5a78d7c99267477ee566d5917f85a071d4d7c9ffaa68a50c2b7e3809f72
+[D0347:P0031] sha256:cac8f4ee2d89d06a1eb843b45f26e16ec85c87f59e363805a6c5cf9ffe459862
+[D0347:P0032] sha256:a43a894645a9f2a1543e7b1d74eef8f9b8082d69c7970d150bea987d334a399b
+[D0347:P0033] sha256:bacd1c96ea23a9f942ebb6881c1d08e0df6a0503ffffce2426bc64cb02e7e6d1
+[D0347:P0034] sha256:e9e30a47ce8ab93d54be4e69ebb6b2c79a6c8e3e902cf7b24260ec9d6e8dd838
+[D0347:P0035] sha256:ae3cb7d6df7bbd1999bb336bd155241cb41e48b39fb77dd93a69534451075bf5
+[D0347:P0036] sha256:acc77aa75833539b283af0df1e1e5582008cf2ab3cc6853abdfa4b4a68b52373
+[D0347:P0037] sha256:9b2a1c82cd629e3b3b25662c73e3dd0070b5ed189325be136a20676c3623cf06
+[D0347:P0038] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0347:P0039] sha256:44d1b6f4b46e3b97b193bf3ff554378297ee862c52ee60e9280d62be11ee608f
+[D0347:P0040] sha256:84d2a4a4581b0eb0b06cb8dfe7005b960e23be2609af8fddda7bb3267cf0ec82
+[D0347:P0041] sha256:ccf2616d88adec5c6d0fde90fb32213df7b6fd3e30c2c70be089211f30585e44
+[D0347:P0042] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0347:P0043] sha256:9a83c6e77f78464a73e2fbbaf4a5a7deb1f365f90f83bc6e00337f9ee06121e6
+[D0347:P0044] sha256:764d80e9fd60d7049277426cfd204cf732bb620d22577797bc41e95b9bfdbeaf
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (29)
+E001: «World Cup» — faces threats amid → «war in Iran» | форма: actual, positive
+E002: «World Cup faces unprecedented drone and cyber threats amid war in Iran» — was published on → «30 Mar 2026» | форма: actual, positive
+E003: «White House World Cup Task Force» — part of → «White House» | форма: actual, positive
+E004: «counter drone measures» — protects → «hotels» | форма: recommended, positive
+E005: «war in Iran» — takes place in → «Iran» | форма: actual, positive
+E006: «cyber threats» — affects → «World Cup» | форма: possible, positive
+E007: «Iranian officials and leaders» — are banned from → «World Cup» | форма: actual, positive
+E008: «Iranian team» — qualified for → «World Cup» | форма: actual, positive
+E009: «Andrew Giuliani» — leads → «White House World Cup Task Force» | форма: actual, positive
+E010: «World Cup faces unprecedented drone and cyber threats amid war in Iran» — was published on → «30 Mar 2026» | форма: possible, positive
+E011: «stadiums, fan festivals and hotels» — must be protected with → «counter drone measures» | форма: actual, positive
+E012: «World Cup faces unprecedented drone and cyber threats amid war in Iran» — was published by → «The Sun» | форма: actual, positive
+E013: «White House World Cup Task Force» — warned about → «attack drones» | форма: actual, positive
+E014: «Andrew Giuliani» — warns about → «attack drones» | форма: actual, positive
+E015: «war in Iran» — located in → «Iran» | форма: actual, negative
+E016: «World Cup» — located in → «Canada» | форма: actual, positive
+E017: «World Cup» — faces → «unprecedented drone threats» | форма: actual, positive
+E018: «White House» — is working with → «Fifa» | форма: actual, positive
+E019: «World Cup» — faces → «cyber threats» | форма: actual, positive
+E020: «White House World Cup Task Force» — leads → «Andrew Giuliani» | форма: actual, positive
+E021: «World Cup» — takes place in → «summer 2026» | форма: actual, positive
+E022: «counter drone measures» — protects → «stadiums» | форма: recommended, positive
+E023: «World Cup» — is held in → «US, Canada and Mexico» | форма: actual, positive
+E024: «war in Iran» — located in → «Iran» | форма: actual, positive
+E025: «counter drone measures» — protects → «fan festivals» | форма: recommended, positive
+E026: «World Cup» — located in → «US» | форма: actual, positive
+E027: «cyber threats» — affects → «World Cup» | форма: actual, positive
+E028: «World Cup» — located in → «Mexico» | форма: actual, positive
+E029: «White House World Cup Task Force» — is part of → «White House» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

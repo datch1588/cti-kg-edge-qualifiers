@@ -1,0 +1,827 @@
+{
+ "runs": {
+  "used": 56,
+  "excluded": []
+ },
+ "mentions": {
+  "total": 1982,
+  "by_type": {
+   "organization": 494,
+   "product": 220,
+   "technology": 213,
+   "other": 196,
+   "country": 148,
+   "person": 131,
+   "threat_category": 131,
+   "attack_technique": 108,
+   "threat_actor": 86,
+   "location": 51,
+   "vulnerability": 42,
+   "incident": 41,
+   "malware_class": 29,
+   "event": 25,
+   "tool": 25,
+   "campaign": 22,
+   "malware": 12,
+   "indicator": 7,
+   "security_property": 1
+  }
+ },
+ "nodes": {
+  "total": 1531,
+  "cross_doc": 187,
+  "cross_doc_by_kind": {
+   "concept": 76,
+   "resolved": 111
+  },
+  "cross_doc_by_type": {
+   "organization": 58,
+   "technology": 21,
+   "product": 20,
+   "country": 18,
+   "attack_technique": 13,
+   "threat_category": 13,
+   "person": 12,
+   "other": 10,
+   "location": 7,
+   "threat_actor": 5,
+   "malware_class": 4,
+   "event": 2,
+   "incident": 2,
+   "campaign": 1,
+   "vulnerability": 1
+  },
+  "by_kind": {
+   "concept": 446,
+   "single": 785,
+   "resolved": 300
+  },
+  "mentions_in_cross_doc_nodes": 637,
+  "largest_cross_doc": [
+   [
+    21,
+    "UK",
+    "country"
+   ],
+   [
+    18,
+    "United States",
+    "country"
+   ],
+   [
+    16,
+    "AI",
+    "technology"
+   ],
+   [
+    15,
+    "Russia",
+    "country"
+   ],
+   [
+    14,
+    "Iran",
+    "country"
+   ],
+   [
+    13,
+    "cyber threats",
+    "threat_category"
+   ],
+   [
+    11,
+    "Anthropic",
+    "organization"
+   ],
+   [
+    11,
+    "China",
+    "country"
+   ],
+   [
+    11,
+    "National Cyber Security Centre",
+    "organization"
+   ],
+   [
+    9,
+    "Mythos",
+    "product"
+   ],
+   [
+    9,
+    "ransomware",
+    "malware_class"
+   ],
+   [
+    8,
+    "CrowdStrike",
+    "organization"
+   ],
+   [
+    8,
+    "Microsoft",
+    "organization"
+   ],
+   [
+    8,
+    "cyber attacks",
+    "threat_category"
+   ],
+   [
+    7,
+    "AI agents",
+    "technology"
+   ]
+  ]
+ },
+ "resolver": {
+  "candidate_pairs": 959,
+  "candidate_pairs_by_how": {
+   "fuzzy": 467,
+   "exact": 492
+  },
+  "candidate_pairs_cross_doc": 911,
+  "candidate_pairs_cross_doc_same_node": 481,
+  "groups": 132,
+  "group_mentions": 509,
+  "files": 14,
+  "groups_rejected": 0,
+  "rejected": {},
+  "mentions_absorbed": 209,
+  "clusters_with_2plus": 112,
+  "clusters_cross_doc": 111,
+  "concept_clusters": 446,
+  "concept_clusters_cross_doc": 76
+ },
+ "edges": {
+  "records": 1607,
+  "edges": 1562,
+  "cross_doc": 26,
+  "records_in_cross_doc": 71,
+  "merged_within_one_doc": 0,
+  "self_loops": 0,
+  "cross_doc_by_relation": {
+   "MEMBER_OF": 7,
+   "PART_OF": 6,
+   "LOCATED_IN": 3,
+   "DEVELOPS": 2,
+   "PROVIDES": 2,
+   "LEADS": 2,
+   "USES": 2,
+   "ATTRIBUTED_TO": 1,
+   "AFFECTS": 1
+  }
+ },
+ "triples": {
+  "total": 1509,
+  "in_2plus_docs": 39,
+  "different_forms_across_docs": 3,
+  "positive_and_negative_across_docs": 0,
+  "different_forms_examples": [
+   [
+    "Iran",
+    "TARGETS",
+    "UK",
+    [
+     "actual, positive",
+     "possible, positive",
+     "unknown, positive"
+    ]
+   ],
+   [
+    "Anthropic",
+    "PROVIDES",
+    "Mythos",
+    [
+     "actual, positive",
+     "planned, positive"
+    ]
+   ],
+   [
+    "AI models",
+    "ENABLES",
+    "cyber attacks",
+    [
+     "actual, positive",
+     "possible, positive"
+    ]
+   ]
+  ]
+ },
+ "verbatim": {
+  "evidence": {
+   "k": 4091,
+   "n": 4091,
+   "p": 1.0,
+   "lo": 0.9990618784977817,
+   "hi": 0.9999999999999999
+  },
+  "edge_records_all_verbatim": {
+   "k": 1607,
+   "n": 1607,
+   "p": 1.0,
+   "lo": 0.9976152471122103,
+   "hi": 1.0
+  },
+  "edge_records_without_evidence": 0,
+  "nodes_all_verbatim": {
+   "k": 1982,
+   "n": 1982,
+   "p": 1.0,
+   "lo": 0.9980655762807091,
+   "hi": 1.0
+  },
+  "roles": {
+   "TARGET": 4091
+  }
+ },
+ "audit": {
+  "files": 15,
+  "files_unusable": [],
+  "items": {
+   "cluster": {
+    "real": 131,
+    "decoys": 14,
+    "without_verdict": 0
+   },
+   "pair": {
+    "real": 150,
+    "decoys": 15,
+    "without_verdict": 0
+   },
+   "merge": {
+    "real": 26,
+    "decoys": 3,
+    "without_verdict": 0
+   },
+   "form": {
+    "real": 9,
+    "decoys": 3,
+    "without_verdict": 0
+   }
+  },
+  "decoys": {
+   "cluster": {
+    "k": 14,
+    "n": 14,
+    "p": 1.0,
+    "lo": 0.7846891972623643,
+    "hi": 1.0,
+    "without_verdict": 0,
+    "reliable": true,
+    "missed": []
+   },
+   "pair": {
+    "k": 15,
+    "n": 15,
+    "p": 1.0,
+    "lo": 0.7961166989641515,
+    "hi": 1.0,
+    "without_verdict": 0,
+    "reliable": true,
+    "missed": []
+   },
+   "merge": {
+    "k": 3,
+    "n": 3,
+    "p": 1.0,
+    "lo": 0.4385029682449546,
+    "hi": 1.0,
+    "without_verdict": 0,
+    "reliable": true,
+    "missed": []
+   },
+   "form": {
+    "k": 2,
+    "n": 3,
+    "p": 0.6666666666666666,
+    "lo": 0.2076596008020477,
+    "hi": 0.9385080552796037,
+    "without_verdict": 0,
+    "reliable": false,
+    "missed": [
+     {
+      "ref": {
+       "record": [
+        "W038",
+        "e003"
+       ],
+       "triple": [
+        "c00117",
+        "TARGETS",
+        "c00140"
+       ]
+      },
+      "decoy": {
+       "type": "form_swap",
+       "from": "possible",
+       "expect": "I"
+      },
+      "verdict": "C",
+      "reason": "P0019: за звітом ISC Іран «pose a significant threat to the UK and its interests», а Британія лише «not a top priority for Iranian offensive cyber activity», тобто є ціллю, хоч і не першочерговою. Загрозу подано як чинний стан із посиланням на джерело, що не змінює модальності, а «appears» стосується лише пріоритетності, тож actual, positive відповідає тексту."
+     }
+    ]
+   }
+  },
+  "problems": {
+   "cluster": [],
+   "pair": [
+    {
+     "file": "XP01",
+     "item": "P001",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "Обидві згадки вжито в загальному значенні: критична інфраструктура як категорія життєво важливих систем, на яку спрямовані атаки державних хакерів або ШІ-атаки; це те саме загальне поняття без конкретизації."
+    },
+    {
+     "file": "XP01",
+     "item": "P002",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "В обох статтях «critical infrastructure» — те саме загальне поняття критичної інфраструктури (у згадці 1 як об'єкт кіберзагроз, у згадці 2 як об'єкт протидронового захисту); конкретизації, яка вказувала б на різні сутності, немає."
+    },
+    {
+     "file": "XP01",
+     "item": "P003",
+     "verdict": "U",
+     "a": [
+      "National Cyber Security Centre",
+      "organization"
+     ],
+     "b": [
+      "New Zealand National Cyber Security Centre",
+      "organization"
+     ],
+     "reason": "Згадка 1 — NCSC у складі «Government Communications Security Bureau», відмінний від іншого NCSC (Richard Horne) у тому самому переліку, але країни цього центру показані тексти не називають. Назву National Cyber Security Centre мають кілька національних агентств (UK, NL, NZ), тож тотожність із NCSC-NZ за текстами підтвердити не можна."
+    },
+    {
+     "file": "XP01",
+     "item": "P006",
+     "verdict": "SAME",
+     "a": [
+      "telecommunications networks",
+      "other"
+     ],
+     "b": [
+      "telecommunications networks",
+      "other"
+     ],
+     "reason": "В обох статтях «telecommunications networks» — те саме загальне поняття телекомунікаційних мереж як прикладу критичної інфраструктури поряд з енергомережами."
+    },
+    {
+     "file": "XP01",
+     "item": "P007",
+     "verdict": "SAME",
+     "a": [
+      "energy",
+      "other"
+     ],
+     "b": [
+      "energy sector",
+      "other"
+     ],
+     "reason": "Обидві згадки позначають енергетичний сектор як галузь-ціль кібератак: у згадці 1 це один із секторів критичної інфраструктури, у згадці 2 сектор із найбільшим зростанням атак; різниця лише у формулюванні («energy» і «energy sector»)."
+    },
+    {
+     "file": "XP01",
+     "item": "P010",
+     "verdict": "SAME",
+     "a": [
+      "cybercriminals",
+      "threat_actor"
+     ],
+     "b": [
+      "Cybercriminals",
+      "threat_actor"
+     ],
+     "reason": "Обидві згадки — загальне позначення кіберзлочинців як класу без конкретної групи в загальних твердженнях (використання прогалин у захисті, вимагання викупу); британський контекст згадки 2 не виокремлює іншої сутності."
+    },
+    {
+     "file": "XP01",
+     "item": "P013",
+     "verdict": "SAME",
+     "a": [
+      "attackers",
+      "threat_actor"
+     ],
+     "b": [
+      "attackers",
+      "threat_actor"
+     ],
+     "reason": "Обидві згадки — загальне позначення атакувальників як класу без конкретної групи; регіональна статистика X-Force для Азійсько-Тихоокеанського регіону у згадці 2 не вказує на окрему сутність."
+    },
+    {
+     "file": "XP01",
+     "item": "P017",
+     "verdict": "SAME",
+     "a": [
+      "Salt Typhoon",
+      "threat_actor"
+     ],
+     "b": [
+      "Salt Typhoon",
+      "campaign"
+     ],
+     "reason": "Обидві згадки називають ту саму Salt Typhoon: у згадці 1 — державно пов'язану групу з тривалим прихованим доступом, у згадці 2 — китайські вторгнення Salt Typhoon у великі телеком-провайдери США; різниця в типі згадок на тотожність не впливає."
+    },
+    {
+     "file": "XP02",
+     "item": "P021",
+     "verdict": "SAME",
+     "a": [
+      "Governments",
+      "organization"
+     ],
+     "b": [
+      "governments",
+      "organization"
+     ],
+     "reason": "Обидві згадки — загальне позначення урядів як класу організацій, яким радять посилювати кіберзахист і кіберстійкість; значення й обсяг збігаються."
+    },
+    {
+     "file": "XP02",
+     "item": "P026",
+     "verdict": "SAME",
+     "a": [
+      "Volt Typhoon",
+      "threat_actor"
+     ],
+     "b": [
+      "Volt Typhoon",
+      "campaign"
+     ],
+     "reason": "Обидва тексти вживають Volt Typhoon як назву пов'язаної з Китаєм кібердіяльності: у згадці 1 — підтримуваної КПК, що роками перебувала в ІТ-середовищах критичної інфраструктури, у згадці 2 — операцій під цим кодовим ім'ям; ознак двох різних сутностей немає, а розбіжність типу не оцінюється."
+    },
+    {
+     "file": "XP03",
+     "item": "P002",
+     "verdict": "SAME",
+     "a": [
+      "transportation",
+      "other"
+     ],
+     "b": [
+      "transportation systems",
+      "other"
+     ],
+     "reason": "Обидві згадки позначають транспортний сектор як критичну галузь-ціль кібератак: «transportation» у переліку критичних секторів зі звіту KELA і «transportation systems» у переліку секторів критичної інфраструктури."
+    },
+    {
+     "file": "XP03",
+     "item": "P015",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure sectors",
+      "other"
+     ],
+     "reason": "Обидві згадки позначають критичну інфраструктуру як загальну категорію об'єктів-цілей кібератак; «critical infrastructure sectors» — ті самі сектори критичної інфраструктури, а не окрема сутність."
+    },
+    {
+     "file": "XP03",
+     "item": "P020",
+     "verdict": "SAME",
+     "a": [
+      "energy",
+      "other"
+     ],
+     "b": [
+      "energy sector",
+      "other"
+     ],
+     "reason": "Обидві згадки позначають енергетичний сектор як галузь-ціль кібератак: «energy» у переліку критичних секторів звіту KELA та «energy sector» у звіті про зростання атак."
+    },
+    {
+     "file": "XP03",
+     "item": "P023",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "Обидві згадки вживають «critical infrastructure» в тому самому значенні — критична інфраструктура як ціль державних і зловмисних кіберзагроз; ознак різних сутностей немає."
+    },
+    {
+     "file": "XP03",
+     "item": "P025",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "Обидві згадки позначають критичну інфраструктуру як загальну категорію цілей кібератак державних акторів; альтернативна назва «critical infrastructures» не вказує на іншу сутність."
+    },
+    {
+     "file": "XP04",
+     "item": "P014",
+     "verdict": "SAME",
+     "a": [
+      "vulnerabilities",
+      "vulnerability"
+     ],
+     "b": [
+      "vulnerabilities",
+      "vulnerability"
+     ],
+     "reason": "Обидві згадки — загальне поняття вразливостей у системах, ужите в тому самому значенні (їх раніше виявляють ШІ-інструментами чи моделлю Mythos); жодна не позначає конкретної вразливості."
+    },
+    {
+     "file": "XP04",
+     "item": "P017",
+     "verdict": "SAME",
+     "a": [
+      "HM Government",
+      "organization"
+     ],
+     "b": [
+      "UK government",
+      "organization"
+     ],
+     "reason": "HM Government — усталена офіційна назва уряду Великої Британії, а згадка 2 — уряд Великої Британії, що підтримує стандарт Cyber Essentials; обидві згадки позначають британський уряд."
+    },
+    {
+     "file": "XP04",
+     "item": "P018",
+     "verdict": "U",
+     "a": [
+      "National Cyber Security Centre",
+      "organization"
+     ],
+     "b": [
+      "National Cyber Security Centre",
+      "organization"
+     ],
+     "reason": "Фрагмент 1 стосується NCSC у складі Government Communications Security Bureau (Catriona Robinson), а в тому ж переліку окремо наведено інший NCSC на чолі з Richard Horne; згадка 2 — британський NCSC, але тексти не показують, якій країні належить GCSB, тож тотожність не встановлено."
+    },
+    {
+     "file": "XP05",
+     "item": "P010",
+     "verdict": "U",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "Згадка 1 вжита загально («Nation-state hackers have repeatedly targeted critical infrastructure») у статті про загрози американцям, а згадка 2 — «our critical infrastructure» країни мовця, яку в показаному тексті не названо; бракує даних, щоб встановити, чи це та сама інфраструктура однієї країни, чи загальне поняття й конкретна інфраструктура."
+    },
+    {
+     "file": "XP06",
+     "item": "P002",
+     "verdict": "U",
+     "a": [
+      "critical infrastructure sectors",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "«critical infrastructure sectors» — ключові сектори критичної інфраструктури (енергетика, вода, транспорт, зв'язок), куди, за даними відомств США, проник Volt Typhoon, а «our critical infrastructure» — інфраструктура країни номінанта, яку показаний абзац прямо не називає. Бракує підтвердження, що йдеться про ту саму країну й про всю інфраструктуру, а не лише про окремі ключові сектори."
+    },
+    {
+     "file": "XP06",
+     "item": "P007",
+     "verdict": "SAME",
+     "a": [
+      "vulnerabilities",
+      "vulnerability"
+     ],
+     "b": [
+      "vulnerabilities",
+      "vulnerability"
+     ],
+     "reason": "Обидві згадки — загальне, неконкретизоване позначення вразливостей ПЗ як класу (ті, що організації можуть виявляти раніше, і ті, що агенти Ares знаходять і експлуатують у застосунках); жодна не вказує на конкретну вразливість, тож це те саме загальне поняття."
+    },
+    {
+     "file": "XP06",
+     "item": "P009",
+     "verdict": "SAME",
+     "a": [
+      "critical infrastructure",
+      "other"
+     ],
+     "b": [
+      "critical infrastructure",
+      "other"
+     ],
+     "reason": "Обидві згадки вживають «critical infrastructure» як загальне поняття без прив'язки до конкретної країни чи об'єкта (інфраструктура, яку слід захищати від дронів, та інфраструктура на кшталт енергомереж і телекомунікаційних мереж як ціль атак із ШІ), тож позначають те саме загальне поняття."
+    },
+    {
+     "file": "XP06",
+     "item": "P027",
+     "verdict": "SAME",
+     "a": [
+      "Governments",
+      "organization"
+     ],
+     "b": [
+      "governments",
+      "organization"
+     ],
+     "reason": "Обидві згадки — загальне позначення урядів як класу у статтях про те саме попередження Five Eyes (уряди, яких закликають модернізувати захист, і уряди як потенційні цілі атак ШІ), без прив'язки до конкретного уряду, тож позначають те саме загальне поняття."
+    }
+   ],
+   "merge": [],
+   "form": []
+  }
+ },
+ "main": {
+  "QB1_nodes_specific": {
+   "counts": {
+    "C": 111
+   },
+   "k": 111,
+   "n": 111,
+   "p": 1.0,
+   "lo": 0.9665498953066078,
+   "hi": 1.0
+  },
+  "QB1_nodes_general": {
+   "counts": {
+    "C": 20
+   },
+   "k": 20,
+   "n": 20,
+   "p": 1.0,
+   "lo": 0.8388748419471806,
+   "hi": 1.0
+  },
+  "QB1_nodes_all": {
+   "counts": {
+    "C": 131
+   },
+   "k": 131,
+   "n": 131,
+   "p": 1.0,
+   "lo": 0.9715112929340055,
+   "hi": 1.0
+  },
+  "QB1_nodes_specific_by_type": {
+   "campaign": {
+    "counts": {
+     "C": 1
+    },
+    "k": 1,
+    "n": 1,
+    "p": 1.0,
+    "lo": 0.20654931437723745,
+    "hi": 1.0
+   },
+   "event": {
+    "counts": {
+     "C": 2
+    },
+    "k": 2,
+    "n": 2,
+    "p": 1.0,
+    "lo": 0.34238022750665303,
+    "hi": 1.0
+   },
+   "incident": {
+    "counts": {
+     "C": 2
+    },
+    "k": 2,
+    "n": 2,
+    "p": 1.0,
+    "lo": 0.34238022750665303,
+    "hi": 1.0
+   },
+   "organization": {
+    "counts": {
+     "C": 58
+    },
+    "k": 58,
+    "n": 58,
+    "p": 1.0,
+    "lo": 0.9378821442127971,
+    "hi": 1.0
+   },
+   "other": {
+    "counts": {
+     "C": 10
+    },
+    "k": 10,
+    "n": 10,
+    "p": 1.0,
+    "lo": 0.7224672001371107,
+    "hi": 0.9999999999999999
+   },
+   "person": {
+    "counts": {
+     "C": 12
+    },
+    "k": 12,
+    "n": 12,
+    "p": 1.0,
+    "lo": 0.7575059933447592,
+    "hi": 1.0
+   },
+   "product": {
+    "counts": {
+     "C": 20
+    },
+    "k": 20,
+    "n": 20,
+    "p": 1.0,
+    "lo": 0.8388748419471806,
+    "hi": 1.0
+   },
+   "threat_actor": {
+    "counts": {
+     "C": 5
+    },
+    "k": 5,
+    "n": 5,
+    "p": 1.0,
+    "lo": 0.5655175352168251,
+    "hi": 1.0
+   },
+   "vulnerability": {
+    "counts": {
+     "C": 1
+    },
+    "k": 1,
+    "n": 1,
+    "p": 1.0,
+    "lo": 0.20654931437723745,
+    "hi": 1.0
+   }
+  },
+  "QB1_pairs": {
+   "counts": {
+    "SAME": 19,
+    "U": 4,
+    "DIFF": 127
+   },
+   "k": 19,
+   "n": 146,
+   "p": 0.13013698630136986,
+   "lo": 0.08491961639625936,
+   "hi": 0.19431858076226652,
+   "population": 430,
+   "missed_estimate": {
+    "point": 55.958904109589035,
+    "lo": 36.515435050391524,
+    "hi": 83.5569897277746
+   }
+  },
+  "QB2_merge": {
+   "counts": {
+    "C": 26
+   },
+   "k": 26,
+   "n": 26,
+   "p": 1.0,
+   "lo": 0.8712710781407846,
+   "hi": 1.0
+  },
+  "QB3_form": {
+   "records": {
+    "k": 9,
+    "n": 9,
+    "p": 1.0,
+    "lo": 0.7008549515804559,
+    "hi": 1.0
+   },
+   "triple_verdicts": {
+    "C": 9
+   },
+   "form_verdicts": {
+    "C": 9
+   },
+   "triples": 3,
+   "triples_fully_audited": 3,
+   "triples_all_records_CC": 3
+  }
+ }
+}

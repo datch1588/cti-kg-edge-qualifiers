@@ -1,0 +1,25 @@
+{
+ "audit_file": "S5F15",
+ "target_doc_id": "D0488",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: автори вважають, що підхід «may support practical, real-time cybersecurity applications», тобто це можливість."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: модель поєднує подвійний відбір ознак зі «stacked ensemble machine learning approach»; це подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016–P0017: у системі застосовано метод Double Feature Selection."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: класифікатор Random Forest слугує метакласифікатором системи."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: систему перевірено на наборах даних зі сценаріями bot activity з високою точністю, тобто здатність виявлення продемонстровано."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: серед сценаріїв, на яких перевірено й підтверджено виявлення, є port scans."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: Random Forest у системі оптимізовано через Grid Search cross-validation."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: серед сценаріїв, на яких перевірено й підтверджено виявлення, є web attacks."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що система використовує stacked ensemble, тож полярність negative хибна."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: K-Nearest Neighbors використано як базовий класифікатор."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: Zaed S. Mahdi з колегами є автором дослідження, яке представляє цю систему виявлення вторгнень."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: серед сценаріїв, на яких перевірено й підтверджено виявлення, є DoS."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: серед сценаріїв, на яких перевірено й підтверджено виявлення, є DDoS."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: серед сценаріїв, на яких перевірено й підтверджено виявлення, є brute-force."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: систему призначено для виявлення кібератак; це призначення засобу, тобто actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: Gaussian Naive Bayes використано як базовий класифікатор."},
+  {"item_id": "E017", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: саме система використовує K-Nearest Neighbors, а не навпаки."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: у системі застосовано техніку Select-K-Best."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: у системі застосовано метод Variance Threshold."}
+ ]
+}

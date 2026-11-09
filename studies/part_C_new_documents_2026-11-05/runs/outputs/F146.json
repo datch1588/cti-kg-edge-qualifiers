@@ -1,0 +1,55 @@
+{
+ "run_id": "F146",
+ "target_doc_id": "D0071",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0007", "start": 175, "end": 246, "sha256": "a42482cf7052d10c231a505c7af8d330d6af9032f3dd3643c667b3310a3631ec"}}
+  ]},
+  {"id": "n002", "label": "C3iHub", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 196, "end": 277, "sha256": "66dba281bd2487a06b8598e4becab77cab6d42591278fb911c9a200527e07a23"}}
+  ]},
+  {"id": "n003", "label": "Central Board of Secondary Education", "entity_type": "organization", "aliases": ["CBSE"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]},
+  {"id": "n004", "label": "IIT Kanpur", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0001", "start": 0, "end": 80, "sha256": "7d35d36669591ab2562ba72ff92554c10a0f86a39a4b063ea86676d2a46043f9"}}
+  ]},
+  {"id": "n005", "label": "Nisarga Adhikary", "entity_type": "person", "aliases": ["Adhikary", "Nisarga"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 101, "sha256": "3de5fbea4bbdb507f9f9f554a84ad7d57b744dcda5b5c343df614d56f7ffd250"}}
+  ]},
+  {"id": "n006", "label": "Online Submission of Marks (OSM) portal", "entity_type": "product", "aliases": ["OSM portal"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 82, "end": 191, "sha256": "e5ced96e878060b220a7f3875496d6aba1d527efce7bf2bf22105222905702cb"}}
+  ]},
+  {"id": "n007", "label": "security vulnerabilities", "entity_type": "vulnerability", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n001", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0007", "start": 95, "end": 246, "sha256": "6ce3fb849a490dfdef6b0a1b39b5c5715e5d87628eb792293ad21d985a7e6fca"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n004", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 79, "end": 154, "sha256": "e55b0480b5862c0b979509c415dd18dfce3e72cc25739666d3e7f6c2123646f9"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n006", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 105, "end": 194, "sha256": "6bf361686c03e836b70060539f2723c90865f9b1075de3ca263afe62f7268492"}}
+  ]},
+  {"id": "e004", "source": "n005", "target": "n007", "relation_type": "DISCOVERS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "identification of security vulnerabilities in CBSE's OSM portal", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 194, "sha256": "a49ab141c76b5c78232c1c9296bb79fd2e78ad22b2b2d1085ff8bf9e828dcea5"}}
+  ]},
+  {"id": "e005", "source": "n005", "target": "n007", "relation_type": "EXPLOITS", "modality": "actual", "polarity": "negative", "attribution": "", "event_time": "", "event_scope": "identification of security vulnerabilities in CBSE's OSM portal", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0012", "start": 0, "end": 116, "sha256": "94e49b5f7dee85997a056a59871b40c9d00a4be015f2b35c7a343121d0920484"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n002", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 53, "end": 154, "sha256": "1f55614c39142e634139ad076846d653348a37a8df59c750550a27015d124fc0"}}
+  ]},
+  {"id": "e007", "source": "n005", "target": "n007", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "identification of security vulnerabilities in CBSE's OSM portal", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0012", "start": 0, "end": 116, "sha256": "94e49b5f7dee85997a056a59871b40c9d00a4be015f2b35c7a343121d0920484"}}
+  ]},
+  {"id": "e008", "source": "n007", "target": "n006", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "identification of security vulnerabilities in CBSE's OSM portal", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,140 @@
+{
+ "run_id": "F010",
+ "target_doc_id": "D0175",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 93, "sha256": "87d8f92998997334e40498a0a9b20f4740c94624a902b4d9374f3a02ca6c535c"}}
+  ]},
+  {"id": "n002", "label": "Israel", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0023", "start": 189, "end": 275, "sha256": "8ba6e69fb06e432b55ab3b008357f687e2ccb182b59e3f81d363f3a3401349d2"}}
+  ]},
+  {"id": "n003", "label": "Kuwait", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0047", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0047", "start": 0, "end": 190, "sha256": "0835e47e66ca2b3076b210d852e83b54ba76ed916605c85b8ba5e2543294630d"}}
+  ]},
+  {"id": "n004", "label": "United States", "entity_type": "country", "aliases": ["US"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0041", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0041", "start": 120, "end": 212, "sha256": "0fda2c5452405ccbec473fddb07c4ac4a3600bc8f0cbc1393711619d94a1b5b6"}},
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0032", "start": 0, "end": 78, "sha256": "ce05cb430b3a7f620660745f232d8fec482abb65fe548331322a56d0ad34d92f"}}
+  ]},
+  {"id": "n005", "label": "US-Israeli war on Iran", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 223, "sha256": "3a4059a8cf9eed4e825f1e35fb4bbb3bda481745c5baa4a29ef0474602b6d2d1"}},
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+  ]},
+  {"id": "n006", "label": "Gulf states", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 93, "sha256": "87d8f92998997334e40498a0a9b20f4740c94624a902b4d9374f3a02ca6c535c"}}
+  ]},
+  {"id": "n007", "label": "Strait of Hormuz", "entity_type": "location", "aliases": ["Hormuz"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0012", "start": 0, "end": 99, "sha256": "d598113f40d17bed3ff6365d13d656bee699799f56a6c892274bccab5c64a806"}},
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0013", "start": 102, "end": 162, "sha256": "28e14f5b6598fd4b6d7cb59fa1db18130feb0b8a74fff164d263e1cad4121875"}}
+  ]},
+  {"id": "n008", "label": "Gulf armed forces", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0010", "start": 144, "end": 291, "sha256": "b95c0d09e9b1ff4cc684814adfe2474d073984377221307b4fcfd2e3ea073bd8"}}
+  ]},
+  {"id": "n009", "label": "airports", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}}
+  ]},
+  {"id": "n010", "label": "civilian facilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0007", "start": 136, "end": 286, "sha256": "6e6e7e40b5c78b61293ec739aa09cdb356c462a643a4b566b9cdb88c3bb8f402"}}
+  ]},
+  {"id": "n011", "label": "energy facilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}},
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0011", "start": 0, "end": 77, "sha256": "8702953a620778c05922c23b06a9a33373de04240dbb5a7ab5406178a29460ef"}}
+  ]},
+  {"id": "n012", "label": "infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0007", "start": 136, "end": 286, "sha256": "6e6e7e40b5c78b61293ec739aa09cdb356c462a643a4b566b9cdb88c3bb8f402"}}
+  ]},
+  {"id": "n013", "label": "drones", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0010", "start": 144, "end": 291, "sha256": "b95c0d09e9b1ff4cc684814adfe2474d073984377221307b4fcfd2e3ea073bd8"}}
+  ]},
+  {"id": "n014", "label": "missiles", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0010", "start": 144, "end": 291, "sha256": "b95c0d09e9b1ff4cc684814adfe2474d073984377221307b4fcfd2e3ea073bd8"}}
+  ]},
+  {"id": "n015", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0045", "start": 0, "end": 167, "sha256": "9ce0c89e8253365f730dace0ace4a7f500506fb8cbe8f725d60392237a43fd11"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n006", "relation_type": "TARGETS",
+   "attribution": "Emad El-Din Hussein (Al-Bayan)", "event_time": "", "event_scope": "Iran's attacks on Gulf states",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 93, "sha256": "87d8f92998997334e40498a0a9b20f4740c94624a902b4d9374f3a02ca6c535c"}}
+   ]},
+  {"id": "e002", "source": "n001", "target": "n010", "relation_type": "TARGETS",
+   "attribution": "Jeddah statement (Gulf leaders)", "event_time": "", "event_scope": "Iranian attacks on infrastructure and civilian facilities cited in the Jeddah statement",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0007", "start": 136, "end": 286, "sha256": "6e6e7e40b5c78b61293ec739aa09cdb356c462a643a4b566b9cdb88c3bb8f402"}}
+   ]},
+  {"id": "e003", "source": "n001", "target": "n012", "relation_type": "TARGETS",
+   "attribution": "Jeddah statement (Gulf leaders)", "event_time": "", "event_scope": "Iranian attacks on infrastructure and civilian facilities cited in the Jeddah statement",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0007", "start": 136, "end": 286, "sha256": "6e6e7e40b5c78b61293ec739aa09cdb356c462a643a4b566b9cdb88c3bb8f402"}}
+   ]},
+  {"id": "e004", "source": "n002", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e005", "source": "n002", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Emad El-Din Hussein (Al-Bayan)", "event_time": "February 28", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 223, "sha256": "3a4059a8cf9eed4e825f1e35fb4bbb3bda481745c5baa4a29ef0474602b6d2d1"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0028", "start": 67, "end": 121, "sha256": "366390213d0d6d58eee1ac2e2bce763a2ac09572fb814ac26588388e43d64ebe"}}
+   ]},
+  {"id": "e006", "source": "n002", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Abdel Moneim Saeed (Al-Masry Al-Youm)", "event_time": "June 2025", "event_scope": "first Iranian war (US-Israeli strikes on Iran)",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0020", "start": 0, "end": 113, "sha256": "27ab7a07e0d2155a72c59a0b6f0f8734a1db73c0af496f96a8f20a36094f5dab"}}
+   ]},
+  {"id": "e007", "source": "n004", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e008", "source": "n004", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Emad El-Din Hussein (Al-Bayan)", "event_time": "February 28", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0026", "start": 0, "end": 223, "sha256": "3a4059a8cf9eed4e825f1e35fb4bbb3bda481745c5baa4a29ef0474602b6d2d1"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0028", "start": 67, "end": 121, "sha256": "366390213d0d6d58eee1ac2e2bce763a2ac09572fb814ac26588388e43d64ebe"}}
+   ]},
+  {"id": "e009", "source": "n004", "target": "n001", "relation_type": "TARGETS",
+   "attribution": "Abdel Moneim Saeed (Al-Masry Al-Youm)", "event_time": "June 2025", "event_scope": "first Iranian war (US-Israeli strikes on Iran)",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0020", "start": 0, "end": 113, "sha256": "27ab7a07e0d2155a72c59a0b6f0f8734a1db73c0af496f96a8f20a36094f5dab"}}
+   ]},
+  {"id": "e010", "source": "n005", "target": "n006", "relation_type": "AFFECTS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e011", "source": "n005", "target": "n009", "relation_type": "AFFECTS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e012", "source": "n005", "target": "n011", "relation_type": "AFFECTS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e013", "source": "n005", "target": "n012", "relation_type": "AFFECTS",
+   "attribution": "Mohammed Al-Rashed (Al Rai)", "event_time": "", "event_scope": "n005",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0040", "start": 0, "end": 210, "sha256": "264b30900800d8962f3797a4a5d6401f305e78812c6183776c2bc22a2a51ab04"}},
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0037", "start": 0, "end": 92, "sha256": "7540c0e6be0bb2ad862ad0135d4512d3966bbfa91c6a9f459fa5d37e36a30d4d"}}
+   ]},
+  {"id": "e014", "source": "n008", "target": "n013", "relation_type": "MITIGATES",
+   "attribution": "Jeddah statement (Gulf leaders)", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0010", "start": 144, "end": 291, "sha256": "b95c0d09e9b1ff4cc684814adfe2474d073984377221307b4fcfd2e3ea073bd8"}}
+   ]},
+  {"id": "e015", "source": "n008", "target": "n014", "relation_type": "MITIGATES",
+   "attribution": "Jeddah statement (Gulf leaders)", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0010", "start": 144, "end": 291, "sha256": "b95c0d09e9b1ff4cc684814adfe2474d073984377221307b4fcfd2e3ea073bd8"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

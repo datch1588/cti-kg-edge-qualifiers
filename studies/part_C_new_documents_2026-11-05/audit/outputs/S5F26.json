@@ -1,0 +1,24 @@
+{
+ "audit_file": "S5F26",
+ "target_doc_id": "D0288",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: «Some malware variants focus on memory scraping» — типова поведінка, подана як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: шкідник проникає на пристрій «through social engineering» — подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: після встановлення шкідник сканує «password manager applications or browser extensions» — подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Те, що MFA захищає (P0019: зловмисникам усе одно потрібен додатковий крок перевірки), подано як властивість засобу, тобто actual, а порада його ввімкнути рекомендацією цей звʼязок не робить."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: шкідник потрапляє на пристрій через «software vulnerabilities» — подано як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: у розділі про поширення malvertising названо каналом, що перенаправляє на заражені сайти; це загальне твердження, тому actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: шкідник «can infect devices through... fake downloads» — йдеться про здатність, тож actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: серед способів зараження названо «compromised websites» — здатність, тож actual."},
+  {"item_id": "E009", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: memory scraping використовує шкідник, а не навпаки."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "P0012 стверджує, що кіберзлочинці створюють фальшиві застосунки менеджерів паролів, тому полярність negative хибна."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: «Others rely on keylogging techniques» — подано як факт."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: створення фальшивих застосунків названо тактикою кіберзлочинців і подано як факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "P0019: «These tools can detect and remove threats» — тут «can» означає здатність (actual), а не possible."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: «Others rely on keylogging techniques» — подано як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: шкідник «specifically designed to target password management tools» — це його призначення, тож actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: антивіруси «can detect and remove threats» — здатність засобу, тож actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: «Another common method is software bundling» — канал поширення, поданий як факт."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016: «Phishing emails remain one of the most common methods» — подано як факт."}
+ ]
+}

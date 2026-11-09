@@ -1,0 +1,17 @@
+{
+ "audit_file": "R1_T01",
+ "target_doc_id": "D0596",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «aims to provide ... as of April» передає план, і в P0058 це також мета на майбутнє («primary aim now is to provide ... as of this April»)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0006 з посиланням на звіт сказано, що промислові системи «are now increasingly connected to corporate IT environments», тобто це чинний стан, як і у формулюванні."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «isolates» подає звʼязок як факт, а в P0017 сказано лише про можливість: «security breaches can be isolated», тобто маркер «can» втрачено."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «extend across» подає звʼязок як чинний факт, а в P0008 це вимога: засоби контролю «must extend across field-level devices», тобто маркер «must» втрачено."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання стверджує, що порушення поширюються мережею OT, а в P0017 це лише потенційний ризик, якому запобігає мікросегментація («can be isolated before they propagate»)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «extend across» без маркерів, а в P0008 це вимога «must extend across ... enterprise layers», тобто маркер «must» втрачено."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «extend across» без маркерів, а в P0008 це вимога «must extend across ... edge systems», тобто маркер «must» втрачено."},
+  {"item_id": "W008", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly positioned between» подає розташування DMZ як припущення, а в P0009 воно подане як факт («intermediate demilitarized zones (DMZs) positioned between IT and OT environments»)."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "Формулювання «are no longer shielded from» заперечує захищеність як чинний стан, і в P0007 сказано так само: «OT environments are no longer shielded from cyber threats»."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «identify» подає звʼязок як факт, а в P0021 сказано лише про можливість: «AI-enabled security solutions can identify attacks», тобто маркер «can» втрачено."},
+  {"item_id": "W011", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «can expose» передає ризик так само, як P0018 («cautions that a single compromised IoT device can expose»), хоча умову про недостатню сегментацію в ньому пропущено."}
+ ]
+}

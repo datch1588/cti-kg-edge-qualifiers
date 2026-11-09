@@ -1,0 +1,58 @@
+{
+ "run_id": "F078",
+ "target_doc_id": "D0460",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0010", "start": 0, "end": 159, "sha256": "b9f5f5426817977efdd36a4a044c5066a76d85af31a3e1e82e25830d6c71b581"}}]},
+  {"id": "n002", "label": "Ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0010", "start": 0, "end": 159, "sha256": "b9f5f5426817977efdd36a4a044c5066a76d85af31a3e1e82e25830d6c71b581"}}]},
+  {"id": "n003", "label": "National Coordination Center", "entity_type": "organization", "aliases": ["NCC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 726, "end": 821, "sha256": "20696ea91b7510f184bac5a648aa1b5331e22b880360298bc4fc3e172a354203"}}]},
+  {"id": "n004", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 94, "end": 210, "sha256": "db9de92c085c07e9eac784b27c4601526a0c3f7f00b426793dd9dd6e8d975fb2"}}]},
+  {"id": "n005", "label": "Executive Order", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 32, "end": 211, "sha256": "bc824f9f39b57aaea78ea14c10096f6f96fd883bba9511343f82d0f5eb9f7356"}}]},
+  {"id": "n006", "label": "Executive Order", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0021", "start": 0, "end": 205, "sha256": "78e04f750d3857e1ea567effc9351e432746aaaa4995741d45ffbfbd717fddb7"}}]},
+  {"id": "n007", "label": "TAKE IT DOWN Act", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 0, "end": 131, "sha256": "b4e928ae6ed66a2ed636cd273d06762f9c070a76fadafd8edce613f050fe2b42"}}]},
+  {"id": "n008", "label": "Donald J. Trump", "entity_type": "person", "aliases": ["President Trump"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 32, "end": 90, "sha256": "556d8183f80f78d153b5af8570b26fe754a5cbae494d57f308c23b84adefcc17"}},
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0009", "start": 45, "end": 136, "sha256": "17031977e06a01d7a173dc0cfb0625fd588f687b710bf8a409f3d23f03186a4f"}}]},
+  {"id": "n009", "label": "Melania Trump", "entity_type": "person", "aliases": ["Mrs. Trump"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 93, "end": 131, "sha256": "e5f835461e74312a436c7ba5b765b073ed3e0ed4389c9f420be0e6e0afb1c6da"}},
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0020", "start": 0, "end": 96, "sha256": "244f67cb027c60a32c0d9096ecf41d05c4f7d5d3769c90d702b756d613b49c5a"}}]},
+  {"id": "n010", "label": "cyber-enabled fraud", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0013", "start": 0, "end": 132, "sha256": "34ef453d9a15e38516f828a93001efae834f3e2c99281a4aa7f2dce97caeeeaf"}}]},
+  {"id": "n011", "label": "cybercrime", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 94, "end": 210, "sha256": "db9de92c085c07e9eac784b27c4601526a0c3f7f00b426793dd9dd6e8d975fb2"}}]},
+  {"id": "n012", "label": "deepfake abuse", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 133, "end": 294, "sha256": "4b57d065b19dee58d2105dd890425570899fa0dd317d7bdc902bfca2daddb435"}}]},
+  {"id": "n013", "label": "foreign cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0021", "start": 59, "end": 162, "sha256": "cd8c17f2a64408aafff56d9c5c9895e592972341d200e7323e95f5dc34fdb73d"}}]},
+  {"id": "n014", "label": "online extortion", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 133, "end": 294, "sha256": "4b57d065b19dee58d2105dd890425570899fa0dd317d7bdc902bfca2daddb435"}}]},
+  {"id": "n015", "label": "sextortion", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0022", "start": 19, "end": 143, "sha256": "642d023363960ab9acd514ccf3f741f5aa15d8226c7b12f59288289d71326fa2"}}]},
+  {"id": "n016", "label": "transnational criminal organizations", "entity_type": "threat_category", "aliases": ["TCOs"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 394, "end": 497, "sha256": "71d074193029dc6e76e956dee3427cc49bbe5a547393291396d51647c5d3db8e"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n005", "target": "n011", "relation_type": "MITIGATES", "attribution": "", "event_time": "Today", "event_scope": "Executive Order signed by President Trump to combat cybercrime, fraud, and predatory schemes", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 32, "end": 211, "sha256": "bc824f9f39b57aaea78ea14c10096f6f96fd883bba9511343f82d0f5eb9f7356"}}]},
+  {"id": "e002", "source": "n006", "target": "n013", "relation_type": "MITIGATES", "attribution": "", "event_time": "In June 2025", "event_scope": "June 2025 Executive Order to strengthen the nation's cybersecurity", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0021", "start": 0, "end": 205, "sha256": "78e04f750d3857e1ea567effc9351e432746aaaa4995741d45ffbfbd717fddb7"}}]},
+  {"id": "e003", "source": "n007", "target": "n012", "relation_type": "MITIGATES", "attribution": "", "event_time": "In May 2025", "event_scope": "TAKE IT DOWN Act signed into law", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 133, "end": 294, "sha256": "4b57d065b19dee58d2105dd890425570899fa0dd317d7bdc902bfca2daddb435"}}]},
+  {"id": "e004", "source": "n007", "target": "n014", "relation_type": "MITIGATES", "attribution": "", "event_time": "In May 2025", "event_scope": "TAKE IT DOWN Act signed into law", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0019", "start": 133, "end": 294, "sha256": "4b57d065b19dee58d2105dd890425570899fa0dd317d7bdc902bfca2daddb435"}}]},
+  {"id": "e005", "source": "n011", "target": "n004", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0004", "start": 94, "end": 210, "sha256": "db9de92c085c07e9eac784b27c4601526a0c3f7f00b426793dd9dd6e8d975fb2"}}]},
+  {"id": "e006", "source": "n016", "target": "n001", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0010", "start": 0, "end": 159, "sha256": "b9f5f5426817977efdd36a4a044c5066a76d85af31a3e1e82e25830d6c71b581"}}]},
+  {"id": "e007", "source": "n016", "target": "n002", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0460", "paragraph_id": "D0460:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0460:P0010", "start": 0, "end": 159, "sha256": "b9f5f5426817977efdd36a4a044c5066a76d85af31a3e1e82e25830d6c71b581"}}]}
+ ],
+ "context_passages_used": []
+}

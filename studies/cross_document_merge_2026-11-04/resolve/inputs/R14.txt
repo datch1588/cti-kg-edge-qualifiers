@@ -1,0 +1,207 @@
+RESOLVER_FILE: R14
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 17, згадок 39)
+
+ГРУПА G116 (згадок 4)
+M001: «Handala Hack» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+  фрагмент [P0013]: «@D0391:P0013:546-607 sha256=94f19fb6adc0f892a192caf98334d7f88bf0cf4d89036d198da38f41cf8e0628»
+    абзац: «…@D0391:P0013:276-876 sha256=34b4cfe330edb38b7dee3cb155bc1f0a7afd47d75fada01207e471d7b3d1fabb…»
+  твердження статті: «March 2026 destructive malware attack» — ATTRIBUTED_TO → «Handala Hack» (actual, positive); «Handala Hack» — TARGETS → «Iranian dissidents» (actual, positive); «Handala Hack» — TARGETS → «journalists» (actual, positive)
+M002: «Handala» (threat_actor) | альтернативні назви: «Handala group» | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0070]: «@D0418:P0070:0-63 sha256=9e17bef4c44f7323b4ee05cad7f9f06c8b74a71a2559d21fb6f3fad3548170ce»
+    абзац: «@D0418:P0070:0-186 sha256=bfb91b7a160d37dd4591cca0cf08b5beca6e56a6bb6cefff9794eea878cdcc78»
+  твердження статті: «cyber offensive» — ATTRIBUTED_TO → «Handala» (actual, positive); «Handala» — TARGETS → «Stryker» (actual, positive); «Handala» — USES → «Telegram» (actual, positive)
+M003: «Handala» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0013]: «@D0424:P0013:132-254 sha256=7f4b50623ccd4be17c2ecf159479a8be4751f4a0376376c57002113e2d3b1a37»
+    абзац: «@D0424:P0013:0-254 sha256=553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff»
+  твердження статті: «significant cyberattack» — ATTRIBUTED_TO → «Handala» (actual, positive); «Ismael Valenzuela» — REPORTS_ON → «Handala» (actual, positive); «Handala» — USES → «data destruction» (actual, positive)
+M004: «Handala» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0027]: «@D0427:P0027:0-118 sha256=c3b31cf67607ebcc2ba708e55f5dbf43072d3661715f5c5d60767d46550eec70»
+    абзац: «@D0427:P0027:0-311 sha256=00e870feecf9a2470a2b220a88ec52e41f5ebab8b912109bf80dd133184ac5ab»
+  фрагмент [P0040]: «@D0427:P0040:0-99 sha256=00fc6e1d082551f2777e1b11c647c6eded3a8ae17281725963301783cc059036»
+  твердження статті: «Stryker cyberattack» — ATTRIBUTED_TO → «Handala» (actual, positive); «Handala» — TARGETS → «Israel» (actual, positive); «Handala» — TARGETS → «Stryker» (actual, positive)
+
+ГРУПА G117 (згадок 3)
+M005: «Stryker» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0068]: «@D0418:P0068:0-100 sha256=c8cef56c27a8d6a308e5b2d8f1b5f430ae272bcb9bd00c0cdb3b943fcbca7156»
+  твердження статті: «Iran» — TARGETS → «Stryker» (actual, positive); «cyber offensive» — AFFECTS → «Stryker» (actual, positive); «cyber offensive» — TARGETS → «Stryker» (actual, positive)
+M006: «Stryker» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0004]: «@D0424:P0004:0-131 sha256=fc969f3c1cc6a5fc4ab5b186da1fe1aa282de27c3efb32d29c7cbc3f179d2a44»
+    абзац: «@D0424:P0004:0-409 sha256=a7340ae5cb8ace8a084878b50bf4584398546d33fee03d1701d926dbc0e89aeb»
+  твердження статті: «significant cyberattack» — TARGETS → «Stryker» (actual, positive); «Stryker» — LOCATED_IN → «United States» (actual, positive); «Stryker» — LOCATED_IN → «Michigan» (actual, positive)
+M007: «Stryker» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0010]: «@D0427:P0010:0-84 sha256=5ab07194c3db0d8fcd175128a2f1f24dcd3ba12df72f94e6716f64a5235ba78b»
+    абзац: «@D0427:P0010:0-138 sha256=60e64fb5f9256903969a94285ce835a0fded6a3d80be79b2bdedcbf59ba13303»
+  твердження статті: «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive); «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive); «Stryker cyberattack» — AFFECTS → «Stryker» (actual, positive)
+
+ГРУПА G118 (згадок 2)
+M008: «Donald Trump» (person) | альтернативні назви: «Trump» | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0061]: «@D0418:P0061:13-76 sha256=1fd8b7953425ce82665d100d98e99bbbd011e8644735e4dce00d6341eace92dd»
+    абзац: «@D0418:P0061:0-132 sha256=367fc63f45a2a33e917e13f97229b51ab7f184109afb7ae362da6e80b1cc17d0»
+  фрагмент [P0063]: «@D0418:P0063:0-73 sha256=b14179c31ffbd8076ae1417f767488114342cd4ea20a6a4e3898ddd4937c4d5c»
+    абзац: «@D0418:P0063:0-140 sha256=9bcf44ebea5e1ddcbce3439cd7a531746fb3600eb68d4818b1bc5b7121cdbe6b»
+  твердження статті: «Donald Trump» — REPORTS_ON → «California drone threat» (actual, positive)
+M009: «Donald Trump» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0006]: «@D0424:P0006:152-217 sha256=ec5032483f5875a528c1c03083e5b22dc7fea4abbf44bc527274129d9194341b»
+    абзац: «@D0424:P0006:0-324 sha256=a7b73ebfb807ccd186827edcba01d62fc29c2757bdd74561b24a98133ddf235d»
+  твердження статті: «Hackers linked to Iran» — TARGETS → «Donald Trump» (actual, positive)
+
+ГРУПА G119 (згадок 2)
+M010: «Iran war» (event) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0017]: «@D0424:P0017:154-238 sha256=a8a8d339f601b0e71a9cededb162a2b71798ff2ae9cdba5c5d124200f1016b3a»
+    абзац: «@D0424:P0017:0-239 sha256=57cb26e4ad361eac471614251990ad480c95433ee8f60db99d88a1063c7395c3»
+M011: «Iran war» (event) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0001]: «@D0427:P0001:0-71 sha256=f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef»
+  фрагмент [P0011]: «@D0427:P0011:44-162 sha256=9f6f27e40cd6e9410cca51fd5632b2946d11ccb8a2f0949d648d0c389dc15dad»
+    абзац: «@D0427:P0011:0-163 sha256=cb58e756cb2849c13840cfac16cdbe7d6243486792966a6f6ca3103c28446fd5»
+
+ГРУПА G120 (згадок 2)
+M012: «CIA» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0025]: «@D0424:P0025:40-164 sha256=abe5e8130c15b306458c8ca45818f934f5effb0ea7f697908bf469e252bad8d0»
+    абзац: «@D0424:P0025:0-287 sha256=18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75»
+  твердження статті: «Shaun Williams» — MEMBER_OF → «CIA» (actual, positive)
+M013: «CIA» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0009]: «@D0468:P0009:556-630 sha256=2f958842812660d44bb413a763ace340c0657c69f550f715f03b290a6d9d883a»
+    абзац: «…@D0468:P0009:293-893 sha256=0f2635328e5771e51dbe3ed6dc035d523d958122fd7c8c5f9b9d31ee3e47c696…»
+  твердження статті: «CIA» — PROVIDES → «HUMINT» (actual, positive)
+
+ГРУПА G121 (згадок 2)
+M014: «Mandiant» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0012]: «@D0424:P0012:59-137 sha256=c75522ef7ebb7aba305e93bb0e3e70fc1869c763b1216121146d14e6d948c767»
+    абзац: «@D0424:P0012:0-138 sha256=43600bca9a6795fb20584986a55a704d00db62eb3d1f22b47577f00faa1083c9»
+M015: «Mandiant» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0020]: «@D0505:P0020:0-71 sha256=b51f60df68460ea6f93cccfacabc55692877f0e42e01b1b92f34c6925e711814»
+    абзац: «@D0505:P0020:0-236 sha256=3541fdeecadc6ec46732c879e58e2140ee6e69c9ee79cd5c1896357a5587ac1e»
+  твердження статті: «Mandiant» — PART_OF → «Google» (actual, positive); «Mandiant» — REPORTS_ON → «UNC3886» (actual, positive)
+
+ГРУПА G122 (згадок 2)
+M016: «Adam Meyers» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0035]: «@D0424:P0035:104-181 sha256=3f74c5117f31bc66a9e927053312a5b235896d6ad6bce04b6a5a78bf288dfc3e»
+    абзац: «@D0424:P0035:0-182 sha256=7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0»
+  твердження статті: «Adam Meyers» — MEMBER_OF → «CrowdStrike» (actual, positive)
+M017: «Adam Meyers» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0022]: «@D0505:P0022:0-106 sha256=741f39b6a81c210f3fa5a6f88505289586044f4574b2624fcc9328a22f0ec0d1»
+    абзац: «@D0505:P0022:0-190 sha256=9ff456b742e9a6eef6bf30d39c2049db383c135910f212be0bb036a9af864382»
+  твердження статті: «Adam Meyers» — MEMBER_OF → «CrowdStrike» (actual, positive)
+
+ГРУПА G123 (згадок 2)
+M018: «Datadog» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0005]: «@D0457:P0005:171-298 sha256=1e1cf7e1aae85af714b27dec8d84ff3b08ba670607e0007e060687c98baf5115»
+    абзац: «@D0457:P0005:0-332 sha256=d3059c03cc4098e5f4a2e4910c45393590986087bb2c160bf95b65b1f062a3c3»
+M019: «Datadog» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0007]: «@D0514:P0007:1417-1507 sha256=87882a720ac7ede0b2e535bed0938c353850fc664f06262b418a6336e12b5c9a»
+    абзац: «…@D0514:P0007:1162-1762 sha256=e89bd0a3a22139a70ed2193933abbc96747b66aab9270105f965589b6dc90edc…»
+
+ГРУПА G124 (згадок 2)
+M020: «US Cyber Command» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0006]: «@D0468:P0006:270-364 sha256=2129e5e97c2f2c9d261a97f56048997c969059048f76597260afb03aceb741a7»
+    абзац: «…@D0468:P0006:17-617 sha256=9137f6dae7fd0493159afcf21f53c0626804c082460a32c0349749b0512f24c6…»
+  твердження статті: «US Cyber Command» — TARGETS → «communications and sensor networks» (actual, positive); «US Cyber Command» — USES → «non-kinetic effects» (actual, positive)
+M021: «Cyber Command» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712» (2026-01-21)
+  фрагмент [P0055]: «@D0608:P0055:0-82 sha256=bc75347e6e5b5134a6a177097f31865ec0c6e48f9c7441bb8639314a346d3324»
+    абзац: «@D0608:P0055:0-186 sha256=9e66908fb1ef4de60e907d92ecf218cee48f11e7599fd5ade2febbe5023b56c6»
+  твердження статті: «Joshua M. Rudd» — LEADS → «Cyber Command» (planned, positive)
+
+ГРУПА G125 (згадок 2)
+M022: «strategic food reserve» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0013]: «@D0468:P0013:1168-1238 sha256=a475d28b5d07284980b3d2832c530d7181e089c0e67ca0d85d11082981a02ad6»
+    абзац: «…@D0468:P0013:817-1417 sha256=e88655dc18127b3e91b211224aab8f5acb06f01e20af69f2e213b513fcc99aea»
+  твердження статті: «cyberattack originating in Iran» — TARGETS → «strategic food reserve» (actual, positive); «Jordanian National Cyber Security Centre» — PROTECTS → «strategic food reserve» (actual, positive)
+M023: «food» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0011]: «@D0663:P0011:0-255 sha256=22f8f773914a9baf8ababf9433ca0954370201ac029473bd153dd2b32d295472»
+  твердження статті: «China's cyberarmy» — TARGETS → «food» (actual, positive)
+
+ГРУПА G126 (згадок 2)
+M024: «BadeSaba» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0014]: «@D0468:P0014:670-762 sha256=ac185ec6604772867216e6df6a38f952feb10d5e9047a47e6412949b0de7e5e2»
+    абзац: «…@D0468:P0014:304-904 sha256=615a427dc2bb664638bda2cec81e33ccc3cfa12c36b899adeb6aa1ee83168ff0»
+M025: «BadeSaba» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0011]: «@D0493:P0011:100-208 sha256=2ee237ecccb41662d8a9b6c96965673f55560619f5c97f456a339b26c1e8c484»
+    абзац: «@D0493:P0011:0-235 sha256=d401f9937a0f00193f9aed2a1c3168ce9930c1cb156e5671368fd4fc9683132c»
+  твердження статті: «Cyber attacks» — AFFECTS → «BadeSaba» (actual, positive)
+
+ГРУПА G127 (згадок 2)
+M026: «First Abu Dhabi Bank» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456» (2026-03-04)
+  фрагмент [P0012]: «@D0478:P0012:138-239 sha256=53e8a5c0ab6a71ecebea037b14ccf3c0e9242ae1b43151acd48d2a1fdfb34f9f»
+    абзац: «@D0478:P0012:0-239 sha256=b9f855fcaefcda03eb032779f4f9f105c4581aa96b9513d71d4d2ee5a605394b»
+  твердження статті: «Iranian drone strikes» — AFFECTS → «First Abu Dhabi Bank» (actual, positive)
+M027: «FIRST» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:4730371ee511f5719f0d6eb81f5e10e8802d6523f010cf035fa459d75e9a2d95» (2026-02-13)
+  фрагмент [P0006]: «@D0541:P0006:142-296 sha256=2f67004df849b8b4c7669c1fecf206c8c475eee6aab45f947f143c0998c79832»
+    абзац: «@D0541:P0006:0-429 sha256=85a4c2fb9a1b6c6947ce27a0fa977924d07bda1c33bee180c568d495d8cd54d7»
+
+ГРУПА G128 (згадок 3)
+M028: «cybercriminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0006]: «@D0480:P0006:110-203 sha256=9b097771017cbec6ca845366aab4a129df3355a9750f32d4f141062b82008d85»
+    абзац: «@D0480:P0006:0-498 sha256=e40b9f6ca4c5df2bbff9c3395b978fb84d45e78b8c63504807ca41a8d17ecf9d»
+  твердження статті: «cybercriminals» — EXPLOITS → «basic security gaps» (actual, positive)
+M029: «Cybercriminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+  фрагмент [P0015]: «@D0575:P0015:302-396 sha256=dfc8cea4f79e7add812b35cde1f9ebb1cc01ec0ba28776b7b1a29ce6966882b0»
+    абзац: «@D0575:P0015:0-544 sha256=c7b0f987e5361780f04a0625c7c99e196dc6f92275dcc89d3dd0064b329d23bf»
+  твердження статті: «Cybercriminals» — TARGETS → «UK businesses» (actual, positive); «Cybercriminals» — TARGETS → «essential services» (actual, positive)
+M030: «novice cybercriminals» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750» (2026-01-07)
+  фрагмент [P0041]: «@D0648:P0041:44-166 sha256=c1f9def1e6f71d718ab8ecab490343b482e125e349d91b5482616750620cb417»
+    абзац: «@D0648:P0041:0-166 sha256=57ceb7ff8c7354313117d6ef04df62ff5a415190053c7df64dd83572c77b3381»
+  твердження статті: «fraudsters» — TARGETS → «novice cybercriminals» (actual, positive)
+
+ГРУПА G129 (згадок 2)
+M031: «cyber operations» (incident) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0013]: «@D0493:P0013:0-130 sha256=7921b7922b74a4f8d319df8042d70933e8988e12884421596e76fc67d0960692»
+  твердження статті: «cyber operations» — AFFECTS → «Iranian government services» (actual, positive); «cyber operations» — AFFECTS → «military targets» (actual, positive); «Jerusalem Post» — REPORTS_ON → «cyber operations» (actual, positive)
+M032: «clandestine cyber operations» (campaign) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0005]: «@D0505:P0005:67-217 sha256=f9984318cd001b0e7ac1dcd980259e6fb4d996b584076fac0e9f0cfc66a0e2dc»
+    абзац: «@D0505:P0005:0-218 sha256=a5c3fe1e4ada546a7bdb215f6a3fbaf8d92577d107e92e9afeba11dd98e1a19c»
+  твердження статті: «clandestine cyber operations» — TARGETS → «Singapore» (actual, positive); «clandestine cyber operations» — TARGETS → «critical information infrastructure» (actual, positive); «Lim Yihao» — REPORTS_ON → «clandestine cyber operations» (actual, positive)
+
+ГРУПА G130 (згадок 3)
+M033: «telecommunications networks» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0016]: «@D0493:P0016:177-291 sha256=e38c2cc93d82e2b777cfd51fed4819c57336c78b3977845bcc4889816da635e5»
+    абзац: «@D0493:P0016:0-291 sha256=dcbb0c04f8552fd5e06169b41aa58697ebe31431bc705de26b3fac8717e59b5f»
+  твердження статті: «telecommunications networks» — PART_OF → «Critical National Infrastructures» (actual, positive); «nation-state actors» — TARGETS → «telecommunications networks» (actual, positive)
+M034: «telecommunications» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:4bb791acd08b0ead7b803add9b78868de98419e1a4be3ef4614a663c31c4fde1» (2026-02-27)
+  фрагмент [P0023]: «@D0504:P0023:160-243 sha256=bbd4e23524173df41944c04b10db7fc3dd2d3561d8e6ee035cbf49e454513155»
+    абзац: «@D0504:P0023:0-600 sha256=a91669a0ce7212cd413e7e063adc2700963bb9798a9082a274788607c483ed9f…»
+  твердження статті: «Jamming» — AFFECTS → «telecommunications» (actual, positive); «spoofing» — AFFECTS → «telecommunications» (actual, positive)
+M035: «telecommunications networks» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b» (2026-01-29)
+  фрагмент [P0007]: «@D0587:P0007:0-148 sha256=1ee9766cf3c0f97b0ecb89a30c55932fa00f03d9b10cb8b90ac0b419a51d37cb»
+    абзац: «@D0587:P0007:0-357 sha256=23da2ca7885a9aa73cacf54584feae97194c4429c618b0221345554d6e128125»
+  твердження статті: «telecommunications networks» — PART_OF → «critical infrastructure» (actual, positive); «AI-driven cyberattacks» — TARGETS → «telecommunications networks» (actual, positive)
+
+ГРУПА G131 (згадок 2)
+M036: «UNC3886» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e» (2026-02-27)
+  фрагмент [P0019]: «@D0505:P0019:65-172 sha256=008eb577caf3b34b37af66aaee16b874eef438a3b387c5a811677416b97d724e»
+    абзац: «@D0505:P0019:0-242 sha256=ed24c676204b90107ef2a6ce9cd11bbeff1db6bf40b4a0c9d6528f3b8afb2b42»
+  твердження статті: «ongoing cyberattack on Singapore» — ATTRIBUTED_TO → «UNC3886» (actual, positive); «Mandiant» — REPORTS_ON → «UNC3886» (actual, positive); «UNC3886» — TARGETS → «Singapore» (actual, positive)
+M037: «UNC3886» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84» (2026-01-04)
+  фрагмент [P0028]: «@D0663:P0028:0-136 sha256=8b9c056e97eaf246209a626a74a6eccf4b37704cbdae8380d4ea49609e5a8174»
+  твердження статті: «National Security Bureau» — REPORTS_ON → «UNC3886» (actual, positive); «UNC3886» — TARGETS → «Taiwan's critical infrastructure» (actual, positive)
+
+ГРУПА G132 (згадок 2)
+M038: «Department for Science, Innovation and Technology» (organization) | альтернативні назви: «DSIT» | стаття: «TITLE_SHA256:7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b» (2026-02-17)
+  фрагмент [P0016]: «@D0539:P0016:0-130 sha256=0313eccc78dc782da34a7be5b3e86492f098191c27ff27d747cd6054249dc9bb»
+    абзац: «@D0539:P0016:0-265 sha256=49c6c4ac1181d58cb0eadfbbe1a797bce8886d5e002be0e049811dc2496868cc»
+  твердження статті: «Department for Science, Innovation and Technology» — DEVELOPS → «Cyber Essentials» (actual, positive)
+M039: «Department for Science, Innovation and Technology» (organization) | альтернативні назви: «DSIT» | стаття: «TITLE_SHA256:8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8» (2026-02-03)
+  фрагмент [P0014]: «@D0575:P0014:81-256 sha256=f9c02a13a4011c64834552b1d208feff4832c53abaaa4a54e1f3fbe8358426fe»
+    абзац: «@D0575:P0014:0-340 sha256=b31a55d2b49cd256baad1f2b23078b0b52fde6baab4fc19af4cc2bbdf42dac8a»
+  твердження статті: «Department for Science, Innovation and Technology» — REPORTS_ON → «malicious cyber incidents» (actual, positive)
+
+КІНЕЦЬ ГРУП

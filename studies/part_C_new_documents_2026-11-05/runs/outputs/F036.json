@@ -1,0 +1,523 @@
+{
+  "run_id": "F036",
+  "target_doc_id": "D0377",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "phishing",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0008", "start": 0, "end": 164, "sha256": "16247337e304ea6450b2d899d0fcc89f51aa38dc2b67adf3bce0d5307fefdfcf"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Iceland",
+      "entity_type": "country",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0019", "start": 0, "end": 115, "sha256": "5f4d0c0e50d08ee91dc54651b6757dc561270f3099a5fdc242871e27a6f1e740"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "AI-generated malware",
+      "entity_type": "malware_class",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0013", "start": 186, "end": 334, "sha256": "4da8f4509d5e45c926700b75c954b237a094b2d22abb6fd046a7bd5eb29e34cf"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0007", "start": 0, "end": 46, "sha256": "267ed4818c503621682587c857dc5027108c9a50d301583d7eb8fc1631413c3e"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "malware",
+      "entity_type": "malware_class",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0008", "start": 0, "end": 164, "sha256": "16247337e304ea6450b2d899d0fcc89f51aa38dc2b67adf3bce0d5307fefdfcf"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "NetSTAR",
+      "entity_type": "organization",
+      "aliases": ["NetSTAR Global Inc."],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0002", "start": 0, "end": 36, "sha256": "8f33f2bef6e0bec3bf6852f2efd42ceed32e1961e46507a545eb75888a0d9670"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 0, "end": 104, "sha256": "25de3ee0a4c7fb0e516d1b911870ebe13d9d340a242a22da71803f1deeb30c1e"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Varist",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 106, "end": 195, "sha256": "74b1be3ffc9562f83469fe43f8d6050e3e6bb38fc97ee3a411478e74ec119fd2"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "mailboxes",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 88, "sha256": "1aee586b3b547eae2b5173cd4289d73a9ab396f547a59743daad76c2be25f571"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "strategic alliance",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 159, "end": 241, "sha256": "8f1c25a1664f786fb35609fb14464b60efada6904ad203338bac80c616cc6099"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "Daniel Ashby",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 145, "end": 179, "sha256": "f40f6a490a4fbe9b40746330b10df84be1b42d1e22b85b8dbff2650c78637e3a"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "Finnbogi Finnbogason",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0016", "start": 89, "end": 144, "sha256": "5bec2ad5badb7af456aa55704bdcbf1d4859d99a198c5e94a1840da2754e880d"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "Varist Hybrid Detection Engine",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 88, "sha256": "1aee586b3b547eae2b5173cd4289d73a9ab396f547a59743daad76c2be25f571"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "dynamic behavioral analysis",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 94, "end": 186, "sha256": "c032d32af13408840c849cab4a800f611ff6cb0485afe61bb2580bde393087b1"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "generative AI",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 52, "end": 142, "sha256": "b7cabce0c839546517bcec8d7778cfad11fe696855b0259644d2ccd0012b8e2e"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "heuristics",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 94, "end": 186, "sha256": "c032d32af13408840c849cab4a800f611ff6cb0485afe61bb2580bde393087b1"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "IP intelligence",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "n016",
+      "label": "real-time threat feeds",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "n017",
+      "label": "threat correlation",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0013", "start": 0, "end": 122, "sha256": "b57e6b3ea1834cf274ac28297a7d5b1a460f38193dece6a5796757a9150f7a54"}}
+      ]
+    },
+    {
+      "id": "n018",
+      "label": "URL categorization",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "n019",
+      "label": "web application intelligence",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "n020",
+      "label": "AI-Driven Cyber Threats",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0001", "start": 0, "end": 80, "sha256": "e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n005",
+      "target": "n003",
+      "relation_type": "DETECTS",
+      "modality": "planned",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0013", "start": 123, "end": 335, "sha256": "27c01be2a23846b0e118396ed20e8e2b4d5c6cef38f534c88e00ffba2bae701c"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0011", "start": 0, "end": 208, "sha256": "d23e0aaabbca29e56b58082049b1acd1688a80bafa0f7a2b9ce84b95208bf260"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n005",
+      "target": "n008",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "today",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 0, "end": 241, "sha256": "d050ae66088f426bac7520f81f69ae06a7fcf705bff6208f51d949674781b666"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0001", "start": 0, "end": 80, "sha256": "e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n005",
+      "target": "n015",
+      "relation_type": "PROVIDES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n005",
+      "target": "n016",
+      "relation_type": "PROVIDES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n005",
+      "target": "n018",
+      "relation_type": "PROVIDES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n005",
+      "target": "n019",
+      "relation_type": "PROVIDES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0021", "start": 291, "end": 463, "sha256": "6ca0c59ec76bec32f5bd462b7d59703c30fd77faf23beb947802c077a3edafbb"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n006",
+      "target": "n003",
+      "relation_type": "DETECTS",
+      "modality": "planned",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0013", "start": 123, "end": 335, "sha256": "27c01be2a23846b0e118396ed20e8e2b4d5c6cef38f534c88e00ffba2bae701c"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0011", "start": 0, "end": 208, "sha256": "d23e0aaabbca29e56b58082049b1acd1688a80bafa0f7a2b9ce84b95208bf260"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n006",
+      "target": "n004",
+      "relation_type": "DETECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 110, "end": 157, "sha256": "542f1f93f70d4b7b6873b88aeae41ce61fde5fa0e99302da9866679bef3e3881"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0018", "start": 0, "end": 137, "sha256": "78da66f078a720b01a895c41ebe6faac2d70f0bc04041421e1cac8bd4bb4310b"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n006",
+      "target": "n011",
+      "relation_type": "DEVELOPS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 88, "sha256": "1aee586b3b547eae2b5173cd4289d73a9ab396f547a59743daad76c2be25f571"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0018", "start": 0, "end": 137, "sha256": "78da66f078a720b01a895c41ebe6faac2d70f0bc04041421e1cac8bd4bb4310b"}}
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "n006",
+      "target": "n002",
+      "relation_type": "LOCATED_IN",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0019", "start": 0, "end": 115, "sha256": "5f4d0c0e50d08ee91dc54651b6757dc561270f3099a5fdc242871e27a6f1e740"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0017", "start": 0, "end": 12, "sha256": "2bde326932b4d48d9d802cec47c25324957bd206118f35aefcaf4f6c4b692c84"}}
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "n006",
+      "target": "n008",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "today",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0005", "start": 0, "end": 241, "sha256": "d050ae66088f426bac7520f81f69ae06a7fcf705bff6208f51d949674781b666"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0001", "start": 0, "end": 80, "sha256": "e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45"}}
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "n008",
+      "target": "n017",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0013", "start": 0, "end": 122, "sha256": "b57e6b3ea1834cf274ac28297a7d5b1a460f38193dece6a5796757a9150f7a54"}}
+      ]
+    },
+    {
+      "id": "e013",
+      "source": "n008",
+      "target": "n020",
+      "relation_type": "MITIGATES",
+      "modality": "planned",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "NetSTAR and Varist strategic alliance",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0001", "start": 0, "end": 80, "sha256": "e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45"}}
+      ]
+    },
+    {
+      "id": "e014",
+      "source": "n009",
+      "target": "n005",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 145, "end": 179, "sha256": "f40f6a490a4fbe9b40746330b10df84be1b42d1e22b85b8dbff2650c78637e3a"}}
+      ]
+    },
+    {
+      "id": "e015",
+      "source": "n010",
+      "target": "n006",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0016", "start": 89, "end": 144, "sha256": "5bec2ad5badb7af456aa55704bdcbf1d4859d99a198c5e94a1840da2754e880d"}}
+      ]
+    },
+    {
+      "id": "e016",
+      "source": "n011",
+      "target": "n004",
+      "relation_type": "DETECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 122, "sha256": "fe2fc12ae67592f039c0806782c832e36d741fa7bbbcebbff797494da33343b7"}}
+      ]
+    },
+    {
+      "id": "e017",
+      "source": "n011",
+      "target": "n007",
+      "relation_type": "PROTECTS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 88, "sha256": "1aee586b3b547eae2b5173cd4289d73a9ab396f547a59743daad76c2be25f571"}}
+      ]
+    },
+    {
+      "id": "e018",
+      "source": "n011",
+      "target": "n012",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 187, "sha256": "a10a36eb7493b51f90b80954c2833816da4a282478b3069c6903113742b48365"}}
+      ]
+    },
+    {
+      "id": "e019",
+      "source": "n011",
+      "target": "n014",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0010", "start": 0, "end": 187, "sha256": "a10a36eb7493b51f90b80954c2833816da4a282478b3069c6903113742b48365"}}
+      ]
+    },
+    {
+      "id": "e020",
+      "source": "n013",
+      "target": "n001",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0008", "start": 0, "end": 164, "sha256": "16247337e304ea6450b2d899d0fcc89f51aa38dc2b67adf3bce0d5307fefdfcf"}}
+      ]
+    },
+    {
+      "id": "e021",
+      "source": "n013",
+      "target": "n001",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Daniel Ashby",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 52, "end": 142, "sha256": "b7cabce0c839546517bcec8d7778cfad11fe696855b0259644d2ccd0012b8e2e"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 145, "end": 179, "sha256": "f40f6a490a4fbe9b40746330b10df84be1b42d1e22b85b8dbff2650c78637e3a"}}
+      ]
+    },
+    {
+      "id": "e022",
+      "source": "n013",
+      "target": "n004",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0008", "start": 0, "end": 164, "sha256": "16247337e304ea6450b2d899d0fcc89f51aa38dc2b67adf3bce0d5307fefdfcf"}}
+      ]
+    },
+    {
+      "id": "e023",
+      "source": "n013",
+      "target": "n004",
+      "relation_type": "ENABLES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Daniel Ashby",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 52, "end": 142, "sha256": "b7cabce0c839546517bcec8d7778cfad11fe696855b0259644d2ccd0012b8e2e"}},
+        {"role": "TARGET", "doc_id": "D0377", "paragraph_id": "D0377:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0377:P0015", "start": 145, "end": 179, "sha256": "f40f6a490a4fbe9b40746330b10df84be1b42d1e22b85b8dbff2650c78637e3a"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

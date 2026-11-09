@@ -1,0 +1,11 @@
+{
+ "audit_file": "R1_T45",
+ "target_doc_id": "D0055",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0055:P0045 сказано, що кібербезпека «would be at the top of the agenda at an upcoming meeting», тобто це заплановано на майбутнє, що відповідає формулюванню «will put on agenda»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never use» заперечне, а в D0055:P0042 стаття стверджує протилежне, що ці організації «often they have a lot of very old technology»."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0055:P0017 стаття з посиланням на звіт Check Point Research подає як факт, що «the actual number of victims was around 1,570», а це actual, positive."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0055:P0012 стаття прямо констатує, що Racecourse mill «have not been fully operational since June 10», і це збігається із заперечною чинною формою формулювання."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0055:P0012 стаття прямо констатує, що Farleigh mill «have not been fully operational since June 10», і це збігається із заперечною чинною формою формулювання."}
+ ]
+}

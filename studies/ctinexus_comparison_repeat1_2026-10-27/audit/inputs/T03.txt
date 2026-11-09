@@ -1,0 +1,117 @@
+AUDIT_FILE: T03
+TARGET_DOC_ID: D0584
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0584
+PUBLICATION_DATE: 2026-01-30
+SOURCE_URL: https://www.baltictimes.com/cyber_threats_from_hostile_countries_remained_elevated_last_year__but_the_intensity_of_activities_varied_-_sab/
+TITLE_SHA256: 081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+BEGIN_DOCUMENT
+[D0584:P0001] sha256:081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+[D0584:P0002] sha256:2a1fdf33fc955b90827a342c31cfe1847b11edea192bdfda90469fb87c0df2ad
+[D0584:P0003] sha256:f33b80ea1b6e2d4fa4cde26a124a0c05aedef88b19239f5a434ee510e45587be
+[D0584:P0004] sha256:1b345476c925405a8f3653c351277a898ea8f38bdc51e6654368d2a6c762e7c9
+[D0584:P0005] sha256:0616b1374a9ffb6c22ed8d551dff1284b66fb2e0618c7249cf56b9f1fad57960
+[D0584:P0006] sha256:065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385
+[D0584:P0007] sha256:63dc1acf61feb000d1220f179687ba5b9e22dff57f45855cf348a14984451b27
+[D0584:P0008] sha256:dc0ca6d27e77e4656974d4dd294f11cd9977d85586861f3ee3de3247c40a3a67
+[D0584:P0009] sha256:8adf7070c93b67074a11dd2608b6aec4e723f81f60378feea3904c83a4d84b81
+[D0584:P0010] sha256:6a12ea01daba2461dcbd97cfac90c0829ada114ea72c36a9b6cf81b2b76b46f8
+[D0584:P0011] sha256:f4d9efaa88b410f7efffc11b0f82c2fe2d40146aecbdb6a9950046e108becc2c
+[D0584:P0012] sha256:8a32c1b4ba640053f56f9980ffdffcda5a7718a4e6b7778cade39a9e5d65044f
+[D0584:P0013] sha256:554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272
+[D0584:P0014] sha256:4f281485195376645b3ccc95559ddb57c987f6ae3a1ae5167046364d945c0e6b
+[D0584:P0015] sha256:5322769fdf4948186266a6883dfd323b7fde0696866dfd40715eb1a9df08ed0b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (47)
+E001: «Russia» — targets → «Latvia» | форма: actual, positive
+E002: «Russian hacktivists» — aim to → «disrupt service provision» | форма: actual, positive
+E003: «operational technologies» — used in → «energy» | форма: actual, positive
+E004: «European Union Agency for Cybersecurity (ENISA)» — reported cyberattacks directed at → «operational technologies» | форма: actual, positive
+E005: «Russian hacktivists» — repeatedly attacked → «hydroelectric power plant in Gdansk» | форма: actual, positive
+E006: «operational technologies» — used to control → «physical processes, devices, and infrastructure» | форма: actual, positive
+E007: «hostile countries» — pose cyber threat to → «Latvia» | форма: actual, positive
+E008: «Latvia» — experienced → «fraud in the digital environment» | форма: actual, positive
+E009: «Russia» — launched full-scale attack in → «2022» | форма: actual, positive
+E010: «Latvia» — threatened by → «attacks on service availability» | форма: actual, positive
+E011: «Russian hacktivists» — threaten → «critical infrastructure» | форма: actual, positive
+E012: «Latvia» — threatened by → «intrusion attempts» | форма: actual, positive
+E013: «Latvia» — experienced → «cybercrimes» | форма: actual, positive
+E014: «operational technologies» — used in → «water management» | форма: actual, positive
+E015: «hydroelectric power plant» — targets → «Russian hacktivists» | форма: actual, positive
+E016: «Cyber threats from hostile countries remained elevated last year, but the intensity of activities varied - SAB» — published on → «2026-01-30» | форма: actual, positive
+E017: «Latvia» — threatened by → «malicious code» | форма: actual, positive
+E018: «Constitution Protection Bureau (SAB)» — published → «SAB annual report» | форма: actual, positive
+E019: «Russian hacktivists» — attack → «industrial control systems» | форма: actual, positive
+E020: «Russian hacktivists» — changed → «operating parameters» | форма: actual, positive
+E021: «Russian hacktivists» — target → «Western countries» | форма: actual, positive
+E022: «The Baltic Times» — published → «Cyber threats from hostile countries remained elevated last year, but the intensity of activities varied - SAB» | форма: actual, positive
+E023: «Cert.lv» — took preventive cyber defense measures in → «Latvia» | форма: actual, positive
+E024: «hydroelectric power plant in Gdansk» — attacked in → «August 2025» | форма: actual, positive
+E025: «Latvia» — supports → «Ukraine» | форма: actual, positive
+E026: «Russian hacktivists» — shut down → «hydroelectric power plant in Gdansk» | форма: actual, positive
+E027: «vulnerabilities in operational technologies» — discovered in → «Latvia» | форма: actual, positive
+E028: «Russian hacktivists» — remotely accessed → «control systems» | форма: actual, positive
+E029: «Russia» — is main cyber threat to → «Latvia» | форма: actual, positive
+E030: «Russian hacktivists» — target → «Latvia» | форма: actual, positive
+E031: «Russian hacktivists» — targets → «Latvia» | форма: actual, positive
+E032: «Russian hacktivists» — targets → «hydroelectric power plant» | форма: actual, positive
+E033: «hydroelectric power plant in Gdansk» — located in → «Gdansk» | форма: actual, positive
+E034: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: actual, positive
+E035: «hydroelectric power plant in Gdansk» — repeatedly attacked → «Russian hacktivists» | форма: actual, positive
+E036: «Gdansk» — located in → «Poland» | форма: actual, positive
+E037: «Russian hacktivists» — associated with → «Russia» | форма: actual, positive
+E038: «cyberattacks in Europe» — directed at (18.2 percent) → «operational technologies» | форма: actual, positive
+E039: «hydroelectric power plant» — located in → «Gdansk» | форма: actual, positive
+E040: «Latvia» — threatened by → «intrusion attempts» | форма: actual, negative
+E041: «Russian hacktivists» — targets → «industrial control systems» | форма: actual, positive
+E042: «Russia» — wages war against → «Ukraine» | форма: actual, positive
+E043: «Latvia» — threatened by → «compromised equipment» | форма: actual, positive
+E044: «remote access» — targets → «industrial control systems» | форма: actual, positive
+E045: «Russian hacktivists» — stopped → «generator and rotor» | форма: actual, positive
+E046: «operational technologies» — used in → «transportation» | форма: actual, positive
+E047: «Russian hacktivists» — targets → «industrial control systems» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ

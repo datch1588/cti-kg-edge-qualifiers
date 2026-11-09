@@ -1,0 +1,206 @@
+RESOLVER_FILE: R13
+ІНСТРУКЦІЯ РЕЗОЛВЕРА
+Ти узгоджуєш сутності між статтями про кібербезпеку (крок 5 методу формування графа знань). Згадка — вузол графа однієї статті: назва, тип, альтернативні назви з цієї статті, фрагменти підтвердження з абзацами й кілька тверджень статті з участю цього вузла. Згадки згруповано за спільними чи схожими назвами; група — це лише кандидати на обʼєднання, а не готове рішення.
+
+Для кожної групи розбий її згадки на кластери: в один кластер потрапляють згадки, що позначають ту саму сутність, а кожна інша згадка утворює окремий кластер.
+
+Правила
+1. Обʼєднуй згадки лише за доказами ідентичності в показаних текстах: та сама власна назва, яка за фрагментами позначає ту саму сутність; альтернативна назва, підтверджена в одній зі статей (як-от «X, also known as Y»); однозначний опис тієї самої сутності.
+2. Подібність назв без таких доказів не є підставою для обʼєднання. Спільне слово в назвах (наприклад, назва компанії в назві її продукту) не робить згадки тією самою сутністю.
+3. Продукт і його розробник, особа та її організація, сімейство шкідливого ПЗ та група атакувальників — різні сутності, навіть за однакової назви.
+4. Загальне позначення (наприклад, «hackers» чи «the government») у різних статтях не є тією самою сутністю, якщо тексти не вказують на ту саму конкретну сутність.
+5. Різний тип згадок не заважає обʼєднанню, якщо тексти показують, що це та сама сутність; однаковий тип не є доказом ідентичності.
+6. Дві згадки однієї статті модель під час вилучення вже вважала різними: обʼєднуй їх лише тоді, коли тексти прямо підтверджують, що це та сама сутність.
+7. Знання поза показаними текстами не є доказом ідентичності.
+8. За нерозвʼязної неоднозначності не обʼєднуй: залиш згадки окремими кластерами.
+
+Формат відповіді
+Один JSON-об'єкт у кодуванні UTF-8, без Markdown і пояснень:
+{"resolver_file": "R01", "groups": [{"group_id": "G001", "clusters": [["M001", "M003"], ["M002"]], "reason": "коротко, чому"}]}
+Подай усі групи файлу. Кожна згадка групи має бути рівно в одному кластері своєї групи; інших ідентифікаторів немає. Усередині reason не вживай прямих лапок ".
+
+ГРУПИ ЗГАДОК (груп 15, згадок 39)
+
+ГРУПА G101 (згадок 2)
+M001: «financial systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f» (2026-04-25)
+  фрагмент [P0030]: «@D0250:P0030:0-92 sha256=0c42cc9b615d90cb17c8e0ac8482a0468be18f2950cd1f00c1aae01353ea9655»
+    абзац: «@D0250:P0030:0-338 sha256=795a19c0bcf85e227c035fc4ef1ee2f7f5a3a3b36119bb00bd2f1e4b604a7830»
+  твердження статті: «cyberattacks» — TARGETS → «financial systems» (possible, positive)
+M002: «financial systems» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0016]: «@D0493:P0016:177-291 sha256=e38c2cc93d82e2b777cfd51fed4819c57336c78b3977845bcc4889816da635e5»
+    абзац: «@D0493:P0016:0-291 sha256=dcbb0c04f8552fd5e06169b41aa58697ebe31431bc705de26b3fac8717e59b5f»
+  твердження статті: «financial systems» — PART_OF → «Critical National Infrastructures» (actual, positive); «nation-state actors» — TARGETS → «financial systems» (actual, positive)
+
+ГРУПА G102 (згадок 2)
+M003: «Kaspersky» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:5639e3dd302497ed41d3f8f2581c8076c1d499cedb3c8004a2d8087332254fec» (2026-04-24)
+  фрагмент [P0013]: «@D0252:P0013:0-109 sha256=8bba7d4106589b257cfd2cd679b638f5d0a62f8ed0d7c07d46cb0abb6fcc895b»
+  твердження статті: «Kaspersky» — REPORTS_ON → «scams» (actual, positive); «Chris Norton» — MEMBER_OF → «Kaspersky» (actual, positive)
+M004: «Kaspersky» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6eb2a27f9f44cb227a751a4b2f88db7cfe28aba9fb16ad9464da3a5ea72cbe35» (2026-03-04)
+  фрагмент [P0005]: «@D0477:P0005:410-580 sha256=64eb4d615813dd3046661786743e1fd05404d06403dd02ebd7c4d8852b69a1e4»
+    абзац: «@D0477:P0005:0-580 sha256=bf5017e1ad45b6a989ecd7476a2e8afc8060e634c2570b454277108b57d7ad72»
+  твердження статті: «Kaspersky» — DEVELOPS → «Kaspersky Next» (actual, positive); «Unified Platforms» — PART_OF → «Kaspersky» (actual, positive)
+
+ГРУПА G103 (згадок 3)
+M005: «British organisations» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5» (2026-04-23)
+  фрагмент [P0014]: «@D0262:P0014:58-138 sha256=ef0fe02bd1211e06b7af1a6742b12ee4ec51d5c61cd1b0ce6c5d1e57ee7ee13f»
+    абзац: «@D0262:P0014:0-219 sha256=ff12d4e50e32f24a12b9e2f4be97cb1e4dfe8606c1d6a233cfc9357c709613a1»
+  твердження статті: «indirect cyber threats» — TARGETS → «British organisations» (actual, positive)
+M006: «Israeli organisations» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0012]: «@D0468:P0012:692-755 sha256=28ce932fa06652f62b3678124160e003de7b9a767263b8e9663c47d22b72cc15»
+    абзац: «…@D0468:P0012:423-1023 sha256=63b0e7c52130888530c1ae8339121fa8dff826afe817df25d258775234aa993b…»
+  твердження статті: «hacktivist groups» — TARGETS → «Israeli organisations» (planned, positive)
+M007: «Organisations» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c» (2026-03-03)
+  фрагмент [P0019]: «@D0493:P0019:50-152 sha256=708850287e32472c01827ed455ffefafe96d81962fa83ead839080054d283127»
+    абзац: «@D0493:P0019:0-209 sha256=e771a478ba15df071025b2f76a3090d01e825c83208236db4dfd62a95e3bb0ff»
+  твердження статті: «Organisations» — USES → «safe words» (recommended, positive); «Organisations» — USES → «multi- factor authentication» (recommended, positive); «Organisations» — USES → «secondary communication channels» (recommended, positive)
+
+ГРУПА G104 (згадок 2)
+M008: «Mark Hughes» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad» (2026-04-17)
+  фрагмент [P0015]: «@D0277:P0015:126-209 sha256=09486da63c3ec63f9107832ff9ca604d63713c1c803736fd816daad306a2fa2f»
+    абзац: «@D0277:P0015:0-339 sha256=e88c5ca3950b2e42729f02ac1d756fc3a5be27d4c420e57ca3000ef6b1a77a80»
+  твердження статті: «Mark Hughes» — LEADS → «Cybersecurity Services» (actual, positive); «Mark Hughes» — WARNS_ABOUT → «frontier AI models» (actual, positive)
+M009: «Mark Hughes» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0012]: «@D0480:P0012:76-149 sha256=5f91d5a72cc505d1679ff2fda5154ea35ce834e4f88437d63e66049b051af271»
+    абзац: «@D0480:P0012:0-561 sha256=0b5cc581006dde899ecd05e12978142a9215230a65629e2118f89b0bdb2194f5»
+  твердження статті: «Mark Hughes» — MEMBER_OF → «IBM» (actual, positive)
+
+ГРУПА G105 (згадок 4)
+M010: «attackers» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad» (2026-04-17)
+  фрагмент [P0005]: «@D0277:P0005:134-225 sha256=e800d240a7b5910591a7b3b5e2bb6ee5cce14bbc03f7139bb4b5a71351a832fa»
+    абзац: «@D0277:P0005:0-226 sha256=c01b3b63045833114bd2f55a376f47961ff43bcba8d22bd6bfc2c48eec280a95»
+  твердження статті: «attackers» — USES → «frontier AI models» (actual, positive)
+M011: «attackers» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338» (2026-04-15)
+  фрагмент [P0018]: «@D0290:P0018:0-102 sha256=38cb106cbc4a56b412563d7c048d6236c56957cbbc4c01b74a1b19ecb203822c»
+    абзац: «@D0290:P0018:0-284 sha256=4511083e59ca9ec923c0505124cdd328a2ef78d85792af6b45319cc954b0801c»
+  твердження статті: «attackers» — TARGETS → «operational technology» (actual, positive); «attackers» — USES → «DDoS» (actual, positive)
+M012: «attackers» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8» (2026-03-04)
+  фрагмент [P0011]: «@D0480:P0011:0-160 sha256=ecf6f30f31dcf9d150b2eb4e67ff5b413f24d99cc50d53612fcb0b24269fa72e»
+    абзац: «@D0480:P0011:0-558 sha256=52d6f6ab445480685d2dd6ca33e7b7df37659a488207712023260195956e7cfd»
+  фрагмент [P0023]: «@D0480:P0023:36-143 sha256=85f097574698789f171db084956e28d99650682380368e711abbd419aed4cec8»
+    абзац: «@D0480:P0023:0-330 sha256=75a4bbad2bdd651d6926950eee28324bb127c88025b95cf4c52c3c5d82f3436e»
+  твердження статті: «attackers» — EXPLOITS → «basic security gaps» (actual, positive); «attackers» — TARGETS → «finance and insurance» (actual, positive); «attackers» — TARGETS → «Manufacturing» (actual, positive)
+M013: «opportunistic attackers» (threat_actor) | альтернативні назви: — | стаття: «TITLE_SHA256:4bb791acd08b0ead7b803add9b78868de98419e1a4be3ef4614a663c31c4fde1» (2026-02-27)
+  фрагмент [P0013]: «@D0504:P0013:294-368 sha256=27de46499cb68c2b765d26bdc68114b2263842e0e1a51f94084c4d3ad271f6d0»
+    абзац: «@D0504:P0013:0-368 sha256=78f8a7f9e3b9052a3b0ce272f8e698384d1e6174ac86067aa395704c0f7bfdd2»
+  твердження статті: «opportunistic attackers» — TARGETS → «space» (actual, positive)
+
+ГРУПА G106 (згадок 2)
+M014: «Instagram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296» (2026-04-02)
+  фрагмент [P0017]: «@D0338:P0017:46-118 sha256=2812a16a8ddf2140cd1f580973711d2ddeabbc55d767f1d8ff2f528e1f4e9ec0»
+    абзац: «@D0338:P0017:0-193 sha256=7edc0c5bfa89a2b32f6b691fcf546106991695f276af307220262aac06614dec»
+M015: «Instagram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca» (2026-01-25)
+  фрагмент [P0018]: «@D0593:P0018:0-152 sha256=f849578d717d5b0a6690ace386f6c85b6ec047db3e7188fed7ff26e1add3f9b3»
+    абзац: «@D0593:P0018:0-248 sha256=7c277d98a9431ca06ee20129b32a6844041047ccbb0e8653309972c9f4665841»
+
+ГРУПА G107 (згадок 7)
+M016: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296» (2026-04-02)
+  фрагмент [P0020]: «@D0338:P0020:94-140 sha256=58392a4dfca858e47ab19183a88e76ecfbca31363fa5bf3e5caf0490577eb7ae»
+    абзац: «@D0338:P0020:0-141 sha256=2d4e2d9b35f33639460184370061b45b297e897ad0a1750fa2d0943c4a373558»
+  фрагмент [P0021]: «@D0338:P0021:0-87 sha256=fe97efa744e033d879117cea97e442519bee548bb80185f6732da7f89f6dc4ee»
+    абзац: «@D0338:P0021:0-208 sha256=f6a8ef411329f7a6d3ed2a36e2512e4e0cf8460ab4a5acddfa7bd02d0fc879b7»
+  твердження статті: «phishing» — USES → «Telegram» (actual, positive)
+M017: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0070]: «@D0418:P0070:0-63 sha256=9e17bef4c44f7323b4ee05cad7f9f06c8b74a71a2559d21fb6f3fad3548170ce»
+    абзац: «@D0418:P0070:0-186 sha256=bfb91b7a160d37dd4591cca0cf08b5beca6e56a6bb6cefff9794eea878cdcc78»
+  твердження статті: «Handala» — USES → «Telegram» (actual, positive)
+M018: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0019]: «@D0424:P0019:0-91 sha256=76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2»
+  твердження статті: «Pro-Iranian hackers» — USES → «Telegram» (actual, positive)
+M019: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef» (2026-03-12)
+  фрагмент [P0027]: «@D0427:P0027:120-207 sha256=68b744c8388ceb3ce3139ae00163f99a545beb2aae480e4a3903c6481b6814fb»
+    абзац: «@D0427:P0027:0-311 sha256=00e870feecf9a2470a2b220a88ec52e41f5ebab8b912109bf80dd133184ac5ab»
+  твердження статті: «Handala» — USES → «Telegram» (actual, positive)
+M020: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0012]: «@D0468:P0012:599-663 sha256=b17ce0fa2810159535a8ea897aaf7dfd11759a09515ff80f96c5add8c77c25de»
+    абзац: «…@D0468:P0012:331-931 sha256=91186ab4e5332af2f23316c7e284912ae0491d6d07d852164dbe5b3898c63d33…»
+  твердження статті: «Mossad» — USES → «Telegram» (actual, positive); «hacktivist groups» — USES → «Telegram» (actual, positive)
+M021: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca» (2026-01-25)
+  фрагмент [P0017]: «@D0593:P0017:0-88 sha256=3a79207d6e6fc05f01e89a1118f883af19f181156d43a0543be503582cb7fb05»
+    абзац: «@D0593:P0017:0-204 sha256=5151e983d73332a7d4ae55a06b9160073925df5d086b3f2078a326cb2c0c52a7»
+  твердження статті: «764» — USES → «Telegram» (actual, positive); «No Lives Matter» — USES → «Telegram» (actual, positive)
+M022: «Telegram» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750» (2026-01-07)
+  фрагмент [P0004]: «@D0648:P0004:0-133 sha256=19e2999f07e769098bf621274a13f8c83493c529f68dc0e96229207db077c13d»
+    абзац: «@D0648:P0004:0-174 sha256=9f6be5bbf04bee7d4ef14909f9f1d8f8aabb3a7730ed14e8a3927071bd34c1d5»
+  твердження статті: «hackers» — USES → «Telegram» (actual, positive)
+
+ГРУПА G108 (згадок 2)
+M023: «WhatsApp» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296» (2026-04-02)
+  фрагмент [P0017]: «@D0338:P0017:46-118 sha256=2812a16a8ddf2140cd1f580973711d2ddeabbc55d767f1d8ff2f528e1f4e9ec0»
+    абзац: «@D0338:P0017:0-193 sha256=7edc0c5bfa89a2b32f6b691fcf546106991695f276af307220262aac06614dec»
+M024: «WhatsApp» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0029]: «@D0424:P0029:147-284 sha256=b2855a783ef3497d4afa3e31a18ac987fe7159d01af8b4e2a90363631a642555»
+    абзац: «@D0424:P0029:0-284 sha256=7a474bf4c204a9a92215e201a4c67b232e3b16a4d6d7428713d121a99d85299f»
+
+ГРУПА G109 (згадок 2)
+M025: «identities» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+  фрагмент [P0012]: «@D0343:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  твердження статті: «cloud-native security solutions» — PROTECTS → «identities» (actual, positive)
+M026: «identities» (other) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0012]: «@D0514:P0012:275-457 sha256=cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+  твердження статті: «cloud-native security solutions» — PROTECTS → «identities» (actual, positive)
+
+ГРУПА G110 (згадок 2)
+M027: «Dmitri Alperovitch» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+  фрагмент [P0012]: «@D0343:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+M028: «Dmitri Alperovitch» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0012]: «@D0514:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+
+ГРУПА G111 (згадок 2)
+M029: «George Kurtz» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+  фрагмент [P0012]: «@D0343:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0343:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+M030: «George Kurtz» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0012]: «@D0514:P0012:128-274 sha256=da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f»
+    абзац: «@D0514:P0012:0-457 sha256=75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f»
+
+ГРУПА G112 (згадок 2)
+M031: «CrowdStrike Falcon platform» (product) | альтернативні назви: — | стаття: «TITLE_SHA256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5» (2026-04-01)
+  фрагмент [P0013]: «@D0343:P0013:0-112 sha256=3421bdfd21ec59e44e13fa8288ee86af17174e4ef2805344f8a739f80768c921»
+    абзац: «@D0343:P0013:0-286 sha256=081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617»
+  твердження статті: «CrowdStrike» — PROVIDES → «CrowdStrike Falcon platform» (actual, positive); «CrowdStrike Falcon platform» — USES → «centralized telemetry» (actual, positive); «CrowdStrike Falcon platform» — USES → «lightweight agents» (actual, positive)
+M032: «CrowdStrike Falcon platform» (product) | альтернативні назви: «Falcon» | стаття: «TITLE_SHA256:823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10» (2026-02-25)
+  фрагмент [P0013]: «@D0514:P0013:0-112 sha256=3421bdfd21ec59e44e13fa8288ee86af17174e4ef2805344f8a739f80768c921»
+    абзац: «@D0514:P0013:0-286 sha256=081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617»
+  фрагмент [P0007]: «@D0514:P0007:725-798 sha256=ce89b8f39a82bd2e6b935a333184c0984aa0743a1f7931a7bb956f5038d75b12»
+    абзац: «…@D0514:P0007:461-1061 sha256=e04e923e97d41fa87902100350730d0ba2b0da6407cf2703420536b8bfbf0fac…»
+  твердження статті: «CrowdStrike» — PROVIDES → «CrowdStrike Falcon platform» (actual, positive); «CrowdStrike Falcon platform» — USES → «centralized telemetry» (actual, positive); «CrowdStrike Falcon platform» — USES → «lightweight agents» (actual, positive)
+
+ГРУПА G113 (згадок 2)
+M033: «PwC» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0004]: «@D0344:P0004:0-34 sha256=703d8294d27db488f4c9bdee07108c62464a26ba7d38e3f4c6ac4718e194da60»
+    абзац: «@D0344:P0004:0-260 sha256=3e61525b73772afa533cdde10e3dbf3fb35b3f0f835eb0f2f242aa825d141d0d»
+M034: «PwC» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08» (2026-03-08)
+  фрагмент [P0039]: «@D0457:P0039:202-287 sha256=3307bdd2d0ec7dfa803cedffe05a850ce5ed0c04b8e5165517a4b2595e141cdc»
+    абзац: «@D0457:P0039:0-381 sha256=c38eb4706c19f038823dcb7a9b3ef121c7f4376fe24e3615fab90fde68faa109»
+
+ГРУПА G114 (згадок 2)
+M035: «SentinelOne» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969» (2026-03-31)
+  фрагмент [P0008]: «@D0344:P0008:0-88 sha256=9cad514ff92950214ffeb443a69295a86e1981bcba3a8e76d6d6571306d59848»
+    абзац: «@D0344:P0008:0-354 sha256=4d1764e38619b08d546754962652331ebd3786cf3284dfa3926507604586e5ca»
+  твердження статті: «SentinelOne» — PROVIDES → «EDR tools» (actual, positive); «Managed EDR service» — SUPPORTS → «SentinelOne» (actual, positive)
+M036: «SentinelOne» (organization) | альтернативні назви: — | стаття: «TITLE_SHA256:771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634» (2026-03-13)
+  фрагмент [P0025]: «@D0424:P0025:40-164 sha256=abe5e8130c15b306458c8ca45818f934f5effb0ea7f697908bf469e252bad8d0»
+    абзац: «@D0424:P0025:0-287 sha256=18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75»
+  твердження статті: «Shaun Williams» — MEMBER_OF → «SentinelOne» (actual, positive)
+
+ГРУПА G115 (згадок 3)
+M037: «Ali Hosseini Khamenei» (person) | альтернативні назви: — | стаття: «TITLE_SHA256:ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e» (2026-03-20)
+  фрагмент [P0016]: «@D0391:P0016:1-144 sha256=49cd046fb18403300985689b91c11aa913d216d8d533ea7ae7b820457ba6b567»
+    абзац: «@D0391:P0016:0-600 sha256=2fd7bcc6489460528190346d93c47b690e535d24a24c179c44f185ebcd50834c…»
+M038: «Ali Khamenei» (person) | альтернативні назви: «Khamenei» | стаття: «TITLE_SHA256:abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3» (2026-03-14)
+  фрагмент [P0013]: «@D0418:P0013:98-169 sha256=647fa3a2a764eb5f33ee1020be3fd71d2693fec275d8d6e2978824c78c7a95c8»
+    абзац: «@D0418:P0013:0-170 sha256=609dceb995f4359430265c7323c5200d919b378f1142a43148ae72e948c91216»
+  фрагмент [P0049]: «@D0418:P0049:54-108 sha256=f57e0514737b0272017e3e0f581b8b27ded12371bee442c9a5cd60b529afc830»
+    абзац: «@D0418:P0049:0-109 sha256=2741409dbe228e66b39009adaf5ee4a4b03fd6f4a9f563374f4bd0d5bf62cdbe»
+  твердження статті: «Israel» — TARGETS → «Ali Khamenei» (actual, positive); «United States» — TARGETS → «Ali Khamenei» (actual, positive)
+M039: «Ali Khamenei» (person) | альтернативні назви: «Ayatollah Ali Khamenei» | стаття: «TITLE_SHA256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988» (2026-03-05)
+  фрагмент [P0016]: «@D0468:P0016:186-221 sha256=0641d3f0e5aa973125450c10b3fdc8369671450f9df47daefd826190ec713005»
+    абзац: «@D0468:P0016:0-600 sha256=de5eae2aaec81b075bfd010755fd01a654871eaff45c048b426c185a2a54159d…»
+  фрагмент [P0009]: «@D0468:P0009:440-494 sha256=64e3d70dc97898df8f912c1f367b341e8f3942c9ee46f6f10bd3c71b9b940c28»
+    абзац: «…@D0468:P0009:167-767 sha256=6c250e8fccd8524cdd4485aa94ba685cca0b8a0f820a05bec3542a43d50af53a…»
+
+КІНЕЦЬ ГРУП

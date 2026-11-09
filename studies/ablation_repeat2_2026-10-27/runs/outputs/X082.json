@@ -1,0 +1,111 @@
+{
+ "run_id": "X082",
+ "target_doc_id": "D0151",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0005", "start": 675, "end": 783, "sha256": "821941276a36f58dc7066edb684d7908a42b818164fd1c804f808d286d39aadc"}}
+  ]},
+  {"id": "n002", "label": "Upstream", "entity_type": "organization", "aliases": ["Upstream Security"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0005", "start": 44, "end": 199, "sha256": "dfebd9047aa360def248e87481b6fa64b6d468e5ac6aaf903896c7aaa3ceee39"}},
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0001", "start": 79, "end": 125, "sha256": "4d3c9f8a91be42aca9177ce41b611199b8b08b36e8901788bdf0c8c8ddab1aef"}}
+  ]},
+  {"id": "n003", "label": "2026 Global Automotive and Smart Mobility Cybersecurity Report", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0005", "start": 201, "end": 282, "sha256": "c7a2f030475303c12d91cc1d0f474c0a2c921a1aa30fa1b80f0ddfff03a56563"}}
+  ]},
+  {"id": "n004", "label": "Automotive and Smart Mobility", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0006", "start": 0, "end": 126, "sha256": "d36b56ba35f012478feb2fe559f81442d94d7a4eed04831091b57dd6e4ab519e"}}
+  ]},
+  {"id": "n005", "label": "Yoav Levy", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0009", "start": 207, "end": 253, "sha256": "220ee09e7cd565f5a34feda6ad4bacd7aa00f5e297444aca087f7b57ecbf0ab4"}}
+  ]},
+  {"id": "n006", "label": "API Security", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "n007", "label": "companion app", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0013", "start": 131, "end": 233, "sha256": "c62328d155bf1e2bc40b8fbbab3ade0b2ed11f9b4daf2322c65c7914e445566d"}}
+  ]},
+  {"id": "n008", "label": "cyber threat intel", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "n009", "label": "resilience services", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "n010", "label": "SOC services", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "n011", "label": "XDR", "entity_type": "product", "aliases": ["detection and response"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "n012", "label": "AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0009", "start": 265, "end": 353, "sha256": "4bb7afcbff93d623049005252c04608e9cdc743b7026db1a8dd08e42a5dcf8cb"}}
+  ]},
+  {"id": "n013", "label": "APIs", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0016", "start": 83, "end": 229, "sha256": "b9f481e1d2b0ab82c90655da118dd9a58eb6124edb3ec2314bffd948c5667cff"}}
+  ]},
+  {"id": "n014", "label": "autonomous vehicles", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0004", "start": 29, "end": 153, "sha256": "263cc6117deb3cc8a24c62bc66a50a31cad648a3fc303ee84351856cfab30c9e"}}
+  ]},
+  {"id": "n015", "label": "cloud systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0016", "start": 0, "end": 72, "sha256": "d796a2c9620e230450b483488e945739b75a2dd7272353cf6c4aff8373fa137a"}}
+  ]},
+  {"id": "n016", "label": "Physical AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0004", "start": 29, "end": 153, "sha256": "263cc6117deb3cc8a24c62bc66a50a31cad648a3fc303ee84351856cfab30c9e"}}
+  ]},
+  {"id": "n017", "label": "remote vehicle command & control systems", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0013", "start": 131, "end": 233, "sha256": "c62328d155bf1e2bc40b8fbbab3ade0b2ed11f9b4daf2322c65c7914e445566d"}}
+  ]},
+  {"id": "n018", "label": "telematics", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0016", "start": 0, "end": 72, "sha256": "d796a2c9620e230450b483488e945739b75a2dd7272353cf6c4aff8373fa137a"}}
+  ]},
+  {"id": "n019", "label": "black hat actors", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0015", "start": 0, "end": 74, "sha256": "4ca7bf3c41cf691f8929b72559ab1ec9607e2eaa0c224645590c4db37d8b46eb"}}
+  ]},
+  {"id": "n020", "label": "organized threat actors", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0012", "start": 27, "end": 158, "sha256": "4a074dde576f55818bb30afe09ac93fdb0e6d8e41676476e895ab1e3acd33360"}}
+  ]},
+  {"id": "n021", "label": "ransom attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0013", "start": 0, "end": 103, "sha256": "a44da86222154ec3dd37f75cc4982687ed40faf8a89ed21cbcd0436ae8704715"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n004", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Upstream", "event_time": "2025", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0001", "start": 0, "end": 125, "sha256": "2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n006", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "e003", "source": "n002", "target": "n008", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "e004", "source": "n002", "target": "n009", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "e005", "source": "n002", "target": "n010", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "e006", "source": "n002", "target": "n011", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 188, "end": 384, "sha256": "efec9b625b0855b48e439caec36cf1d036baef2f835463d3abd46d371c18d0f2"}}
+  ]},
+  {"id": "e007", "source": "n002", "target": "n001", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0001", "start": 0, "end": 125, "sha256": "2e648d308b0911f2873ccc756a13bb254eb54cd0dbc4ba41b9c59e2d0e77f0d0"}},
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0012", "start": 258, "end": 380, "sha256": "1ec089bb930fa5f7682ec88846ebd9662f8f5aff7b91016dab81622310fb372e"}}
+  ]},
+  {"id": "e008", "source": "n002", "target": "n020", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0012", "start": 0, "end": 158, "sha256": "7e1e31481773c4b98824526bf714589d66da9a3d996e592adcb07e71f3ddc194"}}
+  ]},
+  {"id": "e009", "source": "n002", "target": "n012", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0020", "start": 0, "end": 158, "sha256": "32aedb51874b2fa98bb9865b6cc983f2e762e21d386c0004e380d8348a66174d"}}
+  ]},
+  {"id": "e010", "source": "n005", "target": "n002", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0009", "start": 207, "end": 253, "sha256": "220ee09e7cd565f5a34feda6ad4bacd7aa00f5e297444aca087f7b57ecbf0ab4"}}
+  ]},
+  {"id": "e011", "source": "n020", "target": "n004", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Upstream", "event_time": "2025", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0012", "start": 0, "end": 158, "sha256": "7e1e31481773c4b98824526bf714589d66da9a3d996e592adcb07e71f3ddc194"}}
+  ]},
+  {"id": "e012", "source": "n021", "target": "n017", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "mid-2025", "event_scope": "mid-2025 ransom attack in which attackers accessed remote vehicle command & control systems via the companion app", "evidence": [
+   {"role": "TARGET", "doc_id": "D0151", "paragraph_id": "D0151:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0151:P0013", "start": 13, "end": 214, "sha256": "7a37266de556688bab7426c1f5a18dc08fa614bd9c76595559156224a45cca28"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

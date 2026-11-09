@@ -1,0 +1,160 @@
+{
+  "run_id": "W028",
+  "target_doc_id": "D0290",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "attacking OT systems", "entity_type": "attack_technique", "aliases": ["targeting of OT systems"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 85, "end": 198, "sha256": "511ba7e5fd8d6d0756522a7b4c3647ec8d4a8b8312513b3aa43122b7f5d3e3bc"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0024", "start": 0, "end": 67, "sha256": "4a025f0c770404cb1561bb231c2eff99088b0a2a4a0c397a6c14b5ea0a3ceede"}}
+    ]},
+    {"id": "n002", "label": "DDoS", "entity_type": "attack_technique", "aliases": ["direct denial of service"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 22, "end": 102, "sha256": "e3e5130e86d7012fe85c5cd9a3388993b3639f788ee542da845de9d75bd01062"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 85, "end": 134, "sha256": "8bc458a875a252205b95afe7ce9d21e73402350f8c030639e65b75b4f78f06a4"}}
+    ]},
+    {"id": "n003", "label": "Russia", "entity_type": "country", "aliases": ["Moscow"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0015", "start": 66, "end": 177, "sha256": "b2cc5b57519c19268049772e45f2c26824ab2768ee30ac1b5e85bf8b2c97f564"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0016", "start": 1, "end": 82, "sha256": "8898635091db886fb7e5db56c69d460f9c61fe5cab6b87dc1b311e71faea98e2"}}
+    ]},
+    {"id": "n004", "label": "Sweden", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 79, "sha256": "161a3a369f8a063e0446e4774dbea361b5a9ad698df16c5aad212a1c2319fe35"}}
+    ]},
+    {"id": "n005", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0015", "start": 72, "end": 128, "sha256": "15a4980431687d17f3d758bf6c339453d4788c409bffcbbcf3789d35a2651906"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0017", "start": 1, "end": 42, "sha256": "82126cc171d84cc9f183379f988794877ea695306b1fb4419db8a5d77bea0f7f"}}
+    ]},
+    {"id": "n006", "label": "pro-Russian cyberattack on thermal power plant", "entity_type": "incident", "aliases": ["pro-Russian cyberattack"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0001", "start": 0, "end": 83, "sha256": "4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 79, "sha256": "161a3a369f8a063e0446e4774dbea361b5a9ad698df16c5aad212a1c2319fe35"}}
+    ]},
+    {"id": "n007", "label": "western Sweden", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0014", "start": 0, "end": 49, "sha256": "f531550aefaa0a1d0266036f0f7408092ba8de280e8a610e777915f024c7f995"}}
+    ]},
+    {"id": "n008", "label": "KTH Royal Institute of Technology", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 0, "end": 68, "sha256": "e10a5472754529e052e38975e18c4ee8d4330c6545cd6ca34ee5f5c2c66d3bae"}}
+    ]},
+    {"id": "n009", "label": "Russian intelligence", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 115, "end": 176, "sha256": "0ae45f4ea16624892ef879b0cf2e078805ddae2de0ac5f112afb3108bb074af4"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0009", "start": 93, "end": 153, "sha256": "0307ad7be0037bba9752ffd42f85a3267936928ae8a85ffbada14fb607c04b98"}}
+    ]},
+    {"id": "n010", "label": "Swedish government", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0016", "start": 159, "end": 220, "sha256": "14d0bfa4b43acef1a3bb74a32fa4093bc508997d934080bdbc72ddbc20f043d7"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 113, "sha256": "694b8f07e05a5068e128f6a397090ffb576448eee791c55afc9b0703e7ba1ab5"}}
+    ]},
+    {"id": "n011", "label": "Swedish Security Service", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0009", "start": 1, "end": 91, "sha256": "b0a465fd13ab3f5faaad16cbe99a7461343eb15cbb90751def9790b5c3db2029"}}
+    ]},
+    {"id": "n012", "label": "power grid", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0026", "start": 0, "end": 101, "sha256": "3825ab2256064220b59ce00b52c22eaae8c045a4dc0a19fbc9869fe8fe393bae"}}
+    ]},
+    {"id": "n013", "label": "railways", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0026", "start": 0, "end": 101, "sha256": "3825ab2256064220b59ce00b52c22eaae8c045a4dc0a19fbc9869fe8fe393bae"}}
+    ]},
+    {"id": "n014", "label": "thermal power plant", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 79, "sha256": "161a3a369f8a063e0446e4774dbea361b5a9ad698df16c5aad212a1c2319fe35"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0014", "start": 0, "end": 49, "sha256": "f531550aefaa0a1d0266036f0f7408092ba8de280e8a610e777915f024c7f995"}}
+    ]},
+    {"id": "n015", "label": "Carl-Oskar Bohlin", "entity_type": "person", "aliases": ["Bohlin"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0006", "start": 0, "end": 138, "sha256": "20c56f9e86008b80df814c03d7a523e7d4141d260f3432a08a28077f3733adc2"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0010", "start": 0, "end": 54, "sha256": "9d70aa67f4b67e314cc2bb64d7596c6e30a6e8c3a2d48dd7967c2e7d9b96001a"}}
+    ]},
+    {"id": "n016", "label": "Pontus Johnson", "entity_type": "person", "aliases": ["Johnson"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 0, "end": 68, "sha256": "e10a5472754529e052e38975e18c4ee8d4330c6545cd6ca34ee5f5c2c66d3bae"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0024", "start": 0, "end": 67, "sha256": "4a025f0c770404cb1561bb231c2eff99088b0a2a4a0c397a6c14b5ea0a3ceede"}}
+    ]},
+    {"id": "n017", "label": "AI", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0023", "start": 70, "end": 151, "sha256": "ac7793c02a9c3de67cfb837a8652fe7de79549602e5616dcf2eeec3a7199545a"}}
+    ]},
+    {"id": "n018", "label": "IT systems", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 104, "end": 184, "sha256": "38b1e2b38f2e886d59aa60392d2d15e9ac2a61f69ad198610176f968ced7e327"}}
+    ]},
+    {"id": "n019", "label": "operational technology", "entity_type": "technology", "aliases": ["OT"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 186, "end": 283, "sha256": "2d7455c3bc1c015bcf0ee0ee46b4c24a3fe4535b874e228e81a1160aa0e7e859"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 136, "end": 198, "sha256": "75b3826d9e5804ac61e06956bdb56c654464f2129ba1dcc92017652f69ba17a8"}}
+    ]},
+    {"id": "n020", "label": "security systems", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0010", "start": 56, "end": 100, "sha256": "d148e723db6662dc02a6c8e2cdc3e7f32b68b0274abf422b637b740d1c81c5ce"}}
+    ]},
+    {"id": "n021", "label": "attackers", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 0, "end": 102, "sha256": "38cb106cbc4a56b412563d7c048d6236c56957cbbc4c01b74a1b19ecb203822c"}}
+    ]},
+    {"id": "n022", "label": "group behind it", "entity_type": "threat_actor", "aliases": ["actor behind it"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 115, "end": 176, "sha256": "0ae45f4ea16624892ef879b0cf2e078805ddae2de0ac5f112afb3108bb074af4"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0009", "start": 51, "end": 153, "sha256": "7c9ab61d29b8604fd19c771d38c0dcdace34c97fccc74bca59e5a3b0554bde98"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n012", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "Pontus Johnson", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0026", "start": 0, "end": 101, "sha256": "3825ab2256064220b59ce00b52c22eaae8c045a4dc0a19fbc9869fe8fe393bae"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0024", "start": 0, "end": 67, "sha256": "4a025f0c770404cb1561bb231c2eff99088b0a2a4a0c397a6c14b5ea0a3ceede"}}
+    ]},
+    {"id": "e002", "source": "n001", "target": "n013", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "Pontus Johnson", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0026", "start": 0, "end": 101, "sha256": "3825ab2256064220b59ce00b52c22eaae8c045a4dc0a19fbc9869fe8fe393bae"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0024", "start": 0, "end": 67, "sha256": "4a025f0c770404cb1561bb231c2eff99088b0a2a4a0c397a6c14b5ea0a3ceede"}}
+    ]},
+    {"id": "e003", "source": "n001", "target": "n019", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Pontus Johnson", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 85, "end": 198, "sha256": "511ba7e5fd8d6d0756522a7b4c3647ec8d4a8b8312513b3aa43122b7f5d3e3bc"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0024", "start": 0, "end": 67, "sha256": "4a025f0c770404cb1561bb231c2eff99088b0a2a4a0c397a6c14b5ea0a3ceede"}}
+    ]},
+    {"id": "e004", "source": "n002", "target": "n018", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 63, "end": 184, "sha256": "2b0049455a24ff5d09f766b1c681ce65ba6f899a253bf2afb0a708a74a3ce897"}}
+    ]},
+    {"id": "e005", "source": "n003", "target": "n004", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "since Russia's full-scale invasion of Ukraine in February 2022", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0015", "start": 0, "end": 178, "sha256": "8365ef66b542d5cd7e4be877235740a440612c91658ad4be3289d74a64edc647"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0017", "start": 1, "end": 42, "sha256": "82126cc171d84cc9f183379f988794877ea695306b1fb4419db8a5d77bea0f7f"}}
+    ]},
+    {"id": "e006", "source": "n003", "target": "n005", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "February 2022", "event_scope": "Russia's full-scale invasion of Ukraine", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0015", "start": 66, "end": 128, "sha256": "e54ef5cb94769170aa915d494c4b71adf89af961bf9a0b82b6d4fb36dd8494af"}}
+    ]},
+    {"id": "e007", "source": "n004", "target": "n006", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "Swedish government", "event_time": "mid- 2025", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 113, "sha256": "694b8f07e05a5068e128f6a397090ffb576448eee791c55afc9b0703e7ba1ab5"}}
+    ]},
+    {"id": "e008", "source": "n006", "target": "n014", "relation_type": "AFFECTS", "modality": "actual", "polarity": "negative", "attribution": "Carl-Oskar Bohlin", "event_time": "mid- 2025", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0010", "start": 0, "end": 54, "sha256": "9d70aa67f4b67e314cc2bb64d7596c6e30a6e8c3a2d48dd7967c2e7d9b96001a"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0008", "start": 0, "end": 82, "sha256": "10346e4d3ec6f6838a34f93d1074d90d2f7f65a17fc8f0057e6bef328388aeb5"}}
+    ]},
+    {"id": "e009", "source": "n006", "target": "n014", "relation_type": "AFFECTS", "modality": "planned", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "mid- 2025", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0006", "start": 0, "end": 138, "sha256": "20c56f9e86008b80df814c03d7a523e7d4141d260f3432a08a28077f3733adc2"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0011", "start": 0, "end": 127, "sha256": "029fd21bc01578564fdc60861df095c309f3d9b0a596aacf01ba5eaed5abb94b"}}
+    ]},
+    {"id": "e010", "source": "n006", "target": "n022", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "Swedish government", "event_time": "", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 177, "sha256": "8ad46ec6b18214a4f5eefe929975317c8cb48555e39fab45c8cc7a0b51dca652"}}
+    ]},
+    {"id": "e011", "source": "n006", "target": "n014", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Swedish government", "event_time": "mid- 2025", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 113, "sha256": "694b8f07e05a5068e128f6a397090ffb576448eee791c55afc9b0703e7ba1ab5"}}
+    ]},
+    {"id": "e012", "source": "n010", "target": "n006", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "Swedish government", "event_time": "Wednesday", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0007", "start": 0, "end": 113, "sha256": "694b8f07e05a5068e128f6a397090ffb576448eee791c55afc9b0703e7ba1ab5"}}
+    ]},
+    {"id": "e013", "source": "n011", "target": "n022", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0009", "start": 1, "end": 153, "sha256": "b9b1f652a61636991fbedb6b74b7a9f7c4c2806a9c24f6c4974b328c99ceeb49"}}
+    ]},
+    {"id": "e014", "source": "n014", "target": "n007", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0014", "start": 0, "end": 49, "sha256": "f531550aefaa0a1d0266036f0f7408092ba8de280e8a610e777915f024c7f995"}}
+    ]},
+    {"id": "e015", "source": "n015", "target": "n006", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0006", "start": 0, "end": 138, "sha256": "20c56f9e86008b80df814c03d7a523e7d4141d260f3432a08a28077f3733adc2"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0010", "start": 0, "end": 54, "sha256": "9d70aa67f4b67e314cc2bb64d7596c6e30a6e8c3a2d48dd7967c2e7d9b96001a"}}
+    ]},
+    {"id": "e016", "source": "n015", "target": "n003", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0016", "start": 1, "end": 147, "sha256": "2689ce20bdc47518f3ea76a181e75edebe255958581fe434a3f2b7d129009926"}}
+    ]},
+    {"id": "e017", "source": "n016", "target": "n008", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 0, "end": 68, "sha256": "e10a5472754529e052e38975e18c4ee8d4330c6545cd6ca34ee5f5c2c66d3bae"}}
+    ]},
+    {"id": "e018", "source": "n017", "target": "n001", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Pontus Johnson", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0023", "start": 46, "end": 151, "sha256": "06b18db9eeed7b1669fef52b1f47e5da60a19aa3fb25d1ef9def5f9e18cb66f4"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0021", "start": 85, "end": 198, "sha256": "511ba7e5fd8d6d0756522a7b4c3647ec8d4a8b8312513b3aa43122b7f5d3e3bc"}}
+    ]},
+    {"id": "e019", "source": "n020", "target": "n006", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "mid- 2025", "event_scope": "n006", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0010", "start": 0, "end": 102, "sha256": "0a1c299f2f2f800b2cf7513a22886991f86e2d44f7bae852fe0be4e8c08b9126"}}
+    ]},
+    {"id": "e020", "source": "n021", "target": "n019", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 22, "end": 283, "sha256": "4066f5be3967db4fe114dbd660dad1ebae52212544cbb68e56b5dbcad29aca69"}},
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0019", "start": 10, "end": 138, "sha256": "77763cb999e4799aa4a3ac83bb542fdcee739f66a83cccc8cda053fb60c474d6"}}
+    ]},
+    {"id": "e021", "source": "n021", "target": "n002", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Carl-Oskar Bohlin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0290", "paragraph_id": "D0290:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0290:P0018", "start": 22, "end": 102, "sha256": "e3e5130e86d7012fe85c5cd9a3388993b3639f788ee542da845de9d75bd01062"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

@@ -1,0 +1,23 @@
+{
+ "audit_file": "S5F09",
+ "target_doc_id": "D0534",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005: кампанії проти DIB часто спрямовані на крадіжку інтелектуальної власності та R&D — типова поведінка, actual."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003/P0007: зловмисники атакують увесь оборонний екосистем/DIB, подано як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "I", "reason": "P0008: «By enforcing ... identity segregation» — опис дії засобу без явної умови, тож actual, а не conditional."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: Luke McNamara — Deputy Chief Analyst, Google Threat Intelligence Group."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: у інтерв'ю McNamara розповідає про часті ransomware-атаки на сектор."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: ransomware-атаки опосередковано впливають на оборонний ланцюг постачання, подано як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "I", "reason": "P0008: суворa автентифікація перетворює захист на виявлення — твердження про ефективність засобу без явної умови, тобто actual, а не conditional."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "I", "reason": "P0007 стверджує вплив ransomware на ланцюг постачання, заперечення немає, тож полярність positive, а не negative."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0001: DIB — головна ціль кібердестабілізації, подано як чинний стан."},
+  {"item_id": "E010", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: членом групи є McNamara, а не група — членом McNamara."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: цей сектор (компанії з компонентами подвійного призначення) часто зазнає ransomware-атак."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: threat actors are targeting the entire defense ecosystem — факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: компанії постачають компоненти подвійного призначення, як-от дрони."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: сектор часто зазнає атак із вимаганням, подано як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: атаки з вимаганням опосередковано впливають на оборонний ланцюг постачання."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005: кампанії проти DIB часто спрямовані на закріплення доступу (staging access) — типова поведінка, actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004/P0005: шпигунські кампанії проти урядових агенцій подано як чинну практику."}
+ ]
+}

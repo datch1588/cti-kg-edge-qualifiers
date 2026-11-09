@@ -1,0 +1,190 @@
+AUDIT_FILE: QT25A
+TARGET_DOC_ID: D0405
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0405
+PUBLICATION_DATE: 2026-03-18
+SOURCE_URL: https://www.prnewswire.com/news-releases/av-comparatives-publishes-apt-detection-coverage-2026-for-consumers-302716693.html
+TITLE_SHA256: 8695a6148188cd20e1a525ed0396615f443a6b61dcc167a0af9aea0087e2f603
+BEGIN_DOCUMENT
+[D0405:P0001] sha256:8695a6148188cd20e1a525ed0396615f443a6b61dcc167a0af9aea0087e2f603
+[D0405:P0002] sha256:15740b2a75027e1fe3f5b564a7b74c1ce3c3750cdde230050b5447b6412fc3fd
+[D0405:P0003] sha256:a6febc44f9e7fbf33f53e3952315484984ea6e342c399591b186bb7661c65cfb
+[D0405:P0004] sha256:5573aefdae16cd9edf556a1e6d8c7e8ce072bed0c6d09aaf2f8d2dd092948371
+[D0405:P0005] sha256:5573aefdae16cd9edf556a1e6d8c7e8ce072bed0c6d09aaf2f8d2dd092948371
+[D0405:P0006] sha256:b608f2a090e4a7e504131fde768edc0e11c5706967b6aa5dc36b855097b03c33
+[D0405:P0007] sha256:200bad9bafe617ed54ed88f6c86b89d67c53ddfdb281a48ce3b4e1d793818085
+[D0405:P0008] sha256:8ac580ec46ff60fe271be6d64141d5c074ccd7074f11487b5b9d77ba2ff2ea08
+[D0405:P0009] sha256:377adab9abc39252aca9697e63c222f28faad9b88b36e60e4dfa6040c4c25969
+[D0405:P0010] sha256:d218bef52488e49d2f5f3a5e8908f51bcec5dd3b15939451ba12be44ba2d616b
+[D0405:P0011] sha256:8d35f7c924c2b5d15a146f92e851b3d886c37d76c6e8e6a5e96470a095b0f85d
+[D0405:P0012] sha256:2e1e702364c447304d973bec3d133c5a42cc08346c15b82ccb44e2959654baa7
+[D0405:P0013] sha256:2e3d0f82a614398801fd5e9da8c6f1c86b08b32592adaf5c3c5b7412f0a6f48f
+[D0405:P0014] sha256:8f2a04403473c54389335120ef803b99ef8df1791625375023bf828e1e4890ee
+[D0405:P0015] sha256:225ad447fc9d3eaad767f0149cdc95dd1987a5dda706181b29fbd5bafecfeb75
+[D0405:P0016] sha256:f44ce9616eb8203d81599770c64f88832afdba6b235c32888ce394e7042327b4
+[D0405:P0017] sha256:70ad441366752acd7201cf9e2aac835ebb6676b442325962a5ec27e034bc3d23
+[D0405:P0018] sha256:e6c54bf59a7025a533e019bcfc2e233ef60f6fafab082400080e78bc2106197e
+[D0405:P0019] sha256:43fcfb604e80b405a9ca9521f5968ad07aeb3d82571726e28f34e70c5a4b988c
+[D0405:P0020] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0405:P0021] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0405:P0022] sha256:9fa474591aed08826dff8b71275b4deeeda4bcbc8b49f12ffbe3b779af5462b1
+[D0405:P0023] sha256:f68e40cd904169066ac850e79f4fa6bae7bb7ef201ac2834e73e38fb4f8900e2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 25, вузлів 2)
+E001: «cyber-espionage» — uses → «APT toolsets» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0007] «@255-336 sha256=7791a7f0b411bad1e61b1d61112c548905c33a373b0c8507256febfbb41dadae»
+E002: «consumer security products» — uses → «behavioural detection» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0012] «@0-152 sha256=3b48f0a6733033f7af7075f3925fc3442fd00631597e35080a3b3b95221e3a79»
+E003: «consumer cybersecurity products» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0010] «@0-195 sha256=f826a23cb9d11e984f651d178a66ad21123cd2e7ce16b7aafb92f80975a98f08»
+E004: «Advanced Persistent Threat» — uses → «multi-stage attack chains» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@120-369 sha256=ee0f23240ef2e5b16004c209dd4bb87178279293c171a144b2011f2a0c818b40»
+E005: «machine-learning technologies» — mitigates → «cyber threats» | форма: recommended, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0014] «@27-209 sha256=6be134343174388c7ee159f170f5ede4926fc87760e04d4c7b9951878a14ddee»
+E006: «AV-Comparatives» — reports on → «APT toolsets» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0007] «@50-302 sha256=85593b60934250e3e727617dc8b5c296c98dd475c6341aab3111178ef16e2df8»
+E007: «behavioural analysis» — mitigates → «cyber threats» | форма: recommended, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: —
+  фрагменти: [D0405:P0014] «@0-210 sha256=0ea398486eb3825806d6c8718d94fc09d868e5372c8965d3366981cc5428c45b»
+E008: «Advanced Persistent Threat» — uses → «advanced evasion techniques» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@91-369 sha256=ecf82d7c6dde7ab987ef23f3f431948e0d148c6793861897764b33d0d40d5a32»
+E009: «behavioural analysis» — mitigates → «advanced and evolving cyber threats» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: —
+  фрагменти: [D0405:P0014] «@0-210 sha256=0ea398486eb3825806d6c8718d94fc09d868e5372c8965d3366981cc5428c45b»
+E010: «Advanced Persistent Threat» — uses → «custom malware» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@91-369 sha256=ecf82d7c6dde7ab987ef23f3f431948e0d148c6793861897764b33d0d40d5a32»
+E011: «cyber-espionage campaigns» — uses → «APT toolsets» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0007] «@248-336 sha256=b2eb22bea24d8dea007985d53f9e5e58a5ddf2bff8d71a588171361a5e8ac3c8»
+E012: «consumer security products» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0010] «@0-113 sha256=fd7ddb5d292f4d5625b188228d691d1ff6acc12c202d5ee7d15e48bc2bd259f4»
+E013: «Advanced Persistent Threat» — uses → «multi-stage attack chains» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@263-369 sha256=0400b75403a9a6b0ef20a3619fb9beb253bc9d699c7d623ff72d57849896bd35»; [D0405:P0008] «@91-262 sha256=10bb8bfe50b08e805adb3dcdeb5e71bb8798995190d07a394a4a61983f2380d7»
+E014: «AV-Comparatives» — reports on → «Advanced Persistent Threat» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «APT Detection Coverage 2026 report»
+  фрагменти: [D0405:P0007] «@119-337 sha256=06dcdee36c4ecae758d777abd34dd1b80ea1b8efa463702d465bffeac1b91cc5»
+E015: «INNSBRUCK» — located in → «Austria» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0007] «@0-47 sha256=3d44696d537ad6d2fcc7af7730a59c56f40c779af9f9fcb9874a0471714e1ba5»
+E016: «Advanced Persistent Threat» — uses → «advanced evasion techniques» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@120-369 sha256=ee0f23240ef2e5b16004c209dd4bb87178279293c171a144b2011f2a0c818b40»
+E017: «consumer security products» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0010] «@0-195 sha256=f826a23cb9d11e984f651d178a66ad21123cd2e7ce16b7aafb92f80975a98f08»
+E018: «Advanced Persistent Threat» — uses → «multi-stage attack chains» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0008] «@91-369 sha256=ecf82d7c6dde7ab987ef23f3f431948e0d148c6793861897764b33d0d40d5a32»
+E019: «cyber-espionage» — uses → «APT toolsets» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0007] «@199-336 sha256=e40006cb6d874f3b9973282d44272ba7c71fb2ee9752850381629e4eea317e4c»
+E020: «consumer security products» — detects → «APT toolsets» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0010] «@196-348 sha256=91e0a1e4268d6e123505029c8f0346f848342c0da878947bc6087dc02cc2dab9»
+E021: «machine-learning technologies» — mitigates → «cyber threats» | форма: recommended, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: —
+  фрагменти: [D0405:P0014] «@0-210 sha256=0ea398486eb3825806d6c8718d94fc09d868e5372c8965d3366981cc5428c45b»
+E022: «consumer security products» — uses → «behavioural detection» | форма: actual, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0010] «@0-195 sha256=f826a23cb9d11e984f651d178a66ad21123cd2e7ce16b7aafb92f80975a98f08»
+E023: «machine-learning technologies» — mitigates → «cyber threats» | форма: recommended, positive
+  атрибуція: «AV-Comparatives» | час події: «2026-03-18» | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0014] «@27-209 sha256=6be134343174388c7ee159f170f5ede4926fc87760e04d4c7b9951878a14ddee»
+E024: «Andreas Clementi» — leads → «AV-Comparatives» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0405:P0011] «@0-63 sha256=6856935c12b782d52ae1aee3a09b2f1df63771c12e374233bda7613d72cf0407»
+E025: «behavioural analysis» — mitigates → «cyber threats» | форма: recommended, positive
+  атрибуція: «AV-Comparatives» | час події: — | контекст події: «AV-Comparatives APT Detection Coverage 2026 study»
+  фрагменти: [D0405:P0014] «@27-209 sha256=6be134343174388c7ee159f170f5ede4926fc87760e04d4c7b9951878a14ddee»
+V001: «Advanced Persistent Threat» (threat_category) | альтернативні назви: «APT»; «Advanced Persistent Threats»
+V002: «consumer security products» (product) | альтернативні назви: «consumer cybersecurity solutions»; «consumer cybersecurity products»; «consumer security solutions»
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,221 @@
+AUDIT_FILE: S2T02
+TARGET_DOC_ID: D0652
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0652
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://eurasiantimes.com/hinas-justice-mission-2025-drills-singled-out-himars/
+TITLE_SHA256: ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+BEGIN_DOCUMENT
+[D0652:P0001] sha256:ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+[D0652:P0002] sha256:f5e1780e47142181f61c0ceec3d2a8b58aad04c35660fd88c4171e57bd194913
+[D0652:P0003] sha256:350a4e3bca128eb76933e50fcbcc56a72a3bf62487f765d977c4a8189b943aef
+[D0652:P0004] sha256:9c07d18157103502a76812f6ba9602946eb1f86e19b63c5aecb6d96f8f4ffd81
+[D0652:P0005] sha256:7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8
+[D0652:P0006] sha256:f40ae60c857f52ef28d74583a8498ab74e724a8f1eccc1d076a0f85106a4734a
+[D0652:P0007] sha256:2fec46ce12eaf13d97f5dad8556ee45a6e20a8001dfe3418ee445458d12bf6b0
+[D0652:P0008] sha256:9e2fc72e7f97c8bcfea3fd68e0777f2cca463d4fdfb5e6292da9fe871a1d0a46
+[D0652:P0009] sha256:9ae91a2721ef8d76c8562f6284d2a17ef6a04263e6ff27c39edb3f26041b13dc
+[D0652:P0010] sha256:dbe203846cff4aa99dd96ba879082f152f5397ecfc92cf7284ee21b7cd1400b5
+[D0652:P0011] sha256:f6f6aaa7566452e7823fc119e74abaabf14ed44c303f74ef92c6364f78bce174
+[D0652:P0012] sha256:3b122ed435cc6aac48ae3e61a3888d5a4997dbad9a8cee46bd1de1e599310912
+[D0652:P0013] sha256:813ad0172d7d7bcd704d9dfedd484435e7926ec3501f76700aa129f845de14fc
+[D0652:P0014] sha256:c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c
+[D0652:P0015] sha256:e619f24d19ce3c18e8a477603418a1b01f76f03b351f0c9dc20a3d89594a235d
+[D0652:P0016] sha256:88eea6fd2e71b6d6886dac41f58c67b6febff31970c9ffa1b9918a855ddc0f83
+[D0652:P0017] sha256:717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840
+[D0652:P0018] sha256:b2ccb4df76316544e47586f4d9c4cf2fb78971c0b608f39a1ed6e5324358231c
+[D0652:P0019] sha256:9848bc7599962fd51ce89086ff096990482a1f1f52bcf4708c78987a8a4b790d
+[D0652:P0020] sha256:983f361af1b441ba4afccc156e6a9bc778fe6b4f56bddf0f2395da91653966f9
+[D0652:P0021] sha256:4fdbc2670db0a8871568e1334233eec8d27577b73e2672d9602146a220fd5609
+[D0652:P0022] sha256:2c34838c8dfc88b3c420aacda11f08e79cd12169326607fd2df0f372ee783f3c
+[D0652:P0023] sha256:146b7a757e0ec762481c096f8bf654d83505b7177b49438372509fddb968fa9a
+[D0652:P0024] sha256:4f588d664054812f67c43b6c1068d9aa30d41579e855e0f036fb13e593537198
+[D0652:P0025] sha256:8dcd954bc907849940b115c16e3393417feb5a1f0aa2eb6d66e14077d9057542
+[D0652:P0026] sha256:4e9b8c0d72ccaaec53abc0788e6399b105e64e15d5a12325d9c0c72cc5efe823
+[D0652:P0027] sha256:d434895e0c6631b7d4f629b6f4d7101beebf9168d59c1532779054e882640863
+[D0652:P0028] sha256:89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1
+[D0652:P0029] sha256:6fa076bd16d4df1eb8601a41b33e5ddf88c362c0210a4370fea748cee95b9af1
+[D0652:P0030] sha256:00d686c81b67873793dd21f98660f9fbb33aaf72aaa4048e192db0ec950e5040
+[D0652:P0031] sha256:660a4ab8f238ab6077d6c653cf24e99331682ea7a87a2fc6869406accd0f84d5
+[D0652:P0032] sha256:9f9ae237c7a0850502c1c4c59d7beb0b44a43e5b79bd57b6e4a9c3066a07a09c
+[D0652:P0033] sha256:a8e451870020cec126519fa78b3248f02ed84fe2dd2f60589674c2845980d2a7
+[D0652:P0034] sha256:d8a67d2c2add7b404eae55b1a6389a0d51fce426993e4b34a9d46a22bcdd92d3
+[D0652:P0035] sha256:becf0f14d297bd0bfe5ed4b807ca54547433d9a1fc5e0e8c15681b7c5da40732
+[D0652:P0036] sha256:f8b504512c64111a647372634cc4f81f31da792a981a8003cd8807428811dd53
+[D0652:P0037] sha256:02fefdec59233becebd80a4f2b2ab94d49356e46b3aa5979eb8a13d82b730cc7
+[D0652:P0038] sha256:be5887b9858fb10c272fd37bc9e40e74c8fb3c202a1787bf728f1eb5576b0dbf
+[D0652:P0039] sha256:215730f42ed8508141b80c08172d79c4473519b548ee971a98e299ebedbb581c
+[D0652:P0040] sha256:b319456576ecbe181ff28f02421d64c716ab8701a1e495f6972f431002842f8f
+[D0652:P0041] sha256:933409bbe1a1732bdb6d49aec9296ce3cf0869a37cc76020c0c9c4f4c8f193fa
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (117)
+E001: «GMLRS (Guided Missile Launch Rocket System)» — can hit targets over → «70 kilometres» | форма: actual, positive
+E002: «HIMARS» — contributed to → «Ukraine's 2022 counteroffensive in Kherson» | форма: actual, positive
+E003: «PCL-191» — was fired after confirming → «HIMARS positions» | форма: actual, positive
+E004: «Fujian Province» — located in → «China» | форма: actual, positive
+E005: «HIMARS» — can fire → «GMLRS (Guided Missile Launch Rocket System)» | форма: actual, positive
+E006: «US» — provides → «ATACMS» | форма: planned, positive
+E007: «Russian forces» — reduced shelling intensity in → «Donbas» | форма: actual, positive
+E008: «US» — provides → «HIMARS» | форма: planned, positive
+E009: «Biden administration» — provides → «ATACMS» | форма: actual, positive
+E010: «US arms package for Taiwan» — includes → «Tactical Mission Network (TMN)» | форма: actual, positive
+E011: «ATACMS» — uses → «Ukrainian forces» | форма: actual, positive
+E012: «HIMARS» — can conduct deep counterstrikes against → «logistics bases» | форма: actual, positive
+E013: «HIMARS» — can target → «PLA long-range rocket batteries» | форма: actual, positive
+E014: «ATACMS» — uses → «GPS» | форма: actual, positive
+E015: «China» — aims at blockading → «key ports and shipping lanes in Taiwan» | форма: actual, positive
+E016: «Ukrainian forces» — uses → «GMLRS» | форма: actual, positive
+E017: «Ukrainian forces» — targets → «Russia» | форма: actual, positive
+E018: «Nitin J Ticku» — member of → «EurAsian Times» | форма: actual, positive
+E019: «US arms package for Taiwan» — includes → «82 HIMARS» | форма: actual, positive
+E020: «Global Surveillance» — posted → «pic.twitter.com/HxacMWtxOs» | форма: actual, positive
+E021: «Ukrainian military» — used ATACMS-HIMARS combination to hit → «troop concentrations and staging areas inside Russia» | форма: actual, positive
+E022: «Beyond F-16 & Abrams: Why China's "Justice Mission 2025" Drills Singled Out HIMARS as Taiwan's Top U.S.-Supplied Threat?» — is available at → «https://eurasiantimes.com/hinas-justice-mission-2025-drills-singled-out-himars/» | форма: actual, positive
+E023: «China» — located in → «Fujian Province» | форма: actual, positive
+E024: «People's Liberation Army» — targets → «HIMARS» | форма: actual, positive
+E025: «US» — provides → «HIMARS» | форма: actual, positive
+E026: «Biden administration» — delivered → «ATACMS (Army Tactical Missile System)» | форма: actual, positive
+E027: «Tactical Mission Network (TMN)» — enables → «sensor-to-shooter targeting» | форма: actual, positive
+E028: «Tactical Mission Network» — enables → «sensor-to-shooter» | форма: actual, positive
+E029: «ATACMS (Army Tactical Missile System)» — can strike targets → «300 kilometres away» | форма: actual, positive
+E030: «Taiwan» — operates → «HIMARS» | форма: actual, positive
+E031: «ATACMS (Army Tactical Missile System)» — was used to eliminate → «electronic warfare units» | форма: actual, positive
+E032: «HIMARS» — uses → «ATACMS» | форма: actual, positive
+E033: «Fujian» — located in → «China» | форма: actual, positive
+E034: «ATACMS (Army Tactical Missile System)» — has feature → «GPS-guided precision» | форма: actual, positive
+E035: «US arms package for Taiwan» — includes → «420 ATACMS missiles» | форма: actual, positive
+E036: «Ukrainian military» — uses → «ATACMS» | форма: actual, positive
+E037: «Justice Mission 2025» — took place in → «late December 2025» | форма: actual, positive
+E038: «US arms package for Taiwan» — is worth → «$11 billion» | форма: actual, positive
+E039: «Tactical Mission Network (TMN)» — connects launchers to → «sensors and command centres» | форма: actual, positive
+E040: «People's Liberation Army» — uses → «PCL-191» | форма: actual, positive
+E041: «Justice Mission 2025» — singled out → «HIMARS» | форма: actual, positive
+E042: «Justice Mission 2025» — took place around → «Taiwan» | форма: actual, positive
+E043: «Taiwan» — uses → «HIMARS» | форма: actual, positive
+E044: «unmanned vehicle mock-ups» — were equipped with → «infrared transmitters» | форма: actual, positive
+E045: «Justice Mission 2025» — involved → «PLA Air Force» | форма: actual, positive
+E046: «Tactical Mission Network» — mitigates → «cyber threats» | форма: actual, positive
+E047: «China» — targets → «HIMARS» | форма: planned, positive
+E048: «US» — provides → «Tactical Mission Network» | форма: planned, positive
+E049: «China» — targets → «HIMARS» | форма: possible, positive
+E050: «China» — views as a major threat → «HIMARS» | форма: actual, positive
+E051: «PLA Navy» — intercepted vessels suspected of shipping → «HIMARS» | форма: actual, positive
+E052: «HIMARS» — was first deployed by Ukrainian forces in → «2022» | форма: actual, positive
+E053: «HIMARS» — efficacy is limited by → «ammo shortages» | форма: actual, positive
+E054: «Ukrainian military» — uses → «HIMARS» | форма: actual, positive
+E055: «HIMARS» — enables → «deep counterstrikes» | форма: actual, positive
+E056: «People's Liberation Army» — targets → «Taiwan» | форма: possible, negative
+E057: «ATACMS (Army Tactical Missile System)» — was delivered to → «Ukraine» | форма: actual, positive
+E058: «Justice Mission 2025» — involved → «PLA Rocket Force» | форма: actual, positive
+E059: «Ukrainian forces» — uses → «HIMARS» | форма: actual, positive
+E060: «China» — launched → «Justice Mission 2025» | форма: actual, positive
+E061: «Beyond F-16 & Abrams: Why China's "Justice Mission 2025" Drills Singled Out HIMARS as Taiwan's Top U.S.-Supplied Threat?» — was published by → «EurAsian Times» | форма: actual, positive
+E062: «HIMARS» — was used to strike → «Russian command and control centres» | форма: actual, positive
+E063: «HIMARS» — uses → «shoot-and-scoot» | форма: possible, positive
+E064: «HIMARS» — can fire → «ATACMS (Army Tactical Missile System)» | форма: actual, positive
+E065: «Justice Mission 2025» — targets → «Taiwan» | форма: actual, positive
+E066: «Wang Yi» — warns about → «US weapons sales to Taiwan» | форма: actual, positive
+E067: «unmanned vehicle mock-ups» — surfaced on → «Chinese social media» | форма: actual, positive
+E068: «HIMARS» — has capability → «shoot-and-scoot» | форма: actual, positive
+E069: «People's Liberation Army (PLA)» — fired → «PCL-191» | форма: actual, positive
+E070: «ATACMS (Army Tactical Missile System)» — has flight time to mainland targets of → «7 minutes» | форма: actual, positive
+E071: «HIMARS» — can target → «logistics hubs in Fujian» | форма: actual, positive
+E072: «HIMARS» — can conduct deep counterstrikes against → «PLA rocket units» | форма: actual, positive
+E073: «Institute for National Defence and Security Research (INDSR)» — is sponsored by → «Taiwan government» | форма: actual, positive
+E074: «Ukrainian military» — uses → «GMLRS» | форма: actual, positive
+E075: «HIMARS» — can target → «PLA staging areas» | форма: actual, positive
+E076: «People's Liberation Army (PLA)» — conducted long-range live fire drills in → «waters to the north of the Taiwan Island» | форма: actual, positive
+E077: «deep counterstrikes» — targets → «People's Liberation Army» | форма: actual, positive
+E078: «HIMARS» — eliminated → «Russia's artillery superiority» | форма: actual, positive
+E079: «China» — launched → «Justice Mission 2025» | форма: possible, positive
+E080: «Su Tzu-yun» — member of → «Institute for National Defence and Security Research» | форма: actual, positive
+E081: «Ukrainian military» — used HIMARS to target → «bridges, rail hubs, and convoys» | форма: actual, positive
+E082: «ATACMS (Army Tactical Missile System)» — was used to eliminate → «air defence systems» | форма: actual, positive
+E083: «HIMARS» — efficacy is limited by → «electronic jamming» | форма: actual, positive
+E084: «People's Liberation Army» — targets → «Taiwan» | форма: actual, positive
+E085: «ATACMS (Army Tactical Missile System)» — could pose a threat to → «Fujian Province» | форма: actual, positive
+E086: «Ukraine» — uses → «ATACMS» | форма: actual, positive
+E087: «unmanned vehicle mock-ups» — surfaced in → «August 2025» | форма: actual, positive
+E088: «HIMARS» — was used to strike → «Russian ammo depots» | форма: actual, positive
+E089: «Russia» — uses → «electronic jamming» | форма: actual, positive
+E090: «Ukrainian forces» — uses → «ATACMS» | форма: actual, positive
+E091: «Justice Mission 2025» — involved → «PLA Navy» | форма: actual, positive
+E092: «United States» — lifted restrictions on hitting targets inside Russia in → «2024» | форма: actual, positive
+E093: «US» — provides → «HIMARS» | форма: actual, negative
+E094: «People's Liberation Army (PLA)» — benefits from impersonating HIMARS in → «OPFOR (Opposing Force) exercises» | форма: actual, positive
+E095: «Ukrainian military» — targets → «Russian forces» | форма: actual, positive
+E096: «HIMARS» — can target → «ports of embarkation» | форма: actual, positive
+E097: «US» — provides → «Tactical Mission Network» | форма: actual, positive
+E098: «HIMARS» — uses → «GMLRS» | форма: actual, positive
+E099: «People's Liberation Army» — targets → «Taiwan» | форма: possible, positive
+E100: «HIMARS» — can conduct deep counterstrikes against → «coastal targets in Fujian» | форма: actual, positive
+E101: «People's Liberation Army (PLA)» — simulated strikes on → «HIMARS launchers» | форма: actual, positive
+E102: «Chinese Coast Guard» — intercepted vessels suspected of shipping → «HIMARS» | форма: actual, positive
+E103: «Justice Mission 2025» — involved → «People's Liberation Army (PLA)» | форма: actual, positive
+E104: «CCTV» — broadcast footage of → «Justice Mission 2025» | форма: actual, positive
+E105: «Beyond F-16 & Abrams: Why China's "Justice Mission 2025" Drills Singled Out HIMARS as Taiwan's Top U.S.-Supplied Threat?» — was published on → «January 7, 2026» | форма: actual, positive
+E106: «Russia» — targets → «HIMARS» | форма: actual, positive
+E107: «Ukraine» — uses → «HIMARS» | форма: actual, positive
+E108: «Ukraine» — targets → «Russia» | форма: actual, positive
+E109: «China» — targets → «HIMARS» | форма: conditional, positive
+E110: «Tactical Mission Network (TMN)» — improves survivability against → «cyber threats» | форма: actual, positive
+E111: «Ukrainian forces» — targets → «Russian forces» | форма: actual, positive
+E112: «unmanned vehicle mock-ups» — resemble → «M142 HIMARS launchers» | форма: actual, positive
+E113: «Justice Mission 2025» — was conducted under → «Eastern Theatre Command» | форма: actual, positive
+E114: «US» — provides → «ATACMS» | форма: actual, positive
+E115: «Ukrainian military» — isolated Russian units in → «Kherson» | форма: actual, positive
+E116: «Ukraine» — uses → «GMLRS» | форма: actual, positive
+E117: «HIMARS» — uses → «shoot-and-scoot» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,209 @@
+AUDIT_FILE: QN18A
+TARGET_DOC_ID: D0159
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0159
+PUBLICATION_DATE: 2026-05-21
+SOURCE_URL: https://breakingdefense.com/2026/05/first-defense-critical-infrastructure-summit-aims-to-develop-repeatable-playbook/
+TITLE_SHA256: 6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+BEGIN_DOCUMENT
+[D0159:P0001] sha256:6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92
+[D0159:P0002] sha256:3343de4ef4c559a5cd5e51491b8027684b857d0ceecdb2cf2a49dbd799f58309
+[D0159:P0003] sha256:fe6e2b30651f4e57280e2afe90bf1a5d418f5152b594e744d536136c8b8d53b0
+[D0159:P0004] sha256:4c68f106c0fd35aeb1cf22955f0c73e188306a16e1e0dd393da066a04e85f8aa
+[D0159:P0005] sha256:767888feefae4c5abe1f05441f32c31833ac3e09d173a0afb2c63b6a7e6fa026
+[D0159:P0006] sha256:4c15835c8370ee70f07fa5f00dff73d72768211622fd973f84ced2e92cd5ac59
+[D0159:P0007] sha256:3a2ddc808b8ded81fc854b1686ceadf3f3441e4e968e307c8b405bf7bd395313
+[D0159:P0008] sha256:55e4c7c1ea5d9bc003f91bb3c36179ea09cd2a0da79de257d163df1daededc4d
+[D0159:P0009] sha256:cceba4eada9f75fe009f4baa03a41fee12f1b230b992a826abb1eb2d86c60b17
+[D0159:P0010] sha256:8bdd47abcd0743118121cb1296746b5145aec91c5ca68de63ec6de27b78fc192
+[D0159:P0011] sha256:288c18b6a6caa87436fe5e6f601eee035d2a037b83d7a1707d3f5c2743cc1672
+[D0159:P0012] sha256:6c796ec9c2812a6d2d631e3764b2175265c6a885548a7543ad929bb473a1b8d3
+[D0159:P0013] sha256:ea9fa4f9087d08545b1c7d8f40b9c49391f108770f03d58c1c400d2f9ca6bd26
+[D0159:P0014] sha256:31cf2671dc85ad541e709c971d91f76380ff4dea217d21e6e69109b8cf9c478e
+[D0159:P0015] sha256:1bf5a6128f88f8699b0a282c12561dab85ddfd3fb11c540865408346a7472beb
+[D0159:P0016] sha256:9114ba87f2d99eb41077fd34930ac43dec5d7967a5029111c1e9c07f83cf483e
+[D0159:P0017] sha256:3e4ac269f3f720620a0a9a3c06d02e3d076607ab80f6b1b1c6ee1a91d7543abe
+[D0159:P0018] sha256:2b5ff1ef41cc9131cbe6f2ee4276a7756720973a7d25faafd83575134999a08b
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 33, вузлів 2)
+E001: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: possible, positive
+  атрибуція: — | час події: «2026-05-21» | контекст події: вузол «coordinated attacks» (incident)
+  фрагменти: [D0159:P0005] «@238-330 sha256=80a9cb6d510750682ec4dafde464126b0fe42c698a233b348076ae7a4b9a90c3»; [D0159:P0006] «@316-478 sha256=d9d9fac5d743f618ecc89fcce030829d5d56a5318b98300231a181affc9863c7»
+E002: «82nd Airborne Division» — part of → «XVIII Airborne Corps» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0009] «@0-192 sha256=ff12a5048e8dff4f896d622d75c65620d0e1ed57880dcf3221b1b0bc4e62d933»
+E003: «Army Cyber Institute» — located in → «West Point» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0012] «@0-103 sha256=a534aa7acbad491718d27c1a205014ff88c2fada66d5bc6afb980a52ca6ada19»
+E004: «Brandon Pugh» — member of → «Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0007] «@227-322 sha256=9833dee5ef963dd74e1dccfa052b8bc1120fa8d1adc8b54d72a78a5ac77113c9»
+E005: «Operation Spider's Web» — located in → «Russia» | форма: actual, positive
+  атрибуція: «Daniel Driscoll» | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0016] «@69-225 sha256=1120126a48574c2960a72d8d45265bc77e8d3753b5da6f4913b44d312b604210»
+E006: «coordinated attacks» — targets → «Fort Bragg» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «coordinated attacks» (incident)
+  фрагменти: [D0159:P0005] «@114-226 sha256=56d77bd0070cffe8f991d518191f676ad0f22e862c3946c7de5ee4328029ac90»; [D0159:P0006] «@316-478 sha256=d9d9fac5d743f618ecc89fcce030829d5d56a5318b98300231a181affc9863c7»
+E007: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «coordinated attacks» (incident)
+  фрагменти: [D0159:P0005] «@238-330 sha256=80a9cb6d510750682ec4dafde464126b0fe42c698a233b348076ae7a4b9a90c3»; [D0159:P0006] «@316-478 sha256=d9d9fac5d743f618ecc89fcce030829d5d56a5318b98300231a181affc9863c7»
+E008: «Operation Spider's Web» — located in → «Russia» | форма: actual, positive
+  атрибуція: «Daniel Driscoll» | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0016] «@69-177 sha256=f7530deaa0f969f6b29af781a207286082acda14f1d88839361142ab8669a2af»
+E009: «XVIII Airborne Corps» — located in → «Fort Bragg» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0005] «@13-172 sha256=1797ed6b9304685d645919766f9273e226d5a2dee364881e47f8eed400c153ee»
+E010: «Army Cyber Institute» — located in → «West Point» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0012] «@0-38 sha256=074610b27a778e38494d6ac93ad113e0db8423a6aba47dacd0e0769b7034734e»
+E011: «Daniel Driscoll» — leads → «Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0016] «@228-278 sha256=e66cd07e1e451bcd5d66eefb6814df92a36d898903ecb083da891073fb1d6398»
+E012: «Ukraine» — targets → «Russia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@114-223 sha256=7576cb70d250fbe2a893150e40538d2095fa1c9cfe3c1c5eb91a82845c14fa52»
+E013: «private companies» — operates → «critical infrastructure» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0008] «@284-382 sha256=b545e5fef1fd0210a25ae3750b9977366a30cb158950ffe51755b667b1796e34»
+E014: «cyberattacks» — targets → «Supervisory Control and Data Acquisition systems» | форма: conditional, positive
+  атрибуція: — | час події: — | контекст події: «tabletop exercise scenario gamed out at the DCI Summit at Fort Bragg»
+  фрагменти: [D0159:P0005] «@238-330 sha256=80a9cb6d510750682ec4dafde464126b0fe42c698a233b348076ae7a4b9a90c3»; [D0159:P0006] «@0-124 sha256=9e8222a39b681b1469d1cc0c7b9b18f371c2b73c3e8f5cc21f621bfd655acfad»
+E015: «Ukraine» — targets → «Russia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0008] «@234-383 sha256=e15610adfe3c0850f8433b6e4194ea58197547db1ed6d5f4fdea1773fb9b6db1»
+E016: «Ukraine» — uses → «drones» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@114-223 sha256=7576cb70d250fbe2a893150e40538d2095fa1c9cfe3c1c5eb91a82845c14fa52»
+E017: «government» — operates → «critical infrastructure» | форма: actual, negative
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0008] «@284-382 sha256=b545e5fef1fd0210a25ae3750b9977366a30cb158950ffe51755b667b1796e34»
+E018: «Operation Spider's Web» — targets → «Russia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@79-223 sha256=8b534b3ab1f3e277d7a27549482e8f494e0f0a399ea2242d75d89c62d9fad590»
+E019: «tabletop exercise» — part of → «Defense Critical Infrastructure (DCI) Summit» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0006] «@316-398 sha256=824511dc6430add98f936f071ecd2b66b2387a67ad590410928bcad2e81df7d4»; [D0159:P0006] «@0-124 sha256=9e8222a39b681b1469d1cc0c7b9b18f371c2b73c3e8f5cc21f621bfd655acfad»
+E020: «military» — operates → «critical infrastructure» | форма: actual, negative
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0008] «@284-382 sha256=b545e5fef1fd0210a25ae3750b9977366a30cb158950ffe51755b667b1796e34»
+E021: «Brandon Pugh» — develops → «DCI playbook» | форма: planned, positive
+  атрибуція: «Brandon Pugh» | час події: — | контекст події: —
+  фрагменти: [D0159:P0011] «@1-88 sha256=ca93c8b652ff6003f4752987dcc1339e244476be8d4f1109431334d4af93dcff»
+E022: «Operation Spider's Web» — attributed to → «Ukraine» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@79-223 sha256=8b534b3ab1f3e277d7a27549482e8f494e0f0a399ea2242d75d89c62d9fad590»
+E023: «Defense Critical Infrastructure (DCI) Summit» — located in → «Fort Bragg» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0006] «@0-124 sha256=9e8222a39b681b1469d1cc0c7b9b18f371c2b73c3e8f5cc21f621bfd655acfad»
+E024: «Operation Spider's Web» — attributed to → «Ukraine» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@79-183 sha256=63242bae88141e0c06c19a0bea7843ffb32885a79af1d3dea319593d1baa9fd7»
+E025: «military» — operates → «critical infrastructure» | форма: actual, negative
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0008] «@284-382 sha256=b545e5fef1fd0210a25ae3750b9977366a30cb158950ffe51755b667b1796e34»
+E026: «Defense Critical Infrastructure (DCI) Summit» — located in → «Fort Bragg» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0006] «@52-247 sha256=afab7267863862c079b09ec1bb9a697b7d378c24809ac707b3c9586ec899e4c2»
+E027: «Ukraine» — uses → «drones» | форма: actual, positive
+  атрибуція: «Daniel Driscoll» | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0016] «@93-225 sha256=3bdd46d07d0ebefe828c815f8cd8e6ee2f911600223e227488f10706a66dbe6a»
+E028: «coordinated attacks» — uses → «drones» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «coordinated attacks» (incident)
+  фрагменти: [D0159:P0005] «@114-420 sha256=92113e94e69932327d117de5d1dc93c66029b53ae3e5873d67fcd62a6c0de183»; [D0159:P0006] «@316-478 sha256=d9d9fac5d743f618ecc89fcce030829d5d56a5318b98300231a181affc9863c7»
+E029: «XVIII Airborne Corps» — located in → «Fort Bragg» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0005] «@114-200 sha256=1683b240504d015136d357819daec455cb084a5c6dbd18a9027fbf9a8e798765»
+E030: «Ukraine» — uses → «drones» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@114-208 sha256=51e8132b116a7b0e5afe714d667a54d942c39a0d193f8cf1cbef9787d39850bc»
+E031: «Operation Spider's Web» — targets → «Russia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Operation Spider's Web» (campaign)
+  фрагменти: [D0159:P0015] «@89-223 sha256=92aebaefde9b31140959261cfe48675f694ef3fa6dabb37254d7e7ebdf75c7ce»
+E032: «coordinated attacks» — targets → «commercial electric stations» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: вузол «coordinated attacks» (incident)
+  фрагменти: [D0159:P0005] «@202-420 sha256=ad1fb82f791810c0e9a9267bbd8c68d7dd57ec2e01541f2db87ca62971039c5f»; [D0159:P0006] «@316-478 sha256=d9d9fac5d743f618ecc89fcce030829d5d56a5318b98300231a181affc9863c7»
+E033: «XVIII Airborne Corps» — part of → «Army» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0159:P0005] «@13-103 sha256=67baebe4199905118d6dc5626ff74f3e275a900b9678cb178eaf28d1f3ba40e1»
+V001: «tabletop exercise» (event) | альтернативні назви: «table top exercise»
+V002: «XVIII Airborne Corps» (organization) | альтернативні назви: «XVIII Airborne»
+КІНЕЦЬ ЗАПИСІВ

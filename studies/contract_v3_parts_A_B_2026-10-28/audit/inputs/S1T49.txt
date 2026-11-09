@@ -1,0 +1,164 @@
+AUDIT_FILE: S1T49
+TARGET_DOC_ID: D0069
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0069
+PUBLICATION_DATE: 2026-06-12
+SOURCE_URL: https://www.nextgov.com/policy/2026/06/house-vote-puts-section-702-brink-historic-lapse-amid-fight-over-acting-spy-chief/414136/
+TITLE_SHA256: 983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+BEGIN_DOCUMENT
+[D0069:P0001] sha256:983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+[D0069:P0002] sha256:e80181a03d36305754701ab93f16a0dcf70b1c2e0588f9a25efbb4f1bb26b0e5
+[D0069:P0003] sha256:b187522810127ece794cb48c3e553520f063b79b154c9b6d83cc1c6d730ee8d4
+[D0069:P0004] sha256:8dc5b08d536f17aaec250f03384e508adae88191807d4e4ec84a9d033807e2e8
+[D0069:P0005] sha256:f259e65420e664107ad58dbb1b8a1658a17914faa0ed0f1439cee8cfa69c02b3
+[D0069:P0006] sha256:67773ccb7b19d2aeceb9092a1e3838f677dfebfce403896a9b991729f87a0598
+[D0069:P0007] sha256:f0f82c180d489f86808aebed93b64ff72659ef4bc7ef16bf1b6a14dc8a39fdb7
+[D0069:P0008] sha256:ea55264cad0744b7305d6bb8d67caf8372186470dcf8c7730a05c6b5e51d8643
+[D0069:P0009] sha256:34e1941448a3fcb3c07d9b82bc7e610741031595271c5a258af1b83126ff1527
+[D0069:P0010] sha256:f38242b0d96aa40ae3d47e8af0c6d0304b975af2b4b6ce14bd8f790940d7180f
+[D0069:P0011] sha256:9f05f7d0e94f2d913610d0e3cc3a77c2bea30cd014e51b72e361dd274ac09334
+[D0069:P0012] sha256:6d034e99a8c6e643aa090361e8ecc7ef62c596a28a300a1234d0d768ada16d59
+[D0069:P0013] sha256:d42b22cb3169b133de1f4f64840a0474823764a7c16678b7557a35ec5a661af4
+[D0069:P0014] sha256:0d0cfedf2f939a1e0effdbe89c21682cc417d541f5fe7a6a8f7a3d64d5776402
+[D0069:P0015] sha256:a19ec4b8de2ece4766895c708ea56bed65450d61c0b2120d5fea56235fec9e40
+[D0069:P0016] sha256:ce3b8a9162801d9864145572e1b4dc5313605f4c458f6b538ed2575b80082433
+[D0069:P0017] sha256:cac01b8f83f0395c30ed5abf0159cf0df4f399f0bd0704f9229b1a35a29b5e38
+[D0069:P0018] sha256:5f8ac9557843c6df242f6749f5921806f6f61347b343351056a2b1d2c1a2e23b
+[D0069:P0019] sha256:0e613c983c33226e388a80e2294bd3bc971cd7423fa317c47fafa1ed7df9a05a
+[D0069:P0020] sha256:6a1d4bf882175cf72b6618cfedea5c06ca1b49233540b4628c4be10b01e9b452
+[D0069:P0021] sha256:553baa2f7b505e928bc387513741eee6a455593993c6eb23996f21e81aaeea41
+[D0069:P0022] sha256:d9043b58a228ef3fb5b0d8b10da175179ab0a0ff8a819fb4f315e6df3c10566f
+[D0069:P0023] sha256:bacc752e9c931231fce5fa784e918a1a88bf6570e9e893da2703acfd72f450d6
+[D0069:P0024] sha256:dc18f3e3c7f04a315438eae99c2c70b2ec8cd6eda667391d9c182b7dd1ee3458
+[D0069:P0025] sha256:fc13334012fdff190409579062b043a45ddca1bd9f6b158f6518139f6713b502
+[D0069:P0026] sha256:3ac96c9cdb27a6c3cf90387ff1ad7a33c6ec93e3502603a8a3aab4d6bfde1abf
+[D0069:P0027] sha256:682cc4c5ec8af8c3ad99996ca20e009a8d2de317dbb9889ec5c3605da0378dab
+[D0069:P0028] sha256:52f7ed557459b03ddec2b137f586602ff539aa60851510d868da1bb8e8d9af62
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (73)
+E001: «Aaron Lukaas» — member of → «Office of the Director of National Intelligence» | форма: actual, positive
+E002: «Office of the Director of National Intelligence» — uses → «Section 702» | форма: actual, positive
+E003: «Bill Pulte» — leads → «Office of the Director of National Intelligence» | форма: planned, positive
+E004: «Stellarwind surveillance program» — was created under → «Bush administration» | форма: actual, positive
+E005: «Glenn Gerstell» — warns about → «terror attacks» | форма: actual, positive
+E006: «FBI» — has authority to access data of → «Section 702» | форма: actual, positive
+E007: «Section 702» — certifications cover → «cyber threats» | форма: actual, positive
+E008: «Jay Clayton» — leads → «Securities and Exchange Commission» | форма: actual, positive
+E009: «Bill Pulte» — leads → «Office of the Director of National Intelligence» | форма: recommended, negative
+E010: «House of Representatives» — failed to approve extension of → «Section 702» | форма: actual, positive
+E011: «Jim Himes» — is top Democrat on → «House Intelligence Committee» | форма: actual, positive
+E012: «Mark Warner» — demands guarantee against acting DNI role of → «Bill Pulte» | форма: actual, positive
+E013: «Democrats» — warns about → «abuse of intelligence tools» | форма: actual, positive
+E014: «FBI» — would use Section 702 to trace origin of → «ransomware attack» | форма: actual, positive
+E015: «Donald Trump» — spoke to reporters in → «Oval Office» | форма: actual, positive
+E016: «House of Representatives» — is scheduled to recess until → «June 23» | форма: actual, positive
+E017: «Glenn Gerstell» — warns about → «cyberattacks» | форма: actual, negative
+E018: «NSA» — collects communications of foreigners abroad without a warrant under → «Section 702» | форма: actual, positive
+E019: «Jay Clayton» — is former chairman of → «Securities and Exchange Commission» | форма: actual, positive
+E020: «Section 702» — is part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+E021: «Section 702» — uses → «FBI» | форма: actual, positive
+E022: «White House» — is at impasse with → «Democrats» | форма: actual, positive
+E023: «Mark Warner» — is vice chairman of → «Senate Intelligence Committee» | форма: actual, positive
+E024: «David DiMolfetta» — authored → «House vote puts Section 702 on brink of historic lapse amid fight over acting spy chief» | форма: actual, positive
+E025: «House of Representatives» — voted 218-198 on Section 702 on → «Thursday» | форма: actual, positive
+E026: «terror attacks» — might present higher risk with lapse of → «Section 702» | форма: actual, positive
+E027: «Edward Snowden» — disclosed documents in → «2013» | форма: actual, positive
+E028: «Donald Trump» — praised Jay Clayton in post on → «Truth Social» | форма: actual, positive
+E029: «Jim Himes» — supports nomination of → «Jay Clayton» | форма: actual, positive
+E030: «House Intelligence Committee» — is assessing use in event of lapse of → «Section 702» | форма: actual, positive
+E031: «Jim Himes» — member of → «House Intelligence Committee» | форма: actual, positive
+E032: «Tulsi Gabbard» — is director of → «Office of the Director of National Intelligence» | форма: actual, positive
+E033: «AT&T» — is required to comply with → «Section 702» | форма: actual, positive
+E034: «Section 702» — detects → «national security threats» | форма: actual, positive
+E035: «Foreign Intelligence Surveillance Court» — renewed certifications for → «Section 702» | форма: actual, positive
+E036: «Edward Snowden» — disclosed documents detailing use of → «Section 702» | форма: actual, positive
+E037: «NSA» — uses → «Section 702» | форма: actual, negative
+E038: «Donald Trump» — urged to confirm Jay Clayton → «United States Senate» | форма: actual, positive
+E039: «Glenn Gerstell» — member of → «NSA» | форма: actual, positive
+E040: «Glenn Gerstell» — warns about → «cyberattacks» | форма: actual, positive
+E041: «Aaron Lukaas» — leads → «Office of the Director of National Intelligence» | форма: recommended, positive
+E042: «Microsoft» — is required to comply with → «Section 702» | форма: actual, positive
+E043: «Section 702» — codified parts of → «Stellarwind surveillance program» | форма: actual, positive
+E044: «Section 702» — has authority to access data of → «FBI» | форма: actual, positive
+E045: «Glenn Gerstell» — is former general counsel at → «NSA» | форма: actual, positive
+E046: «FBI» — collects communications of foreigners abroad without a warrant under → «Section 702» | форма: actual, positive
+E047: «Bush administration» — develops → «Stellarwind» | форма: actual, positive
+E048: «Mark Warner» — member of → «Senate Intelligence Committee» | форма: actual, positive
+E049: «Nextgov/FCW» — published → «House vote puts Section 702 on brink of historic lapse amid fight over acting spy chief» | форма: actual, positive
+E050: «House vote puts Section 702 on brink of historic lapse amid fight over acting spy chief» — was published on → «June 11, 2026» | форма: actual, positive
+E051: «Jay Clayton» — leads → «Office of the Director of National Intelligence» | форма: planned, positive
+E052: «Section 702» — was enacted in → «2008» | форма: actual, positive
+E053: «Jay Clayton» — is U.S. attorney for → «Southern District of New York» | форма: actual, positive
+E054: «CIA» — has authority to access data of → «Section 702» | форма: actual, positive
+E055: «Foreign Intelligence Surveillance Court» — renewed certifications in → «March» | форма: actual, positive
+E056: «Democrats» — object to appointment of → «Bill Pulte» | форма: actual, positive
+E057: «FBI» — collects communications of foreigners abroad without a warrant under → «Section 702» | форма: possible, positive
+E058: «Stellarwind surveillance program» — was created after → «Sept. 11, 2001» | форма: actual, positive
+E059: «Edward Snowden» — is former contractor of → «NSA» | форма: actual, positive
+E060: «Gabbard» — leads → «Office of the Director of National Intelligence» | форма: recommended, positive
+E061: «Trump administration» — notified → «Congress» | форма: actual, positive
+E062: «cyberattacks» — might present higher risk with lapse of → «Section 702» | форма: actual, positive
+E063: «Glenn Gerstell» — warns about → «cyberattacks» | форма: possible, positive
+E064: «Section 702» — part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+E065: «FBI» — uses → «Section 702» | форма: actual, positive
+E066: «NSA» — uses → «Section 702» | форма: actual, positive
+E067: «Aaron Lukaas» — is Principal Deputy DNI of → «Office of the Director of National Intelligence» | форма: actual, positive
+E068: «NSA» — has authority to access data of → «Section 702» | форма: actual, positive
+E069: «CIA» — uses → «Section 702» | форма: actual, positive
+E070: «Mark Warner» — warns about → «statutory lapse» | форма: actual, positive
+E071: «Donald Trump» — named as permanent director of national intelligence → «Jay Clayton» | форма: actual, positive
+E072: «Office of the Director of National Intelligence» — has authority to access data of → «Section 702» | форма: actual, positive
+E073: «Bill Pulte» — was appointed acting director of → «Office of the Director of National Intelligence» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

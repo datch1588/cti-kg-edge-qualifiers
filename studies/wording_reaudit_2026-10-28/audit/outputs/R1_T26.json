@@ -1,0 +1,12 @@
+{
+ "audit_file": "R1_T26",
+ "target_doc_id": "D0294",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «block» подає блокування як факт без маркерів, а стаття в D0294:P0050 каже лише, що ці засоби «can block many phishing attempts», тобто це можливість (possible)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0294:P0010 сказано як факт, що зловмисники «gather email addresses or phone numbers from: Data breaches», і це відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0294:P0029 як факт сказано, що зловмисники «send bulk emails pretending to be trusted organizations», і це відповідає формі actual, positive."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never use» заперечує звʼязок, а стаття в D0294:P0058 його стверджує: «Some attackers use voice or video deepfakes to impersonate real people»."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «block» подає блокування як факт, а стаття в D0294:P0050 каже лише, що ці засоби «can block many phishing attempts», тобто це можливість (possible)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «blocks» подає блокування як факт, а стаття в D0294:P0050 каже лише, що ці засоби «can block many phishing attempts», тобто це можливість (possible)."}
+ ]
+}

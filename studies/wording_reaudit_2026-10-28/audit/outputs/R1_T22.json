@@ -1,0 +1,10 @@
+{
+ "audit_file": "R1_T22",
+ "target_doc_id": "D0402",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 прямо сказано, що дослідження пропонує LSTM-based IDS, тобто стаття подає це як факт, що відповідає формулюванню без маркерів."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 прямо сказано, що дослідження пропонує CNN-based IDS, тобто стаття подає це як факт, що відповідає формулюванню без маркерів."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0402:P0002 сказано, що DL-based intelligent IDSs успішно ідентифікують і класифікують загрози за допомогою, зокрема, multi-class classification, тобто це подано як факт."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never enhances» заперечує звʼязок, тоді як у D0402:P0002 стаття стверджує, що запропоновані IDS, зокрема LSTM-based, призначені посилити безпеку IoT networks, тож полярність не збігається."}
+ ]
+}

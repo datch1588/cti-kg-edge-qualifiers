@@ -1,0 +1,260 @@
+{
+  "run_id": "W054",
+  "target_doc_id": "D0608",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "pre-positioning", "entity_type": "attack_technique", "aliases": ["pre-position"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0015", "start": 120, "end": 269, "sha256": "df1c661432b5c44a27c615f99b4bca54737aa163ee3faa81589b0c40ab5911ed"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0012", "start": 86, "end": 190, "sha256": "208516ede5a85b163faa84f0dbae7f3c6bc1c7902751d3e06d0ee712dd6990e0"}}
+    ]},
+    {"id": "n002", "label": "Salt Typhoon", "entity_type": "campaign", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 0, "end": 166, "sha256": "4e8c8c0f53ffee5832782778bc4cfa7cf0a952508b37b78a10edee7226018335"}}
+    ]},
+    {"id": "n003", "label": "Volt Typhoon", "entity_type": "campaign", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0014", "start": 0, "end": 121, "sha256": "5f890d1c41f1b8d17479af1b057410692ca5867dee9ee0aaf8b8fbbd819e94b4"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0051", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0051", "start": 0, "end": 112, "sha256": "4b2504b5f6ff1095ef3677161d4e2eb85f72010bb1ff19a5c9f81d6b7ccad914"}}
+    ]},
+    {"id": "n004", "label": "China", "entity_type": "country", "aliases": ["People's Republic of China", "PRC"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 0, "end": 76, "sha256": "56053edc6f2178e3eedb6c2e29f65121a657418b82d0fc7bf9d0b76808d49413"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 265, "sha256": "0cdd18d0c66f7568eee1c252b0769007262a67fecbc46341840a10c3cff342bc"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0050", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0050", "start": 1, "end": 84, "sha256": "67895aac1b5e8a3950f096fc6a7b006c71fe8a1a4c8d0e3638d5b67921b32256"}}
+    ]},
+    {"id": "n005", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0038", "start": 0, "end": 134, "sha256": "5aa5a820c0cba636940b06050be8936dca79e7fdc755f8c87cc4dd3229176793"}}
+    ]},
+    {"id": "n006", "label": "North Korea", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0037", "start": 0, "end": 63, "sha256": "631e0be49629ccb7222fce925e657c73dec32d2a6db6eaf1c5eed7ba412ceb79"}}
+    ]},
+    {"id": "n007", "label": "Russia", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0017", "start": 0, "end": 109, "sha256": "9fbd804120a1a38d5818ede2dcb8cfad5ab45bde63b76bba7168f6b9ce0e83e2"}}
+    ]},
+    {"id": "n008", "label": "United States", "entity_type": "country", "aliases": ["U.S."], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0008", "start": 1, "end": 75, "sha256": "bcd8f1e5251c2a6396286d6bf682cd03a0208d0456fd911374424b86be692642"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 81, "end": 178, "sha256": "b8dae2628410cc4fdf983ff2a23ce3ca52bd7b1ba34c60358b8aec15893afb5f"}}
+    ]},
+    {"id": "n009", "label": "Guam", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 163, "end": 247, "sha256": "a583746ea2a38416fd6315ffa061fc2c91ca16e1f3e30a143c66cb4a685cf412"}}
+    ]},
+    {"id": "n010", "label": "malicious software", "entity_type": "malware_class", "aliases": ["malware"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 81, "end": 178, "sha256": "b8dae2628410cc4fdf983ff2a23ce3ca52bd7b1ba34c60358b8aec15893afb5f"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 304, "end": 352, "sha256": "bf3782c459638e7f6e474af52bcdb90f0f21cee587ed751a2b96847a5d168833"}}
+    ]},
+    {"id": "n011", "label": "Anthem", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0045", "start": 58, "end": 136, "sha256": "ce6668d21ce914b536502dc814e479c71c6cf34c481da6a2263398f3bf4853b9"}}
+    ]},
+    {"id": "n012", "label": "AT&T", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 114, "end": 204, "sha256": "bc3b08f0c157c8a5d8d21a92ccf560025c96da6c7b28cc85fd8e7a0e9424c782"}}
+    ]},
+    {"id": "n013", "label": "Center for Strategic and International Studies", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0053", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0053", "start": 0, "end": 107, "sha256": "8052ee98742cbc3829ce85ff21a74351de69467ee9576c4cedbb5234c1f3af01"}}
+    ]},
+    {"id": "n014", "label": "Chinese military", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0047", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0047", "start": 38, "end": 147, "sha256": "b2f098c9308bb46c7daf2e0982cf52fa114263752f22c616674d3268a1efe022"}}
+    ]},
+    {"id": "n015", "label": "Congress", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 180, "end": 254, "sha256": "7ac9a2ca5479e0ca54577a5bed2d762dedbff873a2a681dd163e0248cbd80f74"}}
+    ]},
+    {"id": "n016", "label": "Cyber Command", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0055", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0055", "start": 0, "end": 82, "sha256": "bc75347e6e5b5134a6a177097f31865ec0c6e48f9c7441bb8639314a346d3324"}}
+    ]},
+    {"id": "n017", "label": "Equifax", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0047", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0047", "start": 0, "end": 59, "sha256": "c375a1d5cb90bf8113b9a8087582d0bcabee4a72dc37c47f372fea7e0f5a7c2e"}}
+    ]},
+    {"id": "n018", "label": "House Homeland Security Committee", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0039", "start": 41, "end": 200, "sha256": "eaf6142b0d6150840b84a1a01717e8ac69d1932b119985991c6af81ca8b9bea7"}}
+    ]},
+    {"id": "n019", "label": "Indo-Pacific Command", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0007", "start": 0, "end": 69, "sha256": "5ec2e59dbb18dcd60bcc1e37579069619d82eaeafec9a68777bfd0f3f67e9009"}}
+    ]},
+    {"id": "n020", "label": "Islamic Revolutionary Guard Corps", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 63, "end": 157, "sha256": "0d844549e071b45456cdabc841eb86e44d332c76ac27ccb1321ff6e68d211a58"}}
+    ]},
+    {"id": "n021", "label": "Marriott", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0046", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0046", "start": 0, "end": 94, "sha256": "684089062a9db191d227759c450e615881b0248cc1915e0f5de8dd4569db6f44"}}
+    ]},
+    {"id": "n022", "label": "National Security Agency", "entity_type": "organization", "aliases": ["NSA"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0006", "start": 0, "end": 98, "sha256": "1075db53428348ef6232a4eb6bf50ce761f5aa7d27e96813d204ed147e3df890"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0028", "start": 0, "end": 74, "sha256": "3c9d59d62c5a2c340fa46d112032aa3167d866e2760f1c4afbad6e99e2df027b"}}
+    ]},
+    {"id": "n023", "label": "Office of Personnel Management", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0048", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0048", "start": 0, "end": 82, "sha256": "266b61162ad3acf6672adbe14c743e021c30c8449e38391372777415e9a73f7e"}}
+    ]},
+    {"id": "n024", "label": "Senate Armed Services Committee", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0008", "start": 205, "end": 255, "sha256": "e02217c1276670a1de6cbb519aa8d4d86ffb00b8114cb904e60990a39acaa4af"}}
+    ]},
+    {"id": "n025", "label": "subcommittee on cybersecurity and infrastructure protection", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0040", "start": 115, "end": 249, "sha256": "42a0a47316d26e6c0bfa8b194768a565da9fc5c47b038e7ffbf5fa8270e79dbf"}}
+    ]},
+    {"id": "n026", "label": "T-Mobile", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 114, "end": 204, "sha256": "bc3b08f0c157c8a5d8d21a92ccf560025c96da6c7b28cc85fd8e7a0e9424c782"}}
+    ]},
+    {"id": "n027", "label": "Twenty Technologies, Inc.", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0040", "start": 0, "end": 114, "sha256": "2cf8a8357f166e0e5651ce75332bc3d4f9c81bd93372eda612f83d015f7e0582"}}
+    ]},
+    {"id": "n028", "label": "Verizon", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 114, "end": 204, "sha256": "bc3b08f0c157c8a5d8d21a92ccf560025c96da6c7b28cc85fd8e7a0e9424c782"}}
+    ]},
+    {"id": "n029", "label": "critical infrastructure", "entity_type": "other", "aliases": ["critical infrastructures"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 215, "end": 265, "sha256": "5182f9763a37bd2fcc1f7b94d4c2d6bb33ada3bdfaa2f55148b09cd83fc65b03"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 0, "end": 76, "sha256": "56053edc6f2178e3eedb6c2e29f65121a657418b82d0fc7bf9d0b76808d49413"}}
+    ]},
+    {"id": "n030", "label": "Emily Harding", "entity_type": "person", "aliases": ["Ms. Harding", "Mr. Harding"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0053", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0053", "start": 0, "end": 107, "sha256": "8052ee98742cbc3829ce85ff21a74351de69467ee9576c4cedbb5234c1f3af01"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0054", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0054", "start": 72, "end": 142, "sha256": "e06ae30a1cbde88b42debb9d784314165fc5bc6278f56721515a9c2673579a64"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0057", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0057", "start": 1, "end": 80, "sha256": "87416455baf81f9b538488a86e8fa583e5422dbf503bfa0270a1b59e539dbdde"}}
+    ]},
+    {"id": "n031", "label": "Joe Lin", "entity_type": "person", "aliases": ["Mr. Li"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0040", "start": 0, "end": 53, "sha256": "1a37c0c87d890d29f30ba9ee78c8d5891ce6208133912b98cb5103a56d4eb208"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 0, "end": 71, "sha256": "a506d2ef4ceb06cfea871fe9ae008a1a8d297e550f081c8a31fd30e843639c68"}}
+    ]},
+    {"id": "n032", "label": "Joshua M. Rudd", "entity_type": "person", "aliases": ["Gen. Rudd"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0006", "start": 0, "end": 98, "sha256": "1075db53428348ef6232a4eb6bf50ce761f5aa7d27e96813d204ed147e3df890"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0007", "start": 0, "end": 69, "sha256": "5ec2e59dbb18dcd60bcc1e37579069619d82eaeafec9a68777bfd0f3f67e9009"}}
+    ]},
+    {"id": "n033", "label": "cyber warfare technologies", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0024", "start": 15, "end": 105, "sha256": "3a2315e625dfc463f0f7a9c5efebafd8610e16ecf1048d7973984795296bfd85"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n002", "target": "n004", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "n002", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 0, "end": 71, "sha256": "a506d2ef4ceb06cfea871fe9ae008a1a8d297e550f081c8a31fd30e843639c68"}}
+    ]},
+    {"id": "e002", "source": "n002", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "n002", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 51, "end": 204, "sha256": "46a43ec27954e67639342f976b126c6701c85a137a17e203b84246368982329a"}}
+    ]},
+    {"id": "e003", "source": "n002", "target": "n026", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "n002", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 51, "end": 204, "sha256": "46a43ec27954e67639342f976b126c6701c85a137a17e203b84246368982329a"}}
+    ]},
+    {"id": "e004", "source": "n002", "target": "n028", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "n002", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 51, "end": 204, "sha256": "46a43ec27954e67639342f976b126c6701c85a137a17e203b84246368982329a"}}
+    ]},
+    {"id": "e005", "source": "n003", "target": "n004", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0014", "start": 0, "end": 121, "sha256": "5f890d1c41f1b8d17479af1b057410692ca5867dee9ee0aaf8b8fbbd819e94b4"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0015", "start": 0, "end": 119, "sha256": "e56b728d993e995c7899d1c353f39fba814b820b8636c9030da956bfb4ff063a"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0051", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0051", "start": 0, "end": 112, "sha256": "4b2504b5f6ff1095ef3677161d4e2eb85f72010bb1ff19a5c9f81d6b7ccad914"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 163, "end": 247, "sha256": "a583746ea2a38416fd6315ffa061fc2c91ca16e1f3e30a143c66cb4a685cf412"}}
+    ]},
+    {"id": "e006", "source": "n003", "target": "n009", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 163, "end": 247, "sha256": "a583746ea2a38416fd6315ffa061fc2c91ca16e1f3e30a143c66cb4a685cf412"}}
+    ]},
+    {"id": "e007", "source": "n003", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0015", "start": 0, "end": 119, "sha256": "e56b728d993e995c7899d1c353f39fba814b820b8636c9030da956bfb4ff063a"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0051", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0051", "start": 0, "end": 112, "sha256": "4b2504b5f6ff1095ef3677161d4e2eb85f72010bb1ff19a5c9f81d6b7ccad914"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 0, "end": 248, "sha256": "73c42fe806df78f1146d56c2c84f55a98f4eb3c4f774b35eb5abdb79228cf161"}}
+    ]},
+    {"id": "e008", "source": "n003", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "n003", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0014", "start": 0, "end": 121, "sha256": "5f890d1c41f1b8d17479af1b057410692ca5867dee9ee0aaf8b8fbbd819e94b4"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0015", "start": 120, "end": 327, "sha256": "5f7a851d93382d5e0005dfee31251d9baabd3475c5229036b2e1d6e9e348f156"}}
+    ]},
+    {"id": "e009", "source": "n004", "target": "n033", "relation_type": "DEVELOPS", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0024", "start": 0, "end": 152, "sha256": "3029b084e7ccc74ca9b2290608fd548d49c7322341f1bd66826c6ef03494219a"}}
+    ]},
+    {"id": "e010", "source": "n004", "target": "n008", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. officials, according to cybersecurity experts", "event_time": "for at least two decades", "event_scope": "large-scale cyberattacks against computer networks in the U.S. and overseas", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0013", "start": 0, "end": 244, "sha256": "5dd22585a1be84672044ca0024071f356fc0b4bccf199b9073f66f2684d70548"}}
+    ]},
+    {"id": "e011", "source": "n004", "target": "n011", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "past Chinese attacks on the health company Anthem", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0045", "start": 0, "end": 197, "sha256": "6c9b597242b84a7ec04aa81421d6bfd0b198cc815f663dc3772b2334732f78d0"}}
+    ]},
+    {"id": "e012", "source": "n004", "target": "n023", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "theft of 22 million records from Office of Personnel Management systems", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0048", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0048", "start": 0, "end": 180, "sha256": "7a62d9d8064d4eb8cb87b6aef832c6b46836cd9949c58c370b4747f606eb1f64"}}
+    ]},
+    {"id": "e013", "source": "n004", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 265, "sha256": "0cdd18d0c66f7568eee1c252b0769007262a67fecbc46341840a10c3cff342bc"}}
+    ]},
+    {"id": "e014", "source": "n004", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 0, "end": 255, "sha256": "c87287dfb8da02f5ea94085706f03ef576fbda44d26ad9e54b17031b78bee5b3"}}
+    ]},
+    {"id": "e015", "source": "n004", "target": "n029", "relation_type": "TARGETS", "modality": "planned", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0010", "start": 0, "end": 137, "sha256": "c476598aa3e7df208f706b40de23bc901be4a1baf817451983dd6d8d14312675"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0011", "start": 0, "end": 161, "sha256": "d34bdfb199249bbb2caf4b28488de3072f99db5e1e82daf8ba4031aa4218d36d"}}
+    ]},
+    {"id": "e016", "source": "n004", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 352, "sha256": "9110de32fad37d181e61f4f8e38a6538026f25f69c6c282c96f0c65268d01290"}}
+    ]},
+    {"id": "e017", "source": "n005", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 265, "sha256": "0cdd18d0c66f7568eee1c252b0769007262a67fecbc46341840a10c3cff342bc"}}
+    ]},
+    {"id": "e018", "source": "n005", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 352, "sha256": "9110de32fad37d181e61f4f8e38a6538026f25f69c6c282c96f0c65268d01290"}}
+    ]},
+    {"id": "e019", "source": "n006", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 265, "sha256": "0cdd18d0c66f7568eee1c252b0769007262a67fecbc46341840a10c3cff342bc"}}
+    ]},
+    {"id": "e020", "source": "n006", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0037", "start": 0, "end": 255, "sha256": "ecad6c709804eca4031a224a581a703606dd740a742114857e23fbcb227e1f60"}}
+    ]},
+    {"id": "e021", "source": "n006", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 352, "sha256": "9110de32fad37d181e61f4f8e38a6538026f25f69c6c282c96f0c65268d01290"}}
+    ]},
+    {"id": "e022", "source": "n007", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 265, "sha256": "0cdd18d0c66f7568eee1c252b0769007262a67fecbc46341840a10c3cff342bc"}}
+    ]},
+    {"id": "e023", "source": "n007", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0042", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0042", "start": 142, "end": 352, "sha256": "9110de32fad37d181e61f4f8e38a6538026f25f69c6c282c96f0c65268d01290"}}
+    ]},
+    {"id": "e024", "source": "n008", "target": "n001", "relation_type": "MITIGATES", "modality": "recommended", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0012", "start": 0, "end": 190, "sha256": "cb4b86f6893a7a78a647e125d3fa3520bf7b80c1b143997045f03bfc5847bb52"}}
+    ]},
+    {"id": "e025", "source": "n008", "target": "n010", "relation_type": "MITIGATES", "modality": "recommended", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 81, "end": 255, "sha256": "1b04b8e4c18259025b04d2a5dad2e38878c7050e68e00a34f8ef975ae52aa1f7"}}
+    ]},
+    {"id": "e026", "source": "n010", "target": "n029", "relation_type": "AFFECTS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0012", "start": 86, "end": 264, "sha256": "ff5519c1efc8b4a73953724b5459124bd5a5e9344a1129864864d4916ae6b4e9"}}
+    ]},
+    {"id": "e027", "source": "n014", "target": "n004", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0047", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0047", "start": 88, "end": 147, "sha256": "1599b4c715011bf200881f3ab22d5d7ce55bc8caee4be47abc3bad47b228d8b3"}}
+    ]},
+    {"id": "e028", "source": "n014", "target": "n017", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "theft of financial identity information of 145 million Americans from Equifax", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0047", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0047", "start": 0, "end": 157, "sha256": "767dbc9fe0812a80816b8cb0a99c99121120df586b62ed92f541de30cf3a5607"}}
+    ]},
+    {"id": "e029", "source": "n020", "target": "n005", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 63, "end": 157, "sha256": "0d844549e071b45456cdabc841eb86e44d332c76ac27ccb1321ff6e68d211a58"}}
+    ]},
+    {"id": "e030", "source": "n020", "target": "n029", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2023", "event_scope": "2023 cyberattacks against U.S. water plants", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 0, "end": 157, "sha256": "9b7a08c28c427b4957680ac0ffb9091852ba70876e60214beff3d4bcd3cdc9b2"}}
+    ]},
+    {"id": "e031", "source": "n025", "target": "n018", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0039", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0039", "start": 41, "end": 201, "sha256": "6e5867281c42e202d29437c1ee2fe748e654fb42dc7c9fc21f7338f630aa69bb"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0040", "start": 115, "end": 249, "sha256": "42a0a47316d26e6c0bfa8b194768a565da9fc5c47b038e7ffbf5fa8270e79dbf"}}
+    ]},
+    {"id": "e032", "source": "n030", "target": "n013", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0053", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0053", "start": 0, "end": 107, "sha256": "8052ee98742cbc3829ce85ff21a74351de69467ee9576c4cedbb5234c1f3af01"}}
+    ]},
+    {"id": "e033", "source": "n030", "target": "n003", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "Emily Harding", "event_time": "", "event_scope": "n003", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0061", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0061", "start": 0, "end": 248, "sha256": "73c42fe806df78f1146d56c2c84f55a98f4eb3c4f774b35eb5abdb79228cf161"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0062", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0062", "start": 0, "end": 191, "sha256": "31648d4771c7b54e088139c1b143b7fdc6e2ad11d57f727e814ff3e84e83c7f9"}}
+    ]},
+    {"id": "e034", "source": "n031", "target": "n027", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0040", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0040", "start": 0, "end": 114, "sha256": "2cf8a8357f166e0e5651ce75332bc3d4f9c81bd93372eda612f83d015f7e0582"}}
+    ]},
+    {"id": "e035", "source": "n031", "target": "n002", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "Joe Lin", "event_time": "", "event_scope": "n002", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0044", "start": 0, "end": 205, "sha256": "53cd1efb71d3e2d614fb0d42e215c1cd62d1b0a58905ee8ff1e054ccf8757ec8"}}
+    ]},
+    {"id": "e036", "source": "n032", "target": "n016", "relation_type": "LEADS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0005", "start": 180, "end": 254, "sha256": "7ac9a2ca5479e0ca54577a5bed2d762dedbff873a2a681dd163e0248cbd80f74"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0006", "start": 0, "end": 98, "sha256": "1075db53428348ef6232a4eb6bf50ce761f5aa7d27e96813d204ed147e3df890"}}
+    ]},
+    {"id": "e037", "source": "n032", "target": "n022", "relation_type": "LEADS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0006", "start": 0, "end": 98, "sha256": "1075db53428348ef6232a4eb6bf50ce761f5aa7d27e96813d204ed147e3df890"}}
+    ]},
+    {"id": "e038", "source": "n032", "target": "n019", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0007", "start": 0, "end": 69, "sha256": "5ec2e59dbb18dcd60bcc1e37579069619d82eaeafec9a68777bfd0f3f67e9009"}}
+    ]},
+    {"id": "e039", "source": "n032", "target": "n004", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0008", "start": 81, "end": 256, "sha256": "8a1cbc17bf3ec69b00eccae4d381ab0eb1a503ccf44e682cf7896d7dc8bc0574"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0017", "start": 0, "end": 244, "sha256": "fb8105c0dbfb8af0a0cd826b2096b3ee3c80a0219218aed1946fcf55fc34b989"}}
+    ]},
+    {"id": "e040", "source": "n032", "target": "n005", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0017", "start": 0, "end": 244, "sha256": "fb8105c0dbfb8af0a0cd826b2096b3ee3c80a0219218aed1946fcf55fc34b989"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0038", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0038", "start": 0, "end": 144, "sha256": "24975539973d75e0bfba6ffaee26e2e7aa1f1544452d9dedb3387ed70292dbb7"}}
+    ]},
+    {"id": "e041", "source": "n032", "target": "n006", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0017", "start": 0, "end": 244, "sha256": "fb8105c0dbfb8af0a0cd826b2096b3ee3c80a0219218aed1946fcf55fc34b989"}},
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0037", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0037", "start": 0, "end": 255, "sha256": "ecad6c709804eca4031a224a581a703606dd740a742114857e23fbcb227e1f60"}}
+    ]},
+    {"id": "e042", "source": "n032", "target": "n007", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Joshua M. Rudd", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0608", "paragraph_id": "D0608:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0608:P0017", "start": 0, "end": 244, "sha256": "fb8105c0dbfb8af0a0cd826b2096b3ee3c80a0219218aed1946fcf55fc34b989"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

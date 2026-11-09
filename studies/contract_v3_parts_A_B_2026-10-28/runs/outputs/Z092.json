@@ -1,0 +1,55 @@
+{
+  "run_id": "Z092",
+  "target_doc_id": "D0604",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "false data injection", "entity_type": "attack_technique", "aliases": ["FDI"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 85, "end": 226, "sha256": "4da6117f15be525f1856f9e387d2f020b069a318208a8b5b0e493fd94c04f0f6"}}
+    ]},
+    {"id": "n002", "label": "connected and autonomous vehicles", "entity_type": "technology", "aliases": ["CAVs"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 85, "end": 183, "sha256": "e528cecbe145146c7b87dd54d0e3573dbe58614089e9470dcdfebd83f9243457"}}
+    ]},
+    {"id": "n003", "label": "control framework", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 302, "end": 452, "sha256": "c1281f46fa29d9f660f2bfc693cda463211fb4234b1e48b930b481a4cd2d6aa3"}}
+    ]},
+    {"id": "n004", "label": "Cooperative Adaptive Cruise Control", "entity_type": "technology", "aliases": ["CACC"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0001", "start": 0, "end": 98, "sha256": "6807bec4d6a5e914129a1b715243d899c7b109672a3e5f712b7edd9ecaf715fd"}},
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 974, "end": 1093, "sha256": "c3301d09e5d6774f4ad642f640fac858e20cffe725b74b3ba8822254af11540a"}}
+    ]},
+    {"id": "n005", "label": "interval observer", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 302, "end": 452, "sha256": "c1281f46fa29d9f660f2bfc693cda463211fb4234b1e48b930b481a4cd2d6aa3"}}
+    ]},
+    {"id": "n006", "label": "neural network-based estimator", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 454, "end": 577, "sha256": "744f67d3388c292ef9a3710713292eadd31175db919c3bdd7ab2dee9a065854a"}}
+    ]},
+    {"id": "n007", "label": "nonlinear controller", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 302, "end": 452, "sha256": "c1281f46fa29d9f660f2bfc693cda463211fb4234b1e48b930b481a4cd2d6aa3"}}
+    ]},
+    {"id": "n008", "label": "MATLAB/Simulink", "entity_type": "tool", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 866, "end": 972, "sha256": "2cbe5173f7c7969058f4a5f96923c806ab30e1018ac8e03808cc2a8cea67f45d"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 85, "end": 279, "sha256": "1531d8f5c52166efc2ccb2ac622f0ca67a1a0c1a99c84e897c745099edc8182c"}}
+    ]},
+    {"id": "e002", "source": "n003", "target": "n001", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 280, "end": 453, "sha256": "a793635cdd07a454d1d31f46cd520968b85bc8ee34f3f22ca98f7ccab9554736"}},
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 578, "end": 678, "sha256": "746ab8f04cd6c6698baf7546de12af10b312604833db4b8ae0c827e13ff8baf5"}}
+    ]},
+    {"id": "e003", "source": "n003", "target": "n004", "relation_type": "PROTECTS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0001", "start": 0, "end": 98, "sha256": "6807bec4d6a5e914129a1b715243d899c7b109672a3e5f712b7edd9ecaf715fd"}},
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 866, "end": 1094, "sha256": "01114e1fb73cd5bf5875064eb7c0940050def2a985619ab9e0fb0113b6c880b3"}}
+    ]},
+    {"id": "e004", "source": "n003", "target": "n005", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 302, "end": 452, "sha256": "c1281f46fa29d9f660f2bfc693cda463211fb4234b1e48b930b481a4cd2d6aa3"}}
+    ]},
+    {"id": "e005", "source": "n003", "target": "n007", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 302, "end": 452, "sha256": "c1281f46fa29d9f660f2bfc693cda463211fb4234b1e48b930b481a4cd2d6aa3"}}
+    ]},
+    {"id": "e006", "source": "n006", "target": "n001", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0604", "paragraph_id": "D0604:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0604:P0002", "start": 454, "end": 577, "sha256": "744f67d3388c292ef9a3710713292eadd31175db919c3bdd7ab2dee9a065854a"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

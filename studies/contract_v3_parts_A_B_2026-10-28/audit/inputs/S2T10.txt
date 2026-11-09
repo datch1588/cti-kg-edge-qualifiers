@@ -1,0 +1,125 @@
+AUDIT_FILE: S2T10
+TARGET_DOC_ID: D0569
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0569
+PUBLICATION_DATE: 2026-02-05
+SOURCE_URL: https://www.helpnetsecurity.com/2026/02/05/cybersecurity-planning-national-cybersecurity-strategy/
+TITLE_SHA256: 4c7749329c815bf1ca5a84b8effb3e81ced547053a9dc439336308672fc71830
+BEGIN_DOCUMENT
+[D0569:P0001] sha256:4c7749329c815bf1ca5a84b8effb3e81ced547053a9dc439336308672fc71830
+[D0569:P0002] sha256:4e2edbe949995d97e63e994f3e2174fb880c5188b9b865339eb35e9dce232ab4
+[D0569:P0003] sha256:64dfa6273fbf1cda5cd0745b5390ae4c4aff397f6f2ed356a1f328faced0f234
+[D0569:P0004] sha256:fb18399cbba2cd8abc34eca927a73bf1fc759f90872afba67bbc8e4a1b94e5f1
+[D0569:P0005] sha256:630e3bb5d1b0641597eb75377530baf7036b646ee93d99bc2babc85af36b911f
+[D0569:P0006] sha256:ef8592089fcb95f679f8eb40919fba440bfc8a2e3d7b5ded94260e78816ca6e2
+[D0569:P0007] sha256:0206349e970bed094cea06a2c1fe6d5bb1cf60be15b41ee76d55ceb443833681
+[D0569:P0008] sha256:10f7b6876a0f09f30d70af9bc621b97754f722afe7bae9c5ebc67398d7fc3998
+[D0569:P0009] sha256:c3d80ef125fff8c03dcbbc427aa2fc129482c231e8362800573a89c45111b753
+[D0569:P0010] sha256:3913fa1581e25cf9931a3228a3ea9a7a9ce149edd4a87008468850446b483c96
+[D0569:P0011] sha256:e0f6c7a2d332817d1dc0cc7dc0fe76df1a4e5f1d2a64a0d458fdd65b78b1b10b
+[D0569:P0012] sha256:0f061119ecc16b17bf709848e4d28e58f17a5d7e4725390b8977ee5182f0edb6
+[D0569:P0013] sha256:47661b74ae33a8a6a75595f65bcfb60b97fa741c885e4a937017360782bac20a
+[D0569:P0014] sha256:d4975d880e27b045ae6d85ff21526c53f70cb555342404f60e18694fb2e91284
+[D0569:P0015] sha256:4812e526866f8e9ae997f41e27fca8b7c10f85987413d2b10c536f83e744f3de
+[D0569:P0016] sha256:dd18414b544b01e47947edcd65f0cb11d51715db9a94cc85311e8e90e086bf07
+[D0569:P0017] sha256:f339125cce71613692a4d17abae26f532fff52fd2d32874a5a40161448833dc6
+[D0569:P0018] sha256:e37af9d7f05b9dda345e6fb11ef302ec4552b99863f0c423bbb36cb1f7ed54b4
+[D0569:P0019] sha256:bfa2978c3670c57547549ab02eb42033ab15d9c25f3286368a2b94924b45c1a4
+[D0569:P0020] sha256:10f84c1a8392d3f252665ea36eaeca7ff4050c2b9fbe285a5706cd6118c6d90f
+[D0569:P0021] sha256:0a6fbef08a8fab52f5a6613ca9e804b2756c9ceaa18a4cd8695cd523c4eac428
+[D0569:P0022] sha256:b4d96468fdf66c6b826faa50f9b6db1921170263e2ae3216c28067e370aae40f
+[D0569:P0023] sha256:ec92a7897ac378005e5cbfc4adcd51c8d4daee1994d5f17abd40071993f46b45
+[D0569:P0024] sha256:d9223f38b81c4de3470722883c932c0421ec0527c439a9ba35be6f7cd43d9bf6
+[D0569:P0025] sha256:07a5435189ce9530ecf041a7f26d1bb0c0e4b81ca0e2ea67f5e5370085855d61
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (37)
+E001: «security operations centers» — serve as focal points for → «detection and response» | форма: actual, positive
+E002: «telecommunications networks» — rely on management by → «private companies» | форма: actual, positive
+E003: «baseline security practices» — include → «identity management» | форма: actual, positive
+E004: «artificial intelligence» — impacts → «defensive tooling» | форма: actual, positive
+E005: «Cybersecurity planning keeps moving toward whole-of-society models» — was published on → «2026.02.05» | форма: actual, positive
+E006: «national cybersecurity strategies» — identify as structural risk → «workforce shortages» | форма: actual, positive
+E007: «national cybersecurity strategies» — assign defined roles to → «foreign affairs offices» | форма: actual, positive
+E008: «hospitals» — rely on management by → «private companies» | форма: actual, positive
+E009: «national risk assessments» — account for → «supply chain exposure» | форма: actual, positive
+E010: «common policy frameworks» — develops → «Center for Cybersecurity Policy and Law» | форма: actual, positive
+E011: «central coordination bodies» — act as hubs for → «incident coordination» | форма: actual, positive
+E012: «Center for Cybersecurity Policy and Law» — developed → «common policy frameworks» | форма: actual, positive
+E013: «centralized cybersecurity authorities» — oversee → «incident response» | форма: possible, positive
+E014: «baseline security practices» — include → «vulnerability handling» | форма: actual, positive
+E015: «baseline security practices» — include → «patching» | форма: actual, positive
+E016: «Help Net Security» — published → «Cybersecurity planning keeps moving toward whole-of-society models» | форма: actual, positive
+E017: «aging and unsupported systems» — create → «systemic exposure» | форма: actual, positive
+E018: «centralized cybersecurity authorities» — oversee → «incident response» | форма: actual, positive
+E019: «national cybersecurity strategies» — assign defined roles to → «regulators» | форма: actual, positive
+E020: «national cybersecurity strategies» — provide focused guidance to → «energy, water, transportation, health care, and financial services critical infrastructure» | форма: actual, positive
+E021: «operational technology security» — is integrated with → «enterprise IT security» | форма: actual, positive
+E022: «centralized cybersecurity authorities» — coordinate with → «intelligence and law enforcement» | форма: actual, positive
+E023: «national cybersecurity strategies» — assign defined roles to → «civilian agencies» | форма: actual, positive
+E024: «cloud services» — rely on management by → «private companies» | форма: actual, positive
+E025: «Private companies» — operates → «national digital infrastructure» | форма: actual, positive
+E026: «common policy frameworks» — guide coordination between → «government, industry, and civil society» | форма: actual, positive
+E027: «private companies» — own and operate → «national digital infrastructure» | форма: actual, positive
+E028: «Center for Cybersecurity Policy and Law» — develops → «common policy frameworks» | форма: actual, positive
+E029: «Center for Cybersecurity Policy and Law» — develops → «common policy frameworks» | форма: actual, negative
+E030: «energy grids» — rely on management by → «private companies» | форма: actual, positive
+E031: «financial platforms» — rely on management by → «private companies» | форма: actual, positive
+E032: «central coordination bodies» — act as hubs for → «information sharing» | форма: actual, positive
+E033: «baseline security practices» — include → «secure configuration» | форма: actual, positive
+E034: «artificial intelligence» — impacts → «attack techniques» | форма: actual, positive
+E035: «national cybersecurity strategies» — assign defined roles to → «defense ministries» | форма: actual, positive
+E036: «secure by design principles» — appear in → «procurement and development guidance» | форма: actual, positive
+E037: «national risk assessments» — account for → «aging systems» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

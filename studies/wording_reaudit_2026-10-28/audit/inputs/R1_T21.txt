@@ -1,0 +1,80 @@
+AUDIT_FILE: R1_T21
+TARGET_DOC_ID: D0420
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0420
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://lansinginstitute.org/2026/03/13/disinformation-and-cyber-threat-narratives-in-kosovo-during-the-iran-crisis/
+TITLE_SHA256: 10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+BEGIN_DOCUMENT
+[D0420:P0001] sha256:10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+[D0420:P0002] sha256:58d8c3bc898617135423140b77d85d024f89f34f7afe5d93bae02e803517124d
+[D0420:P0003] sha256:dc94452fc6b9734a2a812525408002aa1338ec7a7b9b0c5bc3f5b5e8475104a9
+[D0420:P0004] sha256:81ee68c086ba15d1751aadaee43d535fe5c9d6936b1f2a3d0151c7b23582c65e
+[D0420:P0005] sha256:951af6a93cfef1c5feddc23a2d6f9fa2aa5563897217c94e0971594611f14431
+[D0420:P0006] sha256:ad799c311042eacb4447abf0817742500e4fb932439db3147d4dd9763784c207
+[D0420:P0007] sha256:f4f43f5a4257ace9c91feaff44d1d9baed362c5cb44ab8c20ab630dc5b5db51d
+[D0420:P0008] sha256:0716d9e9f90d27c29260ddaf2574706d2065870d1113d2e10ae283eebe2884d3
+[D0420:P0009] sha256:5af3fb4073371961f37ba710a74b6d2dcbdffc02c1a5939320d44e25647e2b05
+[D0420:P0010] sha256:d54e08fedad077b284cac7f859add80007ca103332b53b1479654b43df789110
+[D0420:P0011] sha256:7ac36f13b55ebe8e6d790aa85af651fc71d44f2b1b110a7c8de868c4430b58bb
+[D0420:P0012] sha256:4bf4b3490e84ae48935aef2ec193f4b82b754730643566b3523dece380b05cd5
+[D0420:P0013] sha256:6ca561b00c1bc4e5a2c8e7f3599fd6702ddc8711ecc899b825330ecc0eab411a
+[D0420:P0014] sha256:3eb9f0f0d777cfaa9ea5ce100dccdc74625032c9b8f3ea8dff69771d89d8fe45
+[D0420:P0015] sha256:795234364348172be9e1e281f2bae25bac07b50fd5a4efb33eb62b8d63616934
+[D0420:P0016] sha256:4d6a77bed9e8cd0df940da6cc2371e5d5850078282a0c1871943c1eed2ace4a5
+[D0420:P0017] sha256:cc7aadf70a06772717f7ca35caccd373fc5954359d65f052249a5a10b3bc4d01
+[D0420:P0018] sha256:73c3aa1926ee5664b83f83615f0e11109a9505c02a0832ee285ba2938f7e7c81
+[D0420:P0019] sha256:aa21127771b033a7d7daa56da9e4c554911e896424b2c4ae6d7ad0597b53ccf9
+[D0420:P0020] sha256:e156e164ba4002854556abd1408afb5bcd82f535a97c8bdcebd93346d8bbb254
+[D0420:P0021] sha256:b75b4a8d0bda312c4000486a6b735fb23c3d413909eb86540d7d42001b402545
+[D0420:P0022] sha256:597d787a194109c02acfabf2f4c2abca8005d9d6b8b42812dd5f532b35879835
+[D0420:P0023] sha256:2d697ef846194e11c7b86d65527609ba8addad5c504ccf91e70e5ce8f7345b6c
+[D0420:P0024] sha256:cc87fa9d4179120c1798a63d6f9f73c7a3d610231d17d6a0a8ed93a7ecbb3887
+[D0420:P0025] sha256:d409bff127ba944e8fa84b99778959736c495851e154599ab076cef176cc12fc
+[D0420:P0026] sha256:0c39a20139fbef7425d9bd9bb25bb663daa0002930e2bcf9e71d02b20c42b521
+[D0420:P0027] sha256:d2fe71739d05cd676faeb0a251c55eadf8ed56a5dbdc5363210cfde18f010edc
+[D0420:P0028] sha256:0acb8a6adf0984895a1b6f07132e57858d783c54caae7fdd2728ab52318af28f
+[D0420:P0029] sha256:22d7dcb74103af19050cf97b02fa86c63a10e69ece92cf2e59719237708d3bd6
+[D0420:P0030] sha256:7b01be1d45344f23626aea9d4c88e6f8b2b792ba8daaf4b2b61c04e3fd6759b6
+[D0420:P0031] sha256:0860af3b0a67a408940ed4153afebb52dd29f8928fc549b75217606f8bed1fcb
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (5)
+W001: «Aleksandar Vulin» — declared Serbia should act as Israel acted toward Iran against → «Kosovo»
+W002: «propaganda narratives» — portray as potential strategic target → «Camp Bondsteel»
+W003: «Russia» — possibly uses → «psychological operations»
+W004: «Camp Bondsteel» — is a military installation of → «United States»
+W005: «Maria Zakharova» — advised Russian citizens not to travel to → «Kosovo»
+КІНЕЦЬ ЗАПИСІВ

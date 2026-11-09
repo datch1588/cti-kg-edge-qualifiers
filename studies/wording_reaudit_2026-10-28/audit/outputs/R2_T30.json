@@ -1,0 +1,13 @@
+{
+ "audit_file": "R2_T30",
+ "target_doc_id": "D0327",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never uses» заперечує звʼязок, тоді як стаття стверджує, що актори розгорнули Dropbear SSH для віддаленого доступу [T1219] як факт (D0327:P0032, D0327:P0037)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття подає як факт, що FBI спостерігало використання акторами IP-адрес з Таблиці 1, зокрема 185.82.73[.]171 (D0327:P0035)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає спрямування трафіку на порт 2222 як факт, а стаття каже лише, що шкідливий вхідний трафік «may be directed» на цей порт, тобто це можливість (D0327:P0032)."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає спрямування трафіку на порт 102 як факт, а стаття каже лише, що шкідливий вхідний трафік «may be directed» на цей порт, тобто це можливість (D0327:P0032)."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає спрямування трафіку на порт 44818 як факт, а стаття каже лише, що шкідливий вхідний трафік «may be directed» на цей порт, тобто це можливість (D0327:P0032)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає спрямування трафіку на порт 502 як факт, а стаття каже лише, що шкідливий вхідний трафік «may be directed» на цей порт, тобто це можливість (D0327:P0032)."},
+  {"item_id": "W007", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття каже, що націлювання на порти «suggests these actors may also be targeting» пристрої інших виробників, зокрема Siemens S7 PLC, тобто подає це як можливість (D0327:P0032)."}
+ ]
+}

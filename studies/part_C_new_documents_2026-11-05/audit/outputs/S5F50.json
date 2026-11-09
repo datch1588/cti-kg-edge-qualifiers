@@ -1,0 +1,26 @@
+{
+ "audit_file": "S5F50",
+ "target_doc_id": "D0063",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002: 28,7% мальтійських компаній зазнали кіберінциденту у 2023 році — поданий факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "I", "reason": "P0022 радить увімкнути MFA, зокрема на адміністративних акаунтах, але за правилом порада впровадити засіб не робить твердження про захист рекомендацією; захисна функція MFA — actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0035 і P0020: GasanMamo пропонує полісі Cyber Insurance і покриває збитки — поданий факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002: дослідження PwC зафіксувало мільйони атак на мальтійську інфраструктуру за три місяці."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: фішингові листи тепер генерує ШІ — поданий чинний стан."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 говорить про атаки на мальтійську інфраструктуру й називає Мальту ціллю — поданий факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "U", "reason": "Прямо резервні копії пов'язано з ransomware лише умовно в P0024 («if you can restore»), а P0027 стверджує зниження ризику лише загалом, тож чи є actual-форма в тексті — неоднозначно."},
+  {"item_id": "E008", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: це Мальта є членом ЄС (P0002), а не навпаки."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "P0024 стверджує, що резервні копії захищають від ransomware за умови відновлення; заперечення стосується ransomware («can't hold you hostage»), а не самого пом'якшення, тож полярність має бути positive."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: CyberSift надає цілодобову підтримку — поданий факт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: ransomware не тримає компанію в заручниках, якщо можна відновити дані з чистої резервної копії — явна умова, наслідок позитивний."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002: дослідження PwC зафіксувало атаки на мальтійську інфраструктуру."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "P0022 радить увімкнути MFA на хмарних системах, але сама захисна функція MFA за правилом — actual, а не recommended."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "P0020 подає ланцюг «фішинговий лист → ransomware ширится мережею» як типовий сценарій у теперішньому часі, без маркерів можливості, тож форма actual, а не possible."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: MFA блокує переважну більшість автоматизованих атак — твердження про ефективність, actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "I", "reason": "P0022 радить увімкнути MFA, зокрема на пошті, але захисна функція MFA за правилом — actual, а не recommended."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "У статті мальтійські компанії — це компанії, що працюють на Мальті (P0002, P0004)."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: людська помилка часто є точкою входу для більшості кіберінцидентів — типова поведінка, actual."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 зараховує Мальту до країн ЄС."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "I", "reason": "P0022 радить увімкнути MFA на банківських платформах, але захисна функція MFA за правилом — actual, а не recommended."}
+ ]
+}

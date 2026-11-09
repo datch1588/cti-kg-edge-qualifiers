@@ -1,0 +1,92 @@
+AUDIT_FILE: T13
+TARGET_DOC_ID: D0530
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0530
+PUBLICATION_DATE: 2026-02-19
+SOURCE_URL: https://arxiv.org/abs/2602.16098
+TITLE_SHA256: bd830f5955ab804d0ecedb3e7f265c2bd14be484e3bbaf91d2d9e89341024ac6
+BEGIN_DOCUMENT
+[D0530:P0001] sha256:bd830f5955ab804d0ecedb3e7f265c2bd14be484e3bbaf91d2d9e89341024ac6
+[D0530:P0002] sha256:3a628c67fecf55fba7c975519ed73fe8778824aef8bef4546e4baaea279b5211
+[D0530:P0003] sha256:6fdae692ca7db76e713c8aeaa0ebc82136871cd296732ff33a3165d2e8ea6d54
+[D0530:P0004] sha256:5462c57683732a1c66937354939cc5a008a1e48a2190b94526b99b8bb957dc75
+[D0530:P0005] sha256:ec38a27aa65cb9b3eee463ac6c03d286f1b91920d34660a24e370882f9d8fab5
+[D0530:P0006] sha256:58006b81888f275a92f924227697897eb5d7d9299ca0a7d55b6a59301802c3b3
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (31)
+E001: «Collaborative Zone-Adaptive Zero-Day Intrusion Detection for IoBT» — was submitted on → «18 Feb 2026» | форма: actual, positive
+E002: «Zone-Adaptive Intrusion Detection» — uses → «pseudo-labelling» | форма: actual, positive
+E003: «Zone-Adaptive Intrusion Detection» — detects → «zero-day» | форма: actual, positive
+E004: «Zone-Adaptive Intrusion Detection (ZAID)» — combines → «lightweight adapter modules» | форма: actual, positive
+E005: «Collaborative Zone-Adaptive Zero-Day Intrusion Detection for IoBT» — presents → «Zone-Adaptive Intrusion Detection (ZAID)» | форма: actual, positive
+E006: «arXiv:2602.16098» — has DOI → «https://doi.org/10.48550/arXiv.2602.16098» | форма: actual, positive
+E007: «Zone-Adaptive Intrusion Detection (ZAID)» — detects intrusions in → «Internet of Battlefield Things (IoBT)» | форма: actual, positive
+E008: «Zone-Adaptive Intrusion Detection (ZAID)» — detects unseen → «MITM» | форма: actual, positive
+E009: «Zone-Adaptive Intrusion Detection (ZAID)» — detects → «zero-day attacks» | форма: actual, positive
+E010: «Zone-Adaptive Intrusion Detection» — uses → «universal convolutional model» | форма: actual, positive
+E011: «Zone-Adaptive Intrusion Detection» — uses → «adapter modules» | форма: actual, positive
+E012: «Zone-Adaptive Intrusion Detection (ZAID)» — detects unseen → «DoS» | форма: actual, positive
+E013: «Zone-Adaptive Intrusion Detection (ZAID)» — transfers to → «UNSW-NB15» | форма: actual, positive
+E014: «Zone-Adaptive Intrusion Detection (ZAID)» — combines → «autoencoder-based reconstruction signal» | форма: actual, positive
+E015: «Zone-Adaptive Intrusion Detection (ZAID)» — combines → «universal convolutional model» | форма: actual, positive
+E016: «Zone-Adaptive Intrusion Detection (ZAID)» — detects unseen → «DDoS» | форма: actual, positive
+E017: «lightweight adapter modules» — enable → «parameter-efficient zone adaptation» | форма: actual, positive
+E018: «federated aggregation» — uses → «Zone-Adaptive Intrusion Detection» | форма: actual, positive
+E019: «Zone-Adaptive Intrusion Detection» — uses → «federated aggregation» | форма: actual, positive
+E020: «Collaborative Zone-Adaptive Zero-Day Intrusion Detection for IoBT» — is cited as → «arXiv:2602.16098» | форма: actual, positive
+E021: «Collaborative Zone-Adaptive Zero-Day Intrusion Detection for IoBT» — presents → «Zone-Adaptive Intrusion Detection (ZAID)» | форма: actual, negative
+E022: «Zone-Adaptive Intrusion Detection» — detects → «zero-day» | форма: possible, positive
+E023: «Zone-Adaptive Intrusion Detection (ZAID)» — is evaluated on → «ToN_IoT» | форма: actual, positive
+E024: «autoencoder-based reconstruction signal» — serves as → «auxiliary anomaly score» | форма: actual, positive
+E025: «universal convolutional model» — provides → «generalisable traffic representations» | форма: actual, positive
+E026: «Zone-Adaptive Intrusion Detection (ZAID)» — uses → «federated aggregation» | форма: actual, positive
+E027: «Zone-Adaptive Intrusion Detection» — uses → «autoencoder» | форма: actual, positive
+E028: «Collaborative Zone-Adaptive Zero-Day Intrusion Detection for IoBT» — is available at → «https://arxiv.org/abs/2602.16098» | форма: actual, positive
+E029: «Internet of Battlefield Things (IoBT)» — relies on → «tactical networks» | форма: actual, positive
+E030: «Internet of Battlefield Things» — uses → «tactical networks» | форма: actual, positive
+E031: «Zone-Adaptive Intrusion Detection (ZAID)» — uses → «pseudo-labelling» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

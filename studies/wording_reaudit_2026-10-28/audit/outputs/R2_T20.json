@@ -1,0 +1,20 @@
+{
+ "audit_file": "R2_T20",
+ "target_doc_id": "D0448",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає чинний стан, а в D0448:P0018 сказано, що обов'язкові вимоги лише будуть (there will be) після набуття чинності Cyber Resilience Act у 2027 році, тобто це planned."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів плану подає набуття чинності як факт, а D0448:P0018 описує його як майбутню подію (entering force in 2027, there will be), тобто planned."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає атаку на smart metering infrastructure як факт, а в D0448:P0019 це гіпотетичний сценарій (a coordinated attack ... could disable), тобто possible."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0448:P0019 сказано, що скоординована атака could disable an entire national electricity grid, і формулювання «could disable» передає таку саму можливість."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне (never include), а D0448:P0017 стверджує звʼязок і прямо називає cameras серед підключених домашніх пристроїв (such as smart speakers or cameras)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає загрозу як здійснену, а D0448:P0025 каже, що defence secrets лише potentially at risk, тобто possible."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає загрозу як здійснену, а D0448:P0025 каже, що governmental communications лише potentially at risk, тобто possible."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає атаки на government departments як факт, а D0448:P0007 каже лише, що такі атаки стають increasingly likely, тобто possible."},
+  {"item_id": "W009", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0448:P0021 сказано, що квантовий комп'ютер it could break the public encryption systems, і формулювання «could break» передає ту саму можливість."},
+  {"item_id": "W010", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає атаки на hospitals як факт, а D0448:P0007 каже лише, що такі атаки стають increasingly likely, тобто possible."},
+  {"item_id": "W011", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0448:P0018 продаж підключених пристроїв в ЄС (connected devices sold across the EU) подано як чинний стан речей, а в майбутньому подано лише вимоги, тож форма actual, positive відповідає."},
+  {"item_id": "W012", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0448:P0017 зі слів Рудін як факт сказано, що many devices ... do not have strong cybersecurity protections, і «lack» стверджує саме цю відсутність захисту."},
+  {"item_id": "W013", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає загрозу як здійснену, а D0448:P0025 каже, що cryptographic keys лише potentially at risk, тобто possible."},
+  {"item_id": "W014", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає загрозу як здійснену, а D0448:P0025 каже, що personal data лише potentially at risk, тобто possible."}
+ ]
+}

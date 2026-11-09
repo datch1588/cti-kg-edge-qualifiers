@@ -1,0 +1,13 @@
+{
+ "audit_file": "QT06A",
+ "target_doc_id": "D0598",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "I", "context_verdict": "C", "fragment_verdict": "S", "reason": "[D0598:P0002] подає як факт, що Advanced Persistent Threats «carry out» операції, зокрема Dream Job; джерела не названо. Час «2026-01-23» — це дата публікації (пор. P0005 «ArXiv 2026.01.23»), а не час операції Dream Job, якого стаття не називає, тому I."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "—", "fragment_verdict": "S", "reason": "[D0598:P0002]: запропонований open-source tool виконує порівняння «based on the cATM logic», тобто використовує логіку cATM; це функція засобу (actual), джерела й часу стаття не називає."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "C", "fragment_verdict": "P", "reason": "Звʼязок як факт підтверджує [D0598:P0002] («Advanced Persistent Threats carry out attack campaigns - e.g. operations ... Wocao»), джерела й часу немає. Але наведений фрагмент [D0598:P0004] — лише історія подань статті, він не згадує ні Wocao, ні APT, тому P."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "C", "fragment_verdict": "S", "reason": "[D0598:P0002] подає як факт, що операцію Dream Job здійснюють Advanced Persistent Threats; джерела й часу операції стаття не називає, контекст — сама операція Dream Job."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "—", "fragment_verdict": "S", "reason": "[D0598:P0002]: open-source tool виконує порівняння «based on the cATM logic» — функція засобу, подана як чинна (actual); джерела й часу немає."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "C", "fragment_verdict": "S", "reason": "[D0598:P0002] називає WannaCry серед операцій, які «carry out» Advanced Persistent Threats, як загальний факт; джерела й часу немає, контекст — сама операція WannaCry."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "N", "context_verdict": "C", "fragment_verdict": "S", "reason": "[D0598:P0002] подає як факт, що Advanced Persistent Threats здійснюють операцію Wocao; джерела й часу стаття не називає, контекст — сама операція Wocao."}
+ ]
+}

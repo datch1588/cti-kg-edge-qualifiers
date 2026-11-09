@@ -1,0 +1,137 @@
+AUDIT_FILE: S5F10
+TARGET_DOC_ID: D0516
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0516
+PUBLICATION_DATE: 2026-02-24
+SOURCE_URL: https://www.ibtimes.co.uk/cybersecurity-report-ai-driven-threats-1781320
+TITLE_SHA256: e9a4992b245a2017ab6f7b2f0fed331c815beef734b64f1a503a496dadc389b4
+BEGIN_DOCUMENT
+[D0516:P0001] sha256:e9a4992b245a2017ab6f7b2f0fed331c815beef734b64f1a503a496dadc389b4
+[D0516:P0002] sha256:25994138f7461f4bd565d3ad12154fe450f96f3a63520cea5bacceeb43739595
+[D0516:P0003] sha256:6dd422aba1b3846bf66bef686b9bf3d142f27e5146cd302ef411cb7acaebd230
+[D0516:P0004] sha256:ba220722b5d6fc01b62bcbcc7add6616ff1dfb5cd4bec41bba0ec03a844958a0
+[D0516:P0005] sha256:e08903ddf8e6d5ebf442a0291ff961234c36d302571aa21466f635cdc2630f4d
+[D0516:P0006] sha256:ba45189908f407eb7d3176c763564d30de4ff067f0b8bfc5da81f03aedd7b3ff
+[D0516:P0007] sha256:17ed86ed240d3edddfe65885294304cee121d60f49e5de80f92130126b09aebf
+[D0516:P0008] sha256:0623f2ad29cd0832ef329706a4f657d4d69d155cae92bd3f36444c222e48ab4d
+[D0516:P0009] sha256:c7576e8c8c6f6926fb0e600e317e7485f6265f22e03db24e8797e0a376bb0063
+[D0516:P0010] sha256:d0ca7da141e068e3249714ccaf8801a26fa4a7478c83dab7bd16ea6ed52de33a
+[D0516:P0011] sha256:8e19e74d1cfbeafbd1fac4fadebfaad6c428f21ee5f418be900bae5598599fb0
+[D0516:P0012] sha256:f00749674669bbe531725a70c9ad67ae23f3f3037d318ddd5c134f40ea220fbe
+[D0516:P0013] sha256:45d5bccd5e92261a47141af956066ad512477cc07a901631ff7c4da00da0ec98
+[D0516:P0014] sha256:9a1a98d56bf91907586fec04dbf3ef86dd6ee1a426ad7ad22242938eed3cca8e
+[D0516:P0015] sha256:284a7b721b1281faed3ec7c48d785ac6a0c04da66095805e68ae095ce6c9e0c7
+[D0516:P0016] sha256:8feb734b24e1d8e72b9a72e3c77c096cd8048bffd4f64729c78f35ce5d0b1191
+[D0516:P0017] sha256:585abdbfb471c105159a76922294b23f29b5efa9c0f84b12603ab3bbecb573aa
+[D0516:P0018] sha256:6c458eece1b0882bbf036b94b7fc90a173b9d0877b66d18dc43cae41604e16c7
+[D0516:P0019] sha256:fdba169ad954310b9af0712fbcd7ec432bc6b1a50d54d9154352b257fc1b6729
+[D0516:P0020] sha256:8facb1a43f69e8d8b6e8cb229a90511cf30a32d3392287afd4479606788ba262
+[D0516:P0021] sha256:761ccc2f21518fec0519634e5ea64a7655b80a197ad6fd766de3a260833a15df
+[D0516:P0022] sha256:9e942edd5a5e9f864b6033421d057829857fd89dbb4d837cc76495dd8e562c4e
+[D0516:P0023] sha256:be2ead9a0c63d9d8a46116018b955a0e175a75b88d6dc7ecb5eb2392332da3f1
+[D0516:P0024] sha256:8cee70a1bf005ef90f6a0f23d423420f419a7e1e0673cedb0f92de13f61e4051
+[D0516:P0025] sha256:92377dabdb1da8d3cda55c4bd20692da26d47b50aa4601423be1567ee9e30e11
+[D0516:P0026] sha256:3da2c82bbee8a21285294e09a8d0cc1fbf829b7f2aacccef8b69baaa3093f049
+[D0516:P0027] sha256:958a9aca46d2e39eed9265f2f0f438f77e8483d6d48a226fbcf1dda4052dfdf8
+[D0516:P0028] sha256:0d3a6225b3e6e77af65f13620cdb9020cd7410dd4b87c73f302d6e7597d88b6e
+[D0516:P0029] sha256:27ac4db16b0d5452eb05e68563bbea219e6d62f4bb0ffb137c58b05010783d64
+[D0516:P0030] sha256:98c1b06f3a0ba5b9e9efedd5a89ea0a268b256d554fdeda581b1d2d402af2db6
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (44)
+E001: «vulnerabilities in AI development platforms» — affects → «AI development platforms» | форма: actual, positive
+E002: «attackers» — uses → «ransomware» | форма: actual, positive
+E003: «CrowdStrike» — reports on → «Cybercriminals» | форма: actual, positive
+E004: «attackers» — uses → «cloud platforms» | форма: possible, positive
+E005: «reconnaissance» — uses → «attackers» | форма: actual, positive
+E006: «threat actors» — targets → «digital assets» | форма: actual, positive
+E007: «threat actors» — exploits → «vulnerabilities in AI development platforms» | форма: actual, positive
+E008: «artificial intelligence» — enables → «credential-theft» | форма: actual, positive
+E009: «CrowdStrike» — reports on → «cyber intrusions» | форма: actual, positive
+E010: «attackers» — uses → «escalate privileges» | форма: possible, positive
+E011: «attackers» — uses → «reconnaissance» | форма: actual, positive
+E012: «organisations» — uses → «constant monitoring» | форма: recommended, positive
+E013: «AI-enabled adversaries» — uses → «artificial intelligence» | форма: actual, positive
+E014: «attackers» — uses → «malware» | форма: actual, positive
+E015: «attackers» — uses → «trusted systems» | форма: actual, positive
+E016: «CrowdStrike» — reports on → «AI-enabled adversaries» | форма: actual, positive
+E017: «CrowdStrike» — reports on → «fastest incident recorded» | форма: actual, positive
+E018: «threat actors» — targets → «credentials» | форма: actual, positive
+E019: «attackers» — uses → «cloud platforms» | форма: actual, positive
+E020: «attackers» — uses → «cloud platforms» | форма: actual, negative
+E021: «attackers» — uses → «compromised identities» | форма: actual, positive
+E022: «organisations» — uses → «automated detection systems» | форма: recommended, positive
+E023: «attackers» — uses → «phishing» | форма: actual, positive
+E024: «attackers» — develops → «malicious scripts» | форма: actual, positive
+E025: «artificial intelligence» — enables → «reconnaissance» | форма: actual, positive
+E026: «attackers» — uses → «escalate privileges» | форма: actual, positive
+E027: «threat actors» — uses → «persistence» | форма: actual, positive
+E028: «threat actors» — targets → «AI systems» | форма: actual, positive
+E029: «attackers» — uses → «credential-theft» | форма: actual, positive
+E030: «attackers» — uses → «artificial intelligence» | форма: actual, positive
+E031: «businesses» — uses → «artificial intelligence» | форма: actual, positive
+E032: «attackers» — uses → «moving laterally» | форма: actual, positive
+E033: «threat actors» — uses → «artificial intelligence» | форма: actual, positive
+E034: «threat actors» — uses → «artificial intelligence» | форма: possible, positive
+E035: «attackers» — uses → «SaaS solutions» | форма: actual, positive
+E036: «threat actors» — uses → «injecting malicious prompts» | форма: actual, positive
+E037: «CrowdStrike» — reports on → «financially motivated cybercriminals» | форма: actual, positive
+E038: «threat actors» — targets → «generative AI tools» | форма: actual, positive
+E039: «vulnerabilities in AI development platforms» — enables → «persistence» | форма: actual, positive
+E040: «attackers» — uses → «ransomware» | форма: possible, positive
+E041: «artificial intelligence» — enables → «phishing» | форма: actual, positive
+E042: «threat actors» — targets → «generative AI tools» | форма: actual, negative
+E043: «CrowdStrike» — warns about → «cyber intrusions» | форма: actual, positive
+E044: «attackers» — uses → «legitimate services» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

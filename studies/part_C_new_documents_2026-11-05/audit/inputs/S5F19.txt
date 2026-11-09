@@ -1,0 +1,102 @@
+AUDIT_FILE: S5F19
+TARGET_DOC_ID: D0411
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0411
+PUBLICATION_DATE: 2026-03-17
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6322829
+TITLE_SHA256: 41a1f6cc248db590c187d9984b22532e068ec57ef6d7b9d6924c5c4826cdb692
+BEGIN_DOCUMENT
+[D0411:P0001] sha256:41a1f6cc248db590c187d9984b22532e068ec57ef6d7b9d6924c5c4826cdb692
+[D0411:P0002] sha256:768ddfd7cf28950a80e6db7cef88cffbce2881798d4415a6cd0c13c9b4051fdf
+[D0411:P0003] sha256:683daac0c971fd90b3b1148ffdb379279668aa340071f945b33f16c3005159f6
+[D0411:P0004] sha256:3a1ec7a7b64018d4d48587e5164d19dd59719a3d907f0f71dce498a87e031904
+[D0411:P0005] sha256:4f3f956e4d8077e2bf73744e0e377aa0ea544d4ad2097fd76fffe7f6adde04ac
+[D0411:P0006] sha256:359d76a57c5570e2e5ffd66b2610c11af532fb462b630b0ef2d95286c06e615c
+[D0411:P0007] sha256:919d3a787050bcb6882910782d99d9c6e69cc7acb2b804168c95a0e786a3af42
+[D0411:P0008] sha256:ad5e865aa9373447ad5d9aa9254a166a506c1424c28803a13e90d74b860378b1
+[D0411:P0009] sha256:9a4f5b2e5b98cfe1ce217361c2fa469926b3352c7984fc1ce399722e5466a68f
+[D0411:P0010] sha256:2c651e12f33cb8acff7632ee3808b33ff74fd73d8842be4da7594a3352f5ed9b
+[D0411:P0011] sha256:d3c89355f9fb2dfc8dbe7d19f593dbb7a0f4638a4a770e70a0c430c92f38f391
+[D0411:P0012] sha256:7082a8f3a3a591fe9f6222eed57bceaea15f41036cfb47ebd8edf16bab4b0900
+[D0411:P0013] sha256:195a880801a5eefca7e0b83d4afd1761036dbe7813426f406dd3a1fd0fb35c34
+[D0411:P0014] sha256:b833f637681fc3c2847a55eaba6dcaa10a44896acdec26980d7de4fab8e1d237
+[D0411:P0015] sha256:6b0fb5ebd0b592a9cc267891da65d0b74d67153cb02e82aa22bfc51e65b7f6b3
+[D0411:P0016] sha256:2b309a0c964d9d01c89bff8475b806cd29546b350d4cae299c5a2446e7ab74a9
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (23)
+E001: «Virtual IT Group» — located in → «Australia» | форма: actual, positive
+E002: «midmarket businesses» — uses → «VPNs» | форма: actual, positive
+E003: «Jeremy Nees» — member of → «Virtual IT Group» | форма: actual, positive
+E004: «small and medium-sized organisations» — located in → «ANZ» | форма: actual, positive
+E005: «Virtual IT Group» — provides → «Zero Trust Detection & Response» | форма: actual, positive
+E006: «Maurice McCarthy» — leads → «Virtual IT Group» | форма: actual, negative
+E007: «Maurice McCarthy» — leads → «Virtual IT Group» | форма: actual, positive
+E008: «Virtual IT Group» — uses → «Zero Trust» | форма: actual, positive
+E009: «Zero Trust Detection & Response» — provides → «The Instillery» | форма: actual, positive
+E010: «The Instillery» — located in → «New Zealand» | форма: actual, positive
+E011: «The Instillery» — uses → «Zero Trust» | форма: actual, positive
+E012: «Masaki Takeda» — member of → «Virtual IT Group» | форма: actual, positive
+E013: «Zero Trust Detection & Response» — uses → «deep packet inspection» | форма: actual, positive
+E014: «Ronnie Meekers» — member of → «Virtual IT Group» | форма: actual, positive
+E015: «Zero Trust Detection & Response» — uses → «Zero Trust» | форма: actual, positive
+E016: «midmarket businesses» — uses → «firewalls» | форма: actual, positive
+E017: «Jeremy Nees» — leads → «Zero Trust practice» | форма: actual, positive
+E018: «Zero Trust practice» — part of → «Virtual IT Group» | форма: actual, positive
+E019: «The Instillery» — provides → «Zero Trust Detection & Response» | форма: actual, positive
+E020: «The Instillery» — part of → «Virtual IT Group» | форма: actual, positive
+E021: «Virtual IT Group» — located in → «New Zealand» | форма: actual, positive
+E022: «Zero Trust Detection & Response» — uses → «threat intelligence» | форма: actual, positive
+E023: «Zero Trust Detection & Response» — protects → «small and medium-sized organisations» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

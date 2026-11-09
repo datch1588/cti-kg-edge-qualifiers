@@ -1,0 +1,32 @@
+{
+ "audit_file": "S5F35",
+ "target_doc_id": "D0226",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "P0011 перелічує data poisoning серед ризиків для агентних систем, тобто подає це як ризик (possible), а не як здійснений вплив."},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: за P0010 загрози націлені на енергетичну й комунікаційну інфраструктуру, а не навпаки."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: академія розташована в Анкарі, подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "P0015 описує функцію збалансованої архітектури («one that protects critical infrastructure»), а порада впровадити засіб не робить рекомендацією твердження про захист — має бути actual."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "I", "reason": "P0011 називає prompt injection ризиком для великих мовних моделей, тобто possible, а не actual."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "I", "reason": "Data poisoning у P0011 подано як ризик для LLM (possible), а не як здійснений вплив."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Талга Козе — керівник Національної академії розвідки."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: цілі цих загроз охоплюють окремих користувачів; подано як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: серед цілей названо оборонні ланцюги постачання; подано як факт."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "Model inference attacks у P0011 подано як ризик для агентних систем (possible), а не actual."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "Розкриття чутливої інформації в P0011 — ризик (possible), а не здійснений вплив на агентні системи."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "I", "reason": "P0010 стверджує, що загрози націлені на фінансові системи, тож полярність negative хибна."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0015 описує архітектуру кібербезпеки як таку, що захищає критичну інфраструктуру; це функція засобу (actual)."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "Захист даних громадян у P0015 — функція архітектури, тому має бути actual, а не recommended."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "I", "reason": "Prompt injection у P0011 подано як ризик для агентних систем (possible), а не actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: серед цілей названо державні установи; подано як факт."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: серед цілей названо енергетичну й комунікаційну інфраструктуру; подано як факт."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "Розкриття чутливої інформації в P0011 — ризик для LLM (possible), а не actual."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "I", "reason": "Надмірну довіру до результатів моделей у P0011 подано як ризик (possible), а не як здійснений вплив."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "I", "reason": "Надмірні дозволи в P0011 перелічено як ризик для агентних систем (possible), а не actual."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "I", "reason": "Model inference attacks у P0011 — ризик для LLM (possible), а не actual."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0010: серед цілей загроз названо фінансові системи; подано як факт."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "P0015: архітектура кібербезпеки захищає дані громадян; це функція засобу (actual)."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "I", "reason": "Надмірні дозволи в P0011 подано як ризик для LLM (possible), а не actual."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "I", "reason": "Надмірну довіру до результатів моделей у P0011 подано як ризик для LLM (possible), а не actual."},
+  {"item_id": "E026", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Анкара — турецька столиця, тобто розташована в Туреччині."}
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "audit_file": "S5F01",
+ "target_doc_id": "D0671",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття описує призначення центру (крок до обміну розвідданими для протидії кіберзагрозам) як чинну функцію, а не майбутню дію, тому planned хибне, має бути actual."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття згадує нововідкритий Multi-Agency Centre у Нью-Делі як факт."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Система e-Zero FIR, за текстом, дає змогу швидше реєструвати FIR, це властивість засобу."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Зв'язок розташування центру в Нью-Делі подано ствердно, а запис має negative."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Центр описано як такий, що слугує інтегрованому обміну розвідданими для протидії кіберзагрозам, це подано як чинну функцію."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "I4C запустив e-Zero FIR у пілотному режимі в Делі, тобто надає цю ініціативу, подано як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Запис «New Delhi [India]» у датовому рядку показує, що Нью-Делі розташований в Індії."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Міністерство «під проводом» Амітa Шаха, який є міністром внутрішніх справ, тобто він очолює МВС, подано як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "Текст прямо каже, що система забезпечує швидшу реєстрацію FIR у справах про кіберфінансове шахрайство."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "e-Zero FIR запроваджено в пілотному режимі в Делі, тобто діє там як чинний стан."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "Запуск порталу BHARATPOL здійснив CBI, подано як факт."},
+  {"item_id": "E012", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернений: I4C запускає e-Zero FIR, а не навпаки."}
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "run_id": "Z097",
+ "target_doc_id": "D0215",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Austria", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0023", "start": 0, "end": 78, "sha256": "9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f"}}
+  ]},
+  {"id": "n002", "label": "Eurovision Song Contest", "entity_type": "event", "aliases": ["Eurovision"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0004", "start": 52, "end": 156, "sha256": "3968e4d1fe7b4b8b782d41d44e61382bea86aac3e660c42ae0a01a1636c2508d"}},
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0021", "start": 0, "end": 96, "sha256": "f8f03d9d0cafab57068000e8a4ca28530b41a3a8f1119461e1503f58814532a9"}}
+  ]},
+  {"id": "n003", "label": "Stadthalle", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0026", "start": 99, "end": 180, "sha256": "5dcce7441541d65530cda464012af8b26ae8fc623fd81b1860409f5cc981a5a3"}}
+  ]},
+  {"id": "n004", "label": "Vienna", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0004", "start": 52, "end": 156, "sha256": "3968e4d1fe7b4b8b782d41d44e61382bea86aac3e660c42ae0a01a1636c2508d"}}
+  ]},
+  {"id": "n005", "label": "FBI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0023", "start": 0, "end": 78, "sha256": "9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f"}}
+  ]},
+  {"id": "n006", "label": "Vienna police", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0024", "start": 0, "end": 95, "sha256": "60232eb7d2eb82a5c0f74bd098395af0dbe28ff49421dab6b85bfce968c797fb"}}
+  ]},
+  {"id": "n007", "label": "Dieter Csefan", "entity_type": "person", "aliases": ["Csefan"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0021", "start": 0, "end": 96, "sha256": "f8f03d9d0cafab57068000e8a4ca28530b41a3a8f1119461e1503f58814532a9"}}
+  ]},
+  {"id": "n008", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0023", "start": 0, "end": 78, "sha256": "9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f"}}
+  ]},
+  {"id": "n009", "label": "cyberattacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0022", "start": 102, "end": 206, "sha256": "7f053e7f834130ad4d8f1ab5659f750c41579eea781cd7871c0e12eb0470a1a9"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n008", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "Dieter Csefan", "event_time": "", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0023", "start": 0, "end": 78, "sha256": "9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n003", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0026", "start": 0, "end": 181, "sha256": "66d9185fc453523776ce4330546b73a6fac51f2823c1a8bfc81ebf44138b8c8d"}}
+  ]},
+  {"id": "e003", "source": "n002", "target": "n004", "relation_type": "LOCATED_IN", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "next week", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0004", "start": 52, "end": 156, "sha256": "3968e4d1fe7b4b8b782d41d44e61382bea86aac3e660c42ae0a01a1636c2508d"}}
+  ]},
+  {"id": "e004", "source": "n004", "target": "n001", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0024", "start": 0, "end": 167, "sha256": "0daefb428d3e56dc447e04bc577b666d246082ec9a7d0da62eee29987c50559d"}}
+  ]},
+  {"id": "e005", "source": "n005", "target": "n008", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "Dieter Csefan", "event_time": "", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0023", "start": 0, "end": 78, "sha256": "9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f"}}
+  ]},
+  {"id": "e006", "source": "n006", "target": "n002", "relation_type": "PROTECTS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0021", "start": 0, "end": 186, "sha256": "ecb6fc1730c1d7968ccecb00f72e3f74738b65a43f309d3d86a340dd32eed13e"}}
+  ]},
+  {"id": "e007", "source": "n007", "target": "n006", "relation_type": "MEMBER_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0021", "start": 45, "end": 96, "sha256": "fb72f2e5ecd8bf96deef6826a86c4310b040ed9c78f1d4fd9be09665c5c19d99"}}
+  ]},
+  {"id": "e008", "source": "n007", "target": "n009", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "Dieter Csefan", "event_time": "", "event_scope": "70th Eurovision Song Contest in Vienna", "evidence": [
+   {"role": "TARGET", "doc_id": "D0215", "paragraph_id": "D0215:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0215:P0022", "start": 102, "end": 206, "sha256": "7f053e7f834130ad4d8f1ab5659f750c41579eea781cd7871c0e12eb0470a1a9"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

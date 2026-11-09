@@ -1,0 +1,70 @@
+AUDIT_FILE: R1_T31
+TARGET_DOC_ID: D0268
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0268
+PUBLICATION_DATE: 2026-04-21
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6345059
+TITLE_SHA256: c62f6bc8bdba8beb731d687cefdb2d32b02226fb9917d3c949d4689986e7d026
+BEGIN_DOCUMENT
+[D0268:P0001] sha256:c62f6bc8bdba8beb731d687cefdb2d32b02226fb9917d3c949d4689986e7d026
+[D0268:P0002] sha256:42db5b0786e8de20bfe1c1a091492694a6afa966a062d7f39e5f42d951b60c52
+[D0268:P0003] sha256:cc03a804e96b0e6f4802cf9bf54aa1a4718a03af3ee3b736ed0d6c8452aa5c70
+[D0268:P0004] sha256:dd5ce2a52a51c26fb5060c0137469245dd8abb16483df667fbcacc704707ac80
+[D0268:P0005] sha256:81ab014a9cd28156efd582aad1b13bbf8ba38277f16b88b497e53440b9cfafc4
+[D0268:P0006] sha256:e0d2bef77d32f1a3e272b314e941b94a93225d7852ecf526c3d923df94ef1108
+[D0268:P0007] sha256:4a1fbfb5a379f31463d5074083ae3aada87b952438573dc1d56609906432af28
+[D0268:P0008] sha256:6abd5e7f6858054c9b8c78ed486536c70ef04ecc36e5504e5d60120a18cb14eb
+[D0268:P0009] sha256:eb1e30d1ab6e690c29396554152b9d232a812151049592ee4d151da1d4b789f8
+[D0268:P0010] sha256:7051f5723a26cc6207bd89470be9c0315275ec2a812fae8a1c2abe0958859a37
+[D0268:P0011] sha256:e3030686735fb60ecfbd9485dd211a26c723a3ff6ada692cf8be6129e0d58ba9
+[D0268:P0012] sha256:018e3608a745fe15fcce3f42b3bd5be276734bd17c858836ce68b4aab6e69940
+[D0268:P0013] sha256:d2d566d9494221c2a1b531fc8f1f384b61154a526a7429f051fdc4eefe603055
+[D0268:P0014] sha256:701c8a4131a9a1e09bebb25cf0f4047b8609cf313843a6f16d1a4901be0d6b7d
+[D0268:P0015] sha256:18507b0a1bf667eabdd2c6e2aa25ca956b88bf26acdd9a720021330b4cf45e82
+[D0268:P0016] sha256:2d6aa5198aa3b81af9d83532b0608f0529538419cef133c80104d4f8fcae6c6d
+[D0268:P0017] sha256:b833f637681fc3c2847a55eaba6dcaa10a44896acdec26980d7de4fab8e1d237
+[D0268:P0018] sha256:90e639cf25845cbba67faa3e94953098cfe77bf6e1b4555caf4911754a5e0040
+[D0268:P0019] sha256:2ee3d7c02dcb2d7a579874cccc495b859169767fa0f0085f23ca063d1710419a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (7)
+W001: «AI agents» — continuously probe and exploit → «software defenses»
+W002: «hardware-enforced cryptographic protections» — never resistant to → «iterative attack strategies»
+W003: «Post-Quantum Cryptography (PQC)» — to be embedded into → «semiconductor infrastructure»
+W004: «Project Glasswing» — aims to secure → «critical software»
+W005: «Post-Quantum Cryptography (PQC)» — embedded into → «semiconductor components»
+W006: «immutable root of trust» — cannot be altered, bypassed, or extracted by → «AI-driven attacks»
+W007: «AI agents» — would be unable to perform → «privilege escalation»
+КІНЕЦЬ ЗАПИСІВ

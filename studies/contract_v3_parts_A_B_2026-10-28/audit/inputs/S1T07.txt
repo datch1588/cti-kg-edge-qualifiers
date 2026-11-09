@@ -1,0 +1,127 @@
+AUDIT_FILE: S1T07
+TARGET_DOC_ID: D0633
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0633
+PUBLICATION_DATE: 2026-01-13
+SOURCE_URL: https://arxiv.org/abs/2601.06466
+TITLE_SHA256: d8ed3bed8cf9846be231d57fe5966d7d26b1754b95f94110a16ea00e712c9e8e
+BEGIN_DOCUMENT
+[D0633:P0001] sha256:d8ed3bed8cf9846be231d57fe5966d7d26b1754b95f94110a16ea00e712c9e8e
+[D0633:P0002] sha256:3968173147036ed6a8fa677a1eaaf19808cf5f3cf84623afbabc898662a965ce
+[D0633:P0003] sha256:e00efec4d3ae0dd9dc2168455ec023ea8fabcb5ea10d2290d4e23e5c2d01f094
+[D0633:P0004] sha256:d218ba402c412f8d5b2c31dc6e5207401e2b99ee5ca67537b321adaa1f997fab
+[D0633:P0005] sha256:6717e307137c69b9dab6e8595794b60821bad5f71f7aad5498f12029e68bede0
+[D0633:P0006] sha256:d9d7c1db13d0008a5f6554baa84c054c1771fae91f6dda131380cac280e1bc90
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (58)
+E001: «SecureDyn-FL» — protects against → «eavesdropping attacks» | форма: actual, positive
+E002: «IoT devices» — are deployed in → «industrial control systems» | форма: actual, positive
+E003: «malware injection» — targets → «Internet of Things» | форма: possible, positive
+E004: «secure aggregation» — mitigates → «inference attacks» | форма: actual, positive
+E005: «arXiv:2601.06466» — proposes → «SecureDyn-FL» | форма: actual, positive
+E006: «SecureDyn-FL» — detects → «poisoning attacks» | форма: actual, positive
+E007: «arXiv:2601.06466» — was submitted on → «10 Jan 2026» | форма: actual, positive
+E008: «SecureDyn-FL» — was evaluated on → «N-BaIoT dataset» | форма: actual, positive
+E009: «arXiv:2601.06466» — was listed on → «2026.01.13» | форма: actual, positive
+E010: «SecureDyn-FL» — protects → «Internet of Things» | форма: actual, positive
+E011: «arXiv:2601.06466» — was accepted for → «IEEE TNSM» | форма: actual, positive
+E012: «privacy-preserving aggregation scheme» — uses → «adaptive pruning» | форма: actual, positive
+E013: «privacy-preserving aggregation scheme» — uses → «adaptive pruning and quantization» | форма: actual, positive
+E014: «SecureDyn-FL» — outperforms → «state-of-the-art FL-based IDS defenses» | форма: actual, positive
+E015: «dynamic temporal gradient auditing» — uses → «Mahalanobis distance» | форма: actual, positive
+E016: «secure aggregation» — mitigates → «eavesdropping attacks» | форма: actual, positive
+E017: «dynamic temporal gradient auditing» — leverages → «Mahalanobis distance (MD)» | форма: actual, positive
+E018: «distributed denial-of-service» — uses → «botnet» | форма: actual, positive
+E019: «SecureDyn-FL» — uses → «dynamic temporal gradient auditing» | форма: possible, positive
+E020: «IoT devices» — expanded attack surface for → «data exfiltration» | форма: actual, positive
+E021: «distributed denial-of-service» — targets → «Internet of Things» | форма: possible, negative
+E022: «IoT devices» — are deployed in → «healthcare networks» | форма: actual, positive
+E023: «arXiv:2601.06466» — was published on → «ArXiv» | форма: actual, positive
+E024: «personalized learning» — uses → «logit-adjusted loss» | форма: actual, positive
+E025: «IoT devices» — expanded attack surface for → «botnet-driven distributed denial-of-service (DDoS)» | форма: actual, positive
+E026: «dynamic temporal gradient auditing» — detects → «poisoning attacks» | форма: actual, positive
+E027: «SecureDyn-FL» — adapts to non-IID data via → «personalized learning» | форма: actual, positive
+E028: «SecureDyn-FL» — introduces → «dual-objective personalized learning strategy» | форма: actual, positive
+E029: «SecureDyn-FL» — uses → «transformed additive ElGamal encryption» | форма: actual, positive
+E030: «SecureDyn-FL» — mitigates → «inference attacks» | форма: actual, positive
+E031: «dynamic temporal gradient auditing» — uses → «Gaussian mixture models» | форма: actual, positive
+E032: «SecureDyn-FL» — protects against → «inference attacks» | форма: actual, positive
+E033: «privacy-preserving aggregation scheme» — is based on → «transformed additive ElGamal encryption» | форма: actual, positive
+E034: «privacy-preserving aggregation scheme» — uses → «transformed additive ElGamal encryption» | форма: actual, positive
+E035: «privacy-preserving aggregation scheme» — uses → «quantization» | форма: actual, positive
+E036: «data exfiltration» — targets → «Internet of Things» | форма: possible, positive
+E037: «SecureDyn-FL» — is tailored for → «intrusion detection in IoT networks» | форма: actual, positive
+E038: «dynamic temporal gradient auditing» — leverages → «Gaussian mixture models (GMMs)» | форма: actual, positive
+E039: «SecureDyn-FL» — introduces → «privacy-preserving aggregation scheme» | форма: actual, positive
+E040: «SecureDyn-FL» — mitigates → «eavesdropping attacks» | форма: actual, positive
+E041: «SecureDyn-FL» — uses → «privacy-preserving aggregation scheme» | форма: actual, positive
+E042: «SecureDyn-FL» — protects → «IoT networks» | форма: actual, positive
+E043: «SecureDyn-FL» — uses → «federated learning» | форма: actual, negative
+E044: «IoT devices» — are deployed in → «smart homes» | форма: actual, positive
+E045: «dual-objective personalized learning strategy» — uses → «logit-adjusted loss» | форма: actual, positive
+E046: «SecureDyn-FL» — uses → «dynamic temporal gradient auditing» | форма: actual, positive
+E047: «SecureDyn-FL» — uses → «secure aggregation» | форма: actual, positive
+E048: «SecureDyn-FL» — uses → «federated learning» | форма: actual, positive
+E049: «SecureDyn-FL» — uses → «dual-objective personalized learning strategy» | форма: actual, positive
+E050: «SecureDyn-FL» — performs → «poisoning detection» | форма: actual, positive
+E051: «distributed denial-of-service» — targets → «Internet of Things» | форма: possible, positive
+E052: «SecureDyn-FL» — protects against → «eavesdropping attacks» | форма: possible, positive
+E053: «dynamic temporal gradient auditing» — detects → «stealthy and adaptive poisoning attacks» | форма: actual, positive
+E054: «Internet of Things» — targets → «data exfiltration» | форма: possible, positive
+E055: «poisoning detection» — is achieved through → «dynamic temporal gradient auditing» | форма: actual, positive
+E056: «conventional intrusion detection systems» — face challenges in → «heterogeneous IoT environments» | форма: actual, positive
+E057: «IoT devices» — expanded attack surface for → «malware injection» | форма: actual, positive
+E058: «SecureDyn-FL» — uses → «personalized learning» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

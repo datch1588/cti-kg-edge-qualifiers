@@ -1,0 +1,140 @@
+AUDIT_FILE: T16
+TARGET_DOC_ID: D0474
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0474
+PUBLICATION_DATE: 2026-03-04
+SOURCE_URL: https://www.yahoo.com/news/articles/ai-enhanced-ddos-hire-operations-173247560.html
+TITLE_SHA256: 7b66af3dd428ad5dfedee283e00655ce22ccd69596b0979755dc1ce56febba2e
+BEGIN_DOCUMENT
+[D0474:P0001] sha256:7b66af3dd428ad5dfedee283e00655ce22ccd69596b0979755dc1ce56febba2e
+[D0474:P0002] sha256:1243ac11b317ac207ca3f9d0204ac7f76511ecde4a745d13faba6bcfdac12b7c
+[D0474:P0003] sha256:736ac8b58210157af7cb8fd3148c13ff490dd760d8a75a05be6cdd313194b0d2
+[D0474:P0004] sha256:a4e698b44b24cecb73dd24b7350c2a5ca7b4d4dd005ad267f31314ef8d4e491f
+[D0474:P0005] sha256:ec75517e5fc9cf4eb0ec80733c63b255bbb554a92338151a97afed260a2f69e0
+[D0474:P0006] sha256:ef8c716799c7530cd62ef346998bd52db6b62390280090c8b45c776a66576610
+[D0474:P0007] sha256:3f163fd027ef2624f2226d804cdb8cc1b6c17a0827763144eebeacff6f63df42
+[D0474:P0008] sha256:14f1c8b6f289b4cdfc59f31fffd79e508149ac0ee38463a66a5d2303183cf14a
+[D0474:P0009] sha256:94afdf410ae03c1a69554a506e7ec3c21ce1a0998f996e33fa6ea85f59eb9778
+[D0474:P0010] sha256:ae35650ccc7c5488816a06ed16c457d766cecfe5e7c62dccbbbf71315f8ce797
+[D0474:P0011] sha256:2b09af2f3588e95be0e94e830bdb86e1c6ed37118e6ead114ea6f738575b9d04
+[D0474:P0012] sha256:be28cc54eaaaa256d3022f8480a2cde6ae8a0f053e13b4c359b9d3628749ceb5
+[D0474:P0013] sha256:c86516701978bc72984d0487abf621df604224c497ffcf1324f4e9e94573e63c
+[D0474:P0014] sha256:4bb8e75762971583c957509d40589155e24e1c44ba1302c08538cb3a3b06f28e
+[D0474:P0015] sha256:ddb12909189fbda4bbae0921fd7f54ad8d6376fa7d00ecf9497b60bc9524e699
+[D0474:P0016] sha256:2926bdce2d1a1da26775ac8b4352aa48b0fd0b7fae7d90e4c3def0f0ed4ad9b9
+[D0474:P0017] sha256:b3eae3a31d8d7b0c4fb91f43ebde5069e31247d7ded2ffaa3d41c5dbabc4ae6c
+[D0474:P0018] sha256:66e59dce12d06e83f2119620301ff1e7e16f81e60dae3bd3d34e449fef1d465b
+[D0474:P0019] sha256:4fb55677683ff20e62b2d99f285726f4cf864cbb204029a275bb44fe856584d5
+[D0474:P0020] sha256:ee74c73c795c9c81f34e4ac57684e5aab5932e7082c61d1c03186aae4bfc5039
+[D0474:P0021] sha256:d0522fb3aa4f13d0edbe7b52e2d59fa19e54e517c780efc3cb9d051f71335567
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (64)
+E001: «DDoS Threat Intelligence report» — reported → «sophisticated threat-actor campaigns» | форма: actual, positive
+E002: «hacktivists» — include → «pro-Russian hacktivists» | форма: actual, positive
+E003: «AI chat bot front ends» — perform → «reconnaissance» | форма: actual, positive
+E004: «booter services» — lowered technical barriers for → «DDoS attacks» | форма: actual, positive
+E005: «voice-cloning tools» — allow → «social engineering» | форма: possible, positive
+E006: «malicious LLMs» — lowered technical barriers for → «DDoS attacks» | форма: actual, positive
+E007: «AI chat bot front ends» — remove complexity of → «DDoS attacks» | форма: actual, positive
+E008: «AI chat bot front ends» — launch → «DDoS attacks» | форма: actual, positive
+E009: «DDoS» — targets → «hospitality» | форма: actual, positive
+E010: «WormGPT» — generates → «malware» | форма: actual, positive
+E011: «hacktivists» — include → «pro-Palestine hacktivists» | форма: actual, positive
+E012: «Verdict» — has sister publication → «Tech Monitor» | форма: actual, positive
+E013: «DDoS attacks» — targeted → «government agencies» | форма: actual, positive
+E014: «DDoS attacks» — numbered 1.9 million in → «APAC» | форма: actual, positive
+E015: «voice-cloning tools» — allow → «social engineering» | форма: actual, positive
+E016: «NETSCOUT» — reports on → «DDoS» | форма: actual, positive
+E017: «AI-enhanced DDoS-for-hire operations» — increased rapidly in → «2025» | форма: actual, positive
+E018: «DDoS» — targets → «telecommunications» | форма: actual, positive
+E019: «GlobalData» — published → «Strategic Intelligence Cybersecurity 2025 report» | форма: actual, positive
+E020: «DDoS» — targets → «transportation» | форма: possible, positive
+E021: «FraudGPT» — generates → «malware» | форма: actual, positive
+E022: «NETSCOUT» — reports on → «AI-enhanced DDoS-for-hire operations» | форма: actual, positive
+E023: «WormGPT» — enables → «phishing» | форма: actual, positive
+E024: «Yahoo News» — republished → «AI-enhanced DDoS-for-hire operations increased rapidly in 2025-report» | форма: actual, positive
+E025: «WormGPT» — is a → «dark-web models» | форма: actual, positive
+E026: «DDoS attacks» — targeted → «hospitality sector» | форма: actual, positive
+E027: «DDoS Threat Intelligence report» — identified rise in activity of → «hacktivists» | форма: actual, positive
+E028: «WormGPT» — generates → «phishing content» | форма: actual, positive
+E029: «AI chat bot front ends» — enables → «DDoS» | форма: actual, positive
+E030: «DDoS attacks» — targeted → «financial services sector» | форма: actual, positive
+E031: «hacktivists» — target → «digital supply chains» | форма: actual, positive
+E032: «Darren Anstee» — warns about → «hacktivist activity» | форма: actual, positive
+E033: «DDoS attacks» — numbered 3.3 million in → «EMEA» | форма: actual, positive
+E034: «AI-enhanced DDoS-for-hire operations increased rapidly in 2025-report» — was published on → «March 4, 2026» | форма: actual, positive
+E035: «voice-cloning tools» — enables → «social engineering» | форма: actual, positive
+E036: «Verdict» — part of → «GlobalData» | форма: actual, positive
+E037: «NETSCOUT» — published → «DDoS Threat Intelligence report» | форма: actual, positive
+E038: «DDoS» — targets → «EMEA» | форма: actual, positive
+E039: «DDoS attacks» — targeted → «transportation sector» | форма: actual, positive
+E040: «DDoS Threat Intelligence report» — found shift towards → «AI-enhanced DDoS-for-hire operations» | форма: actual, positive
+E041: «hacktivist activity» — targets → «digital supply chains» | форма: actual, positive
+E042: «DDoS attacks» — targeted → «telecommunications sector» | форма: actual, positive
+E043: «DDoS» — targets → «financial services» | форма: actual, negative
+E044: «DDoS attacks» — numbered 1.27 million in → «North America» | форма: actual, positive
+E045: «GlobalData» — reports on → «DDoS» | форма: actual, positive
+E046: «DDoS» — targets → «financial services» | форма: actual, positive
+E047: «FraudGPT» — is a → «dark-web models» | форма: actual, positive
+E048: «Darren Anstee» — member of → «NETSCOUT» | форма: actual, positive
+E049: «DDoS» — targets → «Latin America» | форма: actual, positive
+E050: «DDoS Threat Intelligence report» — covers → «latter half of 2025» | форма: actual, positive
+E051: «FraudGPT» — enables → «phishing» | форма: actual, positive
+E052: «DDoS» — targets → «transportation» | форма: actual, positive
+E053: «GlobalData» — owns → «Verdict» | форма: actual, positive
+E054: «NETSCOUT» — reports on → «IoT botnets» | форма: actual, positive
+E055: «DDoS» — targets → «North America» | форма: actual, positive
+E056: «DDoS» — targets → «APAC» | форма: actual, positive
+E057: «AI-enhanced DDoS-for-hire operations» — found shift towards → «DDoS Threat Intelligence report» | форма: actual, positive
+E058: «Verdict» — published → «AI-enhanced DDoS-for-hire operations increased rapidly in 2025-report» | форма: actual, positive
+E059: «DDoS Threat Intelligence report» — reported increasingly capable → «IoT botnets» | форма: actual, positive
+E060: «social engineering» — enables → «voice-cloning tools» | форма: actual, positive
+E061: «DDoS attacks» — numbered 1.01 million in → «Latin America» | форма: actual, positive
+E062: «FraudGPT» — generates → «phishing content» | форма: actual, positive
+E063: «DDoS» — targets → «Government agencies» | форма: actual, positive
+E064: «FraudGPT» — generates → «phishing content» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,983 @@
+{
+ "rule": [
+  "Правило:",
+  "1. Корпус і умови придатності — як у CTI_RAG_CONTROLLED_V2 (prepare_v2.py): повний текст <= 30000 знаків,",
+  "   очищений текст >= 800 знаків.",
+  "2. Спільні сутності беруться лише для відбору з графа claude_llm.gexf (CTI_250_V1, sha256 нижче): вузли типів",
+  "   threat_actor, malware, vulnerability, campaign, incident, tool, product, organization, person, evidence яких"
+ ],
+ "seed": "CTI_CROSSDOC_2026-11-04",
+ "corpus_sha256": "c75f91835ed2f192398287d707795867184a4042c96b483b69c1e070c032b2c7",
+ "gexf": "repozytorii_dani_v0.3_2026-10-29/cti-kg-edge-qualifiers/graphs/claude_llm.gexf",
+ "gexf_sha256": "8ee595b7a3307e00b3c8fce9f09035577496c69608381205aebfd7d2f4f9c49b",
+ "eligible": 242,
+ "entities": [
+  {
+   "node": "n000109",
+   "label": "Operation Roaring Lion",
+   "entity_type": "campaign",
+   "docs": [
+    "D0012",
+    "D0468"
+   ]
+  },
+  {
+   "node": "n000257",
+   "label": "Pro-Russian cyberattack on a Swedish thermal power plant",
+   "entity_type": "incident",
+   "docs": [
+    "D0262",
+    "D0290"
+   ]
+  },
+  {
+   "node": "n000330",
+   "label": "WannaCry",
+   "entity_type": "malware",
+   "docs": [
+    "D0107",
+    "D0598"
+   ]
+  },
+  {
+   "node": "n000366",
+   "label": "Anthropic",
+   "entity_type": "organization",
+   "docs": [
+    "D0018",
+    "D0045",
+    "D0457"
+   ]
+  },
+  {
+   "node": "n000397",
+   "label": "Bank of England",
+   "entity_type": "organization",
+   "docs": [
+    "D0250",
+    "D0575"
+   ]
+  },
+  {
+   "node": "n000410",
+   "label": "Canadian Centre for Cyber Security",
+   "entity_type": "organization",
+   "docs": [
+    "D0043",
+    "D0550"
+   ]
+  },
+  {
+   "node": "n000416",
+   "label": "Center for Strategic and International Studies",
+   "entity_type": "organization",
+   "docs": [
+    "D0228",
+    "D0478"
+   ]
+  },
+  {
+   "node": "n000420",
+   "label": "CERT-EU",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0541"
+   ]
+  },
+  {
+   "node": "n000432",
+   "label": "Cisco",
+   "entity_type": "organization",
+   "docs": [
+    "D0124",
+    "D0457"
+   ]
+  },
+  {
+   "node": "n000440",
+   "label": "Cloudflare",
+   "entity_type": "organization",
+   "docs": [
+    "D0195",
+    "D0457"
+   ]
+  },
+  {
+   "node": "n000458",
+   "label": "Critical Infrastructure Security and Resilience (CISA)",
+   "entity_type": "organization",
+   "docs": [
+    "D0018",
+    "D0043"
+   ]
+  },
+  {
+   "node": "n000459",
+   "label": "CrowdStrike",
+   "entity_type": "organization",
+   "docs": [
+    "D0074",
+    "D0424"
+   ]
+  },
+  {
+   "node": "n000475",
+   "label": "Department for Science, Innovation and Technology",
+   "entity_type": "organization",
+   "docs": [
+    "D0165",
+    "D0539"
+   ]
+  },
+  {
+   "node": "n000506",
+   "label": "Europol",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0457"
+   ]
+  },
+  {
+   "node": "n000525",
+   "label": "Five Eyes",
+   "entity_type": "organization",
+   "docs": [
+    "D0018",
+    "D0036"
+   ]
+  },
+  {
+   "node": "n000526",
+   "label": "Flare",
+   "entity_type": "organization",
+   "docs": [
+    "D0014",
+    "D0648"
+   ]
+  },
+  {
+   "node": "n000557",
+   "label": "Group-IB",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0505"
+   ]
+  },
+  {
+   "node": "n000575",
+   "label": "IBM",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0480"
+   ]
+  },
+  {
+   "node": "n000579",
+   "label": "IDF",
+   "entity_type": "organization",
+   "docs": [
+    "D0012",
+    "D0391"
+   ]
+  },
+  {
+   "node": "n000612",
+   "label": "ISACA",
+   "entity_type": "organization",
+   "docs": [
+    "D0057",
+    "D0504"
+   ]
+  },
+  {
+   "node": "n000613",
+   "label": "Islamic Revolutionary Guards Corps",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0418"
+   ]
+  },
+  {
+   "node": "n000627",
+   "label": "Kaspersky",
+   "entity_type": "organization",
+   "docs": [
+    "D0252",
+    "D0477"
+   ]
+  },
+  {
+   "node": "n000669",
+   "label": "National Crime Agency",
+   "entity_type": "organization",
+   "docs": [
+    "D0006",
+    "D0593"
+   ]
+  },
+  {
+   "node": "n000674",
+   "label": "National Security Agency",
+   "entity_type": "organization",
+   "docs": [
+    "D0018",
+    "D0043"
+   ]
+  },
+  {
+   "node": "n000698",
+   "label": "NVIDIA",
+   "entity_type": "organization",
+   "docs": [
+    "D0194",
+    "D0532"
+   ]
+  },
+  {
+   "node": "n000711",
+   "label": "Palo Alto Networks",
+   "entity_type": "organization",
+   "docs": [
+    "D0074",
+    "D0493"
+   ]
+  },
+  {
+   "node": "n000746",
+   "label": "RUSI",
+   "entity_type": "organization",
+   "docs": [
+    "D0154",
+    "D0418"
+   ]
+  },
+  {
+   "node": "n000762",
+   "label": "SentinelOne",
+   "entity_type": "organization",
+   "docs": [
+    "D0344",
+    "D0424"
+   ]
+  },
+  {
+   "node": "n000764",
+   "label": "Shadowserver Foundation",
+   "entity_type": "organization",
+   "docs": [
+    "D0113",
+    "D0457"
+   ]
+  },
+  {
+   "node": "n000826",
+   "label": "U.S. Department of Homeland Security",
+   "entity_type": "organization",
+   "docs": [
+    "D0077",
+    "D0424"
+   ]
+  },
+  {
+   "node": "n000828",
+   "label": "U.S. government",
+   "entity_type": "organization",
+   "docs": [
+    "D0018",
+    "D0046"
+   ]
+  },
+  {
+   "node": "n001066",
+   "label": "Baroness Lloyd",
+   "entity_type": "person",
+   "docs": [
+    "D0197",
+    "D0539"
+   ]
+  },
+  {
+   "node": "n001112",
+   "label": "Dmitri Alperovitch",
+   "entity_type": "person",
+   "docs": [
+    "D0343",
+    "D0514"
+   ]
+  },
+  {
+   "node": "n001142",
+   "label": "George Kurtz",
+   "entity_type": "person",
+   "docs": [
+    "D0343",
+    "D0514"
+   ]
+  },
+  {
+   "node": "n001181",
+   "label": "John Healey",
+   "entity_type": "person",
+   "docs": [
+    "D0154",
+    "D0418"
+   ]
+  },
+  {
+   "node": "n001193",
+   "label": "Kash Patel",
+   "entity_type": "person",
+   "docs": [
+    "D0137",
+    "D0391"
+   ]
+  },
+  {
+   "node": "n001214",
+   "label": "Mark Hughes",
+   "entity_type": "person",
+   "docs": [
+    "D0277",
+    "D0480"
+   ]
+  },
+  {
+   "node": "n001240",
+   "label": "Nick Andersen",
+   "entity_type": "person",
+   "docs": [
+    "D0043",
+    "D0550"
+   ]
+  },
+  {
+   "node": "n001252",
+   "label": "Ollie Whitehouse",
+   "entity_type": "person",
+   "docs": [
+    "D0165",
+    "D0550"
+   ]
+  },
+  {
+   "node": "n001273",
+   "label": "Richard Horne",
+   "entity_type": "person",
+   "docs": [
+    "D0043",
+    "D0539"
+   ]
+  },
+  {
+   "node": "n001382",
+   "label": "ChatGPT",
+   "entity_type": "product",
+   "docs": [
+    "D0245",
+    "D0480"
+   ]
+  },
+  {
+   "node": "n001389",
+   "label": "Claude Code",
+   "entity_type": "product",
+   "docs": [
+    "D0113",
+    "D0382"
+   ]
+  },
+  {
+   "node": "n001399",
+   "label": "CrowdStrike Falcon platform",
+   "entity_type": "product",
+   "docs": [
+    "D0343",
+    "D0514"
+   ]
+  },
+  {
+   "node": "n001421",
+   "label": "Fable 5",
+   "entity_type": "product",
+   "docs": [
+    "D0018",
+    "D0046"
+   ]
+  },
+  {
+   "node": "n001477",
+   "label": "Mythos 5",
+   "entity_type": "product",
+   "docs": [
+    "D0018",
+    "D0045",
+    "D0046"
+   ]
+  },
+  {
+   "node": "n001520",
+   "label": "Telegram",
+   "entity_type": "product",
+   "docs": [
+    "D0338",
+    "D0418"
+   ]
+  },
+  {
+   "node": "n001718",
+   "label": "Handala Hack",
+   "entity_type": "threat_actor",
+   "docs": [
+    "D0391",
+    "D0427"
+   ]
+  },
+  {
+   "node": "n001720",
+   "label": "Hezbollah",
+   "entity_type": "threat_actor",
+   "docs": [
+    "D0137",
+    "D0418"
+   ]
+  },
+  {
+   "node": "n001737",
+   "label": "Salt Typhoon",
+   "entity_type": "threat_actor",
+   "docs": [
+    "D0166",
+    "D0587"
+   ]
+  },
+  {
+   "node": "n001750",
+   "label": "UNC3886",
+   "entity_type": "threat_actor",
+   "docs": [
+    "D0505",
+    "D0663"
+   ]
+  },
+  {
+   "node": "n001752",
+   "label": "Volt Typhoon",
+   "entity_type": "threat_actor",
+   "docs": [
+    "D0018",
+    "D0608"
+   ]
+  }
+ ],
+ "targets": [
+  {
+   "dir": "X01_D0006",
+   "doc_id": "D0006",
+   "date": "2026-06-30",
+   "title_sha256": "b1363dc62885d0c4757b389344186b4e6ffde03dfd75e4955ab7e06017c137b7",
+   "chars": 6094,
+   "target_sha256": "059462c29e90b2b2b648fae7c36b0a90efd6812df60b81dd24c9ced5a80dba6a",
+   "also_in": ""
+  },
+  {
+   "dir": "X02_D0012",
+   "doc_id": "D0012",
+   "date": "2026-06-26",
+   "title_sha256": "61bb940a509bbd19bbbda39931ef9703acdbfcfae34d93984273c95c56fe88cd",
+   "chars": 13353,
+   "target_sha256": "65a86bc9bfa9e957f5a138d28c0e3a5bb648ee8ab9ba4bb2fcfee5fa65cb3e42",
+   "also_in": ""
+  },
+  {
+   "dir": "X03_D0014",
+   "doc_id": "D0014",
+   "date": "2026-06-26",
+   "title_sha256": "94a5dc8e82b8141e2859c8c91ed0e70983640f856139a104caf43993577d33fa",
+   "chars": 9032,
+   "target_sha256": "5462858ae962ed1e3e9aeb45f2e78b4abc579009ed506ae78de4eae29838d45d",
+   "also_in": ""
+  },
+  {
+   "dir": "X04_D0018",
+   "doc_id": "D0018",
+   "date": "2026-06-25",
+   "title_sha256": "0feaaeac4ddc38a66683cd94ac96a9bb128faafa896fe973a66e66dd6f440493",
+   "chars": 12292,
+   "target_sha256": "690d64aa52140e85e1205632c8562df4fd89570736edfc378312d6306dc56561",
+   "also_in": ""
+  },
+  {
+   "dir": "X05_D0036",
+   "doc_id": "D0036",
+   "date": "2026-06-24",
+   "title_sha256": "74af28d360506bb6ca8378f7204441ae326d77d4c0641db15b71f68d12729df9",
+   "chars": 3876,
+   "target_sha256": "1f529da72d57973f110b95dc5f30443fc2842947aa8dccf9e510eba052556b8c",
+   "also_in": ""
+  },
+  {
+   "dir": "X06_D0043",
+   "doc_id": "D0043",
+   "date": "2026-06-23",
+   "title_sha256": "10f94d1a1ebe7c3b183693333592b09bd0c26fe8ec16aa9b8998c1ff310690ff",
+   "chars": 5526,
+   "target_sha256": "76fbe592ce88d1f9bf12656f5d6839a8a770015b6c58c600e3810b16b87303a0",
+   "also_in": ""
+  },
+  {
+   "dir": "X07_D0045",
+   "doc_id": "D0045",
+   "date": "2026-06-23",
+   "title_sha256": "ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a",
+   "chars": 4761,
+   "target_sha256": "4f53912b34fc0c7a35a98366499091b6cc2957bd0e40070ce62f4522c0deb2ea",
+   "also_in": "N25_D0045"
+  },
+  {
+   "dir": "X08_D0046",
+   "doc_id": "D0046",
+   "date": "2026-06-23",
+   "title_sha256": "4b230dbae6bfec601b1081c0262a26e7bd90d55ff5dfb3d2ee1be78ecc367afe",
+   "chars": 4170,
+   "target_sha256": "636c90b76dd198a9cc8666650a2b19dcbc891bf4b7ca5fe7544bbec58e728797",
+   "also_in": ""
+  },
+  {
+   "dir": "X09_D0057",
+   "doc_id": "D0057",
+   "date": "2026-06-17",
+   "title_sha256": "d18bd49eb357144c0b7e69d303e1014b28bc3eb5d5141aba2a67ebb369165a1d",
+   "chars": 14656,
+   "target_sha256": "ce43483d51d8ee79ac85ccc9e5e2106d3d377f3ef8b901b68dfdfd725888ef92",
+   "also_in": ""
+  },
+  {
+   "dir": "X10_D0074",
+   "doc_id": "D0074",
+   "date": "2026-06-10",
+   "title_sha256": "c08c961b023c489ad93b2c572529cf7f59c65dd31cad8ca3ee60909997a12466",
+   "chars": 10037,
+   "target_sha256": "68844922ad421a6d723d1905e99e1aa7c07eaa85b6a08c8b127203cbecdfa90f",
+   "also_in": ""
+  },
+  {
+   "dir": "X11_D0077",
+   "doc_id": "D0077",
+   "date": "2026-06-09",
+   "title_sha256": "d1e9b87f10b767e0527bd90a21521fe4886334fbe98feb2369fc0af92cd307b2",
+   "chars": 5337,
+   "target_sha256": "2c18dcf400e29eaafcf4f4804d74abca836841d90239ae3a65d7107deebc0e39",
+   "also_in": ""
+  },
+  {
+   "dir": "X12_D0107",
+   "doc_id": "D0107",
+   "date": "2026-06-03",
+   "title_sha256": "351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741",
+   "chars": 1986,
+   "target_sha256": "c397dcab9d0f3cef47f7bc33448c0d196efeaa2200b3d5359acf5f31a78baf32",
+   "also_in": "T47_D0107"
+  },
+  {
+   "dir": "X13_D0113",
+   "doc_id": "D0113",
+   "date": "2026-06-02",
+   "title_sha256": "0498bfc6337c3be63f3717cb7f7db00da9a4f0aa55062f69c7c9e43265086f87",
+   "chars": 18792,
+   "target_sha256": "da823d27ca10b4635735add5274b3fba4c0332d4986fab1d87931da564028d23",
+   "also_in": ""
+  },
+  {
+   "dir": "X14_D0124",
+   "doc_id": "D0124",
+   "date": "2026-05-31",
+   "title_sha256": "3afef36abd0ab8dbd1eede837120db7ce179711483ffc57cd681f7a0273bd3d1",
+   "chars": 19768,
+   "target_sha256": "42dfa908631f201a597a224dff0a23aa8dc336728f23b1f7aa79e324bb0e6080",
+   "also_in": ""
+  },
+  {
+   "dir": "X15_D0137",
+   "doc_id": "D0137",
+   "date": "2026-05-29",
+   "title_sha256": "9bb4bf4b11c2a0820e80998adb86027010166bf680466b8d3bbd5acca8838402",
+   "chars": 5147,
+   "target_sha256": "5b59a6c56309b9e14804c4efc227714599e898d5111e55bb490b0e7a0d990bc8",
+   "also_in": ""
+  },
+  {
+   "dir": "X16_D0154",
+   "doc_id": "D0154",
+   "date": "2026-05-23",
+   "title_sha256": "54253b13e7b5617e2f9e661bee0f03d4bd9cd74987299288d8ddb456a480f35f",
+   "chars": 9251,
+   "target_sha256": "3e32c7969793376d5a4288b9cde75e361d27ccbd27c4e6ef1ece53119ec287f9",
+   "also_in": "T35_D0154"
+  },
+  {
+   "dir": "X17_D0165",
+   "doc_id": "D0165",
+   "date": "2026-05-20",
+   "title_sha256": "da90aa6503839a4e892143ce34fbe640282bfb701c2085d84b94da02cf823559",
+   "chars": 4415,
+   "target_sha256": "822c0e69c75275d664c98e4d135a157012563b42d38021446c437c80174ae39c",
+   "also_in": ""
+  },
+  {
+   "dir": "X18_D0166",
+   "doc_id": "D0166",
+   "date": "2026-05-20",
+   "title_sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2",
+   "chars": 4174,
+   "target_sha256": "58449eea95b596497ace1656ccbb6ad4e861b09368cb3901516df299296bce6d",
+   "also_in": "T36_D0166"
+  },
+  {
+   "dir": "X19_D0194",
+   "doc_id": "D0194",
+   "date": "2026-05-12",
+   "title_sha256": "ee72a924a22825d1ddb92752b8b622c27257357603000474a762e08acf1f1394",
+   "chars": 10800,
+   "target_sha256": "89702b5af8048d40af67af747c75fd2dbd6506b15c7fc4c0be0123fc8f451f13",
+   "also_in": ""
+  },
+  {
+   "dir": "X20_D0195",
+   "doc_id": "D0195",
+   "date": "2026-05-12",
+   "title_sha256": "7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e",
+   "chars": 6753,
+   "target_sha256": "ac36c0d4a8fd5eeaa025d81c4b690f4c06ced3d265866fb5b6729cad80500694",
+   "also_in": "N20_D0195"
+  },
+  {
+   "dir": "X21_D0197",
+   "doc_id": "D0197",
+   "date": "2026-05-12",
+   "title_sha256": "d8b189f81befeabec2749ed5e353843d0f4cf42c29e49f7854d7c3bf4eccb051",
+   "chars": 5696,
+   "target_sha256": "23ad2099f3e451ed7ca2b7667db513d87f3a050465c1df5d9b7650701472cc74",
+   "also_in": ""
+  },
+  {
+   "dir": "X22_D0228",
+   "doc_id": "D0228",
+   "date": "2026-05-01",
+   "title_sha256": "837dfed95e7919b80d8c1c370ae34496dd763fb986aca7faee4892dbb3810dd5",
+   "chars": 4844,
+   "target_sha256": "ea0e3f79e992a1ecb8e8c271e761c86aa761d9ee912e6f754c02e327d4e378db",
+   "also_in": ""
+  },
+  {
+   "dir": "X23_D0245",
+   "doc_id": "D0245",
+   "date": "2026-04-28",
+   "title_sha256": "bb45b8fbec2562f2f47b940e166d846abb1e67fb2ef648ca21258c4185618108",
+   "chars": 15912,
+   "target_sha256": "7046835e36732d842ac60ba0c65db7419cf06b14494572c95429de6ef96c71bb",
+   "also_in": ""
+  },
+  {
+   "dir": "X24_D0250",
+   "doc_id": "D0250",
+   "date": "2026-04-25",
+   "title_sha256": "bc230993dd6cdbcf9e6d38ec3dca53adf7382f23cdd40d988ec515476b99397f",
+   "chars": 8026,
+   "target_sha256": "c723b5a0182c8bf31374c4af87c2e7d8fe7c0d1f6bec9af3ca1d924c79530beb",
+   "also_in": ""
+  },
+  {
+   "dir": "X25_D0252",
+   "doc_id": "D0252",
+   "date": "2026-04-24",
+   "title_sha256": "5639e3dd302497ed41d3f8f2581c8076c1d499cedb3c8004a2d8087332254fec",
+   "chars": 7244,
+   "target_sha256": "e402dd099cac3bc6b4f85ac59856b897ae0e07e87119d839eafcd07483f2ed1c",
+   "also_in": ""
+  },
+  {
+   "dir": "X26_D0262",
+   "doc_id": "D0262",
+   "date": "2026-04-23",
+   "title_sha256": "e98d3a5629940bda6d690f5c83c416bde46d241ffa4394b95b1c8b34711c46e5",
+   "chars": 4508,
+   "target_sha256": "a8e831c2aefa8aec472c5486cc115a74c0c4c57ff3543f556310b5587fcc8d3c",
+   "also_in": ""
+  },
+  {
+   "dir": "X27_D0277",
+   "doc_id": "D0277",
+   "date": "2026-04-17",
+   "title_sha256": "c84fff10811b10cc6e9ae228cb677db3287afb9226db648abc3b8a6e1ae1a6ad",
+   "chars": 5506,
+   "target_sha256": "852d14c39e434d9855f943b4595acbf3ac4666c8c29575dbaf2f93054eb31798",
+   "also_in": ""
+  },
+  {
+   "dir": "X28_D0290",
+   "doc_id": "D0290",
+   "date": "2026-04-15",
+   "title_sha256": "4d6e86dff35ebc9c6d7edeaa668d2f0b07d8b0199ef08836e130f7ba8d5aa338",
+   "chars": 4037,
+   "target_sha256": "dd3556dcbb1ea18a29b3015b865d8690caef9559b990a25d06d3fa36e698c594",
+   "also_in": ""
+  },
+  {
+   "dir": "X29_D0338",
+   "doc_id": "D0338",
+   "date": "2026-04-02",
+   "title_sha256": "bee8a358ab8304d2679c8dcb828e8215d8aaeac53a1877d6415b8f7030778296",
+   "chars": 3244,
+   "target_sha256": "a29d72a7c0404ddf61888b2bb1db95f49582c87fbe55c011e703e7c74f38aa29",
+   "also_in": ""
+  },
+  {
+   "dir": "X30_D0343",
+   "doc_id": "D0343",
+   "date": "2026-04-01",
+   "title_sha256": "8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5",
+   "chars": 8595,
+   "target_sha256": "2eef59b889d5a94c34d9e8a92d326c20973c32b5d86816ff08f891fb4b7d57a8",
+   "also_in": "N14_D0343"
+  },
+  {
+   "dir": "X31_D0344",
+   "doc_id": "D0344",
+   "date": "2026-03-31",
+   "title_sha256": "0d33994e787f4c558a1e399d91b832bde01ae939a4f1a4c5ce4768ffd16b6969",
+   "chars": 5759,
+   "target_sha256": "abdbc94b7b668f29f33b7e2e7c6799f93bf55fa7ecba007980d22408e59299d9",
+   "also_in": ""
+  },
+  {
+   "dir": "X32_D0382",
+   "doc_id": "D0382",
+   "date": "2026-03-23",
+   "title_sha256": "2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d",
+   "chars": 7545,
+   "target_sha256": "b106d5b3d80605b587afc0364519c90773dee5ff8d6dfe0dd52c767ba74ba212",
+   "also_in": "N09_D0382"
+  },
+  {
+   "dir": "X33_D0391",
+   "doc_id": "D0391",
+   "date": "2026-03-20",
+   "title_sha256": "ab4572f2b3015192ae0ea5a1364982c82cb9544362c4a18e01a45d3809087d5e",
+   "chars": 9398,
+   "target_sha256": "2bfb11cbe9d4fad20ad9075c306eb479d47888558fbe3c53440636df9ba00b67",
+   "also_in": ""
+  },
+  {
+   "dir": "X34_D0418",
+   "doc_id": "D0418",
+   "date": "2026-03-14",
+   "title_sha256": "abb52fa567c42c89517abd1ad6cf28e5cc18da3fe74c5d3afd7bf71cff4491f3",
+   "chars": 11760,
+   "target_sha256": "bfc111916aeda24bfe7ff183420302fb09a62b7cad774d9b1e213591378dffaa",
+   "also_in": ""
+  },
+  {
+   "dir": "X35_D0424",
+   "doc_id": "D0424",
+   "date": "2026-03-13",
+   "title_sha256": "771328c1e8201ad9ee2f0269c5fb5bfe1c31b2002db4377cb6f1a2654790f634",
+   "chars": 7177,
+   "target_sha256": "d0e463ddece0df5b0c68a5ea3b0737c3a97ae7fa20ad02f9c8e69a869ae080fc",
+   "also_in": ""
+  },
+  {
+   "dir": "X36_D0427",
+   "doc_id": "D0427",
+   "date": "2026-03-12",
+   "title_sha256": "f54ba4a490e20b71458a5c20192f3c25fb1d6de8b4ad1f0421936dbc42e399ef",
+   "chars": 5836,
+   "target_sha256": "c16790279dc2ed55a4770636d0686bdc4174a9fabd05fa3034f9a5715925ec4d",
+   "also_in": ""
+  },
+  {
+   "dir": "X37_D0457",
+   "doc_id": "D0457",
+   "date": "2026-03-08",
+   "title_sha256": "7074317e6008b8247d667f70b078c3ca1ec227a4535ba38b1ceb8b009d3d3a08",
+   "chars": 20027,
+   "target_sha256": "2634d3bf27c27054a5a2b266a34bd6a5103cd2d4c2c4c633f1ed542aae6a92ba",
+   "also_in": ""
+  },
+  {
+   "dir": "X38_D0468",
+   "doc_id": "D0468",
+   "date": "2026-03-05",
+   "title_sha256": "6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988",
+   "chars": 13421,
+   "target_sha256": "a0c99e39b49e1da6a16448251727d1922a1dd880a42f8f99fc1e89b47ee382e4",
+   "also_in": "T19_D0468"
+  },
+  {
+   "dir": "X39_D0477",
+   "doc_id": "D0477",
+   "date": "2026-03-04",
+   "title_sha256": "6eb2a27f9f44cb227a751a4b2f88db7cfe28aba9fb16ad9464da3a5ea72cbe35",
+   "chars": 6198,
+   "target_sha256": "5a59c64b740dd23867787954cc476f760c86f3a5006d01e5551df3cbabeb39f0",
+   "also_in": ""
+  },
+  {
+   "dir": "X40_D0478",
+   "doc_id": "D0478",
+   "date": "2026-03-04",
+   "title_sha256": "5e9ef62867d6b50e8fa4a80415a690726e7cbc18ea72a0c18d1ce8115b012456",
+   "chars": 5888,
+   "target_sha256": "69f89fdcd7bd9ba7ecf35502e85d6020a2d774e4dd6c8e605aeaa3a15ce7b6f3",
+   "also_in": ""
+  },
+  {
+   "dir": "X41_D0480",
+   "doc_id": "D0480",
+   "date": "2026-03-04",
+   "title_sha256": "d5aa6a333bc6b43f0b7259b9c3dd88a261401d12844f4d56a669c99ee72f24b8",
+   "chars": 6214,
+   "target_sha256": "bbffab454dce2648513884e5e3812c126f26fc171b29e4074c6df2c055c99c4b",
+   "also_in": ""
+  },
+  {
+   "dir": "X42_D0493",
+   "doc_id": "D0493",
+   "date": "2026-03-03",
+   "title_sha256": "8be2f752bd8784d9f882c873b0e4695d86ef3625348bd3853744cc04fe20588c",
+   "chars": 4011,
+   "target_sha256": "9350f6d4d06f80745b70052cf1bec195c7dc1bc13e4e136ea8b13925111a7fb6",
+   "also_in": ""
+  },
+  {
+   "dir": "X43_D0504",
+   "doc_id": "D0504",
+   "date": "2026-02-27",
+   "title_sha256": "4bb791acd08b0ead7b803add9b78868de98419e1a4be3ef4614a663c31c4fde1",
+   "chars": 8442,
+   "target_sha256": "b30c8a449cf8142086a26101f304a05d24f0d01f5daadeb1537242b279a82722",
+   "also_in": "T11_D0504"
+  },
+  {
+   "dir": "X44_D0505",
+   "doc_id": "D0505",
+   "date": "2026-02-27",
+   "title_sha256": "b86c757b5f76f0e3c28b8d91e018ff47df99869f6a75a405e0e23e9548219b2e",
+   "chars": 11671,
+   "target_sha256": "e6e70528cec7e5a2ed2abf219ad27ebb6fbceaaed759ae39e486d7d423c24114",
+   "also_in": ""
+  },
+  {
+   "dir": "X45_D0514",
+   "doc_id": "D0514",
+   "date": "2026-02-25",
+   "title_sha256": "823646f6908b658cdd70534b3db26f552d739691ebfe1856fa67881783031c10",
+   "chars": 8330,
+   "target_sha256": "d7a2587431acab60edf9cf60831e07d869601a43034277ac3648cf5640116660",
+   "also_in": ""
+  },
+  {
+   "dir": "X46_D0532",
+   "doc_id": "D0532",
+   "date": "2026-02-18",
+   "title_sha256": "813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b",
+   "chars": 8328,
+   "target_sha256": "078c2f96f0ddfc9ea04e9f9ad0c472ac6570c7f3ee6cdb5e1eca50ae24b22f76",
+   "also_in": "N06_D0532"
+  },
+  {
+   "dir": "X47_D0539",
+   "doc_id": "D0539",
+   "date": "2026-02-17",
+   "title_sha256": "7c35f5331e32397f8f290a685f528a485b65ca4b11b5d4b3afb94932a65d3d5b",
+   "chars": 6278,
+   "target_sha256": "09d6440ff530f34e9bf6e162e090bc816e5755e518c15b84e28c603f976e536f",
+   "also_in": ""
+  },
+  {
+   "dir": "X48_D0541",
+   "doc_id": "D0541",
+   "date": "2026-02-13",
+   "title_sha256": "4730371ee511f5719f0d6eb81f5e10e8802d6523f010cf035fa459d75e9a2d95",
+   "chars": 21632,
+   "target_sha256": "0809e0cd01176aceb511a85dd6983471bc05fedbc6006486899ef14af3819743",
+   "also_in": ""
+  },
+  {
+   "dir": "X49_D0550",
+   "doc_id": "D0550",
+   "date": "2026-02-11",
+   "title_sha256": "981e11896819ab55d48c8d473b5e36a82a1de04fb31d364679a765de188095b8",
+   "chars": 4471,
+   "target_sha256": "6936737778f3a414313bc06ad3e0db2dfcae53b8c6a73912a3181817072aa35d",
+   "also_in": ""
+  },
+  {
+   "dir": "X50_D0575",
+   "doc_id": "D0575",
+   "date": "2026-02-03",
+   "title_sha256": "8e41e09fe1d47ae3a57c0eb30f49f582dff335dfdc6b8b10c4ecacb9ad4bc2d8",
+   "chars": 4804,
+   "target_sha256": "775b53306fb3e705d6469927a75d7c7972f71ef65271a767ce10bbd59eb42de8",
+   "also_in": ""
+  },
+  {
+   "dir": "X51_D0587",
+   "doc_id": "D0587",
+   "date": "2026-01-29",
+   "title_sha256": "37da6548d15a8acd086a0d7cb360af7207c3a9e85ce16fa3c0935a9ef5aac58b",
+   "chars": 6376,
+   "target_sha256": "a10702fc4aa3755bcd4f2aa7fca74e5aeb5fe00ca6027758b9a3036ff9480d66",
+   "also_in": ""
+  },
+  {
+   "dir": "X52_D0593",
+   "doc_id": "D0593",
+   "date": "2026-01-25",
+   "title_sha256": "3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca",
+   "chars": 15494,
+   "target_sha256": "a4d6bde85ee1b9a3748775e6d398d7d0fe05a6cf619e0daf00fa462d33c5734b",
+   "also_in": "N04_D0593"
+  },
+  {
+   "dir": "X53_D0598",
+   "doc_id": "D0598",
+   "date": "2026-01-23",
+   "title_sha256": "98549261656f295456f35e9d9705ad49de976d0054b082eefdcf04c7bdb090ab",
+   "chars": 2191,
+   "target_sha256": "0934586d846260ccc0bfee00cf00a6d50171f67e77adc1b7585cc065d49d4fb7",
+   "also_in": "T06_D0598"
+  },
+  {
+   "dir": "X54_D0608",
+   "doc_id": "D0608",
+   "date": "2026-01-21",
+   "title_sha256": "ff0bd0c74631dd061b8f51b770957ee70b71fb9d35bcc861517e0a42dfad3712",
+   "chars": 12592,
+   "target_sha256": "f04b3281cf829983ed72a91492887fc37cffbd0909ed7327af4295e9d61fd757",
+   "also_in": ""
+  },
+  {
+   "dir": "X55_D0648",
+   "doc_id": "D0648",
+   "date": "2026-01-07",
+   "title_sha256": "b6854a17d72fab9ebd51fe4b730b70a665115cc781017fb45bda693958558750",
+   "chars": 10033,
+   "target_sha256": "4fb83a984fb8876b4766b92e440abeba86bfad43d27b0b5ff47a78a7c3ac2cdd",
+   "also_in": "T05_D0648"
+  },
+  {
+   "dir": "X56_D0663",
+   "doc_id": "D0663",
+   "date": "2026-01-04",
+   "title_sha256": "55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84",
+   "chars": 6670,
+   "target_sha256": "52850f877bb6a3c52bb1e7a712de4b06ced1f2b6552e9dcd7149f982a11cc79d",
+   "also_in": "N02_D0663"
+  }
+ ]
+}

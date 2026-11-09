@@ -1,0 +1,66 @@
+{
+ "run_id": "X035",
+ "target_doc_id": "D0198",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "harvesting now and decrypting later", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 44, "end": 179, "sha256": "18b2034aae60407f7267fcae3661207e9cd8984c827ed003c420596e5293d7d4"}}
+  ]},
+  {"id": "n002", "label": "Australia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n003", "label": "Australian Signals Directorate", "entity_type": "organization", "aliases": ["ASD"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 320, "end": 461, "sha256": "7e887b5ebbfdd7663d414972d94121902d92434cba83f4796aa0375b4f805e56"}}
+  ]},
+  {"id": "n004", "label": "Defence", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 156, "end": 262, "sha256": "0d254b81c9cbd957a63ca5527e8d51cfeb74e65e650e0c2e3156a47001da15bc"}}
+  ]},
+  {"id": "n005", "label": "Integrated Investment Program", "entity_type": "other", "aliases": ["IIP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n006", "label": "National Defence Strategy", "entity_type": "other", "aliases": ["NDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0003", "start": 0, "end": 155, "sha256": "8f5b36ebb91486789773c803ce878e58c5735468c1205cbfe4a83acefe3194e7"}}
+  ]},
+  {"id": "n007", "label": "offensive cyber capabilities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0013", "start": 343, "end": 512, "sha256": "c36d299aae541af7d9c0fea0b04e9d3dc58fb56e6c9598362871ed8d3f7bb44e"}}
+  ]},
+  {"id": "n008", "label": "Redspice", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0006", "start": 299, "end": 390, "sha256": "cd96408c0dba3c26a8b15219d70700f74ecf6a1cdfc8cc1f0aca4ca397364c9a"}}
+  ]},
+  {"id": "n009", "label": "advanced encryption", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 215, "sha256": "1bc49d877b04e9720ca7256b6f1f1028c74f384ebc5930a5f6918778e7491747"}}
+  ]},
+  {"id": "n010", "label": "artificial intelligence", "entity_type": "technology", "aliases": ["AI"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0004", "start": 0, "end": 184, "sha256": "3c6b57149a705d0a5ce5ea2c9142ee9c4555d69a8cf85965a41101907070783e"}}
+  ]},
+  {"id": "n011", "label": "quantum-resistant cryptography", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0011", "start": 180, "end": 304, "sha256": "6e5db37dc81e41df98d23fee100b3a781e3fa28e572dc0c95308188fcaa3fe88"}}
+  ]},
+  {"id": "n012", "label": "zero-trust architecture", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 215, "sha256": "1bc49d877b04e9720ca7256b6f1f1028c74f384ebc5930a5f6918778e7491747"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n008", "target": "n010", "relation_type": "USES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 78, "end": 264, "sha256": "7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15"}}
+   ]},
+  {"id": "e002", "source": "n009", "target": "n004", "relation_type": "PROTECTS",
+   "attribution": "Integrated Investment Program (IIP)", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+   ]},
+  {"id": "e003", "source": "n010", "target": "n007", "relation_type": "ENABLES",
+   "attribution": "", "event_time": "2026", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0008", "start": 78, "end": 264, "sha256": "7506c27fd17b963811f57f08bd2841194f2463db72c7a932681ba690a338ef15"}}
+   ]},
+  {"id": "e004", "source": "n012", "target": "n004", "relation_type": "PROTECTS",
+   "attribution": "Integrated Investment Program (IIP)", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0198", "paragraph_id": "D0198:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0198:P0007", "start": 44, "end": 267, "sha256": "5ffa16d9d32537237affe7ad09fae21e748f67c06029ce341bac324231a99d89"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

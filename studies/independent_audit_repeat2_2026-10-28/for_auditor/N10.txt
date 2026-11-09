@@ -1,0 +1,249 @@
+AUDIT_BATCH: N10
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N10-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N10-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N10-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 5 (TARGET_DOC_ID: D0530) ===
+DOC_ID: D0530
+PUBLICATION_DATE: 2026-02-19
+SOURCE_URL: https://arxiv.org/abs/2602.16098
+TITLE_SHA256: bd830f5955ab804d0ecedb3e7f265c2bd14be484e3bbaf91d2d9e89341024ac6
+BEGIN_DOCUMENT
+[D0530:P0001] sha256:bd830f5955ab804d0ecedb3e7f265c2bd14be484e3bbaf91d2d9e89341024ac6
+[D0530:P0002] sha256:3a628c67fecf55fba7c975519ed73fe8778824aef8bef4546e4baaea279b5211
+[D0530:P0003] sha256:6fdae692ca7db76e713c8aeaa0ebc82136871cd296732ff33a3165d2e8ea6d54
+[D0530:P0004] sha256:5462c57683732a1c66937354939cc5a008a1e48a2190b94526b99b8bb957dc75
+[D0530:P0005] sha256:ec38a27aa65cb9b3eee463ac6c03d286f1b91920d34660a24e370882f9d8fab5
+[D0530:P0006] sha256:58006b81888f275a92f924227697897eb5d7d9299ca0a7d55b6a59301802c3b3
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (3)
+N10-E001: «Zone-Adaptive Intrusion Detection» — protects → «Internet of Battlefield Things» | форма: actual, positive
+N10-E002: «autoencoder-based reconstruction signal» — uses → «Zone-Adaptive Intrusion Detection» | форма: actual, positive
+N10-E003: «Zone-Adaptive Intrusion Detection (ZAID)» — designed for → «Internet of Battlefield Things (IoBT)» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 5 (TARGET_DOC_ID: D0198) ===
+DOC_ID: D0198
+PUBLICATION_DATE: 2026-05-11
+SOURCE_URL: https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/
+TITLE_SHA256: 0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+BEGIN_DOCUMENT
+[D0198:P0001] sha256:0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+[D0198:P0002] sha256:2e8115ded6d3fe87b8865c341db0a97a4457f45d09ef91ab159ad80361eeb267
+[D0198:P0003] sha256:6562eb4289bc9d809ebf70bd729ece6bfc4499db889399d0cb9a6b644f8e4a8d
+[D0198:P0004] sha256:276d47b532a777d1f4630865a7a20b1d801278b1b86809765fca789f4ba3811e
+[D0198:P0005] sha256:ae5618fe17e75052335a087a53825be52111494bd2ecb5f47deef188a4b2ef23
+[D0198:P0006] sha256:e8d41303beca519afcd2a40457340ec1ddc1ba8631127e4dd9d26eb69a325d2d
+[D0198:P0007] sha256:b781074844edff36d4c1e37e8fc00727dbc30bdf57581aed556476e35d998b27
+[D0198:P0008] sha256:7b44918a0724d02fa19089c9af7679a60db9ea7dc448d1a2afbcdc14e77cdec5
+[D0198:P0009] sha256:ef63072e5a12794545fa2b5ee40d74a2fa126ee6a313797e5f4f347ea0a6504d
+[D0198:P0010] sha256:ec945c4dc77a11d85627264415207f0be3ea815164d18cd2f1657633f0cf4687
+[D0198:P0011] sha256:e4a6d4d1aa3319da70da4be1638874e7028e5fa5dad92a68766f351416a80252
+[D0198:P0012] sha256:d25b40103ff389b99011800d0582e6df83adfaeef2757cedc038cd4b0130bc36
+[D0198:P0013] sha256:45bbdb6be62138accd2d184f9975ccbb8d42bf3aba6fdd9ac544e0ec6788e93b
+[D0198:P0014] sha256:d95082a2ee57f3e40e3050662a346e26a872fd4d0baf57d293ac5a883f0f4ff5
+[D0198:P0015] sha256:47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442
+[D0198:P0016] sha256:8703d8054f7581deb089dd7c43ffab6ac3f96f00fb65328faff85ebb7bbae551
+[D0198:P0017] sha256:1cf5d06433a6f71099b22bbb0ed527f99ba22595e2ca956891a4b4451cb6c26a
+[D0198:P0018] sha256:b8aada94edac40931e664cb48cf267fb926770267a5612e468f5204a85629a61
+[D0198:P0019] sha256:4de763f1a2e40709584e760a21cc40246f129143ab4086e4ade82115eee60a11
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (9)
+N10-E004: «NDS 2026 - More resourcing for a complex cyber threat environment» — published at → «https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/» | форма: possible, positive
+N10-E005: «critical infrastructure operators» — show uneven progress in → «post-quantum transition» | форма: actual, positive
+N10-E006: «Defence-adjacent entities» — show uneven progress in → «post-quantum transition» | форма: actual, positive
+N10-E007: «perimeter-based models» — are increasingly inadequate against → «adversaries capable of automating the discovery of vulnerabilities» | форма: actual, positive
+N10-E008: «zero-trust architecture» — protects → «Defence's networks» | форма: planned, positive
+N10-E009: «advanced encryption» — protects → «Defence» | форма: actual, positive
+N10-E010: «Redspice» — is → «Australia's signals intelligence and cyber uplift program» | форма: actual, positive
+N10-E011: «Redspice» — funds → «offensive and intelligence-led cyber capabilities» | форма: actual, positive
+N10-E012: «zero-trust architecture» — protects → «Defence» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 5 (TARGET_DOC_ID: D0584) ===
+DOC_ID: D0584
+PUBLICATION_DATE: 2026-01-30
+SOURCE_URL: https://www.baltictimes.com/cyber_threats_from_hostile_countries_remained_elevated_last_year__but_the_intensity_of_activities_varied_-_sab/
+TITLE_SHA256: 081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+BEGIN_DOCUMENT
+[D0584:P0001] sha256:081414c7f1e15aef6a627b0f75279e5de7f7dad9e8ce4df6b03972c1a3e23c96
+[D0584:P0002] sha256:2a1fdf33fc955b90827a342c31cfe1847b11edea192bdfda90469fb87c0df2ad
+[D0584:P0003] sha256:f33b80ea1b6e2d4fa4cde26a124a0c05aedef88b19239f5a434ee510e45587be
+[D0584:P0004] sha256:1b345476c925405a8f3653c351277a898ea8f38bdc51e6654368d2a6c762e7c9
+[D0584:P0005] sha256:0616b1374a9ffb6c22ed8d551dff1284b66fb2e0618c7249cf56b9f1fad57960
+[D0584:P0006] sha256:065f6000980894ba79556552a65b0f799cbe4ddc9294c144dc0a5e5140f63385
+[D0584:P0007] sha256:63dc1acf61feb000d1220f179687ba5b9e22dff57f45855cf348a14984451b27
+[D0584:P0008] sha256:dc0ca6d27e77e4656974d4dd294f11cd9977d85586861f3ee3de3247c40a3a67
+[D0584:P0009] sha256:8adf7070c93b67074a11dd2608b6aec4e723f81f60378feea3904c83a4d84b81
+[D0584:P0010] sha256:6a12ea01daba2461dcbd97cfac90c0829ada114ea72c36a9b6cf81b2b76b46f8
+[D0584:P0011] sha256:f4d9efaa88b410f7efffc11b0f82c2fe2d40146aecbdb6a9950046e108becc2c
+[D0584:P0012] sha256:8a32c1b4ba640053f56f9980ffdffcda5a7718a4e6b7778cade39a9e5d65044f
+[D0584:P0013] sha256:554ded02d01db92a4277336229cb41f58b6638ac3fbce02626b8ab960e1a6272
+[D0584:P0014] sha256:4f281485195376645b3ccc95559ddb57c987f6ae3a1ae5167046364d945c0e6b
+[D0584:P0015] sha256:5322769fdf4948186266a6883dfd323b7fde0696866dfd40715eb1a9df08ed0b
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (7)
+N10-E013: «Constitution Protection Bureau» — reports on → «Russian hacktivists» | форма: possible, positive
+N10-E014: «Latvia» — targets → «Russian hacktivists» | форма: actual, positive
+N10-E015: «cyberattacks» — targets → «operational technologies» | форма: actual, positive
+N10-E016: «Russian hacktivists» — remotely accessed → «control systems of the hydroelectric power plant» | форма: actual, positive
+N10-E017: «hydroelectric power plant in Gdansk» — located in → «Gdansk, Poland» | форма: actual, positive
+N10-E018: «Russian hacktivists» — aim to → «disrupt service provision» | форма: actual, positive
+N10-E019: «Russian hacktivists» — targets → «Latvia» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+=== СТАТТЯ 4 з 5 (TARGET_DOC_ID: D0448) ===
+DOC_ID: D0448
+PUBLICATION_DATE: 2026-03-11
+SOURCE_URL: https://www.euronews.com/next/2026/03/11/from-ai-versus-ai-to-the-quantum-threat-the-cybersecurity-battles-to-watch-according-to-th
+TITLE_SHA256: 9af83b3771f6667d920b17c87fcc1173ad2a67523fda0626e02dada5d3e688f5
+BEGIN_DOCUMENT
+[D0448:P0001] sha256:9af83b3771f6667d920b17c87fcc1173ad2a67523fda0626e02dada5d3e688f5
+[D0448:P0002] sha256:30ec9812c4565cd36a6c3729bb2036e4066079d7c1b60df53dff70d21df8ca44
+[D0448:P0003] sha256:f2f7c744645263935e467b9ec6bafa37bd74cf6724e4da28df6051bbec29dc19
+[D0448:P0004] sha256:84fb004fc02a35e65a6392695504931ce04452935e62e54f03b9f9c03c05df36
+[D0448:P0005] sha256:ccb092eeb23d0083617c99d89090ee4a81ca6726ee048ac6863a15682661ddce
+[D0448:P0006] sha256:d6d3ade461df6ae523fe5efe4790345098be4e77def19efb0743d2976a71fa18
+[D0448:P0007] sha256:8d079c16d173a57ba81810bc14a8b8a9feb94209ec03f9df1137902097b06b2f
+[D0448:P0008] sha256:92ed24f8389a925dcd6025b20d1a9155dfb55d15d620fd70e2a96430dae07af7
+[D0448:P0009] sha256:bd8fdae26b09ef9b0a1ed019f6fc42db45a274c8749af9dec97e03ec6594fe03
+[D0448:P0010] sha256:e85b5755efc377fffc6df68fb594faab8cb42521c984ab5bab94c73a0bbe8248
+[D0448:P0011] sha256:d8e40c996824b3985719ca29505a1087de5753b56c6ce41963c6781ab97f3f3e
+[D0448:P0012] sha256:4163055dc49b2a745f1bf9a1649e0efe231917f391184c047267e278a3705c77
+[D0448:P0013] sha256:8a63a5f293939ad08f290bc6d4395521bffb03879d64dc6298940073f634042a
+[D0448:P0014] sha256:b9fb1bf35fbe0aea4e78d085d5ef25743b9b799d0d8e46bd53d1186b8be8a0ca
+[D0448:P0015] sha256:de1a388ef66c921aa31eab021dab2d8156eba821af4abbb68b35ef0337236295
+[D0448:P0016] sha256:77e00c16e8fbb98faa5f3a70c31dc9e5dc06b430e1024c0c4cb5ffe3b035e84f
+[D0448:P0017] sha256:83b64b858dd6f8819aa4c30de735f23ea3ad149e00213b543579e18fb96a99e8
+[D0448:P0018] sha256:01bc9962b5a630d2f6dbb5ebe95e61c0c665c8f5d372ccdf25334fa72877aea1
+[D0448:P0019] sha256:fd4df7248774563a7d12b72ec970250607e0e46b08bc336ddf78e61f32b6cbdd
+[D0448:P0020] sha256:43d34acb4d067409d334d56476f146edfd5901d23c2225fbfa07acfd15482d1f
+[D0448:P0021] sha256:b1a971dd3adbd2b590c44d6ae1b1b71de68a70c52a6ee341932aed5c359d5dcf
+[D0448:P0022] sha256:9e17997b0f4aba48d4f5abacbfc7c927b1d5a5687f141739958526130ed13eee
+[D0448:P0023] sha256:1682a2b098c9c0f8614440d7a14d4e703125c0852246534fff22a8f1371c6075
+[D0448:P0024] sha256:a2050486e6c334bb1c8ba53d98a343435262160e9cd133cc340874fd3be55fec
+[D0448:P0025] sha256:137f07bb6d3180ac29dd5ee8f2d5d8152023a50f31765e567ef42b62cd1a99ce
+[D0448:P0026] sha256:ca48456e147d0b7280dfbca32a6c4ec82d1c1f4378781ed9a3e0fe1cd3ba7686
+[D0448:P0027] sha256:28756ebd2c6fc313c6ef8d3bd92feec2511f2bf4dd38cfbb9082b58daae8c766
+[D0448:P0028] sha256:5d8f6283d7194a3d3d7b4f097adb3fd09120ceb3b2d84635a8bae2cbc34c306a
+[D0448:P0029] sha256:5e45b7b04c208f7608970701ee44413c8fe03fe2634a9c0a4e553edfd295d7cf
+[D0448:P0030] sha256:1bbde3b6ea63e24d256a054f3084e887603bff12024b65b0ed15f0210a0f58fe
+[D0448:P0031] sha256:7dab2a163b39ebeeec6c99dc1ccd182d7bb99876cd46bdaca8ebbc8a9857c841
+[D0448:P0032] sha256:cc445a8ea362a95f3be4bf95964cd63afc3de6ce5ad1d2ebdef903cf34f13ca2
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 4 (17)
+N10-E020: «Cyber Resilience Act» — protects → «Connected devices» | форма: planned, positive
+N10-E021: «Thales» — uses → «Artificial intelligence» | форма: actual, positive
+N10-E022: «Cyberattacks» — targets → «critical infrastructure» | форма: actual, positive
+N10-E023: «harvest now, decrypt later» — puts at risk → «personal data» | форма: actual, positive
+N10-E024: «mandatory security requirements» — apply to → «connected devices» | форма: actual, positive
+N10-E025: «Eva Rudin» — member of → «Thales» | форма: actual, positive
+N10-E026: «cyberattacks on critical infrastructure» — target → «hospitals» | форма: actual, positive
+N10-E027: «Thales» — spoke with → «Euronews Next» | форма: actual, positive
+N10-E028: «mandatory security requirements» — enter force in → «2027» | форма: actual, positive
+N10-E029: «harvest now, decrypt later» — puts at risk → «cryptographic keys» | форма: actual, positive
+N10-E030: «Thales» — develops → «crypto agility» | форма: actual, positive
+N10-E031: «quantum-resistant cryptographic algorithms» — protects → «eSIM cards» | форма: possible, positive
+N10-E032: «coordinated attack» — targets → «smart metering infrastructure» | форма: actual, positive
+N10-E033: «Cyber Resilience Act» — protects → «connected devices» | форма: actual, positive
+N10-E034: «harvest now, decrypt later» — relies on → «quantum computers» | форма: actual, positive
+N10-E035: «From AI versus AI to the quantum threat: The cybersecurity battles to watch, according to Thales» — published by → «EuroNews» | форма: actual, positive
+N10-E036: «harvest now, decrypt later» — puts at risk → «defence secrets» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 4
+
+=== СТАТТЯ 5 з 5 (TARGET_DOC_ID: D0520) ===
+DOC_ID: D0520
+PUBLICATION_DATE: 2026-02-24
+SOURCE_URL: https://en.antaranews.com/news/405774/blackpanda-japan-announces-strategic-partnership-with-softbank-to-strengthen-cyber-incident-response-in-japan
+TITLE_SHA256: bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+BEGIN_DOCUMENT
+[D0520:P0001] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0002] sha256:1a7e4fe171ea85c93ae3fcd7cc35022cad75cc4221085ba50dfcf8737f4d79ba
+[D0520:P0003] sha256:bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe
+[D0520:P0004] sha256:a91f1ffad53e875298238ad880425cfae5af042ce1d642ab24a4ab44a8bda5e9
+[D0520:P0005] sha256:3b870de3d6b8944a8e4e19d3aea34af26f2c62532590caf94ed38ffabae0e7d6
+[D0520:P0006] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0007] sha256:a8d2c0c087c0d995189da30af3526b87306f0fb014c30e44c494bdf0c933ad62
+[D0520:P0008] sha256:e8a9a9b250d60593b283371ce686c79aa607a2ea3680467f7d1ded5c78bb3ad2
+[D0520:P0009] sha256:ed9b34e35a9ce2fbc5b9783aa0ffb7d187e8ce968a2c6693676f622f01a81dda
+[D0520:P0010] sha256:349914bb6126ddc013a41ac93d458bb228327f026ffa21442b240b06ffc21a48
+[D0520:P0011] sha256:0bc734a054d6c0383577a505b76c03812c79b7bbad8eb11f9d42f5a45b690b12
+[D0520:P0012] sha256:421406413508a02f874dfd0c4ccb048ce5bf7c8a96a59d91c7f1e42c66bd74e3
+[D0520:P0013] sha256:db8ddc3f51c5f772ae099cc2776a763a54b39dd6d39081be345554fa6d1702b1
+[D0520:P0014] sha256:b09d90c6d48200f8d3a56259a366b287d4c3c869340986b1a6c14b82175634d0
+[D0520:P0015] sha256:1e40fad743472e4978c3fa0521be352976c8e5830ff8c30ad727a3506382b0b2
+[D0520:P0016] sha256:8c6e8619b647081cc331e41be3063e0ec84abb7ee9df3a129a418cf3a494d765
+[D0520:P0017] sha256:771f2812f0b52f6a63ae53c60615b25ba167e2344e07ea4bf3702b37efcc7c78
+[D0520:P0018] sha256:4f8902fc99ac4bd44a6dd890058f522a8ccee49ca86a710b4ba5d48fe44693ef
+[D0520:P0019] sha256:a16da9ce5b0e7e53011aeb005280a0b87599dcec7e734fd55931d3cde9b4fe38
+[D0520:P0020] sha256:e72454aec3efc837fb988bc9cdb52e0ea971e07e5d25926fa6dca1ee565e26b8
+[D0520:P0021] sha256:2c024674fb1e5a8e01b30671020acc606171d1c99b5cda2f3a442acfc8546008
+[D0520:P0022] sha256:13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511
+[D0520:P0023] sha256:d0f9f7047c9367aff35f7db8a4c42ab074e63d606a23d4d497eb7c8053009cb5
+[D0520:P0024] sha256:03fdbdb0d5b1259acb46cd79ee31cb7469c413bcc92a1af35c5d6a548e006b1c
+[D0520:P0025] sha256:679ea9a6942c380d09ac59862c1bc4fb8b6475ebeeaa53e6c2c1a93b129ffbbe
+[D0520:P0026] sha256:272e797600110f73eb1e225952d391f02c095d488db157e2277c29821e808727
+[D0520:P0027] sha256:6fed45d441c9550821d2b54db6356f2f5b6f79ce90491301c45d7533343f69f0
+[D0520:P0028] sha256:5ba821a50a8beb4ad636670aab5875dcbdbd7336171e47eaae6950990f9c7b63
+[D0520:P0029] sha256:1e313b8dc75ad92a974651741fa55237d509fe88b0dd20100fdc62eaf7bde695
+[D0520:P0030] sha256:ed57066cf6ef3cfdecf68fa11b3f38130063220ea1c65bfc881186a14a2677de
+[D0520:P0031] sha256:bba9318e9977d02fdac560d2684e54b48734c4a15ae085303731fd2cd5fe6a85
+[D0520:P0032] sha256:6e9fbe8b49a2f384cb1ac5d22e13589c6bd36ea018c969926d0f31a009e27405
+[D0520:P0033] sha256:ef4565b1591d4d4b77d67b55e760b7da00b5a7273f81dd50424b6484b2749abc
+[D0520:P0034] sha256:ee5a63192faf14d685972262f7f29b7ead440e57ece8a87aec718433dd9ccd2e
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 5 (9)
+N10-E037: «Gene Yu» — leads → «Blackpanda» | форма: actual, positive
+N10-E038: «BLACKPANDA JAPAN K.K.» — is part of → «Blackpanda» | форма: actual, positive
+N10-E039: «SoftBank Corp» — provides → «IR-1» | форма: actual, positive
+N10-E040: «SoftBank Corp» — provides → «IR-1» | форма: planned, positive
+N10-E041: «SoftBank Corp» — supports → «Japanese companies facing cyber threats» | форма: actual, positive
+N10-E042: «Blackpanda» — develops → «A2I» | форма: actual, positive
+N10-E043: «SoftBank Corp» — is → «national telecommunications provider» | форма: actual, positive
+N10-E044: «SoftBank Corp» — will provide → «incident response services against cyber attacks» | форма: actual, positive
+N10-E045: «ransomware attacks» — affects → «supply chains» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 5
+
+КІНЕЦЬ ФАЙЛУ N10. Усього записів у файлі: 45 (від N10-E001 до N10-E045).

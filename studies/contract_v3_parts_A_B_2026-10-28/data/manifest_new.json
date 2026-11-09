@@ -1,0 +1,228 @@
+{
+ "rule": [
+  "Правило відбору — правило контрольованого експерименту CTI_RAG_CONTROLLED_V2 (doslid_rag_v2/kit/scripts/prepare_v2.py)",
+  "без змін, продовжене: ті самі умови придатності (повний текст <= 30000 знаків, очищений текст >= 800 знаків),",
+  "той самий порядок усередині місяця sha256(\"CTI_RAG_V2_2026-10-20|\" + doc_id), розподіл N_NEW статей за місяцями",
+  "пропорційно кількості придатних (найбільший залишок). Пропускаються 50 уже обраних статей і майже копії",
+  "будь-якої вже обраної (з 50 або з нових). Файли target.txt пишуться функцією target_file з prepare_v2.py,"
+ ],
+ "n_new": 25,
+ "allocation_by_month": {
+  "2026-01": 4,
+  "2026-02": 3,
+  "2026-03": 6,
+  "2026-04": 4,
+  "2026-05": 4,
+  "2026-06": 4
+ },
+ "eligible_by_month": {
+  "2026-06": 41,
+  "2026-05": 40,
+  "2026-04": 41,
+  "2026-03": 59,
+  "2026-02": 29,
+  "2026-01": 32
+ },
+ "targets": [
+  {
+   "dir": "N01_D0595",
+   "doc_id": "D0595",
+   "date": "2026-01-24",
+   "title_sha256": "9fc414fdb6b545553a60b1cbf695fc1ed4b45ba9457a2041cdfcf18a7427ef0b",
+   "chars": 10230,
+   "target_sha256": "34da524d40728c3805d8d48ed71372f7cd39e6029f725eebb240dd3e094be704"
+  },
+  {
+   "dir": "N02_D0663",
+   "doc_id": "D0663",
+   "date": "2026-01-04",
+   "title_sha256": "55008c03925083655b59d1e0d175252dc4e5b10c99642af52ff1c3bf26870a84",
+   "chars": 6670,
+   "target_sha256": "52850f877bb6a3c52bb1e7a712de4b06ced1f2b6552e9dcd7149f982a11cc79d"
+  },
+  {
+   "dir": "N03_D0604",
+   "doc_id": "D0604",
+   "date": "2026-01-21",
+   "title_sha256": "6807bec4d6a5e914129a1b715243d899c7b109672a3e5f712b7edd9ecaf715fd",
+   "chars": 1515,
+   "target_sha256": "930bc6a5ce60b92a83ff61c9201b369f018b2ec4d45492f51f80e358b1a850e3"
+  },
+  {
+   "dir": "N04_D0593",
+   "doc_id": "D0593",
+   "date": "2026-01-25",
+   "title_sha256": "3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca",
+   "chars": 15494,
+   "target_sha256": "a4d6bde85ee1b9a3748775e6d398d7d0fe05a6cf619e0daf00fa462d33c5734b"
+  },
+  {
+   "dir": "N05_D0515",
+   "doc_id": "D0515",
+   "date": "2026-02-24",
+   "title_sha256": "934331858c7be722fe5f2efd36a454298d830f49087a41a7ac4f23eb1e127a2a",
+   "chars": 3532,
+   "target_sha256": "b51d93b54545b4da0535c53cd2d90be79bcb7333a07545dec86d44515592133e"
+  },
+  {
+   "dir": "N06_D0532",
+   "doc_id": "D0532",
+   "date": "2026-02-18",
+   "title_sha256": "813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b",
+   "chars": 8328,
+   "target_sha256": "078c2f96f0ddfc9ea04e9f9ad0c472ac6570c7f3ee6cdb5e1eca50ae24b22f76"
+  },
+  {
+   "dir": "N07_D0574",
+   "doc_id": "D0574",
+   "date": "2026-02-03",
+   "title_sha256": "18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4",
+   "chars": 1526,
+   "target_sha256": "a68d9502f11e6c58f8322adfd7217ea95f4edbc0af58ab728fef4a6223ee8590"
+  },
+  {
+   "dir": "N08_D0419",
+   "doc_id": "D0419",
+   "date": "2026-03-13",
+   "title_sha256": "3962942d29e4154627a65aeccbe2c31d7e2892e4e8a58035a462da15c9beaff5",
+   "chars": 3122,
+   "target_sha256": "b657508c25a79f766ce1ca5fc89f136ffb59861e95bec115f083ff1da5328893"
+  },
+  {
+   "dir": "N09_D0382",
+   "doc_id": "D0382",
+   "date": "2026-03-23",
+   "title_sha256": "2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d",
+   "chars": 7545,
+   "target_sha256": "b106d5b3d80605b587afc0364519c90773dee5ff8d6dfe0dd52c767ba74ba212"
+  },
+  {
+   "dir": "N10_D0399",
+   "doc_id": "D0399",
+   "date": "2026-03-19",
+   "title_sha256": "6a18aa7ea8b448fe5c7951110878a67d1052f63f79056ca5fcf02fa65ffd4c86",
+   "chars": 9562,
+   "target_sha256": "568ec1e7677fdaf08b4474c5b7f3e7d20de730b533aeaeeab4b2de848db4749f"
+  },
+  {
+   "dir": "N11_D0440",
+   "doc_id": "D0440",
+   "date": "2026-03-12",
+   "title_sha256": "7ce3e5234af2dac2663e9e98901829a11852a52b4434866ac42dfe50839bac24",
+   "chars": 4474,
+   "target_sha256": "53dc43e36c7847562d4c5880afbedcf5d7cbd2532a7b2332308e7438135389f8"
+  },
+  {
+   "dir": "N12_D0347",
+   "doc_id": "D0347",
+   "date": "2026-03-31",
+   "title_sha256": "2dec3396c24d06550606b55914e9442eb50097cd6762d600e3829c4a00362845",
+   "chars": 2929,
+   "target_sha256": "82237b04addcd648922334b3bbaa278558d3de825a40957e957db3ab3242524b"
+  },
+  {
+   "dir": "N13_D0394",
+   "doc_id": "D0394",
+   "date": "2026-03-19",
+   "title_sha256": "1016bda4b5444b10636191505b0d92676b3ea5cea02b083502c97f622b5be020",
+   "chars": 7182,
+   "target_sha256": "da86a738c13e85b9104fef8928419b44316fd62b740d794d3dbb2e758a9bcdda"
+  },
+  {
+   "dir": "N14_D0343",
+   "doc_id": "D0343",
+   "date": "2026-04-01",
+   "title_sha256": "8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5",
+   "chars": 8595,
+   "target_sha256": "2eef59b889d5a94c34d9e8a92d326c20973c32b5d86816ff08f891fb4b7d57a8"
+  },
+  {
+   "dir": "N15_D0319",
+   "doc_id": "D0319",
+   "date": "2026-04-09",
+   "title_sha256": "31c8efdfe0f123f3076f2f5dace53dcd31045f8967c66feef8a7e39b76e35281",
+   "chars": 6775,
+   "target_sha256": "bad824027dc18477da3b44f0f347aedd958bcbd1ed12af440a32ed5639ce57e4"
+  },
+  {
+   "dir": "N16_D0332",
+   "doc_id": "D0332",
+   "date": "2026-04-07",
+   "title_sha256": "52bbf51b3d3a36795ffb9609b21b7e86a9299e26f6a6d5f624c9b052eb29ff57",
+   "chars": 6231,
+   "target_sha256": "2a68a45e16a7220c47a668d7aa22d24de19c27f31e9821d3af0b864ac831a5d5"
+  },
+  {
+   "dir": "N17_D0259",
+   "doc_id": "D0259",
+   "date": "2026-04-24",
+   "title_sha256": "9301e7b9d29b4477070066932935b06bd63704047e2bd9fb0ec1e92ba3bbbbb7",
+   "chars": 5901,
+   "target_sha256": "0b3c90bb4f2457d059f6de9865adb418ba61602f86ceb9bb5cbb97a36b992465"
+  },
+  {
+   "dir": "N18_D0159",
+   "doc_id": "D0159",
+   "date": "2026-05-21",
+   "title_sha256": "6dee0da0cbe30873139f5e0ecc7e0a5c688974a56a93bfddc22d3b8f35af9f92",
+   "chars": 4813,
+   "target_sha256": "4b24eb66db533dfefc2468188beac0b1d50c91f2473935d6b3b0caf00b8aa7be"
+  },
+  {
+   "dir": "N19_D0215",
+   "doc_id": "D0215",
+   "date": "2026-05-06",
+   "title_sha256": "c6c5afffa516c4c44d0fc48332d832771be1012efad25bf1703e34c293e12e35",
+   "chars": 4032,
+   "target_sha256": "b818744f1e3d6c8c75043d5182806b730cd1f2b93a89142e75d91a5ced95943f"
+  },
+  {
+   "dir": "N20_D0195",
+   "doc_id": "D0195",
+   "date": "2026-05-12",
+   "title_sha256": "7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e",
+   "chars": 6753,
+   "target_sha256": "ac36c0d4a8fd5eeaa025d81c4b690f4c06ced3d265866fb5b6729cad80500694"
+  },
+  {
+   "dir": "N21_D0149",
+   "doc_id": "D0149",
+   "date": "2026-05-26",
+   "title_sha256": "312e00dbdcbd3cc770b53467541d66209d47d0eefc24320bd51310c9ed5ebf1b",
+   "chars": 3149,
+   "target_sha256": "17f6e5ff5dfba95433ed861e1d1d09ddeb289299fdd48961428a92cd7bbb9060"
+  },
+  {
+   "dir": "N22_D0026",
+   "doc_id": "D0026",
+   "date": "2026-06-24",
+   "title_sha256": "54a12a301feee041aff73e517e6cf12a2b559a38065d2f3c2c9e643209f9655c",
+   "chars": 3897,
+   "target_sha256": "a009625d3bc8653fd9c92d2e51bf1826cfa3c64815e1bc8fd9d8c7cb645f8613"
+  },
+  {
+   "dir": "N23_D0066",
+   "doc_id": "D0066",
+   "date": "2026-06-12",
+   "title_sha256": "948aaaa86c4e17840bc243d865c31b0490f0ff427301b9231ef0bfaaf6d9d3ba",
+   "chars": 8920,
+   "target_sha256": "6753370332285e2d50f9ee5a67e25dd943cfa7444a5473643bafe05296c9958c"
+  },
+  {
+   "dir": "N24_D0095",
+   "doc_id": "D0095",
+   "date": "2026-06-05",
+   "title_sha256": "9c855165e8bd7fa1beb36a6f514da1803972b7fa0e99ff06d9885e482cbe3c93",
+   "chars": 2920,
+   "target_sha256": "830f2d2c5102bdaf8f661721cf9a01a3be4532f9ee519f3ddd54d6de56f6e6db"
+  },
+  {
+   "dir": "N25_D0045",
+   "doc_id": "D0045",
+   "date": "2026-06-23",
+   "title_sha256": "ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a",
+   "chars": 4761,
+   "target_sha256": "4f53912b34fc0c7a35a98366499091b6cc2957bd0e40070ce62f4522c0deb2ea"
+  }
+ ]
+}

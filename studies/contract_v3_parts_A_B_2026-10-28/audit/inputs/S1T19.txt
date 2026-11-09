@@ -1,0 +1,220 @@
+AUDIT_FILE: S1T19
+TARGET_DOC_ID: D0468
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0468
+PUBLICATION_DATE: 2026-03-05
+SOURCE_URL: https://rusi.org/explore-our-research/publications/commentary/fog-proxies-and-uncertainty-cyber-us-israeli-operations-iran
+TITLE_SHA256: 6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988
+BEGIN_DOCUMENT
+[D0468:P0001] sha256:6667f7870ac8e3584a60f1c0d4bcdcbd6da9824b89404ed247c75caa15525988
+[D0468:P0002] sha256:6f6a4688d452017f35c6486a733112b40668a8ce95eb19d9f3786cb457d96e96
+[D0468:P0003] sha256:dc418e82aa8ea5f1736345512f31df6c2ff48e96767da8fe56d7a1aa7ef2237e
+[D0468:P0004] sha256:d86bfc36b754ad276a1fe24914ec6c978f53d56a13653f3cf32490241aa4f8ec
+[D0468:P0005] sha256:dd3b34faac37b860d2a56ab70ac123e1c86cdf2a22a83334d402ed5f8c63fd48
+[D0468:P0006] sha256:2380da31c3a7b65235d62d3d97494b8dda44178e0bd1326190f1415fa282b13e
+[D0468:P0007] sha256:33ab5979fc487cf6990c0a6e95ad5f35bfb00d40b72b19db0d158e7b5b8c4d5e
+[D0468:P0008] sha256:3bc509be4ecdbc2f9f75af8762b5195ebbd34e1b3da61f0fe34c151377384176
+[D0468:P0009] sha256:6b9b76d07b85cbd900a252b51092240157c7a34e0eb910dc7689ecc0518a85fc
+[D0468:P0010] sha256:e02c927d128e0a9f6102e0bc13a050d8bcea9cb1b3d3f580a5689d67a9cb44e7
+[D0468:P0011] sha256:3b39942c0371c3a70271b40801fa41b77ad805f49e13bd3bc78b93b3c732caa7
+[D0468:P0012] sha256:91fcd693262784db4f4d3edc9a2c3f5c371cd39c9be5adcdb058394465d232fe
+[D0468:P0013] sha256:eb2fa53ceebc84b56d2969426c2444970412a24e0a4ac6cca613c8da6dd49627
+[D0468:P0014] sha256:b1a8e4a2bcc3799d8f853d7ed18d7b50627314c8a1f7e3607facb9753c70894f
+[D0468:P0015] sha256:1d3c65190dfe3c9dbaa10919a60143e957ad4683ce467dc07715310128a49882
+[D0468:P0016] sha256:9a0587f2583eca50a0d78702273619d14b6857fa3e0b6189af7bfa74bf129da3
+[D0468:P0017] sha256:ebe64f68b6c996ce18432aca1e0a3375ee3ffb8295fa4f74ffbc5dc18efea3a1
+[D0468:P0018] sha256:c7962495f1ef49f3b99483131028fdb875a36a8ee0e7e807bc2715bb763b7b20
+[D0468:P0019] sha256:d98c475c49a40823651875df88f6940bf1197574411153e26e3d945f3f4e96d9
+[D0468:P0020] sha256:97797b0225cdc5371ea41bb45f5ca326fe1bd8c8fe087d0cd610d2eeb78d2ed0
+[D0468:P0021] sha256:284cc0f0496a73ed70d1b6e03965fe3f59008ffe27524dd62b1e561814b462aa
+[D0468:P0022] sha256:89688ae0d884019e3e2488bfe720af8ca79500054fe2645f984ac6ffddc49998
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (135)
+E001: «hacktivist groups» — uses → «website defacement» | форма: actual, positive
+E002: «Bahrain and Jordan» — targeted → «pro-Iranian hacktivist groups» | форма: actual, positive
+E003: «Israeli Defence Forces» — targets → «intelligence directorate» | форма: actual, positive
+E004: «pro- Iranian hacktivist groups» — targets → «e-commerce platforms» | форма: actual, positive
+E005: «Iran» — conducted wiper attack on → «Albanian government systems» | форма: actual, positive
+E006: «Israeli Defence Forces (IDF)» — claimed strike on → «4 March» | форма: actual, positive
+E007: «pro-Iranian hacktivist groups» — disrupt → «e-commerce platforms» | форма: actual, positive
+E008: «Jordanian National Cyber Security Centre» — protects → «strategic food reserve» | форма: actual, positive
+E009: «Intelligence and Security Committee» — part of → «UK Parliament» | форма: actual, positive
+E010: «hacktivist groups» — targets → «airport official portal» | форма: actual, positive
+E011: «pro-Iranian hacktivist groups» — disrupt → «Israeli electronic banking portals» | форма: actual, positive
+E012: «Fog, Proxies and Uncertainty: Cyber in US-Israeli Operations in Iran» — was published on → «5 March 2026» | форма: actual, positive
+E013: «Israel» — carried out → «precision strikes on the compound» | форма: actual, positive
+E014: «hacktivist groups» — targets → «Israeli organisations» | форма: planned, positive
+E015: «Predatory Sparrow» — targeted → «Iran's financial infrastructure» | форма: actual, positive
+E016: «Saudi Aramco» — was targeted in → «2012» | форма: actual, positive
+E017: «Mossad» — uses → «Telegram» | форма: actual, positive
+E018: «Iranian state-sponsored cyber threat actors» — use → «hacktivist personas» | форма: actual, positive
+E019: «pro-Iranian hacktivist groups» — allegedly targeted → «Qatar's Ministry of Interior online services» | форма: actual, positive
+E020: «cyber espionage» — supports → «reconnaissance» | форма: actual, positive
+E021: «pro-Iranian hacktivist groups» — allegedly targeted → «Kuwait's airport official portal» | форма: actual, positive
+E022: «pro- Iranian hacktivist groups» — targets → «civil society websites» | форма: actual, positive
+E023: «Iran» — relies on → «state-sponsored and hacker groups» | форма: actual, positive
+E024: «pro- Iranian hacktivist groups» — targets → «Qatar's Ministry of Interior» | форма: possible, positive
+E025: «Israel» — targets → «Iranian security and traffic cameras» | форма: actual, positive
+E026: «airport official portal» — located in → «Kuwait» | форма: actual, positive
+E027: «pro-Iranian hacktivist groups» — disrupt → «civil society websites» | форма: actual, positive
+E028: «cyberattack originating in Iran» — targeted → «strategic food reserve» | форма: actual, positive
+E029: «Mossad» — launched → «Farsi-language Telegram channel» | форма: actual, positive
+E030: «Operation Absolute Resolve» — targets → «Nicol'as Maduro» | форма: actual, positive
+E031: «pro-Iranian hacktivist groups» — set up → «Telegram channels» | форма: actual, positive
+E032: «hacktivist groups» — targets → «Ministry of Interior» | форма: actual, positive
+E033: «CIA» — passed HUMINT to → «Israel» | форма: actual, positive
+E034: «Fog, Proxies and Uncertainty: Cyber in US-Israeli Operations in Iran» — was published by → «RUSI» | форма: actual, positive
+E035: «pro- Iranian hacktivist groups» — targets → «Kuwait's airport official portal» | форма: possible, positive
+E036: «IRGC» — has → «dedicated cyber-electronic command» | форма: actual, positive
+E037: «hacktivist groups» — targets → «civil society websites» | форма: planned, positive
+E038: «intelligence directorate» — located in → «Tehran» | форма: actual, positive
+E039: «government satellite broadcasts in Iran» — were hacked in → «January» | форма: actual, positive
+E040: «UK's National Cyber Security Centre» — issued advisory on cyber threat from → «Iran» | форма: actual, positive
+E041: «Iran» — targets → «Saudi Aramco» | форма: actual, positive
+E042: «Mossad» — launched Telegram channel during → «Operation Roaring Lion» | форма: actual, positive
+E043: «Space Command» — uses → «non-kinetic effects» | форма: actual, positive
+E044: «cyber warfare headquarters» — located in → «Tehran» | форма: actual, positive
+E045: «Iran» — wiped data from → «Las Vegas Sands Casino» | форма: possible, positive
+E046: «pro- Iranian hacktivist groups» — targets → «Bahrain» | форма: possible, positive
+E047: «pro-Iranian hacktivist groups» — targeted → «Bahrain and Jordan» | форма: actual, positive
+E048: «Iran» — conducted drone attack on → «British airbase in Akrotiri» | форма: actual, positive
+E049: «Iran» — hosts → «patriotic hacker groups» | форма: actual, positive
+E050: «Operation Midnight Hammer» — supported the bombing of → «nuclear sites» | форма: actual, positive
+E051: «pro-Iranian hacktivist groups» — conducted → «website defacement» | форма: actual, positive
+E052: «Iranian state-sponsored cyber threat actors» — uses → «hacktivist personas» | форма: actual, positive
+E053: «US Cyber Command» — targets → «communications and sensor networks» | форма: actual, positive
+E054: «Iran» — uses → «ransomware» | форма: actual, positive
+E055: «Iran» — targeted → «Saudi Aramco» | форма: actual, positive
+E056: «Albanian government systems» — were attacked in → «2022» | форма: actual, positive
+E057: «pro- Iranian hacktivist groups» — uses → «Telegram» | форма: actual, positive
+E058: «hacktivist groups» — uses → «Telegram» | форма: actual, positive
+E059: «cyber warfare headquarters» — located in → «Tehran» | форма: actual, negative
+E060: «Fog, Proxies and Uncertainty: Cyber in US-Israeli Operations in Iran» — assesses cyber activity in → «Operation Epic Fury» | форма: actual, positive
+E061: «APT34» — attributed to → «Iran» | форма: actual, positive
+E062: «patriotic hacker groups» — located in → «Iran» | форма: actual, positive
+E063: «APT34» — is linked to → «Iran» | форма: actual, positive
+E064: «Fog, Proxies and Uncertainty: Cyber in US-Israeli Operations in Iran» — assesses cyber activity in → «Operation Roaring Lion» | форма: actual, positive
+E065: «US Cyber Command» — maintained continuous layering throughout → «first 57 hours of the operation» | форма: actual, positive
+E066: «Iran» — targets → «Albanian government systems» | форма: actual, positive
+E067: «Operation Epic Fury» — is conducted against → «Iran» | форма: actual, positive
+E068: «APT39» — is linked to → «Iran» | форма: actual, positive
+E069: «cyber-electronic command» — part of → «IRGC» | форма: actual, positive
+E070: «Operation Midnight Hammer» — used cyber to disrupt → «air defences» | форма: actual, positive
+E071: «compound in eastern Tehran» — included → «IRGC's intelligence directorate and cyber warfare headquarters» | форма: actual, positive
+E072: «Department of Homeland Security» — warns about → «Iran» | форма: actual, positive
+E073: «hacktivist groups» — targets → «Bahrain» | форма: actual, positive
+E074: «Iran» — uses → «wiper attack» | форма: actual, positive
+E075: «Space Command» — layered → «non-kinetic effects» | форма: actual, positive
+E076: «BadeSaba» — was hacked on → «28 February» | форма: actual, positive
+E077: «pro- Iranian hacktivist groups» — targets → «Israeli electronic banking portals» | форма: actual, positive
+E078: «APT42» — is linked to → «Iran» | форма: actual, positive
+E079: «Israel» — targets → «Ali Khamenei» | форма: actual, positive
+E080: «pro-Iranian hacktivist groups» — conducted → «data leaks» | форма: actual, positive
+E081: «National Cyber Security Centre» — warns about → «Iran» | форма: actual, positive
+E082: «Iran» — targets → «Gulf» | форма: actual, positive
+E083: «cyber warfare headquarters» — part of → «IRGC» | форма: actual, positive
+E084: «Iran» — launched retaliatory strikes on US bases in → «Bahrain, Qatar, Kuwait and the UAE» | форма: actual, positive
+E085: «Operation Absolute Resolve» — aimed at removing Nicolas Maduro from → «Venezuela» | форма: actual, positive
+E086: «Intelligence and Security Committee of the UK Parliament» — published → «2025 Iran report» | форма: actual, positive
+E087: «intelligence directorate» — part of → «IRGC» | форма: actual, positive
+E088: «Iran» — wiped data from → «Las Vegas Sands Casino» | форма: actual, positive
+E089: «Iran» — targets → «US» | форма: possible, positive
+E090: «US Cyber Command» — participated in → «Operation Epic Fury» | форма: actual, positive
+E091: «Las Vegas Sands Casino» — had data wiped in → «2014» | форма: actual, positive
+E092: «Israel» — had pre-existing access to → «Iranian security and traffic cameras» | форма: actual, positive
+E093: «Israel» — disrupted → «mobile phone towers» | форма: actual, positive
+E094: «Israeli Defence Forces» — targets → «cyber warfare headquarters» | форма: actual, positive
+E095: «APT39» — attributed to → «Iran» | форма: actual, positive
+E096: «Department of Homeland Security» — identified as immediate concern → «DDoS» | форма: actual, positive
+E097: «Iran» — targets → «Las Vegas Sands Casino» | форма: actual, positive
+E098: «Department of Homeland Security» — assessed persistent threat from → «Iran» | форма: actual, positive
+E099: «Israeli Defence Forces (IDF)» — claimed to have hit → «compound in eastern Tehran» | форма: actual, positive
+E100: «US Cyber Command» — used → «non-kinetic effects» | форма: actual, positive
+E101: «pro- Iranian hacktivist groups» — targets → «Israeli organisations» | форма: planned, positive
+E102: «Operation Midnight Hammer» — targets → «air defences» | форма: actual, positive
+E103: «Albanian government systems» — targets → «Iran» | форма: actual, positive
+E104: «hacktivist groups» — targets → «Jordan» | форма: actual, positive
+E105: «Department of Homeland Security» — identified as immediate concern → «website defacements» | форма: actual, positive
+E106: «Department of Homeland Security» — issued assessment on → «28 February» | форма: actual, positive
+E107: «Operation Absolute Resolve» — targets → «Nicol'as Maduro» | форма: possible, positive
+E108: «US Cyber Command» — layered non-kinetic effects in → «Operation Absolute Resolve» | форма: actual, positive
+E109: «Department of Homeland Security» — warns about → «website defacement» | форма: actual, positive
+E110: «Iran» — conducted → «ransomware campaigns» | форма: actual, positive
+E111: «pro- Iranian hacktivist groups» — targets → «Jordan» | форма: possible, positive
+E112: «US Cyber Command» — disrupted → «communications and sensor networks» | форма: actual, positive
+E113: «APT42» — attributed to → «Iran» | форма: actual, positive
+E114: «hacktivist groups» — targets → «Israeli electronic banking portals» | форма: planned, positive
+E115: «Predatory Sparrow» — was attributed targeted operations during → «June 2025 12-day conflict» | форма: actual, positive
+E116: «BadeSaba» — was hacked to send → «'help has arrived' notifications» | форма: actual, positive
+E117: «Operation Absolute Resolve» — attributed to → «US» | форма: actual, positive
+E118: «Intelligence and Security Committee» — warns about → «Iran» | форма: actual, positive
+E119: «Department of Homeland Security» — warns about → «DDoS» | форма: actual, positive
+E120: «Predatory Sparrow» — targets → «Iran's financial infrastructure» | форма: actual, positive
+E121: «Iran» — poses significant threat to → «UK» | форма: actual, positive
+E122: «Jordanian National Cyber Security Centre» — thwarted → «cyberattack originating in Iran» | форма: actual, positive
+E123: «Ministry of Interior» — located in → «Qatar» | форма: actual, positive
+E124: «Operation Roaring Lion» — is conducted against → «Iran» | форма: actual, positive
+E125: «Predatory Sparrow» — is also known as → «Gonjeshke Darande» | форма: actual, positive
+E126: «hacktivist groups» — targets → «e-commerce platforms» | форма: planned, positive
+E127: «Operation Absolute Resolve» — was conducted by → «US» | форма: actual, positive
+E128: «Iran» — targets → «UK» | форма: unknown, positive
+E129: «cyberattack» — targets → «strategic food reserve» | форма: actual, positive
+E130: «pro-Iranian hacktivist groups» — target → «Israeli organisations» | форма: actual, positive
+E131: «Jordanian National Cyber Security Centre» — mitigates → «cyberattack» | форма: actual, positive
+E132: «US Cyber Command» — uses → «non-kinetic effects» | форма: actual, positive
+E133: «government satellite broadcasts» — located in → «Iran» | форма: actual, positive
+E134: «hacktivist groups» — uses → «data leaks» | форма: actual, positive
+E135: «Mossad» — uses → «Telegram» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ

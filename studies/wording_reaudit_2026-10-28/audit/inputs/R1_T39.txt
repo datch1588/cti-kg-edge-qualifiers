@@ -1,0 +1,70 @@
+AUDIT_FILE: R1_T39
+TARGET_DOC_ID: D0198
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0198
+PUBLICATION_DATE: 2026-05-11
+SOURCE_URL: https://www.aspistrategist.org.au/nds-2026-more-resourcing-for-a-complex-cyber-threat-environment/
+TITLE_SHA256: 0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+BEGIN_DOCUMENT
+[D0198:P0001] sha256:0238a2ecf7786cd7e04dd5ec877284ea6ce32e7cbf23e88de4c8285613ed06b1
+[D0198:P0002] sha256:2e8115ded6d3fe87b8865c341db0a97a4457f45d09ef91ab159ad80361eeb267
+[D0198:P0003] sha256:6562eb4289bc9d809ebf70bd729ece6bfc4499db889399d0cb9a6b644f8e4a8d
+[D0198:P0004] sha256:276d47b532a777d1f4630865a7a20b1d801278b1b86809765fca789f4ba3811e
+[D0198:P0005] sha256:ae5618fe17e75052335a087a53825be52111494bd2ecb5f47deef188a4b2ef23
+[D0198:P0006] sha256:e8d41303beca519afcd2a40457340ec1ddc1ba8631127e4dd9d26eb69a325d2d
+[D0198:P0007] sha256:b781074844edff36d4c1e37e8fc00727dbc30bdf57581aed556476e35d998b27
+[D0198:P0008] sha256:7b44918a0724d02fa19089c9af7679a60db9ea7dc448d1a2afbcdc14e77cdec5
+[D0198:P0009] sha256:ef63072e5a12794545fa2b5ee40d74a2fa126ee6a313797e5f4f347ea0a6504d
+[D0198:P0010] sha256:ec945c4dc77a11d85627264415207f0be3ea815164d18cd2f1657633f0cf4687
+[D0198:P0011] sha256:e4a6d4d1aa3319da70da4be1638874e7028e5fa5dad92a68766f351416a80252
+[D0198:P0012] sha256:d25b40103ff389b99011800d0582e6df83adfaeef2757cedc038cd4b0130bc36
+[D0198:P0013] sha256:45bbdb6be62138accd2d184f9975ccbb8d42bf3aba6fdd9ac544e0ec6788e93b
+[D0198:P0014] sha256:d95082a2ee57f3e40e3050662a346e26a872fd4d0baf57d293ac5a883f0f4ff5
+[D0198:P0015] sha256:47ffc2a763586fdda6272bb9bb06ca42260f745a4e8bd9ca799ab6817830c442
+[D0198:P0016] sha256:8703d8054f7581deb089dd7c43ffab6ac3f96f00fb65328faff85ebb7bbae551
+[D0198:P0017] sha256:1cf5d06433a6f71099b22bbb0ed527f99ba22595e2ca956891a4b4451cb6c26a
+[D0198:P0018] sha256:b8aada94edac40931e664cb48cf267fb926770267a5612e468f5204a85629a61
+[D0198:P0019] sha256:4de763f1a2e40709584e760a21cc40246f129143ab4086e4ade82115eee60a11
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (7)
+W001: «harvest now, decrypt later» — makes readable → «encrypted data collected today»
+W002: «perimeter-based models» — trust → «users and devices inside the network boundary»
+W003: «Australian Signals Directorate (ASD)» — aims to complete quantum-resistant cryptography transition by → «2030»
+W004: «Australia» — needs to integrate offensive cyber capabilities into → «broader military operations and alliance frameworks»
+W005: «Australia's strategy of denial» — possibly includes domain → «cyber»
+W006: «Australia's 2026 National Defence Strategy (NDS)» — directs between A$27 billion and A$38 billion over the decade to → «cyber, space and electronic warfare»
+W007: «Defence» — needs concrete guidance on → «zero-trust implementation across Defence and its supply chain»
+КІНЕЦЬ ЗАПИСІВ

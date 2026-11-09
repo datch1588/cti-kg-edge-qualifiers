@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T32",
+ "target_doc_id": "D0329",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never integrates» заперечує звʼязок, тоді як стаття стверджує, що сервіс поєднує EDR із «built-in business continuity capabilities» (D0329:P0004, також P0006, P0008), тобто полярність має бути positive."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття вживає те саме модальне формулювання «the service can also be delivered through trusted MSSP partners» (D0329:P0011), тож форма «can be delivered through» відповідає поданню звʼязку."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "Стаття подає як факт, що сервіс «provides threat detection, incident response, and cyber resilience» (D0329:P0002), що відповідає формулюванню «provides» без маркерів."}
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "run_id": "Z021",
+ "target_doc_id": "D0440",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0011", "start": 0, "end": 78, "sha256": "35415443c5ae76f877e10c243202d68d1b45c4eaccfd87abcb541dc5ddbd5cbe"}},
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0007", "start": 0, "end": 72, "sha256": "d20212fcababafbe36535efd802a3b5e20c2e08c8bbc03380eb3fc9c54306303"}}
+  ]},
+  {"id": "n002", "label": "US", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0005", "start": 0, "end": 154, "sha256": "41822d71f62caa7c080358c501590265029fbd28dde1b30c18f4a1c1bcda7f9c"}}
+  ]},
+  {"id": "n003", "label": "Stryker cyberattack", "entity_type": "incident", "aliases": ["Stryker breach"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0002", "start": 0, "end": 78, "sha256": "3c76112cd1c982c8d2cba9610507cb924840108b250138fffa845c7949450d79"}},
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0013", "start": 0, "end": 85, "sha256": "3f7037b76123194d4d7dcc85be1b0c3d83c47a85648b933a8bd83f8c0017c446"}}
+  ]},
+  {"id": "n004", "label": "wiper malware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0009", "start": 0, "end": 126, "sha256": "2e3c9e27ee08cf384e02a00faff40a14cb473fe321018122a4520ecd5e0cd4e2"}}
+  ]},
+  {"id": "n005", "label": "Stryker Corporation", "entity_type": "organization", "aliases": ["Stryker"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0005", "start": 0, "end": 154, "sha256": "41822d71f62caa7c080358c501590265029fbd28dde1b30c18f4a1c1bcda7f9c"}}
+  ]},
+  {"id": "n006", "label": "The Wall Street Journal", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0006", "start": 0, "end": 138, "sha256": "cb09d07c945aff7057d6dee0042d58cc6e4254361489b01b35ab38b8841deabe"}}
+  ]},
+  {"id": "n007", "label": "Handala", "entity_type": "threat_actor", "aliases": ["Handala hacker group"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0007", "start": 0, "end": 72, "sha256": "d20212fcababafbe36535efd802a3b5e20c2e08c8bbc03380eb3fc9c54306303"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n005", "relation_type": "AFFECTS",
+   "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0005", "start": 155, "end": 308, "sha256": "5e0af6c45011bc473cb2c1ad026403a9d55a61edf78d72331d76afad00613592"}}
+   ]},
+  {"id": "e002", "source": "n003", "target": "n007", "relation_type": "ATTRIBUTED_TO",
+   "attribution": "Handala hacker group", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0007", "start": 0, "end": 72, "sha256": "d20212fcababafbe36535efd802a3b5e20c2e08c8bbc03380eb3fc9c54306303"}}
+   ]},
+  {"id": "e003", "source": "n003", "target": "n005", "relation_type": "TARGETS",
+   "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0005", "start": 0, "end": 154, "sha256": "41822d71f62caa7c080358c501590265029fbd28dde1b30c18f4a1c1bcda7f9c"}}
+   ]},
+  {"id": "e004", "source": "n003", "target": "n004", "relation_type": "USES",
+   "attribution": "Experts", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0009", "start": 0, "end": 126, "sha256": "2e3c9e27ee08cf384e02a00faff40a14cb473fe321018122a4520ecd5e0cd4e2"}}
+   ]},
+  {"id": "e005", "source": "n005", "target": "n002", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0005", "start": 0, "end": 154, "sha256": "41822d71f62caa7c080358c501590265029fbd28dde1b30c18f4a1c1bcda7f9c"}}
+   ]},
+  {"id": "e006", "source": "n005", "target": "n003", "relation_type": "MITIGATES",
+   "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0015", "start": 0, "end": 92, "sha256": "691b23f3d8e41d62b8170ce6d0c328ee88a984722e4d812a08a2608a730e5dc6"}}
+   ]},
+  {"id": "e007", "source": "n006", "target": "n003", "relation_type": "REPORTS_ON",
+   "attribution": "The Wall Street Journal", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0440", "paragraph_id": "D0440:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0440:P0006", "start": 0, "end": 138, "sha256": "cb09d07c945aff7057d6dee0042d58cc6e4254361489b01b35ab38b8841deabe"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

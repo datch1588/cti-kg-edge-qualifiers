@@ -1,0 +1,157 @@
+AUDIT_FILE: S5F18
+TARGET_DOC_ID: D0415
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0415
+PUBLICATION_DATE: 2026-03-16
+SOURCE_URL: https://www.theregister.co.uk/2026/03/15/telus_breach_starbucks_attack/
+TITLE_SHA256: 69413fe7e6aeb6f5264f675361a2aeb00ddbae0d8ae421f635ace2474876e298
+BEGIN_DOCUMENT
+[D0415:P0001] sha256:69413fe7e6aeb6f5264f675361a2aeb00ddbae0d8ae421f635ace2474876e298
+[D0415:P0002] sha256:c35eab56847252519d9f8e44665eed801b706bcd12e352c690962fee662c1bd3
+[D0415:P0003] sha256:e27d72d6d21a802ab583a85dae7cd6ed2ba5d65f0b1ad340ba5d342e18aba28d
+[D0415:P0004] sha256:1b48c1490fe5d7a1e0376f766a10182c2c3763a9cac23af072f45bc7dc0cbc3d
+[D0415:P0005] sha256:befceed02d370c3a5d2a6612b09b451272e58e09bd424608ba80000d4a334d01
+[D0415:P0006] sha256:3cdbda29777232ba4a41bd6c14d88ce49e6e20335ea593c1f6425fc63ee717e4
+[D0415:P0007] sha256:a98c2ce211e9f819b1f32524061fc0fddfb067e68c0be7739cf12e9b8888b66a
+[D0415:P0008] sha256:af190b4523cb67bc64e3ba2f3bd2735ed9c27d34b1d6507bd54289af2f3ef65e
+[D0415:P0009] sha256:d0e0c676b8cf6de0866a4f4767322aac1db10557fb1b5d8d67be34ad4e0d7b49
+[D0415:P0010] sha256:8a05fcfe58474653e86f4734361bf5b4461164336301880597b27b53142ea0aa
+[D0415:P0011] sha256:ebf03ca6903adb524210ecbc88994bb56d257fb2b824cd2b0542eea807bdfba8
+[D0415:P0012] sha256:be6070d39f8a21a4070e145c9430593bc715022561fdca5e2f2e4e77035091cd
+[D0415:P0013] sha256:058cbc39c857d3e3e34886b8c88ebc65ff6da8aa0170e864544914aede03d630
+[D0415:P0014] sha256:5bba13cea4dab6fd71eae4cb5baed7a945d55b8402c17e0c79473eba7a5086fb
+[D0415:P0015] sha256:84c98ab8168b32f7762b03ceddd0299757b01f98e31f1feae7ae29eb884e0a7c
+[D0415:P0016] sha256:63a837b615fde8b2abc663f56a00fd7c673959829614f116043fcdda0e6c5868
+[D0415:P0017] sha256:377dcacf7bc1c02338aab7eb7d5444de92c6dfb7e9d74bec535d20540ca463b8
+[D0415:P0018] sha256:15dd6406f6041d42a779f81e77711b27e11a92ba657b24d2f44c3531a0a61792
+[D0415:P0019] sha256:09973ca6316000803d936b7dd87455ecc084b68c9556a9569f805d48a63ab848
+[D0415:P0020] sha256:ee541868eeccb71e032072e288092d2dbe32772233811070621d7f807e8cb45d
+[D0415:P0021] sha256:05e040b9c60f6f0641b62ec56663099e3e672fed66c52392fcbb0d0e770d6b70
+[D0415:P0022] sha256:8ff0048dbad9d390a97a9d29d1ea1f90807382a704fa87cffe8128ca0157f511
+[D0415:P0023] sha256:16b26efc17a48347ae132db86b49b61716907a7bde4787eaf1f64866325a6e54
+[D0415:P0024] sha256:820f30aaf31456bfb15ca5c0b1b813cd8a8a763beaaaa38376017105b0227456
+[D0415:P0025] sha256:5142057ab06d26715fdc0fb5abb40d4e5bfa3a20286720c2975fa01f8f1858b0
+[D0415:P0026] sha256:525f6a77b40da918854c99edbe38c6eaa810dda5d0f285db1fffd33a11ba1791
+[D0415:P0027] sha256:ad1481c9a0fa9993d6c1205b9b39322097b4efc08191bb382ff865e7c14fa51f
+[D0415:P0028] sha256:a19be9cf24d42d5116905ac4a8674492a14822db67fe723cc386c6b54e93346b
+[D0415:P0029] sha256:ec59659da217e9e4a4ca30e0e4a59158d0312751f17fd6686e520c46f98abe62
+[D0415:P0030] sha256:ead51d748bc0f84852799e2efb9596573bf189df71e3ffa05f285db443376d67
+[D0415:P0031] sha256:2de96df6a616ada9a56f2eb5225cdab6e27e1f1adb18080045745e1fa15cdf53
+[D0415:P0032] sha256:e8ef0a2e1c1d8010342b0930d868c4030873b7944eb0de19e33c4c30c1119293
+[D0415:P0033] sha256:dc8fb389454f0ccd2343d3419b3cd8340e8f0576f85e65ff8aa023d509c67c27
+[D0415:P0034] sha256:c4719eafde6f27e121d3c6520e37b590ebfd161a40ea97b0dba7d74f97debf79
+[D0415:P0035] sha256:eeb0ad0ca12536ca08b76db6fa95119bd2f3fac712c5dfea6f19571706ba5bd2
+[D0415:P0036] sha256:3148bf6bc8320d5bc77ab25e3dc64d26af28b6a187a55f135fe634577f0cb051
+[D0415:P0037] sha256:e9d55f123226ca8430a5274931f21a3a01c479dd74ebaa43a20bfb9326a0503d
+[D0415:P0038] sha256:7eb0ce23096650e47cb86373ccec0cdbcdd11b46c5fe89af7d10a32d3c7a4358
+[D0415:P0039] sha256:9b82fca1c0148d94d28b6a2f7443518b684112b5a15af5b8ff4560bfb1878ee3
+[D0415:P0040] sha256:6cd7fe16aa0ac4e3aad42b53b24e90eb066da37bee2b960fe093f74f25ce5b6e
+[D0415:P0041] sha256:ca01ce1cba67e91a0c105c1f9efc50487635ac70b3518f6b9129f299ca53dfab
+[D0415:P0042] sha256:a2068d8dd3b08423e488f31ec7875826afdf918142dd30accf5887367066cc05
+[D0415:P0043] sha256:63bd0514ad384225c90478e897963a79077a8194e8adf4ee11ae4fa59bbd165c
+[D0415:P0044] sha256:f2eba14897b8c9ceee6dbaf7b86a37a1437c8f0ab401243ef90077b947fd65c5
+[D0415:P0045] sha256:3281bc18f5edcb71ab37813003d49ce5666a6306de7251a5589c1303167b8043
+[D0415:P0046] sha256:874cde69fdda68efa4a29109f450feb0705f0039f55bbbba0360ca32c6341d23
+[D0415:P0047] sha256:ad034dcbba0085723216e4d62cd4f89edac1b584df43fe95b44f00bdeaea89fd
+[D0415:P0048] sha256:0c029ee93a79e31f0ed90395b4c04e1fc61a9011ed5c54ccb6057a0d4fab4751
+[D0415:P0049] sha256:f5e08f520dfc2b693c0d171dbbf6077e2f7185d7fbe4b4516a846a81c0b626cf
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (45)
+E001: «Kumar Palaniappan» — warns about → «ransomware» | форма: actual, positive
+E002: «Tibco» — part of → «Cloud Software Group» | форма: actual, positive
+E003: «unauthorized third party» — targets → «Partner Central» | форма: actual, positive
+E004: «Kevin Mandia» — leads → «Armadin» | форма: actual, positive
+E005: «ShinyHunters» — targets → «Telus Digital» | форма: possible, positive
+E006: «Citrix» — part of → «Cloud Software Group» | форма: actual, positive
+E007: «Google» — part of → «Alphabet» | форма: actual, positive
+E008: «Mandiant» — part of → «Google Cloud» | форма: actual, positive
+E009: «Kumar Palaniappan» — warns about → «advanced persistent threats» | форма: actual, positive
+E010: «digital intrusion» — affects → «Partner Central» | форма: actual, positive
+E011: «Armadin» — uses → «AI agents» | форма: planned, positive
+E012: «Armadin» — uses → «AI agents» | форма: actual, positive
+E013: «Armadin» — mitigates → «hyperattacks» | форма: planned, positive
+E014: «low- level data breach» — affects → «Loblaw» | форма: actual, positive
+E015: «Starbucks» — operates → «Partner Central» | форма: actual, positive
+E016: «Telus Digital» — reports on → «cybersecurity incident» | форма: actual, positive
+E017: «Elon Musk» — leads → «US Department of Government Efficiency» | форма: actual, positive
+E018: «Loblaw» — operates → «PC Optimum» | форма: actual, positive
+E019: «Loblaw» — reports on → «low- level data breach» | форма: actual, positive
+E020: «cybersecurity incident» — affects → «Telus Digital» | форма: actual, positive
+E021: «unauthorized third party» — uses → «websites impersonating Partner Central» | форма: actual, positive
+E022: «Starbucks» — discovers → «digital intrusion» | форма: actual, positive
+E023: «Armadin» — mitigates → «hyperattacks» | форма: actual, positive
+E024: «US Department of Government Efficiency» — located in → «US» | форма: actual, positive
+E025: «Kumar Palaniappan» — warns about → «zero-day exploitation» | форма: actual, positive
+E026: «cybersecurity incident» — attributed to → «ShinyHunters» | форма: possible, positive
+E027: «Tibco» — part of → «Cloud Software Group» | форма: possible, positive
+E028: «Google Ventures» — part of → «Alphabet» | форма: actual, positive
+E029: «digital intrusion» — uses → «websites impersonating Partner Central» | форма: actual, positive
+E030: «Loblaw» — located in → «Canada» | форма: actual, positive
+E031: «Kumar Palaniappan» — warns about → «ransomware campaigns» | форма: actual, positive
+E032: «Kumar Palaniappan» — warns about → «zero-day exploitation attempts» | форма: actual, positive
+E033: «targeted attacks» — targets → «supply chains» | форма: actual, positive
+E034: «PC Financial» — part of → «Loblaw» | форма: actual, positive
+E035: «low- level data breach» — affects → «PC Financial» | форма: actual, negative
+E036: «targeted attacks» — targets → «enterprise environments» | форма: actual, positive
+E037: «Telus Digital» — located in → «Canada» | форма: actual, positive
+E038: «digital intrusion» — affects → «Starbucks» | форма: actual, positive
+E039: «Canada» — located in → «Loblaw» | форма: actual, positive
+E040: «Loblaw» — located in → «Canada» | форма: actual, negative
+E041: «Armadin» — uses → «AI agents» | форма: planned, negative
+E042: «Starbucks» — reports on → «digital intrusion» | форма: actual, positive
+E043: «ShinyHunters» — targets → «Telus Digital» | форма: actual, positive
+E044: «Kumar Palaniappan» — warns about → «targeted attacks» | форма: actual, positive
+E045: «targeted attacks» — targets → «critical infrastructure» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

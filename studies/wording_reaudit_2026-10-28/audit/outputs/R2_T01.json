@@ -1,0 +1,15 @@
+{
+ "audit_file": "R2_T01",
+ "target_doc_id": "D0596",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly led» подає звʼязок як можливість, а в D0596:P0027 прямо сказано як факт, що раунд Series A був «also led by IQ Capital» (actual)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів (actual), а в D0596:P0017 сказано лише, що через мікросегментацію порушення «can be isolated», тобто це можливість (possible)."},
+  {"item_id": "W003", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «must extend across» відповідає вимозі в D0596:P0008, що засоби безпеки «must extend across field-level devices» (recommended)."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів (actual), а в D0596:P0054 Türk Telekom лише повідомила, що «would offer» пакет на 24–25 січня, тобто після дати публікації 23 січня, отже це заплановано (planned)."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «can expose» передає ризик, як і застереження в D0596:P0018, що скомпрометований пристрій «can expose an entire OT environment» (possible, хоча стаття додає ще й умову щодо недостатньої сегментації)."},
+  {"item_id": "W006", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «aims to provide» відповідає D0596:P0058, де надання 5G з квітня названо метою компанії («primary aim»), тобто це заплановано (planned)."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0596:P0025 і P0031 Driventure подано як фактичний «corporate venture capital arm of Ford Otosan», що відповідає формулюванню без маркерів (actual)."},
+  {"item_id": "W008", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «must extend across» відповідає вимозі в D0596:P0008, що засоби безпеки мають поширюватися на «edge systems» (recommended)."},
+  {"item_id": "W009", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «must extend across» відповідає вимозі в D0596:P0008, що засоби безпеки мають поширюватися на «enterprise layers» (recommended)."}
+ ]
+}

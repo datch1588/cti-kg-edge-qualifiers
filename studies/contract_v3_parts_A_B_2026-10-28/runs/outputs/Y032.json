@@ -1,0 +1,144 @@
+{
+ "run_id": "Y032",
+ "target_doc_id": "D0235",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Business Email Compromise", "entity_type": "attack_technique", "aliases": ["BEC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 78, "end": 176, "sha256": "f460bca87536f24c94923f1fd06769899cf98d0a51f6d50949b3ebfe2d96ceeb"}}]},
+  {"id": "n002", "label": "Distributed Denial of Service", "entity_type": "attack_technique", "aliases": ["DDoS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 98, "sha256": "69d7e9f3360043f89c0099508993151e44c7a49332da7b8fbe0477eb576c3cdc"}}]},
+  {"id": "n003", "label": "phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 18, "end": 87, "sha256": "5d2174e61d93862ae24769d2aa8f6c9e7a64fa6154eb1e2794280f8ad3b0def2"}}]},
+  {"id": "n004", "label": "social engineering", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 18, "end": 87, "sha256": "5d2174e61d93862ae24769d2aa8f6c9e7a64fa6154eb1e2794280f8ad3b0def2"}}]},
+  {"id": "n005", "label": "Nigeria", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0009", "start": 0, "end": 82, "sha256": "da09864e321fd7e7c1c947b6b24016741108177664fec94ddb23acb91e8f1248"}}]},
+  {"id": "n006", "label": "IoT West Africa Conference and Data Centre Cloud Expo", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 29, "end": 125, "sha256": "9c0c6b8354e585fdc57b075c76dfa2f933ad00bf95c4c4456793d71af0d0bf48"}}]},
+  {"id": "n007", "label": "Africa", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0009", "start": 0, "end": 82, "sha256": "da09864e321fd7e7c1c947b6b24016741108177664fec94ddb23acb91e8f1248"}}]},
+  {"id": "n008", "label": "Lagos", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 113, "end": 162, "sha256": "ff003ae6a42b29c05f0a02abd341e75e653a48e59c9e7e103febddfb4c276950"}}]},
+  {"id": "n009", "label": "Landmark Event Centre", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 113, "end": 162, "sha256": "ff003ae6a42b29c05f0a02abd341e75e653a48e59c9e7e103febddfb4c276950"}}]},
+  {"id": "n010", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 0, "end": 76, "sha256": "052d7aca95b69c17212eed871b22ebb5ebf7778eed65ddb874a97db32aa9cef6"}}]},
+  {"id": "n011", "label": "Nigeria Data Protection Commission", "entity_type": "organization", "aliases": ["NDPC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 116, "sha256": "5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0029", "start": 0, "end": 68, "sha256": "5929fe4c7d9ff99ed2c147dcd2dd65da3d5aca9fa7f296fc723551737f8972b5"}}]},
+  {"id": "n012", "label": "banking", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 100, "end": 186, "sha256": "60c2b91dd4103672e5bb7098719b0d59df36142e895ba2cf9ca232d83645155b"}}]},
+  {"id": "n013", "label": "biometric data", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 216, "sha256": "5a1bbe418017de3d9a35959748e7694954bd4c3c37b9bc697231ada7f49c053a"}}]},
+  {"id": "n014", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 100, "end": 186, "sha256": "60c2b91dd4103672e5bb7098719b0d59df36142e895ba2cf9ca232d83645155b"}}]},
+  {"id": "n015", "label": "digital economy", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 19, "end": 109, "sha256": "1fbe448f9084eeb2d0d7f0df9a73a7a14f9b52569737bb98f7873d04aed37946"}}]},
+  {"id": "n016", "label": "digital growth", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 0, "end": 68, "sha256": "2120fb29f5b7aa1bd252e8fb977214c87eef4df8464ebc05898b1f18ab471232"}}]},
+  {"id": "n017", "label": "government platforms", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 100, "end": 186, "sha256": "60c2b91dd4103672e5bb7098719b0d59df36142e895ba2cf9ca232d83645155b"}}]},
+  {"id": "n018", "label": "personal identifiable information", "entity_type": "other", "aliases": ["PII"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 216, "sha256": "5a1bbe418017de3d9a35959748e7694954bd4c3c37b9bc697231ada7f49c053a"}}]},
+  {"id": "n019", "label": "sovereignty", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 17, "end": 126, "sha256": "c568173454fc4a1f33f2ab86d4f045143d81fcb55992450b3348745b6d5868db"}}]},
+  {"id": "n020", "label": "telecoms", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 100, "end": 186, "sha256": "60c2b91dd4103672e5bb7098719b0d59df36142e895ba2cf9ca232d83645155b"}}]},
+  {"id": "n021", "label": "unauthorised access", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 89, "end": 152, "sha256": "e7e2eb181fe3b7bb2fd63525b010ee0d13a17f7887900ffd38d0df211bb30d99"}}]},
+  {"id": "n022", "label": "Vincent Olatunji", "entity_type": "person", "aliases": ["Dr Vincent Olatunji", "Dr. Vincent Olatunji", "Mr Olatunji", "Olatunji"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 116, "sha256": "5e8be09288142a5be127fb61f9025fa07583d706bcec11de57dd956b23fd6423"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 0, "end": 51, "sha256": "718942a060db214cb045f561f90ade8be90a7e38b3db2d9eadc3ffc6519234f0"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0003", "start": 0, "end": 25, "sha256": "f05c16be3b885cfda0a3535825b1a03107e03ec87bd7479699c433aba02d24cc"}}]},
+  {"id": "n023", "label": "national security", "entity_type": "security_property", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 17, "end": 126, "sha256": "c568173454fc4a1f33f2ab86d4f045143d81fcb55992450b3348745b6d5868db"}}]},
+  {"id": "n024", "label": "data infrastructure", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 17, "end": 126, "sha256": "c568173454fc4a1f33f2ab86d4f045143d81fcb55992450b3348745b6d5868db"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0029", "start": 0, "end": 150, "sha256": "eb69fd3c52ff2d2651c26647c4cd9cddd8c0d2a6170f16a2fa1b997c4df5a19c"}}]},
+  {"id": "n025", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 118, "end": 218, "sha256": "5a601e1fbaa26d6e7740f84ce943ce0ae4e81cda4f9404ef300baf8ac5ef7627"}}]},
+  {"id": "n026", "label": "cyberattacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0005", "start": 0, "end": 56, "sha256": "cc505ad66604b0615f9003c39d0ee1658a8d792306ff2f78b511bfd1c132fcbb"}}]},
+  {"id": "n027", "label": "cybercrime", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 0, "end": 68, "sha256": "2120fb29f5b7aa1bd252e8fb977214c87eef4df8464ebc05898b1f18ab471232"}}]},
+  {"id": "n028", "label": "data breach", "entity_type": "threat_category", "aliases": ["data breaches"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 133, "end": 196, "sha256": "693e3ab44760e63a537472ae787b8416e43b4c37db96639deec02ff8baf2d282"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 19, "end": 109, "sha256": "1fbe448f9084eeb2d0d7f0df9a73a7a14f9b52569737bb98f7873d04aed37946"}}]},
+  {"id": "n029", "label": "digital fraud schemes", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 75, "end": 146, "sha256": "821555717df43b5e4c7ac2489995c1331130c75e1ecf87a8dca557c5a5450bb4"}}]},
+  {"id": "n030", "label": "identity theft", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 19, "end": 109, "sha256": "1fbe448f9084eeb2d0d7f0df9a73a7a14f9b52569737bb98f7873d04aed37946"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n012", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 186, "sha256": "9d2197ab2d937eea854f945c5e07026b55b2206af0ea131a03392410ce43ec5d"}}]},
+  {"id": "e002", "source": "n002", "target": "n014", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 186, "sha256": "9d2197ab2d937eea854f945c5e07026b55b2206af0ea131a03392410ce43ec5d"}}]},
+  {"id": "e003", "source": "n002", "target": "n017", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 186, "sha256": "9d2197ab2d937eea854f945c5e07026b55b2206af0ea131a03392410ce43ec5d"}}]},
+  {"id": "e004", "source": "n002", "target": "n020", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 23, "end": 186, "sha256": "9d2197ab2d937eea854f945c5e07026b55b2206af0ea131a03392410ce43ec5d"}}]},
+  {"id": "e005", "source": "n003", "target": "n005", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "2024", "event_scope": "financial losses in Nigeria in 2024", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}]},
+  {"id": "e006", "source": "n003", "target": "n021", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 0, "end": 152, "sha256": "e509cf52179fa8ebd00e26e759208fae5e574a8d1821f7b8edf42e4943fc0f67"}}]},
+  {"id": "e007", "source": "n004", "target": "n021", "relation_type": "ENABLES", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 0, "end": 152, "sha256": "e509cf52179fa8ebd00e26e759208fae5e574a8d1821f7b8edf42e4943fc0f67"}}]},
+  {"id": "e008", "source": "n005", "target": "n007", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0009", "start": 0, "end": 82, "sha256": "da09864e321fd7e7c1c947b6b24016741108177664fec94ddb23acb91e8f1248"}}]},
+  {"id": "e009", "source": "n006", "target": "n009", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "Wednesday", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 52, "end": 162, "sha256": "973fc026fd9b34cd92d8164e37d74c745441537574c30249d988563c3efbf400"}}]},
+  {"id": "e010", "source": "n009", "target": "n008", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 126, "end": 162, "sha256": "7e57a6900da9ff94ffc3175f4d6211afbc91aea16d77521d0f7e18bc69eb7bd6"}}]},
+  {"id": "e011", "source": "n010", "target": "n005", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "2024", "event_scope": "financial losses in Nigeria in 2024", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}]},
+  {"id": "e012", "source": "n022", "target": "n011", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 0, "end": 128, "sha256": "fe86110ec2571113948c90263ad7ceddf2ea27eeeaa5605a2e14e050845344f3"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0029", "start": 0, "end": 68, "sha256": "5929fe4c7d9ff99ed2c147dcd2dd65da3d5aca9fa7f296fc723551737f8972b5"}}]},
+  {"id": "e013", "source": "n022", "target": "n001", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 0, "end": 177, "sha256": "6348b81d206820a7d469f335b1dc68a417e3ad9c9ed0d13bdad051298366c4c4"}}]},
+  {"id": "e014", "source": "n022", "target": "n002", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0013", "start": 0, "end": 98, "sha256": "73bc7d25449743ebd600b90bc71502ed65d697533a9912e10b451295194ab414"}}]},
+  {"id": "e015", "source": "n022", "target": "n003", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 0, "end": 87, "sha256": "0b5ba7c64f7ba36ffef2984ba1694c0f90643e15058fa2f7c099a13421ce05df"}}]},
+  {"id": "e016", "source": "n022", "target": "n004", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0011", "start": 0, "end": 87, "sha256": "0b5ba7c64f7ba36ffef2984ba1694c0f90643e15058fa2f7c099a13421ce05df"}}]},
+  {"id": "e017", "source": "n022", "target": "n010", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0012", "start": 0, "end": 76, "sha256": "052d7aca95b69c17212eed871b22ebb5ebf7778eed65ddb874a97db32aa9cef6"}}]},
+  {"id": "e018", "source": "n022", "target": "n026", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0005", "start": 0, "end": 170, "sha256": "005c93b05ca03cf9d34057226abfb73deb8c17fb0e16328b1451525b4ed50b8d"}}]},
+  {"id": "e019", "source": "n022", "target": "n027", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 0, "end": 131, "sha256": "208d6662dcc9ea1bbe10e9c2f5c25a8cd686e9c207a95b94388d1a884fd4eab5"}}]},
+  {"id": "e020", "source": "n022", "target": "n028", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 0, "end": 109, "sha256": "22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 133, "end": 245, "sha256": "b313739d6daaa4055d62fc9205731f5241efd3281727752baf6fd5fb00f70789"}}]},
+  {"id": "e021", "source": "n022", "target": "n029", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}]},
+  {"id": "e022", "source": "n022", "target": "n030", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 0, "end": 109, "sha256": "22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159"}}]},
+  {"id": "e023", "source": "n022", "target": "n025", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "Wednesday", "event_scope": "keynote address at the IoT West Africa Conference and Data Centre Cloud Expo", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0004", "start": 97, "end": 218, "sha256": "aa569a25d1539485deb110eba17a432aa63c063ea0d310457f8871b4ae8fc71f"}},
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0006", "start": 0, "end": 125, "sha256": "add7553f4fe51867f07ea7a86d4408ff0e16d8b513b530c8bf5f38c6ea6bfc89"}}]},
+  {"id": "e024", "source": "n025", "target": "n019", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 0, "end": 126, "sha256": "2dcef9c89783cf73d739bc4d83000b60b65f89de59261e9ac66a50b0ade1d647"}}]},
+  {"id": "e025", "source": "n025", "target": "n023", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 0, "end": 126, "sha256": "2dcef9c89783cf73d739bc4d83000b60b65f89de59261e9ac66a50b0ade1d647"}}]},
+  {"id": "e026", "source": "n025", "target": "n024", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0015", "start": 0, "end": 126, "sha256": "2dcef9c89783cf73d739bc4d83000b60b65f89de59261e9ac66a50b0ade1d647"}}]},
+  {"id": "e027", "source": "n026", "target": "n005", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0009", "start": 0, "end": 124, "sha256": "c604fbebd807d622518bf81f1bf5d559def7096a21aa16b3ec1809c6b71c293e"}}]},
+  {"id": "e028", "source": "n027", "target": "n016", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0007", "start": 0, "end": 68, "sha256": "2120fb29f5b7aa1bd252e8fb977214c87eef4df8464ebc05898b1f18ab471232"}}]},
+  {"id": "e029", "source": "n028", "target": "n013", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 216, "sha256": "5a1bbe418017de3d9a35959748e7694954bd4c3c37b9bc697231ada7f49c053a"}}]},
+  {"id": "e030", "source": "n028", "target": "n015", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 0, "end": 109, "sha256": "22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159"}}]},
+  {"id": "e031", "source": "n028", "target": "n018", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 111, "end": 189, "sha256": "72d0c313fc8544b3af840cb834cec5baf54b8f75216bafb37d591780a41ee2bd"}}]},
+  {"id": "e032", "source": "n029", "target": "n005", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "2024", "event_scope": "financial losses in Nigeria in 2024", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0010", "start": 0, "end": 146, "sha256": "293fb2d5eed11752608c89c60a1abac9b43bf9144d55b2aca3b8b5fb5f100b82"}}]},
+  {"id": "e033", "source": "n030", "target": "n015", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Vincent Olatunji", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0235", "paragraph_id": "D0235:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0235:P0014", "start": 0, "end": 109, "sha256": "22eaea79d7e69487b9df7200d2250ce2a690de7e2ddecc8fcd457eb89cd3a159"}}]}
+ ],
+ "context_passages_used": []
+}

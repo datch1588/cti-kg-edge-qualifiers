@@ -1,0 +1,10 @@
+{
+ "audit_file": "R1_T03",
+ "target_doc_id": "D0584",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «threaten» без маркерів подає загрозу як факт, а в D0584:P0011 сказано лише, що такі атаки «can cause» загрози безпеці критичної інфраструктури (possible), до того ж у D0584:P0013 зазначено, що інцидентів, які загрожували б критичній інфраструктурі, не зафіксовано."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0584:P0012 як здійснений факт сказано, що атакувальники зупинили генератор і ротор, «effectively shutting down the power plant» у Гданську, що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly target» подає звʼязок як припущення, а в D0584:P0011 з посиланням на SAB як факт сказано, що хактивісти показали готовність і здатність атакувати системи керування в Латвії і що мета таких атак — покарати мешканців країни (actual), тож маркер «possibly» тут зайвий."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0584:P0011 як факт із посиланням на SAB сказано «Their goal with such attacks is to disrupt service provision», і формулювання «aim to» точно передає цю заявлену мету без додаткових маркерів можливості чи заперечення."}
+ ]
+}

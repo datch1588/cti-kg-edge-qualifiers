@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T40",
+ "target_doc_id": "D0224",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0224:P0024 компанію подано як факт «Trufoundry (US)», що відповідає формулюванню без маркерів (actual, positive)."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0224:P0018 сказано, що «any vulnerability at the infrastructure level can impact the entire AI stack», тобто це можливість, як і в «can impact»."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never leverage» заперечує звʼязок, а D0224:P0020 з посиланням на Check Point стверджує, що багато щотижневих кібератак «are increasingly leveraging AI-based techniques» (actual, positive)."}
+ ]
+}

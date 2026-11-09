@@ -1,0 +1,203 @@
+AUDIT_FILE: QT09A
+TARGET_DOC_ID: D0523
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0523
+PUBLICATION_DATE: 2026-02-23
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6306682
+TITLE_SHA256: 65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+BEGIN_DOCUMENT
+[D0523:P0001] sha256:65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+[D0523:P0002] sha256:906fbda5fd9dde7675960bd576c234cff66505b3db1ecc62448ef60e50e65e01
+[D0523:P0003] sha256:f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57
+[D0523:P0004] sha256:36ce2c1c60914ff26dc7aa5c6093f7486da2569712bbb42e8782885d42bdc7a8
+[D0523:P0005] sha256:8f82a53bc0b10480b38e7d6b55e4184f1ea4aa6ba69a147c1f072724179aa4ac
+[D0523:P0006] sha256:990ee36eb0e55771811c9cd800dbddbd9d6fcba91b1908612c869fbea353ad1c
+[D0523:P0007] sha256:43c9da78bfde5ed2beb41b61876d3aa2f0e6c441b74d2bc689ef36b63d147b61
+[D0523:P0008] sha256:8d01b47206e1264ca796eb013066865da67f3935ce69da0efcc8b5c50d3cefba
+[D0523:P0009] sha256:dc8b87944bcbf48ab66f13d4a06a5ac2d06fc6fa92241ed9d2ae26f5c3e14dfc
+[D0523:P0010] sha256:c97b958632fd1cf6ad84df50e2c08b69593df1314fb67caa612d0a333b4d49d6
+[D0523:P0011] sha256:7866d45752f3cbce62a872f812abf31de5fe3af0d092aa6eaed577d2385d83e1
+[D0523:P0012] sha256:198633fa606af0c8bcea398e9a0e747cf728b5271d49c3145feacc40e186e59f
+[D0523:P0013] sha256:13b1bc79ac0e73f09f3787de27a667edccaae55cecddf90f8dd722fef03f2f9e
+[D0523:P0014] sha256:8df21090a6f464a10d74a87792d61f7a58af5e4620d87b7f01f358512668bb1d
+[D0523:P0015] sha256:9bc6b3ca5ce948e35a34bd175f6b3e8f9bd1c305fa003c719a6b4a1bb44e6d77
+[D0523:P0016] sha256:37a995cf47dd0741622526f75cb09c08c7061629b200a994fa828f033f8a5c0a
+[D0523:P0017] sha256:27161775d7428c11de511b73f48115465832cb257e85d3ae32af4ee9c1017853
+[D0523:P0018] sha256:554561987fe731bdd8e3815bdec6f2fd7c8f5c228f9671baa73e7d1573c2e97f
+[D0523:P0019] sha256:6043c70b20821f367b1a4fa5a8690dce50fbc099e0e6f17eb2ec919387f5809c
+[D0523:P0020] sha256:2916dd5baf3ac49963c7a8fd17b04ecd9afa23a89d0060c37b9d575d3f3c720e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 28, вузлів 9)
+E001: «Concentrix» — provides → «Security Operations Centre (SOC) offerings» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0003] «@0-173 sha256=f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57»
+E002: «Concentrix» — uses → «people- centric security platform» | форма: actual, positive
+  атрибуція: «Rishi Rajpal» | час події: — | контекст події: «strategic partnership between Proofpoint and Concentrix»
+  фрагменти: [D0523:P0009] «@112-321 sha256=3d2e81022bcaf80e0563b805652d872d84960cbbf5f814626ea97cec70364c87»; [D0523:P0009] «@324-410 sha256=c2c52efe862a6ebe4355ff5218dfa13336094382764cec3bef3e9e73cf2b6674»
+E003: «Concentrix» — provides → «SOC offerings» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E004: «Proofpoint» — mitigates → «data loss» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0012] «@172-402 sha256=6a851aeafaea6ef40ce121ff7a7ae10c6c944d888a7ad44121c1d7a697ff1fa1»
+E005: «Nelson Soon» — member of → «Proofpoint» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0008] «@139-243 sha256=5d6ab370811a03821d92be61541acabe4270fb2d28feb041a0ec0c15caa821c8»
+E006: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «strategic partnership between Proofpoint and Concentrix across APAC»
+  фрагменти: [D0523:P0005] «@0-171 sha256=1c6d4eecb42c307d278d969b4225acd6a5724fb9a5747d1dbfedfa1eebe66186»
+E007: «collaboration security and data protection solutions» — part of → «SOC offerings» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@0-171 sha256=1c6d4eecb42c307d278d969b4225acd6a5724fb9a5747d1dbfedfa1eebe66186»
+E008: «Proofpoint» — protects → «AI agents» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0012] «@0-171 sha256=0d68b7b6cae84214c4016c69b205dc3dccb8764c0c1994106e73a0f91669e7a1»
+E009: «Proofpoint» — provides → «human- and agent-centric security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@276-466 sha256=578ab745cd0e78a9f5a0068d6fd260ada95675a0e2035dd35b74c43bae3743c6»
+E010: «Concentrix» — provides → «Security Operations Centre» | форма: actual, positive
+  атрибуція: — | час події: «2026-02-23» | контекст події: —
+  фрагменти: [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E011: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «strategic partnership between Proofpoint and Concentrix»
+  фрагменти: [D0523:P0005] «@0-275 sha256=4ae0815feb45225b3f476bae2e8a87a037bdb81fef825797bc5f60bb4687330a»
+E012: «Proofpoint» — provides → «collaboration security and data protection solutions» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0003] «@0-109 sha256=9ce2d468b0e214824a708abaa468193f0893be9e7c4e7f0282a414e78d41d6cf»
+E013: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «Concentrix integration of Proofpoint solutions into its SOC offerings under the strategic partnership»
+  фрагменти: [D0523:P0005] «@0-171 sha256=1c6d4eecb42c307d278d969b4225acd6a5724fb9a5747d1dbfedfa1eebe66186»
+E014: «collaboration security and data protection solutions» — part of → «SOC offerings» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «Concentrix integration of Proofpoint solutions into its SOC offerings under the strategic partnership»
+  фрагменти: [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E015: «Proofpoint» — provides → «people- centric security platform» | форма: actual, positive
+  атрибуція: «Rishi Rajpal» | час події: — | контекст події: —
+  фрагменти: [D0523:P0009] «@112-204 sha256=d0dbefab46df6912c1dbfd28d12cdf7408f2e5ffa3942791b933f9fa02b360d5»
+E016: «Proofpoint» — provides → «collaboration and data security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0012] «@403-567 sha256=969717688e08a6e6c249e587b9ab5d70d49f469921c957392398804dff028872»
+E017: «Proofpoint» — provides → «collaboration security and data protection solutions» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E018: «Concentrix» — provides → «SOC offerings» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0003] «@0-109 sha256=9ce2d468b0e214824a708abaa468193f0893be9e7c4e7f0282a414e78d41d6cf»; [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E019: «Proofpoint» — provides → «human- and agent-centric security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0012] «@403-567 sha256=969717688e08a6e6c249e587b9ab5d70d49f469921c957392398804dff028872»
+E020: «Proofpoint» — reports on → «data loss» | форма: actual, positive
+  атрибуція: «Proofpoint's 2025 Voice of the CISO report» | час події: «in the past year» | контекст події: «Proofpoint's 2025 Voice of the CISO report findings on loss of sensitive data by Indian CISOs»
+  фрагменти: [D0523:P0006] «@206-358 sha256=a1f51fdfbf4cafb47b065f6fbc8552db22f827609685f1fccf3a26e5f54a4105»; [D0523:P0006] «@538-745 sha256=1e10de062e10625efef3749ca753f8f3968e5596cc0777f77d9052fa78d6bffc»
+E021: «Rishi Rajpal» — member of → «Concentrix» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0009] «@324-410 sha256=c2c52efe862a6ebe4355ff5218dfa13336094382764cec3bef3e9e73cf2b6674»
+E022: «Concentrix» — provides → «Security Operations Centre» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@28-171 sha256=73d79b6e34401af19141123b6a2a11bbfebd7cde685343c116d030de114d8ea9»
+E023: «Proofpoint» — provides → «human- and agent-centric security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0005] «@276-415 sha256=706e68fb31cf5fd7eec7c5fd2e35fb41b6336c3edba371e48004aaf0994cdc75»
+E024: «collaboration security and data protection solutions» — part of → «SOC offerings» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «Proofpoint-Concentrix strategic partnership»
+  фрагменти: [D0523:P0003] «@0-109 sha256=9ce2d468b0e214824a708abaa468193f0893be9e7c4e7f0282a414e78d41d6cf»
+E025: «Concentrix» — uses → «collaboration security and data protection solutions» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «strategic partnership between Proofpoint and Concentrix»
+  фрагменти: [D0523:P0003] «@0-173 sha256=f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57»
+E026: «Proofpoint» — mitigates → «data loss» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0012] «@172-345 sha256=637e7e4ee14d3a9df1365832c2354d0c5b3189c273b1277ffb01a850788715c9»
+E027: «Proofpoint» — provides → «collaboration and data security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «Proofpoint's 2025 Voice of the CISO report findings on loss of sensitive data by Indian CISOs»
+  фрагменти: [D0523:P0012] «@403-567 sha256=969717688e08a6e6c249e587b9ab5d70d49f469921c957392398804dff028872»
+E028: «Proofpoint» — provides → «human- and agent-centric security platform» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0523:P0017] «@207-331 sha256=cd9ee7fe968624273ce8d1344de5ecc7c0b5e98f43583c6fb39d43e2bb0ef021»
+V001: «Asia Pacific» (location) | альтернативні назви: «APAC»
+V002: «Concentrix» (organization) | альтернативні назви: «Concentrix Corporation»
+V003: «human- and agent-centric security platform» (product) | альтернативні назви: «security platform»; «people- centric security platform»; «collaboration and data security platform»
+V004: «collaboration security and data protection solutions» (product) | альтернативні назви: «collaboration and data protection solutions»
+V005: «Proofpoint» (organization) | альтернативні назви: «Proofpoint, Inc.»
+V006: «data loss» (threat_category) | альтернативні назви: «loss of sensitive data»
+V007: «Security Operations Centre (SOC) offerings» (product) | альтернативні назви: «SOC offerings»
+V008: «Security Operations Centre» (other) | альтернативні назви: «SOC»
+V009: «SOC offerings» (product) | альтернативні назви: «Security Operations Centre (SOC) offerings»
+КІНЕЦЬ ЗАПИСІВ

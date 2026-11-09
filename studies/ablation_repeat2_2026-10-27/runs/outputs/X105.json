@@ -1,0 +1,121 @@
+{
+  "run_id": "X105",
+  "target_doc_id": "D0069",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0024", "start": 109, "end": 204, "sha256": "46403370d7fda4621d6c3b21ee17ed0d5b760d960fbc4414a27ceeaff67917aa"}}
+    ]},
+    {"id": "n002", "label": "AT&T", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0017", "start": 116, "end": 210, "sha256": "da86d4ffa443642ed05d2baef48c3a697e795ea91a3e38777181fe947c24af44"}}
+    ]},
+    {"id": "n003", "label": "CIA", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0026", "start": 0, "end": 127, "sha256": "a55aa415dc801aa4c7b03bba8891b5aa968c4702f6a89429b40a9c54dc37b927"}}
+    ]},
+    {"id": "n004", "label": "FBI", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0005", "start": 0, "end": 108, "sha256": "78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1"}}
+    ]},
+    {"id": "n005", "label": "Foreign Intelligence Surveillance Court", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0016", "start": 58, "end": 214, "sha256": "653c3b231dbaff262412f22a57285275c9de1707d3b851343d26c7b83ebaca66"}}
+    ]},
+    {"id": "n006", "label": "House Intelligence Committee", "entity_type": "organization", "aliases": ["House intelligence committee"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0013", "start": 126, "end": 226, "sha256": "cb05253b49087ae3c42e56dc6d9a64d62a31c025f23b11f4661ff156c15c233c"}}
+    ]},
+    {"id": "n007", "label": "House of Representatives", "entity_type": "organization", "aliases": ["House"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0010", "start": 148, "end": 325, "sha256": "03e1b826808045e9ef9ee3c879f3d2ff81f0f0e2b2a298fd6010dadce855b338"}},
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0003", "start": 0, "end": 91, "sha256": "beb78e87a2bb9919817e94e525a4e30e03f2e1f61aab844f1c424ab5c00a8253"}}
+    ]},
+    {"id": "n008", "label": "Microsoft", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0017", "start": 116, "end": 210, "sha256": "da86d4ffa443642ed05d2baef48c3a697e795ea91a3e38777181fe947c24af44"}}
+    ]},
+    {"id": "n009", "label": "NSA", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0005", "start": 0, "end": 108, "sha256": "78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1"}}
+    ]},
+    {"id": "n010", "label": "Office of the Director of National Intelligence", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0026", "start": 0, "end": 127, "sha256": "a55aa415dc801aa4c7b03bba8891b5aa968c4702f6a89429b40a9c54dc37b927"}}
+    ]},
+    {"id": "n011", "label": "Senate Intelligence Committee", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0009", "start": 0, "end": 113, "sha256": "6add968269305f9005236dae759470469abae64792dadefe1d1fbbca908e9d5e"}}
+    ]},
+    {"id": "n012", "label": "United States Senate", "entity_type": "organization", "aliases": ["Senate"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0006", "start": 125, "end": 197, "sha256": "b73ad6c3e89c52cd85d1debbee7f0c6fab15a34dedd8395464b1c394f5506e4b"}},
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0011", "start": 0, "end": 140, "sha256": "9f05f7d0e94f2d913610d0e3cc3a77c2bea30cd014e51b72e361dd274ac09334"}}
+    ]},
+    {"id": "n013", "label": "Foreign Intelligence Surveillance Act", "entity_type": "other", "aliases": ["FISA"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0004", "start": 0, "end": 88, "sha256": "9d0c3c3a76239fb12fe934e0676795dd8a68af2d1aa02f4d71f7328931068914"}},
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0015", "start": 0, "end": 104, "sha256": "286ccd60edb75fb00991d7c889aff26d217d28edfd98adbfe11e54c907575610"}}
+    ]},
+    {"id": "n014", "label": "Section 702", "entity_type": "other", "aliases": ["Section 702 of FISA", "702"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0005", "start": 0, "end": 108, "sha256": "78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1"}},
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0015", "start": 0, "end": 104, "sha256": "286ccd60edb75fb00991d7c889aff26d217d28edfd98adbfe11e54c907575610"}}
+    ]},
+    {"id": "n015", "label": "Stellarwind", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0015", "start": 38, "end": 176, "sha256": "178bfbe25985abf5f5b1ef385041c3636b83938d07c9aa4784f6eab9d5c923cb"}}
+    ]},
+    {"id": "n016", "label": "Bill Pulte", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0014", "start": 334, "end": 425, "sha256": "ad707c174fe4ba321d7a7aa12d7b5a1ef2a18c569d16e828a907b72ead5ee54e"}}
+    ]},
+    {"id": "n017", "label": "Donald Trump", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0003", "start": 170, "end": 284, "sha256": "781a32779100449a281d0b47c28971b956283659402f4147b750f4bddcd7e91e"}}
+    ]},
+    {"id": "n018", "label": "Edward Snowden", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0015", "start": 178, "end": 341, "sha256": "b5fecda53cca4c4e14adc254ac2f9143a5fd4c189daf5f8aacf1b248a8aca939"}}
+    ]},
+    {"id": "n019", "label": "Glenn Gerstell", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0021", "start": 0, "end": 71, "sha256": "553baa2f7b505e928bc387513741eee6a455593993c6eb23996f21e81aaeea41"}}
+    ]},
+    {"id": "n020", "label": "Jay Clayton", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0004", "start": 219, "end": 426, "sha256": "34f0b56821d86c103dfcb4a49a56570f05f4c43d7dbac7d4ac659fbcca3ec90f"}}
+    ]},
+    {"id": "n021", "label": "Jim Himes", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0013", "start": 126, "end": 226, "sha256": "cb05253b49087ae3c42e56dc6d9a64d62a31c025f23b11f4661ff156c15c233c"}}
+    ]},
+    {"id": "n022", "label": "Mark Warner", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0009", "start": 0, "end": 113, "sha256": "6add968269305f9005236dae759470469abae64792dadefe1d1fbbca908e9d5e"}}
+    ]},
+    {"id": "n023", "label": "cyberattacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0023", "start": 0, "end": 122, "sha256": "a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea"}}
+    ]},
+    {"id": "n024", "label": "terror attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0023", "start": 0, "end": 122, "sha256": "a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n004", "target": "n014", "relation_type": "USES",
+     "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0005", "start": 0, "end": 108, "sha256": "78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1"}}
+     ]},
+    {"id": "e002", "source": "n009", "target": "n014", "relation_type": "USES",
+     "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0005", "start": 0, "end": 108, "sha256": "78f036e08f5ac1f829fec0e0558863bd8a10fc8a3674182965a811c561a1c1d1"}}
+     ]},
+    {"id": "e003", "source": "n014", "target": "n013", "relation_type": "PART_OF",
+     "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0004", "start": 0, "end": 88, "sha256": "9d0c3c3a76239fb12fe934e0676795dd8a68af2d1aa02f4d71f7328931068914"}}
+     ]},
+    {"id": "e004", "source": "n019", "target": "n023", "relation_type": "WARNS_ABOUT",
+     "attribution": "Glenn Gerstell", "event_time": "", "event_scope": "potential statutory lapse of Section 702 authority",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0023", "start": 0, "end": 122, "sha256": "a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea"}}
+     ]},
+    {"id": "e005", "source": "n019", "target": "n024", "relation_type": "WARNS_ABOUT",
+     "attribution": "Glenn Gerstell", "event_time": "", "event_scope": "potential statutory lapse of Section 702 authority",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0023", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0023", "start": 0, "end": 122, "sha256": "a3314c07e9545ea4aea99cbfb4a16aa96ac06f5c8f2789558dbd92e08c61dfea"}}
+     ]},
+    {"id": "e006", "source": "n021", "target": "n006", "relation_type": "MEMBER_OF",
+     "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0013", "start": 126, "end": 226, "sha256": "cb05253b49087ae3c42e56dc6d9a64d62a31c025f23b11f4661ff156c15c233c"}}
+     ]},
+    {"id": "e007", "source": "n022", "target": "n011", "relation_type": "MEMBER_OF",
+     "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0069", "paragraph_id": "D0069:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0069:P0009", "start": 0, "end": 113, "sha256": "6add968269305f9005236dae759470469abae64792dadefe1d1fbbca908e9d5e"}}
+     ]}
+  ],
+  "context_passages_used": []
+}

@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T10",
+ "target_doc_id": "D0569",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0569:P0007 прямо сказано як факт, що телекомунікаційні мережі «all rely on private management», що відповідає формулюванню без маркерів (actual, positive)."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання містить маркер можливості «possibly», тоді як у D0569:P0017 стаття подає це як факт: «These practices include ... secure configuration» (actual)."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає інтеграцію як здійснений факт, а в D0569:P0021 стаття лише каже, що стратегії «encourage ... integration of operational technology security with enterprise IT security», тобто це рекомендація (recommended)."}
+ ]
+}

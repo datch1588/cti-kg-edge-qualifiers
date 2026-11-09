@@ -1,0 +1,112 @@
+{
+ "run_id": "R081",
+ "target_doc_id": "D0281",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Winter Park", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0004", "start": 178, "end": 261, "sha256": "c8c7d72e2f77918abbb0728112a70d6526d4db5689c26414f0db24a5826b1b35"}}
+  ]},
+  {"id": "n002", "label": "AWS", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0012", "start": 377, "end": 462, "sha256": "6de0e8820a7d06f83beebae8f4ebd664028810f8089223db699b5047cc2c57cf"}}
+  ]},
+  {"id": "n003", "label": "Cloud Range", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0014", "start": 68, "end": 132, "sha256": "c4d9b21e7047279e99ff74010f8fffccad64ec34b4b9b3cdd7b5995d7a02260d"}}
+  ]},
+  {"id": "n004", "label": "CSS Public Market", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0008", "start": 184, "end": 245, "sha256": "f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325"}}
+  ]},
+  {"id": "n005", "label": "Full Sail University", "entity_type": "organization", "aliases": ["Full Sail"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0004", "start": 49, "end": 213, "sha256": "a3d007cb45684fd8840e80f327d3ea84aa32da8ca9024f315374ec74025cac2e"}},
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0009", "start": 68, "end": 141, "sha256": "a3c437e4e01fd38c84f87b914bd9a958d83d64c050b6f8a5481fbf9fdecfa972"}}
+  ]},
+  {"id": "n006", "label": "IBM", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0008", "start": 184, "end": 245, "sha256": "f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325"}}
+  ]},
+  {"id": "n007", "label": "National Institute of Standards and Technology", "entity_type": "organization", "aliases": ["NIST"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0007", "start": 132, "end": 263, "sha256": "69a02edbc8beb2f104c03f8e22c50954480ce744d4c455f3aa405d5f99bdb923"}}
+  ]},
+  {"id": "n008", "label": "digital forensics", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+  ]},
+  {"id": "n009", "label": "Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range", "entity_type": "other", "aliases": ["Full Sail University IBM Cyber Defense Range", "Cyber Defense Range"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0007", "start": 0, "end": 131, "sha256": "57e9d74e2ebce907c54b5733e43e79875fcc5d8d7443ab18712655a6146bc987"}},
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0012", "start": 1, "end": 68, "sha256": "8c3aa1522c4483bc9742eb3d1e4e796b201c131d5f9fd8bbcfdc89e0387c1df2"}},
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0013", "start": 0, "end": 103, "sha256": "566e38a4f2e48a9f87b73b2ba546bf1c1b7ce933fe5ba4e2ace3d17a66ea9a9c"}}
+  ]},
+  {"id": "n010", "label": "malware analysis", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+  ]},
+  {"id": "n011", "label": "National Initiative for Cybersecurity Education", "entity_type": "other", "aliases": ["NICE"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0007", "start": 132, "end": 263, "sha256": "69a02edbc8beb2f104c03f8e22c50954480ce744d4c455f3aa405d5f99bdb923"}}
+  ]},
+  {"id": "n012", "label": "threat hunting", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+  ]},
+  {"id": "n013", "label": "Debbie Gordon", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0014", "start": 68, "end": 132, "sha256": "c4d9b21e7047279e99ff74010f8fffccad64ec34b4b9b3cdd7b5995d7a02260d"}}
+  ]},
+  {"id": "n014", "label": "Faisal Hanafi", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0012", "start": 377, "end": 462, "sha256": "6de0e8820a7d06f83beebae8f4ebd664028810f8089223db699b5047cc2c57cf"}}
+  ]},
+  {"id": "n015", "label": "Salwa Rafee", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0008", "start": 184, "end": 245, "sha256": "f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325"}}
+  ]},
+  {"id": "n016", "label": "Sean Phalen", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0010", "start": 217, "end": 305, "sha256": "a6c42557be5e98353f1a7df9c1ac5e7d81a71823a98c55b2244aded89d0d2bb0"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n009", "relation_type": "SUPPORTS",
+   "modality": "actual", "polarity": "positive", "attribution": "Faisal Hanafi", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0012", "start": 1, "end": 170, "sha256": "b75f2ef0f3d034ef4c1365d11b00757b3e9f79dde30879a854f1fb5cbf9fb8d2"}}
+   ]},
+  {"id": "e002", "source": "n003", "target": "n009", "relation_type": "SUPPORTS",
+   "modality": "actual", "polarity": "positive", "attribution": "Debbie Gordon", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0014", "start": 134, "end": 334, "sha256": "c0fc280ad75beb795575d8bca340481de9836d5e997d291a6d5a3b8810e59f8e"}}
+   ]},
+  {"id": "e003", "source": "n004", "target": "n006", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0008", "start": 184, "end": 245, "sha256": "f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325"}}
+   ]},
+  {"id": "e004", "source": "n005", "target": "n001", "relation_type": "LOCATED_IN",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0004", "start": 178, "end": 261, "sha256": "c8c7d72e2f77918abbb0728112a70d6526d4db5689c26414f0db24a5826b1b35"}}
+   ]},
+  {"id": "e005", "source": "n005", "target": "n009", "relation_type": "OPERATES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0004", "start": 49, "end": 213, "sha256": "a3d007cb45684fd8840e80f327d3ea84aa32da8ca9024f315374ec74025cac2e"}},
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0009", "start": 0, "end": 141, "sha256": "74cd7e3cc89d3f837dc32709380515c13c6e925f806364109e1690a19ac1ccdf"}}
+   ]},
+  {"id": "e006", "source": "n009", "target": "n008", "relation_type": "ENABLES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+   ]},
+  {"id": "e007", "source": "n009", "target": "n010", "relation_type": "ENABLES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+   ]},
+  {"id": "e008", "source": "n009", "target": "n012", "relation_type": "ENABLES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0011", "start": 205, "end": 337, "sha256": "541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be"}}
+   ]},
+  {"id": "e009", "source": "n013", "target": "n003", "relation_type": "LEADS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0014", "start": 68, "end": 132, "sha256": "c4d9b21e7047279e99ff74010f8fffccad64ec34b4b9b3cdd7b5995d7a02260d"}}
+   ]},
+  {"id": "e010", "source": "n015", "target": "n004", "relation_type": "LEADS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0281", "paragraph_id": "D0281:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0281:P0008", "start": 184, "end": 245, "sha256": "f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,41 @@
+{
+ "run_id": "F126",
+ "target_doc_id": "D0246",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "DDoS", "entity_type": "attack_technique", "aliases": ["distributed denial of service"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0010", "start": 0, "end": 100, "sha256": "e47dd9b0f6f490a3cb3b3f231fd02a2c10e201062e8104f07e54de5ecd4d0068"}}]},
+  {"id": "n002", "label": "Malicious links", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 167, "end": 253, "sha256": "bce69ec3d35657bdac1b8c988304f7d6cad46485c9a68f72f1022c189e2c7cb4"}}]},
+  {"id": "n003", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0013", "start": 0, "end": 66, "sha256": "6956e3f6a5c81670d2ce988226a9d4cecf80cba73f73d050dfd3235ff8d5e6e7"}}]},
+  {"id": "n004", "label": "suspected cyber attack", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 0, "end": 100, "sha256": "77c2e0f7e95c8e4e5decb704a4ef529d4102b90316664f98da54588e3c5d86ad"}}]},
+  {"id": "n005", "label": "Independent Parliamentary Standards Authority", "entity_type": "organization", "aliases": ["Ipsa"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 77, "end": 165, "sha256": "5ee3836585f4e355fc716d6999174d3ab4f352d8616ed7b8293d1897465b95f6"}}]},
+  {"id": "n006", "label": "Parliamentary Digital Service", "entity_type": "organization", "aliases": ["PDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0015", "start": 138, "end": 248, "sha256": "04f80a4893a48e69f7ba0e4304805e88797d3e4b001082925f92cc9ffe4968b0"}}]},
+  {"id": "n007", "label": "Parliamentary Security Department", "entity_type": "organization", "aliases": ["PSD"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0015", "start": 0, "end": 132, "sha256": "fdbf570790124010e5e5d2feb25e0b5ad898c6b1779873331f32817b496bbe36"}}]},
+  {"id": "n008", "label": "daviddavismp.com", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0012", "start": 0, "end": 158, "sha256": "88349750e0c80659260d3b77e66747a9cf32aa22c59ae79a5a9fe47e67de549a"}}]},
+  {"id": "n009", "label": "Nus Ghani", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0014", "start": 0, "end": 52, "sha256": "2862c25677937af56e44e074c201d1eb9b71439188163236c7301c08c3fec746"}}]},
+  {"id": "n010", "label": "Sir David Davis", "entity_type": "person", "aliases": ["Sir David"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 108, "end": 201, "sha256": "4177a8e594213853d9bf824ac5894b627a7ac3f2471c0e0c3265ecb942f07dc4"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n004", "target": "n008", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 0, "end": 100, "sha256": "77c2e0f7e95c8e4e5decb704a4ef529d4102b90316664f98da54588e3c5d86ad"}}]},
+  {"id": "e002", "source": "n004", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 0, "end": 121, "sha256": "4df984898dc23712222ffe9700a69dcdc643f0f8e3f1e5a8c8f90401b2a3ed33"}},
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 312, "end": 422, "sha256": "1d2a8104bb25f36546124d705c96f9144807f3bb048aa02bf98d165d5b45182a"}}]},
+  {"id": "e003", "source": "n004", "target": "n002", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "Last Thursday", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 167, "end": 253, "sha256": "bce69ec3d35657bdac1b8c988304f7d6cad46485c9a68f72f1022c189e2c7cb4"}}]},
+  {"id": "e004", "source": "n005", "target": "n008", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 77, "end": 165, "sha256": "5ee3836585f4e355fc716d6999174d3ab4f352d8616ed7b8293d1897465b95f6"}}]},
+  {"id": "e005", "source": "n010", "target": "n004", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 0, "end": 121, "sha256": "4df984898dc23712222ffe9700a69dcdc643f0f8e3f1e5a8c8f90401b2a3ed33"}}]}
+ ],
+ "context_passages_used": []
+}

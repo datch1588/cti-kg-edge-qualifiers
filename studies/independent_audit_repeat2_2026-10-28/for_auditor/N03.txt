@@ -1,0 +1,246 @@
+AUDIT_BATCH: N03
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N03-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N03-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N03-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 5 (TARGET_DOC_ID: D0474) ===
+DOC_ID: D0474
+PUBLICATION_DATE: 2026-03-04
+SOURCE_URL: https://www.yahoo.com/news/articles/ai-enhanced-ddos-hire-operations-173247560.html
+TITLE_SHA256: 7b66af3dd428ad5dfedee283e00655ce22ccd69596b0979755dc1ce56febba2e
+BEGIN_DOCUMENT
+[D0474:P0001] sha256:7b66af3dd428ad5dfedee283e00655ce22ccd69596b0979755dc1ce56febba2e
+[D0474:P0002] sha256:1243ac11b317ac207ca3f9d0204ac7f76511ecde4a745d13faba6bcfdac12b7c
+[D0474:P0003] sha256:736ac8b58210157af7cb8fd3148c13ff490dd760d8a75a05be6cdd313194b0d2
+[D0474:P0004] sha256:a4e698b44b24cecb73dd24b7350c2a5ca7b4d4dd005ad267f31314ef8d4e491f
+[D0474:P0005] sha256:ec75517e5fc9cf4eb0ec80733c63b255bbb554a92338151a97afed260a2f69e0
+[D0474:P0006] sha256:ef8c716799c7530cd62ef346998bd52db6b62390280090c8b45c776a66576610
+[D0474:P0007] sha256:3f163fd027ef2624f2226d804cdb8cc1b6c17a0827763144eebeacff6f63df42
+[D0474:P0008] sha256:14f1c8b6f289b4cdfc59f31fffd79e508149ac0ee38463a66a5d2303183cf14a
+[D0474:P0009] sha256:94afdf410ae03c1a69554a506e7ec3c21ce1a0998f996e33fa6ea85f59eb9778
+[D0474:P0010] sha256:ae35650ccc7c5488816a06ed16c457d766cecfe5e7c62dccbbbf71315f8ce797
+[D0474:P0011] sha256:2b09af2f3588e95be0e94e830bdb86e1c6ed37118e6ead114ea6f738575b9d04
+[D0474:P0012] sha256:be28cc54eaaaa256d3022f8480a2cde6ae8a0f053e13b4c359b9d3628749ceb5
+[D0474:P0013] sha256:c86516701978bc72984d0487abf621df604224c497ffcf1324f4e9e94573e63c
+[D0474:P0014] sha256:4bb8e75762971583c957509d40589155e24e1c44ba1302c08538cb3a3b06f28e
+[D0474:P0015] sha256:ddb12909189fbda4bbae0921fd7f54ad8d6376fa7d00ecf9497b60bc9524e699
+[D0474:P0016] sha256:2926bdce2d1a1da26775ac8b4352aa48b0fd0b7fae7d90e4c3def0f0ed4ad9b9
+[D0474:P0017] sha256:b3eae3a31d8d7b0c4fb91f43ebde5069e31247d7ded2ffaa3d41c5dbabc4ae6c
+[D0474:P0018] sha256:66e59dce12d06e83f2119620301ff1e7e16f81e60dae3bd3d34e449fef1d465b
+[D0474:P0019] sha256:4fb55677683ff20e62b2d99f285726f4cf864cbb204029a275bb44fe856584d5
+[D0474:P0020] sha256:ee74c73c795c9c81f34e4ac57684e5aab5932e7082c61d1c03186aae4bfc5039
+[D0474:P0021] sha256:d0522fb3aa4f13d0edbe7b52e2d59fa19e54e517c780efc3cb9d051f71335567
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (9)
+N03-E001: «DDoS» — targets → «telecommunications» | форма: actual, positive
+N03-E002: «FraudGPT» — enables → «malware» | форма: actual, positive
+N03-E003: «NETSCOUT» — reports on → «AI-enhanced DDoS-for-hire operations» | форма: actual, positive
+N03-E004: «DDoS» — targets → «transportation» | форма: actual, positive
+N03-E005: «Darren Anstee» — warns about → «hacktivist activity» | форма: actual, positive
+N03-E006: «DDoS Threat Intelligence report» — identified rise in → «hacktivist activity» | форма: actual, positive
+N03-E007: «DDoS» — targets → «North America» | форма: actual, positive
+N03-E008: «DDoS attacks» — targeted → «North America» | форма: actual, positive
+N03-E009: «WormGPT» — enables → «phishing» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 5 (TARGET_DOC_ID: D0633) ===
+DOC_ID: D0633
+PUBLICATION_DATE: 2026-01-13
+SOURCE_URL: https://arxiv.org/abs/2601.06466
+TITLE_SHA256: d8ed3bed8cf9846be231d57fe5966d7d26b1754b95f94110a16ea00e712c9e8e
+BEGIN_DOCUMENT
+[D0633:P0001] sha256:d8ed3bed8cf9846be231d57fe5966d7d26b1754b95f94110a16ea00e712c9e8e
+[D0633:P0002] sha256:3968173147036ed6a8fa677a1eaaf19808cf5f3cf84623afbabc898662a965ce
+[D0633:P0003] sha256:e00efec4d3ae0dd9dc2168455ec023ea8fabcb5ea10d2290d4e23e5c2d01f094
+[D0633:P0004] sha256:d218ba402c412f8d5b2c31dc6e5207401e2b99ee5ca67537b321adaa1f997fab
+[D0633:P0005] sha256:6717e307137c69b9dab6e8595794b60821bad5f71f7aad5498f12029e68bede0
+[D0633:P0006] sha256:d9d7c1db13d0008a5f6554baa84c054c1771fae91f6dda131380cac280e1bc90
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (7)
+N03-E010: «secure aggregation» — mitigates → «inference» | форма: actual, positive
+N03-E011: «IoT devices» — are deployed in → «industrial control systems» | форма: actual, positive
+N03-E012: «SecureDyn-FL» — is designed for → «intrusion detection in IoT networks» | форма: actual, positive
+N03-E013: «dynamic temporal gradient auditing» — uses → «SecureDyn-FL» | форма: actual, positive
+N03-E014: «SecureDyn-FL» — uses → «dynamic temporal gradient auditing» | форма: actual, positive
+N03-E015: «SecureDyn-FL» — uses → «secure aggregation» | форма: actual, positive
+N03-E016: «secure aggregation» — mitigates → «eavesdrop- ping attacks» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 5 (TARGET_DOC_ID: D0523) ===
+DOC_ID: D0523
+PUBLICATION_DATE: 2026-02-23
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6306682
+TITLE_SHA256: 65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+BEGIN_DOCUMENT
+[D0523:P0001] sha256:65f69a5fee69d6fd19abe823996a881f3cdeaf6b6aafce3564c0c71dd6a3d8b4
+[D0523:P0002] sha256:906fbda5fd9dde7675960bd576c234cff66505b3db1ecc62448ef60e50e65e01
+[D0523:P0003] sha256:f60d7eb696dfe456dfb9317f0b42d90bf7f0c0aa11da77261141a582de1ffe57
+[D0523:P0004] sha256:36ce2c1c60914ff26dc7aa5c6093f7486da2569712bbb42e8782885d42bdc7a8
+[D0523:P0005] sha256:8f82a53bc0b10480b38e7d6b55e4184f1ea4aa6ba69a147c1f072724179aa4ac
+[D0523:P0006] sha256:990ee36eb0e55771811c9cd800dbddbd9d6fcba91b1908612c869fbea353ad1c
+[D0523:P0007] sha256:43c9da78bfde5ed2beb41b61876d3aa2f0e6c441b74d2bc689ef36b63d147b61
+[D0523:P0008] sha256:8d01b47206e1264ca796eb013066865da67f3935ce69da0efcc8b5c50d3cefba
+[D0523:P0009] sha256:dc8b87944bcbf48ab66f13d4a06a5ac2d06fc6fa92241ed9d2ae26f5c3e14dfc
+[D0523:P0010] sha256:c97b958632fd1cf6ad84df50e2c08b69593df1314fb67caa612d0a333b4d49d6
+[D0523:P0011] sha256:7866d45752f3cbce62a872f812abf31de5fe3af0d092aa6eaed577d2385d83e1
+[D0523:P0012] sha256:198633fa606af0c8bcea398e9a0e747cf728b5271d49c3145feacc40e186e59f
+[D0523:P0013] sha256:13b1bc79ac0e73f09f3787de27a667edccaae55cecddf90f8dd722fef03f2f9e
+[D0523:P0014] sha256:8df21090a6f464a10d74a87792d61f7a58af5e4620d87b7f01f358512668bb1d
+[D0523:P0015] sha256:9bc6b3ca5ce948e35a34bd175f6b3e8f9bd1c305fa003c719a6b4a1bb44e6d77
+[D0523:P0016] sha256:37a995cf47dd0741622526f75cb09c08c7061629b200a994fa828f033f8a5c0a
+[D0523:P0017] sha256:27161775d7428c11de511b73f48115465832cb257e85d3ae32af4ee9c1017853
+[D0523:P0018] sha256:554561987fe731bdd8e3815bdec6f2fd7c8f5c228f9671baa73e7d1573c2e97f
+[D0523:P0019] sha256:6043c70b20821f367b1a4fa5a8690dce50fbc099e0e6f17eb2ec919387f5809c
+[D0523:P0020] sha256:2916dd5baf3ac49963c7a8fd17b04ecd9afa23a89d0060c37b9d575d3f3c720e
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (7)
+N03-E017: «collaboration security and data protection solutions» — part of → «Security Operations Centre» | форма: actual, positive
+N03-E018: «Concentrix» — collaborates across → «Asia Pacific» | форма: actual, positive
+N03-E019: «Taiwan News» — republished partnership announcement on → «2026.02.23» | форма: actual, positive
+N03-E020: «Concentrix» — integrates → «Proofpoint data protection solutions» | форма: actual, positive
+N03-E021: «Concentrix» — integrates → «Proofpoint collaboration security solutions» | форма: actual, positive
+N03-E022: «Proofpoint» — announced partnership in → «New Delhi» | форма: actual, positive
+N03-E023: «collaboration security and data protection solutions» — part of → «SOC offerings» | форма: planned, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+=== СТАТТЯ 4 з 5 (TARGET_DOC_ID: D0069) ===
+DOC_ID: D0069
+PUBLICATION_DATE: 2026-06-12
+SOURCE_URL: https://www.nextgov.com/policy/2026/06/house-vote-puts-section-702-brink-historic-lapse-amid-fight-over-acting-spy-chief/414136/
+TITLE_SHA256: 983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+BEGIN_DOCUMENT
+[D0069:P0001] sha256:983ab869d805d90ccffb88c5fd4bc7301f240649d4bc777432754191adfc2a1a
+[D0069:P0002] sha256:e80181a03d36305754701ab93f16a0dcf70b1c2e0588f9a25efbb4f1bb26b0e5
+[D0069:P0003] sha256:b187522810127ece794cb48c3e553520f063b79b154c9b6d83cc1c6d730ee8d4
+[D0069:P0004] sha256:8dc5b08d536f17aaec250f03384e508adae88191807d4e4ec84a9d033807e2e8
+[D0069:P0005] sha256:f259e65420e664107ad58dbb1b8a1658a17914faa0ed0f1439cee8cfa69c02b3
+[D0069:P0006] sha256:67773ccb7b19d2aeceb9092a1e3838f677dfebfce403896a9b991729f87a0598
+[D0069:P0007] sha256:f0f82c180d489f86808aebed93b64ff72659ef4bc7ef16bf1b6a14dc8a39fdb7
+[D0069:P0008] sha256:ea55264cad0744b7305d6bb8d67caf8372186470dcf8c7730a05c6b5e51d8643
+[D0069:P0009] sha256:34e1941448a3fcb3c07d9b82bc7e610741031595271c5a258af1b83126ff1527
+[D0069:P0010] sha256:f38242b0d96aa40ae3d47e8af0c6d0304b975af2b4b6ce14bd8f790940d7180f
+[D0069:P0011] sha256:9f05f7d0e94f2d913610d0e3cc3a77c2bea30cd014e51b72e361dd274ac09334
+[D0069:P0012] sha256:6d034e99a8c6e643aa090361e8ecc7ef62c596a28a300a1234d0d768ada16d59
+[D0069:P0013] sha256:d42b22cb3169b133de1f4f64840a0474823764a7c16678b7557a35ec5a661af4
+[D0069:P0014] sha256:0d0cfedf2f939a1e0effdbe89c21682cc417d541f5fe7a6a8f7a3d64d5776402
+[D0069:P0015] sha256:a19ec4b8de2ece4766895c708ea56bed65450d61c0b2120d5fea56235fec9e40
+[D0069:P0016] sha256:ce3b8a9162801d9864145572e1b4dc5313605f4c458f6b538ed2575b80082433
+[D0069:P0017] sha256:cac01b8f83f0395c30ed5abf0159cf0df4f399f0bd0704f9229b1a35a29b5e38
+[D0069:P0018] sha256:5f8ac9557843c6df242f6749f5921806f6f61347b343351056a2b1d2c1a2e23b
+[D0069:P0019] sha256:0e613c983c33226e388a80e2294bd3bc971cd7423fa317c47fafa1ed7df9a05a
+[D0069:P0020] sha256:6a1d4bf882175cf72b6618cfedea5c06ca1b49233540b4628c4be10b01e9b452
+[D0069:P0021] sha256:553baa2f7b505e928bc387513741eee6a455593993c6eb23996f21e81aaeea41
+[D0069:P0022] sha256:d9043b58a228ef3fb5b0d8b10da175179ab0a0ff8a819fb4f315e6df3c10566f
+[D0069:P0023] sha256:bacc752e9c931231fce5fa784e918a1a88bf6570e9e893da2703acfd72f450d6
+[D0069:P0024] sha256:dc18f3e3c7f04a315438eae99c2c70b2ec8cd6eda667391d9c182b7dd1ee3458
+[D0069:P0025] sha256:fc13334012fdff190409579062b043a45ddca1bd9f6b158f6518139f6713b502
+[D0069:P0026] sha256:3ac96c9cdb27a6c3cf90387ff1ad7a33c6ec93e3502603a8a3aab4d6bfde1abf
+[D0069:P0027] sha256:682cc4c5ec8af8c3ad99996ca20e009a8d2de317dbb9889ec5c3605da0378dab
+[D0069:P0028] sha256:52f7ed557459b03ddec2b137f586602ff539aa60851510d868da1bb8e8d9af62
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 4 (7)
+N03-E024: «Jim Himes» — member of → «House Intelligence Committee» | форма: actual, positive
+N03-E025: «Mark Warner» — member of → «Senate Intelligence Committee» | форма: actual, positive
+N03-E026: «Section 702» — was enacted in → «2008» | форма: actual, positive
+N03-E027: «Foreign Intelligence Surveillance Court» — renewed certifications in → «March» | форма: actual, positive
+N03-E028: «Section 702» — is part of → «Foreign Intelligence Surveillance Act» | форма: actual, positive
+N03-E029: «FBI» — uses Section 702 to trace origin of → «ransomware attack» | форма: actual, positive
+N03-E030: «Section 702» — certifications cover → «cyber threats» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 4
+
+=== СТАТТЯ 5 з 5 (TARGET_DOC_ID: D0289) ===
+DOC_ID: D0289
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/hims-hers-data-breach-2026-what-happened-and-why-it-matters/
+TITLE_SHA256: 41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+BEGIN_DOCUMENT
+[D0289:P0001] sha256:41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+[D0289:P0002] sha256:604ce0f10deb5fd3e5f7838ad96464e8b0031456b75ab3cf3201464b3241fb7b
+[D0289:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0004] sha256:ecd154fae8eff04f22fd4c4b61fb6429badf8e828066541cddc81cf4ed99ef6e
+[D0289:P0005] sha256:9f86568e0c7353e89415f5a71eeb5fcaff6fba5f5475ae94fb76fdf57cb0b327
+[D0289:P0006] sha256:5f90b9586f494ef7a460f898671216a8afeb4877948a63e5ba7127e14d727c07
+[D0289:P0007] sha256:1bb37376321beea0a4691462cffcb47c0686d7b7a7f912e0fc67ede9a9cd90ba
+[D0289:P0008] sha256:2b2c514f71bb088aa1a5eb89f0e151c79aa20b2469502975e15a283bf9a6e75f
+[D0289:P0009] sha256:4d4a2f7d5213edc6e5109721107b2905d6b32beab7ea19029f0abd4eb4954237
+[D0289:P0010] sha256:6abcb83bcb9335a88ea8242f0e4110ac2c81397be7413d13fe7a1dc0d5aa3696
+[D0289:P0011] sha256:3590a0886332de2349b4a62ffbb3d7cef662601c6c12674504369a8e1875b7cd
+[D0289:P0012] sha256:09011dd4684fe114c86b1bf6f589ec9dfd3596fccc2cd518079a7b3078d1293f
+[D0289:P0013] sha256:51677db3dd1b252dabc57c85c6c090d0ab92a569bfa2a9b3fec186a6f3a4ee84
+[D0289:P0014] sha256:cc6ee268ad2eb5455a499140813d951fce9d8b682bd1fc58e0df29f0ff3153e7
+[D0289:P0015] sha256:7b4df4296989133d3526a187a7bca5c91d2332f3ae3ca79762bb2259fdb928e1
+[D0289:P0016] sha256:406b68bcb56824a1223bb5de7b53f04b241f4a0455a543ec090d277190169a4f
+[D0289:P0017] sha256:57d342c5488b93d4e582e83054ff74f8c3a85f46a763d46dbb76ef522528ddbe
+[D0289:P0018] sha256:17b75e20421df65d978cc3141809356b2a19224621ce2251278290000f5bc80c
+[D0289:P0019] sha256:6597e683895ce5ae92a64ef97998e71605da83712e47c9fb7dd2db7bc905a45a
+[D0289:P0020] sha256:b931121cedf72e2b23bf0942dd799d3d7b68be47564b7420763cb4d74134da68
+[D0289:P0021] sha256:14368b223c7c2c60f38b05a39489d05f13f76f50f303f1a09162ae5dd877525f
+[D0289:P0022] sha256:c604b33edaf6347c35ceda57d32abc3f261dc48f7860dd23d88809d3be787303
+[D0289:P0023] sha256:44ec0e7c88c683a4c444474b7785029ac6f36b36c8bd302b5f4357cac3d75b83
+[D0289:P0024] sha256:eb10d945b58de6f46fbb0086609ae739b9ca63579bc13863b80b26d2e2ceb261
+[D0289:P0025] sha256:25db46de38b5681d764bad7ece876e009593379596245ac99e9c165fb0abfbfe
+[D0289:P0026] sha256:3e8b5476cf1af379d8d7e6d020c926a61e3da0fd9b22a524833f7615b44de5f4
+[D0289:P0027] sha256:fc060985e0240c162f20dcd78a8510b2f4031f37546fe1b535d85f574c63875f
+[D0289:P0028] sha256:184500290f777c0076588ffae25d024c8856b4f2f7959a63bbab42dca753a639
+[D0289:P0029] sha256:973de897dbb8d5ba671adb4b74355823b40745c7b13e3521a4e0e110704a4143
+[D0289:P0030] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0031] sha256:49741f6fa3dab917f342e2cac0dacf218768a6956309c65e49c8378a9e548609
+[D0289:P0032] sha256:48229aa32ec086785c260e85744916e6ef3bda6f6b3e88b27a7b2ba1337c2e7f
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 5 (11)
+N03-E031: «ShinyHunters» — may be behind → «Hims & Hers data breach» | форма: actual, positive
+N03-E032: «Hims & Hers data breach» — uses → «social engineering» | форма: actual, positive
+N03-E033: «cybercriminals» — may use stolen data for → «identity theft» | форма: actual, positive
+N03-E034: «Hims & Hers data breach» — affects → «third-party customer service platform» | форма: actual, positive
+N03-E035: «Hims & Hers data breach» — compromised → «names» | форма: actual, positive
+N03-E036: «single sign-on account» — used to enter → «connected customer service platform» | форма: actual, negative
+N03-E037: «cybercriminals» — may use stolen data for → «phishing attacks» | форма: actual, positive
+N03-E038: «Hims & Hers data breach» — exposed → «sensitive customer information» | форма: actual, positive
+N03-E039: «Hims & Hers data breach» — compromised → «details shared during customer support interactions» | форма: actual, positive
+N03-E040: «Hims & Hers data breach» — compromised → «email addresses» | форма: actual, positive
+N03-E041: «ShinyHunters» — targets → «cloud services» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 5
+
+КІНЕЦЬ ФАЙЛУ N03. Усього записів у файлі: 41 (від N03-E001 до N03-E041).

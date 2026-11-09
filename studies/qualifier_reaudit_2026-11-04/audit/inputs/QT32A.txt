@@ -1,0 +1,197 @@
+AUDIT_FILE: QT32A
+TARGET_DOC_ID: D0329
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0329
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://www.helpnetsecurity.com/2026/04/07/acronis-mdr-by-acronis-tru/
+TITLE_SHA256: 93dbae63c904184809bce74777946a93d8cfd751a886346a063a72561ea1fc38
+BEGIN_DOCUMENT
+[D0329:P0001] sha256:93dbae63c904184809bce74777946a93d8cfd751a886346a063a72561ea1fc38
+[D0329:P0002] sha256:0353f14e96ecfdc40f6d7884afcce73cd0f08b60cbf07643c0f547f8d9b01bf3
+[D0329:P0003] sha256:42094e50ff12599ab529dc1347c1aef33d239f447270eba09fad40d430d1a2b6
+[D0329:P0004] sha256:294b2ec0e468014ce64c6bfc5569d6fb38a6cf5fae50034ee7cc509e9108d5c1
+[D0329:P0005] sha256:b76b8423d2c9090da242c534b0e7b45d5b1c2f020686042063acaa505cc62413
+[D0329:P0006] sha256:daa3b072612a3114b0a7be41aaaad99d8e077eb76f2338a67ba975a7fed23deb
+[D0329:P0007] sha256:ec56de3e607b22f5e6515ee309cdc470ea91d6d9cdad5e9a6ef9ad992be30de6
+[D0329:P0008] sha256:dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b
+[D0329:P0009] sha256:7d35724971506b5476cb9d02fa648efeaace5b35cdbed049f0312032d752394e
+[D0329:P0010] sha256:93156a0230a549ae8d0cf8f8ea21816741e2c9fe00abb91b4d40a1c53473a3ec
+[D0329:P0011] sha256:d60674c26485fc9fa0c66a99f4bea1ed3c207906c62ed8a7a9a8984a161749f6
+[D0329:P0012] sha256:554e6289937fbe98609d732aecb7573f4991dcfa33e9388b373a6c53390cf7da
+[D0329:P0013] sha256:ab7d3beaae7e768463804aea1153a1d432c9bc2aea47989d71ff8509115bff7f
+[D0329:P0014] sha256:4d7a4180889967c098bd327d49e27724d66803ebd487d63002b0f018fa548497
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 29, вузлів 6)
+E001: «MSSP partners» — provides → «Acronis MDR by Acronis TRU» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0011] «@0-110 sha256=5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6»
+E002: «SIX ICT» — uses → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: «Robert Nieuwenhuijse» | час події: — | контекст події: —
+  фрагменти: [D0329:P0010] «@156-227 sha256=580c64675733e5477bbafdbe33f2952723b6ff4443b1210ce9417e9ef98f4853»
+E003: «Robert Nieuwenhuijse» — leads → «SIX ICT» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0010] «@230-271 sha256=c66aa905ca0bf44c334b26801b13bec3e6bf23c411e55b258d0a16f509eb2d12»
+E004: «Acronis Threat Research Unit» — part of → «Acronis» | форма: actual, positive
+  атрибуція: — | час події: «2026-04-07» | контекст події: —
+  фрагменти: [D0329:P0007] «@59-165 sha256=2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603»
+E005: «Acronis MDR by Acronis TRU» — uses → «patch management» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-358 sha256=928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f»; [D0329:P0008] «@58-157 sha256=3787c7ea414935d2b9c460fa6083aaf636151d5a8b09123f8f44a2381df0f37f»
+E006: «Acronis MDR by Acronis TRU» — enables → «business continuity» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0006] «@0-242 sha256=daa3b072612a3114b0a7be41aaaad99d8e077eb76f2338a67ba975a7fed23deb»
+E007: «Acronis MDR by Acronis TRU» — enables → «cyber resilience» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-449 sha256=b8813c712eeb1f10d736706440e5e827afce3bc19ffba4cad51f81be79bf622c»; [D0329:P0006] «@0-242 sha256=daa3b072612a3114b0a7be41aaaad99d8e077eb76f2338a67ba975a7fed23deb»
+E008: «SIX ICT» — uses → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: «Robert Nieuwenhuijse» | час події: — | контекст події: —
+  фрагменти: [D0329:P0010] «@94-272 sha256=a65b6465d7f825af1d3a09b6cd90eeffcf106573744dcd1ef8ea37ae0ef6df84»
+E009: «Acronis MDR by Acronis TRU» — uses → «attack rollback» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0008] «@0-157 sha256=dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b»
+E010: «Acronis Threat Research Unit» — part of → «Acronis» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0007] «@59-165 sha256=2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603»
+E011: «MSSP partners» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0011] «@0-110 sha256=5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6»; [D0329:P0012] «@0-111 sha256=e03c32e7e20d7159752845e3c6f4aef07b0e40dac228734de592fd166610def8»
+E012: «Acronis Threat Research Unit» — operates → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0003] «@169-356 sha256=04893aeb5dfb3c471938966be51910204d3f5019320d4f73af4b7cd261c23ffe»; [D0329:P0007] «@59-165 sha256=2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603»
+E013: «Acronis Threat Research Unit» — operates → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0002] «@210-338 sha256=188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6»; [D0329:P0007] «@59-165 sha256=2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603»
+E014: «MSSP partners» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0011] «@0-110 sha256=5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6»
+E015: «Acronis MDR by Acronis TRU» — uses → «patch management» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-358 sha256=928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f»; [D0329:P0008] «@0-157 sha256=dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b»
+E016: «Acronis» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: «Acronis» | час події: — | контекст події: —
+  фрагменти: [D0329:P0002] «@0-139 sha256=43268f10818a95d9d8940bf54059aad8e76f6f8a65c4e47b79730e73892a1099»
+E017: «SIX ICT» — uses → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: «Robert Nieuwenhuijse» | час події: — | контекст події: —
+  фрагменти: [D0329:P0010] «@156-272 sha256=86421efcd994f4765fc8881fe31cacc15a02833388d14d200c8aa597f33cfdf3»
+E018: «Acronis Threat Research Unit» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0002] «@210-338 sha256=188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6»; [D0329:P0003] «@169-356 sha256=04893aeb5dfb3c471938966be51910204d3f5019320d4f73af4b7cd261c23ffe»
+E019: «Acronis Threat Research Unit» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0002] «@210-338 sha256=188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6»; [D0329:P0003] «@224-356 sha256=3119ea1b142901191bae7f05c367f8d3171716489ff6383bc695f3410d484001»
+E020: «managed service providers» — provides → «managed detection and response» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0012] «@113-208 sha256=06d7e3f431702d95c91ec39e90686984aa07fe13924a1d045aeb80dc0d9d856b»
+E021: «Acronis Threat Research Unit» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «launch of Acronis MDR by Acronis TRU»
+  фрагменти: [D0329:P0002] «@210-338 sha256=188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6»; [D0329:P0003] «@224-356 sha256=3119ea1b142901191bae7f05c367f8d3171716489ff6383bc695f3410d484001»
+E022: «Acronis MDR by Acronis TRU» — enables → «incident response» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-449 sha256=b8813c712eeb1f10d736706440e5e827afce3bc19ffba4cad51f81be79bf622c»
+E023: «Gaidar Magdanurov» — leads → «Acronis» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0005] «@120-164 sha256=1da71975413ea08398eb2839740a9a46757705df672682e64142d303ac2717ba»
+E024: «Acronis MDR by Acronis TRU» — uses → «endpoint detection and response» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-358 sha256=928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f»
+E025: «Acronis MDR by Acronis TRU» — uses → «attack rollback» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0008] «@58-157 sha256=3787c7ea414935d2b9c460fa6083aaf636151d5a8b09123f8f44a2381df0f37f»
+E026: «Acronis MDR by Acronis TRU» — part of → «Acronis MDR portfolio» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0011] «@0-110 sha256=5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6»; [D0329:P0012] «@0-111 sha256=e03c32e7e20d7159752845e3c6f4aef07b0e40dac228734de592fd166610def8»
+E027: «Acronis MDR by Acronis TRU» — uses → «business continuity» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-358 sha256=928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f»
+E028: «Acronis» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: «Acronis» | час події: — | контекст події: «launch of Acronis MDR by Acronis TRU»
+  фрагменти: [D0329:P0002] «@0-139 sha256=43268f10818a95d9d8940bf54059aad8e76f6f8a65c4e47b79730e73892a1099»
+E029: «Acronis Threat Research Unit» — operates → «Acronis MDR by Acronis TRU» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0329:P0004] «@202-449 sha256=b8813c712eeb1f10d736706440e5e827afce3bc19ffba4cad51f81be79bf622c»
+V001: «managed detection and response» (technology) | альтернативні назви: «MDR»
+V002: «Acronis MDR by Acronis TRU» (product) | альтернативні назви: «Acronis MDR by TRU»
+V003: «Acronis MDR by Acronis TRU» (product) | альтернативні назви: «Acronis MDR by TRU»; «Acronis MDR»
+V004: «Acronis Threat Research Unit» (organization) | альтернативні назви: «Acronis TRU»; «TRU»; «Acronis' Threat Research Unit»
+V005: «Acronis Threat Research Unit» (organization) | альтернативні назви: «Acronis TRU»; «TRU»
+V006: «managed service providers» (organization) | альтернативні назви: «MSPs»
+КІНЕЦЬ ЗАПИСІВ

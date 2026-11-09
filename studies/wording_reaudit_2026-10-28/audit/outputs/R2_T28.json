@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T28",
+ "target_doc_id": "D0305",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне («never use»), тоді як у D0305:P0015 стаття стверджує як факт, що зловмисники використовують ШІ, щоб «Summarize stolen data»."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0305:P0002 і D0305:P0043 стаття подає як факт, що хакери використовують ШІ, щоб «scale cyberattacks», що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "Формулювання «capable of» передає здатність, тобто можливість, а не здійснений факт, і так само D0305:P0024 обережно подає це як можливість: «malware appeared capable of dynamically generating scripts» в окремих експериментах."}
+ ]
+}

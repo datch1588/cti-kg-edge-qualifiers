@@ -1,0 +1,443 @@
+AUDIT_BATCH: N04
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N04-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N04-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N04-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 5 (TARGET_DOC_ID: D0281) ===
+DOC_ID: D0281
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.prnewswire.com/news-releases/ribbon-cutting-ceremony-marks-official-opening-of-the-full-sail-university-ibm-cyber-defense-range-powered-by-aws-and-cloud-range-302745188.html
+TITLE_SHA256: 5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+BEGIN_DOCUMENT
+[D0281:P0001] sha256:5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+[D0281:P0002] sha256:803e417c0e62c2b0d9a38396574862bb1532adc28905b528985b6880b23616cc
+[D0281:P0003] sha256:81178352ee8a2a943c1670d92af7ef42b20ac62c56d60e01d2f1939be8d915b1
+[D0281:P0004] sha256:8956d7b986f57e465096d93dc1d843cadc070e2bf2d9900d6af8e4a8e06dbc24
+[D0281:P0005] sha256:31f2dc9188f5671fca2b772944f59c5eabcbbc97c000956ae2fc2bd56d94a091
+[D0281:P0006] sha256:5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+[D0281:P0007] sha256:7f0c0a721086b4cfd12679c796ac41701adb5773e6624599752e4585c2a74966
+[D0281:P0008] sha256:de8434353498e6d8e7eb2b0b7c7158b139f6a6ee32a622f5f1f13a7d5595b388
+[D0281:P0009] sha256:5af2daa76f069924fbd535fbcc8c2fe6956e2546b90fe57b825324fdf88e8097
+[D0281:P0010] sha256:753da0594bd6c0d2b73d306809d9dd1a0f744bcbcedf7233e680763485bb5f0a
+[D0281:P0011] sha256:78ea4998226e15bcf5be632237d3259e30c5fdb7cff85d20e1475f945b840a6a
+[D0281:P0012] sha256:534021b90c6bc0ebcc762c7c6f142b00a8c388527f69e9732b4fe2a01ab6c9ed
+[D0281:P0013] sha256:bb83a07e8eb1418957e4d1d7350b861ba6d050fa14636699c0b678bfa794dc53
+[D0281:P0014] sha256:8de0ecb57acaa29e7a6ac9dce95e2625131bea778e285c3a1ca820dcabd36b78
+[D0281:P0015] sha256:df770ed0360f5ef161171165d8ce68b8a2962e3658ddbe3e56e810b49e49795f
+[D0281:P0016] sha256:0c76901612746e54bec81f05ef68b3adad8279fdaecec744933575f0c5e9a6c2
+[D0281:P0017] sha256:2418da12fbac5c40c28a4cc57a8089ef38827b588f98adc829937d6917fca9d4
+[D0281:P0018] sha256:b8c4d61e70aea188d1f334e7f088e23e1b06d4a0584fcd67a3cdfda23335fde5
+[D0281:P0019] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0281:P0020] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0281:P0021] sha256:20b97f928e594c06bc359e959f975562df30a166ab966eae5c0fbfd7e25de99d
+[D0281:P0022] sha256:b128bfacd79987dc1242559fbe1f9c06cd4b566f5cd88cd05573a6db3ff37cf2
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (4)
+N04-E001: «Salwa Rafee» — leads → «CSS Public Market» | форма: actual, positive
+N04-E002: «Full Sail University» — located in → «Winter Park, FL» | форма: actual, positive
+N04-E003: «Cloud Range» — supports → «AWS» | форма: actual, negative
+N04-E004: «Full Sail University IBM Cyber Defense Range» — will serve as hub for collaboration with → «industry partners, local businesses, and government agencies» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 5 (TARGET_DOC_ID: D0569) ===
+DOC_ID: D0569
+PUBLICATION_DATE: 2026-02-05
+SOURCE_URL: https://www.helpnetsecurity.com/2026/02/05/cybersecurity-planning-national-cybersecurity-strategy/
+TITLE_SHA256: 4c7749329c815bf1ca5a84b8effb3e81ced547053a9dc439336308672fc71830
+BEGIN_DOCUMENT
+[D0569:P0001] sha256:4c7749329c815bf1ca5a84b8effb3e81ced547053a9dc439336308672fc71830
+[D0569:P0002] sha256:4e2edbe949995d97e63e994f3e2174fb880c5188b9b865339eb35e9dce232ab4
+[D0569:P0003] sha256:64dfa6273fbf1cda5cd0745b5390ae4c4aff397f6f2ed356a1f328faced0f234
+[D0569:P0004] sha256:fb18399cbba2cd8abc34eca927a73bf1fc759f90872afba67bbc8e4a1b94e5f1
+[D0569:P0005] sha256:630e3bb5d1b0641597eb75377530baf7036b646ee93d99bc2babc85af36b911f
+[D0569:P0006] sha256:ef8592089fcb95f679f8eb40919fba440bfc8a2e3d7b5ded94260e78816ca6e2
+[D0569:P0007] sha256:0206349e970bed094cea06a2c1fe6d5bb1cf60be15b41ee76d55ceb443833681
+[D0569:P0008] sha256:10f7b6876a0f09f30d70af9bc621b97754f722afe7bae9c5ebc67398d7fc3998
+[D0569:P0009] sha256:c3d80ef125fff8c03dcbbc427aa2fc129482c231e8362800573a89c45111b753
+[D0569:P0010] sha256:3913fa1581e25cf9931a3228a3ea9a7a9ce149edd4a87008468850446b483c96
+[D0569:P0011] sha256:e0f6c7a2d332817d1dc0cc7dc0fe76df1a4e5f1d2a64a0d458fdd65b78b1b10b
+[D0569:P0012] sha256:0f061119ecc16b17bf709848e4d28e58f17a5d7e4725390b8977ee5182f0edb6
+[D0569:P0013] sha256:47661b74ae33a8a6a75595f65bcfb60b97fa741c885e4a937017360782bac20a
+[D0569:P0014] sha256:d4975d880e27b045ae6d85ff21526c53f70cb555342404f60e18694fb2e91284
+[D0569:P0015] sha256:4812e526866f8e9ae997f41e27fca8b7c10f85987413d2b10c536f83e744f3de
+[D0569:P0016] sha256:dd18414b544b01e47947edcd65f0cb11d51715db9a94cc85311e8e90e086bf07
+[D0569:P0017] sha256:f339125cce71613692a4d17abae26f532fff52fd2d32874a5a40161448833dc6
+[D0569:P0018] sha256:e37af9d7f05b9dda345e6fb11ef302ec4552b99863f0c423bbb36cb1f7ed54b4
+[D0569:P0019] sha256:bfa2978c3670c57547549ab02eb42033ab15d9c25f3286368a2b94924b45c1a4
+[D0569:P0020] sha256:10f84c1a8392d3f252665ea36eaeca7ff4050c2b9fbe285a5706cd6118c6d90f
+[D0569:P0021] sha256:0a6fbef08a8fab52f5a6613ca9e804b2756c9ceaa18a4cd8695cd523c4eac428
+[D0569:P0022] sha256:b4d96468fdf66c6b826faa50f9b6db1921170263e2ae3216c28067e370aae40f
+[D0569:P0023] sha256:ec92a7897ac378005e5cbfc4adcd51c8d4daee1994d5f17abd40071993f46b45
+[D0569:P0024] sha256:d9223f38b81c4de3470722883c932c0421ec0527c439a9ba35be6f7cd43d9bf6
+[D0569:P0025] sha256:07a5435189ce9530ecf041a7f26d1bb0c0e4b81ca0e2ea67f5e5370085855d61
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (2)
+N04-E005: «operational technology security» — is integrated with → «enterprise IT security» | форма: actual, positive
+N04-E006: «hospitals» — rely on management by → «private companies» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 5 (TARGET_DOC_ID: D0526) ===
+DOC_ID: D0526
+PUBLICATION_DATE: 2026-02-21
+SOURCE_URL: https://www.presstv.ir/Detail/2026/02/21/764471/guardians-sky-iran-radar-network-turned-12-day-war-blueprint-deterrence
+TITLE_SHA256: 074d43b3e395bec2187b9aa14c4ba2a4eae53bff8332ae9526adcbe864a93d81
+BEGIN_DOCUMENT
+[D0526:P0001] sha256:074d43b3e395bec2187b9aa14c4ba2a4eae53bff8332ae9526adcbe864a93d81
+[D0526:P0002] sha256:8b0ceea30d366bf1c652483813d1f1e62fb92668e5f6e9cc246079d9e2896946
+[D0526:P0003] sha256:aa4bc24fd7e7e3ef7709fb64b99288f9e798432684b6b9c2515c9c0dba33cf0e
+[D0526:P0004] sha256:8d7a524e7bca61e5bac4b001f5e8230c5d70196195b9d156032657937e6fe47c
+[D0526:P0005] sha256:ea9328c8c94c1b9cb71c584011fcd4df79f6232ac408dd8e52e155ee54af0be2
+[D0526:P0006] sha256:972dc32cc1cf0e69c1988ad3722ee682e7544fab611ec042bfa2cb2f43f41167
+[D0526:P0007] sha256:bfc2ce924aec522ea5b1b455a42bbe26dbcb4b49e638a616c29669893c534761
+[D0526:P0008] sha256:93c26a78fa44904f0222615236753d728b7bfd327ffddb7a2d225ef804827d1c
+[D0526:P0009] sha256:354d8633c1de3b3c751dce1fe43545a8270fe968582e31cdb8b78c595a9d94e9
+[D0526:P0010] sha256:67eb4a2bd81ee3401e9b150d8334c07aaee8d51124cbeaef5d4972c425e14bb6
+[D0526:P0011] sha256:b684b907547b82d4f60c7e6ef640529091149f9fb825d1fd60974cbd47a3778f
+[D0526:P0012] sha256:c67bdf479267fba93da6923388c83d05f7ddc21573486e5cd676b4b89804911f
+[D0526:P0013] sha256:e59dc955aaf801467c42f8401c2ff4514be9369c32307b0eb42a6abfddd3cfc3
+[D0526:P0014] sha256:6e45252e7249c93f81dae3803645fbcaadff6b348d08733ebfcf913fa3249720
+[D0526:P0015] sha256:0cf57d88bb612e6889e330e5ac70876698820616c2154bbb729e5285d3f986d7
+[D0526:P0016] sha256:ba0cfdef8f0e3aaa2a589f2d3a312349f93edf89b361616db8fbaf7ad74f93bc
+[D0526:P0017] sha256:c659043170128788c069a4e0f03a4fbbb3b645353c99ddc00091d20386b069ed
+[D0526:P0018] sha256:6a16cb9acea11baa25ac0873ca4feb4f94f73f07bfff1b16f8d6026f158f5869
+[D0526:P0019] sha256:d016ce24f8b3544981fdbb22e5a18cb9acf94cbe12a1e9751da0e46a6d26b1d3
+[D0526:P0020] sha256:31571f547f0ffdc44da849452288a5d17c524ebc7cbc2179b634b276808a9899
+[D0526:P0021] sha256:8e45e349eaac03ff7b0874298ef29c57c56d2fe082193deab49d77a35ee128f6
+[D0526:P0022] sha256:c24a724669fe1fa12fe184fe785347458aba3dcb009d4b38402b309751bb5fe1
+[D0526:P0023] sha256:ce0e19c99487024334933c2e8acf14e2b74dec42787920c6c1f6593bd3a3cf90
+[D0526:P0024] sha256:19fb95c9e3f8883ea2773aaf7f6e09349859fec3c6e7d146c8582c4807113e3e
+[D0526:P0025] sha256:a7dcf760412fe4ab1436f06760f115721708320f6959bf6a3b38a069f18fc3db
+[D0526:P0026] sha256:927df61599755db33bf937fb61594682ae784178d2d716d89fc8eb2204012e25
+[D0526:P0027] sha256:e14a61fd43dd418887e4484bf0ac5e0c502155d4db441c7345d3f0984453607a
+[D0526:P0028] sha256:5026f58d5e8c750979265e56cfdb60736352a04b3124a37d1955f0c0860d45a7
+[D0526:P0029] sha256:f6ab0d3f949b01f8a9f05c416ba3829c12da0377211d2e6e7e4b807d3a912387
+[D0526:P0030] sha256:ba71a0aeb9954173e7e388fc08a223e596fcc49f29603ccde21ee98bd02b4357
+[D0526:P0031] sha256:99a2400e42e5776794f3227e27162d1d8ef142150f60bc20877eeb9447345c36
+[D0526:P0032] sha256:cc5b39f76b5623c36cbb7989c5c0cfebc63525b104ffac379bbf3222592f7cab
+[D0526:P0033] sha256:f77f381fb109cc6166c5c8e46173b098221aad428a9ce5701e88df7566458002
+[D0526:P0034] sha256:e68c6b6627e6e43ca2f9bb3c3e4a2147836f2c2f8faac12e5a96b2a834a58091
+[D0526:P0035] sha256:a609331f65f20500bdd931069a176d93a8efa5ded610d1a70ec82989f691279f
+[D0526:P0036] sha256:814d445956ee6569d6a970e750941c2ea2b2f10652c968bbb545075488615c11
+[D0526:P0037] sha256:22df7e4c43f857108599d4fa6f602d8726e55af279fddc87ce59697913c74c7c
+[D0526:P0038] sha256:426ec252a818a4106c72793a1c1b11c094453594b6e2c357ca96e245e1d7bbed
+[D0526:P0039] sha256:3114681d15011b308cd2217ded80b5cad96bdc26013e49ef56b8d9eaec9cb63b
+[D0526:P0040] sha256:e500ccd44b393fe2a4ad9e6d4d48f21d21a4ffd5a832220d1918fa41ddc525ac
+[D0526:P0041] sha256:88c92b42ed6692f4a31ef7724128f8c1670bf6198e6d63b11fca106c1257ac1d
+[D0526:P0042] sha256:aacf39c4a22a0e91cabe8232f98d05af146f7dda93d4236862d75b781a8bb6bb
+[D0526:P0043] sha256:9248a9cbba1357264209fc8521f9900ff198158f997326e941ff74d3da5aea6c
+[D0526:P0044] sha256:73155f6ec3d70743576a3a4b9bba2ac46b431f520afba086c74e44cfefa62aa5
+[D0526:P0045] sha256:83c19a2cc529e8d6c16b1144d16679fe8211e977d251b080090080f2b4e7fd3b
+[D0526:P0046] sha256:be064f5268c3d48d8b5b80935d18a365603f217848c16424546aa2675a43e4c0
+[D0526:P0047] sha256:3ea3029e7f6ddb4614618c924382f875e7f010abaf566657512604bb2c9774c8
+[D0526:P0048] sha256:dd4907e7e4f7f9578e7aa828b700f0fb9821688c99f73989f27aaa8d206f0597
+[D0526:P0049] sha256:cdc4a6ecacc3e6f12c97cae1ebdabab84a36e79657712144fa0b3b321d91dac8
+[D0526:P0050] sha256:358c0b0b5a9d5a84fc7291fd8dbfc1fd33d2369cf9e82751b1a7abc4a1b77094
+[D0526:P0051] sha256:88971b5691f569cd6d697d1b9332ff9cd197c13444573866ae417b96b0eb5d20
+[D0526:P0052] sha256:651e51e571357c6dca89d42d30fd54bc10e23259db396a8fe0e7a771ff9f4732
+[D0526:P0053] sha256:293adf2e85e5a14f516c5fd09993e4bea34222f58ba81f7077664b05fceaf6d9
+[D0526:P0054] sha256:3e40eafd510a4c08c3cd999ef6904b88ef10637a76bea5649fc100e02e3c22b6
+[D0526:P0055] sha256:4ad9d022f8d3549084d5a712873117b19d728d5a9387e16a030c51eeb69edd8a
+[D0526:P0056] sha256:93f539e37e9c776b11865e6b59a6950b3eeb68cf52d41a50e654a8ecb2de22a7
+[D0526:P0057] sha256:f91d4e84a74d2da28c0c2c3b8a41fc42f54f3f41ff633eb766757bbeb1cf5785
+[D0526:P0058] sha256:138b6e0fb72b0f60410c01d3288e61d5a76ee6bcbb493d72938c7d76a182c4cc
+[D0526:P0059] sha256:19350829d873153115c4d33a9d6d3a763ad24588eaa0d699a04ab2102aa094bc
+[D0526:P0060] sha256:c254dd71b69325272f2c4b65ef007bd36ec83943a540fa23140943ceef1e6496
+[D0526:P0061] sha256:22db5a5b32705fce7c78994ada624e88df4adf6f3023bd72a721fbb2368cd6de
+[D0526:P0062] sha256:cc395ee7064ca7e54ad50fbf1d3d9d15b82251a5596962f0efc0d14b7effaf69
+[D0526:P0063] sha256:84eb4b7a24ae8aaa55841360da031f0a90df6855b8d03e76ad7c4ba4a591f181
+[D0526:P0064] sha256:1a9af96b698bb8b560621d3520ae599c2bd6a54ea92dcb162c3e8cfa9d59f69f
+[D0526:P0065] sha256:ea2df52680910e63fb012ab53058c02993aabaf3e283c6382789d89570e0a1bc
+[D0526:P0066] sha256:f905df1bbe6d42f5b0d7fd5eb998723a267b9c3bc5701bd07370559718ca97a0
+[D0526:P0067] sha256:0d4b5ea9c990b54adef265e8992aeb2989f2e2e303f86ae4a2f9f3b243c2f141
+[D0526:P0068] sha256:c12db99cc521815fcfa835257ccd41b9e69219bccff94c8a58aa745ea66dcff3
+[D0526:P0069] sha256:c6d8f4eae34f3a1d006d6c75de0a043d3be59ff9b60d75194517226a8e048948
+[D0526:P0070] sha256:545a7d566ad5e00663ae20c9b9e4a6bc75f371247c47b8111c45cc73d04ec76c
+[D0526:P0071] sha256:5a3773a8be8ce9e0f0f71b4bd611d9b494db65dc0ba6c27dcbd44c8057e6b65b
+[D0526:P0072] sha256:d7d6c2e559d6e71ff78d086238ce1f1e9207e00aa2b08339f88e6ad5b6168886
+[D0526:P0073] sha256:60d1dcc512cee5a7e872b3a677b0e6c5edcc7a8d2ef1e0ba4523491ceb4d0424
+[D0526:P0074] sha256:52c8baa45a7febb1a1f693950d577bf03bbd7600f81093905fe71f266548f152
+[D0526:P0075] sha256:dd30023c0f6ad1d3a21d9a6cb0522585a3dce13e1cf7298c3f352b754332cec7
+[D0526:P0076] sha256:00b10805aeb9debff3b2ab4b10c192a74aa07bd1c58ee38380920f857a7dd4fb
+[D0526:P0077] sha256:c83330b83465e290709381c679efb829550b2b2262a6645b8feb8e4774ccf710
+[D0526:P0078] sha256:99313a797776c54d0413f2adbe4d6d360e9ecc4d9c34881a7e37f1a515ad16b3
+[D0526:P0079] sha256:1cdcca40d3a0d22e28589a0b079ee5f0836633361fa4b7bf32ab060111e1e027
+[D0526:P0080] sha256:7cb88fa971bb04a8c4a8a8f719ab166c9451bbd646bec1210c81f0a3656f7310
+[D0526:P0081] sha256:b19ae79fcfb9635519789651c66c70f105df83e3fb6ea31221e1f7bbc0776260
+[D0526:P0082] sha256:ea1b49a4bd1b6261ec0a424f8c0e670812d6a97f0415118227b397e089d6be38
+[D0526:P0083] sha256:64acbf66c1917a1de939c5add86d0acc5ae0a954277949d70b0cc8d1876b3f4c
+[D0526:P0084] sha256:125a1945fb5babd66bce8d94b171b53075ba05f72e2c728ddaa4703266787953
+[D0526:P0085] sha256:1ef895cd1783d9d20e98e64acf31aa572089b2d5d764a3a2a8f996ca88dea22c
+[D0526:P0086] sha256:ce5d259e56962ca5d958b3cae0b1cd68ea7efb140569a65c76af75d63228b92f
+[D0526:P0087] sha256:b6dfa1255d699d8a1831f324de05d7e521313b147deb920f7597c597825bdfa5
+[D0526:P0088] sha256:5af4e18a5430a01afbb2544ee0bd8ba241da98c454e511c29b5a2873639c07fd
+[D0526:P0089] sha256:ebc5f1f45a12e8f3848a6ae3e8891e04fe1d69cd4f3333a81e4920d72b9fa7dd
+[D0526:P0090] sha256:e27a0d9b8b19d52a8b07065da8714b2c71de9a0cbbe8b09876b12bed4286392b
+[D0526:P0091] sha256:9af250370996f1b9ea3cee4313c28bc3bc16da6e3386687a7f5571e32b577939
+[D0526:P0092] sha256:54cbe7f3cdd4bfb8934ceb286c948078078caa474acf365f71144971517eb90b
+[D0526:P0093] sha256:be0d1378504b644dad8eda5b65510943ece5d921a32f1698f6c3abad68e34577
+[D0526:P0094] sha256:e52a69ba87af19828443f1d8d02394f99cc75af7605a964b1be7e8b2f548cc01
+[D0526:P0095] sha256:ea19e1eb4f7d44c87342169c0d46f2804ad239523134298088c8741cdbdbf0ef
+[D0526:P0096] sha256:79f848ee4051c41496ca3f9cccedf12c69703797a680c47cefc4e82a0be864f4
+[D0526:P0097] sha256:d218adbf405bf441ef3a512802563e06e65816b3d21b23fd5da0b0e2e5c51713
+[D0526:P0098] sha256:a9588e4cbd33e44da901bc6c8f48b787083eddc3657e735ccfa30ec93b3e85d2
+[D0526:P0099] sha256:7e4f2b4ab49a5be6836c481e55796df498dc8136147d1a5df0a1f08d613e8087
+[D0526:P0100] sha256:b0292442816f078f46352c1a0345f2572435266f559c35ae1c72abb22b0e6b9c
+[D0526:P0101] sha256:d42cfaf5d3d2352b9edc6a39e488b15c8680c92d5ffb013dd2a2243e7149bbfc
+[D0526:P0102] sha256:1eb619782e3f03ce825efff05338ef37c1be35592d72caf9983cadfb3e108a2b
+[D0526:P0103] sha256:8ab78f5ccf0521b92ae9d5ccb0b1108396008393733eb0b780bfc8734fe2fd75
+[D0526:P0104] sha256:c2aff594fa8e6f67ba816fd6779df4fb331672c291450baf0f7740d92cba62f8
+[D0526:P0105] sha256:287b2185c86f416685e98337f529c0bfeaf3a7996ac0814a2f4d7c8abbc4df14
+[D0526:P0106] sha256:b8fd905f4109da477c0dec86cb3a38572a9278747eb047c705ae0dd762ac4557
+[D0526:P0107] sha256:eb05f8898c7dbce52a2a826c8126b60f462fa9b0a68b7b4d4f2ee1459effa3b1
+[D0526:P0108] sha256:81042e959702ae70f0e60b0ff40e9dc3c86cd02eb64925812e606c2c8a7a1fce
+[D0526:P0109] sha256:987ac88f7d2c52c98c5fa3a65fc0898da6c8131b63e4f681def4cdab56f774d8
+[D0526:P0110] sha256:e68fe8c2fddd23926da1e60d6ff7628aad571a1e9376d5760324d4ff5e9991be
+[D0526:P0111] sha256:4ae6e97167022bd9986ba5638d53b6520135406d11e38eebf85727af2939db8a
+[D0526:P0112] sha256:d2881bc615ee00ec2b9a7834c1b68f2dbb1324f00f4ed7f655d9e4019597b5dc
+[D0526:P0113] sha256:a28834c6b49ce6f25e0214c8631d09a8ad495b2e137f87f846342ac9b6669b9b
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (24)
+N04-E007: «Keyhan» — uses → «Active Electronically Scanned Array» | форма: possible, positive
+N04-E008: «Matla-ul-Fajr» — was repositioned to compensate for → «damaged fixed sites» | форма: actual, positive
+N04-E009: «Meraj-4» — uses → «Active Electronically Scanned Array» | форма: actual, positive
+N04-E010: «Keyhan» — uses → «artificial intelligence» | форма: possible, positive
+N04-E011: «Keyhan» — mitigates → «electronic warfare» | форма: actual, positive
+N04-E012: «Keyhan» — uses → «Active Electronically Scanned Array» | форма: actual, positive
+N04-E013: «Keyhan» — mitigates → «cyber warfare» | форма: actual, positive
+N04-E014: «Ghadir» — detects → «ballistic missile launches» | форма: actual, positive
+N04-E015: «Keyhan» — incorporates → «AESA technology» | форма: actual, positive
+N04-E016: «Iran» — uses → «Bavar-373» | форма: actual, negative
+N04-E017: «Meraj-4» — was unveiled in → «2014» | форма: actual, positive
+N04-E018: «Sayyad-3G» — was test-fired from → «Shahid Sayyad Shirazi vessel» | форма: actual, positive
+N04-E019: «decentralized command structures» — mitigates → «electronic warfare» | форма: actual, positive
+N04-E020: «Keyhan» — uses → «artificial intelligence» | форма: actual, positive
+N04-E021: «Matla-ul-Fajr» — mitigates → «electronic warfare» | форма: actual, positive
+N04-E022: «Keyhan» — is expected to embed → «cyber and EW defenses» | форма: actual, positive
+N04-E023: «Iran» — references → «HQ-9» | форма: actual, positive
+N04-E024: «Keyhan» — mitigates → «electronic warfare» | форма: possible, positive
+N04-E025: «Iran's radar technologies» — incorporate → «Over-the-Horizon (OTH) systems» | форма: actual, positive
+N04-E026: «Keyhan» — mitigates → «cyber warfare» | форма: possible, positive
+N04-E027: «Meraj-4» — supports → «S-300» | форма: actual, positive
+N04-E028: «Iran» — prepares to counter → «cyber warfare» | форма: actual, positive
+N04-E029: «Keyhan» — incorporates → «AI-enabled automation» | форма: actual, positive
+N04-E030: «Matla-ul-Fajr» — uses → «artificial intelligence» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+=== СТАТТЯ 4 з 5 (TARGET_DOC_ID: D0652) ===
+DOC_ID: D0652
+PUBLICATION_DATE: 2026-01-07
+SOURCE_URL: https://eurasiantimes.com/hinas-justice-mission-2025-drills-singled-out-himars/
+TITLE_SHA256: ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+BEGIN_DOCUMENT
+[D0652:P0001] sha256:ba34feaa3ab81364ce7d3e268a86ee244a80d7f7f52dc0abb90cc79c03c43007
+[D0652:P0002] sha256:f5e1780e47142181f61c0ceec3d2a8b58aad04c35660fd88c4171e57bd194913
+[D0652:P0003] sha256:350a4e3bca128eb76933e50fcbcc56a72a3bf62487f765d977c4a8189b943aef
+[D0652:P0004] sha256:9c07d18157103502a76812f6ba9602946eb1f86e19b63c5aecb6d96f8f4ffd81
+[D0652:P0005] sha256:7365fb83b168ce8053ed93b13c36c6efbda536b1c6e02424c145ed40f2566cf8
+[D0652:P0006] sha256:f40ae60c857f52ef28d74583a8498ab74e724a8f1eccc1d076a0f85106a4734a
+[D0652:P0007] sha256:2fec46ce12eaf13d97f5dad8556ee45a6e20a8001dfe3418ee445458d12bf6b0
+[D0652:P0008] sha256:9e2fc72e7f97c8bcfea3fd68e0777f2cca463d4fdfb5e6292da9fe871a1d0a46
+[D0652:P0009] sha256:9ae91a2721ef8d76c8562f6284d2a17ef6a04263e6ff27c39edb3f26041b13dc
+[D0652:P0010] sha256:dbe203846cff4aa99dd96ba879082f152f5397ecfc92cf7284ee21b7cd1400b5
+[D0652:P0011] sha256:f6f6aaa7566452e7823fc119e74abaabf14ed44c303f74ef92c6364f78bce174
+[D0652:P0012] sha256:3b122ed435cc6aac48ae3e61a3888d5a4997dbad9a8cee46bd1de1e599310912
+[D0652:P0013] sha256:813ad0172d7d7bcd704d9dfedd484435e7926ec3501f76700aa129f845de14fc
+[D0652:P0014] sha256:c702342c0a32f5d3cab184b879e719b826718cc013f75222846ac204c4d1702c
+[D0652:P0015] sha256:e619f24d19ce3c18e8a477603418a1b01f76f03b351f0c9dc20a3d89594a235d
+[D0652:P0016] sha256:88eea6fd2e71b6d6886dac41f58c67b6febff31970c9ffa1b9918a855ddc0f83
+[D0652:P0017] sha256:717d73d3d8c7a3a2d38d00de73f72e454e6d066fbb5b1340523363fb3ab43840
+[D0652:P0018] sha256:b2ccb4df76316544e47586f4d9c4cf2fb78971c0b608f39a1ed6e5324358231c
+[D0652:P0019] sha256:9848bc7599962fd51ce89086ff096990482a1f1f52bcf4708c78987a8a4b790d
+[D0652:P0020] sha256:983f361af1b441ba4afccc156e6a9bc778fe6b4f56bddf0f2395da91653966f9
+[D0652:P0021] sha256:4fdbc2670db0a8871568e1334233eec8d27577b73e2672d9602146a220fd5609
+[D0652:P0022] sha256:2c34838c8dfc88b3c420aacda11f08e79cd12169326607fd2df0f372ee783f3c
+[D0652:P0023] sha256:146b7a757e0ec762481c096f8bf654d83505b7177b49438372509fddb968fa9a
+[D0652:P0024] sha256:4f588d664054812f67c43b6c1068d9aa30d41579e855e0f036fb13e593537198
+[D0652:P0025] sha256:8dcd954bc907849940b115c16e3393417feb5a1f0aa2eb6d66e14077d9057542
+[D0652:P0026] sha256:4e9b8c0d72ccaaec53abc0788e6399b105e64e15d5a12325d9c0c72cc5efe823
+[D0652:P0027] sha256:d434895e0c6631b7d4f629b6f4d7101beebf9168d59c1532779054e882640863
+[D0652:P0028] sha256:89ab4826d0c27d5b3a16e0c7463ca52cfeab6dd8141666d429fbe4c7a0b061f1
+[D0652:P0029] sha256:6fa076bd16d4df1eb8601a41b33e5ddf88c362c0210a4370fea748cee95b9af1
+[D0652:P0030] sha256:00d686c81b67873793dd21f98660f9fbb33aaf72aaa4048e192db0ec950e5040
+[D0652:P0031] sha256:660a4ab8f238ab6077d6c653cf24e99331682ea7a87a2fc6869406accd0f84d5
+[D0652:P0032] sha256:9f9ae237c7a0850502c1c4c59d7beb0b44a43e5b79bd57b6e4a9c3066a07a09c
+[D0652:P0033] sha256:a8e451870020cec126519fa78b3248f02ed84fe2dd2f60589674c2845980d2a7
+[D0652:P0034] sha256:d8a67d2c2add7b404eae55b1a6389a0d51fce426993e4b34a9d46a22bcdd92d3
+[D0652:P0035] sha256:becf0f14d297bd0bfe5ed4b807ca54547433d9a1fc5e0e8c15681b7c5da40732
+[D0652:P0036] sha256:f8b504512c64111a647372634cc4f81f31da792a981a8003cd8807428811dd53
+[D0652:P0037] sha256:02fefdec59233becebd80a4f2b2ab94d49356e46b3aa5979eb8a13d82b730cc7
+[D0652:P0038] sha256:be5887b9858fb10c272fd37bc9e40e74c8fb3c202a1787bf728f1eb5576b0dbf
+[D0652:P0039] sha256:215730f42ed8508141b80c08172d79c4473519b548ee971a98e299ebedbb581c
+[D0652:P0040] sha256:b319456576ecbe181ff28f02421d64c716ab8701a1e495f6972f431002842f8f
+[D0652:P0041] sha256:933409bbe1a1732bdb6d49aec9296ce3cf0869a37cc76020c0c9c4f4c8f193fa
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 4 (14)
+N04-E031: «Justice Mission 2025» — took place in → «late December 2025» | форма: actual, positive
+N04-E032: «Justice Mission 2025» — involved → «PLA Navy» | форма: actual, positive
+N04-E033: «Beyond F-16 & Abrams: Why China's "Justice Mission 2025" Drills Singled Out HIMARS as Taiwan's Top U.S.-Supplied Threat?» — was published on → «January 7, 2026» | форма: actual, positive
+N04-E034: «Russian forces» — reduced shelling intensity in → «Donbas» | форма: actual, positive
+N04-E035: «Ukrainian military» — uses → «GMLRS» | форма: possible, positive
+N04-E036: «US» — provides → «Tactical Mission Network» | форма: planned, positive
+N04-E037: «Nitin J Ticku» — member of → «EurAsian Times» | форма: actual, positive
+N04-E038: «US» — provides → «ATACMS» | форма: planned, positive
+N04-E039: «Ukraine» — uses → «GMLRS» | форма: actual, positive
+N04-E040: «People's Liberation Army (PLA)» — benefits from impersonating HIMARS in → «OPFOR (Opposing Force) exercises» | форма: actual, positive
+N04-E041: «Ukrainian military» — isolated Russian units in → «Kherson» | форма: actual, positive
+N04-E042: «Ukrainian military» — uses → «ATACMS» | форма: actual, positive
+N04-E043: «Tactical Mission Network» — enables → «sensor-to-shooter» | форма: actual, positive
+N04-E044: «US» — provides → «HIMARS» | форма: planned, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 4
+
+=== СТАТТЯ 5 з 5 (TARGET_DOC_ID: D0327) ===
+DOC_ID: D0327
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a
+TITLE_SHA256: 5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+BEGIN_DOCUMENT
+[D0327:P0001] sha256:5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+[D0327:P0002] sha256:0c2540a5c672eae6ac9bb09c7d7c7bec68dd0cce863e0012110dd872ad70b001
+[D0327:P0003] sha256:4520083fc3914960791c7c9feafe2c58d1094645da53102a86b58c981e260176
+[D0327:P0004] sha256:dddab21467c06402b7516a4df95fb4ad646d0134ac39763c2895f3ca3912f46d
+[D0327:P0005] sha256:7a2573266033dc4de5846fc724746fb34255a3ad3031feae9a3aafc79ee745d8
+[D0327:P0006] sha256:920458eccafe500aa00a9bae40096ea40a14397336c37662b27beef108c02a6e
+[D0327:P0007] sha256:286acccd18bc0e790317f74706628acc5faa9f86c40876d2ea48b415f58b5ccf
+[D0327:P0008] sha256:e76fe174228ba61f7cdf2dd9fbab4af4c0793527660253012672194d1fe3189d
+[D0327:P0009] sha256:d52b22db2f498fa09483ca6c25365710fd3692a2fdda55e41e54d16fbafee4d1
+[D0327:P0010] sha256:9ef13554ff038106bba631fd1ac61ad55bd98c14108c60acf97a64040c2ef6a8
+[D0327:P0011] sha256:583bd0190b19e4c589e8ddf0cabbe91caad258b2851401f6a4df7a5c82f0f7a9
+[D0327:P0012] sha256:02ab0dc2773b96b00f82e15a03ad4f09da537cecf95b76cd1d6d572ba9e49c55
+[D0327:P0013] sha256:796d85360f1d13eaca085782fb147b2604c4f0c5ea8eabcfd0b366ad05c5e431
+[D0327:P0014] sha256:62511035a9408d4e0a267246b0ce61dc7f098f9a5b17c855af5dd0523551369d
+[D0327:P0015] sha256:42ca0a3e42f0119f35653459de1aa3437ae6f5ec1c2798a8433c964a39984e45
+[D0327:P0016] sha256:2bb16ee1ce4bf3a77882e1e74b7fcd599c79e463c5b90414ac7d8c5a505ed550
+[D0327:P0017] sha256:53e6adbe51b6cf6424aeeaafa05a1f17edfa0d106a7b58bc9cddab63d5a5f1ac
+[D0327:P0018] sha256:ea5b9ea01818ff077bcd0c006594c4b3aaa501e0b21f4abac1b316f7c1790d97
+[D0327:P0019] sha256:408a76f4aeaff4a258c2bc1b088c81ab4c7fc74acaea83026b54a0b407e3460d
+[D0327:P0020] sha256:624af301c3e6626a012ed00798af780a9cedb5e8ab9db8a0279bd76c622c3c59
+[D0327:P0021] sha256:11552e14c3b3f7810d6d803c5eb3350f07a26da7de53f03516dbd7766e09c4e7
+[D0327:P0022] sha256:a6ec59a5a8b8e74d49700bb42cde19065d8a3926ab7e7501228070e87d69a01b
+[D0327:P0023] sha256:b4993be61761c20cd8a5e427ffa13a0f63891750fe3ed026483fade0520b89b8
+[D0327:P0024] sha256:278d74cee03a0faba41edef0087c814ed963602ffe6bfc16b1bbe897b8c4f322
+[D0327:P0025] sha256:8cda29e58c1fbd6a66864a99aa89133d5472066b80fa53ca4c49f885f7683327
+[D0327:P0026] sha256:0d102211325b10c63f43b6134bd4b4fce0893e6e45dfd52aa86cd9fce49207b1
+[D0327:P0027] sha256:c3aa64f2c244df90446ac7905efb5891abdb4a3034ab7cffdca797240ddda826
+[D0327:P0028] sha256:4cf075249ba858e94c6bb14963617fad4446d121f30bcbbd9e88d633e069e574
+[D0327:P0029] sha256:02e11c14fba69545c857be8ae5203c6eed6bf94eb15857c228364a2a8440e1a6
+[D0327:P0030] sha256:bffe4e94011a64eccf966b22c2a55550acfadf75471ac05881efc987e36e2f93
+[D0327:P0031] sha256:932214f9874176bb0d86e59b4f292290b73040cb39146f6b78bb8e94da396c32
+[D0327:P0032] sha256:449ad04ea160f4da6aad9118e3f9902e8ea45f4460c28591db7fdad83796333b
+[D0327:P0033] sha256:13ad88631da88be7e7cfeaa0d04e174f50a1c4481db991c750b2a39fe7b62037
+[D0327:P0034] sha256:f44f33cb14b0d7376c60f02438793cad4a0498871f1d50cdd8e5cb9bdb10ba76
+[D0327:P0035] sha256:3e640996b940621379b86cab573c9c9bd0ebb678cf352b155d415a377d239cec
+[D0327:P0036] sha256:223bc63bcf071e0847c5131d5ae4d974bf8a904b4ca07a5b573f8cfdab13cbfc
+[D0327:P0037] sha256:946e9729305d337ac458b9fea9299f057a3d755802e2eadd8adfe2466c3926cc
+[D0327:P0038] sha256:42cfb7659fdd8f732a41d71ec7dd193e4d3d2f39d6f4bfdadab83d385e3d7591
+[D0327:P0039] sha256:52d4266318408cabc622230fe87c9251a6d1806bea1554b75dd1e5df754fe137
+[D0327:P0040] sha256:27fecb19b64015f9af31eadf0dac2667771af88469d245ab172ac741bf59f454
+[D0327:P0041] sha256:5c38acf3270137eddff51c0b2faf220fbaf32c9db6c1b19abf41cd03ad20d3dd
+[D0327:P0042] sha256:77a07c396f8263aac1219e29eeda120f01b342f7655a908d9cd1ece1e6d82d3d
+[D0327:P0043] sha256:b75105c0e1c3b5d9fbeb1b5ebf366c723f6f2dca93657aa7c950755a1b35fe93
+[D0327:P0044] sha256:ad9b5d6c2311f83a7f88964272a61734bef5035c46a4a80b3946cd8733dfb2b7
+[D0327:P0045] sha256:bc77a5e4053976aa2485b04a1c89651446189fedbd031515f4e67ae8eac095a0
+[D0327:P0046] sha256:2c0db6d112d31ef2b3f27cdfc2ff1e223229f19a3a6a0d16cfa9b1c3c3b7310a
+[D0327:P0047] sha256:94b07aff0327ecb384df7e14f4d2db1cb791e50b0b8461c672ec86ea05801e10
+[D0327:P0048] sha256:78590f2bc22d892acc1cfa91450829991bcf04ef02d636fa53557ea56dfd9649
+[D0327:P0049] sha256:54ecd727fb12dfc8ec2765b8dde79fe211245c0d56446d80685adea45c118797
+[D0327:P0050] sha256:b9361d3bfc4ad2b6ad3d957f2bdb35ecfc2ac7e8464d44bfbf59ad7b10a6aba3
+[D0327:P0051] sha256:07134b1c969ea4a4e1f1c963066e8b59d4054e9220dab830afb75147852037e5
+[D0327:P0052] sha256:ccd44fc48264fc0298914f31d6306ce0d5b8edef792b177afd286ecce30ad663
+[D0327:P0053] sha256:817766654bd51bf74847c313585ec47b40f982a28416eb42d077ee4c11a37dc6
+[D0327:P0054] sha256:a95749d1585c035a49b172c8a45138527a6d1c86f18e379128a327084fc30c27
+[D0327:P0055] sha256:bb8b12c8b14cfda913b3d4127f921f5417d5112ec5085cda4d6c5afe0a802401
+[D0327:P0056] sha256:cff1c76574b0d498e2b5334bb92ea6b7a4b508927445038923c8f628c79c18d9
+[D0327:P0057] sha256:1aadbede701fedad6684afcb877302bf50879a65e47c02093310155ff82e5117
+[D0327:P0058] sha256:0eb5a285ecdfc41a293a6970507bb93f4102bae33d1c65bcf9ee26f02168eb80
+[D0327:P0059] sha256:87d34c41b64a865e31ab6a305997422361e8a30cfe935c9d6ddbac28d5491c4d
+[D0327:P0060] sha256:f269c3832e9d2a1edaaeb93704c9851e32975c1aa0a7fb2111731d6ace3af2be
+[D0327:P0061] sha256:eaeb20fc590c69a1ebdd290926481ce7bb1557afda4b08c22267fd30fac1d340
+[D0327:P0062] sha256:1b1e3f24959eca2e4ccaf00154d042c8843a6f82007deec9f38ce6134dc73616
+[D0327:P0063] sha256:3a1ea8de3b89274657a48b0cfec6875bbb6dc5485b318b1d8ec45808ec9e51a4
+[D0327:P0064] sha256:470d3a4769e1dfb41541d5bfb391002a3e7cd0176a4b6d288df2e0835742038d
+[D0327:P0065] sha256:93a91c1347e8a2d3ce554cf8f13e70d8c5e9bb8f1ab88c1a109de72e4e69327b
+[D0327:P0066] sha256:403c6f6e6040e3ed578a47ef86fb4df7fedd688fd6261a5a95dfcd2b951399a0
+[D0327:P0067] sha256:e55a2d3506cd9a04f4bddf766dd9bcfe88dc8bedef3327d296992930cce97057
+[D0327:P0068] sha256:74db14c635e2203500ba9e1023df9648134b1a909753876376fbf907ac45d7b9
+[D0327:P0069] sha256:8438667ba18605169bd460a84e76df8612272dbdd74df6581c918d78dab0c189
+[D0327:P0070] sha256:0dad3aea4a091e81787adcfcc11b005913b3f6ce278eb5d4074ad8d0b1189a0f
+[D0327:P0071] sha256:b723a76576be2cfa68308aa48ba93274382177c7aa600d7542fbfc6263027e78
+[D0327:P0072] sha256:07a85e3cc4b1e0e4dc5b6fafebf1394eb3338f2878f388324fe4c08b8d31d38f
+[D0327:P0073] sha256:ba9447360aecf349ad831242211d183e01f5301ceead8ba7a7578ab9d8b44143
+[D0327:P0074] sha256:199bc967af7c44ff498760153bd4fc8c880feb48e7ee236a90e58f5f543cf845
+[D0327:P0075] sha256:c08fb77976ec2c5e0c477b005a3f1bc0405bd65714d5156da83fd19b05750d4d
+[D0327:P0076] sha256:4e82d0807ad0ac443c284c649f6eb4f7ef8e2f1aa60556a5c34daa9dd6c0238b
+[D0327:P0077] sha256:ceb59b69bc12739c0ff6739cb068554b45f27caf01822f751e11021fd270890b
+[D0327:P0078] sha256:86c9855e7c5c5ddfffecf1f9d7ce1bddfbb8deb566ed418a82eb6d3ac72e7955
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 5 (22)
+N04-E045: «Environmental Protection Agency» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+N04-E046: «Environmental Protection Agency» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+N04-E047: «Iranian-affiliated APT actors» — maliciously interacts with → «project files» | форма: actual, positive
+N04-E048: «Iranian-affiliated APT actors» — uses → «Stored Data Manipulation» | форма: actual, positive
+N04-E049: «Iranian-affiliated APT actors» — directs traffic to → «port 2222» | форма: actual, positive
+N04-E050: «Iranian-affiliated APT actors» — targets → «supervisory control and data acquisition» | форма: actual, positive
+N04-E051: «CVE-2021-22681» — affects → «Logix Controllers» | форма: actual, positive
+N04-E052: «185.82.73[.]167» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+N04-E053: «Iranian-affiliated APT actors» — uses → «Commonly Used Port T0885» | форма: actual, positive
+N04-E054: «Iranian-affiliated APT actors» — may target → «Siemens S7 PLC» | форма: actual, positive
+N04-E055: «Siemens» — develops → «Siemens S7 PLC» | форма: actual, positive
+N04-E056: «Iranian-affiliated APT actors» — directs traffic to → «port 44818» | форма: actual, positive
+N04-E057: «Iranian-affiliated APT actors» — targets → «Energy sector» | форма: actual, positive
+N04-E058: «Cyber National Mission Force» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+N04-E059: «Iranian-affiliated APT actors» — targets → «Micro850 PLC devices» | форма: actual, positive
+N04-E060: «Cybersecurity and Infrastructure Security Agency» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+N04-E061: «Department of Energy (DOE)» — co-authored → «AA26-097A» | форма: actual, positive
+N04-E062: «Iranian-affiliated APT actors» — targets → «Siemens S7 PLC» | форма: possible, positive
+N04-E063: «Iranian-affiliated APT actors» — uses → «Internet Accessible Device T0883» | форма: actual, positive
+N04-E064: «Iranian-affiliated APT actors» — uses → «Commonly Used Port» | форма: actual, positive
+N04-E065: «Iranian-affiliated APT actors» — directs traffic to → «port 502» | форма: actual, positive
+N04-E066: «virtual private network» — enables → «multifactor authentication» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 5
+
+КІНЕЦЬ ФАЙЛУ N04. Усього записів у файлі: 66 (від N04-E001 до N04-E066).

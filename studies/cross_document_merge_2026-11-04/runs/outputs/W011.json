@@ -1,0 +1,477 @@
+{
+  "run_id": "W011",
+  "target_doc_id": "D0077",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Boston",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 101, "end": 168, "sha256": "3db86df1591d1fae3170cbb01e4fcef232c5c475efc77504bd3f02fcaf0848d9"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Massachusetts",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 101, "end": 168, "sha256": "3db86df1591d1fae3170cbb01e4fcef232c5c475efc77504bd3f02fcaf0848d9"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "Assail",
+      "entity_type": "organization",
+      "aliases": ["Assail, Inc.", "Assail AI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 0, "end": 100, "sha256": "921e437ed1f2d14c10ce6f9682a2960e9e91d40829bdced675b136f129a179c6"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0016", "start": 0, "end": 15, "sha256": "9cb52262271a6068767e6f76e79377d96da67fb6e78b9ebb6a9a274ba69290de"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0002", "start": 0, "end": 29, "sha256": "70a82dd13451d61b71a13868fc8ee427d9c9a95310790c01114e708907c17320"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "Department of Defense",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0010", "start": 0, "end": 144, "sha256": "c6133ef3514d6b4454695880693a5cc8197af607721285181d5e6d7c35e6f963"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 241, "end": 352, "sha256": "3d71d2a754b24809bcc9e521a3ca763bef59788f0c871843d5323a6b34e5dda8"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Department of Homeland Security",
+      "entity_type": "organization",
+      "aliases": ["U.S. Department of Homeland Security", "DHS"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0004", "start": 0, "end": 114, "sha256": "bbb2abfc4e724f4efe49a4cccb48fe7be8db42c921ce342cac1117c4f1d5f652"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 61, "end": 167, "sha256": "53dd929497626b9dd218ee2b2b15a22d0dad8d853089df741491725e710a95f9"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Space and Naval Warfare Systems Command",
+      "entity_type": "organization",
+      "aliases": ["SPAWAR"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 465, "end": 567, "sha256": "801392005aa521cffdd6c1e743f07d093b5781b1fed763b41a80d6d116d8733d"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "U.S. Marine Corps",
+      "entity_type": "organization",
+      "aliases": ["Marine Corps"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 301, "end": 463, "sha256": "36c6d9d03ccc4d7dd4b4a879e4fe1ae5f837cec6f34fd209b51dcb4ba09f2556"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 180, "end": 239, "sha256": "cac62f120bd70a6d5e76831eedf930c4de1b7e8f22ddb237aed50a787828f5e1"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "U.S. Navy",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 465, "end": 567, "sha256": "801392005aa521cffdd6c1e743f07d093b5781b1fed763b41a80d6d116d8733d"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "Venture Guides",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 463, "end": 503, "sha256": "d622a0945fa4dfaac7a2f55f53a2c032d2b84f5b6073d03767fbdcb6a6d24b83"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "Alissa Knight",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0009", "start": 69, "end": 123, "sha256": "5b611531307ff8862e6f6bf94461b035c9db519e5617e341e5c5c3666af4581c"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 101, "end": 168, "sha256": "3db86df1591d1fae3170cbb01e4fcef232c5c475efc77504bd3f02fcaf0848d9"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "Kenneth W. Bible",
+      "entity_type": "person",
+      "aliases": ["Kenneth Bible"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0005", "start": 122, "end": 210, "sha256": "eec946e1777d3f2581582d85a6cf7899dfe2197ac0b1843218831763322e3588"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0011", "start": 193, "end": 211, "sha256": "5a783870f829914d34a4e4ad94ee843a4c8aa2073c22df9534791703486e1920"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "ADVANA",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 241, "end": 352, "sha256": "3d71d2a754b24809bcc9e521a3ca763bef59788f0c871843d5323a6b34e5dda8"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "Ares",
+      "entity_type": "product",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 198, "end": 333, "sha256": "5f924754db9377207d8601dcff4dda64fed62a57ba9b378627d014d586d3f0b8"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0013", "start": 176, "end": 241, "sha256": "257acc5ad2cbf11e3983089b2eba02caa734df2ed186751d4599c5df423a2833"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "adversarial co-evolution",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 336, "end": 461, "sha256": "0232ee9a5f8c57ef55928857fc2eb56699d94f53ce152a774a5049f54a4c7cb3"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "APIs",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "n016",
+      "label": "autonomous offensive AI",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 0, "end": 100, "sha256": "921e437ed1f2d14c10ce6f9682a2960e9e91d40829bdced675b136f129a179c6"}}
+      ]
+    },
+    {
+      "id": "n017",
+      "label": "DevSecOps pipelines",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 354, "end": 426, "sha256": "995753d50be6aa02a1c1338dfb09f1493e4940f33aeab03cc9165686e9bc8be5"}}
+      ]
+    },
+    {
+      "id": "n018",
+      "label": "mobile apps",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "n019",
+      "label": "self- evolving AI agents",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 198, "end": 286, "sha256": "48e5c792ed97de099c9b9693e3631166ffb1e7f94b998792266745ea7f82e6df"}}
+      ]
+    },
+    {
+      "id": "n020",
+      "label": "web applications",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "n021",
+      "label": "vulnerabilities",
+      "entity_type": "vulnerability",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n001",
+      "target": "n002",
+      "relation_type": "LOCATED_IN",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 101, "end": 168, "sha256": "3db86df1591d1fae3170cbb01e4fcef232c5c475efc77504bd3f02fcaf0848d9"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n003",
+      "target": "n013",
+      "relation_type": "DEVELOPS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 0, "end": 202, "sha256": "38ae6b922601015903f2e130c66b010a3a8ddc9d2ee4d724a95d8c545c196a45"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0013", "start": 176, "end": 241, "sha256": "257acc5ad2cbf11e3983089b2eba02caa734df2ed186751d4599c5df423a2833"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n003",
+      "target": "n016",
+      "relation_type": "DEVELOPS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 0, "end": 100, "sha256": "921e437ed1f2d14c10ce6f9682a2960e9e91d40829bdced675b136f129a179c6"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n003",
+      "target": "n001",
+      "relation_type": "LOCATED_IN",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 0, "end": 168, "sha256": "f6db704b66e45f89ad5a7ecfafbd0d2f35cb6d934b761e7da54e5c41f0e96146"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n004",
+      "target": "n012",
+      "relation_type": "OPERATES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 241, "end": 352, "sha256": "3d71d2a754b24809bcc9e521a3ca763bef59788f0c871843d5323a6b34e5dda8"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n006",
+      "target": "n008",
+      "relation_type": "PART_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 465, "end": 567, "sha256": "801392005aa521cffdd6c1e743f07d093b5781b1fed763b41a80d6d116d8733d"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n007",
+      "target": "n017",
+      "relation_type": "OPERATES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 180, "end": 426, "sha256": "0429f15c04c324bfe8cfa235b1c6e24a0ab72dc439cc5a478350a8f359be0376"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n010",
+      "target": "n003",
+      "relation_type": "LEADS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0009", "start": 69, "end": 123, "sha256": "5b611531307ff8862e6f6bf94461b035c9db519e5617e341e5c5c3666af4581c"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n011",
+      "target": "n003",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "Assail",
+      "event_time": "",
+      "event_scope": "appointment of Kenneth W. Bible to Assail's Board of Directors",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0005", "start": 36, "end": 210, "sha256": "3bd70ccd06defcbe300646763fdb5298545f94c1828a5cbb028410de3e57ceb5"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0013", "start": 0, "end": 101, "sha256": "67a3de8666e677f951a0d87a90a81e5542f8f4039c9e254a974181a7bcfe02a8"}}
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "n011",
+      "target": "n004",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "Bible's leadership roles at the Department of Defense",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0010", "start": 0, "end": 144, "sha256": "c6133ef3514d6b4454695880693a5cc8197af607721285181d5e6d7c35e6f963"}}
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "n011",
+      "target": "n005",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "Bible's former tenure as DHS Chief Information Security Officer",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 61, "end": 167, "sha256": "53dd929497626b9dd218ee2b2b15a22d0dad8d853089df741491725e710a95f9"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 0, "end": 104, "sha256": "49a31e616bc318c7717fa735ef1dcf0a36cb615dcbe53905b239d1aa5eba8446"}}
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "n011",
+      "target": "n006",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "Bible's earlier career with SPAWAR",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 301, "end": 567, "sha256": "406aa9d6675c89c52802637537289c062147db1ceea83428a1687f8b8624901c"}}
+      ]
+    },
+    {
+      "id": "e013",
+      "source": "n011",
+      "target": "n007",
+      "relation_type": "MEMBER_OF",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "Prior to DHS",
+      "event_scope": "Bible's service as Deputy Director for C4 and Deputy CIO for the U.S. Marine Corps",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0007", "start": 301, "end": 463, "sha256": "36c6d9d03ccc4d7dd4b4a879e4fe1ae5f837cec6f34fd209b51dcb4ba09f2556"}},
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0012", "start": 180, "end": 239, "sha256": "cac62f120bd70a6d5e76831eedf930c4de1b7e8f22ddb237aed50a787828f5e1"}}
+      ]
+    },
+    {
+      "id": "e014",
+      "source": "n013",
+      "target": "n019",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 198, "end": 286, "sha256": "48e5c792ed97de099c9b9693e3631166ffb1e7f94b998792266745ea7f82e6df"}}
+      ]
+    },
+    {
+      "id": "e015",
+      "source": "n019",
+      "target": "n021",
+      "relation_type": "EXPLOITS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "e016",
+      "source": "n019",
+      "target": "n015",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "e017",
+      "source": "n019",
+      "target": "n018",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "e018",
+      "source": "n019",
+      "target": "n020",
+      "relation_type": "TARGETS",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 212, "end": 333, "sha256": "959c5e5b5b7d1d08a78b97e75412dd59647c64f2e3f7a55b45faad8198cad4e9"}}
+      ]
+    },
+    {
+      "id": "e019",
+      "source": "n019",
+      "target": "n014",
+      "relation_type": "USES",
+      "modality": "actual",
+      "polarity": "positive",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0077", "paragraph_id": "D0077:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0077:P0017", "start": 336, "end": 461, "sha256": "0232ee9a5f8c57ef55928857fc2eb56699d94f53ce152a774a5049f54a4c7cb3"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

@@ -1,0 +1,194 @@
+AUDIT_FILE: QT36A
+TARGET_DOC_ID: D0166
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0166
+PUBLICATION_DATE: 2026-05-20
+SOURCE_URL: https://www.breitbart.com/politics/2026/05/20/exclusive-sen-rick-scott-rep-andy-ogles-americas-cybersecurity-cannot-be-an-easy-target-for-communist-china/
+TITLE_SHA256: 75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2
+BEGIN_DOCUMENT
+[D0166:P0001] sha256:75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2
+[D0166:P0002] sha256:273b15a56c10393ceadf940c9060d94134dfd9023a6dba428c4c836b814da9df
+[D0166:P0003] sha256:726755be556baa7f8257d307a1cfa8adb322db56abd8b758b0492b191c9a2dec
+[D0166:P0004] sha256:50bfc76937bab5d16add72519f040deb3953fe98e1293aab8d2f53fcf7ae89ad
+[D0166:P0005] sha256:c21a9f10f12efe710217cfe4e5a66181c25f06cc0e815419215ddc472e72f3a7
+[D0166:P0006] sha256:ad55fc97d71b20b6bba00c2b83814781267a641fb0bd349df69abd1f73976fca
+[D0166:P0007] sha256:cd79542ff1b271bb3c184f0b9c36a2c180c2739965c25044de1e5a7b724db2e0
+[D0166:P0008] sha256:4e857c834434f47651dcc856ade228b5c828fc13645e79e3b10929781773a9da
+[D0166:P0009] sha256:2326d49b7bbc36d470bdab54641f664af3bbef30b528a263f5490cc58ae1eb83
+[D0166:P0010] sha256:0d4a989ca695d0a71754aa12293fe72997053adf3cad95573929125d0a0bc4f3
+[D0166:P0011] sha256:b09463f0212a15b9661e1f98cfd0855b0d6bee8da9f5f689fd26c61216605aa4
+[D0166:P0012] sha256:142b834853a17f2e7ee5b812dd67b8057c23e1006ea401cfcea2755a671a8cce
+[D0166:P0013] sha256:87db4e82ca4bacc9aea2c9edc9a2680dda5e7b2dc840c6dc14ab720f26bc9add
+[D0166:P0014] sha256:13c884a387e0457df547c6d1c4d321fb70b59726297b46615e9dcdc40a404294
+[D0166:P0015] sha256:d54bc618be5bb98fb662e6a8b80b7771bc0ecf9121a72e09d4052226dafb3790
+[D0166:P0016] sha256:f99700ee727b72b6ad975e4927c88b221574e403ae85e765c49446c7af5dc735
+[D0166:P0017] sha256:d85f0b84c825c514947459f683557ff048b0b61f42d980699aaee641f11beaa5
+[D0166:P0018] sha256:7b30bb12bc29cc2515927b0d4d77c52b3dcf12adb15778aae7000c908b4f18a7
+[D0166:P0019] sha256:f5fc9b74d9d470518cac594ea744ab9656f6fdd6c77793285e58e00a595ab3c7
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 26, вузлів 7)
+E001: «Cybersecurity and Infrastructure Security Agency» — part of → «Department of Homeland Security» | форма: actual, positive
+  атрибуція: «Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)» | час події: — | контекст події: —
+  фрагменти: [D0166:P0014] «@0-146 sha256=4f71068a5e9c6eaba62ae02eb297213d08dbde684b900aecc63817003861ad10»
+E002: «Salt Typhoon» — attributed to → «Chinese Communist Party» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0005] «@209-281 sha256=55a5520092c78e4a7726c866c3e866deb62612a00e402ad0f36a9e255e64192c»
+E003: «Chinese Communist Party» — targets → «water» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: «hypothetical CCP cyber-attack scenario»
+  фрагменти: [D0166:P0004] «@107-287 sha256=e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008»
+E004: «Cybersecurity and Infrastructure Security Agency» — reports on → «CCP-backed cyber threats» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «annual CISA reports to Congress mandated by the Strengthening Cyber Resilience Against State-Sponsored Threats Act»
+  фрагменти: [D0166:P0012] «@306-384 sha256=869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c»; [D0166:P0013] «@0-135 sha256=a030b767a71f666c223da43b360363e0235ff970ff127687747e7213689eda57»
+E005: «Volt Typhoon» — targets → «energy» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon burrowed into IT environments of critical infrastructure sectors»
+  фрагменти: [D0166:P0006] «@140-331 sha256=bda4c3c571dccfbbf32ed48f1aa326c8c89490894c7c0ad61e7bc1e28b41fd15»
+E006: «Volt Typhoon» — targets → «energy» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon burrowed into IT environments of critical infrastructure sectors»
+  фрагменти: [D0166:P0013] «@136-181 sha256=7b93910473045812a2e1a937898cffff91432406f33cfe5f47e09fa4de941823»
+E007: «Volt Typhoon» — targets → «transportation systems» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon burrowed into IT environments of critical infrastructure sectors»
+  фрагменти: [D0166:P0006] «@140-331 sha256=bda4c3c571dccfbbf32ed48f1aa326c8c89490894c7c0ad61e7bc1e28b41fd15»
+E008: «China» — targets → «U.S.» | форма: actual, positive
+  атрибуція: «Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)» | час події: — | контекст події: —
+  фрагменти: [D0166:P0005] «@76-203 sha256=7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048»
+E009: «Volt Typhoon» — attributed to → «Chinese Communist Party» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0005] «@186-281 sha256=63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339»; [D0166:P0012] «@306-384 sha256=869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c»
+E010: «joint task force» — mitigates → «Volt Typhoon» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «annual CISA reports to Congress mandated by the bill»
+  фрагменти: [D0166:P0012] «@220-384 sha256=b814743d7c288ff0e5e6af13d409b4ce0a36289c07ffb92374b19761cc583a8f»
+E011: «joint task force» — mitigates → «Volt Typhoon» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0012] «@220-384 sha256=b814743d7c288ff0e5e6af13d409b4ce0a36289c07ffb92374b19761cc583a8f»
+E012: «Rick Scott» — member of → «Senate» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0017] «@0-51 sha256=86006e1d54f686bbe846b231790c2bfd245c9f8fd040e34f300f917006482fd6»
+E013: «Chinese Communist Party» — targets → «financial institutions» | форма: conditional, positive
+  атрибуція: «Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)» | час події: — | контекст події: «hypothetical CCP attack on U.S. financial institutions»
+  фрагменти: [D0166:P0009] «@0-143 sha256=58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523»
+E014: «Volt Typhoon» — targets → «critical infrastructure» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon burrowed into IT environments of critical infrastructure sectors»
+  фрагменти: [D0166:P0006] «@140-331 sha256=bda4c3c571dccfbbf32ed48f1aa326c8c89490894c7c0ad61e7bc1e28b41fd15»
+E015: «Volt Typhoon» — targets → «communications» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon burrowed into IT environments of critical infrastructure sectors»
+  фрагменти: [D0166:P0006] «@140-331 sha256=bda4c3c571dccfbbf32ed48f1aa326c8c89490894c7c0ad61e7bc1e28b41fd15»
+E016: «Chinese Communist Party» — targets → «power» | форма: possible, positive
+  атрибуція: — | час події: — | контекст події: «hypothetical CCP cyber-attack scenario»
+  фрагменти: [D0166:P0004] «@107-287 sha256=e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008»
+E017: «Cybersecurity and Infrastructure Security Agency» — operates → «joint task force» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act»
+  фрагменти: [D0166:P0012] «@202-305 sha256=9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba»
+E018: «Volt Typhoon» — targets → «energy» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon intrusion into critical infrastructure IT environments»
+  фрагменти: [D0166:P0006] «@83-331 sha256=ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e»
+E019: «Volt Typhoon» — targets → «U.S.» | форма: actual, positive
+  атрибуція: «Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)» | час події: — | контекст події: —
+  фрагменти: [D0166:P0005] «@76-281 sha256=fc1ed2160b535bc906f34361bc79d1c6c57d935c166781b33e4517210613cf8f»
+E020: «Cybersecurity and Infrastructure Security Agency» — operates → «joint task force» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act»
+  фрагменти: [D0166:P0012] «@202-384 sha256=d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08»
+E021: «Salt Typhoon» — targets → «U.S.» | форма: actual, positive
+  атрибуція: «Sen. Rick Scott (R-FL) and Rep. Andy Ogles (R-TN)» | час події: — | контекст події: —
+  фрагменти: [D0166:P0005] «@76-281 sha256=fc1ed2160b535bc906f34361bc79d1c6c57d935c166781b33e4517210613cf8f»
+E022: «Cybersecurity and Infrastructure Security Agency» — operates → «joint task force» | форма: planned, positive
+  атрибуція: — | час події: «2026-05-20» | контекст події: «joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act»
+  фрагменти: [D0166:P0012] «@202-384 sha256=d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08»
+E023: «joint task force» — detects → «Volt Typhoon» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «joint task force created by the Strengthening Cyber Resilience Against State-Sponsored Threats Act»
+  фрагменти: [D0166:P0012] «@202-384 sha256=d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08»
+E024: «Volt Typhoon» — targets → «water and wastewater systems» | форма: actual, positive
+  атрибуція: «U.S. government agencies» | час події: «for years» | контекст події: «Volt Typhoon intrusion into critical infrastructure IT environments»
+  фрагменти: [D0166:P0006] «@83-331 sha256=ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e»
+E025: «Andy Ogles» — member of → «U.S. House of Representatives» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0017] «@52-150 sha256=6d75adf0ca358b9e1625e1a4dd8e28af9ac6a8df1d1879f5a87766c54e0e2c62»
+E026: «joint task force» — detects → «Volt Typhoon» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0166:P0012] «@220-384 sha256=b814743d7c288ff0e5e6af13d409b4ce0a36289c07ffb92374b19761cc583a8f»
+V001: «Cybersecurity and Infrastructure Security Agency» (organization) | альтернативні назви: «CISA»
+V002: «U.S.» (country) | альтернативні назви: «America»
+V003: «Strengthening Cyber Resilience Against State-Sponsored Threats Act» (other) | альтернативні назви: «Strengthening Cyber Resilience Against State- Sponsored Threats Act»
+V004: «China» (country) | альтернативні назви: «Communist China»
+V005: «Department of Homeland Security» (organization) | альтернативні назви: «DHS»
+V006: «bank account» (other) | альтернативні назви: «bank accounts»
+V007: «U.S. House of Representatives» (organization) | альтернативні назви: «House»
+КІНЕЦЬ ЗАПИСІВ

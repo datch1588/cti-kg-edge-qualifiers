@@ -1,0 +1,133 @@
+AUDIT_FILE: T25
+TARGET_DOC_ID: D0405
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0405
+PUBLICATION_DATE: 2026-03-18
+SOURCE_URL: https://www.prnewswire.com/news-releases/av-comparatives-publishes-apt-detection-coverage-2026-for-consumers-302716693.html
+TITLE_SHA256: 8695a6148188cd20e1a525ed0396615f443a6b61dcc167a0af9aea0087e2f603
+BEGIN_DOCUMENT
+[D0405:P0001] sha256:8695a6148188cd20e1a525ed0396615f443a6b61dcc167a0af9aea0087e2f603
+[D0405:P0002] sha256:15740b2a75027e1fe3f5b564a7b74c1ce3c3750cdde230050b5447b6412fc3fd
+[D0405:P0003] sha256:a6febc44f9e7fbf33f53e3952315484984ea6e342c399591b186bb7661c65cfb
+[D0405:P0004] sha256:5573aefdae16cd9edf556a1e6d8c7e8ce072bed0c6d09aaf2f8d2dd092948371
+[D0405:P0005] sha256:5573aefdae16cd9edf556a1e6d8c7e8ce072bed0c6d09aaf2f8d2dd092948371
+[D0405:P0006] sha256:b608f2a090e4a7e504131fde768edc0e11c5706967b6aa5dc36b855097b03c33
+[D0405:P0007] sha256:200bad9bafe617ed54ed88f6c86b89d67c53ddfdb281a48ce3b4e1d793818085
+[D0405:P0008] sha256:8ac580ec46ff60fe271be6d64141d5c074ccd7074f11487b5b9d77ba2ff2ea08
+[D0405:P0009] sha256:377adab9abc39252aca9697e63c222f28faad9b88b36e60e4dfa6040c4c25969
+[D0405:P0010] sha256:d218bef52488e49d2f5f3a5e8908f51bcec5dd3b15939451ba12be44ba2d616b
+[D0405:P0011] sha256:8d35f7c924c2b5d15a146f92e851b3d886c37d76c6e8e6a5e96470a095b0f85d
+[D0405:P0012] sha256:2e1e702364c447304d973bec3d133c5a42cc08346c15b82ccb44e2959654baa7
+[D0405:P0013] sha256:2e3d0f82a614398801fd5e9da8c6f1c86b08b32592adaf5c3c5b7412f0a6f48f
+[D0405:P0014] sha256:8f2a04403473c54389335120ef803b99ef8df1791625375023bf828e1e4890ee
+[D0405:P0015] sha256:225ad447fc9d3eaad767f0149cdc95dd1987a5dda706181b29fbd5bafecfeb75
+[D0405:P0016] sha256:f44ce9616eb8203d81599770c64f88832afdba6b235c32888ce394e7042327b4
+[D0405:P0017] sha256:70ad441366752acd7201cf9e2aac835ebb6676b442325962a5ec27e034bc3d23
+[D0405:P0018] sha256:e6c54bf59a7025a533e019bcfc2e233ef60f6fafab082400080e78bc2106197e
+[D0405:P0019] sha256:43fcfb604e80b405a9ca9521f5968ad07aeb3d82571726e28f34e70c5a4b988c
+[D0405:P0020] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0405:P0021] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0405:P0022] sha256:9fa474591aed08826dff8b71275b4deeeda4bcbc8b49f12ffbe3b779af5462b1
+[D0405:P0023] sha256:f68e40cd904169066ac850e79f4fa6bae7bb7ef201ac2834e73e38fb4f8900e2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (55)
+E001: «consumer cybersecurity solutions» — detects → «APT toolsets» | форма: actual, positive
+E002: «APT Detection Coverage 2026» — evaluates → «consumer cybersecurity solutions» | форма: actual, positive
+E003: «Advanced Persistent Threat» — uses → «advanced evasion techniques» | форма: actual, positive
+E004: «APT Detection Coverage 2026» — included testing phase → «behavioural detection during execution» | форма: actual, positive
+E005: «APT Detection Coverage 2026» — evaluates detection of → «known Advanced Persistent Threat (APT) toolsets» | форма: actual, positive
+E006: «machine-learning technologies» — mitigates → «cyber threats» | форма: actual, positive
+E007: «AV-Comparatives» — announced report via → «PR Newswire» | форма: actual, positive
+E008: «known Advanced Persistent Threat (APT) toolsets» — are used in → «cyber-espionage campaigns» | форма: actual, positive
+E009: «behavioural analysis» — mitigates → «cyber threats» | форма: recommended, positive
+E010: «Andreas Clementi» — is Founder and CEO of → «AV-Comparatives» | форма: actual, positive
+E011: «consumer security products» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+E012: «cyber-espionage campaigns» — uses → «APT toolsets» | форма: actual, positive
+E013: «AV-Comparatives» — used dataset of → «7,579 samples» | форма: actual, positive
+E014: «APT Detection Coverage 2026» — included testing phase → «offline and online scanning» | форма: actual, positive
+E015: «APT campaigns» — are designed to → «gather sensitive information» | форма: actual, positive
+E016: «consumer cybersecurity solutions» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+E017: «consumer security products» — detects → «APT toolsets» | форма: actual, positive
+E018: «APT Detection Coverage 2026» — research concluded in → «February 2026» | форма: actual, positive
+E019: «Andreas Clementi» — warns about → «modified variants» | форма: actual, positive
+E020: «heuristic detection» — mitigates → «cyber threats» | форма: actual, positive
+E021: «APT Detection Coverage 2026» — is available on → «AV-Comparatives website» | форма: actual, positive
+E022: «AV-Comparatives» — published → «APT Detection Coverage 2026» | форма: actual, positive
+E023: «Andreas Clementi» — leads → «AV-Comparatives» | форма: actual, positive
+E024: «protection mechanisms relying heavily on static indicators» — struggle to recognise → «altered versions of known malware» | форма: actual, positive
+E025: «AV-Comparatives» — reports on → «APT toolsets» | форма: actual, negative
+E026: «APT campaigns» — involve → «custom malware» | форма: actual, positive
+E027: «AV-Comparatives» — highlights importance of → «behavioural analysis» | форма: actual, positive
+E028: «APT Detection Coverage 2026» — research began in → «November 2024» | форма: actual, positive
+E029: «APT Detection Coverage 2026» — included testing phase → «follow-up testing after vendor updates» | форма: actual, positive
+E030: «protection mechanisms relying heavily on static indicators» — struggle to recognise → «altered versions of known malware» | форма: actual, negative
+E031: «APT Detection Coverage 2026» — included testing phase → «behavioural detection during execution» | форма: possible, positive
+E032: «APT campaigns» — are designed to → «infiltrate specific targets» | форма: actual, positive
+E033: «behavioural analysis» — mitigates → «cyber threats» | форма: actual, positive
+E034: «AV-Comparatives» — examined → «14 consumer cybersecurity products» | форма: actual, positive
+E035: «7,579 samples» — are from → «126 publicly documented APT groups» | форма: actual, positive
+E036: «heuristic detection» — mitigates → «cyber threats» | форма: recommended, positive
+E037: «APT Detection Coverage 2026» — was published on → «March 18, 2026» | форма: actual, positive
+E038: «APT campaigns» — involve → «multi-stage attack chains» | форма: actual, positive
+E039: «modified variants» — challenge → «detection engines» | форма: actual, positive
+E040: «AV-Comparatives» — highlights importance of → «machine-learning technologies» | форма: actual, positive
+E041: «AV-Comparatives» — highlights importance of → «heuristic detection» | форма: actual, positive
+E042: «machine-learning technologies» — mitigates → «cyber threats» | форма: possible, positive
+E043: «behavioural detection» — mitigates → «Advanced Persistent Threat» | форма: actual, positive
+E044: «APT campaigns» — involve → «advanced evasion techniques» | форма: actual, positive
+E045: «APT campaigns» — are designed to → «remain undetected for extended periods» | форма: actual, positive
+E046: «AV-Comparatives» — reports on → «APT toolsets» | форма: actual, positive
+E047: «machine-learning technologies» — mitigates → «cyber threats» | форма: recommended, positive
+E048: «Advanced Persistent Threat» — uses → «custom malware» | форма: actual, positive
+E049: «INNSBRUCK» — located in → «Austria» | форма: actual, positive
+E050: «14 consumer cybersecurity products» — achieved detection rates exceeding 99% for → «original APT samples» | форма: actual, positive
+E051: «AV-Comparatives» — is located in → «Innsbruck, Austria» | форма: actual, positive
+E052: «cyber-espionage» — uses → «APT toolsets» | форма: actual, positive
+E053: «cyber threats» — mitigates → «machine-learning technologies» | форма: recommended, positive
+E054: «minor binary modifications» — change → «file hashes» | форма: actual, positive
+E055: «Advanced Persistent Threat» — uses → «multi-stage attack chains» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

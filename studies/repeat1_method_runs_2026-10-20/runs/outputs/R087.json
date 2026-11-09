@@ -1,0 +1,81 @@
+{
+ "run_id": "R087",
+ "target_doc_id": "D0329",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Acronis", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0002", "start": 0, "end": 139, "sha256": "43268f10818a95d9d8940bf54059aad8e76f6f8a65c4e47b79730e73892a1099"}}
+  ]},
+  {"id": "n002", "label": "Acronis Threat Research Unit", "entity_type": "organization", "aliases": ["Acronis TRU", "TRU"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0002", "start": 210, "end": 338, "sha256": "188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6"}},
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0007", "start": 59, "end": 165, "sha256": "2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603"}}
+  ]},
+  {"id": "n003", "label": "MSSP partners", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0011", "start": 0, "end": 110, "sha256": "5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6"}}
+  ]},
+  {"id": "n004", "label": "SIX ICT", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0010", "start": 230, "end": 271, "sha256": "c66aa905ca0bf44c334b26801b13bec3e6bf23c411e55b258d0a16f509eb2d12"}}
+  ]},
+  {"id": "n005", "label": "Gaidar Magdanurov", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0005", "start": 120, "end": 164, "sha256": "1da71975413ea08398eb2839740a9a46757705df672682e64142d303ac2717ba"}}
+  ]},
+  {"id": "n006", "label": "Robert Nieuwenhuijse", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0010", "start": 230, "end": 271, "sha256": "c66aa905ca0bf44c334b26801b13bec3e6bf23c411e55b258d0a16f509eb2d12"}}
+  ]},
+  {"id": "n007", "label": "Acronis MDR by Acronis TRU", "entity_type": "product", "aliases": ["Acronis MDR by TRU", "Acronis MDR"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0002", "start": 0, "end": 139, "sha256": "43268f10818a95d9d8940bf54059aad8e76f6f8a65c4e47b79730e73892a1099"}},
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0001", "start": 0, "end": 69, "sha256": "93dbae63c904184809bce74777946a93d8cfd751a886346a063a72561ea1fc38"}},
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0005", "start": 167, "end": 297, "sha256": "100f542ca7654dd5d3b0f01da018403f50d3413cbdc09914d6ea3809b508ba71"}}
+  ]},
+  {"id": "n008", "label": "attack rollback", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0008", "start": 0, "end": 157, "sha256": "dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b"}}
+  ]},
+  {"id": "n009", "label": "business continuity", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}}
+  ]},
+  {"id": "n010", "label": "endpoint detection and response", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}}
+  ]},
+  {"id": "n011", "label": "patch management", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n007", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "Acronis", "event_time": "", "event_scope": "launch of Acronis MDR by Acronis TRU", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0002", "start": 0, "end": 139, "sha256": "43268f10818a95d9d8940bf54059aad8e76f6f8a65c4e47b79730e73892a1099"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n001", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0007", "start": 59, "end": 165, "sha256": "2abe7e8530a475285278342940b7f74dcd34aad38c8cbd8992f614baefffb603"}}
+  ]},
+  {"id": "e003", "source": "n002", "target": "n007", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0002", "start": 210, "end": 338, "sha256": "188b75e90f950b04007e4667da99a8bff2a8fd85424b3a3a371eadd2c7f73cf6"}},
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0003", "start": 224, "end": 356, "sha256": "3119ea1b142901191bae7f05c367f8d3171716489ff6383bc695f3410d484001"}}
+  ]},
+  {"id": "e004", "source": "n003", "target": "n007", "relation_type": "PROVIDES", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0011", "start": 0, "end": 110, "sha256": "5c9de01bc403b7cbd0261295d0dd1c19356ba939f2277fc0c98dc56732640ca6"}}
+  ]},
+  {"id": "e005", "source": "n004", "target": "n007", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Robert Nieuwenhuijse", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0010", "start": 156, "end": 227, "sha256": "580c64675733e5477bbafdbe33f2952723b6ff4443b1210ce9417e9ef98f4853"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n001", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0005", "start": 120, "end": 164, "sha256": "1da71975413ea08398eb2839740a9a46757705df672682e64142d303ac2717ba"}}
+  ]},
+  {"id": "e007", "source": "n006", "target": "n004", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0010", "start": 230, "end": 271, "sha256": "c66aa905ca0bf44c334b26801b13bec3e6bf23c411e55b258d0a16f509eb2d12"}}
+  ]},
+  {"id": "e008", "source": "n007", "target": "n008", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0008", "start": 0, "end": 157, "sha256": "dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b"}}
+  ]},
+  {"id": "e009", "source": "n007", "target": "n009", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}}
+  ]},
+  {"id": "e010", "source": "n007", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}}
+  ]},
+  {"id": "e011", "source": "n007", "target": "n011", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0004", "start": 202, "end": 358, "sha256": "928c7a789160cbbed71f8bf0a9b0214ab01e3bc2b3c0e04383233a7301c27f0f"}},
+   {"role": "TARGET", "doc_id": "D0329", "paragraph_id": "D0329:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0329:P0008", "start": 0, "end": 157, "sha256": "dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

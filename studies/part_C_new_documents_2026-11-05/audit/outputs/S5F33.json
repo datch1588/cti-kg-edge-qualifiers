@@ -1,0 +1,26 @@
+{
+ "audit_file": "S5F33",
+ "target_doc_id": "D0246",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що атака «traceable to China» (P0006, P0009), а не заперечує це, тож полярність negative хибна."},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: це IPSA надає вебсайт («my Ipsa provided website», P0009), а не сайт надає IPSA."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Сер Девід розповів про атаку в Палаті громад і засудив її (P0005, P0007, P0009)."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "Сайт тимчасово вимкнули після атаки, а P0009 подає зламування й DDoS як факт."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007 і P0009 описують DDoS-атаку на сайт як таку, що сталася."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Сер Девід повідомив про кібератаку в Палаті громад (P0007, P0009)."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Депутат стверджує, що шкідливий трафік «traceable to China» (P0006, P0009); це переказ заяви, тож actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Атака була спрямована на сайт депутата daviddavismp.com (P0005, P0009, P0012)."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0005 атаку названо «suspected», тож форма possible відповідає принаймні одному місцю статті."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "«My Ipsa provided website» (P0009): IPSA надає депутатові вебсайт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: на сайт вставили шкідливі посилання, які перенаправляли на сайти азартних ігор."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Кібератака була спрямована на сайт депутата (P0005, P0009)."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Депутат називає сайт «my website» і разом зі своїм офісом ним керує, зокрема вимкнув його й домовляється з хостингом (P0009, P0013)."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Атака вивела сайт з ладу: його зламали й тимчасово вимкнули (P0005, P0009)."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Атака вивела сайт з ладу: його зламали й тимчасово вимкнули (P0005, P0009)."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Атака включала DDoS (P0007, P0009)."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Атаку названо «traceable to China» у заяві депутата (P0006, P0009)."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "Сер Девід засудив підозрювану кібератаку й розповів про неї (P0005, P0007)."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Атака включала DDoS (P0007, P0009)."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "Під час атаки на сайт вставили шкідливі посилання (P0009)."}
+ ]
+}

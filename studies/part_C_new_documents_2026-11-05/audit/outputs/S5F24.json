@@ -1,0 +1,30 @@
+{
+ "audit_file": "S5F24",
+ "target_doc_id": "D0364",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "P0038 описує захисну властивість 2FA як чинну (actual); те, що поруч радять увімкнути 2FA, не робить рекомендованим саме твердження про захист."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0049: firewalls are essential for protecting company data — твердження про роль засобу, actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "I", "reason": "P0049 подає роль secure connections у захисті даних як твердження про важливість (actual), а не як пораду."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0049: secure connections are essential for protecting company data — actual."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0043: regular backups ensure you don't lose important files — властивість засобу, actual."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0041: antivirus can detect threats — здатність засобу, actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0049: encryption is essential for protecting company data — actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0038: без другого кроку перевірки доступу до акаунта не отримати — захисна властивість 2FA, actual."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "P0043 подає захист файлів резервними копіями як властивість (actual), а не як пораду."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "I", "reason": "P0049 стверджує, що firewalls захищають дані компанії, заперечення немає, тож полярність negative хибна."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "I", "reason": "У P0041 «can detect» означає здатність засобу, тобто actual, а не possible."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: phishing — це коли атакувальники виманюють персональну інформацію; загальний факт, actual."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: social engineering маніпулює людьми, щоб ті розкрили конфіденційну інформацію; actual."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: many individuals have lost important data because of ransomware attacks — actual."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: malware designed to damage or gain access to your system — призначення ПЗ, actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: businesses have lost important data because of ransomware attacks — actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: ransomware locks your files — actual."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "P0049 подає роль encryption у захисті даних як твердження про важливість (actual), а не як пораду."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0058: social media platforms are a common target for cybercriminals — actual."},
+  {"item_id": "E020", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: за P0022 ransomware уражає businesses, а не businesses уражають ransomware."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0013: hackers often target regular users — типова поведінка, actual."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0041: antivirus can remove threats before they cause damage — здатність пом'якшувати загрози, actual."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "I", "reason": "У P0041 «can detect and remove» означає здатність засобу, тобто actual, а не possible."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "I", "reason": "P0049 подає роль firewalls у захисті даних як твердження про важливість (actual), а не як пораду."}
+ ]
+}

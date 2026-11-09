@@ -1,0 +1,52 @@
+{
+ "run_id": "F139",
+ "target_doc_id": "D0463",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Canada", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0003", "start": 80, "end": 210, "sha256": "fece8497f3d6b565016323b5ed4259328f64dba02ecfce3c9986c13a61d4dcd7"}}
+  ]},
+  {"id": "n002", "label": "Japan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0001", "start": 0, "end": 86, "sha256": "6e5d3409bab27758a9559b8111aef1f50b33435517eedc94e56c9d89c69963ab"}}
+  ]},
+  {"id": "n003", "label": "Operation NANOOK", "entity_type": "event", "aliases": ["NANOOK"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0014", "start": 138, "end": 338, "sha256": "3d751e7d4d55d3f2722282eb5e2108dcb9b01105087b0f3d6adfed03ebcbd308"}}
+  ]},
+  {"id": "n004", "label": "Operation NEON", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0025", "start": 125, "end": 261, "sha256": "962cfaeeb7c908b0224b501df51482b3ef2294e9aa8b46cb083f553d3cea0f78"}}
+  ]},
+  {"id": "n005", "label": "Canadian Arctic", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0014", "start": 162, "end": 254, "sha256": "0e141f5cb08e365c9bedc207d1e003e5a8b13ae472064f7880b558d80cd8bd61"}}
+  ]},
+  {"id": "n006", "label": "Canadian Armed Forces", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0025", "start": 111, "end": 196, "sha256": "1f36929f0cc5aef5ec629cff7b7f5ab8eb8e05794d18d84fdec7838d713d1294"}}
+  ]},
+  {"id": "n007", "label": "Canada Japan Cyber Policy Dialogue", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 0, "end": 152, "sha256": "da6d1ba6250f1b7a112462f255c1ef9ffe401fcc6802d70c59e5ed1e229f64bf"}}
+  ]},
+  {"id": "n008", "label": "Mark Carney", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0003", "start": 155, "end": 210, "sha256": "fbacad235552b6658cf5668162bd335f5bd96c24d69ded46d67f252707c856cb"}}
+  ]},
+  {"id": "n009", "label": "Sanae Takaichi", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0005", "start": 0, "end": 109, "sha256": "88f08af384fd21b532011eaf58904c42a8858fea55478a5629a42ad51b6d0dfa"}}
+  ]},
+  {"id": "n010", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 75, "end": 151, "sha256": "524864dcd9959ec8e0e8411e71975af1c3d2a8f172b94a26771c6862b4c785ff"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n003", "relation_type": "OPERATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0014", "start": 256, "end": 338, "sha256": "1ec1b57cebf3089b7af000310ba95d71f573fc49ec2436e4c528b3175a564f7b"}}
+  ]},
+  {"id": "e002", "source": "n003", "target": "n005", "relation_type": "LOCATED_IN", "attribution": "PMO", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0014", "start": 108, "end": 254, "sha256": "b85a271e102769b344e6236c78c87c04dcb40bd2e462fd6129ac2f50faf43847"}}
+  ]},
+  {"id": "e003", "source": "n006", "target": "n004", "relation_type": "OPERATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0025", "start": 125, "end": 261, "sha256": "962cfaeeb7c908b0224b501df51482b3ef2294e9aa8b46cb083f553d3cea0f78"}}
+  ]},
+  {"id": "e004", "source": "n007", "target": "n010", "relation_type": "MITIGATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0463", "paragraph_id": "D0463:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0463:P0022", "start": 33, "end": 151, "sha256": "a829f4eda56cbf4ecacf19be8a92777efb26cf48a451e0bfbb363644bbe67e24"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

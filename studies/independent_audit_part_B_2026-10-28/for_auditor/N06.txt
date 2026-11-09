@@ -1,0 +1,254 @@
+AUDIT_BATCH: N06
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N06-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N06-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N06-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 3 (TARGET_DOC_ID: D0532) ===
+DOC_ID: D0532
+PUBLICATION_DATE: 2026-02-18
+SOURCE_URL: https://www.prnewswire.com/news-releases/trend-micro-reports-earnings-results-for-q4-2025-and-fy-2025-302691252.html
+TITLE_SHA256: 813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b
+BEGIN_DOCUMENT
+[D0532:P0001] sha256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b
+[D0532:P0002] sha256:bb928866ed505808edc0fd4be112419da62a5ce83a81458fd9af290c7537e72f
+[D0532:P0003] sha256:4ed86abcd539ad57125518056ad95ce9273975f732b7d03fecb92948698b9b21
+[D0532:P0004] sha256:55249ca4415fa86ec7c85449e87d159f75890005dea73d64773e3b873e9be6b6
+[D0532:P0005] sha256:ec5deba275ad7cd8141d5fa0eba6c0acd4cf4e6af9a22d5923b59c9f0455ed13
+[D0532:P0006] sha256:ef0877bbcd038563a8c0978d6a1f69e0cc9f8f381c3cb298650ec72c3ddbfc30
+[D0532:P0007] sha256:3c93e31841d459e88db31102099f9b0f26e07246f155763a516f2e0b005172a4
+[D0532:P0008] sha256:48efd369f7cf17241b98ddb65f7f828613fd249e95b98bf24d1c72a7e042cddf
+[D0532:P0009] sha256:6a59d5f27c39ce0a0e14ec4cf667d9c17bfd52eb411d0e239b0eb0acb6fce475
+[D0532:P0010] sha256:2db990e1933cbc75be53c75be4e342c51c67471eda144e6ec71251f8145b6416
+[D0532:P0011] sha256:402fafd0b1f6416fe7ae5598acde1714dda3da2ef7de4ad28236a1a81c5aa620
+[D0532:P0012] sha256:02fc4b0e5f5c159400aa97f46c5498192251d32832f429980c23cd70374b14aa
+[D0532:P0013] sha256:6d9fbffa7e8d924dce2b16f213d280f9b61a7dbf1b8bfb72614a2fa6b3cbe926
+[D0532:P0014] sha256:164c0307a634942c067488c1c9172b4f861887b8845fd5fea87e29db55aa2ce8
+[D0532:P0015] sha256:0c7b38380c79f4ebd6be68d55c49a6b389305f814b70e11d01ea08302a7ba1a4
+[D0532:P0016] sha256:4eab5a159d86336d86ff2c84be1904f6116bef03f9e84d5643b564464a217428
+[D0532:P0017] sha256:efae142f4dba2f884daa2a3a72bc26a1f6702519754f6e6638f7f3b217c83241
+[D0532:P0018] sha256:d6924316cd19aef08f3811b8ca58fb179e53b38d6a52c15ab276739752427293
+[D0532:P0019] sha256:7746b8fc72e0350d384aea05a63c10d2f99f2f5f915eb3242383021ecde12b8d
+[D0532:P0020] sha256:f753e5c6ad37b63bdc282784c7ac8ba3cf858c0980dd8171898c7139b404aba7
+[D0532:P0021] sha256:b9da81c84d2158a202803cf355b86e39d38004ffa28f756bb25ddf14e5581169
+[D0532:P0022] sha256:221ec84584111d6dda8d8f436e60eb1498d69b8802af39d185c0bb2b9a5ffeae
+[D0532:P0023] sha256:496372bfbc726e11ab20e58c1b35cf9f08985ff3fd7af669190136db8d5a12d1
+[D0532:P0024] sha256:7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674
+[D0532:P0025] sha256:3a2c29c916c0791523889ec17cb06ebd40fa1464d7cfb0b3ea88c755a9decc8f
+[D0532:P0026] sha256:15ede754d54ea5871c05e84ef9ef0fcbf96a5e0d3ea93ec6df99c9616c779952
+[D0532:P0027] sha256:f4311057b7fd2e68243270046dc0bf38356995d2b8311187bc3e8f3d9a2a341e
+[D0532:P0028] sha256:82dfdf88aa88a25b53a274329505bd2d42d317a1a63d817cbda0647edc0890e5
+[D0532:P0029] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0030] sha256:db2b0757373570b99500a1b92ded55fc6b360436457f2f9a391df26679ef9ba9
+[D0532:P0031] sha256:2786d8993b51d933cc27ee2650f164ccf6fbec74989f68a08eac3e30351dad5a
+[D0532:P0032] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0033] sha256:fa40f7c91f54b6b2a25dd5afe4ca66c11d0005634cf5bf56e91ab36ca80b16e6
+[D0532:P0034] sha256:626f74add3074dcb18305cdcb7d8cf7485f8c05092bef062f3b6399f32cd74cc
+[D0532:P0035] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0036] sha256:314a9cb47695e4168643aae2e0f1bd9d4c3fbad775a5c552390085ec8a421a63
+[D0532:P0037] sha256:021f921d570836ddda7ef6396eb3e2c7ac7b328b54ab496e01ad0e1accd67e01
+[D0532:P0038] sha256:b4e22c98a57ae80a81427ba2e35a08afcb194e78652ab6acc4b6ae33b0677f0c
+[D0532:P0039] sha256:9bd60f341f0cdf30e9e531c0def6ec96aae850d795a7df423dfdb541e4bb15f9
+[D0532:P0040] sha256:5438e6a5eda8bf5b84ad77516b56468443177480e383e13225e4c6777f90366f
+[D0532:P0041] sha256:adf7171f678513ccab712ddbd79996e9c31b4e95761ff6e72b173d4dde805ded
+[D0532:P0042] sha256:675657fd93f39d15abe8dca2ee01390279e65f0b082d676ef11d9d13595dd1e5
+[D0532:P0043] sha256:b5b4046a8d6eba04fb8e2ff2ba6b110ce5daa506e8290a6b7bde9d4700356a4b
+[D0532:P0044] sha256:68e58a56f71a0d852836aea9c45a9674d5ec5ccfcde8892dd56f23a54b567ffc
+[D0532:P0045] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0532:P0046] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0532:P0047] sha256:cd5e70fd532edf9c491e52083b1bcc772eb48d18323f7e266cbb9e87992f7394
+[D0532:P0048] sha256:96976f34b804fbcec933c13eb22de7013ed9dd692bc581bdb180fa5b896d6a6e
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (30)
+N06-E001: «Trend Micro» — detects → «bring your own vulnerable driver attacks» | форма: actual, positive
+N06-E002: «Trend Micro» — warns about → «scams» | форма: possible, positive
+N06-E003: «Trend Micro» — provides → «TrendAI Vision OneTM» | форма: actual, positive
+N06-E004: «Winstron Digital Technology Holding Company» — provides → «Magna AI» | форма: actual, positive
+N06-E005: «Cifas» — mitigates → «online scams» | форма: planned, positive
+N06-E006: «Trend Micro» — provides → «Beyond Device Protection» | форма: actual, positive
+N06-E007: «TrendAI Vision One» — uses → «AI» | форма: actual, positive
+N06-E008: «TrendAI Vision One» — uses → «agentic AI» | форма: actual, positive
+N06-E009: «Trend Micro» — provides → «TrendAI Vision OneTM AI Security Package» | форма: actual, positive
+N06-E010: «Trend Micro» — provides → «ScamCheck» | форма: actual, positive
+N06-E011: «AI» — uses → «TrendAI Vision OneTM» | форма: actual, positive
+N06-E012: «TrendAI Vision OneTM» — uses → «AI» | форма: actual, positive
+N06-E013: «Cifas» — mitigates → «identity fraud» | форма: planned, positive
+N06-E014: «TrendAI Vision OneTM» — uses → «agentic AI» | форма: actual, positive
+N06-E015: «Trend Micro» — mitigates → «online scams» | форма: planned, positive
+N06-E016: «Trend Micro» — mitigates → «identity fraud» | форма: planned, positive
+N06-E017: «bring your own vulnerable driver attacks» — targets → «windows-based systems» | форма: actual, positive
+N06-E018: «Trend Micro» — warns about → «scams» | форма: actual, positive
+N06-E019: «Trend Micro» — provides → «TrendAI Vision One» | форма: actual, positive
+N06-E020: «Cifas» — located in → «UK» | форма: actual, positive
+N06-E021: «Trend Micro» — protects → «agentic AI» | форма: actual, positive
+N06-E022: «Trend Micro» — provides → «Magna AI» | форма: actual, positive
+N06-E023: «Trend Micro» — uses → «AI» | форма: actual, positive
+N06-E024: «ethical hackers» — discovers → «zero-day vulnerabilities» | форма: actual, positive
+N06-E025: «Trend Micro» — provides → «Network Analysis and Visibility» | форма: actual, positive
+N06-E026: «Cifas» — mitigates → «online scams» | форма: planned, negative
+N06-E027: «Trend Micro» — provides → «TrendAI Vision OneTM for service providers» | форма: actual, positive
+N06-E028: «identity fraud» — mitigates → «Trend Micro» | форма: planned, positive
+N06-E029: «Trend Micro» — provides → «threat intelligence» | форма: actual, positive
+N06-E030: «Eva Chen» — leads → «Trend Micro» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 3 (TARGET_DOC_ID: D0095) ===
+DOC_ID: D0095
+PUBLICATION_DATE: 2026-06-05
+SOURCE_URL: https://www.helpnetsecurity.com/2026/06/05/new-infosec-products-of-the-week-june-5-2026/
+TITLE_SHA256: 9c855165e8bd7fa1beb36a6f514da1803972b7fa0e99ff06d9885e482cbe3c93
+BEGIN_DOCUMENT
+[D0095:P0001] sha256:9c855165e8bd7fa1beb36a6f514da1803972b7fa0e99ff06d9885e482cbe3c93
+[D0095:P0002] sha256:82c9ca8b636f063035a51d414a29c753eadf1be54526fa01dbab7629089fac64
+[D0095:P0003] sha256:85cbae5fc9efa553b3ef81ac6391f573ee2dbb30e25dafd80208c2a9170fb99e
+[D0095:P0004] sha256:3e1beb7e48f5a7556d7f9b67264d777a5ecc4c215298683734f79225e42ecd62
+[D0095:P0005] sha256:d3a9d668503a636d05283fd022d753289ff5cd318b3c8a5766083fc379877e0f
+[D0095:P0006] sha256:a84a868f8436a1f106306a8aeac6d8c6358c4631f3c582528df18f1ec25da1a8
+[D0095:P0007] sha256:01cf8f0f00336a634acaea111994b97d8f67dedbeb5664cafd83dcef41716e27
+[D0095:P0008] sha256:ce317b7fe3f77c8aea9254f6fa5a43fc4eaffce0bc173f9d56f1ca5bc9d64151
+[D0095:P0009] sha256:4dfb4f53251f2338d0a3a4cdf8c3b1a27426a982c44ef0a39d6e616a7ce5dcda
+[D0095:P0010] sha256:40ef005fae2b02d1d21973402e6ddc58ad2ce3d92c29b56999e7dcbb2a56c5cf
+[D0095:P0011] sha256:1dd5a6507ee64ee23d9ef9c800c995e293a1c10e9d07754e11030b46ce0a3ff6
+[D0095:P0012] sha256:c538ee952d144cb586e4bf1d5ab9e548754c8131d96572d812d206187954a70f
+[D0095:P0013] sha256:2b04c1695e4a3210496147052525a233615d2a6e1e6d9094a51f4c2567239f5a
+[D0095:P0014] sha256:fe659817c9aa18b6ecca532a406683c1006b851fedb09397f2b1a69527784d6f
+[D0095:P0015] sha256:dcfaf0d0d8ac6de5dd40ed2363068971f5edc5ddd2827e1c116b5768ce48b4c6
+[D0095:P0016] sha256:5f456a927e79f5ad60b33b373132b701e558df71511273f90811ef22b1eec99d
+[D0095:P0017] sha256:bfb1ffc98851e92bd11ec9158e5c236d6ae4f7f8bdb08c9e25c125f1a677bd46
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (17)
+N06-E031: «malicious dependencies» — mitigates → «Dependency Firewall» | форма: actual, positive
+N06-E032: «Noma» — provides → «Noma Agent Access Control» | форма: actual, positive
+N06-E033: «depthfirst» — provides → «Dependency Firewall» | форма: actual, positive
+N06-E034: «MazeBolt» — provides → «RADAR VectorAI» | форма: actual, positive
+N06-E035: «RADAR VectorAI» — uses → «DDoS» | форма: actual, positive
+N06-E036: «MazeBolt» — develops → «RADAR VectorAI» | форма: actual, positive
+N06-E037: «Dependency Firewall» — mitigates → «malicious dependencies» | форма: actual, positive
+N06-E038: «Asimily» — develops → «Segmentation Orchestration» | форма: actual, positive
+N06-E039: «Diligent» — provides → «Diligent Cyber Risk Management» | форма: planned, positive
+N06-E040: «Hyland» — develops → «Enterprise Context Engine» | форма: actual, positive
+N06-E041: «MazeBolt» — develops → «RADAR VectorAI» | форма: actual, negative
+N06-E042: «Asimily» — provides → «Segmentation Orchestration» | форма: actual, positive
+N06-E043: «Diligent» — develops → «Diligent Cyber Risk Management» | форма: actual, positive
+N06-E044: «depthfirst» — develops → «Dependency Firewall» | форма: actual, positive
+N06-E045: «Dependency Firewall» — mitigates → «malicious dependencies» | форма: actual, negative
+N06-E046: «Noma» — develops → «Noma Agent Access Control» | форма: actual, positive
+N06-E047: «Hyland» — provides → «Enterprise Context Engine» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 3 (TARGET_DOC_ID: D0332) ===
+DOC_ID: D0332
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://iol.co.za/business-report/economy/2026-04-07-hackers-dont-wait--why-your-cybersecurity-strategy-shouldnt-either/
+TITLE_SHA256: 52bbf51b3d3a36795ffb9609b21b7e86a9299e26f6a6d5f624c9b052eb29ff57
+BEGIN_DOCUMENT
+[D0332:P0001] sha256:52bbf51b3d3a36795ffb9609b21b7e86a9299e26f6a6d5f624c9b052eb29ff57
+[D0332:P0002] sha256:7fec011559a7a0a794e9fde0d54b385c439086ff195fcc60ef2c5b9b7f82617a
+[D0332:P0003] sha256:691081ec69fddb04162fba71ef82eee0e88f908e4658b20ef23e465dea2a0930
+[D0332:P0004] sha256:fd6ce8b15b8d7e692b9a0f82a7d60a3efaf671bf12ab4211a439090df08507af
+[D0332:P0005] sha256:19ed2bc3df4ad27043a1a3f120925c8625b3ee8fa8ab171736b116206339f9cb
+[D0332:P0006] sha256:19b5fc747508774a67cd193533de1c5dda6ca82d9dfdec83cfff335949788b9e
+[D0332:P0007] sha256:be06215db2ddc0324caae16a561bc8a063da56b3280e224255f297d877964cff
+[D0332:P0008] sha256:1c9e0cbb059054fdc7008e87c61aeec5bf69890485c25bceb6f71be1b04598de
+[D0332:P0009] sha256:9d3b4be7f9fbeb664a8c3a1efae889f012cc64e0e3462e6bab7ce96cc1284333
+[D0332:P0010] sha256:751bc83b0a0d11adaf92fae548b84710e0d73155392afa8ddb699e559fb4024d
+[D0332:P0011] sha256:5f5ab9dc058ca424e144074fd5517895d515ccc1d8ddfbf79acbac4112565181
+[D0332:P0012] sha256:7293a4372d21e0e9ef8af3e260bc652a3397113e6d9c6357aa153a65f28a241c
+[D0332:P0013] sha256:6926955596845c7c78b70715bc3df609c293ca76c4247174e92cd8d4a77f0955
+[D0332:P0014] sha256:8790019f3e4f87e238d385c448ed20279e02c9d46d35578c654f26f7b109c9be
+[D0332:P0015] sha256:612b42fc00c31ef7a8b20bedaa31c5f84730b61de27412c72bfd52fa2b39a4ac
+[D0332:P0016] sha256:da2196d039aeff4693769dfa014b6f378e2fdd7385a5346d33caba83673c8fa7
+[D0332:P0017] sha256:7525995fe8b817198389bad5b4a00ce826cd5e8d59b6a342224105e1e8618b1c
+[D0332:P0018] sha256:7e81fc433c8562e5f4d95828a058c4c586b0985a5cf5bd5338239ea7daff4054
+[D0332:P0019] sha256:7a34936dc7c47bd2be7b8301edfd54256afe0367da9ea0217d0bc79d681c4db6
+[D0332:P0020] sha256:f000ec34236230883ca4f9f24dd4a7ad2ec64073a5e6ccccd7673fd43f7e0d92
+[D0332:P0021] sha256:dbab4b5eb369d9365a6b1d46a835ce20078a50401910ce93c27d9651019b6e9f
+[D0332:P0022] sha256:cfba3c4ef5e6b9fd4440378e6dfd9c83459059c8890fde4512181b29421640f4
+[D0332:P0023] sha256:3b6132caeeb5386ed0f3f05b6925c2099d534a8809ea1241fc044b014033ae6f
+[D0332:P0024] sha256:9edfde972f63b36218bf10bb03a5024c824f77478c6c1b5305bd230e6883f1f9
+[D0332:P0025] sha256:e8c3fe07e4c60732c67f217f5d49d56853bf00bd95f5c10532f3834ed2c6be49
+[D0332:P0026] sha256:321350d1dd99713f24986cd3a7dc35df52aed09f84a6abfd4970e188d5856929
+[D0332:P0027] sha256:d9859d38676aed89fe0b08cb3a9e559cb14d8df4c1bf3fe0198bc6f6c0425a75
+[D0332:P0028] sha256:5fb5a2de9c45a1157c502c9daf98fc368ed8a16a2fffcca185395e5e4086565f
+[D0332:P0029] sha256:aa94d84aaea6ce3ad81720a4d295f8a39a0936f54b9a61d7360de84181b3521d
+[D0332:P0030] sha256:acd5a235297858f116bef2835a950f5ddbe7f14797c6f3ecd97b6496f7e28795
+[D0332:P0031] sha256:d098438c1b1b66291fd18b081a8bc9124955de2b7e578bf108816dcd64fac122
+[D0332:P0032] sha256:ab063ea2b5408689fe0a26ad847310db17bd67e6a04154079f7166077af78b77
+[D0332:P0033] sha256:73ecfb92d4f51fe60bf7c2a0e2e644eaefcdf9e9c23c2a1c860a0bbcf4888882
+[D0332:P0034] sha256:2ff36345703f12c1f3c287b88537cb43f5d389f60baafe9c67ccd23e4005ce4f
+[D0332:P0035] sha256:5e7c5164bb1719911f0147633bb9454172f2de26ffb1a8248731b3bfae7e1dea
+[D0332:P0036] sha256:dcf66731721792d8ef0b5ba662b10437cb1b174e8dcfb6754e6bd964f214e3a2
+[D0332:P0037] sha256:1059a5f8f6a80443e024c522ef0be375234ae949fa6dafff450631aa9cf3efff
+[D0332:P0038] sha256:254aa7936f9aa83ff1552a3d5605170b8e185e5b283c033d815087edd9b373f7
+[D0332:P0039] sha256:254aa7936f9aa83ff1552a3d5605170b8e185e5b283c033d815087edd9b373f7
+[D0332:P0040] sha256:3000281bf9e415d30c00bbfd591510fed4bcca2c786b1946932eb14f48348fe0
+[D0332:P0041] sha256:bc1b3bcf522a7d836cb7cb66ea950c1705de95e71aedc030329edb1b87424757
+[D0332:P0042] sha256:baf1d4058740be8efb0dfdc90ad1f098fd9cbef006fd316cd6eb4aa30315e7fa
+[D0332:P0043] sha256:16dbca58f84b20360d3ab6c7117936328f691c2d052c42c97a8ef663bf1c1b1d
+[D0332:P0044] sha256:49fb8690ce4ba7fe98c8d5fcec2335001aa4d004e3aa8b77bd45482def1da49c
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (14)
+N06-E048: «Proactive threat management» — protects → «brand reputation» | форма: actual, negative
+N06-E049: «threat simulations» — uses → «Continuous Threat Exposure Management» | форма: actual, positive
+N06-E050: «Continuous Threat Exposure Management» — uses → «threat simulations» | форма: actual, positive
+N06-E051: «Continuous Threat Exposure Management» — uses → «attack emulation» | форма: actual, positive
+N06-E052: «Saurabh Prasad» — member of → «In2IT Technologies» | форма: actual, positive
+N06-E053: «attackers» — uses → «Artificial Intelligence» | форма: actual, positive
+N06-E054: «Continuous Threat Exposure Management» — uses → «automation» | форма: actual, positive
+N06-E055: «misconfiguration» — affects → «sensitive data» | форма: conditional, positive
+N06-E056: «Continuous Threat Exposure Management» — detects → «vulnerabilities» | форма: actual, positive
+N06-E057: «attackers» — uses → «automation» | форма: actual, positive
+N06-E058: «Continuous Threat Exposure Management» — uses → «automation» | форма: actual, negative
+N06-E059: «Proactive threat management» — enables → «innovation» | форма: actual, positive
+N06-E060: «Proactive threat management» — protects → «brand reputation» | форма: actual, positive
+N06-E061: «Continuous Threat Exposure Management» — detects → «misconfiguration» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+КІНЕЦЬ ФАЙЛУ N06. Усього записів у файлі: 61 (від N06-E001 до N06-E061).

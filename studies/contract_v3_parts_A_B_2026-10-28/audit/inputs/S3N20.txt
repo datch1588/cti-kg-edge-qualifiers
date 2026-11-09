@@ -1,0 +1,219 @@
+AUDIT_FILE: S3N20
+TARGET_DOC_ID: D0195
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0195
+PUBLICATION_DATE: 2026-05-12
+SOURCE_URL: https://www.computerworld.com/article/4170047/openai-introduces-daybreak-cyber-platform-takes-on-anthropic-mythos-2.html
+TITLE_SHA256: 7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e
+BEGIN_DOCUMENT
+[D0195:P0001] sha256:7cf60856d1779735b3015025fb4acff0400fbb2241347decfbfb64f037533f4e
+[D0195:P0002] sha256:a1b56f01b4dd20f9c71b4486d1715f2eea2fefa44b2a7b9a884e5f6b610eb89a
+[D0195:P0003] sha256:7d5fe80b4ed9bfa39433c15fdf4f4841ac124c69994fbc15a213424eb4bbba38
+[D0195:P0004] sha256:b0fde8fbbf0bda3389080c4c6dac1b2812e56aef818a6d966e6d88c519b8f44c
+[D0195:P0005] sha256:b740ab7e968a9463e6c8ac08a7d4e7d4777188169a30f74fbfce443ce4e791d0
+[D0195:P0006] sha256:8dae3b37712c9322a5ce0c53d267034e6ab3cfe5bc5aa5dc99a2080a11a2d3cb
+[D0195:P0007] sha256:57e1c00120381ba0ed56b5059ccfa5e4a83b8fc437e3da200c0765a97246f54b
+[D0195:P0008] sha256:7237ce6be6a95b3d4fe48291f933270a6659b3a41da905d0b44813dd2840b083
+[D0195:P0009] sha256:527d52b3276ce34c73866981979ff90e13aebf98be9f777274afe063321a5155
+[D0195:P0010] sha256:0016a210f036404ff0be8cda2ff959ba038679e8c27106e8cb914e59d9df314d
+[D0195:P0011] sha256:3fab93449e3cb33901e8aadc6438762588c91eef404f10b8692bb9558fc31e72
+[D0195:P0012] sha256:1770a7a5eb7932ac959af24730ffd00425b2a09853c512f89d273b5870a9fcf9
+[D0195:P0013] sha256:33c1441d4f985ae4375dece62c385c199c19a31b19f69a0b22815dbcd6020446
+[D0195:P0014] sha256:0fb0226a8f28caf1314d94420e53be304563486772f041060009d40de534ed4b
+[D0195:P0015] sha256:ac4c6083b0341d1e7761836730feb7edcc0c5ff82543ba7ae474f7ef239b2ab7
+[D0195:P0016] sha256:1eb94d5174599930ffef9846470b9f0c5278e5f89aaf99bb65d8a3a3f224847d
+[D0195:P0017] sha256:fbb414c68bc6b8a2ef182ee2b18b11550bcb429ccfaa71deda24609f38257a73
+[D0195:P0018] sha256:5d0368a6105a64f0aff0b5650ed9b2534c159fc630d3b8551068bbc7929b4552
+[D0195:P0019] sha256:8f8544ada590d350607af8c06b3e26794e2d8d0f0c9867c55797b0d72caef6a9
+[D0195:P0020] sha256:3586ad8fb379082a807b831c380dfa446cb7eaa7f93a0c6401c5d93d3619e793
+[D0195:P0021] sha256:8259f2b872000d21a6983f3d045b8586c27475bc61b277cefc171c47d35042f8
+[D0195:P0022] sha256:c9961af8d8a300976ff1ae84268d71a090781ee048735ba774278445fc35e77c
+[D0195:P0023] sha256:b4a227be09705781c330b4c2e01ca9b38d919171e3ff0286f0062ab1730227ae
+[D0195:P0024] sha256:0ac142d0e8a35418753db187374ec116695b67741add4d6f69cd685fc60c1e70
+[D0195:P0025] sha256:970fd093742e901d2ecf1bed1a153f4ec258966267ae5028ba6ccc78c2e5e03d
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (131)
+E001: «Anthropic» — develops → «Project Glasswing» | форма: actual, positive
+E002: «Codex security» — builds → «editable threat model» | форма: actual, positive
+E003: «European Commission» — seeks access to → «OpenAI's advanced AI models» | форма: actual, positive
+E004: «Project Glasswing» — uses → «Claude Mythos Preview» | форма: actual, positive
+E005: «Claude Mythos Preview» — is capable of → «autonomously identifying software vulnerabilities at scale» | форма: actual, positive
+E006: «GPT-5.5 with Trusted Access for Cyber» — is designed for → «patch validation» | форма: actual, positive
+E007: «Project Glasswing» — detects → «vulnerabilities» | форма: actual, positive
+E008: «Daybreak» — takes on → «Claude Mythos» | форма: actual, positive
+E009: «Akamai» — develops → «Daybreak» | форма: actual, positive
+E010: «OpenAI» — introduces → «Daybreak» | форма: actual, positive
+E011: «GPT-5.5» — is positioned for → «developer assistance» | форма: actual, positive
+E012: «Daybreak» — aims to automate → «secure software development» | форма: actual, positive
+E013: «Oracle» — develops → «Daybreak» | форма: actual, positive
+E014: «Thomas Regnier» — member of → «European Commission» | форма: actual, positive
+E015: «GPT-5.5 with Trusted Access for Cyber» — is designed for → «malware analysis» | форма: actual, positive
+E016: «Daybreak» — is rolled out through → «GPT-5.5 with Trusted Access for Cyber» | форма: actual, positive
+E017: «Fortinet» — develops → «Daybreak» | форма: actual, positive
+E018: «Codex security» — validates likely vulnerabilities in → «isolated environment» | форма: actual, positive
+E019: «Claude Mythos» — has → «stronger offensive reasoning capabilities» | форма: actual, positive
+E020: «Daybreak» — is rolled out through → «GPT-5.5» | форма: actual, positive
+E021: «Project Glasswing» — detects → «software vulnerabilities» | форма: actual, positive
+E022: «GPT-5.5-Cyber» — enables → «patch validation» | форма: actual, positive
+E023: «GPT-5.5» — is positioned for → «knowledge work» | форма: actual, positive
+E024: «European Commission» — welcomes transparency of → «OpenAI» | форма: actual, positive
+E025: «GPT-5.5 with Trusted Access for Cyber» — is designed for → «vulnerability triage» | форма: actual, positive
+E026: «Amit Jaju» — member of → «Ankura Consulting» | форма: actual, positive
+E027: «GPT-5.5 with Trusted Access for Cyber» — is designed for → «secure code review» | форма: actual, positive
+E028: «GPT-5.5-Cyber» — provides preview access for → «authorized red teaming» | форма: actual, positive
+E029: «GPT-5.5-Cyber» — enables → «penetration testing» | форма: planned, positive
+E030: «Daybreak» — is aimed at → «enterprises and governments» | форма: actual, positive
+E031: «Daybreak» — includes → «Codex security» | форма: actual, positive
+E032: «Daybreak» — enables → «secure software development» | форма: planned, positive
+E033: «OpenAI» — leverages → «trusted access framework» | форма: actual, positive
+E034: «Daybreak» — was announced on → «X» | форма: actual, positive
+E035: «Cloudflare» — is partner in developing → «Daybreak» | форма: actual, positive
+E036: «Daybreak» — enables → «vulnerability detection» | форма: planned, positive
+E037: «Daybreak» — develops → «Akamai» | форма: actual, positive
+E038: «Daybreak» — is focused on → «malware analysis» | форма: actual, positive
+E039: «GPT-5.5-Cyber» — enables → «controlled validation» | форма: planned, positive
+E040: «editable threat model» — is built from → «enterprise's repository» | форма: actual, positive
+E041: «Amit Jaju» — is senior managing director at → «Ankura Consulting» | форма: actual, positive
+E042: «GPT-5.5 with Trusted Access for Cyber» — part of → «Daybreak» | форма: actual, positive
+E043: «GPT-5.5 with Trusted Access for Cyber» — enables → «vulnerability triage» | форма: actual, positive
+E044: «Anthropic» — restricts access to → «Claude Mythos» | форма: actual, positive
+E045: «Cisco» — is partner in developing → «Daybreak» | форма: actual, positive
+E046: «Daybreak» — uses → «large language models» | форма: actual, positive
+E047: «Codex security» — detects → «software vulnerabilities» | форма: actual, positive
+E048: «Codex security» — focuses analysis on → «realistic attack paths» | форма: actual, positive
+E049: «Daybreak» — aims to automate → «patch validation» | форма: actual, positive
+E050: «Palo Alto Networks» — develops → «Daybreak» | форма: actual, positive
+E051: «Codex security» — is designed to identify and fix → «vulnerabilities» | форма: actual, positive
+E052: «Daybreak» — includes → «automated detection and response» | форма: actual, positive
+E053: «GPT-5.5-Cyber» — enables → «secure software development» | форма: actual, positive
+E054: «GPT-5.5-Cyber» — enables → «vulnerability detection» | форма: actual, positive
+E055: «Anthropic» — developed → «Claude Mythos» | форма: actual, positive
+E056: «Codex security» — mitigates → «software vulnerabilities» | форма: actual, positive
+E057: «Daybreak» — develops → «OpenAI» | форма: actual, positive
+E058: «OpenAI introduces Daybreak cyber platform, takes on Anthropic Mythos» — was published by → «ComputerWorld» | форма: actual, positive
+E059: «Zscaler» — develops → «Daybreak» | форма: actual, positive
+E060: «OpenAI» — positions → «GPT-5.5-Cyber» | форма: actual, positive
+E061: «Daybreak» — enables → «patch validation» | форма: planned, positive
+E062: «European Commission» — is in discussions with → «Anthropic» | форма: actual, positive
+E063: «OpenAI introduces Daybreak cyber platform, takes on Anthropic Mythos» — was published on → «May 12, 2026» | форма: actual, positive
+E064: «OpenAI» — provides → «GPT-5.5» | форма: actual, positive
+E065: «GPT-5.5 with Trusted Access for Cyber» — enables → «patch validation» | форма: actual, positive
+E066: «OpenAI» — uses → «trusted access framework» | форма: actual, positive
+E067: «Codex security» — detects → «vulnerabilities» | форма: actual, positive
+E068: «Daybreak» — enables → «secure software development» | форма: actual, positive
+E069: «CrowdStrike» — develops → «Daybreak» | форма: actual, positive
+E070: «Daybreak» — aims to automate → «vulnerability detection» | форма: actual, positive
+E071: «GPT-5.5 with Trusted Access for Cyber» — enables → «secure code review» | форма: actual, positive
+E072: «Daybreak» — integrates with → «broader enterprise security ecosystem» | форма: actual, positive
+E073: «OpenAI» — provides → «Daybreak» | форма: actual, positive
+E074: «Oracle» — is partner in developing → «Daybreak» | форма: actual, positive
+E075: «OpenAI introduces Daybreak cyber platform, takes on Anthropic Mythos» — originally appeared on → «CSO» | форма: actual, positive
+E076: «Sam Altman» — leads → «OpenAI» | форма: actual, positive
+E077: «OpenAI introduces Daybreak cyber platform, takes on Anthropic Mythos» — was written by → «Nidhi Singal» | форма: actual, positive
+E078: «GPT-5.5-Cyber» — enables → «red teaming» | форма: planned, positive
+E079: «OpenAI» — positions → «GPT-5.5-Cyber» | форма: possible, positive
+E080: «OpenAI» — develops → «large language models» | форма: actual, positive
+E081: «Zscaler» — is partner in developing → «Daybreak» | форма: actual, positive
+E082: «Daybreak» — uses → «Codex» | форма: actual, positive
+E083: «Pareekh Jain» — leads → «EIIRTrend & Pareekh Consulting» | форма: actual, positive
+E084: «Daybreak» — combines → «Codex's agentic capabilities» | форма: actual, positive
+E085: «OpenAI» — proactively approached → «EU» | форма: actual, positive
+E086: «OpenAI» — provides → «GPT-5.5-Cyber» | форма: actual, positive
+E087: «Fortinet» — is partner in developing → «Daybreak» | форма: actual, positive
+E088: «GPT-5.5 with Trusted Access for Cyber» — enables → «malware analysis» | форма: actual, negative
+E089: «Codex security» — part of → «Daybreak» | форма: actual, positive
+E090: «Daybreak» — enables → «vulnerability detection» | форма: actual, positive
+E091: «Codex security» — uses → «threat model» | форма: actual, positive
+E092: «Cisco» — develops → «Daybreak» | форма: actual, positive
+E093: «Daybreak» — is rolled out through → «GPT-5.5-Cyber» | форма: actual, positive
+E094: «Codex security» — focuses analysis on → «high-impact code» | форма: actual, positive
+E095: «GPT-5.5 with Trusted Access for Cyber» — enables → «detection engineering» | форма: actual, positive
+E096: «Cloudflare» — develops → «Daybreak» | форма: actual, positive
+E097: «European Commission» — is in discussions with → «OpenAI» | форма: actual, positive
+E098: «Daybreak» — enables → «patch validation» | форма: actual, positive
+E099: «Sam Altman» — announced → «Daybreak» | форма: actual, positive
+E100: «GPT-5.5 with Trusted Access for Cyber» — enables → «malware analysis» | форма: actual, positive
+E101: «Codex security» — mitigates → «vulnerabilities» | форма: actual, positive
+E102: «Project Glasswing» — was unveiled in → «April 2026» | форма: actual, positive
+E103: «Project Glasswing» — is built around → «Claude Mythos Preview» | форма: actual, positive
+E104: «Claude Mythos» — could be misused to target → «critical software» | форма: actual, positive
+E105: «Anthropic» — unveiled → «Project Glasswing» | форма: actual, positive
+E106: «GPT-5.5-Cyber» — provides preview access for → «penetration testing» | форма: actual, positive
+E107: «Palo Alto Networks» — is partner in developing → «Daybreak» | форма: actual, positive
+E108: «Akamai» — is partner in developing → «Daybreak» | форма: actual, positive
+E109: «Thomas Regnier» — is spokesperson of → «European Commission» | форма: actual, positive
+E110: «Anthropic» — provides → «Claude Mythos» | форма: actual, positive
+E111: «CrowdStrike» — is partner in developing → «Daybreak» | форма: actual, positive
+E112: «GPT-5.5-Cyber» — enables → «malware analysis» | форма: actual, positive
+E113: «OpenAI» — develops → «Daybreak» | форма: planned, positive
+E114: «Oracle» — develops → «Daybreak» | форма: actual, negative
+E115: «GPT-5.5-Cyber» — enables → «penetration testing» | форма: actual, positive
+E116: «OpenAI» — develops → «Daybreak» | форма: actual, positive
+E117: «GPT-5.5-Cyber» — provides preview access for → «controlled validation» | форма: actual, positive
+E118: «OpenAI» — provides → «GPT-5.5 with Trusted Access for Cyber» | форма: actual, positive
+E119: «GPT-5.5-Cyber» — part of → «Daybreak» | форма: actual, positive
+E120: «Daybreak» — combines → «OpenAI's large language models» | форма: actual, positive
+E121: «Sam Altman» — is CEO at → «OpenAI» | форма: actual, positive
+E122: «Claude Mythos» — has → «higher misuse risks» | форма: actual, positive
+E123: «GPT-5.5-Cyber» — enables → «red teaming» | форма: actual, positive
+E124: «Daybreak» — is focused on → «accelerating cyber defense operations» | форма: actual, positive
+E125: «GPT-5.5» — part of → «Daybreak» | форма: actual, positive
+E126: «GPT-5.5-Cyber» — enables → «authorized red teaming» | форма: planned, positive
+E127: «Anthropic» — shared Mythos model with → «select US technology partners» | форма: actual, positive
+E128: «Anthropic» — develops → «Claude Mythos» | форма: actual, positive
+E129: «GPT-5.5 with Trusted Access for Cyber» — is designed for → «detection engineering» | форма: actual, positive
+E130: «Daybreak» — enables → «malware analysis» | форма: actual, positive
+E131: «Pareekh Jain» — is CEO at → «EIIRTrend & Pareekh Consulting» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

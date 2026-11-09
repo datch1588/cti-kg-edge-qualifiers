@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T25",
+ "target_doc_id": "D0405",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly involve» передає можливість, тоді як у D0405:P0008 стаття подає загальне твердження як факт («These operations often involve ... multi-stage attack chains»), тобто actual."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0405:P0009 сказано, що дослідження відбулося з фазами тестування, «including offline and online scanning», як здійснений факт, що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «struggle to recognise» без маркерів (actual), а в D0405:P0012 стаття каже лише, що такі механізми «may struggle to recognise», тобто possible."}
+ ]
+}

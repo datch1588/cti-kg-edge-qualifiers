@@ -1,0 +1,269 @@
+AUDIT_BATCH: N06
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N06-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N06-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N06-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 4 (TARGET_DOC_ID: D0420) ===
+DOC_ID: D0420
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://lansinginstitute.org/2026/03/13/disinformation-and-cyber-threat-narratives-in-kosovo-during-the-iran-crisis/
+TITLE_SHA256: 10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+BEGIN_DOCUMENT
+[D0420:P0001] sha256:10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+[D0420:P0002] sha256:58d8c3bc898617135423140b77d85d024f89f34f7afe5d93bae02e803517124d
+[D0420:P0003] sha256:dc94452fc6b9734a2a812525408002aa1338ec7a7b9b0c5bc3f5b5e8475104a9
+[D0420:P0004] sha256:81ee68c086ba15d1751aadaee43d535fe5c9d6936b1f2a3d0151c7b23582c65e
+[D0420:P0005] sha256:951af6a93cfef1c5feddc23a2d6f9fa2aa5563897217c94e0971594611f14431
+[D0420:P0006] sha256:ad799c311042eacb4447abf0817742500e4fb932439db3147d4dd9763784c207
+[D0420:P0007] sha256:f4f43f5a4257ace9c91feaff44d1d9baed362c5cb44ab8c20ab630dc5b5db51d
+[D0420:P0008] sha256:0716d9e9f90d27c29260ddaf2574706d2065870d1113d2e10ae283eebe2884d3
+[D0420:P0009] sha256:5af3fb4073371961f37ba710a74b6d2dcbdffc02c1a5939320d44e25647e2b05
+[D0420:P0010] sha256:d54e08fedad077b284cac7f859add80007ca103332b53b1479654b43df789110
+[D0420:P0011] sha256:7ac36f13b55ebe8e6d790aa85af651fc71d44f2b1b110a7c8de868c4430b58bb
+[D0420:P0012] sha256:4bf4b3490e84ae48935aef2ec193f4b82b754730643566b3523dece380b05cd5
+[D0420:P0013] sha256:6ca561b00c1bc4e5a2c8e7f3599fd6702ddc8711ecc899b825330ecc0eab411a
+[D0420:P0014] sha256:3eb9f0f0d777cfaa9ea5ce100dccdc74625032c9b8f3ea8dff69771d89d8fe45
+[D0420:P0015] sha256:795234364348172be9e1e281f2bae25bac07b50fd5a4efb33eb62b8d63616934
+[D0420:P0016] sha256:4d6a77bed9e8cd0df940da6cc2371e5d5850078282a0c1871943c1eed2ace4a5
+[D0420:P0017] sha256:cc7aadf70a06772717f7ca35caccd373fc5954359d65f052249a5a10b3bc4d01
+[D0420:P0018] sha256:73c3aa1926ee5664b83f83615f0e11109a9505c02a0832ee285ba2938f7e7c81
+[D0420:P0019] sha256:aa21127771b033a7d7daa56da9e4c554911e896424b2c4ae6d7ad0597b53ccf9
+[D0420:P0020] sha256:e156e164ba4002854556abd1408afb5bcd82f535a97c8bdcebd93346d8bbb254
+[D0420:P0021] sha256:b75b4a8d0bda312c4000486a6b735fb23c3d413909eb86540d7d42001b402545
+[D0420:P0022] sha256:597d787a194109c02acfabf2f4c2abca8005d9d6b8b42812dd5f532b35879835
+[D0420:P0023] sha256:2d697ef846194e11c7b86d65527609ba8addad5c504ccf91e70e5ce8f7345b6c
+[D0420:P0024] sha256:cc87fa9d4179120c1798a63d6f9f73c7a3d610231d17d6a0a8ed93a7ecbb3887
+[D0420:P0025] sha256:d409bff127ba944e8fa84b99778959736c495851e154599ab076cef176cc12fc
+[D0420:P0026] sha256:0c39a20139fbef7425d9bd9bb25bb663daa0002930e2bcf9e71d02b20c42b521
+[D0420:P0027] sha256:d2fe71739d05cd676faeb0a251c55eadf8ed56a5dbdc5363210cfde18f010edc
+[D0420:P0028] sha256:0acb8a6adf0984895a1b6f07132e57858d783c54caae7fdd2728ab52318af28f
+[D0420:P0029] sha256:22d7dcb74103af19050cf97b02fa86c63a10e69ece92cf2e59719237708d3bd6
+[D0420:P0030] sha256:7b01be1d45344f23626aea9d4c88e6f8b2b792ba8daaf4b2b61c04e3fd6759b6
+[D0420:P0031] sha256:0860af3b0a67a408940ed4153afebb52dd29f8928fc549b75217606f8bed1fcb
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (6)
+N06-E001: «KFOR» — is → «NATO-led peacekeeping mission» | форма: actual, positive
+N06-E002: «Aleksandar Vulin» — is former director of → «Serbia's Security Intelligence Agency» | форма: actual, negative
+N06-E003: «Russia» — targets → «Kosovo» | форма: actual, positive
+N06-E004: «Maria Zakharova» — warns about → «Kosovo» | форма: actual, positive
+N06-E005: «United States» — operates → «Camp Bondsteel» | форма: actual, positive
+N06-E006: «Serbia» — targets → «Kosovo» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 4 (TARGET_DOC_ID: D0504) ===
+DOC_ID: D0504
+PUBLICATION_DATE: 2026-02-27
+SOURCE_URL: https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2026/space-security-and-why-it-matters-to-your-organization
+TITLE_SHA256: 4bb791acd08b0ead7b803add9b78868de98419e1a4be3ef4614a663c31c4fde1
+BEGIN_DOCUMENT
+[D0504:P0001] sha256:4bb791acd08b0ead7b803add9b78868de98419e1a4be3ef4614a663c31c4fde1
+[D0504:P0002] sha256:bfcaf753518812c7d0b84071217616b4de9dc3bd6830fe47f7ebc8384ce5b5c7
+[D0504:P0003] sha256:2c30c23bb265671ad0381c90d62fd5ccd24bfd1a6b10f97c6688c51bf1a80728
+[D0504:P0004] sha256:d58d5a41b5aa721675adfc7546bbb6487d535790cea77dead46f48aba7494216
+[D0504:P0005] sha256:fbf189210dacb98766df8fe26cc447d07f0e22c1c2ea4739dc4412661c93d926
+[D0504:P0006] sha256:a16a93b7f8133bc77476342930c7fcf478032410539ecdb93c4a40bf8c4b6ecb
+[D0504:P0007] sha256:b6163961bf3d4eb51ae87a1b85c0f47960e32b58e345d96546c4f7f858d2445c
+[D0504:P0008] sha256:2ac1f0bdf2092030b0cc2368f6ab31d534b6f8f2ec36abe8b52bc55b5df5cf2c
+[D0504:P0009] sha256:519d7e6b1988699071736199db168b2495d17d3c71dbea3de9639c56727e83e6
+[D0504:P0010] sha256:62c4c995ccdebf6ebb61970f523459be1efde96250e4efec564f6628972570c2
+[D0504:P0011] sha256:0f66253286c8c5ed32edfc122547d98f0017a9f9db8589ee3ead8820a28ba74f
+[D0504:P0012] sha256:99ee4427580efdf8d20fbbfc253c07aa9440621e0e155b1514400c39d1c1a153
+[D0504:P0013] sha256:78f8a7f9e3b9052a3b0ce272f8e698384d1e6174ac86067aa395704c0f7bfdd2
+[D0504:P0014] sha256:c98348f1d83c4a317715c6ecc1650f079566b9f76f317a667906b22d1922f6ac
+[D0504:P0015] sha256:4050be78a67e36cc424192118f14102968526b30eadf089cc13ab35aca5c6281
+[D0504:P0016] sha256:4d665099eb48a46f954a557d2857fa2a73b0bbaa5f65d62114b14eda3b10018b
+[D0504:P0017] sha256:9eeab5ccd9f7eb99530c5ac3512440e5ab14a169e080702d39772e04f28b6ba0
+[D0504:P0018] sha256:880cb7273013356f7f024a855e8cddc922bb896de0d88c0d7588a6fab88201ae
+[D0504:P0019] sha256:6d0a4ec293f83fb3b6fc4891456252edc75bf729d73e28f4ef1260adfc4c08bc
+[D0504:P0020] sha256:740b86e6d9f4c517b8df49e249064ba78883ac76ef6c3be8744623c4c2db7dfb
+[D0504:P0021] sha256:88a0c9cdd7401ec204d7fa1ef11ac4406770df68717880424855942188f86c3a
+[D0504:P0022] sha256:acadf589f5aa9b932aac6a1d374d983637f5652479e3bfa9d312a6f2a1cd7722
+[D0504:P0023] sha256:b7ae4f5ffa00377b68fd9faef712e1e340eae9fc5ae319b755ebfe1672f158e6
+[D0504:P0024] sha256:c0f3346d0f8629af18bbbec342bf97bfffea45a7b0b42912d811596a01c0c4bb
+[D0504:P0025] sha256:99440b47e4fed002afdb8a40429b4f86a5f61207ef2981d0916f2b9da51add03
+[D0504:P0026] sha256:c91bf7090d782069c01d75766ee4ff05239dd99a0f2cd082235ebff464eb8444
+[D0504:P0027] sha256:d43b75c320b9f01d3df619fabfa2574e0d72cb132b8ca326a684a21e0e4b8ddf
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (10)
+N06-E007: «service degradation» — undermines → «space resilience» | форма: actual, positive
+N06-E008: «US» — is investing in → «constellations designed to survive attacks» | форма: actual, positive
+N06-E009: «opportunistic attackers» — targets → «space sector» | форма: actual, positive
+N06-E010: «European Space Agency (ESA)» — is located in → «Europe» | форма: actual, positive
+N06-E011: «cyber-attacks» — surged in → «last year» | форма: actual, positive
+N06-E012: «Space Security, and Why It Matters to Your Organization» — was published on → «27 February 2026» | форма: actual, positive
+N06-E013: «China» — is expanding → «direct-to-device communications» | форма: possible, positive
+N06-E014: «data manipulation» — undermines → «space resilience» | форма: actual, positive
+N06-E015: «jamming» — disrupted → «maritime navigation» | форма: actual, positive
+N06-E016: «orbital maneuvers» — include → «satellite separation events that release unknown objects» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+=== СТАТТЯ 3 з 4 (TARGET_DOC_ID: D0072) ===
+DOC_ID: D0072
+PUBLICATION_DATE: 2026-06-10
+SOURCE_URL: http://www.globalsecurity.org/military/library/news/2026/06/mil-260609-finmod01.htm
+TITLE_SHA256: 7e2773fe4201c42759fc2159983ab96a196c2d2bc6a2d545a03671392bbe1ceb
+BEGIN_DOCUMENT
+[D0072:P0001] sha256:7e2773fe4201c42759fc2159983ab96a196c2d2bc6a2d545a03671392bbe1ceb
+[D0072:P0002] sha256:6c1ae2db47e9a01e33d66649a31d780c70fd761aceb53eca07479d7d1012cbd6
+[D0072:P0003] sha256:cfaf25a3f3357022fa975ba9e3384d922fcf18fca4bc5dcbb119d8ec25d5b4a8
+[D0072:P0004] sha256:8168ea4e167bf196d971ea2292beede11810bedad5a42e14f319bb8c0602496f
+[D0072:P0005] sha256:2106196909aa5aaf85ac719a99b5180a25875654aa40a89291b33977d9cf1a9a
+[D0072:P0006] sha256:a3b6ffb3c5cca98cc2c077af98c0db6f3871391c8188025b8ae21ea491c13c5d
+[D0072:P0007] sha256:6b83939f600fad6ffc2c069409fcd16b997c7a39c54973b3140a99daa4ae43f7
+[D0072:P0008] sha256:ad68f0b1eb225cce1b966d2654e30d4632374f83ab8e30b92801b38c4c688275
+[D0072:P0009] sha256:0bb094de6f87848d57c521a92b6d22f0ba67e2375a273263f422fb40fdba084d
+[D0072:P0010] sha256:8dca251080a27d5bf5c2c87e045b5002cf55a11a189373e58c7f0125fd3879b7
+[D0072:P0011] sha256:2106196909aa5aaf85ac719a99b5180a25875654aa40a89291b33977d9cf1a9a
+[D0072:P0012] sha256:1da6d4bda9a3fd4e763b0341a726b3500294ff50030d619bc6bc20d33d410e8e
+[D0072:P0013] sha256:8f06b1a99df8b410f0cf1a9a1e6c79be359232086c46798ea499c199ae9e0c2a
+[D0072:P0014] sha256:79136cd49195871790e2f809f34ee0489775c28fb7b9c8bcc7cb5d232f6f9244
+[D0072:P0015] sha256:eab82e72db9111ccc04d91180c8403f814cc24fa55e2940d987204acaa4d4d19
+[D0072:P0016] sha256:a732434ddb6685a665763a1282192a3a1db969558f050ecc30f8a19f0c055174
+[D0072:P0017] sha256:287183f9c41f03a9f06d8ea1ca9c894f51e6647930356a462e09da866a914cf0
+[D0072:P0018] sha256:3c1d6f8d01176c0cdb218c2c9c3d956e14ecde6ce3b4415929b2dbabed85aeaa
+[D0072:P0019] sha256:bbf42235b4410f4977db7262e5fb03dc7422dc45a9bbc590c296bf2c0e90fa04
+[D0072:P0020] sha256:95dc0e182f3cda0dd0cb1e14f7cc2b139feba0e2e0b1d7101c53390bbca91b83
+[D0072:P0021] sha256:e8d7a82816b65c8268219855fd8b5ee9740b0bc6df7d8d9c41dcaafcd791ee39
+[D0072:P0022] sha256:b3d310bf2e839dbc737b72f1cf5670a1ae3bc65c21c7b1d8c189b6b7bc9d88dc
+[D0072:P0023] sha256:abdd9c1ec69f761ac9062ee3ff79f378fc6e4f558e347f72994533fe2c16bc5a
+[D0072:P0024] sha256:2106196909aa5aaf85ac719a99b5180a25875654aa40a89291b33977d9cf1a9a
+[D0072:P0025] sha256:daeef6d361eef3b4d5608bcf6ce6374e9bd950ef19fe90d96329de51b55dee1b
+[D0072:P0026] sha256:3aa761ebac18ec8342c0435db392e22786d8aa5a14b4150873bc0f227b48baae
+[D0072:P0027] sha256:518ae25b8108e4c744c8d3f2519fc62a923376883d5304d5e57bd9a0a40c2555
+[D0072:P0028] sha256:3651f4cd1a20bb0c1ad9146c454083246dc651dfa5499d82e9f460439edc060b
+[D0072:P0029] sha256:df4fb6a97f591c237e1090644421ab1642157d6d8d45424c05d7671394aa4b3d
+[D0072:P0030] sha256:978355be16fa43f65544bdef433039ba86c9ee61e21a37347ddf14a614c5045f
+[D0072:P0031] sha256:2106196909aa5aaf85ac719a99b5180a25875654aa40a89291b33977d9cf1a9a
+[D0072:P0032] sha256:13ea795da68b2c282c554ae9090ab4a22c73cde3237dcffd3b499a2389dda2de
+[D0072:P0033] sha256:3aa5012b8957a0127df2c9f57de1f884821eb45016c9c60bd5974ca6e4640e1d
+[D0072:P0034] sha256:8487151b8b88c65dad0b828035dae84a0d433cd859d75a0073df31f767802fc2
+[D0072:P0035] sha256:e751369a1c4aa22a7a5acfb6913e6eb5c676dac2c665abf49a619419aae38aea
+[D0072:P0036] sha256:6c29491991d21eb147c6496b957b0769d773a9d78b63e13197f6fb9d17cebc39
+[D0072:P0037] sha256:45fec027bf87bbb03a31b7f5176bba77691e987c8117c515c1a8d70dc106a893
+[D0072:P0038] sha256:77bc479d24ad8ef2af46db5ba0fe284450ec967341b75e8bb2f87b7bd06d75b0
+[D0072:P0039] sha256:bd53d05b43689f4edef652313d8486a8535b046620c96a10895f491f81568f1a
+[D0072:P0040] sha256:9adaeb39c9cd5b9458885b7137403311de48bdf5b907d230c523d5b1cd4170ab
+[D0072:P0041] sha256:646719fde3068fba93b3c26e8597cf16a01fbf380c736799bb8b1276e0d1b397
+[D0072:P0042] sha256:ebbf2787ce26275cf1532434daba5d6a1c3ce4356358364c44cc3ef2a18c5f49
+[D0072:P0043] sha256:df8f068c3dca97c13c3fdb6a8daf434eaeffc114953f6c3aa50c32fa8d2007b0
+[D0072:P0044] sha256:2a80d8f8ad27867ebd47a5da6f9a339ee31ed4425e87693601c89479d0022097
+[D0072:P0045] sha256:01af78ae9826856759d2e767dd2801979d9eed75e28308a403a399a27a0d5b17
+[D0072:P0046] sha256:3c9c91e8b3737bc43f43fb385c08ad5e41e9b47fbb52dfb718f12a5dd4ba0b3a
+[D0072:P0047] sha256:3f4c41364d732a90f7820896966718268944caa618635ab6aadd0ca4a8dab437
+[D0072:P0048] sha256:d5b0b45c155b63952867dfcffdad9a914f0577ff6327091e163f599ba08ef8d4
+[D0072:P0049] sha256:e43837c51b2a6d1236220cd532782aff2f4421ca433286e365cb52b66087b826
+[D0072:P0050] sha256:ed51068e9d368db14519cf7348db2e80fa76b79b72e9fb554c0a04b8307ab0fc
+[D0072:P0051] sha256:0fcd21434a6931a5c4d68b00e5a348e2158d35f4200343a6123015e729964a91
+[D0072:P0052] sha256:88d012c62c83f27ef1b2a9d37b1fa18fbe5aa68780a92447d94d7efdaece5345
+[D0072:P0053] sha256:0d87051649fb5cd2e603219963db28f424a3e70879025c0cd3d84931c3001858
+[D0072:P0054] sha256:528e4a4d4569af5ee78b34cf121fd36d3639f983db70acfde504bdf707abc6d3
+[D0072:P0055] sha256:bea920443e9cadeab8cb72feafdf3ce0634355b925113cd24d1ca86213892725
+[D0072:P0056] sha256:4d3ae728f1581704daf44458fb6f53f78cc3412a4b75a86870ff35f1b27d1900
+[D0072:P0057] sha256:1134aeba7ab703493749225c702c755b5b3950a252a2278aab7e9838afa13b22
+[D0072:P0058] sha256:de2fb12171f0124d79e235cda344491c3c3f8c1b5d6122358378a06f8d33760d
+[D0072:P0059] sha256:3b65e99469e8f21a807613afd3c04372035473710b893cc429283c1f8e53bb00
+[D0072:P0060] sha256:11313cc66bb8b8823cf03739e22b34386ad78fda1af4f1136cc9f94ecafbd024
+[D0072:P0061] sha256:f0957fcb8c248053a75b801733cf3201e3f23c9913c1394b6b53477e009021c1
+[D0072:P0062] sha256:8dc22f64556c0f3cf5e2c24ec4cd6754801502e4af59b2b796fd14a074ead3e9
+[D0072:P0063] sha256:75df45694b6bea77d315199ccbf2f00e1d15584264bcb2a38c456dd989c42bf8
+[D0072:P0064] sha256:0fdd2dc7c1621621587b3e14ea668b2e51a41a5711c2a76e2785c30710c7430d
+[D0072:P0065] sha256:a1ea6178f4ddcc53ebfabada4b83b06afb159b8498ca8db17f70d15e08b482fc
+[D0072:P0066] sha256:48c4c94d72a3f0fb573a1c27e63b7f87d6f68b1fe786073ab2fec6c31a989ef8
+[D0072:P0067] sha256:caa27e7e33486888fd7d2b7d65d05b80fd0ffa0af413550a53028ba1724bd64c
+[D0072:P0068] sha256:33bc10a2afd4c67ea1af73549cb37d0e183ce42ed4d123f230e8c936ae29a634
+[D0072:P0069] sha256:84a1a7d61ab6db9c82575ea91d9ac086b3c4d67791c8f7ac955f0b59cc7be924
+[D0072:P0070] sha256:7ee66c4f1536ac84dc5bbff1b8312e2eef24b974b3e48a5c5c2bcfdf2eb8f3ce
+[D0072:P0071] sha256:4628603970b1c09f850e910d658ea0401cb83b6089bd798250da2e4ce2ae0a16
+[D0072:P0072] sha256:c32f0808cf3814c84ada82eb5b66fa8fe9f38df752ec212c3908ab79e516902e
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 3 (13)
+N06-E017: «United States» — protects → «Europe» | форма: planned, positive
+N06-E018: «China» — creates economic, political and technological dependencies in → «Africa» | форма: actual, positive
+N06-E019: «North Korea» — supports → «Russia» | форма: actual, positive
+N06-E020: «Finland» — located in → «Baltic Sea region» | форма: actual, negative
+N06-E021: «United States» — responds to challenge of → «China» | форма: actual, positive
+N06-E022: «United States» — protects → «Europe» | форма: actual, positive
+N06-E023: «Finland's National Risk Assessment» — provides foundation for → «Finland's Security Strategy for Society» | форма: actual, positive
+N06-E024: «security environment» — is shaped by → «cyber threats» | форма: actual, positive
+N06-E025: «Finland» — located in → «Arctic» | форма: possible, positive
+N06-E026: «Finland's Security Strategy for Society» — defines → «56 strategic tasks» | форма: actual, positive
+N06-E027: «Finland» — counters → «broad-spectrum influencing» | форма: actual, positive
+N06-E028: «Finland» — protects → «Northern Flank» | форма: actual, positive
+N06-E029: «rescue authorities» — protect → «population» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 3
+
+=== СТАТТЯ 4 з 4 (TARGET_DOC_ID: D0144) ===
+DOC_ID: D0144
+PUBLICATION_DATE: 2026-05-27
+SOURCE_URL: https://www.aa.com.tr/en/europe/german-government-approves-draft-for-new-powers-to-fight-cyber-threats/3949933
+TITLE_SHA256: fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+BEGIN_DOCUMENT
+[D0144:P0001] sha256:fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+[D0144:P0002] sha256:9ea106218bc851ef1ddde648dc3211e843b3e4e58a155cd34f27a430b74120ee
+[D0144:P0003] sha256:b27a38347d9c98bec8bee9c690e02baa496e89101d69c7a5794792e879ffd17b
+[D0144:P0004] sha256:e5af578481a4b35d652765ccdab8e194179c045a59a9dbe0a680494828ecfe2c
+[D0144:P0005] sha256:253fab16fc1f1ac31b997f4eeef3b7cefa94e6d3b4e56baaa8b4ed00b0f0b5b9
+[D0144:P0006] sha256:b98e567baa639cfef2283782f700c041aaef42ce9892ccd00a29b52ed661a82a
+[D0144:P0007] sha256:d1382b3f4976e1e3ebf9dc06bebc1374b7eafab399982bea6bdc3afce1562661
+[D0144:P0008] sha256:825b78aabe95bcac334b7525c2d2d697adef8f70adbbeb1368ca5837c96267c9
+[D0144:P0009] sha256:1c0deb8c8477c48914cca0968dd41e5baf00bcf76f38e833a3272374175b0c3c
+[D0144:P0010] sha256:caf2d26f7c57ade93fe0b531756f51a8fea38091ecc1ac4167b01d73bfde26c9
+[D0144:P0011] sha256:7c63e57feef66042ddf1db733c8b36dd7b2ee109d272c96d449a3a88123db6b2
+[D0144:P0012] sha256:234b4fb68d682269e4cb118675ec8bdca07558dbded83a4fe10704a155ed23a5
+[D0144:P0013] sha256:c6178c3c7a565f8da58b133fce2e6b29b8ac1047a29c11e6a6ef7df3f6f7f12c
+[D0144:P0014] sha256:f231d27feee60bf45ba632a2a4e04ed20914d45bf1f394c1eb544e6cf643302a
+[D0144:P0015] sha256:a405faa469c031edd4a4604793093105b2438e099deaa6a988bfe5bb5967de37
+[D0144:P0016] sha256:f776f3ed49d11a2f7760f7baca58586bed85d0cabb3e66cb149a73187856bf22
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 4 (7)
+N06-E030: «telecommunications companies» — would be required to pass on warnings from → «Federal Office for Information Security (BSI)» | форма: actual, positive
+N06-E031: «German government» — would give new powers to → «Federal Office for Information Security (BSI)» | форма: actual, positive
+N06-E032: «active cyber defense» — mitigates → «cyberattacks» | форма: planned, positive
+N06-E033: «German authorities» — will disrupt → «attackers' software and servers» | форма: actual, positive
+N06-E034: «German authorities» — will not engage in → «hackbacks» | форма: actual, positive
+N06-E035: «Federal Criminal Police Office» — located in → «Germany» | форма: actual, positive
+N06-E036: «major digital platforms» — would be required to pass on warnings from → «Federal Office for Information Security (BSI)» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 4
+
+КІНЕЦЬ ФАЙЛУ N06. Усього записів у файлі: 36 (від N06-E001 до N06-E036).

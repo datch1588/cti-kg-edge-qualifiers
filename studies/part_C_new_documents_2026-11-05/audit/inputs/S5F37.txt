@@ -1,0 +1,133 @@
+AUDIT_FILE: S5F37
+TARGET_DOC_ID: D0206
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0206
+PUBLICATION_DATE: 2026-05-08
+SOURCE_URL: https://financialpost.com/pmn/business-pmn/europes-power-network-is-getting-a-wartime-wakeup-call
+TITLE_SHA256: 14d0142ca5c3d1240f0b71fbd3672e2e75c2869a66f343d28109eb9292685300
+BEGIN_DOCUMENT
+[D0206:P0001] sha256:14d0142ca5c3d1240f0b71fbd3672e2e75c2869a66f343d28109eb9292685300
+[D0206:P0002] sha256:84b1af604f1610b0ad734b6065bd18cd8da819780a61b24545c9052aa787fd64
+[D0206:P0003] sha256:104c022d7f6e7b41f81044b84d3908caf4a0d5ba1e2a330885046a672f398599
+[D0206:P0004] sha256:27bd9e85a95332d35f308a3c205c26a8bdf5f56cfc3a43c2e51f2d4af5504d1a
+[D0206:P0005] sha256:b254df885f34e2a2327b420933eee2608d1e3450c96ce7148ceb82cf27d97111
+[D0206:P0006] sha256:cc63e9dda72e38b50576de6ebdd8a28a44bd176d7e48631011cda8e83f901262
+[D0206:P0007] sha256:b04a09edb1ddc8ca9855175d1f54e1db9d41a431614e11c8bdaff347f75e2b84
+[D0206:P0008] sha256:457e9eb398f73a3dfbc27fc2c7788247a5c979609d90fec92f8923a383e740ef
+[D0206:P0009] sha256:b67f509c37d314b3f6dc604753d568b04b9433625a35fbd7c72282eda334fbcc
+[D0206:P0010] sha256:c171bcee3d519e23f0f45e1155c6f1cf7e5034cb2c445a07df7b2d46a73a3746
+[D0206:P0011] sha256:31cc86c91e862b0c775c82d7249709910fe18ee60f31aa830999c71be72a9f6d
+[D0206:P0012] sha256:d4ee0da508dd2434768f4569d68bace534dd33f6dd20fd3a30e9a76975a6666e
+[D0206:P0013] sha256:f2b377b6c10433a0d05044b002ad2774f5e064b3b6f216b6aeee7cd6c760cb2f
+[D0206:P0014] sha256:b3104f8287fff9fbd08f07eb60b56327b9b2283b87c5140fd693d2f2fddbe958
+[D0206:P0015] sha256:f869d41311024ecfa80d3a9ad5439897d7fcc009ace63954920b7b3ba03ff958
+[D0206:P0016] sha256:51793cc090200a67fb53cb8cc92851fddd8b45f546386401d00bd29835828846
+[D0206:P0017] sha256:a71ec7fc802e5aac8011a00a2582ba605b3dd31388591bf2f75cc5cbf034cea1
+[D0206:P0018] sha256:8e94b71001e493c30ac5214ebaabd7db7f2efe3e81bb4820b3230cab37be07dd
+[D0206:P0019] sha256:186eceb87a771a0f111e25a2384a79f9fc84afed83bcb034abb6747f271869fa
+[D0206:P0020] sha256:a6a74fe500c6182921505c9b7329635b4eb5ae539d6b0d5fde8b970aeb5e0a98
+[D0206:P0021] sha256:721100643116de0e3b1b6ac8cbf7d5385fdfc711ed7982515ef264c0aa96de03
+[D0206:P0022] sha256:35466d70b1189c565c010d286ca6e27265b7b5be031a960d1754a9bf8839d695
+[D0206:P0023] sha256:850f8640c14eb1907e55d53d91d45b33ca5bc371dc904bed03a3389c839db957
+[D0206:P0024] sha256:b696d75511dc16f2b52563e3113a498311a79866f4672862197aa9a8c5c0da12
+[D0206:P0025] sha256:666b2e0d82f3f523339a55f3d1f4510dd2480e6dec9865772b8d843bd7a1106c
+[D0206:P0026] sha256:3cd1e110b63adba920ba23ed4e5e60ab5c79be292b485a104ab0e1cd3ced6d8e
+[D0206:P0027] sha256:e7e6b41e787247af1e49d192f6dd98864cdd2d43d1768e436f82d05c45879b49
+[D0206:P0028] sha256:49037046439ad2b2a170b8d9401bf5a69982cf490b44b7de25d60cf1255877ec
+[D0206:P0029] sha256:bd2096bfb96048c4c8378a1832ab6c0b76d62913c51ad3a81f7410f04e74a739
+[D0206:P0030] sha256:fe22176f27ddb3765f68c888fb1812ddc34f61402d1e27c9d2bda0a18efd7070
+[D0206:P0031] sha256:a960b3bbdc7f61b28b038f6e95cf8c3688335287d06e4a8d08d544f2828951ef
+[D0206:P0032] sha256:01aea05ec2ffb7a0d5c4396cc677f6f052a950d1cdd4c479866bc19ea3118bcf
+[D0206:P0033] sha256:8071a2291ab9bc8506937f917d85b1998de1dd6c1f3998875eeeeaa4271029d0
+[D0206:P0034] sha256:1ad5b6b50170e25c2ee3b8dc3f1d9b0e1f97bc169b8d5a098560e3af050b8dbb
+[D0206:P0035] sha256:21e83ae00cb51bad80d948163ebf227f5ed8d4cd08249d0da0a99df5540ac61e
+[D0206:P0036] sha256:46379d160180b37e0118ea4afd59564f198a449df3003d7485d14335c6adf690
+[D0206:P0037] sha256:a12c7c071b6ea8e9a0dcaef450ba542eba1a4cedcfa5b1984b4e64e7e29fac56
+[D0206:P0038] sha256:e0f3e10781987d7cbb9ca79adaa97d46af12f9b535b587acb5d9547f0097a111
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (32)
+E001: «PSE» — located in → «Poland» | форма: actual, positive
+E002: «arson attack on power cables» — located in → «Berlin» | форма: actual, positive
+E003: «James Appathurai» — member of → «NATO» | форма: actual, positive
+E004: «Russian air strikes» — attributed to → «Russia» | форма: actual, positive
+E005: «PSE» — operates → «Poland's grid» | форма: actual, positive
+E006: «drone attacks» — mitigates → «long-range 360-degree cameras» | форма: planned, positive
+E007: «Grid operators» — mitigates → «sabotage» | форма: actual, positive
+E008: «Grid operators» — mitigates → «cyberattacks» | форма: actual, positive
+E009: «arson attack» — targets → «power cables» | форма: actual, positive
+E010: «Eurelectric» — warns about → «cyber threats» | форма: actual, positive
+E011: «long-range 360-degree cameras» — protects → «substations» | форма: planned, positive
+E012: «Russian air strikes» — located in → «Kyiv» | форма: actual, positive
+E013: «radars» — mitigates → «drone attacks» | форма: planned, positive
+E014: «PSE» — protects → «Poland's grid» | форма: actual, positive
+E015: «Russian air strikes» — affects → «Darnytsia Thermal Power Plant» | форма: actual, positive
+E016: «Daniel Wagner» — member of → «PSE» | форма: actual, positive
+E017: «Tinne Van der Straeten» — leads → «WindEurope» | форма: actual, positive
+E018: «high-tech cameras and sensors» — detects → «tampering» | форма: actual, positive
+E019: «Daniel Wagner» — protects → «Poland's grid» | форма: planned, positive
+E020: «Darnytsia Thermal Power Plant» — located in → «Kyiv» | форма: actual, positive
+E021: «Hitachi Energy Ltd.» — operates → «Hitachi site» | форма: actual, positive
+E022: «arson attack» — located in → «Berlin» | форма: actual, positive
+E023: «Hitachi site» — located in → «Sweden» | форма: actual, positive
+E024: «Tobias Hansson» — leads → «Hitachi site» | форма: actual, positive
+E025: «Russia» — targets → «Ukraine» | форма: actual, positive
+E026: «Hitachi Energy Ltd.» — provides → «mobile substations» | форма: actual, positive
+E027: «PSE» — operates → «Poland's grid» | форма: actual, negative
+E028: «Robinson R66» — uses → «high-tech cameras and sensors» | форма: actual, positive
+E029: «long-range 360-degree cameras» — mitigates → «drone attacks» | форма: planned, positive
+E030: «decentralized systems» — protects → «large energy hubs» | форма: recommended, positive
+E031: «PSE» — located in → «Poland» | форма: possible, positive
+E032: «radars» — protects → «substations» | форма: planned, positive
+КІНЕЦЬ ЗАПИСІВ

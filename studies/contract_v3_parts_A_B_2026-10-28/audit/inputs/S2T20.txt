@@ -1,0 +1,176 @@
+AUDIT_FILE: S2T20
+TARGET_DOC_ID: D0448
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0448
+PUBLICATION_DATE: 2026-03-11
+SOURCE_URL: https://www.euronews.com/next/2026/03/11/from-ai-versus-ai-to-the-quantum-threat-the-cybersecurity-battles-to-watch-according-to-th
+TITLE_SHA256: 9af83b3771f6667d920b17c87fcc1173ad2a67523fda0626e02dada5d3e688f5
+BEGIN_DOCUMENT
+[D0448:P0001] sha256:9af83b3771f6667d920b17c87fcc1173ad2a67523fda0626e02dada5d3e688f5
+[D0448:P0002] sha256:30ec9812c4565cd36a6c3729bb2036e4066079d7c1b60df53dff70d21df8ca44
+[D0448:P0003] sha256:f2f7c744645263935e467b9ec6bafa37bd74cf6724e4da28df6051bbec29dc19
+[D0448:P0004] sha256:84fb004fc02a35e65a6392695504931ce04452935e62e54f03b9f9c03c05df36
+[D0448:P0005] sha256:ccb092eeb23d0083617c99d89090ee4a81ca6726ee048ac6863a15682661ddce
+[D0448:P0006] sha256:d6d3ade461df6ae523fe5efe4790345098be4e77def19efb0743d2976a71fa18
+[D0448:P0007] sha256:8d079c16d173a57ba81810bc14a8b8a9feb94209ec03f9df1137902097b06b2f
+[D0448:P0008] sha256:92ed24f8389a925dcd6025b20d1a9155dfb55d15d620fd70e2a96430dae07af7
+[D0448:P0009] sha256:bd8fdae26b09ef9b0a1ed019f6fc42db45a274c8749af9dec97e03ec6594fe03
+[D0448:P0010] sha256:e85b5755efc377fffc6df68fb594faab8cb42521c984ab5bab94c73a0bbe8248
+[D0448:P0011] sha256:d8e40c996824b3985719ca29505a1087de5753b56c6ce41963c6781ab97f3f3e
+[D0448:P0012] sha256:4163055dc49b2a745f1bf9a1649e0efe231917f391184c047267e278a3705c77
+[D0448:P0013] sha256:8a63a5f293939ad08f290bc6d4395521bffb03879d64dc6298940073f634042a
+[D0448:P0014] sha256:b9fb1bf35fbe0aea4e78d085d5ef25743b9b799d0d8e46bd53d1186b8be8a0ca
+[D0448:P0015] sha256:de1a388ef66c921aa31eab021dab2d8156eba821af4abbb68b35ef0337236295
+[D0448:P0016] sha256:77e00c16e8fbb98faa5f3a70c31dc9e5dc06b430e1024c0c4cb5ffe3b035e84f
+[D0448:P0017] sha256:83b64b858dd6f8819aa4c30de735f23ea3ad149e00213b543579e18fb96a99e8
+[D0448:P0018] sha256:01bc9962b5a630d2f6dbb5ebe95e61c0c665c8f5d372ccdf25334fa72877aea1
+[D0448:P0019] sha256:fd4df7248774563a7d12b72ec970250607e0e46b08bc336ddf78e61f32b6cbdd
+[D0448:P0020] sha256:43d34acb4d067409d334d56476f146edfd5901d23c2225fbfa07acfd15482d1f
+[D0448:P0021] sha256:b1a971dd3adbd2b590c44d6ae1b1b71de68a70c52a6ee341932aed5c359d5dcf
+[D0448:P0022] sha256:9e17997b0f4aba48d4f5abacbfc7c927b1d5a5687f141739958526130ed13eee
+[D0448:P0023] sha256:1682a2b098c9c0f8614440d7a14d4e703125c0852246534fff22a8f1371c6075
+[D0448:P0024] sha256:a2050486e6c334bb1c8ba53d98a343435262160e9cd133cc340874fd3be55fec
+[D0448:P0025] sha256:137f07bb6d3180ac29dd5ee8f2d5d8152023a50f31765e567ef42b62cd1a99ce
+[D0448:P0026] sha256:ca48456e147d0b7280dfbca32a6c4ec82d1c1f4378781ed9a3e0fe1cd3ba7686
+[D0448:P0027] sha256:28756ebd2c6fc313c6ef8d3bd92feec2511f2bf4dd38cfbb9082b58daae8c766
+[D0448:P0028] sha256:5d8f6283d7194a3d3d7b4f097adb3fd09120ceb3b2d84635a8bae2cbc34c306a
+[D0448:P0029] sha256:5e45b7b04c208f7608970701ee44413c8fe03fe2634a9c0a4e553edfd295d7cf
+[D0448:P0030] sha256:1bbde3b6ea63e24d256a054f3084e887603bff12024b65b0ed15f0210a0f58fe
+[D0448:P0031] sha256:7dab2a163b39ebeeec6c99dc1ccd182d7bb99876cd46bdaca8ebbc8a9857c841
+[D0448:P0032] sha256:cc445a8ea362a95f3be4bf95964cd63afc3de6ce5ad1d2ebdef903cf34f13ca2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (81)
+E001: «Cyberattacks» — targets → «government departments» | форма: possible, positive
+E002: «quantum computer» — could break → «public encryption systems» | форма: actual, positive
+E003: «quantum-resistant cryptographic algorithms» — replace → «vulnerable encryption» | форма: actual, positive
+E004: «cyberattacks on critical infrastructure» — target → «hospitals» | форма: actual, positive
+E005: «Cyber Resilience Act» — protects → «Connected devices» | форма: planned, positive
+E006: «connected home devices» — include → «cameras» | форма: actual, positive
+E007: «Thales» — uses → «machine learning» | форма: actual, positive
+E008: «quantum-resistant cryptographic algorithms» — protects → «eSIM cards» | форма: possible, positive
+E009: «public encryption systems» — protect → «vital infrastructure» | форма: actual, positive
+E010: «AI-powered attackers» — use → «artificial intelligence» | форма: actual, positive
+E011: «harvest now, decrypt later» — intercepts and stockpiles → «encrypted communications» | форма: actual, positive
+E012: «harvest now, decrypt later» — puts at risk → «governmental communications» | форма: actual, positive
+E013: «From AI versus AI to the quantum threat: The cybersecurity battles to watch, according to Thales» — published on → «11/03/2026» | форма: actual, positive
+E014: «coordinated attack» — targets → «smart metering infrastructure» | форма: actual, positive
+E015: «Thales» — deploys → «machine learning» | форма: actual, positive
+E016: «Thales» — upgrades security remotely on → «SIM cards» | форма: actual, positive
+E017: «connected devices» — sold across → «EU» | форма: actual, positive
+E018: «cyberattacks on critical infrastructure» — target → «government departments» | форма: actual, positive
+E019: «adversaries» — uses → «machine learning» | форма: actual, positive
+E020: «Thales» — develops → «next-generation algorithms» | форма: actual, positive
+E021: «quantum computer» — affects → «businesses» | форма: conditional, positive
+E022: «civilian infrastructure» — taken offline through cyber means in → «Ukraine» | форма: actual, positive
+E023: «connected home devices» — include → «smart speakers» | форма: actual, positive
+E024: «AI-powered attackers» — identify and exploit → «vulnerabilities» | форма: actual, positive
+E025: «Eva Rudin» — warns about → «Connected devices» | форма: actual, positive
+E026: «quantum computer» — affects → «public encryption systems» | форма: conditional, positive
+E027: «Cyber Resilience Act» — protects → «connected devices» | форма: actual, positive
+E028: «From AI versus AI to the quantum threat: The cybersecurity battles to watch, according to Thales» — published by → «EuroNews» | форма: actual, positive
+E029: «coordinated attack» — affects → «national electricity grid» | форма: possible, positive
+E030: «Thales» — spoke at Mobile World Congress in → «Barcelona» | форма: actual, positive
+E031: «coordinated attack» — could disable → «national electricity grid» | форма: actual, positive
+E032: «public encryption systems» — protects → «bank accounts» | форма: actual, positive
+E033: «harvest now, decrypt later» — puts at risk → «cryptographic keys» | форма: actual, positive
+E034: «mandatory security requirements» — enter force in → «2027» | форма: actual, positive
+E035: «public encryption systems» — protect → «bank accounts» | форма: actual, positive
+E036: «cyber threats» — affects → «critical infrastructure» | форма: actual, positive
+E037: «Cyberattacks» — targets → «critical infrastructure» | форма: actual, positive
+E038: «harvest now, decrypt later» — deployed by → «criminal actors» | форма: possible, positive
+E039: «Thales» — contributes to development of → «next-generation algorithms» | форма: actual, positive
+E040: «harvest now, decrypt later» — targets → «encrypted communications» | форма: actual, positive
+E041: «From AI versus AI to the quantum threat: The cybersecurity battles to watch, according to Thales» — discusses → «Thales» | форма: actual, positive
+E042: «public encryption systems» — protects → «vital infrastructure» | форма: actual, positive
+E043: «Q-Day» — marks arrival of → «quantum computer» | форма: actual, positive
+E044: «public encryption systems» — protect → «online conversations» | форма: actual, positive
+E045: «harvest now, decrypt later» — deployed by → «criminal actors» | форма: actual, positive
+E046: «Barcelona» — located in → «Mobile World Congress» | форма: actual, positive
+E047: «Thales» — upgrades security remotely on → «eSIM cards» | форма: actual, positive
+E048: «AI-powered attackers» — exploits → «vulnerabilities» | форма: actual, positive
+E049: «connected home devices» — lack → «strong cybersecurity protections» | форма: actual, positive
+E050: «harvest now, decrypt later» — puts at risk → «personal data» | форма: actual, positive
+E051: «quantum computer» — affects → «public encryption systems» | форма: possible, positive
+E052: «cyber threats» — affects → «homes» | форма: actual, positive
+E053: «Mobile World Congress» — located in → «Barcelona» | форма: actual, positive
+E054: «Eva Rudin» — warns about → «AI-powered attackers» | форма: actual, positive
+E055: «AI-powered attackers» — warns about → «Eva Rudin» | форма: actual, positive
+E056: «Thales» — uses → «quantum-safe cryptography» | форма: planned, positive
+E057: «security solutions» — uses → «machine learning» | форма: actual, positive
+E058: «Thales» — spoke with → «Euronews Next» | форма: actual, positive
+E059: «eSIM cards» — uses → «quantum-resistant cryptographic algorithms» | форма: actual, positive
+E060: «Thales» — calls capability → «crypto agility» | форма: actual, positive
+E061: «Thales» — uses → «Artificial intelligence» | форма: actual, positive
+E062: «eSIM cards» — updated over the air with → «quantum-resistant cryptographic algorithms» | форма: actual, positive
+E063: «public encryption systems» — protects → «online conversations» | форма: actual, positive
+E064: «quantum computer» — affects → «governments» | форма: conditional, positive
+E065: «Eva Rudin» — member of → «Thales» | форма: actual, positive
+E066: «sophisticated state and criminal actors» — uses → «harvest now, decrypt later» | форма: actual, positive
+E067: «Thales» — develops → «security solutions» | форма: actual, positive
+E068: «harvest now, decrypt later» — targets → «encrypted communications» | форма: possible, positive
+E069: «Eva Rudin» — member of → «Thales» | форма: actual, negative
+E070: «conflict in Ukraine» — located in → «Ukraine» | форма: actual, positive
+E071: «Cyberattacks» — targets → «government departments» | форма: possible, negative
+E072: «Thales» — develops → «crypto agility» | форма: actual, positive
+E073: «harvest now, decrypt later» — puts at risk → «defence secrets» | форма: actual, positive
+E074: «harvest now, decrypt later» — relies on → «quantum computers» | форма: actual, positive
+E075: «Thales» — has roadmap for transition to → «quantum-safe cryptography» | форма: actual, positive
+E076: «mandatory security requirements» — apply to → «connected devices» | форма: actual, positive
+E077: «AI-powered attackers» — uses → «Artificial intelligence» | форма: actual, positive
+E078: «Cyberattacks» — targets → «critical infrastructure» | форма: possible, positive
+E079: «harvest now, decrypt later» — deployed by → «state actors» | форма: actual, positive
+E080: «Cyberattacks» — targets → «hospitals» | форма: possible, positive
+E081: «coordinated attack» — targets → «smart metering infrastructure» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ

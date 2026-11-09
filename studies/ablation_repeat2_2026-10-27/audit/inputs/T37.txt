@@ -1,0 +1,147 @@
+AUDIT_FILE: T37
+TARGET_DOC_ID: D0219
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0219
+PUBLICATION_DATE: 2026-05-05
+SOURCE_URL: https://www.taiwannews.com.tw/en/news/6354980
+TITLE_SHA256: dad93b07751c7d710683bfe816d0d4c3598743ce93ad10d87c542a04360c3cfa
+BEGIN_DOCUMENT
+[D0219:P0001] sha256:dad93b07751c7d710683bfe816d0d4c3598743ce93ad10d87c542a04360c3cfa
+[D0219:P0002] sha256:73254fc8e1919db5c3c4801e116379742ac08ce7f26e601fedc21a74f55180dd
+[D0219:P0003] sha256:174df929d7e1abcec8db4cd607cc69a18048cecd328c584eaa097162cfa6f49f
+[D0219:P0004] sha256:73644624867ce487673f9607471a31e6db8a1e031a6c4b7a0e7b35cd8a5bd4e8
+[D0219:P0005] sha256:0064661f11ababde6dfe207830354521e590e4f6140f6d20590b9121c5718328
+[D0219:P0006] sha256:65ba347241a86c4b5ac7c93c98094f6699e4de30a4f96bebeb93600099c049d2
+[D0219:P0007] sha256:d768845fe73095981a1276f43654f607d5b3c7c8416a2536d3239a4e23e042c7
+[D0219:P0008] sha256:b4dbe0968f66f95dc33ccbe3556d7cc2782e1a78a5388d2241891f4376cbd034
+[D0219:P0009] sha256:9361f8dbad1458952e67ff35db9fc21191439dc173fbe48f6ae2f6a49c532432
+[D0219:P0010] sha256:a2da9c6855c03c11a5b1db3603abba29d9957a9c3e143398e0d54f504e44698a
+[D0219:P0011] sha256:ef4cbe65d1301f396aa08db200f181334f1a53f0ee35693f7355ea4cfe24155c
+[D0219:P0012] sha256:db3f2d3e1fd7589a89f65af4a29e5fb3678426b4020661ff9c27f93ee2c7f434
+[D0219:P0013] sha256:420fd6c937ec8ae178925a43330c6a9bcf606c065d6dfc138cae73c4d0092c90
+[D0219:P0014] sha256:2b35cc524fddb78aa5d0c253424f26914ae136f2e36821486027ec269f9a79a2
+[D0219:P0015] sha256:908649679b862be4373d95ae96ec81f47f4c9758f5d38174fc978551eb8f5004
+[D0219:P0016] sha256:773c476a33f955edfb770272e7121f8a56cffe9b6462bc02869d04c2e60941b4
+[D0219:P0017] sha256:d16e272d9b4f9c587bf469ac792e3d1ad6505ebbb626b4576572f77842e77f51
+[D0219:P0018] sha256:44de37307068943cc0ed8434a84cf8d6d5f804e6f71a8a2cd802adda7daea6c8
+[D0219:P0019] sha256:b833f637681fc3c2847a55eaba6dcaa10a44896acdec26980d7de4fab8e1d237
+[D0219:P0020] sha256:851936f159c31ee687f9da5506b1c93bb8940b5674856be28e2c824a38cdd11a
+[D0219:P0021] sha256:4a92184068371c39a59856798cf39de60453025f9156e2d4e17de92add6286d5
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (71)
+E001: «Group-IB» — has → «21 years of proprietary telemetry» | форма: actual, positive
+E002: «Group-IB» — collaborates with → «AFRIPOL» | форма: actual, positive
+E003: «Gartner» — published → «2026 Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» | форма: actual, positive
+E004: «Group-IB» — provides → «Digital Risk Protection» | форма: actual, negative
+E005: «Dmitry Volkov» — leads → «Group-IB» | форма: actual, positive
+E006: «Managed Extended Detection and Response (XDR)» — provides → «Group-IB» | форма: actual, positive
+E007: «Gartner» — acknowledged roadmap shift of → «Group-IB» | форма: actual, positive
+E008: «Group-IB» — has been awarded by → «Frost & Sullivan» | форма: actual, positive
+E009: «Group-IB» — provides → «Unified Risk Platform» | форма: actual, positive
+E010: «Digital Crime Resistance Centers» — located in → «Middle East and Africa» | форма: actual, positive
+E011: «Group-IB» — provides → «Cloud Security Posture Management» | форма: actual, positive
+E012: «ransomware groups» — reports on → «Group-IB» | форма: actual, positive
+E013: «Group-IB» — conducts → «24/7 dark-web monitoring» | форма: actual, positive
+E014: «Group-IB» — operates → «Unified Risk Platform» | форма: actual, positive
+E015: «Unified Risk Platform» — offers → «unlimited users, APIs, hunting rules, and takedowns» | форма: actual, positive
+E016: «Dmitry Volkov» — leads → «Group-IB» | форма: possible, positive
+E017: «Group-IB» — offers → «Cloud Security Posture Management» | форма: actual, positive
+E018: «Threat Intelligence» — provides → «Predictive Indicators of Attack» | форма: actual, positive
+E019: «Group-IB» — has particular depth in → «financial services, telecommunications, and government and law enforcement sectors» | форма: actual, positive
+E020: «Group-IB» — offers → «Digital Risk Protection» | форма: actual, positive
+E021: «Digital Crime Resistance Centers» — part of → «Group-IB» | форма: actual, positive
+E022: «Unified Risk Platform» — spans → «threat intelligence, fraud, Managed XDR, sandboxing, and investigations» | форма: actual, positive
+E023: «Group-IB» — shifts roadmap toward → «prediction-first defence» | форма: actual, positive
+E024: «Group-IB» — provides → «Fraud Protection» | форма: actual, positive
+E025: «Group-IB's platform» — has capability → «BGP (Border Gateway Protocol) threat monitoring» | форма: actual, positive
+E026: «Digital Crime Resistance Centers» — are located in → «the Americas, Europe, Middle East and Africa, Central Asia, and the Asia-Pacific» | форма: actual, positive
+E027: «Group-IB Threat Intelligence» — delivers → «Predictive Indicators of Attack» | форма: actual, positive
+E028: «Predictive Indicators of Attack» — are generated from → «longitudinal intelligence and 24/7 dark-web monitoring» | форма: actual, positive
+E029: «Group-IB» — provides → «Digital Risk Protection» | форма: actual, positive
+E030: «ransomware groups» — share infrastructure with → «fraud ecosystems» | форма: actual, positive
+E031: «Group-IB» — collaborates with → «INTERPOL» | форма: actual, positive
+E032: «Group-IB» — has been awarded by → «Gartner» | форма: actual, positive
+E033: «Group-IB» — operates → «Digital Crime Resistance Centers» | форма: actual, positive
+E034: «Group-IB» — has been awarded by → «Frost & Sullivan» | форма: actual, negative
+E035: «Group-IB» — provides → «Managed Extended Detection and Response (XDR)» | форма: actual, positive
+E036: «2026 Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» — evaluated → «eighteen vendors» | форма: actual, positive
+E037: «Group-IB» — collaborates with → «Europol» | форма: actual, positive
+E038: «Group-IB» — operates → «11 Digital Crime Resistance Centers» | форма: actual, positive
+E039: «Group-IB» — has been awarded by → «Forrester» | форма: actual, positive
+E040: «Group-IB» — uses → «Cyber Fraud Fusion model» | форма: actual, positive
+E041: «Gartner» — highlighted → «Group-IB's verticalized intelligence» | форма: actual, positive
+E042: «PR Newswire» — published → «Group-IB named a Leader in the inaugural Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» | форма: actual, positive
+E043: «Group-IB Threat Intelligence» — powered → «more than 1,500 joint investigations with law enforcement agencies» | форма: actual, positive
+E044: «Group-IB» — offers → «Fraud Protection» | форма: actual, positive
+E045: «Group-IB» — located in → «Singapore» | форма: actual, positive
+E046: «Cyber Fraud Fusion model» — integrates → «fraud intelligence with threat intelligence at the data layer» | форма: actual, positive
+E047: «Group-IB» — offers → «Managed Extended Detection and Response (XDR)» | форма: actual, positive
+E048: «Group-IB» — provides → «Business Email Protection» | форма: actual, positive
+E049: «Group-IB named a Leader in the inaugural Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» — was published on → «May 5, 2026» | форма: actual, positive
+E050: «ransomware groups» — are converging with → «fraud ecosystems» | форма: actual, positive
+E051: «Group-IB» — caters to → «government, retail, healthcare, gaming, and financial sectors» | форма: actual, positive
+E052: «Digital Crime Resistance Centers» — located in → «Americas» | форма: actual, positive
+E053: «Group-IB's platform» — combines → «dark web and closed-group access» | форма: actual, positive
+E054: «Group-IB» — has been awarded by → «KuppingerCole» | форма: actual, positive
+E055: «Group-IB» — reports on → «fraud ecosystems» | форма: actual, positive
+E056: «Group-IB» — is headquartered in → «Singapore» | форма: actual, positive
+E057: «Digital Crime Resistance Centers» — located in → «Europe» | форма: actual, positive
+E058: «Digital Crime Resistance Centers» — located in → «Asia-Pacific» | форма: actual, positive
+E059: «Group-IB» — was established in → «2003» | форма: actual, positive
+E060: «Group-IB» — offers → «Cyber Fraud Intelligence Platform» | форма: actual, positive
+E061: «Group-IB» — reports on → «ransomware groups» | форма: actual, positive
+E062: «Group-IB» — provides → «External Attack Surface Management» | форма: actual, positive
+E063: «Group-IB» — named a Leader in → «2026 Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» | форма: possible, positive
+E064: «Digital Crime Resistance Centers» — located in → «Central Asia» | форма: actual, positive
+E065: «Group-IB» — offers → «Threat Intelligence» | форма: actual, positive
+E066: «Group-IB» — provides → «Cyber Fraud Intelligence Platform» | форма: actual, positive
+E067: «Group-IB» — has been awarded by → «Datos Insights» | форма: actual, positive
+E068: «Group-IB» — provides → «Threat Intelligence» | форма: actual, positive
+E069: «Group-IB» — offers → «External Attack Surface Management» | форма: actual, positive
+E070: «Group-IB» — named a Leader in → «2026 Gartner Magic Quadrant for Cyberthreat Intelligence Technologies» | форма: actual, positive
+E071: «Group-IB» — offers → «Business Email Protection» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

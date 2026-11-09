@@ -1,0 +1,23 @@
+{
+ "audit_file": "S5F40",
+ "target_doc_id": "D0169",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Verizon опублікував DBIR, у якому описано shadow AI як третю за поширеністю невмисну діяльність, пов'язану з витоком даних (P0004, P0006)."},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: за текстом threat actors використовують AI, а не AI використовує threat actors (P0005)."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття подає shadow AI як ризик для секретів компанії («risking company secrets»), тобто possible positive, а не negative (P0006)."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "Звіт Verizon повідомляє, що експлуатація вразливостей стала головною точкою входу для зламів (P0004, P0005)."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Daniel Lawson названо SVP Global Solutions у Verizon Business (P0010)."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Звіт Verizon описує перехід зловмисників до мобільної соціальної інженерії (P0005)."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "DBIR рекомендує інтегрувати AI у фреймворки «secure by design», тож це рекомендація (P0009)."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Штаб-квартира Verizon міститься в New York City (P0013)."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "DBIR рекомендує використовувати AI у стратегіях defense-in-depth (P0009)."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "Зловмисники переходять до мобільної соціальної інженерії, і це подано як поточний факт (P0005)."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "Verizon опублікував щорічний Data Breach Investigations Report (P0004)."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Зловмисники використовують AI, щоб пришвидшити експлуатацію вразливостей, і це подано як факт (P0005)."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "Текст подає як факт, що зловмисники експлуатують відомі вразливості (P0005, P0007)."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Сильне управління ризиками названо найефективнішим захистом від кіберзагроз, а твердження про ефективність має форму actual (P0010)."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "AI виявляє програмні вади з дедалі більшою швидкістю, і це подано як чинний стан («AI identifies software flaws», «AI-detected vulnerabilities») (P0004, P0009)."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "Зловмисники вдаються до експлуатації вразливостей, і це подано як факт (P0005, P0007)."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Shadow AI подано як ризик для секретів компанії, тобто possible positive (P0006)."}
+ ]
+}

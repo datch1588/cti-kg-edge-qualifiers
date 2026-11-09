@@ -1,0 +1,72 @@
+{
+ "run_id": "F133",
+ "target_doc_id": "D0242",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 0, "end": 119, "sha256": "e7e07f0cacf8f518ed0ae1f828532ce9440ce205ea35a24d51646d9c52f12db7"}}
+  ]},
+  {"id": "n002", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0008", "start": 525, "end": 638, "sha256": "d6eca740614bd86b2ed91d226fe884a973fb1570bf52f4264e524c3ebfa98c83"}}
+  ]},
+  {"id": "n003", "label": "CERT-In", "entity_type": "organization", "aliases": ["Indian Computer Emergency Response Team"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 0, "end": 119, "sha256": "e7e07f0cacf8f518ed0ae1f828532ce9440ce205ea35a24d51646d9c52f12db7"}},
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0006", "start": 0, "end": 149, "sha256": "3efbd71a1bed56ffed9c4c2ed22f990f1583ea84022d775adb2a726e491930ed"}}
+  ]},
+  {"id": "n004", "label": "MSMEs", "entity_type": "organization", "aliases": ["Micro, small, and medium enterprises"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 289, "end": 408, "sha256": "2e6c5ee6e25836ba5bc3e1733e6e660f0ddb785502a14a6a2b78327066b3f9c5"}}
+  ]},
+  {"id": "n005", "label": "continuous network monitoring", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 151, "end": 268, "sha256": "d0948cd3e1b376b908943f2e43da2ba43a1b2947b736d82aa7fce8fae1c2af54"}}
+  ]},
+  {"id": "n006", "label": "frontier AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 120, "end": 288, "sha256": "4726d541055ed565f7c7ac3aee474773f4c4ee4e7a4c4933fd3cc9db9231323f"}}
+  ]},
+  {"id": "n007", "label": "patch management", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 269, "end": 345, "sha256": "49fb75452a2743cb550d73c809349b21e71a6f794fd72de1c2ae45633c51cdca"}}
+  ]},
+  {"id": "n008", "label": "AI-driven cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 0, "end": 119, "sha256": "e7e07f0cacf8f518ed0ae1f828532ce9440ce205ea35a24d51646d9c52f12db7"}}
+  ]},
+  {"id": "n009", "label": "data breaches", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0008", "start": 525, "end": 638, "sha256": "d6eca740614bd86b2ed91d226fe884a973fb1570bf52f4264e524c3ebfa98c83"}}
+  ]},
+  {"id": "n010", "label": "threat detection tools", "entity_type": "tool", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 151, "end": 268, "sha256": "d0948cd3e1b376b908943f2e43da2ba43a1b2947b736d82aa7fce8fae1c2af54"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n001", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 0, "end": 119, "sha256": "e7e07f0cacf8f518ed0ae1f828532ce9440ce205ea35a24d51646d9c52f12db7"}}
+  ]},
+  {"id": "e002", "source": "n003", "target": "n002", "relation_type": "WARNS_ABOUT", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0008", "start": 447, "end": 638, "sha256": "3579f0f80715dae59528473f2d8007dbf2cf103a253bed838e0da243f361fcf7"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n008", "relation_type": "WARNS_ABOUT", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 0, "end": 119, "sha256": "e7e07f0cacf8f518ed0ae1f828532ce9440ce205ea35a24d51646d9c52f12db7"}}
+  ]},
+  {"id": "e004", "source": "n003", "target": "n009", "relation_type": "WARNS_ABOUT", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0008", "start": 447, "end": 638, "sha256": "3579f0f80715dae59528473f2d8007dbf2cf103a253bed838e0da243f361fcf7"}}
+  ]},
+  {"id": "e005", "source": "n004", "target": "n001", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0006", "start": 507, "end": 609, "sha256": "bbdf4c1c224b5a604abf665d38b0c320ec3ee7a98c8becf223ca2e97ae41b78a"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n008", "relation_type": "MITIGATES", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 25, "end": 150, "sha256": "3979684bec5288d0018763fa3895e99b0a09a3d2543b6d2c1bdcd810e96fcfb4"}},
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 151, "end": 268, "sha256": "d0948cd3e1b376b908943f2e43da2ba43a1b2947b736d82aa7fce8fae1c2af54"}}
+  ]},
+  {"id": "e007", "source": "n007", "target": "n008", "relation_type": "MITIGATES", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 25, "end": 150, "sha256": "3979684bec5288d0018763fa3895e99b0a09a3d2543b6d2c1bdcd810e96fcfb4"}},
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 269, "end": 496, "sha256": "0ee478b7e600c5c790f6edd11cb4d71c59e61c9f5154a02e59908af98f3f959e"}}
+  ]},
+  {"id": "e008", "source": "n008", "target": "n004", "relation_type": "TARGETS", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0004", "start": 289, "end": 408, "sha256": "2e6c5ee6e25836ba5bc3e1733e6e660f0ddb785502a14a6a2b78327066b3f9c5"}},
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0006", "start": 507, "end": 696, "sha256": "ae471614ded0c9fbb2fbe89498af7be34de47f0b1e9c7a604fc95a1f9ffda8d8"}}
+  ]},
+  {"id": "e009", "source": "n010", "target": "n008", "relation_type": "MITIGATES", "attribution": "CERT-In", "event_time": "", "event_scope": "CERT-In advisory on AI-driven cyber threats to MSMEs", "evidence": [
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 25, "end": 150, "sha256": "3979684bec5288d0018763fa3895e99b0a09a3d2543b6d2c1bdcd810e96fcfb4"}},
+   {"role": "TARGET", "doc_id": "D0242", "paragraph_id": "D0242:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0242:P0009", "start": 151, "end": 268, "sha256": "d0948cd3e1b376b908943f2e43da2ba43a1b2947b736d82aa7fce8fae1c2af54"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,124 @@
+AUDIT_FILE: T24
+TARGET_DOC_ID: D0462
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0462
+PUBLICATION_DATE: 2026-03-06
+SOURCE_URL: https://cyprus-mail.com/2026/03/06/cyprus-to-host-new-maritime-cybersecurity-centre-in-strategic-mediterranean-partnership
+TITLE_SHA256: f977b9c634ba1fd71f50ce23b4f943d9a587ae7c69e12ec35193a507fd3e3bb0
+BEGIN_DOCUMENT
+[D0462:P0001] sha256:f977b9c634ba1fd71f50ce23b4f943d9a587ae7c69e12ec35193a507fd3e3bb0
+[D0462:P0002] sha256:2095ed77499d2a96532acc4bc180f659c023b071b52798cf6def30b5e2b7032b
+[D0462:P0003] sha256:aa1af81576dbd67d3c57590bd7c5d07f6103197d02d1bf9548a3698adf95af3c
+[D0462:P0004] sha256:40db43181a41923a635da6f50eae0bcd23e91bcb935fa28a0bed7ee60167a8e2
+[D0462:P0005] sha256:0cdb0419b44d0223c26ffa31522aaacb21d8db2a3baaf0b54dcbf8d389a0e3a7
+[D0462:P0006] sha256:674cca3d26ef0c5d57740cd662daf458c678c43f7cbe610467105616cb9b6a22
+[D0462:P0007] sha256:a9439c1fe931161b75ab811fb5df94526446af9cbfcdcac38337124a66b41d98
+[D0462:P0008] sha256:1bcbfe4efa683966e921fc4ce1d24b362420bab7ce34257f1f451689635285bf
+[D0462:P0009] sha256:45155162573aef0d4703f86dc3ca446b3232539db9b9bdd2246db1ee29aecd49
+[D0462:P0010] sha256:f68a2ce1c9da9892765636d7c40eb95b08455b9653a45b463273934b042f0cbd
+[D0462:P0011] sha256:15f05fea9843acae2fe778fbfedbecfd56f9b2aa4ee28f89f591d8d5591adb69
+[D0462:P0012] sha256:209b59d6fb8ba137fe30cdd4f785188561e3efadd3ccb96fb48fb52e161b6ac0
+[D0462:P0013] sha256:0da684540c165ba862c74f451be1b14a236b32793ffa38ed895418aec1e3314c
+[D0462:P0014] sha256:3dd36ca0efd8fb522b6e6e8679f0abc5617190736c6ce9c866cc81edec59d113
+[D0462:P0015] sha256:d274b98d3cae4dcaecf009f5aaeac2a85a0f2f3a45c4bb170ea7a706b3429b8e
+[D0462:P0016] sha256:39586d7698a18b92054c6d54fbf058afcff1030947355896b132d03b85ccdb50
+[D0462:P0017] sha256:4fd72fa6e70766eb75c6fec5de1a10e0922eba1a999ccd47b8aea6ce263ee8cd
+[D0462:P0018] sha256:38deca92ce6b2ec28f38408c5b1626a8cab8193505decf1d46cf1222f2a47890
+[D0462:P0019] sha256:be8c2c0d234f9d893ac6060f8d844263daee2fa35d6fef03dbc80cdb6a246ab4
+[D0462:P0020] sha256:4f3774bc09f40270ce25fa5ba9e19babe9e63201fd1312c8f22a6557f6d97732
+[D0462:P0021] sha256:6e88c14934960616671869abc94e35959eaad7f54007361d9e25b0c91dacb321
+[D0462:P0022] sha256:279401558345730e58bd5230b940156768c03ca412c1c848b17f28fd783b786c
+[D0462:P0023] sha256:2fea9b3a1f1e86c980bb28ccb27ae813c40ef418dc3eb3d0790995d1a05096bc
+[D0462:P0024] sha256:0892cfea9a6b028c6da7083932f01f70584a889973a02d264db72f7da8b2e93b
+[D0462:P0025] sha256:4a1cbcca33d234ee4fcae520287e46b3ea48d22fa1f304332178d7508733a9a1
+[D0462:P0026] sha256:092d4c6d361019a3312b16ed92db1bda1e6736d67b89bd2cb01abf08d884e64e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (43)
+E001: «Maritime Cybersecurity Centre of Excellence» — reports on → «cyber threats» | форма: planned, positive
+E002: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — gathers and shares intelligence on cyber threats targeting → «maritime systems» | форма: actual, positive
+E003: «Maritime Cybersecurity Centre of Excellence» — protects → «maritime infrastructure» | форма: actual, positive
+E004: «cyber attacks» — targets → «maritime infrastructure» | форма: possible, positive
+E005: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — coordinates cyber defence across → «maritime networks» | форма: actual, positive
+E006: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — stems from agreements reached at trilateral summit in → «2025» | форма: actual, positive
+E007: «Cyprus to host new maritime cybersecurity centre in strategic Mediterranean partnership» — is published by → «Cyprus Mail» | форма: actual, positive
+E008: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — works closely with → «Israeli National Cyber Directorate» | форма: actual, positive
+E009: «Cyprus to host new maritime cybersecurity centre in strategic Mediterranean partnership» — is published on → «2026.03.06» | форма: actual, positive
+E010: «maritime sector» — relies on → «satellite communications» | форма: actual, positive
+E011: «Maritime Cybersecurity Centre of Excellence» — located in → «Cyprus» | форма: planned, positive
+E012: «State-backed hacking groups» — target → «ports» | форма: actual, positive
+E013: «Cyprus» — will host → «Maritime Cybersecurity Centre of Excellence (MarCCE)» | форма: actual, positive
+E014: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — is established in collaboration with → «Greece» | форма: actual, positive
+E015: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — works closely with → «Greece's National Cybersecurity Authority» | форма: actual, positive
+E016: «Cyprus» — sits at crossroads between → «Europe and the Middle East» | форма: actual, positive
+E017: «Israeli National Cyber Directorate» — located in → «Israel» | форма: actual, positive
+E018: «maritime sector» — relies on → «interconnected logistics platforms» | форма: actual, positive
+E019: «cyber attack on maritime infrastructure» — could disrupt → «energy supplies, trade routes or naval operations» | форма: actual, positive
+E020: «cyber attacks on ports or shipping networks» — can disrupt → «global supply chains» | форма: actual, positive
+E021: «NEO CYMED PUBLISHING LIMITED» — operates under the name → «Cyprus Mail» | форма: actual, positive
+E022: «Israel» — is established in collaboration with → «Maritime Cybersecurity Centre of Excellence (MarCCE)» | форма: actual, positive
+E023: «NEO CYMED PUBLISHING LIMITED» — operates under the name → «Cyprus Mail» | форма: actual, negative
+E024: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — is established in collaboration with → «Israel» | форма: actual, positive
+E025: «maritime infrastructure» — protects → «Maritime Cybersecurity Centre of Excellence» | форма: planned, positive
+E026: «Eastern Mediterranean» — has increased security concerns due to conflict involving → «Iran» | форма: actual, positive
+E027: «State-backed hacking groups» — target → «power networks» | форма: actual, positive
+E028: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — runs → «simulated cyber-attack exercises» | форма: actual, positive
+E029: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — strengthens cyber resilience for → «shipping routes and maritime infrastructure» | форма: actual, positive
+E030: «Digital Security Authority» — operates → «Maritime Cybersecurity Centre of Excellence» | форма: planned, positive
+E031: «maritime sector» — relies on → «automated navigation systems» | форма: actual, positive
+E032: «cyber attacks» — affects → «global supply chains» | форма: possible, positive
+E033: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — operates under the authority of → «Cyprus' Digital Security Authority» | форма: actual, positive
+E034: «Maritime Cybersecurity Centre of Excellence» — located in → «Nicosia» | форма: planned, positive
+E035: «State-backed hacking groups» — target → «communications systems» | форма: actual, positive
+E036: «cyber attacks» — target → «ports, shipping companies and logistics systems» | форма: actual, positive
+E037: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — will be based in → «Nicosia» | форма: actual, positive
+E038: «State-backed hacking groups» — target → «critical infrastructure» | форма: actual, positive
+E039: «Maritime Cybersecurity Centre of Excellence» — protects → «maritime infrastructure» | форма: planned, positive
+E040: «National Cybersecurity Authority» — located in → «Greece» | форма: actual, positive
+E041: «Maritime Cybersecurity Centre of Excellence (MarCCE)» — trains specialists to respond to → «digital attacks on ports and vessels» | форма: actual, positive
+E042: «Digital Security Authority» — located in → «Cyprus» | форма: actual, positive
+E043: «State-backed hacking groups» — targets → «critical infrastructure» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

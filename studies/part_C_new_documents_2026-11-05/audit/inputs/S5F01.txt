@@ -1,0 +1,92 @@
+AUDIT_FILE: S5F01
+TARGET_DOC_ID: D0671
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0671
+PUBLICATION_DATE: 2026-01-01
+SOURCE_URL: https://www.aninews.in/news/national/general-news/from-near-defeat-of-naxalism-to-cyber-security-push-home-ministry-marked-major-milestones-in-202520260101090422
+TITLE_SHA256: cd2b040d44f8d7d90518340a2930845962b9f612694acc98475e56e80f1533e9
+BEGIN_DOCUMENT
+[D0671:P0001] sha256:cd2b040d44f8d7d90518340a2930845962b9f612694acc98475e56e80f1533e9
+[D0671:P0002] sha256:70a2853cc67be728f255826a77860a6edf8fbb4142bed2d684b894f0d342694f
+[D0671:P0003] sha256:f1d618906e9461cb19db8f03ba7b4de3c12f329d959885d97941bda09b5ef086
+[D0671:P0004] sha256:b4cfefbd3b83686c3df6ab4d40d5d21bd043f246712b54a3d60e2e92de0d1500
+[D0671:P0005] sha256:1d35e0c77c20268ca71bd16ffbbcb08324e8b4c965c670d3b8f877c535f3aa55
+[D0671:P0006] sha256:f40eda02d9c3067829f050ff98e7ee007f805c3eee6f690c4982b02c4138606d
+[D0671:P0007] sha256:6ee87d991c87725b21658408c64facb064cf2f5a94ef69a54f906f5d950b129d
+[D0671:P0008] sha256:4c0800640f11c19bc1f083884c9e6de905c68453307c3f54b451ce95ebf552b4
+[D0671:P0009] sha256:3cd9d6f9ef47b0fc7288e978e605c921587550321837f06f6118067abf3ba8f7
+[D0671:P0010] sha256:18166010c4cf2ad5220afa246bc2232b3d3fabc76e607f460b154353fc2dfb10
+[D0671:P0011] sha256:5b542815206361255507381222ea1fae3272aaa14e1e0e9d946a990bd91ba46c
+[D0671:P0012] sha256:0164fe547f40156da68c6f37bb783ebdf1984fd16239af5005fc922b58755745
+[D0671:P0013] sha256:e0d8390b022425d0ecb18616d9dff5a76ca6e46bd1f487a83f4a6fbe1a086cd7
+[D0671:P0014] sha256:d69a85fb9348515055a1ffbf4071231da90b9f3b448c95dac5c321f2172a491d
+[D0671:P0015] sha256:3bd0a029ab876943045107c7b553d77c3c2a0f2fb224b18cc86153d0cde46818
+[D0671:P0016] sha256:66d3aa3368e1611097812164f357e07375b2048b0bc7000eee808681ed2390a3
+[D0671:P0017] sha256:778458005f219ea4f8ec952275419e1a64694ce8cc390d3f84f00d75cfef1370
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (12)
+E001: «Multi-Agency Centre» — mitigates → «cyber threats» | форма: planned, positive
+E002: «Multi-Agency Centre» — located in → «New Delhi» | форма: actual, positive
+E003: «e-Zero FIR» — enables → «registration of FIRs» | форма: actual, positive
+E004: «Multi-Agency Centre» — located in → «New Delhi» | форма: actual, negative
+E005: «Multi-Agency Centre» — mitigates → «cyber threats» | форма: actual, positive
+E006: «Indian Cybercrime Coordination Centre» — provides → «e-Zero FIR» | форма: actual, positive
+E007: «New Delhi» — located in → «India» | форма: actual, positive
+E008: «Amit Shah» — leads → «Ministry of Home Affairs» | форма: actual, positive
+E009: «e-Zero FIR» — enables → «faster registration of FIRs» | форма: actual, positive
+E010: «e-Zero FIR» — located in → «Delhi» | форма: actual, positive
+E011: «CBI» — provides → «BHARATPOL portal» | форма: actual, positive
+E012: «e-Zero FIR» — provides → «Indian Cybercrime Coordination Centre» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

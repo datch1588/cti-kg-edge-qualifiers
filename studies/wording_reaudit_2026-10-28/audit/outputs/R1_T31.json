@@ -1,0 +1,13 @@
+{
+ "audit_file": "R1_T31",
+ "target_doc_id": "D0268",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів подає зондування й експлуатацію як факт, а в D0268:P0009 сказано лише, що програмні засоби захисту «can be continuously probed and exploited by AI», тобто це можливість (possible)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never resistant to» заперечує звʼязок, тоді як D0268:P0009 стверджує, що апаратний захист «inherently resistant to ... iterative attack strategies» (actual, positive)."},
+  {"item_id": "W003", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "U", "reason": "У D0268:P0004 вбудовування PQC подано як нагальну потребу («urgent need ... to be embedded»), тобто recommended, а формулювання «to be embedded into» не має явного маркера рекомендації й може читатися як план, тож відповідність неоднозначна."},
+  {"item_id": "W004", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0268:P0005 Project Glasswing описано як ініціативу «to secure critical software», тобто як мету, і формулювання «aims to secure» передає саме намір, а не здійснений факт."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0268:P0007 вбудовування PQC у «semiconductor components» подано як загальне твердження про те, як працює підхід, а D0268:P0011 каже, що SEALSQ уже вбудовує PQC у свої напівпровідникові рішення, тож форма actual, positive відповідає."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0268:P0007 прямо стверджено, що корінь довіри «cannot be altered, bypassed, or extracted—even by AI-driven attacks», і формулювання передає те саме фактичне заперечення."},
+  {"item_id": "W007", "wording_modality": "conditional", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0268:P0008 сказано, що за апаратного підходу («As a result») AI-агенти «would be unable to escalate privileges», і формулювання з «would be unable» передає цю умовну й заперечну форму."}
+ ]
+}

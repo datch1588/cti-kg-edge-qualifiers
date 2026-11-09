@@ -1,0 +1,75 @@
+{
+ "run_id": "F009",
+ "target_doc_id": "D0140",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Estonia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0005", "start": 87, "end": 164, "sha256": "2d45b91df15d79a3cfb9eb0081764127587fa6e76b39d7bf7312d3eb43d07e52"}}
+  ]},
+  {"id": "n002", "label": "2023 NATO Summit", "entity_type": "event", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0007", "start": 0, "end": 101, "sha256": "680eeff4b357021589e35a890edf9fca1e6c3d3a9b0d6aef4ce8e894832b0deb"}}
+  ]},
+  {"id": "n003", "label": "International Conference on Cyber Conflict", "entity_type": "event", "aliases": ["CyCon"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0005", "start": 53, "end": 164, "sha256": "6d55bf1297340c34e4ee20b6da5d12c74893d1d826a5008720bf2baf23688cd9"}},
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0008", "start": 0, "end": 133, "sha256": "b2e4982bf07d775f0a9105d2c5a96453d865ea5764cd2468a888da633ce01d07"}}
+  ]},
+  {"id": "n004", "label": "Tallinn", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0005", "start": 87, "end": 164, "sha256": "2d45b91df15d79a3cfb9eb0081764127587fa6e76b39d7bf7312d3eb43d07e52"}}
+  ]},
+  {"id": "n005", "label": "Vilnius", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0007", "start": 0, "end": 101, "sha256": "680eeff4b357021589e35a890edf9fca1e6c3d3a9b0d6aef4ce8e894832b0deb"}}
+  ]},
+  {"id": "n006", "label": "Cooperative Cyber Defence Centre of Excellence", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0008", "start": 0, "end": 133, "sha256": "b2e4982bf07d775f0a9105d2c5a96453d865ea5764cd2468a888da633ce01d07"}}
+  ]},
+  {"id": "n007", "label": "ESET", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0004", "start": 0, "end": 105, "sha256": "cb27c5a3012c494278161ab00a2cfc456b18d2871564f20a8483106c4d8679bf"}}
+  ]},
+  {"id": "n008", "label": "Microsoft", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0004", "start": 0, "end": 105, "sha256": "cb27c5a3012c494278161ab00a2cfc456b18d2871564f20a8483106c4d8679bf"}}
+  ]},
+  {"id": "n009", "label": "NATO", "entity_type": "organization", "aliases": ["North Atlantic Treaty Organisation"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0002", "start": 0, "end": 41, "sha256": "03013779e38ab10c3e4772c1bc1530ca232cd97305f27e6c718463e2547829f0"}},
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0004", "start": 0, "end": 105, "sha256": "cb27c5a3012c494278161ab00a2cfc456b18d2871564f20a8483106c4d8679bf"}}
+  ]},
+  {"id": "n010", "label": "Palo Alto Networks", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0004", "start": 0, "end": 105, "sha256": "cb27c5a3012c494278161ab00a2cfc456b18d2871564f20a8483106c4d8679bf"}}
+  ]},
+  {"id": "n011", "label": "Jean Charles Ellermann-Kingombe", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0006", "start": 172, "end": 301, "sha256": "c5da6ddccf22b5f176d51eea1efbdba48d00ec53246478c694b620d842e9eacf"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n005", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "2023", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0007", "start": 0, "end": 101, "sha256": "680eeff4b357021589e35a890edf9fca1e6c3d3a9b0d6aef4ce8e894832b0deb"}}
+   ]},
+  {"id": "e002", "source": "n003", "target": "n004", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0005", "start": 87, "end": 164, "sha256": "2d45b91df15d79a3cfb9eb0081764127587fa6e76b39d7bf7312d3eb43d07e52"}}
+   ]},
+  {"id": "e003", "source": "n004", "target": "n001", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0005", "start": 87, "end": 164, "sha256": "2d45b91df15d79a3cfb9eb0081764127587fa6e76b39d7bf7312d3eb43d07e52"}}
+   ]},
+  {"id": "e004", "source": "n006", "target": "n003", "relation_type": "OPERATES",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0008", "start": 0, "end": 133, "sha256": "b2e4982bf07d775f0a9105d2c5a96453d865ea5764cd2468a888da633ce01d07"}}
+   ]},
+  {"id": "e005", "source": "n006", "target": "n009", "relation_type": "PART_OF",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0008", "start": 0, "end": 133, "sha256": "b2e4982bf07d775f0a9105d2c5a96453d865ea5764cd2468a888da633ce01d07"}}
+   ]},
+  {"id": "e006", "source": "n011", "target": "n009", "relation_type": "MEMBER_OF",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0140", "paragraph_id": "D0140:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0140:P0006", "start": 172, "end": 301, "sha256": "c5da6ddccf22b5f176d51eea1efbdba48d00ec53246478c694b620d842e9eacf"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

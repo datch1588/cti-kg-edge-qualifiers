@@ -1,0 +1,89 @@
+AUDIT_FILE: R2_T29
+TARGET_DOC_ID: D0289
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0289
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.anonymoushackers.net/cybersecurity-news/hims-hers-data-breach-2026-what-happened-and-why-it-matters/
+TITLE_SHA256: 41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+BEGIN_DOCUMENT
+[D0289:P0001] sha256:41bef86fef673247c6138339ec1193f13ac3793ad3993a9a4ab9682fbebe39d9
+[D0289:P0002] sha256:604ce0f10deb5fd3e5f7838ad96464e8b0031456b75ab3cf3201464b3241fb7b
+[D0289:P0003] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0004] sha256:ecd154fae8eff04f22fd4c4b61fb6429badf8e828066541cddc81cf4ed99ef6e
+[D0289:P0005] sha256:9f86568e0c7353e89415f5a71eeb5fcaff6fba5f5475ae94fb76fdf57cb0b327
+[D0289:P0006] sha256:5f90b9586f494ef7a460f898671216a8afeb4877948a63e5ba7127e14d727c07
+[D0289:P0007] sha256:1bb37376321beea0a4691462cffcb47c0686d7b7a7f912e0fc67ede9a9cd90ba
+[D0289:P0008] sha256:2b2c514f71bb088aa1a5eb89f0e151c79aa20b2469502975e15a283bf9a6e75f
+[D0289:P0009] sha256:4d4a2f7d5213edc6e5109721107b2905d6b32beab7ea19029f0abd4eb4954237
+[D0289:P0010] sha256:6abcb83bcb9335a88ea8242f0e4110ac2c81397be7413d13fe7a1dc0d5aa3696
+[D0289:P0011] sha256:3590a0886332de2349b4a62ffbb3d7cef662601c6c12674504369a8e1875b7cd
+[D0289:P0012] sha256:09011dd4684fe114c86b1bf6f589ec9dfd3596fccc2cd518079a7b3078d1293f
+[D0289:P0013] sha256:51677db3dd1b252dabc57c85c6c090d0ab92a569bfa2a9b3fec186a6f3a4ee84
+[D0289:P0014] sha256:cc6ee268ad2eb5455a499140813d951fce9d8b682bd1fc58e0df29f0ff3153e7
+[D0289:P0015] sha256:7b4df4296989133d3526a187a7bca5c91d2332f3ae3ca79762bb2259fdb928e1
+[D0289:P0016] sha256:406b68bcb56824a1223bb5de7b53f04b241f4a0455a543ec090d277190169a4f
+[D0289:P0017] sha256:57d342c5488b93d4e582e83054ff74f8c3a85f46a763d46dbb76ef522528ddbe
+[D0289:P0018] sha256:17b75e20421df65d978cc3141809356b2a19224621ce2251278290000f5bc80c
+[D0289:P0019] sha256:6597e683895ce5ae92a64ef97998e71605da83712e47c9fb7dd2db7bc905a45a
+[D0289:P0020] sha256:b931121cedf72e2b23bf0942dd799d3d7b68be47564b7420763cb4d74134da68
+[D0289:P0021] sha256:14368b223c7c2c60f38b05a39489d05f13f76f50f303f1a09162ae5dd877525f
+[D0289:P0022] sha256:c604b33edaf6347c35ceda57d32abc3f261dc48f7860dd23d88809d3be787303
+[D0289:P0023] sha256:44ec0e7c88c683a4c444474b7785029ac6f36b36c8bd302b5f4357cac3d75b83
+[D0289:P0024] sha256:eb10d945b58de6f46fbb0086609ae739b9ca63579bc13863b80b26d2e2ceb261
+[D0289:P0025] sha256:25db46de38b5681d764bad7ece876e009593379596245ac99e9c165fb0abfbfe
+[D0289:P0026] sha256:3e8b5476cf1af379d8d7e6d020c926a61e3da0fd9b22a524833f7615b44de5f4
+[D0289:P0027] sha256:fc060985e0240c162f20dcd78a8510b2f4031f37546fe1b535d85f574c63875f
+[D0289:P0028] sha256:184500290f777c0076588ffae25d024c8856b4f2f7959a63bbab42dca753a639
+[D0289:P0029] sha256:973de897dbb8d5ba671adb4b74355823b40745c7b13e3521a4e0e110704a4143
+[D0289:P0030] sha256:79057d7a374f0b183809a974dba57c368999d812bae91d01c8d5769704ad30c2
+[D0289:P0031] sha256:49741f6fa3dab917f342e2cac0dacf218768a6956309c65e49c8378a9e548609
+[D0289:P0032] sha256:48229aa32ec086785c260e85744916e6ef3bda6f6b3e88b27a7b2ba1337c2e7f
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (13)
+W001: «cybercriminals» — may use stolen data for → «phishing attacks»
+W002: «Hims & Hers data breach» — compromised → «details shared during customer support interactions»
+W003: «Hims & Hers data breach» — did not access → «doctor-patient communications»
+W004: «Hims & Hers data breach» — compromised → «names»
+W005: «ShinyHunters» — may be behind → «Hims & Hers data breach»
+W006: «Hims & Hers data breach» — compromised → «mailing addresses»
+W007: «cybercriminals» — may use stolen data for → «identity theft»
+W008: «Hims & Hers» — notified → «law enforcement authorities»
+W009: «Hims & Hers» — possibly detected intrusion on → «February 5, 2026»
+W010: «cybercriminals» — may use stolen data for → «blackmail»
+W011: «Hims & Hers data breach» — compromised → «email addresses»
+W012: «Hims & Hers data breach» — compromised → «phone numbers»
+W013: «Hims & Hers data breach» — did not access → «electronic medical records»
+КІНЕЦЬ ЗАПИСІВ

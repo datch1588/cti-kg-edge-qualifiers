@@ -1,0 +1,76 @@
+{
+  "run_id": "Y041",
+  "target_doc_id": "D0596",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "IoT Analytics", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0005", "start": 132, "end": 264, "sha256": "c86515d7317fa2b8c5ae7b9bfc78ee30ae04e1f12e70e492587357287798ff62"}}
+    ]},
+    {"id": "n002", "label": "AI-enabled security solutions", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0021", "start": 0, "end": 126, "sha256": "d1dbe8ed037c8f6e65ccd348da6a25261a3f8f21be56b6234cf9ca63feaf660c"}}
+    ]},
+    {"id": "n003", "label": "AI-powered monitoring", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "n004", "label": "continuous authentication mechanisms", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "n005", "label": "firewalls", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 0, "end": 133, "sha256": "349cd410e72d1a73d4485407bfeab6573c661ed68f1657866992c2d3569b104d"}}
+    ]},
+    {"id": "n006", "label": "microsegmentation", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0017", "start": 0, "end": 104, "sha256": "e0741762ab085b2d5011944ccbdde28c2e6f144ee5656c23cc7ba6e4d5c97566"}}
+    ]},
+    {"id": "n007", "label": "operational technology", "entity_type": "technology", "aliases": ["OT"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0005", "start": 0, "end": 130, "sha256": "3696a45d047f8a2ac5ae8c0e8021729aecaf69ccc532db2647e2492f0b10502c"}}
+    ]},
+    {"id": "n008", "label": "OT security architectures", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "n009", "label": "attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0021", "start": 0, "end": 126, "sha256": "d1dbe8ed037c8f6e65ccd348da6a25261a3f8f21be56b6234cf9ca63feaf660c"}}
+    ]},
+    {"id": "n010", "label": "compromised IoT device", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0018", "start": 0, "end": 149, "sha256": "5fcd8a7983c06e4e7793ed99398b7128a11fd0ad8d75373ed079b759f5166527"}}
+    ]},
+    {"id": "n011", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0007", "start": 0, "end": 156, "sha256": "85eddda0a83f908a616d8bbeebde0b8248c9d60419a5659a251500a15ae65b21"}}
+    ]},
+    {"id": "n012", "label": "security breaches", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0017", "start": 0, "end": 104, "sha256": "e0741762ab085b2d5011944ccbdde28c2e6f144ee5656c23cc7ba6e4d5c97566"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n010", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "IoT Analytics", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0018", "start": 0, "end": 149, "sha256": "5fcd8a7983c06e4e7793ed99398b7128a11fd0ad8d75373ed079b759f5166527"}}
+    ]},
+    {"id": "e002", "source": "n002", "target": "n009", "relation_type": "DETECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0021", "start": 0, "end": 126, "sha256": "d1dbe8ed037c8f6e65ccd348da6a25261a3f8f21be56b6234cf9ca63feaf660c"}}
+    ]},
+    {"id": "e003", "source": "n005", "target": "n007", "relation_type": "PROTECTS", "modality": "actual", "polarity": "positive", "attribution": "IoT Analytics", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 0, "end": 133, "sha256": "349cd410e72d1a73d4485407bfeab6573c661ed68f1657866992c2d3569b104d"}}
+    ]},
+    {"id": "e004", "source": "n006", "target": "n012", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0017", "start": 0, "end": 104, "sha256": "e0741762ab085b2d5011944ccbdde28c2e6f144ee5656c23cc7ba6e4d5c97566"}}
+    ]},
+    {"id": "e005", "source": "n008", "target": "n003", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "e006", "source": "n008", "target": "n004", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "e007", "source": "n008", "target": "n005", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "e008", "source": "n008", "target": "n006", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0022", "start": 134, "end": 272, "sha256": "a1ecb7ead073d82d45834994413e858b086b201f2f036366c64255ec0e6a2655"}}
+    ]},
+    {"id": "e009", "source": "n010", "target": "n007", "relation_type": "AFFECTS", "modality": "conditional", "polarity": "positive", "attribution": "IoT Analytics", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0018", "start": 0, "end": 149, "sha256": "5fcd8a7983c06e4e7793ed99398b7128a11fd0ad8d75373ed079b759f5166527"}}
+    ]},
+    {"id": "e010", "source": "n011", "target": "n007", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0596", "paragraph_id": "D0596:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0596:P0007", "start": 0, "end": 156, "sha256": "85eddda0a83f908a616d8bbeebde0b8248c9d60419a5659a251500a15ae65b21"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

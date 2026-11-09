@@ -1,0 +1,193 @@
+AUDIT_FILE: QT27A
+TARGET_DOC_ID: D0281
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0281
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.prnewswire.com/news-releases/ribbon-cutting-ceremony-marks-official-opening-of-the-full-sail-university-ibm-cyber-defense-range-powered-by-aws-and-cloud-range-302745188.html
+TITLE_SHA256: 5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+BEGIN_DOCUMENT
+[D0281:P0001] sha256:5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+[D0281:P0002] sha256:803e417c0e62c2b0d9a38396574862bb1532adc28905b528985b6880b23616cc
+[D0281:P0003] sha256:81178352ee8a2a943c1670d92af7ef42b20ac62c56d60e01d2f1939be8d915b1
+[D0281:P0004] sha256:8956d7b986f57e465096d93dc1d843cadc070e2bf2d9900d6af8e4a8e06dbc24
+[D0281:P0005] sha256:31f2dc9188f5671fca2b772944f59c5eabcbbc97c000956ae2fc2bd56d94a091
+[D0281:P0006] sha256:5bb23da7dcf94581a9f94eb55b4b1e754f443d9bd77f5e63112211505d168855
+[D0281:P0007] sha256:7f0c0a721086b4cfd12679c796ac41701adb5773e6624599752e4585c2a74966
+[D0281:P0008] sha256:de8434353498e6d8e7eb2b0b7c7158b139f6a6ee32a622f5f1f13a7d5595b388
+[D0281:P0009] sha256:5af2daa76f069924fbd535fbcc8c2fe6956e2546b90fe57b825324fdf88e8097
+[D0281:P0010] sha256:753da0594bd6c0d2b73d306809d9dd1a0f744bcbcedf7233e680763485bb5f0a
+[D0281:P0011] sha256:78ea4998226e15bcf5be632237d3259e30c5fdb7cff85d20e1475f945b840a6a
+[D0281:P0012] sha256:534021b90c6bc0ebcc762c7c6f142b00a8c388527f69e9732b4fe2a01ab6c9ed
+[D0281:P0013] sha256:bb83a07e8eb1418957e4d1d7350b861ba6d050fa14636699c0b678bfa794dc53
+[D0281:P0014] sha256:8de0ecb57acaa29e7a6ac9dce95e2625131bea778e285c3a1ca820dcabd36b78
+[D0281:P0015] sha256:df770ed0360f5ef161171165d8ce68b8a2962e3658ddbe3e56e810b49e49795f
+[D0281:P0016] sha256:0c76901612746e54bec81f05ef68b3adad8279fdaecec744933575f0c5e9a6c2
+[D0281:P0017] sha256:2418da12fbac5c40c28a4cc57a8089ef38827b588f98adc829937d6917fca9d4
+[D0281:P0018] sha256:b8c4d61e70aea188d1f334e7f088e23e1b06d4a0584fcd67a3cdfda23335fde5
+[D0281:P0019] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0281:P0020] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0281:P0021] sha256:20b97f928e594c06bc359e959f975562df30a166ab966eae5c0fbfd7e25de99d
+[D0281:P0022] sha256:b128bfacd79987dc1242559fbe1f9c06cd4b566f5cd88cd05573a6db3ff37cf2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 24, вузлів 9)
+E001: «AWS» — develops → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Debbie Gordon» | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@134-333 sha256=8a60e8b7af46c7fa8407bd44aa86bd2be3ae21de7617d52c18ba0302fbdc7c3a»
+E002: «AWS» — supports → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0007] «@0-131 sha256=57e9d74e2ebce907c54b5733e43e79875fcc5d8d7443ab18712655a6146bc987»
+E003: «AWS» — supports → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Faisal Hanafi» | час події: — | контекст події: —
+  фрагменти: [D0281:P0012] «@1-170 sha256=b75f2ef0f3d034ef4c1365d11b00757b3e9f79dde30879a854f1fb5cbf9fb8d2»
+E004: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — enables → «team-based cyber defense exercises» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0011] «@205-337 sha256=541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be»
+E005: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — enables → «digital forensics» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0011] «@205-337 sha256=541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be»
+E006: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — enables → «attack and defense simulations» | форма: actual, positive
+  атрибуція: «Sean Phalen» | час події: — | контекст події: —
+  фрагменти: [D0281:P0010] «@307-412 sha256=ed354e2b0710c8d734a60897320315804118d61ac214fe6d78ea8bdc7edc0853»
+E007: «Salwa Rafee» — leads → «CSS Public Market» | форма: actual, positive
+  атрибуція: «National Institute of Standards and Technology» | час події: — | контекст події: —
+  фрагменти: [D0281:P0008] «@184-245 sha256=f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325»
+E008: «Full Sail University» — located in → «Winter Park, FL» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0004] «@178-261 sha256=c8c7d72e2f77918abbb0728112a70d6526d4db5689c26414f0db24a5826b1b35»
+E009: «IBM» — develops → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Debbie Gordon» | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@134-333 sha256=8a60e8b7af46c7fa8407bd44aa86bd2be3ae21de7617d52c18ba0302fbdc7c3a»
+E010: «Full Sail University» — operates → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0004] «@49-213 sha256=a3d007cb45684fd8840e80f327d3ea84aa32da8ca9024f315374ec74025cac2e»; [D0281:P0009] «@0-141 sha256=74cd7e3cc89d3f837dc32709380515c13c6e925f806364109e1690a19ac1ccdf»
+E011: «Full Sail University» — located in → «Winter Park» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0004] «@178-261 sha256=c8c7d72e2f77918abbb0728112a70d6526d4db5689c26414f0db24a5826b1b35»
+E012: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — located in → «Emerging Tech Wing» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0011] «@0-118 sha256=318f5834a1a661547d73fdeeafbb01874daff42133a847e343645fed97fe06f9»
+E013: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — enables → «threat hunting» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0011] «@205-337 sha256=541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be»
+E014: «Salwa Rafee» — leads → «CSS Public Market» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0008] «@184-245 sha256=f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325»
+E015: «CSS Public Market» — part of → «IBM» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0008] «@184-245 sha256=f84d523d90395a4e5aea2c8a2326a12c920dc2a491281b3a473258ebec3d2325»
+E016: «Cloud Range» — supports → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0007] «@0-131 sha256=57e9d74e2ebce907c54b5733e43e79875fcc5d8d7443ab18712655a6146bc987»
+E017: «Debbie Gordon» — leads → «Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@93-131 sha256=56e7815bb75d893c8b0469bcf572fa78a2e4591412772190cc754fdcdd0a0ea3»
+E018: «AWS» — supports → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Faisal Hanafi» | час події: — | контекст події: —
+  фрагменти: [D0281:P0012] «@1-110 sha256=ab1147b122860dc347f0c875a700f4ce9b595aa8f5a8755cbe6cf028563fb470»
+E019: «Full Sail University» — operates → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0004] «@49-177 sha256=4f53119370786fd9bd4bad3094bb7d6271b66b4cd6eccd9c136186310b683e66»; [D0281:P0009] «@0-141 sha256=74cd7e3cc89d3f837dc32709380515c13c6e925f806364109e1690a19ac1ccdf»
+E020: «Cloud Range» — supports → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Debbie Gordon» | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@134-334 sha256=c0fc280ad75beb795575d8bca340481de9836d5e997d291a6d5a3b8810e59f8e»
+E021: «Debbie Gordon» — leads → «Cloud Range» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@68-132 sha256=c4d9b21e7047279e99ff74010f8fffccad64ec34b4b9b3cdd7b5995d7a02260d»
+E022: «ribbon-cutting ceremony» — located in → «Winter Park, FL» | форма: actual, positive
+  атрибуція: — | час події: «Today» | контекст події: —
+  фрагменти: [D0281:P0004] «@178-261 sha256=c8c7d72e2f77918abbb0728112a70d6526d4db5689c26414f0db24a5826b1b35»
+E023: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» — enables → «malware analysis» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0281:P0011] «@205-337 sha256=541cff6608a4f5d0614bc07490151f7d0c2e14bd65de7532d5e774efbb0a27be»
+E024: «Full Sail University» — develops → «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» | форма: actual, positive
+  атрибуція: «Debbie Gordon» | час події: — | контекст події: —
+  фрагменти: [D0281:P0014] «@134-333 sha256=8a60e8b7af46c7fa8407bd44aa86bd2be3ae21de7617d52c18ba0302fbdc7c3a»
+V001: «Winter Park, FL» (location) | альтернативні назви: «WINTER PARK, Fla.»
+V002: «Full Sail University IBM Cyber Defense Range powered by AWS and Cloud Range» (other) | альтернативні назви: «Full Sail University IBM Cyber Defense Range»; «Cyber Defense Range»
+V003: «National Institute of Standards and Technology» (organization) | альтернативні назви: «NIST»
+V004: «National Initiative for Cybersecurity Education» (organization) | альтернативні назви: «NICE»; «CSS Public Market»
+V005: «attack and defense simulations» (other) | альтернативні назви: «cyber-attack-and-defense simulations»
+V006: «Winter Park» (location) | альтернативні назви: «Emerging Tech Wing»
+V007: «Full Sail University» (organization) | альтернативні назви: «Full Sail»
+V008: «National Initiative for Cybersecurity Education» (organization) | альтернативні назви: «NICE»
+V009: «National Initiative for Cybersecurity Education» (other) | альтернативні назви: «NICE»
+КІНЕЦЬ ЗАПИСІВ

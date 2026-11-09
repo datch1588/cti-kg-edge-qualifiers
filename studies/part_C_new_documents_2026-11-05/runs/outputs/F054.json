@@ -1,0 +1,228 @@
+{
+  "run_id": "F054",
+  "target_doc_id": "D0169",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "email phishing",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 495, "end": 718, "sha256": "42a68b9d320d2f6ce1f70e2c912b888312c2a37aca8610550b127c0d58bb08ed"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "mobile-centric social engineering",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 495, "end": 718, "sha256": "42a68b9d320d2f6ce1f70e2c912b888312c2a37aca8610550b127c0d58bb08ed"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "stolen credentials",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 452, "end": 615, "sha256": "6d54e9b0e94d5e72a105add925b23f4a6bb0546d9b343497098e5eec8fff09e5"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "vulnerability exploitation",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 0, "end": 103, "sha256": "9c2bce7d03d76c682840861c3d0c7008aed29e2a0d5bb9f21b25416f3709c2ee"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "New York City",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0013", "start": 203, "end": 351, "sha256": "76d6e8e91eb22ed481b3799abd5b11827749f4d9290fa53c11db9da45f4aebb5"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Verizon",
+      "entity_type": "organization",
+      "aliases": ["Verizon Communications Inc."],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 42, "end": 215, "sha256": "9118e897e65f0ca9f8c0100841618d840f4b934074fec5b0593269f5fad01c40"}},
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0013", "start": 0, "end": 202, "sha256": "84c1a2d20b714965b56828c5912520092261cdb5dc137b48e09fe895cd54f4f0"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "Verizon Business",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0010", "start": 210, "end": 269, "sha256": "9f10fb869cc27996495d049fb6b19e62a79e0b364235a6865cc13d617342d969"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Data Breach Investigations Report",
+      "entity_type": "other",
+      "aliases": ["DBIR"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0003", "start": 0, "end": 165, "sha256": "9c3a4613049ecd490d4c776c6687ea3bb3616740261ba932adbc79561380ef3f"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "Daniel Lawson",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0010", "start": 210, "end": 269, "sha256": "9f10fb869cc27996495d049fb6b19e62a79e0b364235a6865cc13d617342d969"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "AI Bot Internet Crawlers",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0007", "start": 288, "end": 481, "sha256": "10bd5b332c6a94db8c5615785fd63080ad26b319e41b21f29dc160d635dabbd2"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "Artificial Intelligence",
+      "entity_type": "technology",
+      "aliases": ["AI"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 119, "end": 214, "sha256": "fafb5bd45c088b69308ae320a477d87d7f42285bf1dc9aa0e7affc99c877947f"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "threat actors",
+      "entity_type": "threat_actor",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 212, "end": 376, "sha256": "96018a6cf3616322f53e71bcc6ebf3498610453f65ba3212b519cfe2a330ca9f"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "Shadow AI",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0006", "start": 69, "end": 211, "sha256": "564bb2648716f06e58c2086119ab41b7801515f539a6d80a8655c2f75a87bbe7"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n006",
+      "target": "n005",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0013", "start": 203, "end": 351, "sha256": "76d6e8e91eb22ed481b3799abd5b11827749f4d9290fa53c11db9da45f4aebb5"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n006",
+      "target": "n002",
+      "relation_type": "REPORTS_ON",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "May 19, 2026",
+      "event_scope": "Verizon's release of the 2026 Data Breach Investigations Report",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 0, "end": 117, "sha256": "7d9c37e668d12cf108ed4597a2a4bc939223142f24452e223d1a013fef985d22"}},
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 495, "end": 718, "sha256": "42a68b9d320d2f6ce1f70e2c912b888312c2a37aca8610550b127c0d58bb08ed"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n006",
+      "target": "n004",
+      "relation_type": "REPORTS_ON",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "May 19, 2026",
+      "event_scope": "Verizon's release of the 2026 Data Breach Investigations Report",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 0, "end": 117, "sha256": "7d9c37e668d12cf108ed4597a2a4bc939223142f24452e223d1a013fef985d22"}},
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 452, "end": 615, "sha256": "6d54e9b0e94d5e72a105add925b23f4a6bb0546d9b343497098e5eec8fff09e5"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n006",
+      "target": "n013",
+      "relation_type": "REPORTS_ON",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "May 19, 2026",
+      "event_scope": "Verizon's release of the 2026 Data Breach Investigations Report",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0004", "start": 0, "end": 117, "sha256": "7d9c37e668d12cf108ed4597a2a4bc939223142f24452e223d1a013fef985d22"}},
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0006", "start": 69, "end": 211, "sha256": "564bb2648716f06e58c2086119ab41b7801515f539a6d80a8655c2f75a87bbe7"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n009",
+      "target": "n007",
+      "relation_type": "MEMBER_OF",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0010", "start": 210, "end": 269, "sha256": "9f10fb869cc27996495d049fb6b19e62a79e0b364235a6865cc13d617342d969"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n012",
+      "target": "n002",
+      "relation_type": "USES",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 495, "end": 718, "sha256": "42a68b9d320d2f6ce1f70e2c912b888312c2a37aca8610550b127c0d58bb08ed"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n012",
+      "target": "n004",
+      "relation_type": "USES",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 212, "end": 376, "sha256": "96018a6cf3616322f53e71bcc6ebf3498610453f65ba3212b519cfe2a330ca9f"}},
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0007", "start": 76, "end": 257, "sha256": "36d2c4b588e8eaee2f5a8c326dfbf0cca85b990ca02451d855c3bb4533283994"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n012",
+      "target": "n011",
+      "relation_type": "USES",
+      "attribution": "Data Breach Investigations Report (DBIR)",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0169", "paragraph_id": "D0169:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0169:P0005", "start": 212, "end": 376, "sha256": "96018a6cf3616322f53e71bcc6ebf3498610453f65ba3212b519cfe2a330ca9f"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

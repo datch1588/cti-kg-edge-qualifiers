@@ -1,0 +1,148 @@
+AUDIT_FILE: S3N14
+TARGET_DOC_ID: D0343
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0343
+PUBLICATION_DATE: 2026-04-01
+SOURCE_URL: https://www.defenseworld.net/2026/04/01/btc-capital-management-inc-has-17-67-million-stock-holdings-in-crowdstrike-crwd.html
+TITLE_SHA256: 8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5
+BEGIN_DOCUMENT
+[D0343:P0001] sha256:8642232731176ecf1e0fec17498c16e3ae91ef4e92bbce53548b25e7877d73c5
+[D0343:P0002] sha256:666b0bbcb42b1912ccdf75fd5f93f5ecd7f722a552fad4a42b135bc3175404a3
+[D0343:P0003] sha256:d5fa5b464c296a8309bdeaaff7628307a91551ece815148749c8a26993daf7b1
+[D0343:P0004] sha256:703870a1c0d2872f55be8bab1779cacd5794fb1a87df56309486c205a70f4256
+[D0343:P0005] sha256:f0c83fba8b9ae06bc48574277a65939d28e353d872b2b3f0e8e2847f5614ddf5
+[D0343:P0006] sha256:cccbba544a221193b107445af3697059c462e6659a96e62a78d1f750c5f72d9a
+[D0343:P0007] sha256:24cc4eb6c8f237d517d639cd31ea9556f51d044f1f18ff8841fa58b1f23ea7fc
+[D0343:P0008] sha256:073c163b98a0e1513ba64b68b385ef822ceda22ee17930aac00496f080baa76c
+[D0343:P0009] sha256:07398dcb3061470e461037fd2588f563e236c01dafbe6174b42e480c43ae57d6
+[D0343:P0010] sha256:f707e4d34ba5e3311c2454468eb349eb709672f347a2e1e173c13a1cdc6f5f81
+[D0343:P0011] sha256:ab40d05e8bfbb4247918941553872bf114111d714cf7abf462b4a70ee9171615
+[D0343:P0012] sha256:75b2f44dea598d585113461aefea4f1ff82c499f0bff433faaea9d8cadb0e82f
+[D0343:P0013] sha256:081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617
+[D0343:P0014] sha256:aafd08be94e261dccc38990e40cea7d8016a0f3cf67d3497f9b768c3db69f26a
+[D0343:P0015] sha256:0f985edef36a1759d4233fcb8b180139b3cd9b2ee1b5b6fd205ced612e42f7f0
+[D0343:P0016] sha256:5b8ac8c842b7a5fc36f106ca9487091e8d0a2092f4a7dc991c05bcc23b7f277f
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (69)
+E001: «Anthropic» — is not an existential threat to → «CrowdStrike» | форма: actual, positive
+E002: «CrowdStrike» — is traded on → «NASDAQ» | форма: actual, positive
+E003: «CrowdStrike Falcon platform» — uses → «lightweight agents» | форма: actual, positive
+E004: «Argus» — lowered price objective on → «CrowdStrike» | форма: actual, positive
+E005: «cloud-native security solutions» — protects → «endpoints» | форма: actual, negative
+E006: «Sanford C. Bernstein» — upped target price on → «CrowdStrike» | форма: actual, positive
+E007: «cloud-native security solutions» — protects → «data» | форма: actual, positive
+E008: «CrowdStrike Falcon platform» — combines → «endpoint protection (EPP)» | форма: actual, positive
+E009: «CrowdStrike» — located in → «Sunnyvale, California» | форма: actual, positive
+E010: «KeyCorp» — reiterated sector weight rating on → «CrowdStrike» | форма: actual, positive
+E011: «First Trust Advisors LP» — grew its stake in → «CrowdStrike» | форма: actual, positive
+E012: «SEC Form 4» — shows insider share dispositions at → «CrowdStrike» | форма: actual, positive
+E013: «MarketBeat.com» — reports Moderate Buy consensus rating for → «CrowdStrike» | форма: actual, positive
+E014: «CrowdStrike» — provides → «cloud-native security solutions» | форма: actual, positive
+E015: «MarketWatch» — reported stock performance of → «CrowdStrike» | форма: actual, positive
+E016: «cloud-native security solutions» — protects → «cloud workloads» | форма: actual, positive
+E017: «CrowdStrike Falcon platform» — protects → «cloud workloads» | форма: actual, positive
+E018: «cloud-native security solutions» — mitigates → «cyber threats» | форма: actual, positive
+E019: «CrowdStrike Falcon platform» — combines → «endpoint detection and response (EDR)» | форма: actual, positive
+E020: «CrowdStrike» — provides → «CrowdStrike Falcon platform» | форма: actual, positive
+E021: «CrowdStrike» — was founded in → «2011» | форма: actual, positive
+E022: «endpoint detection and response» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+E023: «cloud-native security solutions» — protects → «identities» | форма: possible, positive
+E024: «Assenagon Asset Management S.A.» — increased its holdings in → «CrowdStrike» | форма: actual, positive
+E025: «Wolfe Research» — flagged potential catalyst → «Anthropic Mythos AI» | форма: actual, positive
+E026: «Defense World Staff» — posted → «BTC Capital Management Inc. Has $17.67 Million Stock Holdings in CrowdStrike» | форма: actual, positive
+E027: «cloud-native security solutions» — protects → «endpoints» | форма: actual, positive
+E028: «Argus» — issued research note on → «March 5th» | форма: actual, positive
+E029: «CrowdStrike» — announced earnings results on → «March 3rd» | форма: actual, positive
+E030: «HSBC» — raised target price on → «CrowdStrike» | форма: actual, positive
+E031: «CrowdStrike Falcon platform» — combines → «threat intelligence» | форма: actual, positive
+E032: «CrowdStrike Falcon platform» — uses → «lightweight agents and centralized telemetry» | форма: actual, positive
+E033: «BTC Capital Management Inc.» — trimmed its holdings in → «CrowdStrike» | форма: actual, positive
+E034: «CrowdStrike» — is headquartered in → «Sunnyvale, California» | форма: actual, positive
+E035: «HSBC» — issued research note on → «December 4th» | форма: actual, positive
+E036: «HCLTech» — provides → «Continuous Threat Exposure Management» | форма: planned, positive
+E037: «device control» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+E038: «KeyCorp» — issued report on → «January 12th» | форма: actual, positive
+E039: «CrowdStrike» — delivers with HCLTech → «AI-powered Continuous Threat Exposure Management» | форма: actual, positive
+E040: «cloud workloads» — protects → «cloud-native security solutions» | форма: actual, positive
+E041: «State Street Corp» — grew its stake in → «CrowdStrike» | форма: actual, positive
+E042: «endpoint protection» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+E043: «threat intelligence» — part of → «CrowdStrike Falcon platform» | форма: actual, positive
+E044: «cyber threats» — mitigates → «cloud-native security solutions» | форма: actual, positive
+E045: «BTC Capital Management Inc.» — disclosed holdings in filing with → «SEC» | форма: actual, positive
+E046: «BTC Capital Management Inc.» — disclosed holdings in filing with → «SEC» | форма: possible, positive
+E047: «Vanguard Group Inc.» — boosted its position in → «CrowdStrike» | форма: actual, positive
+E048: «Mizuho» — lowered target price on → «CrowdStrike» | форма: actual, positive
+E049: «CrowdStrike» — is also known as → «CrowdStrike Holdings, Inc» | форма: actual, positive
+E050: «CrowdStrike» — expanded strategic partnership with → «HCLTech» | форма: actual, positive
+E051: «HCLTech» — provides → «Continuous Threat Exposure Management» | форма: actual, positive
+E052: «CrowdStrike Falcon platform» — uses → «centralized telemetry» | форма: actual, positive
+E053: «Morgan Stanley» — named as top AI-security trade → «CrowdStrike» | форма: actual, positive
+E054: «CrowdStrike Falcon platform» — protects → «endpoints» | форма: actual, positive
+E055: «Sanford C. Bernstein» — issued report on → «March 4th» | форма: actual, positive
+E056: «Seeking Alpha» — reiterated Buy stance on → «CrowdStrike» | форма: actual, positive
+E057: «Mizuho» — issued research report on → «February 17th» | форма: actual, positive
+E058: «CrowdStrike» — provides → «Continuous Threat Exposure Management» | форма: actual, positive
+E059: «BTC Capital Management Inc. Has $17.67 Million Stock Holdings in CrowdStrike» — was posted on → «Apr 1st, 2026» | форма: actual, positive
+E060: «CrowdStrike» — offers → «CrowdStrike Falcon platform» | форма: actual, positive
+E061: «BTC Capital Management Inc.» — trimmed its holdings during → «fourth quarter» | форма: actual, positive
+E062: «HCLTech» — provides → «Continuous Threat Exposure Management» | форма: actual, negative
+E063: «Anthropic Mythos AI» — is developed by → «Anthropic» | форма: actual, positive
+E064: «CrowdStrike» — provides → «Continuous Threat Exposure Management» | форма: planned, positive
+E065: «CrowdStrike Falcon platform» — combines → «device control» | форма: actual, positive
+E066: «cloud-native security solutions» — protects → «identities» | форма: actual, positive
+E067: «Daiwa Securities Group Inc.» — raised its holdings in → «CrowdStrike» | форма: actual, positive
+E068: «Wolfe Research» — upgraded → «CrowdStrike» | форма: actual, positive
+E069: «CrowdStrike» — became publicly traded in → «2019» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

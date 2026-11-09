@@ -1,0 +1,24 @@
+{
+ "audit_file": "S5F38",
+ "target_doc_id": "D0130",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що план зменшує шкоду від атак (P0005, P0074), тож полярність negative хибна — має бути positive."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: сучасні групи ransomware часто використовують тактику подвійного вимагання — типова поведінка, actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: кіберзлочинці використовують ransomware, щоб блокувати системи й шифрувати дані."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0028 згадує шкідливі інструменти, використані зловмисниками, як факт."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: багато атак починаються зі скомпрометованого пароля, після чого зловмисники отримують доступ — типова поведінка, actual."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005, P0074: план реагування мінімізує шкоду й зменшує вплив ransomware — функція засобу, actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: багато атак ransomware починаються з фішингового листа — типова поведінка, actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0037: резервні копії — один із найпотужніших захистів від ransomware."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: зловмисники розгортають ransomware у найшкідливіший момент — actual."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: атаки починаються з вразливості ПЗ, через яку зловмисники отримують доступ — типова поведінка, actual."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0015: команда реагування відіграє ключову роль в управлінні атаками ransomware — твердження про роль, actual."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005, P0074: план реагування мінімізує шкоду від атак ransomware — actual, positive."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0009: атаки зловмисників часто починаються з фішингового листа — типова поведінка, actual."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0052: добре навчений персонал — додатковий рівень захисту від ransomware."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005: компанії можуть зазнати простою та іншої шкоди, P0074: атаки можуть порушити роботу — possible відповідає тексту."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0044: експерти з кібербезпеки зазвичай відраджують від сплати викупу — переказана позиція, actual."},
+  {"item_id": "E017", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: у P0028 зловмисники використовують шкідливі інструменти, а не навпаки."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0044: правоохоронні органи зазвичай відраджують від сплати викупу — переказана позиція, actual."}
+ ]
+}

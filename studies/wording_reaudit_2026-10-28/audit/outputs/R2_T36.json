@@ -1,0 +1,13 @@
+{
+ "audit_file": "R2_T36",
+ "target_doc_id": "D0166",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 атаку КПК на енергетику й воду подано як гіпотетичний сценарій («imagine if… were able to launch a cyber-attack and target your power and water»), що відповідає формулюванню «could»."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 блокування банківських рахунків є частиною уявного сценарію («were able to… block your bank accounts»), тобто можливістю, як і у формулюванні «could block»."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання подає щорічні звіти CISA Конгресу як чинний факт, а в D0166:P0012–P0013 це лише вимога законопроєкту, який ще має ухвалити Сенат («It also mandates that CISA issues annual reports»), тобто запланований/умовний звʼязок."},
+  {"item_id": "W004", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання містить маркер можливості «possibly», а стаття подає дату 20 May 2026 як факт (D0166:P0002, PUBLICATION_DATE), тобто actual."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0004 вимкнення інтернету подано як гіпотетичну можливість («were able to… turn off your internet»), що відповідає «could turn off»."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання стверджує, що CISA вже очолює оперативну групу проти Volt Typhoon, а в D0166:P0012 групу лише створить законопроєкт, який «Congress must pass», тобто звʼязок запланований/умовний, а не чинний."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0166:P0005 стверджено як факт, що «Communist China is constantly prodding U.S. security», що відповідає формулюванню без маркерів (actual, positive)."}
+ ]
+}

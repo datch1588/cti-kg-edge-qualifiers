@@ -1,0 +1,143 @@
+AUDIT_FILE: S2T15
+TARGET_DOC_ID: D0494
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0494
+PUBLICATION_DATE: 2026-03-03
+SOURCE_URL: https://www.ipsnews.net/2026/03/how-do-we-navigate-asia-pacifics-climate-cyber-polycrisis/
+TITLE_SHA256: bc3a3ec15d6f38b8f78e28af51a3948ac3b487aa2b66282d4d5124b4af4af826
+BEGIN_DOCUMENT
+[D0494:P0001] sha256:bc3a3ec15d6f38b8f78e28af51a3948ac3b487aa2b66282d4d5124b4af4af826
+[D0494:P0002] sha256:fde2d97087cdac6a37240392d2e96f65c8b554a2b95c8565a499f03263f96009
+[D0494:P0003] sha256:43c453501721e1c1f336734e327c52814c21e0dd9d08083fac40e0faec792b08
+[D0494:P0004] sha256:f6d39e9361fe11bded0f99ec6a949f79d1c857486c55dd5d13f7abf79b5a9ac2
+[D0494:P0005] sha256:b50d1cdc4ed19ae2b458c862bc57d35fdc611d0b05f35c0008a437157bc1116e
+[D0494:P0006] sha256:023f1e9f11884081c01b854b2f8ffdbaaed17c2b74f30b11bdc9e1879ca7ff8a
+[D0494:P0007] sha256:8427990e1566b7b79e718310015cca8f6fdcb2ca5c2ea498585ec7aca9959193
+[D0494:P0008] sha256:e5c1d73e00a6a80e990044b4b79974fc3f36df73175e799fdb50fe4fd47ce1e2
+[D0494:P0009] sha256:87dc2d56db0d2f0057ab025c0e1c523304d9e4c69f67b4e53a566ecb71a41cfe
+[D0494:P0010] sha256:e4f54aeaf5c034501d747560c31342f52bdd6e9fe12eb920933c562edcc26837
+[D0494:P0011] sha256:6646426b9d44ae7c04985c2bb85a69cdecbc7583666b0bfe7fbef52de4dac0e3
+[D0494:P0012] sha256:1e394c1f7b1451514a3e06cde364ad228a0ae02100a81ee0c02726de1bea23a7
+[D0494:P0013] sha256:14e18935449e3bcbe6f79ae8ef79b74979c936c0e87329dec8fc43e1f0a1d00f
+[D0494:P0014] sha256:a4c71f4cb94902c47ac1c8516cf6329869e763265a5b7fc39a6825726ef8c5bc
+[D0494:P0015] sha256:497bf90f6074f0cfb3095f731d5507661ee6ae8de09fa664be82444adf2efba3
+[D0494:P0016] sha256:0b11afbd60b76d867786afc4cb04e9a5e0e7d56a9b77c291394da93741e97c6d
+[D0494:P0017] sha256:2e227eb33088acd3adbf0e3dae03a69f6a86e4ea42d3df3914c9fe4b815545c5
+[D0494:P0018] sha256:ea34e1bd27b2e97a3b5050258a8ec1a7c3dce5aa61599c60c2689433753aa2e1
+[D0494:P0019] sha256:327b7e10e433406921734082874a8bb66bcbe12d13e1de6b2b66fd9af415c653
+[D0494:P0020] sha256:4e5395958e8c42a7530ecac57404200821dfe7b96e5be977ac8a771fb0357d78
+[D0494:P0021] sha256:7220643b2d3b7652e724dd3316753ab4a6dfe5f6f439059e34a4977fb802cc52
+[D0494:P0022] sha256:0740c56de0cfeb4683c1008f950a4d26515fec127bfa9625471439dfcb562a11
+[D0494:P0023] sha256:431f223c58a8d782a90a6bcc81409eb24b18d87f21072f1abf727c65044bc23f
+[D0494:P0024] sha256:3391e70df4c7b2c7e5e6be8bb4382119061669de24894d76748f84d3c107e676
+[D0494:P0025] sha256:3130239c94f7d858de6f18fb8eabfc0ceef23b97b3f181665b70c9bfec18a7a4
+[D0494:P0026] sha256:97537b6a9d7fe1cc8a95941871ae515f1af33ea740111af80fc18adafc1c425e
+[D0494:P0027] sha256:c84194302560ba9aa01226298ff2a406f7f389c55faa16a63b1635d78caf4afc
+[D0494:P0028] sha256:181377e52c8bddc33c51d3ed63784cbaec15b6a35bac3e2ef3f5f0f6d12ce38e
+[D0494:P0029] sha256:b1ffa6d0c1f0e57b9e6422f53fc746c8704625c2ad759fdb233ae9f2c7adc3d4
+[D0494:P0030] sha256:ea4b6a990938d3a3e2eeecc4be7b9ff8c1a1681bfe54881f9cd7c6b22ea440fe
+[D0494:P0031] sha256:fb6f2d91a0aef695e8d806dff0349495b62e1f86db0ae4c52e740efe1f481773
+[D0494:P0032] sha256:f371ac7abeefcd8f92854f8b64079bf5423e5f5931f3e5016fa37c891e7bf1dc
+[D0494:P0033] sha256:f3bc0fdb0bb33617c796525e09f6b20390d602ccd609906d711d8bafeb0ed209
+[D0494:P0034] sha256:11a4593cb5714c02b61c5ff1f7a2df41c0ca3d290848641ed5df0281fce45d99
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (46)
+E001: «World Economic Forum» — published → «Global Risks Report» | форма: actual, positive
+E002: «cybersecurity policy guidelines» — cover response to → «transboundary cyber threats» | форма: actual, positive
+E003: «ransomware attacks» — cost an average of US$3.05 million per attack in → «Southeast Asia» | форма: actual, positive
+E004: «government agencies» — located in → «United States» | форма: actual, positive
+E005: «Asia and the Pacific» — accounted for over one-third of all global cyber incidents in → «2024» | форма: actual, positive
+E006: «Asia and the Pacific» — has become new ground zero for → «cybercrime» | форма: actual, positive
+E007: «United States» — located in → «government agencies» | форма: actual, positive
+E008: «cyber incidents» — affects → «Asia and the Pacific» | форма: actual, positive
+E009: «9.1 magnitude earthquake and tsunami» — located in → «Japan» | форма: actual, positive
+E010: «How do we Navigate Asia-Pacific's Climate-Cyber Polycrisis?» — was written by → «Anne Cortez» | форма: actual, positive
+E011: «How do we Navigate Asia-Pacific's Climate-Cyber Polycrisis?» — was originally published at → «Devpolicy Blog» | форма: actual, positive
+E012: «cyber criminals» — used → «malware schemes disguised as disaster relief efforts» | форма: actual, positive
+E013: «government agencies» — located in → «United States» | форма: actual, negative
+E014: «UN Office for Disaster Risk Reduction» — includes in its hazard taxonomies → «cyber threats» | форма: actual, positive
+E015: «cybercrime» — affects → «Asia and the Pacific» | форма: actual, positive
+E016: «cyber incidents» — affects → «Indonesia» | форма: actual, positive
+E017: «cyber criminals» — uses → «malware» | форма: actual, positive
+E018: «government agencies and researchers in the United States» — warned of → «scams following hurricanes and wildfires» | форма: actual, positive
+E019: «Anne Cortez» — advises → «APAC Cybersecurity Fund» | форма: actual, positive
+E020: «cyber incidents» — affects → «Vietnam» | форма: actual, negative
+E021: «Philippines» — was among the most affected by → «cyber incidents» | форма: actual, positive
+E022: «Asia» — has growing cyber vulnerability across → «critical infrastructure and information systems» | форма: actual, positive
+E023: «Vietnam» — was among the most affected by → «cyber incidents» | форма: actual, positive
+E024: «cyber incidents» — affects → «Vietnam» | форма: actual, positive
+E025: «APAC Cybersecurity Fund» — is initiative of → «The Asia Foundation» | форма: actual, positive
+E026: «cyber criminals» — used → «phishing» | форма: actual, positive
+E027: «How do we Navigate Asia-Pacific's Climate-Cyber Polycrisis?» — was published on → «Mar 3 2026» | форма: actual, positive
+E028: «ransomware» — was used in roughly 135,000 attacks in → «Southeast Asia» | форма: actual, positive
+E029: «climate-driven disruptions such as typhoons and floods» — create openings for → «digital breaches» | форма: actual, positive
+E030: «Anne Cortez» — is consultant for → «Asian Development Bank» | форма: actual, positive
+E031: «Indonesia» — was among the most affected by → «cyber incidents» | форма: actual, positive
+E032: «cyber criminals» — stole → «data» | форма: actual, positive
+E033: «Devpolicy Blog» — is run out of → «Development Policy Centre» | форма: actual, positive
+E034: «ASEAN» — has → «cybersecurity policy guidelines» | форма: actual, positive
+E035: «climate change» — affects → «digital infrastructure» | форма: actual, positive
+E036: «cyber incidents» — affects → «Philippines» | форма: actual, positive
+E037: «government agencies» — warns about → «scams» | форма: actual, positive
+E038: «cyber criminals» — exploited chaos of → «9.1 magnitude earthquake and tsunami in Japan in 2011» | форма: actual, positive
+E039: «ransomware» — affects → «Southeast Asia» | форма: actual, positive
+E040: «cyber criminals» — targeted → «Japan» | форма: actual, positive
+E041: «Global Risks Report» — reports rising → «risks linked to digital and artificial intelligence» | форма: actual, positive
+E042: «How do we Navigate Asia-Pacific's Climate-Cyber Polycrisis?» — was published by → «Inter Press Service (IPS)» | форма: actual, positive
+E043: «cyber criminals» — uses → «phishing» | форма: actual, positive
+E044: «earthquake and tsunami in Japan» — located in → «Japan» | форма: actual, positive
+E045: «Development Policy Centre» — is housed in → «Crawford School of Public Policy at The Australian National University» | форма: actual, positive
+E046: «APAC Cybersecurity Fund» — is initiative of → «The Asia Foundation» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,135 @@
+AUDIT_FILE: S3N08
+TARGET_DOC_ID: D0419
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0419
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://amp.theguardian.com/world/2026/mar/13/uk-signs-rebooted-defence-agreement-to-protect-irish-waters
+TITLE_SHA256: 3962942d29e4154627a65aeccbe2c31d7e2892e4e8a58035a462da15c9beaff5
+BEGIN_DOCUMENT
+[D0419:P0001] sha256:3962942d29e4154627a65aeccbe2c31d7e2892e4e8a58035a462da15c9beaff5
+[D0419:P0002] sha256:58d9f34f259138a72f997f1aa17afb01db241754a56cba0565d787cd2c4097b6
+[D0419:P0003] sha256:965705ebc66a0205d4bbf06c0255a63c313339246fd524a7d19f85bbeb2dca64
+[D0419:P0004] sha256:751509316bbc500dce875a9442a439b2c8c89eb99ff581c2b26c8345f0022278
+[D0419:P0005] sha256:c641811481f48ccfdac94118481296354ed80105514e4bbafe40fb01f41c065c
+[D0419:P0006] sha256:4c05d5153060a77bd0f451b387e3038af43253721225c7f87adedbe82cd30dff
+[D0419:P0007] sha256:61a8ee9f9887aea8bf763aa1267dafce68b41ec86a23da2562a8b221b3cc50dc
+[D0419:P0008] sha256:b7589cf4aa51e39b4b2ea602dbe342c8a69a97bfd393bcc0d39966e66bf69f8a
+[D0419:P0009] sha256:ca2ddb9b832b89fcacec37ee12d5e8ce0ea0029b5cde606c02722a8ea0457e01
+[D0419:P0010] sha256:432c5aa25f9658b43d61fd8b16a0c60320e6037732ee0f21dc1921ec388df758
+[D0419:P0011] sha256:5ef7ad38307b2eca0f01b1097af169e188dd4ea519e3f13efdb141316804aef7
+[D0419:P0012] sha256:82d1c4e7e4aca7029365494415db0ee872e2392948dc40e76fbad69cf4a24a89
+[D0419:P0013] sha256:9c0a0d9ba78728f814014f5b91d854bc7845d68fe66555b5c99ae12e0ab95de7
+[D0419:P0014] sha256:f045ae38dd914cbff247bed37e3af00b243627181cee3270491e97e40c03eab2
+[D0419:P0015] sha256:3c82b8576755b68f1ee17e38036c5527e1b30c69ba3252a1068d543bbff19055
+[D0419:P0016] sha256:10ce78f7bdf947e38bae79b51201614d1a4f8c573b3fadf350d56d2220316bcc
+[D0419:P0017] sha256:280a12b3015068b442eb406959cecf0590d10fdbd85f11f09f64b041cf9f9e5e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (55)
+E001: «Joint Expeditionary Force» — is led by → «UK» | форма: actual, positive
+E002: «transatlantic cables» — located in → «Ireland» | форма: actual, positive
+E003: «Ireland» — hopes to link up with → «Joint Expeditionary Force» | форма: actual, positive
+E004: «defence agreement» — mitigates → «sabotage» | форма: planned, positive
+E005: «Ireland» — takes up presidency of → «EU» | форма: actual, positive
+E006: «Royal Navy» — protects → «Irish waters» | форма: possible, positive
+E007: «French» — protects → «Dublin» | форма: planned, positive
+E008: «UK-Ireland defence agreement» — addresses → «sabotage of undersea internet and electricity cables» | форма: actual, positive
+E009: «defence agreement» — protects → «undersea cables» | форма: actual, positive
+E010: «defence agreement» — protects → «undersea cables» | форма: planned, positive
+E011: «French» — protects → «Dublin» | форма: actual, positive
+E012: «Royal Navy» — may respond to hostile ships in → «Irish waters» | форма: actual, positive
+E013: «defence agreement» — protects → «Irish waters» | форма: actual, negative
+E014: «The Guardian» — published → «report on UK-Ireland defence agreement» | форма: actual, positive
+E015: «Irish waters» — are vulnerable to → «sabotage of undersea cables» | форма: actual, positive
+E016: «Russia» — has been observing → «undersea cables and other vital infrastructure» | форма: actual, positive
+E017: «transatlantic cables» — go through or close to → «Ireland» | форма: actual, positive
+E018: «Russian spy ship» — is attributed to → «Russia» | форма: actual, positive
+E019: «Ireland» — member of → «Nato» | форма: actual, negative
+E020: «Ireland» — is not member of → «Nato» | форма: actual, positive
+E021: «defence agreement» — mitigates → «cyber-threats» | форма: actual, positive
+E022: «Russian spy ship» — located in → «Irish Sea» | форма: actual, positive
+E023: «subsea communication cable incidents» — affects → «Ireland» | форма: possible, positive
+E024: «France» — provides enhanced security to → «Ireland» | форма: actual, positive
+E025: «UK-Ireland defence agreement» — addresses → «cyber-threats» | форма: actual, positive
+E026: «sabotage» — targets → «undersea cables» | форма: possible, positive
+E027: «Russian spy ship» — patrolled area containing → «critical energy and internet submarine pipelines and cables» | форма: actual, positive
+E028: «Ireland-UK summit» — located in → «Cork» | форма: actual, positive
+E029: «UK-Ireland defence agreement» — establishes → «coordinated response mechanism for subsea communication cable incidents» | форма: actual, positive
+E030: «Russian spy ship incident» — occurred in → «last 18 months» | форма: actual, positive
+E031: «Joint Expeditionary Force» — focuses on → «maritime security» | форма: actual, positive
+E032: «UK-Ireland defence agreement» — updates agreement from → «2016» | форма: actual, positive
+E033: «Russia» — targets → «undersea cables» | форма: possible, positive
+E034: «UK» — signed defence agreement with → «Ireland» | форма: actual, positive
+E035: «cyber-threats» — warns about → «John Healey» | форма: actual, positive
+E036: «subsea communication cable incidents» — affects → «UK» | форма: possible, positive
+E037: «second post-Brexit Ireland-UK summit» — located in → «Cork» | форма: actual, positive
+E038: «defence agreement» — mitigates → «subsea communication cable incidents» | форма: planned, positive
+E039: «sabotage» — targets → «undersea cables» | форма: actual, positive
+E040: «incidents in the Irish Sea» — located in → «Irish Sea» | форма: actual, positive
+E041: «UK-Ireland defence agreement» — was announced at summit in → «Cork» | форма: actual, positive
+E042: «Ireland-UK summit» — located in → «Cork» | форма: actual, negative
+E043: «Ireland's EU presidency» — begins in → «July» | форма: actual, positive
+E044: «coordinated response mechanism» — mitigates → «subsea communication cable incidents» | форма: actual, positive
+E045: «defence agreement» — protects → «Irish waters» | форма: planned, positive
+E046: «John Healey» — warns about → «cyber-threats» | форма: actual, positive
+E047: «Joint Expeditionary Force» — involves → «10 Nato members» | форма: actual, positive
+E048: «defence agreement» — mitigates → «cyber-threats» | форма: planned, positive
+E049: «Ireland» — takes up presidency of → «EU» | форма: possible, positive
+E050: «report on UK-Ireland defence agreement» — was published on → «2026.03.13» | форма: actual, positive
+E051: «Russian spy ship» — entered → «Irish Sea» | форма: actual, positive
+E052: «defence agreement» — protects → «Irish waters» | форма: actual, positive
+E053: «Ireland» — is located in → «Europe» | форма: actual, positive
+E054: «defence agreement» — mitigates → «sabotage» | форма: actual, positive
+E055: «coordinated response mechanism» — part of → «defence agreement» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

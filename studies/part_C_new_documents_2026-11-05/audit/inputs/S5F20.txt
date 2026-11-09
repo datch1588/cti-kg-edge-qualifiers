@@ -1,0 +1,128 @@
+AUDIT_FILE: S5F20
+TARGET_DOC_ID: D0460
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0460
+PUBLICATION_DATE: 2026-03-06
+SOURCE_URL: https://www.whitehouse.gov/fact-sheets/2026/03/fact-sheet-president-donald-j-trump-combats-cybercrime-fraud-and-predatory-schemes-against-american-citizens/
+TITLE_SHA256: 4e2f03c63ba3777d8472e938ea606ad622428ba50de5464ec53ddac6684f871d
+BEGIN_DOCUMENT
+[D0460:P0001] sha256:4e2f03c63ba3777d8472e938ea606ad622428ba50de5464ec53ddac6684f871d
+[D0460:P0002] sha256:b0884296f33cdb3d146fa422daa887f6f349ff7db688aa9f69197f8e82e918b8
+[D0460:P0003] sha256:bd4642759dbce1bca1f5ec568e0e91ff4db1358ec46d57c2f38c3d36cc244fd9
+[D0460:P0004] sha256:fd524ddd645025da36043fc984f97245426b4099bbabbd5510291e7ec1ac982d
+[D0460:P0005] sha256:cf1a3fd2d49dba357c6a3391406f879ef475008719bdd3bdf6427213df72a705
+[D0460:P0006] sha256:1dab74713f9a890cfee33515bfffa79be84297f88d351e3daae82f7b46560bf5
+[D0460:P0007] sha256:457e1c99487d75dff20b99d176b4871ab58fe254e26d904bfb78c7cb33b8ab53
+[D0460:P0008] sha256:7f5e3d064f21bf74e191d5a8e936de57e65d6d1bc544329bdbb7b2e20c48e238
+[D0460:P0009] sha256:2bbebd28342365d4cc193ca64860201452125068a34c07f77891e6f25a696869
+[D0460:P0010] sha256:b9f5f5426817977efdd36a4a044c5066a76d85af31a3e1e82e25830d6c71b581
+[D0460:P0011] sha256:c070fad2b625c78b906bb3ebfaae77a8091575004f51d667ac07dafe6e20670e
+[D0460:P0012] sha256:77d956c2dbc87ffb42646b7c4657a7a497eb5f48f8b06f382955bc8ff2eb29e7
+[D0460:P0013] sha256:34ef453d9a15e38516f828a93001efae834f3e2c99281a4aa7f2dce97caeeeaf
+[D0460:P0014] sha256:4039410843eea9327fe62db5f1a2fc3614949bec2a39ec661e81c339eedca40f
+[D0460:P0015] sha256:f230fa5fa53fee36f85783f2c0a5b73f4b85837cbbe7cea149ded48a5794f52e
+[D0460:P0016] sha256:96a19c611b8777a3d4568470efb954b99e11bc8fef05f51d23fc04f1af696391
+[D0460:P0017] sha256:d2f9f6d0663062f4008af0f55bb4fdbec363aa68a241adcce8deccbddd036475
+[D0460:P0018] sha256:c1b076f4617770767bda12a2dc033b23c1f039f1f29bf82a886265bcb181b64a
+[D0460:P0019] sha256:713a1146fd14fec87bf9ecb3ec552a446fdf208615a4a6aac18a8b656e71c0bf
+[D0460:P0020] sha256:b6313b5094ec883aebb4d1c191f69b0e36e47a6aa12710b2981fda408855a2e8
+[D0460:P0021] sha256:78e04f750d3857e1ea567effc9351e432746aaaa4995741d45ffbfbd717fddb7
+[D0460:P0022] sha256:d7bd705532e1d6b87367a5a2f05157d5b0095538bc0e190a918007c74c6ad252
+[D0460:P0023] sha256:15e9c28ef44e9245a1bf8e52709dbbd252225cc2580b69de3a65824e4e59d6d7
+[D0460:P0024] sha256:596dd87fbc70c458f604b2d630de557af649c3a28b1579d653d9a4e1a1f4edd2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (41)
+E001: «sextortion» — affects → «young people» | форма: actual, positive
+E002: «Secretary of Homeland Security» — mitigates → «cyber threats» | форма: planned, positive
+E003: «transnational criminal organizations» — operates → «scam centers» | форма: actual, positive
+E004: «transnational criminal organizations» — uses → «financial fraud» | форма: actual, negative
+E005: «predatory schemes» — targets → «critical infrastructure» | форма: actual, positive
+E006: «cybercrime» — targets → «American families» | форма: actual, positive
+E007: «financial institutions» — detects → «sextortion» | форма: possible, positive
+E008: «cybercrime» — targets → «businesses» | форма: actual, positive
+E009: «transnational criminal organizations» — uses → «Ransomware» | форма: actual, positive
+E010: «TAKE IT DOWN Act» — mitigates → «deepfake abuse» | форма: actual, positive
+E011: «Executive Order» — mitigates → «foreign cyber threats» | форма: actual, positive
+E012: «financial institutions» — mitigates → «sextortion» | форма: possible, positive
+E013: «TAKE IT DOWN Act» — protects → «families» | форма: actual, positive
+E014: «Executive Order» — mitigates → «fraud» | форма: planned, positive
+E015: «TAKE IT DOWN Act» — mitigates → «non-consensual distribution of intimate images» | форма: actual, positive
+E016: «transnational criminal organizations» — uses → «impersonation scams» | форма: actual, negative
+E017: «Attorney General» — mitigates → «cyber-enabled fraud» | форма: recommended, positive
+E018: «predatory schemes» — targets → «American families» | форма: actual, positive
+E019: «online scam» — affects → «U.S. adults» | форма: actual, positive
+E020: «Secretary of Homeland Security» — mitigates → «cyber threats» | форма: recommended, positive
+E021: «TAKE IT DOWN Act» — mitigates → «online extortion» | форма: actual, positive
+E022: «TAKE IT DOWN Act» — protects → «children» | форма: actual, positive
+E023: «foreign-backed criminal networks» — targets → «vulnerable Americans» | форма: actual, positive
+E024: «Executive Order» — mitigates → «foreign cyber threats» | форма: planned, positive
+E025: «predatory schemes» — targets → «businesses» | форма: actual, positive
+E026: «transnational criminal organizations» — uses → «financial fraud» | форма: actual, positive
+E027: «Executive Order» — mitigates → «cybercrime» | форма: planned, positive
+E028: «cybercrime» — targets → «critical infrastructure» | форма: actual, positive
+E029: «transnational criminal organizations» — uses → «impersonation scams» | форма: actual, positive
+E030: «Executive Order» — mitigates → «predatory schemes» | форма: planned, positive
+E031: «Executive Order» — mitigates → «cybercrime» | форма: actual, positive
+E032: «dedicated operational cell» — part of → «National Coordination Center» | форма: planned, positive
+E033: «transnational criminal organizations» — uses → «phishing» | форма: actual, positive
+E034: «cybercrime» — mitigates → «Executive Order» | форма: planned, positive
+E035: «Trump Administration» — protects → «information systems» | форма: planned, positive
+E036: «transnational criminal organizations» — uses → «Ransomware» | форма: possible, positive
+E037: «foreign-backed criminal networks» — uses → «extortion» | форма: actual, positive
+E038: «foreign-backed criminal networks» — uses → «cyber-enabled fraud» | форма: actual, positive
+E039: «cyber-enabled fraud» — affects → «American consumers» | форма: actual, positive
+E040: «transnational criminal organizations» — uses → «sextortion» | форма: actual, positive
+E041: «cyber-enabled fraud» — affects → «seniors» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

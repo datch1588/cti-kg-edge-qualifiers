@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T32",
+ "target_doc_id": "D0329",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0329:P0004 сказано як факт «The service combines endpoint detection and response...», тож формулювання без маркерів (actual, positive) відповідає статті."},
+  {"item_id": "W002", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly provides» передає лише можливість, а D0329:P0002 (і P0003) подає надання incident response як факт («the service provides threat detection, incident response...»)."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0329:P0011 стаття так само вживає модальне «the service can also be delivered through trusted MSSP partners», тож формулювання «can be delivered through» відповідає формі статті."}
+ ]
+}

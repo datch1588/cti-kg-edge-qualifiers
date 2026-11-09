@@ -1,0 +1,298 @@
+{
+  "run_id": "W026",
+  "target_doc_id": "D0262",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "cyber campaign", "entity_type": "campaign", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 25, "end": 165, "sha256": "7adfc858285ee9f6e461bdb03b3d35d74e20e2c94300254b1248b9c40ff1a7b3"}}
+    ]},
+    {"id": "n002", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 190, "end": 285, "sha256": "f165882f98b57948edb0edc3f03bf45f843f276989210e73475a5107435a4fcd"}}
+    ]},
+    {"id": "n003", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 0, "end": 60, "sha256": "6da240453e1038cac444a057448cb45c9fc11d13c7af601c7f32a438ae8ae233"}}
+    ]},
+    {"id": "n004", "label": "Israel", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 0, "end": 56, "sha256": "0805e9b8f368e87ada7251f4c12252d4a0c54b1fd48b0a15c16ba5bb453c4216"}}
+    ]},
+    {"id": "n005", "label": "Russia", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 132, "end": 243, "sha256": "70920934cd9d91627041613e2b62f734dc0560606ea50e44e43fe6a17ae34d16"}}
+    ]},
+    {"id": "n006", "label": "Sweden", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 85, "end": 217, "sha256": "29f47ec1935b030ec857b2604e68f5e1a3e48ac8ebb233aa05dbc7d846e21327"}}
+    ]},
+    {"id": "n007", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 132, "end": 194, "sha256": "d0913622522b26ca9236984ff5cbeebcc10b65158729f6e266aa29f96bc6f5a7"}}
+    ]},
+    {"id": "n008", "label": "United Kingdom", "entity_type": "country", "aliases": ["UK"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0005", "start": 0, "end": 94, "sha256": "a7d63c1f3fea3efec43633e5e38576977c72aa1c45d5416d86a243239abf9c11"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0009", "start": 30, "end": 132, "sha256": "1d0191d7b2d262bd6b2def3a0cc93a9e49efb7d6cb1d7e92a01d300ed6645fea"}}
+    ]},
+    {"id": "n009", "label": "US", "entity_type": "country", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 0, "end": 56, "sha256": "0805e9b8f368e87ada7251f4c12252d4a0c54b1fd48b0a15c16ba5bb453c4216"}}
+    ]},
+    {"id": "n010", "label": "CyberUK", "entity_type": "event", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 0, "end": 98, "sha256": "b61b36cd1f86a3e0f6e5fe37a1e1de00538970b9f805672cfa82105ae9fc0382"}}
+    ]},
+    {"id": "n011", "label": "'nationally significant' cyber incidents", "entity_type": "incident", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 99, "end": 188, "sha256": "637b102e22cdeb9bfc87331b66e8780f74d197f2bfc97d063e7ea48a220d5fae"}}
+    ]},
+    {"id": "n012", "label": "cyberattack on a heating plant", "entity_type": "incident", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 123, "end": 264, "sha256": "02eaa35d8f4cbe6b4e729e6b61af1aa4545033c687542bbb194d630a12848519"}}
+    ]},
+    {"id": "n013", "label": "hack incident", "entity_type": "incident", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 13, "end": 125, "sha256": "e23284d41a04b594e56c86c8ee86e5bf7e10d59c487924a69b6da6997d23c40b"}}
+    ]},
+    {"id": "n014", "label": "Europe", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 196, "end": 303, "sha256": "c99427f600d5a9a359c357da0e0a51428364c5510ee2a9f4d775cf3622a1f286"}}
+    ]},
+    {"id": "n015", "label": "Middle East", "entity_type": "location", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 77, "end": 197, "sha256": "7c9c7f3dd9b32044356f9d47f16216473978b07f4c20909f5e4af1f4631cef3e"}}
+    ]},
+    {"id": "n016", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 0, "end": 72, "sha256": "52ee1470e8fca3deec777f9209b583a33390102d76f84c346cd2ca98af04d6db"}}
+    ]},
+    {"id": "n017", "label": "British organisations", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 58, "end": 138, "sha256": "ef0fe02bd1211e06b7af1a6742b12ee4ec51d5c61cd1b0ce6c5d1e57ee7ee13f"}}
+    ]},
+    {"id": "n018", "label": "GRU", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 20, "end": 116, "sha256": "b4778bd659f9d39d73dd8523b68d5b36b2bbd23f310f34c432fe18b1f64eb125"}}
+    ]},
+    {"id": "n019", "label": "National Cyber Security Centre", "entity_type": "organization", "aliases": ["NCSC"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 36, "end": 125, "sha256": "59c7d3f3a50575493a32c0442c255a80aa6132ca30c53b5f1be848631d4b7417"}}
+    ]},
+    {"id": "n020", "label": "Norwegian authorities", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 0, "end": 86, "sha256": "fdc399b3beb51901d05b4c5f4b3857b44e36f2aee87025b451fd0d9ed55c80be"}}
+    ]},
+    {"id": "n021", "label": "The Associated Press", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 88, "end": 166, "sha256": "906ac51e58b4cf4f71851ddbaa8b6f7adcd411230dad9cd4254ea0c22696e0a4"}}
+    ]},
+    {"id": "n022", "label": "The Record", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 140, "end": 218, "sha256": "dc1912537c4a0d92b17874713b6c594e4eb39046b62f280a4814d24000047120"}}
+    ]},
+    {"id": "n023", "label": "UK government", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0017", "start": 35, "end": 129, "sha256": "c95dfa40c7697a79caaddf92c772a53d133af9267666c339b39b54c0ae2c8f53"}}
+    ]},
+    {"id": "n024", "label": "Cyber Resilience Pledge", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0021", "start": 118, "end": 239, "sha256": "c3b46c78b9852c2a160e819c06f4f332fc5a2e6ecc9c61af32d5ce2152b42886"}}
+    ]},
+    {"id": "n025", "label": "dam", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 57, "end": 125, "sha256": "db446ec4c4da6cd74a39297cd786adeff1c6167bbd5e29e542a92e733fab2517"}}
+    ]},
+    {"id": "n026", "label": "energy systems", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 245, "end": 303, "sha256": "afc73ea39a1eb229b3650365d6d99a383f5b0bc86cb9e7f3be069ef9f6d03235"}}
+    ]},
+    {"id": "n027", "label": "heating plant", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 205, "end": 264, "sha256": "6995dcaefed8332abda53d18725097596b95645e49f5bc539129a7d0334222fa"}}
+    ]},
+    {"id": "n028", "label": "private information", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 49, "end": 116, "sha256": "d5de7620ff6802b6d18fc6797b16b752161a0783f6f4f35f14dfd440e34f2b5d"}}
+    ]},
+    {"id": "n029", "label": "utilities", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 245, "end": 303, "sha256": "afc73ea39a1eb229b3650365d6d99a383f5b0bc86cb9e7f3be069ef9f6d03235"}}
+    ]},
+    {"id": "n030", "label": "British individuals", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 62, "end": 164, "sha256": "85c0fde4079d5f8511a20a84a2e06a8a01090d8e8ab967333d91c700e702f16d"}}
+    ]},
+    {"id": "n031", "label": "Dan Jarvis", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0021", "start": 0, "end": 62, "sha256": "e23dd583c19b6824b5c8f15efc72b2ad0aa3cca38027f9dc639ed29a00ed641b"}}
+    ]},
+    {"id": "n032", "label": "Richard Horne", "entity_type": "person", "aliases": ["Horne"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 74, "end": 188, "sha256": "d657d7c7ced395cf900929811dfcf4b8283326554e7edc11ab88100ce275e10e"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 0, "end": 72, "sha256": "52ee1470e8fca3deec777f9209b583a33390102d76f84c346cd2ca98af04d6db"}}
+    ]},
+    {"id": "n033", "label": "internet routers", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 20, "end": 87, "sha256": "f9d6007bc1788ea91f7aa8dd8db9e10a90ecdd039f0a490217d4041c58f6ea87"}}
+    ]},
+    {"id": "n034", "label": "hackers tied to Russia's GRU", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 0, "end": 117, "sha256": "ef5310d9bdd0e90251af13e929f37aa74322c8698fe6ef2699fd706be30efbbf"}}
+    ]},
+    {"id": "n035", "label": "pro-Russian group", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 95, "end": 204, "sha256": "accc5f55184cfb381acc6b6209913872ad911fbd66a5e46357508002bf3b2509"}}
+    ]},
+    {"id": "n036", "label": "hacktivist attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0009", "start": 30, "end": 132, "sha256": "1d0191d7b2d262bd6b2def3a0cc93a9e49efb7d6cb1d7e92a01d300ed6645fea"}}
+    ]},
+    {"id": "n037", "label": "indirect cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 77, "end": 197, "sha256": "7c9c7f3dd9b32044356f9d47f16216473978b07f4c20909f5e4af1f4631cef3e"}}
+    ]},
+    {"id": "n038", "label": "state-backed actors", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0005", "start": 123, "end": 231, "sha256": "4655a5bd36f7f0cf881231e70f17c306433287dd6f7901b052e2f5977040220a"}}
+    ]},
+    {"id": "n039", "label": "flaw in common internet routers", "entity_type": "vulnerability", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 20, "end": 116, "sha256": "b4778bd659f9d39d73dd8523b68d5b36b2bbd23f310f34c432fe18b1f64eb125"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n003", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "n001",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 0, "end": 179, "sha256": "1485deffc0acb9f2c21b88ce58218c938afa381ffe0200028fb5d23b9d241ddb"}}
+     ]},
+    {"id": "e002", "source": "n001", "target": "n030", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "n001",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 44, "end": 179, "sha256": "7d3884d483d0305713afa80d4039cf6295fe1bf35b67dfeb54de6c850fcbec96"}}
+     ]},
+    {"id": "e003", "source": "n005", "target": "n014", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "The Independent", "event_time": "", "event_scope": "Russia's expanded cyber operations across Europe",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 132, "end": 330, "sha256": "96fcadaddfae317371362fbd5d0aa37c851bbda2b85068536c2882903f40438d"}}
+     ]},
+    {"id": "e004", "source": "n005", "target": "n026", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "The Independent", "event_time": "", "event_scope": "Russia's expanded cyber operations across Europe",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 132, "end": 330, "sha256": "96fcadaddfae317371362fbd5d0aa37c851bbda2b85068536c2882903f40438d"}}
+     ]},
+    {"id": "e005", "source": "n005", "target": "n029", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "The Independent", "event_time": "", "event_scope": "Russia's expanded cyber operations across Europe",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0011", "start": 132, "end": 330, "sha256": "96fcadaddfae317371362fbd5d0aa37c851bbda2b85068536c2882903f40438d"}}
+     ]},
+    {"id": "e006", "source": "n006", "target": "n012", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Sweden", "event_time": "", "event_scope": "n012",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 85, "end": 264, "sha256": "3e3f60599dceab42def10b639cc973064fb81b5849ee1a4ee9e7a65f37568553"}}
+     ]},
+    {"id": "e007", "source": "n011", "target": "n002", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "n011",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 126, "end": 285, "sha256": "6508990036e79811450234b481c0e005b01c5ee1b20cf4e9bef58006dc604e31"}}
+     ]},
+    {"id": "e008", "source": "n011", "target": "n003", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "n011",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 126, "end": 285, "sha256": "6508990036e79811450234b481c0e005b01c5ee1b20cf4e9bef58006dc604e31"}}
+     ]},
+    {"id": "e009", "source": "n011", "target": "n005", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "n011",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 126, "end": 285, "sha256": "6508990036e79811450234b481c0e005b01c5ee1b20cf4e9bef58006dc604e31"}}
+     ]},
+    {"id": "e010", "source": "n012", "target": "n035", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "Sweden", "event_time": "last year", "event_scope": "n012",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 95, "end": 264, "sha256": "f2e20408f79c61d2bb05fd49156d657b3db5beb73a403f41be2a0ee8a1d102cb"}}
+     ]},
+    {"id": "e011", "source": "n012", "target": "n027", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "Sweden", "event_time": "last year", "event_scope": "n012",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0015", "start": 123, "end": 264, "sha256": "02eaa35d8f4cbe6b4e729e6b61af1aa4545033c687542bbb194d630a12848519"}}
+     ]},
+    {"id": "e012", "source": "n013", "target": "n025", "relation_type": "AFFECTS",
+     "modality": "actual", "polarity": "positive", "attribution": "The Associated Press", "event_time": "April 2025", "event_scope": "n013",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 57, "end": 166, "sha256": "326c851c6d777512aac7a27e8a5d755cb10067048833f0c0b9c35ae63b2c6a66"}}
+     ]},
+    {"id": "e013", "source": "n013", "target": "n005", "relation_type": "ATTRIBUTED_TO",
+     "modality": "actual", "polarity": "positive", "attribution": "Norwegian authorities (via The Associated Press)", "event_time": "April 2025", "event_scope": "n013",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 0, "end": 167, "sha256": "5fd8a1b6147af0ac3cd3de7ec2b5ab8e9c72ed1aa73b69b86c7941c70fc41de3"}}
+     ]},
+    {"id": "e014", "source": "n018", "target": "n005", "relation_type": "PART_OF",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 0, "end": 87, "sha256": "5a2712952c38eb210e3f0c60f2ae3142a89222173ccfe137a5c78a3ac72e8ad3"}}
+     ]},
+    {"id": "e015", "source": "n019", "target": "n037", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "NCSC (via The Record)", "event_time": "In March", "event_scope": "indirect cyber threats against British organisations as the US and Israel started their war on Iran",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 0, "end": 138, "sha256": "05172d05073d7392ea15ab2e6e39037ce7d5a6f5f437689b95bd686adf542722"}}
+     ]},
+    {"id": "e016", "source": "n019", "target": "n038", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "NCSC", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0002", "start": 0, "end": 90, "sha256": "9ff22b765568ad3d26f2d2cd69faf77534fd83c9275d6c7a68ecc0631b6cc56a"}}
+     ]},
+    {"id": "e017", "source": "n020", "target": "n013", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Norwegian authorities (via The Associated Press)", "event_time": "", "event_scope": "n013",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 0, "end": 125, "sha256": "c538b41837aa12a1c8f90dcb5a3a864f8af10d7b6930f0c4cf06deeabdd9f37b"}}
+     ]},
+    {"id": "e018", "source": "n021", "target": "n013", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "The Associated Press", "event_time": "", "event_scope": "n013",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0016", "start": 57, "end": 166, "sha256": "326c851c6d777512aac7a27e8a5d755cb10067048833f0c0b9c35ae63b2c6a66"}}
+     ]},
+    {"id": "e019", "source": "n022", "target": "n037", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "The Record", "event_time": "", "event_scope": "indirect cyber threats against British organisations as the US and Israel started their war on Iran",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 58, "end": 218, "sha256": "c48d864fa3fe86115c10aad123a6cf4e116a50b0ec44d3688c6be4a3057aabd5"}}
+     ]},
+    {"id": "e020", "source": "n032", "target": "n019", "relation_type": "LEADS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 36, "end": 93, "sha256": "f92697822d7bce5721fd56f1eac4ff498abff743398549a6f15952591e6e514e"}}
+     ]},
+    {"id": "e021", "source": "n032", "target": "n001", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "n001",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0012", "start": 0, "end": 179, "sha256": "1485deffc0acb9f2c21b88ce58218c938afa381ffe0200028fb5d23b9d241ddb"}}
+     ]},
+    {"id": "e022", "source": "n032", "target": "n011", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "n011",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 80, "end": 188, "sha256": "0452355d83115a7982e212af59cda298e6b4605ae0560aff96cb434d42d7b6ac"}}
+     ]},
+    {"id": "e023", "source": "n032", "target": "n016", "relation_type": "REPORTS_ON",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 0, "end": 72, "sha256": "52ee1470e8fca3deec777f9209b583a33390102d76f84c346cd2ca98af04d6db"}}
+     ]},
+    {"id": "e024", "source": "n032", "target": "n002", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 74, "end": 268, "sha256": "26bd8c08a0eb39adf550e63ed58488c32ca1bda09f14ec4f8f7e6ac26c814473"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 190, "end": 285, "sha256": "f165882f98b57948edb0edc3f03bf45f843f276989210e73475a5107435a4fcd"}}
+     ]},
+    {"id": "e025", "source": "n032", "target": "n003", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 74, "end": 268, "sha256": "26bd8c08a0eb39adf550e63ed58488c32ca1bda09f14ec4f8f7e6ac26c814473"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 190, "end": 285, "sha256": "f165882f98b57948edb0edc3f03bf45f843f276989210e73475a5107435a4fcd"}}
+     ]},
+    {"id": "e026", "source": "n032", "target": "n005", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 74, "end": 268, "sha256": "26bd8c08a0eb39adf550e63ed58488c32ca1bda09f14ec4f8f7e6ac26c814473"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0006", "start": 190, "end": 285, "sha256": "f165882f98b57948edb0edc3f03bf45f843f276989210e73475a5107435a4fcd"}}
+     ]},
+    {"id": "e027", "source": "n032", "target": "n036", "relation_type": "WARNS_ABOUT",
+     "modality": "actual", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0009", "start": 30, "end": 132, "sha256": "1d0191d7b2d262bd6b2def3a0cc93a9e49efb7d6cb1d7e92a01d300ed6645fea"}},
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0007", "start": 269, "end": 313, "sha256": "b3dcb7a871e8f8533b6d39632e7b8b919ec5213e7e06904ac47a728023665111"}}
+     ]},
+    {"id": "e028", "source": "n034", "target": "n039", "relation_type": "EXPLOITS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "Earlier this month", "event_scope": "hackers tied to Russia's GRU used a flaw in common internet routers to steal private information",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 0, "end": 117, "sha256": "ef5310d9bdd0e90251af13e929f37aa74322c8698fe6ef2699fd706be30efbbf"}}
+     ]},
+    {"id": "e029", "source": "n034", "target": "n028", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "Earlier this month", "event_scope": "hackers tied to Russia's GRU used a flaw in common internet routers to steal private information",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 0, "end": 117, "sha256": "ef5310d9bdd0e90251af13e929f37aa74322c8698fe6ef2699fd706be30efbbf"}}
+     ]},
+    {"id": "e030", "source": "n036", "target": "n008", "relation_type": "TARGETS",
+     "modality": "conditional", "polarity": "positive", "attribution": "Richard Horne", "event_time": "", "event_scope": "if the UK is involved in a conflict",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0009", "start": 30, "end": 132, "sha256": "1d0191d7b2d262bd6b2def3a0cc93a9e49efb7d6cb1d7e92a01d300ed6645fea"}}
+     ]},
+    {"id": "e031", "source": "n037", "target": "n017", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "NCSC (via The Record)", "event_time": "In March", "event_scope": "indirect cyber threats against British organisations as the US and Israel started their war on Iran",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0014", "start": 0, "end": 197, "sha256": "2b9898b3481fdd73bf7416a2602468cbe70ba0d3ba0e896bcffebc35234a1cd1"}}
+     ]},
+    {"id": "e032", "source": "n038", "target": "n008", "relation_type": "TARGETS",
+     "modality": "actual", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0005", "start": 0, "end": 232, "sha256": "3b2a406f09f88195847d8eeeb7777f4af18360a9ed87b1612b1f9d0dcaf83663"}}
+     ]},
+    {"id": "e033", "source": "n039", "target": "n033", "relation_type": "AFFECTS",
+     "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+     "evidence": [
+      {"role": "TARGET", "doc_id": "D0262", "paragraph_id": "D0262:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0262:P0013", "start": 49, "end": 116, "sha256": "d5de7620ff6802b6d18fc6797b16b752161a0783f6f4f35f14dfd440e34f2b5d"}}
+     ]}
+  ],
+  "context_passages_used": []
+}

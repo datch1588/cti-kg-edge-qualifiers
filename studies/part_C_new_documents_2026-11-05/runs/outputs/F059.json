@@ -1,0 +1,257 @@
+{
+  "run_id": "F059",
+  "target_doc_id": "D0571",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "tampering",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "Center for Internet Security",
+      "entity_type": "organization",
+      "aliases": ["CIS"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0003", "start": 40, "end": 221, "sha256": "10681321bc5a980bb7e376118fa000742eab6030cd01ab726c886ceed1ec5a83"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "Cybersecurity and Infrastructure Security Agency",
+      "entity_type": "organization",
+      "aliases": ["CISA"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 0, "end": 112, "sha256": "7437821eb56ca9934feca131bc37971dff0715525b37c9ef766e18b7c158262c"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "National Institute of Standards and Technology",
+      "entity_type": "organization",
+      "aliases": ["NIST"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 251, "end": 369, "sha256": "ce339bc9ca16d887285efe2fef04d4e4e11c209c52d272c51ea050016f1acbcd"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Software Assurance Forum for Excellence in Code",
+      "entity_type": "organization",
+      "aliases": ["SAFECode"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0003", "start": 40, "end": 221, "sha256": "10681321bc5a980bb7e376118fa000742eab6030cd01ab726c886ceed1ec5a83"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "Secure by Design",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 0, "end": 214, "sha256": "f616ca4b14937694ca57678614010c77d4cc065f0afeb29a88b7af34cc5fb7c8"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "Secure by Design: A Guide to Assessing Software Security Practices",
+      "entity_type": "other",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0003", "start": 40, "end": 221, "sha256": "10681321bc5a980bb7e376118fa000742eab6030cd01ab726c886ceed1ec5a83"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Building Security in Maturity Model",
+      "entity_type": "technology",
+      "aliases": ["BSIMM"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 224, "end": 414, "sha256": "16c77080b90026083d368f1e7f44cf9347976c201586a639fd73afc53e0770cd"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "change tracking",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "CIS Critical Security Controls",
+      "entity_type": "technology",
+      "aliases": ["CIS Controls"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0005", "start": 58, "end": 128, "sha256": "de711401242f674bf2727eef713423132ff5754d3bc55fde93568fc2ebd88664"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "code signing",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "Common Security Advisory Framework",
+      "entity_type": "technology",
+      "aliases": ["CSAF"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0013", "start": 114, "end": 199, "sha256": "246565bcdc44bed2b72145c2cf251ef73d7b01ea3e884ba8296a84c0544b6a2f"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "Development Groups (DGs) model",
+      "entity_type": "technology",
+      "aliases": ["DGs model"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0005", "start": 133, "end": 249, "sha256": "bb4adf881e37e49db68157046eba08aec44bc8f5b0f0ccc4bba17092f6cbc271"}},
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0014", "start": 212, "end": 293, "sha256": "41390950b77820cdbe31dd939ee9f8f709bf7cc7294a10b78856d5376375d29a"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "Secure Software Development Framework",
+      "entity_type": "technology",
+      "aliases": ["SSDF"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 251, "end": 369, "sha256": "ce339bc9ca16d887285efe2fef04d4e4e11c209c52d272c51ea050016f1acbcd"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "version control",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n002",
+      "target": "n007",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "release of Secure by Design: A Guide to Assessing Software Security Practices",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0003", "start": 40, "end": 221, "sha256": "10681321bc5a980bb7e376118fa000742eab6030cd01ab726c886ceed1ec5a83"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n003",
+      "target": "n006",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "2023",
+      "event_scope": "launch of the Secure by Design initiative",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 0, "end": 112, "sha256": "7437821eb56ca9934feca131bc37971dff0715525b37c9ef766e18b7c158262c"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n004",
+      "target": "n014",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0005", "start": 0, "end": 56, "sha256": "b5b241dab5f859436d378d855765b6668c9f2125237c0a4227826306cf7afccc"}},
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0004", "start": 251, "end": 369, "sha256": "ce339bc9ca16d887285efe2fef04d4e4e11c209c52d272c51ea050016f1acbcd"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n005",
+      "target": "n007",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "release of Secure by Design: A Guide to Assessing Software Security Practices",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0003", "start": 40, "end": 221, "sha256": "10681321bc5a980bb7e376118fa000742eab6030cd01ab726c886ceed1ec5a83"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n005",
+      "target": "n013",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0005", "start": 133, "end": 249, "sha256": "bb4adf881e37e49db68157046eba08aec44bc8f5b0f0ccc4bba17092f6cbc271"}},
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0014", "start": 212, "end": 293, "sha256": "41390950b77820cdbe31dd939ee9f8f709bf7cc7294a10b78856d5376375d29a"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n007",
+      "target": "n013",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0005", "start": 0, "end": 250, "sha256": "50e2acb44fc4fee15bbf50790baa37300d9139adf247e38d7e82325b6ffe292a"}},
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0014", "start": 212, "end": 293, "sha256": "41390950b77820cdbe31dd939ee9f8f709bf7cc7294a10b78856d5376375d29a"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n009",
+      "target": "n001",
+      "relation_type": "MITIGATES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n011",
+      "target": "n001",
+      "relation_type": "MITIGATES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n015",
+      "target": "n001",
+      "relation_type": "MITIGATES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0571", "paragraph_id": "D0571:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0571:P0012", "start": 109, "end": 185, "sha256": "b59bddec185c29f189c07a4627303ddd83f351b8e0707da707745b3c6801d751"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

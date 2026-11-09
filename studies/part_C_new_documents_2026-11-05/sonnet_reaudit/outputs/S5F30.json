@@ -1,0 +1,29 @@
+{
+ "audit_file": "S5F30",
+ "target_doc_id": "D0242",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Синопсис: frontier AI, автоматизуючи пошук вразливостей і запускаючи багатоетапні атаки, знижує поріг для хакерів; це подано як здатність/факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "Без негайного посилення захисту MSME 'could face' ransomware attacks — наслідок за умовою (without), тож conditional."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "CERT-In попереджає про ransomware-атаки на MSME; переказане попередження — actual."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття радить розгортати засоби виявлення загроз, але твердження, що вони протидіють загрозам, — actual, а не recommended."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "CERT-In попередив, що MSME можуть зазнати витоків даних; попередження подано як переказ — actual."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Засоби виявлення загроз подано як засіб боротьби з автоматизованими загрозами (важливість) — actual."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "Витоки даних для MSME можливі лише без негайного оновлення захисту (without) — conditional."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "CERT-In рекомендує фірмам розгортати засоби виявлення загроз — recommended."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "Зловмисники з ШІ-інструментами вже можуть атакувати малий бізнес; MSME 'in the crosshairs' — actual."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "CERT-In названо індійським кіберсторожем (India's cybersecurity watchdog) — actual."},
+  {"item_id": "E011", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: у статті MSME розташовані в Індії, а не Індія в MSME."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Підприємствам радять вести детальні журнали (urged to maintain detailed logs) — recommended."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття подає вплив ШІ-загроз на MSME як наявний факт (facing, in the crosshairs), а не як можливий; 'could' стосується лише витоків і ransomware."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "Йдеться про індійські MSME (India's MSMEs) — actual."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "Безперервний моніторинг мережі подано як захід проти цих загроз, з наголосом на важливості — actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "I", "reason": "Керування патчами подано як засіб проти швидкого використання вразливостей — actual; порада впровадити не робить зв'язок recommended."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує, а радить MSME використовувати засоби виявлення; полярність має бути positive."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "Твердження, що моніторинг протидіє загрозам, — actual; порада впровадити не робить зв'язок recommended."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Детальні журнали 'essential for forensic analysis' — функція засобу, actual."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "Агентство наголосило на безперервному моніторингу мережі для фірм — recommended."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "CERT-In випустив застереження щодо ШІ-загроз — actual."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "Керування патчами подано як відповідь на швидке використання непатчених вразливостей — actual."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "Радять суворе керування патчами для фірм (need for rigorous patch management) — recommended."}
+ ]
+}

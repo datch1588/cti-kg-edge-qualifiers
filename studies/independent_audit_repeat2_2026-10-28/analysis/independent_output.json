@@ -1,0 +1,204 @@
+{
+ "self_test": false,
+ "problems": [],
+ "coverage": {
+  "N01": [
+   44,
+   44
+  ],
+  "N02": [
+   55,
+   55
+  ],
+  "N03": [
+   41,
+   41
+  ],
+  "N04": [
+   66,
+   66
+  ],
+  "N05": [
+   61,
+   61
+  ],
+  "N06": [
+   36,
+   36
+  ],
+  "N07": [
+   41,
+   41
+  ],
+  "N08": [
+   51,
+   51
+  ],
+  "N09": [
+   47,
+   47
+  ],
+  "N10": [
+   45,
+   45
+  ]
+ },
+ "coverage_share": 100.0,
+ "strata": {
+  "A+C|CC": {
+   "N": 437,
+   "n": 50,
+   "answered": 50,
+   "p_other_correct": 0.92
+  },
+  "A+C|X": {
+   "N": 4,
+   "n": 4,
+   "answered": 4,
+   "p_other_correct": 1.0
+  },
+  "A|CC": {
+   "N": 256,
+   "n": 50,
+   "answered": 50,
+   "p_other_correct": 0.96
+  },
+  "A|CI": {
+   "N": 28,
+   "n": 28,
+   "answered": 28,
+   "p_other_correct": 0.35714285714285715
+  },
+  "A|CU": {
+   "N": 9,
+   "n": 9,
+   "answered": 9,
+   "p_other_correct": 0.6666666666666666
+  },
+  "A|X": {
+   "N": 1,
+   "n": 1,
+   "answered": 1,
+   "p_other_correct": 0.0
+  },
+  "B|CC": {
+   "N": 1595,
+   "n": 100,
+   "answered": 100,
+   "p_other_correct": 0.97
+  },
+  "B|CI": {
+   "N": 131,
+   "n": 80,
+   "answered": 80,
+   "p_other_correct": 0.0375
+  },
+  "B|CU": {
+   "N": 20,
+   "n": 20,
+   "answered": 20,
+   "p_other_correct": 0.65
+  },
+  "B|X": {
+   "N": 48,
+   "n": 30,
+   "answered": 30,
+   "p_other_correct": 0.16666666666666666
+  },
+  "C|CC": {
+   "N": 135,
+   "n": 30,
+   "answered": 30,
+   "p_other_correct": 0.9666666666666667
+  },
+  "C|CI": {
+   "N": 23,
+   "n": 23,
+   "answered": 23,
+   "p_other_correct": 0.08695652173913043
+  },
+  "C|CU": {
+   "N": 8,
+   "n": 8,
+   "answered": 8,
+   "p_other_correct": 0.25
+  },
+  "C|X": {
+   "N": 9,
+   "n": 9,
+   "answered": 9,
+   "p_other_correct": 0.2222222222222222
+  },
+  "shared|CC": {
+   "N": 57,
+   "n": 15,
+   "answered": 15,
+   "p_other_correct": 1.0
+  }
+ },
+ "strata_fallback_to_main_audit": [],
+ "A-B": {
+  "n_articles": 50,
+  "x": 91.84577840676467,
+  "y": 87.01637050747455,
+  "diff": 4.829407899290115,
+  "ci": [
+   -1.144232336333874,
+   10.647395044379461
+  ],
+  "decision": "різницю не встановлено"
+ },
+ "C-B": {
+  "n_articles": 49,
+  "x": 88.03480599403656,
+  "y": 86.91126242259307,
+  "diff": 1.1235435714434787,
+  "ci": [
+   -5.002768712919381,
+   7.100928865889099
+  ],
+  "decision": null
+ },
+ "agreement_weighted": {
+  "percent": 94.58665338645417,
+  "kappa": 0.7238061005418842
+ },
+ "agreement_sample": {
+  "percent": 87.527352297593,
+  "kappa": 0.746257025686983
+ },
+ "confusion_sample": {
+  "main not_ok / other not_ok": 165,
+  "main ok / other ok": 235,
+  "main not_ok / other ok": 47,
+  "main ok / other not_ok": 10
+ },
+ "triple_main_to_other_sample": {
+  "C->C": 397,
+  "C->I": 16,
+  "U->C": 8,
+  "I->I": 22,
+  "U->I": 9,
+  "U->U": 2,
+  "I->C": 3
+ },
+ "decoys": {
+  "decoy_modality": {
+   "n": 10,
+   "detected": 10,
+   "rejected": 10
+  },
+  "decoy_reverse": {
+   "n": 10,
+   "detected": 10,
+   "rejected": 10
+  },
+  "decoy_polarity": {
+   "n": 10,
+   "detected": 9,
+   "rejected": 10
+  }
+ },
+ "decoy_share_detected": 96.66666666666667,
+ "reliable": true
+}

@@ -1,0 +1,188 @@
+AUDIT_FILE: T23
+TARGET_DOC_ID: D0432
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0432
+PUBLICATION_DATE: 2026-03-12
+SOURCE_URL: https://www.denverpost.com/2026/03/12/iran-us-cyber-threats/
+TITLE_SHA256: 2ead63cfa70ee56cc98a932730aa861b28b2cb7b9e699e7d3d4167ffd2a4e51e
+BEGIN_DOCUMENT
+[D0432:P0001] sha256:2ead63cfa70ee56cc98a932730aa861b28b2cb7b9e699e7d3d4167ffd2a4e51e
+[D0432:P0002] sha256:b3a239c09acd880d152a3f83cc5061680a504a54c2a42430f30b728b7d13c9e4
+[D0432:P0003] sha256:581d34254592d7a57888e8571154aed42a67fd7064430fe7ae95997879a07cb9
+[D0432:P0004] sha256:d8602a62e870d6867e3a40ea7e629bf929648387fb216e67f9855e52cc110b6c
+[D0432:P0005] sha256:c6a05a6894ca5429e6f0141801ed50626ce681ba723775de4f43ca35ada1cc22
+[D0432:P0006] sha256:f44890b1a8640aa99a433782d33f35fd5bc962cf419898882785c6e0eb7992ad
+[D0432:P0007] sha256:fb86a2fbb5d453517f3f67bf6b949ca69bcc201f77ca71369598228acf4f0e70
+[D0432:P0008] sha256:97ea60f48bd404a2c01dc98a03499ea4e8caf099053754cdbc55fe2b9419586f
+[D0432:P0009] sha256:a7340ae5cb8ace8a084878b50bf4584398546d33fee03d1701d926dbc0e89aeb
+[D0432:P0010] sha256:a7b73ebfb807ccd186827edcba01d62fc29c2757bdd74561b24a98133ddf235d
+[D0432:P0011] sha256:fe626e8bd6e8859e97174a7c1593597091d983315470a231860927322e1d6778
+[D0432:P0012] sha256:43600bca9a6795fb20584986a55a704d00db62eb3d1f22b47577f00faa1083c9
+[D0432:P0013] sha256:8947281f9f80271c491632de87ce21149828244cbebfb04201c1c6edbdfc8d8f
+[D0432:P0014] sha256:36f419afd3098bb56960d562f2d132756f3ac82cd945034cf698fcec120811ba
+[D0432:P0015] sha256:e483bb399a770b894c71954298326cc98c1ae18090687ac3eb34b8e879cddee0
+[D0432:P0016] sha256:d2cfc8fbd47a8b97032d3757d2a55f3ae71fe21a5b0b83792d7f88b0984262c4
+[D0432:P0017] sha256:581d34254592d7a57888e8571154aed42a67fd7064430fe7ae95997879a07cb9
+[D0432:P0018] sha256:8568e15d0a48e890f659595ddbbb138c95e0c0c07dc324757c9049021eb1658b
+[D0432:P0019] sha256:553898a2540bcda203e1a0dbe6246e29f871ce2fd726a0b27c71b0bf22de3cff
+[D0432:P0020] sha256:2a7109dc6ee632113bac144c5b75a6ffe7aabd5220d180a252676b9d3b6640be
+[D0432:P0021] sha256:ff5812cf25ca75c27c94155c31607325f24ae80b6ccc7d7e84f06f27b2008c1d
+[D0432:P0022] sha256:d70e0f22ffba362c29f8792cc7fbcd7fe3450621f9da1dffd5ae50385d18d3c3
+[D0432:P0023] sha256:8f391be3b989a36520a3cc95dc1d46a10fc71918eb4ab09d50d240b202ebf0b4
+[D0432:P0024] sha256:76d10b57f37210fd41b3aea1a884b3316fdc64e25c0b3dca483df52e8138dda2
+[D0432:P0025] sha256:aa1f9e66e8d909d172d22c4745904ed9a62eec40cb1578c831971329c0144258
+[D0432:P0026] sha256:77eab26b1d8f0920a67cc86a44ddcdd117920080e57a7fc305f7a20469a24587
+[D0432:P0027] sha256:6d4d72ef989e44471e0e246392482a64d9911fbaead4249958f6404296a54846
+[D0432:P0028] sha256:a018412dc03dcbb2e886aa1ccda59ed09f6ebd2cfd068d81519e72b4894cec65
+[D0432:P0029] sha256:56810a31cb2df1cba5ac39f1fb8b9f070886e9fbc4472cbb1d90ae285b912190
+[D0432:P0030] sha256:18fe940dadbdc7f771018c14634b1c0669e9f061756ba99cb5d6f5037eff8c75
+[D0432:P0031] sha256:1bd96306db387b4ab895108b5001a947296e27c4ca1ac95f69e13c63f9d68c18
+[D0432:P0032] sha256:0c18c8363329c3cfe879a581d97edba62df6dd003ecc7e6fb3361d7417ee3726
+[D0432:P0033] sha256:9cc9a938b8267ea36c641900acc9697ed50693b257288010a87d9cf531131744
+[D0432:P0034] sha256:7a474bf4c204a9a92215e201a4c67b232e3b16a4d6d7428713d121a99d85299f
+[D0432:P0035] sha256:84cd7cf0e836366217c718f9dd575a4e7428f32f100d9525051f937c52632d76
+[D0432:P0036] sha256:cc97c31dccaf08174a858535c9e8dedf812ddb61d5669a7dd30301a406809d9e
+[D0432:P0037] sha256:977f09b1b5dac959655981f1c77281b5820d908a50b89db773d6fd2be118ee6f
+[D0432:P0038] sha256:d680b5f9d76c11b87ac90457d5a65bdd1eb6799a029e4f318f9b30f9a855e8ec
+[D0432:P0039] sha256:99836e692cf6ca99137fb762fbcb82e087acb628b97db48569fa4920e600b940
+[D0432:P0040] sha256:7ef12c6cc857db1e12ad67c948aa12581bfc7bf153eca0aac4fd516801790ca0
+[D0432:P0041] sha256:310c73960955335aac4ae7e3aab5217253f3ea3147d1497a8b84c7dbf0ea1e1c
+[D0432:P0042] sha256:0d12f2f95bf83bcafdb25c5477b359c4457c3d42570c23c50e742f5823c9dfbf
+[D0432:P0043] sha256:652fef2f72c0b7a2a292217b37d5cf819f41d9c9661a3514241e62469862c371
+[D0432:P0044] sha256:0750f446c966b53a49504db910448aa8e6bed93bf4ab2505e6d46f89f8ff0bce
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (89)
+E001: «Optiv» — located in → «Denver» | форма: actual, positive
+E002: «Hackers supporting Iran» — targeted → «an airport in Kuwait» | форма: actual, positive
+E003: «Pro-Iranian hackers» — targets → «cameras» | форма: actual, positive
+E004: «hack-and-leak operations» — threaten to release → «sensitive stolen material» | форма: actual, positive
+E005: «cameras in Middle Eastern countries» — penetrated to improve → «Iran's missile targeting» | форма: actual, positive
+E006: «groups working for Tehran» — tried to breach → «networks used by the military and defense contractors» | форма: actual, positive
+E007: «several U.S. networks» — include → «closed-circuit video cameras» | форма: actual, positive
+E008: «Iranian hackers» — uses → «website defacements» | форма: possible, positive
+E009: «Hackers supporting Iran» — tried to penetrate → «cameras in Middle Eastern countries» | форма: actual, positive
+E010: «Z-Pentest» — claimed responsibility for → «disrupting several U.S. networks» | форма: actual, positive
+E011: «Kevin Mandia» — is founder of → «Armadin» | форма: actual, positive
+E012: «Stryker» — is → «U.S. medical device company» | форма: possible, positive
+E013: «Hackers supporting Iran» — targeted → «a school in Saudi Arabia» | форма: actual, positive
+E014: «CrowdStrike» — detects → «Russian hackers» | форма: actual, positive
+E015: «Tehran's digital warriors» — impersonated → «American activists online» | форма: actual, positive
+E016: «Donald Trump» — targets → «Iranian hackers» | форма: actual, positive
+E017: «Optiv» — is based in → «Denver» | форма: actual, negative
+E018: «Unitronics device» — was hacked in → «Aliquippa, Pa.» | форма: actual, positive
+E019: «Stryker» — located in → «United States» | форма: actual, positive
+E020: «Pro-Iranian hackers» — targets → «Stryker» | форма: actual, positive
+E021: «Tehran's digital warriors» — set up → «fake news websites and social media accounts» | форма: actual, positive
+E022: «Department of Homeland Security» — warns about → «Iranian cyber threats» | форма: actual, positive
+E023: «groups working for Tehran» — targeted → «U.S. water plants» | форма: actual, positive
+E024: «Stryker» — located in → «Michigan» | форма: actual, positive
+E025: «Hackers supporting Iran» — claimed responsibility for → «significant cyberattack against Stryker» | форма: actual, positive
+E026: «Unitronics device» — was hacked on → «Nov. 25, 2023» | форма: actual, positive
+E027: «Iranian hackers» — targets → «Joe Biden» | форма: actual, positive
+E028: «Iranian hackers» — may use → «denial-of-service attacks» | форма: actual, positive
+E029: «Stryker» — is → «U.S. medical device company» | форма: actual, positive
+E030: «SITE Intelligence Group» — is based in → «U.S.» | форма: actual, positive
+E031: «website defacements» — prevent → «a company from communicating with customers» | форма: actual, positive
+E032: «Pro-Iranian hackers» — likely target → «critical infrastructure such as hospitals, ports, water plants, power stations and railways» | форма: actual, positive
+E033: «Iran» — targets → «cameras» | форма: actual, positive
+E034: «groups working for Tehran» — infiltrated → «email system of President Donald Trump's campaign» | форма: actual, positive
+E035: «The Denver Post» — published → «Iran-linked hackers take aim at US and other targets» | форма: actual, positive
+E036: «Handala» — is → «pro-Iranian, pro-Palestinian hackers» | форма: actual, positive
+E037: «Iranian hackers» — tried to disseminate → «stolen files» | форма: actual, positive
+E038: «Iran» — cultivated ties to → «hacking groups» | форма: actual, positive
+E039: «Iranian hackers» — may use → «hack-and-leak operations» | форма: actual, positive
+E040: «Pro-Iranian hackers» — targets → «Middle East» | форма: possible, positive
+E041: «Pro-Iranian hackers» — targets → «United States» | форма: actual, negative
+E042: «Pro-Iranian hackers» — are stretching into → «United States» | форма: actual, positive
+E043: «Z-Pentest» — targets → «cameras» | форма: actual, positive
+E044: «SITE Intelligence Group» — uncovered → «Pro-Iranian hackers' plans to take out datacenters» | форма: actual, positive
+E045: «Iranian hackers» — may use → «website defacements» | форма: actual, positive
+E046: «Pro-Iranian hackers» — threaten → «American defense contractors, power stations and water plants» | форма: actual, positive
+E047: «Iran» — invested heavily in → «offensive cyber capabilities» | форма: actual, positive
+E048: «Adam Meyers» — is head of counter adversary operations at → «CrowdStrike» | форма: actual, positive
+E049: «Handala» — claimed credit for → «disrupting systems at Stryker» | форма: actual, positive
+E050: «Iran» — tried to hack into → «cameras in neighboring countries» | форма: actual, positive
+E051: «Z-Pentest» — targets → «United States» | форма: actual, positive
+E052: «Hackers supporting Iran» — targeted → «data centers in the region» | форма: actual, positive
+E053: «Iranian hackers» — infiltrated Trump campaign in → «2024» | форма: actual, positive
+E054: «Hackers linked to Iran» — tried to hack into → «WhatsApp accounts of Trump and Joe Biden» | форма: actual, positive
+E055: «Iranian hackers» — uses → «Hack-and-leak operations» | форма: possible, positive
+E056: «denial-of-service attacks» — jam → «network so legitimate users cannot use it» | форма: actual, positive
+E057: «Pro-Iranian hackers» — uses → «Telegram» | форма: actual, positive
+E058: «Iranian hackers» — targets → «Donald Trump» | форма: actual, positive
+E059: «Department of Homeland Security» — issued public warning about → «Iranian cyber threats» | форма: actual, positive
+E060: «Iran-linked hackers take aim at US and other targets» — was published on → «March 12, 2026» | форма: actual, positive
+E061: «Handala» — attacked in retaliation for → «suspected U.S. strikes that killed Iranian schoolchildren» | форма: actual, positive
+E062: «Kevin Mandia» — is founder of → «Mandiant» | форма: actual, positive
+E063: «Pro-Iranian hackers» — are targeting → «sites in the Middle East» | форма: actual, positive
+E064: «Pro-Iranian hackers» — discuss plans in → «Telegram» | форма: actual, positive
+E065: «CrowdStrike» — detected surge of activity from → «Russian hackers in support of Tehran» | форма: actual, positive
+E066: «Hackers supporting Iran» — targeted → «industrial facilities in Israel» | форма: actual, positive
+E067: «James Turgal» — is vice president at → «Optiv» | форма: actual, positive
+E068: «U.S.» — is based in → «SITE Intelligence Group» | форма: actual, positive
+E069: «Stryker» — is based in → «Michigan» | форма: actual, positive
+E070: «Iranian hackers» — infiltrated → «email system of the Trump campaign» | форма: actual, positive
+E071: «Handala» — focuses on → «data destruction» | форма: actual, positive
+E072: «Iranian hackers» — target → «health care facilities» | форма: actual, positive
+E073: «cyberattack on a nuclear research facility» — may have ties to → «Iran» | форма: actual, positive
+E074: «Russia and China» — present greatest cyber threats to → «U.S.» | форма: actual, positive
+E075: «Z-Pentest» — targeted → «U.S. interests» | форма: actual, positive
+E076: «SITE Intelligence Group» — located in → «United States» | форма: actual, positive
+E077: «Iranian hackers» — targets → «Trump campaign» | форма: actual, positive
+E078: «Ismael Valenzuela» — is vice president of threat intelligence at → «Arctic Wolf» | форма: actual, positive
+E079: «Shaun Williams» — is senior director at → «SentinelOne» | форма: actual, positive
+E080: «Optiv» — is based in → «Denver» | форма: actual, positive
+E081: «Polish authorities» — are investigating → «cyberattack on a nuclear research facility» | форма: actual, positive
+E082: «Handala» — targets → «Stryker» | форма: actual, positive
+E083: «Iranian hackers» — target → «local water plants» | форма: actual, positive
+E084: «Iranian hackers» — uses → «denial-of-service attacks» | форма: possible, positive
+E085: «Pro-Iranian hackers» — targets → «United States» | форма: actual, positive
+E086: «Pro-Iranian hackers» — targets → «Middle East» | форма: actual, positive
+E087: «Handala» — uses → «data destruction» | форма: actual, positive
+E088: «Pro-Iranian hackers» — targets → «data centers» | форма: actual, positive
+E089: «Pro-Iranian hackers» — likely target → «U.S. defense contractors, government vendors and businesses that work with Israel» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

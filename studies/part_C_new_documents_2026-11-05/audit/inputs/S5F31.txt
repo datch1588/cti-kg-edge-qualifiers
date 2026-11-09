@@ -1,0 +1,142 @@
+AUDIT_FILE: S5F31
+TARGET_DOC_ID: D0283
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0283
+PUBLICATION_DATE: 2026-04-16
+SOURCE_URL: https://www.ibtimes.co.uk/understanding-cmmc-certification-guide-defense-contractors-1792149
+TITLE_SHA256: 3551e34892f59634e69f77e15a782e6ed53ff115cfa7f23dd9d3239a27a2242f
+BEGIN_DOCUMENT
+[D0283:P0001] sha256:3551e34892f59634e69f77e15a782e6ed53ff115cfa7f23dd9d3239a27a2242f
+[D0283:P0002] sha256:f8e1f5c1f7ac87d345104aee745621e349ece7dbb6763fed98ac52b9dd6f6f95
+[D0283:P0003] sha256:b8589b5e1fced3a6e60a74d616e9c4c0896f778060773ffd32182d1f36e90eb6
+[D0283:P0004] sha256:a2e0934fdc75fa86a45448bed5d3989b50c53d684a7bd50d8fe691782b3583b1
+[D0283:P0005] sha256:131e9fa26d7fd8ac715220553303c7065fb87f269627029c82d58c7a8e1614e1
+[D0283:P0006] sha256:d71c010a924f9a3a2e91b386f0b5a8ceb0d6c3c64b6937b460a5a887a6824b5c
+[D0283:P0007] sha256:0789cde673a59521c09daa01ccabaefa470302754530915bb36c4f9d65bb8ae8
+[D0283:P0008] sha256:2c1d5b68a86795891efce18d709b8b99ac43933a4101fee717e0d158dc096712
+[D0283:P0009] sha256:cd0b3ad5845a827461cdf33f4c21368f60481578baa039a7b031abacc271594a
+[D0283:P0010] sha256:0a803df8491359699216454125e800bb7f80fae1b7fc570f39a114029eaf4206
+[D0283:P0011] sha256:8f42d674d2228bea503aaed367f50be9c9931634278901ab14c1bf42af542e9d
+[D0283:P0012] sha256:60d8518cc2ce5f1570b067fbb3b2042ba54842ee4395519f1a0aa3c565a814ab
+[D0283:P0013] sha256:067e9bbd899ae419dc7838c0fa107500f0e5056e4bb19117ad8798ce4540c20e
+[D0283:P0014] sha256:1d33adb466d39cc613e385db769fa5956a29dc62f0780d85f4dfda6f2ef8070b
+[D0283:P0015] sha256:e5c970f617e2069692da4ba66f2b10001b5a28f5805aeb7d0cd5a04cabb61265
+[D0283:P0016] sha256:bd7e93eb20f182b5857eba9bc9c05c983996f312d1c4248d3eda94edc546e0f4
+[D0283:P0017] sha256:d51f115c13aa87d3d6260c0ce1ea9be2b780283bf2b51eef6dfa533ac226ea57
+[D0283:P0018] sha256:71af0bd544677ed1dcad24de8bb50b4922224aec6b52a4272996597966888cc8
+[D0283:P0019] sha256:d73924beee139f7a8670e8bb8a237803e12144a12a1b87a8fb3282e6f4728b85
+[D0283:P0020] sha256:bc42027abdacf759bd6365f12c82620f16a62f14402965f47fc2320ec6444305
+[D0283:P0021] sha256:2ecd75d898fd4ae6ded608c8b5b6c5316c112863218f03031bd3533f790f269a
+[D0283:P0022] sha256:fdb628800d7461878133c768f5d022b213d24054d7576b75a25a171f23ba303f
+[D0283:P0023] sha256:53285e4b089d593e5db15e1d78a916b59ecf59b7a7ed2243bab31e309f02372a
+[D0283:P0024] sha256:1c2825cdc347f43a26ccd0381ec9bc056af8d928ec3ceabef56237484e0f0cc1
+[D0283:P0025] sha256:3f4362a35b68dcd44db5606eb0bcc6c78127a93132a8bc19ed7a605ebcbae6f0
+[D0283:P0026] sha256:05d534ce84ad8383c4d365fa7d90ebaa92d6da13bcaa7e278301960c1d719e90
+[D0283:P0027] sha256:f251d483a8c811a025567d5acef49159ca80de60a5a4805fdf5f31a64a8eda00
+[D0283:P0028] sha256:73512eb23ce5163c23773f4c72c8da2481d8b20011027775cc103a309b88762f
+[D0283:P0029] sha256:ba6d9aa05e155f704c6ebed25a4cb2dba0773e36684165e334c69163263b9247
+[D0283:P0030] sha256:f92539be7dbec52e6bdeb39af2a3bc3b5c7ca8e74d09aebc2c3077846785d7c7
+[D0283:P0031] sha256:5733d3bee7ff60e1029119ba4d6d8952fb803c055f3f243b9718aceb53674a67
+[D0283:P0032] sha256:2d30e538867e2f6665dd09faa8343e23972ebb7b838226a92e494e67a4677206
+[D0283:P0033] sha256:d2411be7cba1723f62d7b32433be1f60c2b5294672bbe17e089bbf3a3921a9b2
+[D0283:P0034] sha256:e4191a1b44f09c2674d9dd7942533b7e62a199cd771ec4a20c237421c29e3032
+[D0283:P0035] sha256:b1a0aaf6c45ad096b9a67fe69b1e86a03832bf7a843041eaf9cde6b9c404d601
+[D0283:P0036] sha256:a8433270281ca8eb515589dab74d9452d6ee12fd03a00872a0d0098024353d87
+[D0283:P0037] sha256:58623b03b956dfef0183cb6767bde62897c76979ef4afd69adc520e943461a2a
+[D0283:P0038] sha256:f9ac1f33d1fc5b2d3741e6b90f925f5829762b7714d5bbf555186e20598ce372
+[D0283:P0039] sha256:fbea09e7aa6e95361b19ad59116497da2d40508ba7b5ab0d6c4e489104a30b8a
+[D0283:P0040] sha256:3901faa9eedcdbb0345845439f063b19a1e628ecafa770888e02d70f2991264c
+[D0283:P0041] sha256:1da2de8bc76f5f085e8e3fbf5be79d0250e305c904f51b381bec2e16ddbd7f48
+[D0283:P0042] sha256:5d96b5b56b22eda2e8b3698e2b9de914faa2491d3cb8a10d4918861a062ac1ab
+[D0283:P0043] sha256:2294175274693dd5033616cdad0109a601fdbba201f4c1c275b1922b6a05d541
+[D0283:P0044] sha256:caf357dec1b27a1363f9611d25bed62ebaedc51b28342c59faa3409bc131b547
+[D0283:P0045] sha256:cbd1633744108d35ff0d92bd1c819dd4e376e553fdd9324fb61d9365fb6ec0fc
+[D0283:P0046] sha256:1639d968d9976a0c8870989e914bca3a671beff463f67f970e72e803b9236288
+[D0283:P0047] sha256:fddd87f08d9c3b5cbc9c18def82517231e2a37b035eec3a4366ee5dd5e1faa9b
+[D0283:P0048] sha256:e94a0c88d827344925a3060601c41f8e0c4f9a70651e6396a38615f84aedb663
+[D0283:P0049] sha256:53ddc893561814d6f62945037df38eab4a1d958088b95f68fd6d80d8a8d37708
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (30)
+E001: «defense in depth» — protects → «CUI enclave» | форма: recommended, positive
+E002: «malware protection» — part of → «Level 1: Foundational» | форма: actual, positive
+E003: «network segmentation» — part of → «System and Communications Protection» | форма: actual, positive
+E004: «CUI enclave» — mitigates → «cyber threats» | форма: actual, positive
+E005: «defense in depth» — uses → «network segmentation» | форма: recommended, positive
+E006: «Level 3: Expert» — part of → «Cybersecurity Maturity Model Certification» | форма: actual, positive
+E007: «Level 2: Advanced» — part of → «CMMC 2.0» | форма: actual, positive
+E008: «encryption» — part of → «System and Communications Protection» | форма: actual, positive
+E009: «CUI enclave» — enables → «CMMC Compliance» | форма: actual, positive
+E010: «suspicious activities» — detects → «security information and event management» | форма: recommended, positive
+E011: «Level 1: Foundational» — part of → «Cybersecurity Maturity Model Certification» | форма: actual, positive
+E012: «Level 2: Advanced» — part of → «Cybersecurity Maturity Model Certification» | форма: actual, positive
+E013: «multi-factor authentication» — part of → «Access Control» | форма: actual, positive
+E014: «Access Control» — part of → «NIST SP 800-171» | форма: actual, positive
+E015: «privileged access management» — part of → «Access Control» | форма: actual, positive
+E016: «CUI enclave» — uses → «defense in depth» | форма: recommended, positive
+E017: «System and Communications Protection» — part of → «NIST SP 800-171» | форма: actual, positive
+E018: «Incident Response» — part of → «NIST SP 800-171» | форма: actual, positive
+E019: «Level 1: Foundational» — part of → «CMMC 2.0» | форма: actual, positive
+E020: «NIST SP 800-172» — mitigates → «advanced persistent threats» | форма: actual, positive
+E021: «security information and event management» — detects → «suspicious activities» | форма: recommended, positive
+E022: «NIST SP 800-172» — mitigates → «advanced persistent threats» | форма: possible, positive
+E023: «Level 3: Expert» — part of → «CMMC 2.0» | форма: actual, positive
+E024: «Level 3: Expert» — mitigates → «advanced persistent threats» | форма: actual, positive
+E025: «defense in depth» — uses → «encryption» | форма: recommended, positive
+E026: «Configuration Management» — part of → «NIST SP 800-171» | форма: actual, positive
+E027: «CUI enclave» — protects → «Controlled Unclassified Information» | форма: actual, positive
+E028: «Level 3: Expert» — uses → «NIST SP 800-172» | форма: actual, positive
+E029: «CUI enclave» — mitigates → «cyber threats» | форма: actual, negative
+E030: «Level 2: Advanced» — uses → «NIST SP 800-171» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

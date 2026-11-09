@@ -1,0 +1,135 @@
+{
+ "run_id": "W045",
+ "target_doc_id": "D0514",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Sunnyvale, California", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 0, "end": 127, "sha256": "59977abbf3b0bace84d6c422d9d33c6e5e410bf383c74d556d52b4ddade965dd"}}]},
+  {"id": "n002", "label": "Anthropic", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1187, "end": 1289, "sha256": "4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1"}}]},
+  {"id": "n003", "label": "CrowdStrike", "entity_type": "organization", "aliases": ["CrowdStrike Holdings, Inc"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 0, "end": 127, "sha256": "59977abbf3b0bace84d6c422d9d33c6e5e410bf383c74d556d52b4ddade965dd"}}]},
+  {"id": "n004", "label": "Datadog", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1417, "end": 1507, "sha256": "87882a720ac7ede0b2e535bed0938c353850fc664f06262b418a6336e12b5c9a"}}]},
+  {"id": "n005", "label": "Palo Alto", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 917, "end": 1019, "sha256": "8c08074b723d3055fa004d97048488702bccb0f0de0fa10bae71eaab52726269"}}]},
+  {"id": "n006", "label": "2026 Global Threat Report", "entity_type": "other", "aliases": ["2026 CrowdStrike Global Threat Report"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 593, "end": 722, "sha256": "be7e4492b4073521aa67af8312ed54dd1f815983741aef6ea13157c851e82e6f"}},
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 800, "end": 897, "sha256": "26923067661e65136b8faaf0ce8de1f1ec16138b4916fa3750e22e8d978686b1"}}]},
+  {"id": "n007", "label": "data", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "n008", "label": "identities", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "n009", "label": "Dmitri Alperovitch", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 128, "end": 274, "sha256": "da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f"}}]},
+  {"id": "n010", "label": "George Kurtz", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 128, "end": 274, "sha256": "da987873d10b64b46b6191aec369543d7adef16ca1fe0cb4c0fc11112f60435f"}}]},
+  {"id": "n011", "label": "Johanna Flower", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0010", "start": 0, "end": 139, "sha256": "fcadd5c6e33ec899a7730c3532dbe42a7edebaf19395d8544755b0a675308734"}}]},
+  {"id": "n012", "label": "Michael Sentonas", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0010", "start": 540, "end": 669, "sha256": "bbbb92ec894b99126f1b1abc5033f93b584ce3a4f668695c1052cea8b22ceeda"}}]},
+  {"id": "n013", "label": "Claude Code Security", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1187, "end": 1289, "sha256": "4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1"}}]},
+  {"id": "n014", "label": "CrowdStrike Falcon platform", "entity_type": "product", "aliases": ["Falcon"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 112, "sha256": "3421bdfd21ec59e44e13fa8288ee86af17174e4ef2805344f8a739f80768c921"}},
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 725, "end": 798, "sha256": "ce89b8f39a82bd2e6b935a333184c0984aa0743a1f7931a7bb956f5038d75b12"}}]},
+  {"id": "n015", "label": "AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 593, "end": 722, "sha256": "be7e4492b4073521aa67af8312ed54dd1f815983741aef6ea13157c851e82e6f"}}]},
+  {"id": "n016", "label": "centralized telemetry", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n017", "label": "cloud workloads", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "n018", "label": "cloud-native security solutions", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "n019", "label": "device control", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n020", "label": "endpoint detection and response", "entity_type": "technology", "aliases": ["EDR"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n021", "label": "endpoint protection", "entity_type": "technology", "aliases": ["EPP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n022", "label": "endpoints", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "n023", "label": "lightweight agents", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n024", "label": "threat intelligence", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 118, "end": 285, "sha256": "e73900eeb21ddf8563b721e17352e8cdcb3831ddc56cf353d3c364207ad7d2c9"}}]},
+  {"id": "n025", "label": "sophisticated cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n013", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Anthropic's launch of Claude Code Security",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1187, "end": 1289, "sha256": "4bcb8cad9e22191526d97b9e742a4b046aadffdd10c109b704ed5983826960a1"}}]},
+  {"id": "e002", "source": "n003", "target": "n001", "relation_type": "LOCATED_IN",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 0, "end": 127, "sha256": "59977abbf3b0bace84d6c422d9d33c6e5e410bf383c74d556d52b4ddade965dd"}}]},
+  {"id": "e003", "source": "n003", "target": "n014", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 112, "sha256": "3421bdfd21ec59e44e13fa8288ee86af17174e4ef2805344f8a739f80768c921"}}]},
+  {"id": "e004", "source": "n003", "target": "n018", "relation_type": "PROVIDES",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e005", "source": "n011", "target": "n003", "relation_type": "MEMBER_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0010", "start": 0, "end": 139, "sha256": "fcadd5c6e33ec899a7730c3532dbe42a7edebaf19395d8544755b0a675308734"}}]},
+  {"id": "e006", "source": "n012", "target": "n003", "relation_type": "LEADS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0010", "start": 540, "end": 669, "sha256": "bbbb92ec894b99126f1b1abc5033f93b584ce3a4f668695c1052cea8b22ceeda"}}]},
+  {"id": "e007", "source": "n013", "target": "n015", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1187, "end": 1362, "sha256": "149f74fa19b988b4eacc6b8456f94f13ea6b34a3c54c613bc0ad4047b81ffe25"}},
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0007", "start": 1417, "end": 1507, "sha256": "87882a720ac7ede0b2e535bed0938c353850fc664f06262b418a6336e12b5c9a"}}]},
+  {"id": "e008", "source": "n014", "target": "n016", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]},
+  {"id": "e009", "source": "n014", "target": "n023", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]},
+  {"id": "e010", "source": "n018", "target": "n025", "relation_type": "MITIGATES",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e011", "source": "n018", "target": "n007", "relation_type": "PROTECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e012", "source": "n018", "target": "n008", "relation_type": "PROTECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e013", "source": "n018", "target": "n017", "relation_type": "PROTECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e014", "source": "n018", "target": "n022", "relation_type": "PROTECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "CrowdStrike", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0012", "start": 275, "end": 457, "sha256": "cec4e112056a330d1f408351029369bd5a0e33f64a78fca6e5789700a336d4b7"}}]},
+  {"id": "e015", "source": "n019", "target": "n014", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]},
+  {"id": "e016", "source": "n020", "target": "n014", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]},
+  {"id": "e017", "source": "n021", "target": "n014", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]},
+  {"id": "e018", "source": "n024", "target": "n014", "relation_type": "PART_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0514", "paragraph_id": "D0514:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0514:P0013", "start": 0, "end": 286, "sha256": "081e34b4eebd9942f4e612e5141e1fe3f82ee644fbdbb6a8db4978a5367a1617"}}]}
+ ],
+ "context_passages_used": []
+}

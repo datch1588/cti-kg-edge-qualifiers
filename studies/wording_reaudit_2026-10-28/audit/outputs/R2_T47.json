@@ -1,0 +1,9 @@
+{
+ "audit_file": "R2_T47",
+ "target_doc_id": "D0107",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly enable» подає звʼязок як можливість, тоді як у D0107:P0002 (і в заголовку D0107:P0001) стаття стверджує як показаний факт, що «AI agents enable a fundamentally new threat», тобто actual, positive."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0107:P0002 сказано, що черв'яка «Deployed on a network of machines spanning Linux, Windows, and IoT», тобто це здійснений факт, і формулювання «deployed on» (actual, positive) йому відповідає."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У D0107:P0002 стаття прямо заперечує залежність («the worm requires no commercial AI platform»), і формулювання «requires no» передає ту саму форму actual, negative."}
+ ]
+}

@@ -1,0 +1,311 @@
+{
+  "audit_batch": "N08",
+  "verdicts": [
+    {
+      "item_id": "N08-E001",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0268:P0012 www.sealsq.com прямо наведено як сайт із відомостями про продукцію SEALSQ."
+    },
+    {
+      "item_id": "N08-E002",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0268:P0007–P0009 описані напівпровідникові рішення з PQC мають заявлену захисну дію проти кіберзагроз із застосуванням ШІ."
+    },
+    {
+      "item_id": "N08-E003",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0268:P0006 прямо стверджує використання автономними агентами ШІ складних методів ухилення."
+    },
+    {
+      "item_id": "N08-E004",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0268:P0007–P0009 стверджують захисні властивості вбудованої PQC як факт, тоді як рекомендація стосується її впровадження."
+    },
+    {
+      "item_id": "N08-E005",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0268:P0005 Anthropic запускає Project Glasswing, а запис помилково приписує проєкту керування Anthropic."
+    },
+    {
+      "item_id": "N08-E006",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "Женева у D0268:P0003 зазначена лише в датувальному рядку повідомлення, а місце базування SEALSQ текст не встановлює."
+    },
+    {
+      "item_id": "N08-E007",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "Позначення GlobeNewswire у D0268:P0002–P0003 та публікації Taiwan News у D0268:P0018–P0019 підтверджують передрук цього повідомлення."
+    },
+    {
+      "item_id": "N08-E008",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0268:P0009 і D0268:P0011 описують захист від квантових атак як заявлену властивість напівпровідників нового покоління."
+    },
+    {
+      "item_id": "N08-E009",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0268:P0010 подає зростання вразливості RSA з розвитком квантових комп’ютерів як загальне фактичне твердження."
+    },
+    {
+      "item_id": "N08-E010",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0268:P0009 прямо називає апаратні криптографічні засоби стійкими до ітеративних стратегій атак."
+    },
+    {
+      "item_id": "N08-E011",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0268:P0010 стверджує зростання вразливості ECC з розвитком квантових комп’ютерів, тому форма possible не відповідає тексту."
+    },
+    {
+      "item_id": "N08-E012",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0268:P0005 захист критичного програмного забезпечення прямо визначено як наявну мету запущеної ініціативи Project Glasswing."
+    },
+    {
+      "item_id": "N08-E013",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0268:P0004 і D0268:P0009 повідомляють, що SEALSQ уже розробляє напівпровідники, тому форма possible неправильна."
+    },
+    {
+      "item_id": "N08-E014",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0268:P0010 подає зростання вразливості RSA як загальне фактичне твердження, а не лише можливість."
+    },
+    {
+      "item_id": "N08-E015",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0268:P0005 прямо повідомляє про виявлення моделлю Mythos серйозних давніх вад у широко використовуваному програмному забезпеченні."
+    },
+    {
+      "item_id": "N08-E016",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0268:P0005 захист критичного програмного забезпечення подано як намічену дію Project Glasswing, що відповідає planned для самого захисту."
+    },
+    {
+      "item_id": "N08-E017",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0435:P0010–P0012 повідомляють про атаку Handala на Stryker та заяви угруповання щодо її результатів."
+    },
+    {
+      "item_id": "N08-E018",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0435:P0011 повідомляє з посиланням на джерела, що під час атаки Handala хакери застосували шкідливе ПЗ для стирання даних."
+    },
+    {
+      "item_id": "N08-E019",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0435:P0011 прямо описує стирання даних шкідливим ПЗ із систем, пов’язаних із середовищем Microsoft Windows компанії."
+    },
+    {
+      "item_id": "N08-E020",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0435:P0014 називає шкідливі завантаження звичайним шляхом проникнення wiper malware, тобто подає загальний факт замість лише можливості."
+    },
+    {
+      "item_id": "N08-E021",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0435:P0014 називає скомпрометовані сайти звичайним шляхом проникнення wiper malware, тому потрібна форма actual."
+    },
+    {
+      "item_id": "N08-E022",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0435:P0014 подає проникнення wiper malware через фішингові листи як загальну закономірність, а не лише можливість."
+    },
+    {
+      "item_id": "N08-E023",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0435:P0014 сказано, що нападники можуть використати вразливості для встановлення malware, тому потрібна форма possible."
+    },
+    {
+      "item_id": "N08-E024",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "Innsbruck, Austria у D0405:P0007 наведено лише в датувальному рядку, який не встановлює місце розташування AV-Comparatives."
+    },
+    {
+      "item_id": "N08-E025",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0014 подає захисну роль евристичного виявлення щодо кіберзагроз як загальне позитивне твердження."
+    },
+    {
+      "item_id": "N08-E026",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0405:P0014 описує роль евристичного виявлення в захисті як факт, а не формулює рекомендацію."
+    },
+    {
+      "item_id": "N08-E027",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0014 прямо зазначає роль технологій машинного навчання в захисті від кіберзагроз."
+    },
+    {
+      "item_id": "N08-E028",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0009–P0011 повідомляють про фактичне виявлення відомих інструментаріїв APT споживчими засобами кіберзахисту."
+    },
+    {
+      "item_id": "N08-E029",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0012 підтверджує, що модифікації зразків фактично знизили показники виявлення деяких рішень."
+    },
+    {
+      "item_id": "N08-E030",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0009 прямо повідомляє, що AV-Comparatives використала набір із 7 579 зразків."
+    },
+    {
+      "item_id": "N08-E031",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0405:P0014 стверджує захисну роль технологій машинного навчання, тому форма recommended не відповідає викладу."
+    },
+    {
+      "item_id": "N08-E032",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0007 прямо визначає APT Detection Coverage 2026 як оцінювання ефективності споживчих рішень кіберзахисту."
+    },
+    {
+      "item_id": "N08-E033",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0405:P0008 стверджує, що операції APT часто передбачають застосування передових методів ухилення."
+    },
+    {
+      "item_id": "N08-E034",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "Формулювання INNSBRUCK, Austria у D0405:P0007 прямо визначає країну розташування міста."
+    },
+    {
+      "item_id": "N08-E035",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0405:P0010 і D0405:P0014 описують захисну роль поведінкового аналізу як факт, а не рекомендацію."
+    },
+    {
+      "item_id": "N08-E036",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "Стаття не встановлює місця базування Nigeria Data Protection Commission, а назва установи сама по собі цього не підтверджує."
+    },
+    {
+      "item_id": "N08-E037",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0235:P0014 частку близько 25% приписано сукупно крадіжці особистості та витокам даних, а не лише крадіжці особистості."
+    },
+    {
+      "item_id": "N08-E038",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0235:P0004–P0006 попередження висловив Вінсент Олатунджі, якого запис помилково підміняє організацією."
+    },
+    {
+      "item_id": "N08-E039",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0235:P0014 скорочення PII прямо наведено після personal identifiable information."
+    },
+    {
+      "item_id": "N08-E040",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0235:P0009–P0010 прямо описано кібератаки та фінансові втрати від кіберзлочинності в Нігерії."
+    },
+    {
+      "item_id": "N08-E041",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0235:P0006 прямо зазначено, що конференція відбулася в Landmark Event Centre."
+    },
+    {
+      "item_id": "N08-E042",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0235:P0014 прямо сказано, що 85% витоків даних стосуються персональних ідентифікаційних даних."
+    },
+    {
+      "item_id": "N08-E043",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0235:P0014 частку близько 25% приписано сукупно крадіжці особистості та витокам даних, а не лише витокам даних."
+    },
+    {
+      "item_id": "N08-E044",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0007 прямо повідомляє, що Gartner виділив галузеву спеціалізацію розвідувальних даних Group-IB як сильну сторону."
+    },
+    {
+      "item_id": "N08-E045",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0016 прямо перелічує всі зазначені регіони розташування Digital Crime Resistance Centers."
+    },
+    {
+      "item_id": "N08-E046",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0011 і D0219:P0016 прямо описують Threat Intelligence як рішення, яке надає Group-IB."
+    },
+    {
+      "item_id": "N08-E047",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "D0219:P0016 прямо стверджує, що Group-IB пропонує Digital Risk Protection, тому негативна полярність неправильна."
+    },
+    {
+      "item_id": "N08-E048",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0016 прямо називає KuppingerCole серед організацій, які відзначили Group-IB нагородами."
+    },
+    {
+      "item_id": "N08-E049",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0016 прямо включає Americas до регіонів розташування Digital Crime Resistance Centers."
+    },
+    {
+      "item_id": "N08-E050",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0016 прямо включає External Attack Surface Management до переліку рішень Group-IB."
+    },
+    {
+      "item_id": "N08-E051",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "D0219:P0016 прямо стверджує співпрацю Group-IB з Europol."
+    }
+  ]
+}

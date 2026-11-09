@@ -1,0 +1,11 @@
+{
+ "audit_file": "R1_T34",
+ "target_doc_id": "D0320",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never pose risk of» заперечує звʼязок, тоді як у D0320:P0007 зловживання довіреними ШІ-агентами прямо названо серед ризиків, позначених як основні проблеми, тобто звʼязок стверджується як ризик (possible, positive)."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0007 43% бізнес-лідерів, за переказом статті, вказали на розширення поверхні атак як на чинний процес, що відповідає формі actual, positive."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0007 ІТ-керівники попереджають, що шкідливі промпти «could compromise» системи ШІ, тобто стаття подає це як можливість, як і формулювання."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «shuts down» подає вимкнення як чинний факт, а в D0320:P0008 йдеться лише про пропозицію запровадити механізми «kill switch», які вимикали б системи у разі збою чи зловживання (conditional), і щодо цього немає консенсусу."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0320:P0007 близько половини респондентів вважають, що агентні технології «could significantly strengthen» кіберзахист, тобто це можливість, як і у формулюванні."}
+ ]
+}

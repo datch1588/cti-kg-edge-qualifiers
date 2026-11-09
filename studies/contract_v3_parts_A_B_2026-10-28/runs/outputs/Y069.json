@@ -1,0 +1,162 @@
+{
+ "run_id": "Y069",
+ "target_doc_id": "D0445",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "cyberattack", "entity_type": "attack_technique", "aliases": ["cyber operations"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0001", "start": 0, "end": 89, "sha256": "b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0021", "start": 117, "end": 264, "sha256": "f9c646cf7edbea848ccf8dc283d6e727af91dde35f9a4bc1f1e515925c4239d4"}}
+  ]},
+  {"id": "n002", "label": "drone attack", "entity_type": "attack_technique", "aliases": ["drone strike"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 187, "end": 319, "sha256": "f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0004", "start": 90, "end": 176, "sha256": "c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe"}}
+  ]},
+  {"id": "n003", "label": "Iran", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0026", "start": 0, "end": 109, "sha256": "d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5"}}
+  ]},
+  {"id": "n004", "label": "Israel", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0033", "start": 201, "end": 294, "sha256": "b7f3306b527d7f90cbdc2277f42fff99bc7344517cddb74e5811970aa231532d"}}
+  ]},
+  {"id": "n005", "label": "Mexico", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "n006", "label": "United States", "entity_type": "country", "aliases": ["US"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 187, "end": 319, "sha256": "f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0024", "start": 0, "end": 131, "sha256": "a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0"}}
+  ]},
+  {"id": "n007", "label": "California", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 187, "end": 319, "sha256": "f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6"}}
+  ]},
+  {"id": "n008", "label": "Middle East", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0026", "start": 0, "end": 109, "sha256": "d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5"}}
+  ]},
+  {"id": "n009", "label": "South America", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "n010", "label": "US West Coast", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0001", "start": 0, "end": 89, "sha256": "b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5"}}
+  ]},
+  {"id": "n011", "label": "US-Mexico border", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 505, "end": 626, "sha256": "750d152d1c920e454b45c7eb7d86432b95a954e9aebbad23f1933a44a12fad7c"}}
+  ]},
+  {"id": "n012", "label": "ABC News", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}}
+  ]},
+  {"id": "n013", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "n014", "label": "FBI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0004", "start": 90, "end": 176, "sha256": "c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe"}}
+  ]},
+  {"id": "n015", "label": "Governor's Office of Emergency Services", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0027", "start": 144, "end": 309, "sha256": "0944e2e6886110f75be28425a82c723d493a91e728edf2ecd1a0d3680144254c"}}
+  ]},
+  {"id": "n016", "label": "Trump administration", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0025", "start": 88, "end": 175, "sha256": "2dd253d5899518d39394772b7f092613d8f64131192e02c5b7741cb0cbb76d6b"}}
+  ]},
+  {"id": "n017", "label": "US intelligence agencies", "entity_type": "organization", "aliases": ["intelligence agencies"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 145, "end": 211, "sha256": "c6631843f4ae329af47ae54742dd2acb8f319de7d516933bf81e0bf72b563bb3"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0021", "start": 117, "end": 264, "sha256": "f9c646cf7edbea848ccf8dc283d6e727af91dde35f9a4bc1f1e515925c4239d4"}}
+  ]},
+  {"id": "n018", "label": "US law enforcement", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 212, "end": 407, "sha256": "68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066"}}
+  ]},
+  {"id": "n019", "label": "Gavin Newsom", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0027", "start": 144, "end": 309, "sha256": "0944e2e6886110f75be28425a82c723d493a91e728edf2ecd1a0d3680144254c"}}
+  ]},
+  {"id": "n020", "label": "John Cohen", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "n021", "label": "drones", "entity_type": "technology", "aliases": ["unmanned aerial vehicles"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 57, "end": 144, "sha256": "774267428bbe7ded04c7aaaf777699b873dea3b9e70d12598ff92e8852ccc573"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}}
+  ]},
+  {"id": "n022", "label": "Mexican drug cartels", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 145, "end": 211, "sha256": "c6631843f4ae329af47ae54742dd2acb8f319de7d516933bf81e0bf72b563bb3"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n005", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "John Cohen", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "e002", "source": "n003", "target": "n009", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "John Cohen", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0032", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0032", "start": 124, "end": 301, "sha256": "39a8ed50297ce476fad05bdc61cd58cdf26938db153ad1d5ed82a265ff66d715"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n007", "relation_type": "TARGETS", "modality": "planned", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 187, "end": 319, "sha256": "f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0017", "start": 32, "end": 209, "sha256": "da027bfc1b8083f426f025851e90380e0a3a30a6f2b5bf9903427844d7bf2f93"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0019", "start": 0, "end": 233, "sha256": "fd618200aac156d677519bddaf3a478f170c93148f32c975a8a04ad41f2112b6"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0024", "start": 0, "end": 131, "sha256": "a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0035", "start": 0, "end": 174, "sha256": "44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9"}}
+  ]},
+  {"id": "e004", "source": "n003", "target": "n007", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0004", "start": 90, "end": 227, "sha256": "80d29d26d6e91e4fb6fe50570a61f68f31986f8270f8e630ac3e639ac5d35e3a"}}
+  ]},
+  {"id": "e005", "source": "n003", "target": "n007", "relation_type": "TARGETS", "modality": "unknown", "polarity": "positive", "attribution": "officials", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0033", "start": 295, "end": 398, "sha256": "7d6fa19380fa64acaef578f9858229b203e14c69f799b9c0bd08ae2b2edfc61e"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0029", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0029", "start": 0, "end": 148, "sha256": "eeb30184f41fdbd7e93d55e9ec9df21a11d2bf471a1b5356c0db1ddf848b3a47"}}
+  ]},
+  {"id": "e006", "source": "n003", "target": "n008", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Iranian drone strikes against targets in the Middle East in response to US actions", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0026", "start": 0, "end": 109, "sha256": "d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5"}}
+  ]},
+  {"id": "e007", "source": "n003", "target": "n001", "relation_type": "USES", "modality": "possible", "polarity": "positive", "attribution": "Intelligence agencies", "event_time": "", "event_scope": "possible Iranian cyber operations against American systems, companies, or infrastructure", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0021", "start": 117, "end": 264, "sha256": "f9c646cf7edbea848ccf8dc283d6e727af91dde35f9a4bc1f1e515925c4239d4"}}
+  ]},
+  {"id": "e008", "source": "n003", "target": "n002", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Iranian drone strikes against targets in the Middle East in response to US actions", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0026", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0026", "start": 0, "end": 109, "sha256": "d5d8a418c6fed975c037082c3b0d6b8b618808d2865c30df5dbb1701996d5df5"}}
+  ]},
+  {"id": "e009", "source": "n003", "target": "n002", "relation_type": "USES", "modality": "planned", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0017", "start": 32, "end": 209, "sha256": "da027bfc1b8083f426f025851e90380e0a3a30a6f2b5bf9903427844d7bf2f93"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0035", "start": 0, "end": 174, "sha256": "44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9"}}
+  ]},
+  {"id": "e010", "source": "n003", "target": "n002", "relation_type": "USES", "modality": "possible", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0004", "start": 90, "end": 176, "sha256": "c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe"}}
+  ]},
+  {"id": "e011", "source": "n003", "target": "n021", "relation_type": "USES", "modality": "planned", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0019", "start": 0, "end": 233, "sha256": "fd618200aac156d677519bddaf3a478f170c93148f32c975a8a04ad41f2112b6"}}
+  ]},
+  {"id": "e012", "source": "n004", "target": "n003", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "US intelligence officials", "event_time": "", "event_scope": "hypothetical US or Israeli strikes against Iran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0033", "start": 95, "end": 294, "sha256": "ddd3e9566f24497e926941ee5ff1e2508ce27856bf2b69a4451bddfda785024b"}}
+  ]},
+  {"id": "e013", "source": "n006", "target": "n003", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "FBI", "event_time": "", "event_scope": "hypothetical US strikes against Iran named as condition in the FBI alert", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0015", "start": 187, "end": 319, "sha256": "f93d0151d3e07c83920bb21132c36dd72cdd5270150f7fbc3ad6e0edc8336ac6"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0017", "start": 211, "end": 303, "sha256": "53666ac44b678f7182df0dca07caef4c1611f91a24969bb798646f2b23a1c40c"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0024", "start": 0, "end": 131, "sha256": "a25c510bd6467d9e93658d629b22cffe02fc05fca1d72e14e899a24e819298c0"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0035", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0035", "start": 0, "end": 174, "sha256": "44fcbea67e358e06d4726507ed72420c269f24b6ac181c4889c4f4dce76d71d9"}}
+  ]},
+  {"id": "e014", "source": "n006", "target": "n003", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "US intelligence officials", "event_time": "", "event_scope": "hypothetical US or Israeli strikes against Iran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0033", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0033", "start": 95, "end": 294, "sha256": "ddd3e9566f24497e926941ee5ff1e2508ce27856bf2b69a4451bddfda785024b"}}
+  ]},
+  {"id": "e015", "source": "n007", "target": "n010", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0001", "start": 0, "end": 89, "sha256": "b08232f7a9e2f93f538ee0f068293cee80ce8f3b59562b297bbf5ff9eb6911d5"}}
+  ]},
+  {"id": "e016", "source": "n014", "target": "n002", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "at the end of February", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0004", "start": 90, "end": 176, "sha256": "c5073fb35c9f6cc0cbbb5659a0ffebf21517ad35b1de74b5b098030880f7cffe"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0025", "start": 0, "end": 87, "sha256": "f986542ea04848fd63fc50eb1cb5360e632198e9203850e9bc30ab9380474ba1"}}
+  ]},
+  {"id": "e017", "source": "n014", "target": "n003", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "at the end of February", "event_scope": "FBI alert on alleged Iranian drone attack plan against California from a vessel near the US coast", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0017", "start": 32, "end": 209, "sha256": "da027bfc1b8083f426f025851e90380e0a3a30a6f2b5bf9903427844d7bf2f93"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0022", "start": 54, "end": 239, "sha256": "a50c07484ad21b2e38a5e267e3e923fc0993d3f6df7bc5f444138ceb7d3928dd"}},
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0025", "start": 0, "end": 87, "sha256": "f986542ea04848fd63fc50eb1cb5360e632198e9203850e9bc30ab9380474ba1"}}
+  ]},
+  {"id": "e018", "source": "n015", "target": "n007", "relation_type": "PROTECTS", "modality": "planned", "polarity": "positive", "attribution": "office of Governor Gavin Newsom", "event_time": "", "event_scope": "California security preparations after FBI warning", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0027", "start": 144, "end": 362, "sha256": "c52c5d6b6c6e727f190ba603f6d5f0e4bcf245e2c99b4b7d62fe42e64c1d48b7"}}
+  ]},
+  {"id": "e019", "source": "n016", "target": "n003", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Trump administration operations against Iran", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0025", "start": 88, "end": 175, "sha256": "2dd253d5899518d39394772b7f092613d8f64131192e02c5b7741cb0cbb76d6b"}}
+  ]},
+  {"id": "e020", "source": "n017", "target": "n001", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "possible Iranian cyber operations against American systems, companies, or infrastructure", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0021", "start": 117, "end": 264, "sha256": "f9c646cf7edbea848ccf8dc283d6e727af91dde35f9a4bc1f1e515925c4239d4"}}
+  ]},
+  {"id": "e021", "source": "n022", "target": "n018", "relation_type": "TARGETS", "modality": "planned", "polarity": "positive", "attribution": "bulletin from September 2025", "event_time": "", "event_scope": "cartel leaders' approved drone attacks against US law enforcement and military personnel near the US-Mexico border", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 212, "end": 407, "sha256": "68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066"}}
+  ]},
+  {"id": "e022", "source": "n022", "target": "n002", "relation_type": "USES", "modality": "planned", "polarity": "positive", "attribution": "bulletin from September 2025", "event_time": "", "event_scope": "cartel leaders' approved drone attacks against US law enforcement and military personnel near the US-Mexico border", "evidence": [
+   {"role": "TARGET", "doc_id": "D0445", "paragraph_id": "D0445:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0445:P0030", "start": 212, "end": 407, "sha256": "68518a76cd7fd057735d4ce62a600e402060d02975c25b2aa4c50ad2b1c80066"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

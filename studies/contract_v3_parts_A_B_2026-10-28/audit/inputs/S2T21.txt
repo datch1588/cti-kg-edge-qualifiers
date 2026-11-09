@@ -1,0 +1,152 @@
+AUDIT_FILE: S2T21
+TARGET_DOC_ID: D0420
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0420
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://lansinginstitute.org/2026/03/13/disinformation-and-cyber-threat-narratives-in-kosovo-during-the-iran-crisis/
+TITLE_SHA256: 10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+BEGIN_DOCUMENT
+[D0420:P0001] sha256:10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+[D0420:P0002] sha256:58d8c3bc898617135423140b77d85d024f89f34f7afe5d93bae02e803517124d
+[D0420:P0003] sha256:dc94452fc6b9734a2a812525408002aa1338ec7a7b9b0c5bc3f5b5e8475104a9
+[D0420:P0004] sha256:81ee68c086ba15d1751aadaee43d535fe5c9d6936b1f2a3d0151c7b23582c65e
+[D0420:P0005] sha256:951af6a93cfef1c5feddc23a2d6f9fa2aa5563897217c94e0971594611f14431
+[D0420:P0006] sha256:ad799c311042eacb4447abf0817742500e4fb932439db3147d4dd9763784c207
+[D0420:P0007] sha256:f4f43f5a4257ace9c91feaff44d1d9baed362c5cb44ab8c20ab630dc5b5db51d
+[D0420:P0008] sha256:0716d9e9f90d27c29260ddaf2574706d2065870d1113d2e10ae283eebe2884d3
+[D0420:P0009] sha256:5af3fb4073371961f37ba710a74b6d2dcbdffc02c1a5939320d44e25647e2b05
+[D0420:P0010] sha256:d54e08fedad077b284cac7f859add80007ca103332b53b1479654b43df789110
+[D0420:P0011] sha256:7ac36f13b55ebe8e6d790aa85af651fc71d44f2b1b110a7c8de868c4430b58bb
+[D0420:P0012] sha256:4bf4b3490e84ae48935aef2ec193f4b82b754730643566b3523dece380b05cd5
+[D0420:P0013] sha256:6ca561b00c1bc4e5a2c8e7f3599fd6702ddc8711ecc899b825330ecc0eab411a
+[D0420:P0014] sha256:3eb9f0f0d777cfaa9ea5ce100dccdc74625032c9b8f3ea8dff69771d89d8fe45
+[D0420:P0015] sha256:795234364348172be9e1e281f2bae25bac07b50fd5a4efb33eb62b8d63616934
+[D0420:P0016] sha256:4d6a77bed9e8cd0df940da6cc2371e5d5850078282a0c1871943c1eed2ace4a5
+[D0420:P0017] sha256:cc7aadf70a06772717f7ca35caccd373fc5954359d65f052249a5a10b3bc4d01
+[D0420:P0018] sha256:73c3aa1926ee5664b83f83615f0e11109a9505c02a0832ee285ba2938f7e7c81
+[D0420:P0019] sha256:aa21127771b033a7d7daa56da9e4c554911e896424b2c4ae6d7ad0597b53ccf9
+[D0420:P0020] sha256:e156e164ba4002854556abd1408afb5bcd82f535a97c8bdcebd93346d8bbb254
+[D0420:P0021] sha256:b75b4a8d0bda312c4000486a6b735fb23c3d413909eb86540d7d42001b402545
+[D0420:P0022] sha256:597d787a194109c02acfabf2f4c2abca8005d9d6b8b42812dd5f532b35879835
+[D0420:P0023] sha256:2d697ef846194e11c7b86d65527609ba8addad5c504ccf91e70e5ce8f7345b6c
+[D0420:P0024] sha256:cc87fa9d4179120c1798a63d6f9f73c7a3d610231d17d6a0a8ed93a7ecbb3887
+[D0420:P0025] sha256:d409bff127ba944e8fa84b99778959736c495851e154599ab076cef176cc12fc
+[D0420:P0026] sha256:0c39a20139fbef7425d9bd9bb25bb663daa0002930e2bcf9e71d02b20c42b521
+[D0420:P0027] sha256:d2fe71739d05cd676faeb0a251c55eadf8ed56a5dbdc5363210cfde18f010edc
+[D0420:P0028] sha256:0acb8a6adf0984895a1b6f07132e57858d783c54caae7fdd2728ab52318af28f
+[D0420:P0029] sha256:22d7dcb74103af19050cf97b02fa86c63a10e69ece92cf2e59719237708d3bd6
+[D0420:P0030] sha256:7b01be1d45344f23626aea9d4c88e6f8b2b792ba8daaf4b2b61c04e3fd6759b6
+[D0420:P0031] sha256:0860af3b0a67a408940ed4153afebb52dd29f8928fc549b75217606f8bed1fcb
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (58)
+E001: «Serbia» — targets → «Kosovo» | форма: actual, positive
+E002: «Kosovo» — has suboptimal efforts to combat → «propaganda and disinformation» | форма: actual, positive
+E003: «Russia» — targets → «Kosovo» | форма: actual, positive
+E004: «Camp Bondsteel» — is located in → «Kosovo» | форма: actual, positive
+E005: «Cyber units associated with Iranian security institutions» — targets → «infrastructure» | форма: actual, positive
+E006: «Camp Bondsteel» — is located near → «Ferizaj» | форма: actual, positive
+E007: «Robert Lansing Institute» — published → «Disinformation and cyber threat narratives in Kosovo during the Iran crisis» | форма: actual, positive
+E008: «Russia» — uses → «disinformation» | форма: possible, positive
+E009: «Israel» — targets → «Iran» | форма: actual, positive
+E010: «Israel» — conducted strike against → «Iran» | форма: actual, positive
+E011: «Cyber units associated with Iranian security institutions» — targets → «government institutions» | форма: actual, positive
+E012: «Kosovo» — located in → «Western Balkans» | форма: actual, positive
+E013: «Iranian information warfare» — portrays as destabilizing forces → «Western military alliances» | форма: actual, positive
+E014: «Serbia» — generates narratives projecting instability in → «Kosovo» | форма: actual, positive
+E015: «hybrid strategies» — involve → «economic pressure» | форма: actual, positive
+E016: «Camp Bondsteel» — located in → «Kosovo» | форма: actual, positive
+E017: «Iran» — uses → «information operations» | форма: actual, positive
+E018: «hybrid strategies» — involve → «cyber operations» | форма: actual, positive
+E019: «NATO» — operates → «KFOR» | форма: actual, positive
+E020: «Iran» — incorporated into its strategic toolkit → «cyber capabilities and information operations» | форма: actual, positive
+E021: «Cyber units associated with Iranian security institutions» — targets → «political communication networks» | форма: actual, positive
+E022: «disinformation campaigns» — combine real events with → «exaggerated interpretations» | форма: actual, positive
+E023: «Iran» — targets → «Israel» | форма: actual, positive
+E024: «Russia» — joined disinformation about insecure environment in → «Kosovo» | форма: actual, positive
+E025: «Camp Bondsteel» — is → «United States military installation» | форма: actual, positive
+E026: «Cyber units associated with Iranian security institutions» — uses → «cyber operations» | форма: actual, positive
+E027: «Serbia» — uses → «Psychological operations» | форма: actual, positive
+E028: «Security Intelligence Agency» — part of → «Serbia» | форма: actual, positive
+E029: «Disinformation and cyber threat narratives in Kosovo during the Iran crisis» — was published on → «March 13, 2026» | форма: actual, positive
+E030: «Kosovo» — mitigates → «disinformation» | форма: recommended, negative
+E031: «KFOR» — is → «NATO-led peacekeeping mission» | форма: actual, positive
+E032: «Russia» — uses → «Psychological operations» | форма: actual, positive
+E033: «Aleksandar Vulin» — declared Serbia should act toward Kosovo as Israel acted toward → «Iran» | форма: actual, positive
+E034: «online narratives» — link Western military infrastructure in Kosovo to → «global conflicts in the Middle East» | форма: actual, positive
+E035: «Maria Zakharova» — advised Russian citizens not to travel to → «Kosovo» | форма: actual, positive
+E036: «Russia» — generates narratives projecting instability in → «Kosovo» | форма: actual, positive
+E037: «Russia» — generates narratives projecting instability in → «Balkan region» | форма: actual, positive
+E038: «propaganda narratives» — portray as potential strategic target → «Camp Bondsteel» | форма: actual, positive
+E039: «Maria Zakharova» — advised Russian citizens not to travel to → «Kosovo» | форма: possible, positive
+E040: «Serbia» — generates narratives projecting instability in → «Balkan region» | форма: actual, positive
+E041: «Maria Zakharova» — warns about → «Kosovo» | форма: actual, positive
+E042: «Hybrid strategies» — uses → «information warfare» | форма: actual, positive
+E043: «Aleksandar Vulin» — is former director of → «Serbia's Security Intelligence Agency» | форма: actual, positive
+E044: «cyber units associated with Iranian security institutions» — combine technical cyber operations with → «coordinated messaging campaigns» | форма: actual, positive
+E045: «social media platforms» — amplify → «disinformation» | форма: actual, positive
+E046: «Russia» — uses → «disinformation» | форма: actual, positive
+E047: «cyber units associated with Iranian security institutions» — are linked to digital operations targeting → «government institutions, infrastructure, and political communication networks» | форма: actual, positive
+E048: «Aleksandar Vulin» — leads → «Security Intelligence Agency» | форма: actual, positive
+E049: «hybrid strategies» — involve → «information warfare» | форма: actual, positive
+E050: «Iranian information warfare» — focuses on undermining trust in → «Western institutions» | форма: actual, positive
+E051: «Camp Bondsteel» — functions as logistical and operational center for → «KFOR» | форма: actual, positive
+E052: «Iran» — uses → «cyber capabilities» | форма: actual, positive
+E053: «Russia» — uses → «Psychological operations» | форма: actual, negative
+E054: «Kosovo» — located in → «Balkans» | форма: actual, positive
+E055: «Kosovo» — mitigates → «disinformation» | форма: recommended, positive
+E056: «United States» — operates → «Camp Bondsteel» | форма: actual, positive
+E057: «Serbia» — targets → «Kosovo» | форма: recommended, positive
+E058: «Hybrid strategies» — uses → «cyber operations» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

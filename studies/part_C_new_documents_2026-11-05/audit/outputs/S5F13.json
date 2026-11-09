@@ -1,0 +1,32 @@
+{
+ "audit_file": "S5F13",
+ "target_doc_id": "D0549",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: сервіс Wazuh AI analyst поєднує Wazuh Cloud із передовими моделями машинного навчання; це подано як чинну функцію."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Wazuh поєднує можливості SIEM і XDR; це подано як чинну властивість платформи."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: Wazuh використовує свої можливості, зокрема File Integrity Monitoring, для виявлення; це подано як чинну функцію."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: можливість vulnerability detection виявляє CVE, використовуючи дані платформи Wazuh CTI."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: у прикладі Wazuh виявляє виконуваний файл програми-вимагача Cephalus; це подано як продемонстровану здатність."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: можливість Wazuh vulnerability detection виявляє відомі CVE в ОС і встановленому ПЗ."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що Wazuh поєднує можливості SIEM (P0006), тож полярність negative не відповідає тексту."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: Wazuh пропонує сервіс Wazuh AI analyst."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: сервіс поєднує Wazuh Cloud із передовими моделями машинного навчання."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: Claude Haiku інтегровано в Wazuh dashboard; інтеграцію продемонстровано як чинну."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: malware detection названо серед можливостей, які використовує Wazuh."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент Wazuh можна розгорнути на Windows; це здатність, тобто actual."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: Wazuh пропонує сервіс Wazuh AI analyst."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0023–P0024: Wazuh надає можливість vulnerability detection."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0026: Wazuh пропонує можливість Security Configuration Assessment."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: Claude LLM інтегровано в Wazuh dashboard."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006, P0016, P0028: Wazuh надає можливості для побудови кіберстійкості й допомагає втілювати її на практиці."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент Wazuh можна розгорнути на Linux."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0024: можливість виявлення вразливостей у Wazuh використовує інформацію з платформи Wazuh CTI."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: сервіс AI analyst поєднує Wazuh Cloud з ML-моделями і призначений для користувачів Wazuh Cloud."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: Wazuh поєднує можливості SIEM і XDR."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: агент Wazuh можна розгорнути на macOS."},
+  {"item_id": "E023", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: за P0017 агент Wazuh підтримує macOS (його можна там розгорнути), а не macOS підтримує агент."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: сервіс Wazuh AI analyst поєднує Wazuh Cloud із моделями машинного навчання."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "P0018: Wazuh може виявляти індикатори компрометації; це здатність, тобто actual."},
+  {"item_id": "E026", "triple_verdict": "C", "form_verdict": "C", "reason": "P0020: Wazuh автоматично видаляє виконуваний файл Cephalus з кінцевої точки, тобто нейтралізує загрозу."}
+ ]
+}

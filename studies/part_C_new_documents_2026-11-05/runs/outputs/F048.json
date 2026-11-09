@@ -1,0 +1,66 @@
+{
+  "run_id": "F048",
+  "target_doc_id": "D0175",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "Kuwait",
+      "entity_type": "country",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0044", "start": 0, "end": 85, "sha256": "03022ccf3a09e98a3430eec876aafd5373ce58ef49376de5fa906f8360703ffe"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "defense systems",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0045", "start": 0, "end": 167, "sha256": "9ce0c89e8253365f730dace0ace4a7f500506fb8cbe8f725d60392237a43fd11"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "cyber threats",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0045", "start": 29, "end": 166, "sha256": "0846aa6e502c880da74f863ad5bd947152a0dac6500a9cff2a750b255ca680d3"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n003",
+      "target": "n001",
+      "relation_type": "AFFECTS",
+      "modality": "possible",
+      "polarity": "positive",
+      "attribution": "Mohammed Al-Rashed, Al Rai",
+      "event_time": "",
+      "event_scope": "US-Israeli war on Iran",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0044", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0044", "start": 0, "end": 85, "sha256": "03022ccf3a09e98a3430eec876aafd5373ce58ef49376de5fa906f8360703ffe"}},
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0045", "start": 0, "end": 167, "sha256": "9ce0c89e8253365f730dace0ace4a7f500506fb8cbe8f725d60392237a43fd11"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n003",
+      "target": "n002",
+      "relation_type": "AFFECTS",
+      "modality": "possible",
+      "polarity": "positive",
+      "attribution": "Mohammed Al-Rashed, Al Rai",
+      "event_time": "",
+      "event_scope": "US-Israeli war on Iran",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0175", "paragraph_id": "D0175:P0045", "quote_ref": {"match": "exact", "paragraph_id": "D0175:P0045", "start": 0, "end": 167, "sha256": "9ce0c89e8253365f730dace0ace4a7f500506fb8cbe8f725d60392237a43fd11"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

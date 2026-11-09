@@ -1,0 +1,148 @@
+AUDIT_FILE: S3N19
+TARGET_DOC_ID: D0215
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0215
+PUBLICATION_DATE: 2026-05-06
+SOURCE_URL: https://today.rtl.lu/news/world/boycott-hit-70th-eurovision-celebrated-under-high-security-1024712449
+TITLE_SHA256: c6c5afffa516c4c44d0fc48332d832771be1012efad25bf1703e34c293e12e35
+BEGIN_DOCUMENT
+[D0215:P0001] sha256:c6c5afffa516c4c44d0fc48332d832771be1012efad25bf1703e34c293e12e35
+[D0215:P0002] sha256:3d5b25960d5ea2abc28330ad7a50033e6e524e9e369ad833bb695c514f2915ec
+[D0215:P0003] sha256:75a5e3abc79eb3e9426cfdfef4381f14768b614f3261ea6b92151a19c2bfacd0
+[D0215:P0004] sha256:8cee8314720c452002c04ffafe7642888c3da46f3a0936cc3fe219663c1d1eea
+[D0215:P0005] sha256:685840d5cf595c142fb4aec32a2a2a9cf88696e2a4d251f763779d5ee382905a
+[D0215:P0006] sha256:395a7919d6a4a32cfd32c3977ac5a6db55912010d12f9276b7157502dcb3a714
+[D0215:P0007] sha256:281b8a29d19045ce02d2cfb7832124ed0316eaebd9b83885021b44bfd1894b5c
+[D0215:P0008] sha256:d170f98293468bf45d546f4fb3d17bb9e78fe6fff04d3c073f1a12d8c887a520
+[D0215:P0009] sha256:5168de1e1030a5d0ef06deff583cb07372219e9eb3205e64c2bf6ef5bf4bded4
+[D0215:P0010] sha256:ac3fb81508ee7b5873b1beb48c3f1626af2847bed6f8454f6b21cd449eea19ea
+[D0215:P0011] sha256:bcc1978842534053af838ae6e0ac3fb45a17c343ea9e15a8e812706bd6e26dd0
+[D0215:P0012] sha256:251547ba8bd123dd98cc4727f1400d42579274dbf0d49b37335b55d5ae116dc7
+[D0215:P0013] sha256:8a8ab4b2560aa6acc8db49e75a100cba0e19768b9868709b4e4bd4b01515d756
+[D0215:P0014] sha256:41f3c442088731ddde6f93c2b31d2cd6c7e025114400768dab0f4dfb0e23f0ae
+[D0215:P0015] sha256:770d28d6dfcd3663c2e9fd4f69e438963be5659f17941b5281be815970d1136d
+[D0215:P0016] sha256:f662bbdcf4b0dccd02189365a7f0de50ac880d975a11984d97ac74e2afa1249e
+[D0215:P0017] sha256:c57f17439675c9aa788b9e369a46a65544c7a9023634c783fa37511055ea8d37
+[D0215:P0018] sha256:223a4f73869b5ba91e10d25d63fd30248cce6262472b3ae36f9ef59089ff2c1b
+[D0215:P0019] sha256:2d75bdcae36d0425a32fc1cab5b9359cfd02fbd75a879582d08d76f464a2822b
+[D0215:P0020] sha256:fcb0edfbfa97efb3769f01b7b817fb9df222b86f05daae2e2e817a5e853a8987
+[D0215:P0021] sha256:ecb6fc1730c1d7968ccecb00f72e3f74738b65a43f309d3d86a340dd32eed13e
+[D0215:P0022] sha256:509f0a0414f41e6d30bf709c76b3c6352f2ca429cc1088d7cac21577f78e2f3b
+[D0215:P0023] sha256:9a243e89c046998447c5b4ad42bfc8d75644e31a225ad48e94e75dfbcada760f
+[D0215:P0024] sha256:0daefb428d3e56dc447e04bc577b666d246082ec9a7d0da62eee29987c50559d
+[D0215:P0025] sha256:d952075dbf12d7ca334c9be85edfd2adcd72205a1aa88083e11ebfcaf0339bb5
+[D0215:P0026] sha256:66d9185fc453523776ce4330546b73a6fac51f2823c1a8bfc81ebf44138b8c8d
+[D0215:P0027] sha256:f305e45ab25d41112d21c99be7c853e853c794bac72a215bd379c24c1400979a
+[D0215:P0028] sha256:cb02569c78984be8834fb0562cb32d23e44f44d4c32d3f041cbf1342b0e97a03
+[D0215:P0029] sha256:b244a1d9874a4a2bcdf76fbbac288a0036071eee9ce3ffe03ac7890ed7106a16
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (56)
+E001: «Boycott-hit 70th Eurovision celebrated under high security» — was published by → «AFP» | форма: actual, positive
+E002: «new Eurovision rules» — were approved in → «2024» | форма: actual, positive
+E003: «Eurovision Song Contest 70th edition» — is held at → «Stadthalle» | форма: actual, positive
+E004: «Boycott-hit 70th Eurovision celebrated under high security» — was published on → «06.05.2026» | форма: actual, positive
+E005: «Ireland» — boycotts → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E006: «More than 1,000 artists» — urged boycott of → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E007: «Romania» — returns to → «Eurovision Song Contest» | форма: actual, positive
+E008: «Eurovision Song Contest» — located in → «Vienna» | форма: planned, positive
+E009: «Austria» — mitigates → «cyber threats» | форма: actual, positive
+E010: «Vienna police» — protects → «Eurovision Song Contest» | форма: actual, positive
+E011: «Eurovision Song Contest» — located in → «Vienna» | форма: planned, negative
+E012: «Eurovision Song Contest 70th edition» — faces growing risk of → «cyberattacks» | форма: actual, positive
+E013: «Eurovision Song Contest» — located in → «Vienna» | форма: actual, negative
+E014: «Vienna police» — protects → «Eurovision Song Contest» | форма: planned, positive
+E015: «October 7, 2023, attack» — attributed to → «Hamas» | форма: actual, positive
+E016: «Dieter Csefan» — is deputy police chief of → «Vienna police» | форма: actual, positive
+E017: «cyber threats» — mitigates → «Austria» | форма: actual, positive
+E018: «European Broadcasting Union (EBU)» — organises → «Eurovision Song Contest» | форма: actual, positive
+E019: «Vienna» — is capital of → «Austria» | форма: actual, positive
+E020: «US intelligence» — mitigates → «terror plot» | форма: actual, positive
+E021: «Taylor Swift» — cancelled concerts in → «Austria» | форма: actual, positive
+E022: «Dieter Csefan» — warns about → «cyberattacks» | форма: actual, positive
+E023: «European Broadcasting Union» — operates → «Eurovision Song Contest» | форма: actual, positive
+E024: «the Netherlands» — boycotts → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E025: «Dieter Csefan» — member of → «Vienna police» | форма: actual, positive
+E026: «Moldova» — returns to → «Eurovision Song Contest» | форма: actual, positive
+E027: «Austria» — works with FBI to address → «cyber threats» | форма: actual, positive
+E028: «Eurovision Song Contest 70th edition» — brings together participants from → «35 countries» | форма: actual, positive
+E029: «Austria» — hosted Eurovision → «11 years ago» | форма: actual, positive
+E030: «Delta Goodrem» — represents → «Australia» | форма: actual, positive
+E031: «Eurovision Song Contest» — located in → «Stadthalle» | форма: planned, positive
+E032: «Dieter Csefan» — member of → «Vienna police» | форма: possible, positive
+E033: «Eurovision Song Contest 70th edition» — is held in → «Vienna» | форма: actual, positive
+E034: «Galina Miazhevich» — is expert at → «Cardiff University» | форма: actual, positive
+E035: «Eurovision authorities» — scanned equipment transported to → «Stadthalle» | форма: actual, positive
+E036: «October 7, 2023, attack» — targets → «Israel» | форма: actual, positive
+E037: «Eurovision Song Contest» — located in → «Vienna» | форма: actual, positive
+E038: «new Eurovision rules» — were approved in → «2024» | форма: possible, positive
+E039: «Hamas» — carried out attack on → «Israel» | форма: actual, positive
+E040: «Spain» — boycotts → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E041: «terror plot» — was foiled with help of → «US intelligence» | форма: actual, positive
+E042: «Hamas» — attacked Israel on → «October 7, 2023» | форма: actual, positive
+E043: «Israel» — launched military offensive in → «Gaza» | форма: actual, positive
+E044: «Austria» — works closely with → «FBI» | форма: actual, positive
+E045: «Taylor Swift» — cancelled concerts in → «2024» | форма: actual, positive
+E046: «Alexandra Capitanescu» — represents → «Romania» | форма: actual, positive
+E047: «Slovenia» — boycotts → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E048: «Israel» — participates in → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E049: «Eurovision authorities» — vetted profiles of → «16,000 staff» | форма: actual, positive
+E050: «Boycott-hit 70th Eurovision celebrated under high security» — was republished by → «RTL Today» | форма: actual, positive
+E051: «Vienna» — located in → «Austria» | форма: actual, positive
+E052: «Iceland» — boycotts → «Eurovision Song Contest 70th edition» | форма: actual, positive
+E053: «Bulgaria» — returns to → «Eurovision Song Contest» | форма: actual, positive
+E054: «Eurovision Song Contest» — located in → «Stadthalle» | форма: actual, positive
+E055: «FBI» — mitigates → «cyber threats» | форма: actual, positive
+E056: «Dieter Csefan» — cited growing risk of → «cyberattacks» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

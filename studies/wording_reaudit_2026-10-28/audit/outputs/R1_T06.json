@@ -1,0 +1,9 @@
+{
+ "audit_file": "R1_T06",
+ "target_doc_id": "D0598",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0598:P0002 автори прямо кажуть, що порівнюють ймовірність кампаній Wocao і Dream Job («we ... compare the likelihood of the Wocao and Dream Job MITRE campaigns»), тобто як здійснений факт, і це відповідає формулюванню без маркерів."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0598:P0002 стаття стверджує як факт, що автори пропонують open-source інструмент («(3) proposing an open-source tool»), і це відповідає формулюванню без маркерів."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання «never carry out» заперечує звʼязок, а в D0598:P0002 стаття стверджує, що Advanced Persistent Threats проводять кампанії, зокрема операцію Dream Job («carry out attack campaigns - e.g. operations Dream Job»), тобто полярність має бути positive."}
+ ]
+}

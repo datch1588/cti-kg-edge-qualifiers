@@ -1,0 +1,33 @@
+{
+ "audit_file": "T34",
+ "target_doc_id": "D0320",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: кіберзлочинці використовують ШІ, щоб «enhance phishing attacks», подано як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: у контексті агентних ШІ-систем «lack of auditability» названо серед головних ризиків, подано як чинний стан."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: «abuse of trusted AI agents» названо ризиком агентних ШІ-систем, подано як чинний стан."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: дослідження опитало 3 700 бізнес- та ІТ-керівників."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: кіберзлочинці посилюють за допомогою ШІ свої фішингові атаки, тобто проводять їх, і це подано як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0001–P0002: «TrendAI study», «TrendAI Report» — у статті це дослідження TrendAI."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0003: серед опитаних було 200 респондентів з Індії."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: кіберзлочинці автоматизують розвідку (reconnaissance) за допомогою ШІ, тобто ведуть її, і це подано як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "P0008: «kill switch» лише пропонують запровадити для вимкнення систем у разі збою чи зловживання, тож це запропонований і умовний механізм, а не здійснений факт (actual)."},
+  {"item_id": "E010", "triple_verdict": "I", "form_verdict": "—", "reason": "Суб'єктом стоїть компанія TrendAI замість її дослідження, а «reports on» — неконкретний зв'язок: кіберзлочинців лише згадано в описі ландшафту загроз."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: приблизно половина ІТ-менеджерів підтримує запровадження «kill switch»."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: шкідливі промпти «could compromise AI systems» — вплив подано як можливість."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004: розгортання ШІ, що випереджає механізми контролю, «creating vulnerabilities across enterprise systems»."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: кіберзлочинці використовують ШІ, щоб «automate reconnaissance», подано як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: в абзаці про агентний ШІ 43% бізнес-лідерів вказали на «expanding attack surface», подано як поточний процес."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: кіберзлочинці дедалі частіше використовують ШІ."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "I", "reason": "P0007: респонденти вважають, що агентний ШІ «could significantly strengthen cyber defence», тобто це можливість (possible), а не факт (actual)."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0004: майже чотири з п'яти фірм в Індії схвалили розгортання ШІ під тиском, попри відомі ризики."},
+  {"item_id": "E019", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: у P0007 шкідливі промпти можуть скомпрометувати ШІ-системи, а не навпаки."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: «exposure of sensitive data» названо ризиком агентних ШІ-систем, подано як чинний стан."},
+  {"item_id": "E021", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006: «cybercriminals are increasingly leveraging AI»."},
+  {"item_id": "E022", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0011: новину про дослідження TrendAI подало агентство UNI (UNI India)."},
+  {"item_id": "E023", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002: у шапці новини «Bengaluru, April 8 (UNI)»."},
+  {"item_id": "E024", "triple_verdict": "C", "form_verdict": "I", "reason": "P0007: шкідливі промпти лише «could compromise AI systems», тобто це можливість (possible), а не факт (actual)."},
+  {"item_id": "E025", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002/P0011: про дослідження повідомлено 8 квітня 2026 року (UNI India 2026.04.08)."},
+  {"item_id": "E026", "triple_verdict": "C", "form_verdict": "I", "reason": "P0008 не заперечує, що «kill switch» вимикає системи, а описує це як його призначення, тож негативна полярність хибна (до того ж механізм лише пропонують, і діє він за умови)."},
+  {"item_id": "E027", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005: реактивна позиція безпеки в багатьох випадках призводить до появи «shadow» ШІ-інструментів у підприємствах."}
+ ]
+}

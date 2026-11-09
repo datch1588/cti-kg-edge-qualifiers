@@ -1,0 +1,115 @@
+{
+ "run_id": "Y099",
+ "target_doc_id": "D0520",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Japan", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0005", "start": 110, "end": 228, "sha256": "52ddcbe56ba962489001f1ba17a33ab980f9bcbb61d859d2bccaaf8eded6a50d"}}
+  ]},
+  {"id": "n002", "label": "Asia", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 0, "end": 120, "sha256": "6e973f966b93ab53d5173f6c91f998513fb911e3046e10bad2c98b6f727f105e"}}
+  ]},
+  {"id": "n003", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0008", "start": 0, "end": 94, "sha256": "183e3b2d80f79a4e9daac4d1ec9c6a1157425b9f42aad5d303eccd08bbf0ff66"}}
+  ]},
+  {"id": "n004", "label": "AI Platform Development Division", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0018", "start": 0, "end": 93, "sha256": "4f8902fc99ac4bd44a6dd890058f522a8ccee49ca86a710b4ba5d48fe44693ef"}}
+  ]},
+  {"id": "n005", "label": "Blackpanda", "entity_type": "organization", "aliases": ["BLACKPANDA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 0, "end": 120, "sha256": "6e973f966b93ab53d5173f6c91f998513fb911e3046e10bad2c98b6f727f105e"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0022", "start": 0, "end": 32, "sha256": "13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511"}}
+  ]},
+  {"id": "n006", "label": "Blackpanda Japan", "entity_type": "organization", "aliases": ["BLACKPANDA JAPAN K.K."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0001", "start": 0, "end": 109, "sha256": "bfa99ccacce0314a81b9a7c8fe15dc79d8cbd500b8ad424a21f1bf1bb0a57bbe"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0004", "start": 31, "end": 193, "sha256": "cfb88e2913e592f91e04b1d8ab8b1d24ed39aba79bdabe436646ed1dd5592e53"}}
+  ]},
+  {"id": "n007", "label": "Lloyd's of London", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 0, "end": 66, "sha256": "30eb131bfe40ee0e1be95e459262232e054d8ae84960278f3c64307dd11632b7"}}
+  ]},
+  {"id": "n008", "label": "SoftBank Corp", "entity_type": "organization", "aliases": ["SoftBank", "SoftBank Corp."], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0004", "start": 121, "end": 219, "sha256": "17670e3f30958beb2dc7ba1a27510ae3a560a7709e8115aa3d3a6f080541f82a"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0024", "start": 0, "end": 55, "sha256": "03fdbdb0d5b1259acb46cd79ee31cb7469c413bcc92a1af35c5d6a548e006b1c"}}
+  ]},
+  {"id": "n009", "label": "A2I", "entity_type": "other", "aliases": ["Assurance-to-Insurance"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 189, "end": 262, "sha256": "cff57dec3d3faea5f134d763b07b54e1cedddec4d5cf252281165d6a713c7e95"}}
+  ]},
+  {"id": "n010", "label": "cyber insurance", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 401, "end": 575, "sha256": "f47e7ba0ceffb403ae0020605d72103e101af48700cdce3a09759f57f5b96518"}}
+  ]},
+  {"id": "n011", "label": "incident response", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0012", "start": 0, "end": 129, "sha256": "a887685789f23dda14d2f8eceee6543741f698354c7c808d39dcaa1b2ea55b63"}}
+  ]},
+  {"id": "n012", "label": "supply chains", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0008", "start": 95, "end": 230, "sha256": "9d936b21a5dc03004f4d370919f5c93a51599020036eecf72e5896129d57680d"}}
+  ]},
+  {"id": "n013", "label": "Gene Yu", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0022", "start": 0, "end": 32, "sha256": "13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511"}}
+  ]},
+  {"id": "n014", "label": "Hiroki Taketsuna", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0018", "start": 0, "end": 93, "sha256": "4f8902fc99ac4bd44a6dd890058f522a8ccee49ca86a710b4ba5d48fe44693ef"}}
+  ]},
+  {"id": "n015", "label": "Masaki Hiraoka", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0004", "start": 31, "end": 120, "sha256": "8de95a13db1667480ab3a88f40c3bd6fbfcd47d0a4a896da32dbf3a33c883ae7"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0027", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0027", "start": 0, "end": 66, "sha256": "6fed45d441c9550821d2b54db6356f2f5b6f79ce90491301c45d7533343f69f0"}}
+  ]},
+  {"id": "n016", "label": "IR-1", "entity_type": "product", "aliases": ["Blackpanda IR-1"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0005", "start": 28, "end": 136, "sha256": "f793706cd3af319dd768e4c763dd24d783bbc1435941569f1d77b060d7b5ed6d"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0028", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0028", "start": 213, "end": 297, "sha256": "b6237f9f4c684253b19b74c80760c52fc5eae513e8c9edb4de62d4790ca4c337"}}
+  ]},
+  {"id": "n017", "label": "cyber attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0017", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0017", "start": 0, "end": 144, "sha256": "223aafb1774686331768e7dca1ffa366e70f346f9e827598b3886ff97983ebe9"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n012", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0008", "start": 0, "end": 174, "sha256": "0c6ad0e9339ebfe17c038521d90cee3d61f0f2124088994ecfb9dd404f4fb742"}}
+  ]},
+  {"id": "e002", "source": "n004", "target": "n008", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0018", "start": 17, "end": 93, "sha256": "bdcb6538b6f6179cd1b4bcc3e4801f767ff3a7d93073e04b0dca709826bb90a8"}}
+  ]},
+  {"id": "e003", "source": "n005", "target": "n009", "relation_type": "DEVELOPS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 189, "end": 333, "sha256": "ca9873f9d82a8927eaabe52c438a65b58a595e15dc44f3a5c0df542705ee5aae"}}
+  ]},
+  {"id": "e004", "source": "n005", "target": "n002", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 71, "end": 187, "sha256": "425970b8cdd83b09b390edb715da10d5bd91c6bc6e8b8704c60c6437e478506e"}}
+  ]},
+  {"id": "e005", "source": "n005", "target": "n017", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 503, "end": 631, "sha256": "f93d2d340d081b1cba388ea0f798859b6f74b23b102e3b52a7bada0afce8cc40"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n010", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 401, "end": 575, "sha256": "f47e7ba0ceffb403ae0020605d72103e101af48700cdce3a09759f57f5b96518"}}
+  ]},
+  {"id": "e007", "source": "n005", "target": "n011", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 0, "end": 188, "sha256": "655ea79803a62a381db256e508808b007b089f0c640e2ebb163a94f09182d1e2"}}
+  ]},
+  {"id": "e008", "source": "n005", "target": "n016", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "Gene Yu", "event_time": "", "event_scope": "Blackpanda–SoftBank strategic partnership", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0021", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0021", "start": 0, "end": 173, "sha256": "1dd2b0ab1b5d96214d6564ddfc7c66388cbc1a6e78b2818a5fb7c987e4a0c421"}},
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0022", "start": 0, "end": 32, "sha256": "13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511"}}
+  ]},
+  {"id": "e009", "source": "n006", "target": "n011", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0012", "start": 0, "end": 129, "sha256": "a887685789f23dda14d2f8eceee6543741f698354c7c808d39dcaa1b2ea55b63"}}
+  ]},
+  {"id": "e010", "source": "n008", "target": "n011", "relation_type": "PROVIDES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Blackpanda–SoftBank strategic partnership", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0005", "start": 0, "end": 98, "sha256": "7afc18523cfa726a00561e26ca01e2aef120e56954479f9cf4d92c89ef5c0e8c"}}
+  ]},
+  {"id": "e011", "source": "n008", "target": "n016", "relation_type": "PROVIDES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "Blackpanda–SoftBank strategic partnership", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0005", "start": 28, "end": 136, "sha256": "f793706cd3af319dd768e4c763dd24d783bbc1435941569f1d77b060d7b5ed6d"}}
+  ]},
+  {"id": "e012", "source": "n009", "target": "n017", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0030", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0030", "start": 189, "end": 400, "sha256": "13dbf910d5bf78c4064fa5ffeb85790a513841f509974efb4fba9d1915959aca"}}
+  ]},
+  {"id": "e013", "source": "n013", "target": "n005", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0022", "start": 0, "end": 32, "sha256": "13e7f5058a8b40b8c3593f5602b8b8d1156bacf7efb87acc294b82b51eb61511"}}
+  ]},
+  {"id": "e014", "source": "n014", "target": "n004", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0018", "start": 0, "end": 57, "sha256": "5bade21d67264c3b43e4f2ca58ed739dcfcb6b5344e8e9322c1953d3728da259"}}
+  ]},
+  {"id": "e015", "source": "n015", "target": "n006", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0004", "start": 31, "end": 120, "sha256": "8de95a13db1667480ab3a88f40c3bd6fbfcd47d0a4a896da32dbf3a33c883ae7"}}
+  ]},
+  {"id": "e016", "source": "n016", "target": "n017", "relation_type": "MITIGATES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0520", "paragraph_id": "D0520:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0520:P0005", "start": 110, "end": 228, "sha256": "52ddcbe56ba962489001f1ba17a33ab980f9bcbb61d859d2bccaaf8eded6a50d"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

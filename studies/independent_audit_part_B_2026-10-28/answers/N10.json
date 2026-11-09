@@ -1,0 +1,347 @@
+{
+  "audit_batch": "N10",
+  "verdicts": [
+    {
+      "item_id": "N10-E001",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0399:P0011 Cybersecurity Act спрямований на протидію іноземним ІТ-ризикам, тому потрібна полярність positive."
+    },
+    {
+      "item_id": "N10-E002",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0011 прямо зазначено, що патчі зменшують уразливість до описаних недоліків спекулятивного виконання."
+    },
+    {
+      "item_id": "N10-E003",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0020 рекомендовано забезпечити конфігурацію програмно визначеної мережі, яка ізолює навантаження з використанням принципів zero-trust."
+    },
+    {
+      "item_id": "N10-E004",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0004 приватні хмари подано як засіб протидії описаним кіберзагрозам."
+    },
+    {
+      "item_id": "N10-E005",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0007 прямо стверджено, що приватна хмара усуває ризик спільного використання інфраструктури різними клієнтами."
+    },
+    {
+      "item_id": "N10-E006",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0021 протидію ransomware зазначено як призначення ізоляції резервних копій, тому сам захисний зв’язок має форму actual, positive."
+    },
+    {
+      "item_id": "N10-E007",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0015 прямо сказано, що National Cyber Security Centre публікує настанови з безпеки хмарних середовищ."
+    },
+    {
+      "item_id": "N10-E008",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0004 кампанії ransomware прямо описано як спрямовані проти критичної інфраструктури."
+    },
+    {
+      "item_id": "N10-E009",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0399:P0021 ізоляція резервних копій призначена для протидії ransomware, тому потрібна полярність positive."
+    },
+    {
+      "item_id": "N10-E010",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0012–P0013 приватна хмара зменшує інсайдерську загрозу завдяки обмеженню привілейованого доступу."
+    },
+    {
+      "item_id": "N10-E011",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0399:P0004 ransomware атакує критичну інфраструктуру, а запис обертає напрям цього зв’язку."
+    },
+    {
+      "item_id": "N10-E012",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0399:P0015 зазначено державну належність центру Великій Британії, але його географічне розташування не стверджено."
+    },
+    {
+      "item_id": "N10-E013",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0015 прямо описано федерацію ідентичностей через OpenID Connect."
+    },
+    {
+      "item_id": "N10-E014",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0011 протидію іноземним ІТ-ризикам зазначено як призначення ухваленого Cybersecurity Act."
+    },
+    {
+      "item_id": "N10-E015",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0026 сховище з одноразовим записом гарантує незмінність журналів і захищає їх від редагування та видалення."
+    },
+    {
+      "item_id": "N10-E016",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0010–P0011 усунення описаного вектора атак через побічні канали подано як властивість приватної архітектури."
+    },
+    {
+      "item_id": "N10-E017",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0399:P0026 захист журналів є властивістю сховища, тому потрібне actual, хоча пересилання журналів до нього рекомендовано."
+    },
+    {
+      "item_id": "N10-E018",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0011 недоліки спекулятивного виконання описано як уразливості спільного процесорного обладнання, пов’язані з витоком інформації між клієнтами."
+    },
+    {
+      "item_id": "N10-E019",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0399:P0011 патчі зменшують небезпеку вразливостей, а запис помилково приписує вразливостям пом’якшення патчів."
+    },
+    {
+      "item_id": "N10-E020",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0007 та P0010–P0011 приватна архітектура усуває описані ризики атак між клієнтами спільної платформи."
+    },
+    {
+      "item_id": "N10-E021",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0009 приватне розгортання прямо дозволяє впроваджувати шифрування на кожному рівні інфраструктури."
+    },
+    {
+      "item_id": "N10-E022",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0399:P0011 усунення описаного вектора атак через побічні канали є заявленою властивістю архітектури, тому потрібне actual."
+    },
+    {
+      "item_id": "N10-E023",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0009 виділене приватне середовище прямо дозволяє інтегрувати HSMs."
+    },
+    {
+      "item_id": "N10-E024",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0399:P0015 прямо описано федерацію ідентичностей через SAML."
+    },
+    {
+      "item_id": "N10-E025",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0399:P0021 протидія ransomware є призначенням ізоляції резервних копій, тому потрібне actual, а рекомендація стосується їх розміщення."
+    },
+    {
+      "item_id": "N10-E026",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0515:P0014 Optiv прямо описує надання керованих послуг безпеки, тому потрібна полярність positive."
+    },
+    {
+      "item_id": "N10-E027",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0515:P0014 керовані послуги безпеки прямо включено до діяльності Optiv."
+    },
+    {
+      "item_id": "N10-E028",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0515:P0006 John Hurley названий директором із доходів Optiv, що підтверджує його належність до компанії."
+    },
+    {
+      "item_id": "N10-E029",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0515:P0011 Scott Goree названий старшим віцепрезидентом Optiv із партнерств і комерційних продажів."
+    },
+    {
+      "item_id": "N10-E030",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0515:P0006 John Hurley працює в Optiv, а запис помилково обертає напрям організаційної належності."
+    },
+    {
+      "item_id": "N10-E031",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0515:P0004 Optiv One прямо названо власною партнерською програмою Optiv, яку компанія веде."
+    },
+    {
+      "item_id": "N10-E032",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0159:P0016 прямо сказано, що Operation Spider's Web відбулася в Росії, тому потрібна полярність positive."
+    },
+    {
+      "item_id": "N10-E033",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0159:P0016 операція відбулася в Росії, а запис обертає напрям і помилково розміщує Росію всередині операції."
+    },
+    {
+      "item_id": "N10-E034",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0016 Operation Spider's Web прямо описано як операцію, що відбулася в Росії."
+    },
+    {
+      "item_id": "N10-E035",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005 Fort Bragg прямо названо місцем базування XVIII Airborne Corps."
+    },
+    {
+      "item_id": "N10-E036",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0016 Daniel Driscoll названий Army Secretary, що підтверджує його керівну роль щодо Army."
+    },
+    {
+      "item_id": "N10-E037",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0008 прямо зазначено, що критичною інфраструктурою керують приватні компанії, а не військові."
+    },
+    {
+      "item_id": "N10-E038",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0159:P0005–P0006 атаки на Fort Bragg задано як можливий сценарій без заперечення, тому потрібна полярність positive."
+    },
+    {
+      "item_id": "N10-E039",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0012 Army Cyber Institute прямо зазначений як розташований у West Point."
+    },
+    {
+      "item_id": "N10-E040",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0015 Operation Spider's Web описано як скоординовану атаку проти Росії."
+    },
+    {
+      "item_id": "N10-E041",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0159:P0016 операцію в Росії подано як здійснену подію, тому потрібна модальність actual."
+    },
+    {
+      "item_id": "N10-E042",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0008 прямо зазначено, що критичною інфраструктурою керують приватні компанії, а не уряд."
+    },
+    {
+      "item_id": "N10-E043",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0007 Brandon Pugh названий головним радником із кіберпитань секретаря Army, що підтверджує організаційну належність."
+    },
+    {
+      "item_id": "N10-E044",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0006 настільне навчання прямо описано як частину Defense Critical Infrastructure Summit."
+    },
+    {
+      "item_id": "N10-E045",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0015 операцію названо українською та прямо описано дії України під час її проведення."
+    },
+    {
+      "item_id": "N10-E046",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005–P0006 скоординовані атаки на Fort Bragg є гіпотетичними подіями сценарію настільного навчання."
+    },
+    {
+      "item_id": "N10-E047",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005 XVIII Airborne Corps прямо названо корпусом Army."
+    },
+    {
+      "item_id": "N10-E048",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0009 82nd Airborne Division прямо названо одним із підрозділів XVIII Airborne Corps."
+    },
+    {
+      "item_id": "N10-E049",
+      "triple_verdict": "C",
+      "form_verdict": "I",
+      "reason": "У D0159:P0005–P0006 атаки на SCADA є самими гіпотетичними подіями сценарію, а не наслідком умови, тому потрібне possible."
+    },
+    {
+      "item_id": "N10-E050",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005–P0006 гіпотетичні скоординовані атаки включають удари дронів по комерційних електричних станціях."
+    },
+    {
+      "item_id": "N10-E051",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0015–P0016 прямо стверджено, що Україна використала дрони під час Operation Spider's Web."
+    },
+    {
+      "item_id": "N10-E052",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0015 прямо описано здійснену Україною скоординовану атаку проти Росії."
+    },
+    {
+      "item_id": "N10-E053",
+      "triple_verdict": "I",
+      "form_verdict": "—",
+      "reason": "У D0159:P0009–P0011 створення посібника є метою та завданням офісу Pugh, але його особисту розробку Brandon Pugh не стверджено."
+    },
+    {
+      "item_id": "N10-E054",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005–P0006 кібератаки на SCADA описано як гіпотетичні події сценарію настільного навчання."
+    },
+    {
+      "item_id": "N10-E055",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0008 прямо сказано, що приватні компанії володіють критичною інфраструктурою та керують нею."
+    },
+    {
+      "item_id": "N10-E056",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0005–P0006 використання дронів із вибуховими зарядами є складником гіпотетичних скоординованих атак."
+    },
+    {
+      "item_id": "N10-E057",
+      "triple_verdict": "C",
+      "form_verdict": "C",
+      "reason": "У D0159:P0006 прямо зазначено, що Defense Critical Infrastructure Summit відбувся у Fort Bragg."
+    }
+  ]
+}

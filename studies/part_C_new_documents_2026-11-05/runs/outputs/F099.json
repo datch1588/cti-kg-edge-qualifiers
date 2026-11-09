@@ -1,0 +1,55 @@
+{
+ "run_id": "F099",
+ "target_doc_id": "D0071",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "India", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 156, "end": 289, "sha256": "c7c86759f7bde8f45f394153fd8fd057ba09462413ba9040d357566d9dda3543"}}
+  ]},
+  {"id": "n002", "label": "C3iHub", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 196, "end": 278, "sha256": "8c4ce22c30e1102723085fb58f30b0f89e9e4c33cb608609ec9b1fd94674f795"}}
+  ]},
+  {"id": "n003", "label": "CBSE", "entity_type": "organization", "aliases": ["Central Board of Secondary Education"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 65, "end": 194, "sha256": "d6978ca404fcffd2c2f5c28d1742bdb5496a279dce7ec5d752e3fa9a12e3b921"}}
+  ]},
+  {"id": "n004", "label": "IIT Kanpur", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0014", "start": 0, "end": 149, "sha256": "ad844cc68492531533aa9d3fff9c238ae69a68b55efe9b06cac54c585e99c300"}}
+  ]},
+  {"id": "n005", "label": "Nisarga Adhikary", "entity_type": "person", "aliases": ["Adhikary"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 101, "sha256": "3de5fbea4bbdb507f9f9f554a84ad7d57b744dcda5b5c343df614d56f7ffd250"}},
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 0, "end": 128, "sha256": "d2ae9cbcf62840fa7f4f728979920f29a3d9b472535c24b587b5e9845789822c"}}
+  ]},
+  {"id": "n006", "label": "OSM portal", "entity_type": "product", "aliases": ["Online Submission of Marks (OSM) portal"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 82, "end": 192, "sha256": "21e3c56228faac1f144962983c76f55cf9675299e38d3c579d56fb110ef41d85"}}
+  ]},
+  {"id": "n007", "label": "vulnerabilities in CBSE's OSM portal", "entity_type": "vulnerability", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0022", "start": 0, "end": 113, "sha256": "74a61555dbfe2f8d43db8a8c8060b8e69aee1b8ef2c58a2d8bb580fa997ad527"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n001", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0007", "start": 95, "end": 247, "sha256": "21b75e52d35a1051984f5e16944e704477612a570b71dc3b66732856632d3152"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n004", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 196, "end": 278, "sha256": "8c4ce22c30e1102723085fb58f30b0f89e9e4c33cb608609ec9b1fd94674f795"}},
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 53, "end": 154, "sha256": "1f55614c39142e634139ad076846d653348a37a8df59c750550a27015d124fc0"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n006", "relation_type": "OPERATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0011", "start": 82, "end": 192, "sha256": "21e3c56228faac1f144962983c76f55cf9675299e38d3c579d56fb110ef41d85"}}
+  ]},
+  {"id": "e004", "source": "n005", "target": "n007", "relation_type": "DISCOVERS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0006", "start": 0, "end": 194, "sha256": "a49ab141c76b5c78232c1c9296bb79fd2e78ad22b2b2d1085ff8bf9e828dcea5"}},
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0022", "start": 0, "end": 113, "sha256": "74a61555dbfe2f8d43db8a8c8060b8e69aee1b8ef2c58a2d8bb580fa997ad527"}}
+  ]},
+  {"id": "e005", "source": "n005", "target": "n002", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0002", "start": 53, "end": 154, "sha256": "1f55614c39142e634139ad076846d653348a37a8df59c750550a27015d124fc0"}}
+  ]},
+  {"id": "e006", "source": "n005", "target": "n007", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0012", "start": 0, "end": 116, "sha256": "94e49b5f7dee85997a056a59871b40c9d00a4be015f2b35c7a343121d0920484"}}
+  ]},
+  {"id": "e007", "source": "n007", "target": "n006", "relation_type": "AFFECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0071", "paragraph_id": "D0071:P0022", "quote_ref": {"match": "exact", "paragraph_id": "D0071:P0022", "start": 0, "end": 113, "sha256": "74a61555dbfe2f8d43db8a8c8060b8e69aee1b8ef2c58a2d8bb580fa997ad527"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

@@ -1,0 +1,71 @@
+{
+ "run_id": "F115",
+ "target_doc_id": "D0246",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "distributed denial of service", "entity_type": "attack_technique", "aliases": ["DDoS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0010", "start": 0, "end": 100, "sha256": "e47dd9b0f6f490a3cb3b3f231fd02a2c10e201062e8104f07e54de5ecd4d0068"}},
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 39, "end": 121, "sha256": "744fbc3ba4d05cfeed1cd278d78b21d0464669f0c714f6cd0c66c1278514676f"}}
+  ]},
+  {"id": "n002", "label": "Malicious links", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 167, "end": 253, "sha256": "bce69ec3d35657bdac1b8c988304f7d6cad46485c9a68f72f1022c189e2c7cb4"}}
+  ]},
+  {"id": "n003", "label": "China", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0006", "start": 0, "end": 114, "sha256": "0d07af7b28180ff54af5d08125fd5411255dc6a8c954389483be87e331127bac"}}
+  ]},
+  {"id": "n004", "label": "cyberattack", "entity_type": "incident", "aliases": ["cyber attack"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0001", "start": 0, "end": 83, "sha256": "d66a7e46fe1064db2d0a6b8b0c8ba81cecd8fe4a531621ab4f59909f83953cb3"}},
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 0, "end": 100, "sha256": "77c2e0f7e95c8e4e5decb704a4ef529d4102b90316664f98da54588e3c5d86ad"}}
+  ]},
+  {"id": "n005", "label": "Independent Parliamentary Standards Authority", "entity_type": "organization", "aliases": ["Ipsa"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 77, "end": 165, "sha256": "5ee3836585f4e355fc716d6999174d3ab4f352d8616ed7b8293d1897465b95f6"}}
+  ]},
+  {"id": "n006", "label": "Parliamentary Digital Service", "entity_type": "organization", "aliases": ["PDS"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0015", "start": 138, "end": 248, "sha256": "04f80a4893a48e69f7ba0e4304805e88797d3e4b001082925f92cc9ffe4968b0"}}
+  ]},
+  {"id": "n007", "label": "Parliamentary Security Department", "entity_type": "organization", "aliases": ["PSD"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0015", "start": 0, "end": 132, "sha256": "fdbf570790124010e5e5d2feb25e0b5ad898c6b1779873331f32817b496bbe36"}}
+  ]},
+  {"id": "n008", "label": "daviddavismp.com", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0012", "start": 0, "end": 133, "sha256": "0512cd9cbf94e2bb7e6cdb39e6b079a92c2729a1203c881e9e098511c79e28d9"}}
+  ]},
+  {"id": "n009", "label": "Nus Ghani", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0014", "start": 0, "end": 52, "sha256": "2862c25677937af56e44e074c201d1eb9b71439188163236c7301c08c3fec746"}}
+  ]},
+  {"id": "n010", "label": "Sir David Davis", "entity_type": "person", "aliases": ["Sir David"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 102, "end": 202, "sha256": "f30aebf7f137a649013e2f8184e5b6aa7b166ed9dc362fd6806b7bdb835b8373"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n004", "target": "n008", "relation_type": "AFFECTS", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "Last Thursday", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 62, "end": 166, "sha256": "4452d3264264fca7498f5b452be54c0d336e69d87a6adc684f948d1cc2d8c827"}}
+  ]},
+  {"id": "e002", "source": "n004", "target": "n008", "relation_type": "AFFECTS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0005", "start": 0, "end": 100, "sha256": "77c2e0f7e95c8e4e5decb704a4ef529d4102b90316664f98da54588e3c5d86ad"}}
+  ]},
+  {"id": "e003", "source": "n004", "target": "n003", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 312, "end": 422, "sha256": "1d2a8104bb25f36546124d705c96f9144807f3bb048aa02bf98d165d5b45182a"}},
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0006", "start": 0, "end": 114, "sha256": "0d07af7b28180ff54af5d08125fd5411255dc6a8c954389483be87e331127bac"}}
+  ]},
+  {"id": "e004", "source": "n004", "target": "n008", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 0, "end": 230, "sha256": "42fcff10070b9e14bfb131345401847c5327ba32a428ed18a41982e692f434bc"}}
+  ]},
+  {"id": "e005", "source": "n004", "target": "n001", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 312, "end": 422, "sha256": "1d2a8104bb25f36546124d705c96f9144807f3bb048aa02bf98d165d5b45182a"}},
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 0, "end": 121, "sha256": "4df984898dc23712222ffe9700a69dcdc643f0f8e3f1e5a8c8f90401b2a3ed33"}}
+  ]},
+  {"id": "e006", "source": "n004", "target": "n002", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "Last Thursday", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 167, "end": 253, "sha256": "bce69ec3d35657bdac1b8c988304f7d6cad46485c9a68f72f1022c189e2c7cb4"}}
+  ]},
+  {"id": "e007", "source": "n005", "target": "n008", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 77, "end": 165, "sha256": "5ee3836585f4e355fc716d6999174d3ab4f352d8616ed7b8293d1897465b95f6"}}
+  ]},
+  {"id": "e008", "source": "n010", "target": "n008", "relation_type": "OPERATES", "modality": "actual", "polarity": "positive", "attribution": "Sir David Davis", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0009", "start": 198, "end": 311, "sha256": "6dc58f87e3e84012c82f8452d162b62beb2768c1ca3e06e9298e56eceb866c7c"}}
+  ]},
+  {"id": "e009", "source": "n010", "target": "n004", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n004", "evidence": [
+   {"role": "TARGET", "doc_id": "D0246", "paragraph_id": "D0246:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0246:P0007", "start": 0, "end": 121, "sha256": "4df984898dc23712222ffe9700a69dcdc643f0f8e3f1e5a8c8f90401b2a3ed33"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

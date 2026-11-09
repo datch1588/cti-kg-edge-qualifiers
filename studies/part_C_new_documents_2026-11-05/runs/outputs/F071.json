@@ -1,0 +1,98 @@
+{
+ "run_id": "F071",
+ "target_doc_id": "D0573",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Russian", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}},
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0013", "start": 56, "end": 118, "sha256": "f1517b6d8e58ee1314c8361903f7a3e11c1b87ea2b7c93cf6533a2c630e3b66b"}}
+  ]},
+  {"id": "n002", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0013", "start": 0, "end": 150, "sha256": "86bc1fa8fd9289c74b20f5caf06c8b95c7300e2df0d4f5ee53a8d5a91c672edb"}}
+  ]},
+  {"id": "n003", "label": "Missile attack", "entity_type": "incident", "aliases": ["missile strike"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0005", "start": 0, "end": 114, "sha256": "abb73feb50e778ea59e78737062d2e0a94d279184bfe4b3bf5e78af02c026f40"}},
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0009", "start": 1, "end": 48, "sha256": "9a2ffb730f4b14dd97a549072ef0eb33db36733956dde00e09ab9bf36fdc88b3"}}
+  ]},
+  {"id": "n004", "label": "Kyiv", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0012", "start": 118, "end": 196, "sha256": "a906d9dc291884e780f036fbdac5223508e99ebb02daf01c635e3b1642de9278"}},
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+  ]},
+  {"id": "n005", "label": "NATO", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 0, "end": 104, "sha256": "b3cc0ecb5217f11d7d19124070731dcf59e2c8f6461c8e180b2a9125456dbc47"}}
+  ]},
+  {"id": "n006", "label": "ballistic missiles", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0010", "start": 0, "end": 67, "sha256": "c4d6dfbdceec3767c398ec68e686e22357a20289eab52ee948d1efd45c686f83"}}
+  ]},
+  {"id": "n007", "label": "Kyiv thermal power plant", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+  ]},
+  {"id": "n008", "label": "Denys Shmyhal", "entity_type": "person", "aliases": ["Shmyhal"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 0, "end": 104, "sha256": "b3cc0ecb5217f11d7d19124070731dcf59e2c8f6461c8e180b2a9125456dbc47"}},
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0008", "start": 0, "end": 72, "sha256": "06370b30211be000fb80dc819d7f9c1ebd33efd9e2b223f5161904c60ce96a1c"}}
+  ]},
+  {"id": "n009", "label": "Mark Rutte", "entity_type": "person", "aliases": ["Rutte"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 71, "end": 139, "sha256": "81e349c1308b2a133f28ad20a1940afca6233c6d5af8fb40c4046c24c2f7d7fa"}},
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0012", "start": 0, "end": 116, "sha256": "827e676404435d35ae6d1f80fc2a55522677a7117dab92c129371e61cfde2105"}}
+  ]},
+  {"id": "n010", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0011", "start": 0, "end": 138, "sha256": "1cd7e7153e8cdc03138b30afe6f3ad4741deabc5a9d23d33f52bc067d10e134b"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS",
+   "attribution": "", "event_time": "", "event_scope": "Russian attacks on civilian infrastructure",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0013", "start": 0, "end": 150, "sha256": "86bc1fa8fd9289c74b20f5caf06c8b95c7300e2df0d4f5ee53a8d5a91c672edb"}}
+   ]},
+  {"id": "e002", "source": "n001", "target": "n007", "relation_type": "TARGETS",
+   "attribution": "Denys Shmyhal", "event_time": "overnight", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0004", "start": 0, "end": 122, "sha256": "8ded4aaeeb22dec1ed818aeff1295a36ce8342f62a259bd8e537e7b69d542f46"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 67, "end": 180, "sha256": "b867fb4f85fde7ad9055fcd4e9211efcc57da36494ecfcfc76ccc692c3c9bf55"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0010", "start": 0, "end": 67, "sha256": "c4d6dfbdceec3767c398ec68e686e22357a20289eab52ee948d1efd45c686f83"}}
+   ]},
+  {"id": "e003", "source": "n003", "target": "n007", "relation_type": "AFFECTS",
+   "attribution": "Denys Shmyhal", "event_time": "overnight", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0004", "start": 0, "end": 122, "sha256": "8ded4aaeeb22dec1ed818aeff1295a36ce8342f62a259bd8e537e7b69d542f46"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 67, "end": 180, "sha256": "b867fb4f85fde7ad9055fcd4e9211efcc57da36494ecfcfc76ccc692c3c9bf55"}}
+   ]},
+  {"id": "e004", "source": "n003", "target": "n001", "relation_type": "ATTRIBUTED_TO",
+   "attribution": "Denys Shmyhal", "event_time": "overnight", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0004", "start": 0, "end": 122, "sha256": "8ded4aaeeb22dec1ed818aeff1295a36ce8342f62a259bd8e537e7b69d542f46"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+   ]},
+  {"id": "e005", "source": "n003", "target": "n007", "relation_type": "TARGETS",
+   "attribution": "Denys Shmyhal", "event_time": "overnight", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0009", "start": 1, "end": 48, "sha256": "9a2ffb730f4b14dd97a549072ef0eb33db36733956dde00e09ab9bf36fdc88b3"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0010", "start": 0, "end": 67, "sha256": "c4d6dfbdceec3767c398ec68e686e22357a20289eab52ee948d1efd45c686f83"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+   ]},
+  {"id": "e006", "source": "n003", "target": "n006", "relation_type": "USES",
+   "attribution": "Denys Shmyhal", "event_time": "overnight", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0010", "start": 0, "end": 67, "sha256": "c4d6dfbdceec3767c398ec68e686e22357a20289eab52ee948d1efd45c686f83"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+   ]},
+  {"id": "e007", "source": "n007", "target": "n004", "relation_type": "LOCATED_IN",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 113, "end": 180, "sha256": "27c52dea07c8bdd501dc20f4aca144978022731bfcc48fbc1854281a73b97497"}}
+   ]},
+  {"id": "e008", "source": "n008", "target": "n003", "relation_type": "REPORTS_ON",
+   "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0008", "start": 0, "end": 72, "sha256": "06370b30211be000fb80dc819d7f9c1ebd33efd9e2b223f5161904c60ce96a1c"}},
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0010", "start": 0, "end": 67, "sha256": "c4d6dfbdceec3767c398ec68e686e22357a20289eab52ee948d1efd45c686f83"}}
+   ]},
+  {"id": "e009", "source": "n009", "target": "n005", "relation_type": "LEADS",
+   "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0573", "paragraph_id": "D0573:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0573:P0007", "start": 71, "end": 139, "sha256": "81e349c1308b2a133f28ad20a1940afca6233c6d5af8fb40c4046c24c2f7d7fa"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

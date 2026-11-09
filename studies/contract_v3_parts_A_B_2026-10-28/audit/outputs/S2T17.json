@@ -1,0 +1,27 @@
+{
+ "audit_file": "S2T17",
+ "target_doc_id": "D0388",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0002 подає «Updated: Mar 21, 2026» під заголовком статті, тож стаття з цим заголовком оновлена 21 березня 2026 року, і це подано як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0011 називає IntelligenceX компанією, що надає кібербезпекові послуги («companies providing cybersecurity services»), як чинний стан."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0005 Cloud Security Alliance організувала CSA XCON 2026, і «operates» за змістом передає роль організатора, що проводить захід; подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0011: IntelligenceX відзначено за внесок у «supporting advanced threat intelligence efforts», що подано як факт."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 прямо каже «The Cloud Security Alliance organised CSA XCON 2026» як здійснений факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006 називає Live Technical Deep Dive сегментом заходу CSA XCON 2026 («the most popular segment of the event»), як факт."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 подає CSA XCON 2026 як дводенний захід у Дехрадуні («event at Dehradun»), тобто місце проведення, як факт."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "Підпис «ANI | Updated» (P0002), «ANI News» (P0003, P0022) і застереження P0021 показують, що цю статтю опублікувало ANI, як факт."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: сесії deep dive, тобто Live Technical Deep Dive з P0006, охоплювали AI-powered threat detection, як факт."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: «attackers use it [AI technology] to build more complex security threats» — загальне твердження, подане як факт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005: «The event which took place on 13-14 March 2026» — подано як факт."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0005 каже, що дводенний захід CSA XCON 2026 відбувся в Дехрадуні («event at Dehradun»), як факт."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0011: захід відзначав кібербезпекові організації, і IntelligenceX «was recognized for its contribution», тобто на CSA XCON 2026, як факт."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: сесії deep dive, тобто Live Technical Deep Dive, охоплювали malware analysis, як факт."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: Satyam Rastogi «serves as President of Cyber Security Alliance Uttarakhand», тобто очолює її, як чинний стан."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0007: сесії deep dive, тобто Live Technical Deep Dive, охоплювали defense evasion techniques, як факт."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "P0021: «The above press release has been provided by VMPL», тобто VMPL надала цей матеріал, як факт."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "P0006 описує Live Technical Deep Dive як сегмент заходу CSA XCON 2026, тож вона є його частиною, як факт."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "P0017: «The use of AI technology enables development of better defense systems» — загальне твердження, подане як факт."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок є в P0017, але стаття стверджує його ствердно («enables development of better defense systems»), тож полярність negative хибна."},
+  {"item_id": "E021", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: за P0005 Cloud Security Alliance організувала CSA XCON 2026, а не захід керує альянсом."}
+ ]
+}

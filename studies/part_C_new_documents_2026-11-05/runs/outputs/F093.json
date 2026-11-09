@@ -1,0 +1,61 @@
+{
+ "run_id": "F093",
+ "target_doc_id": "D0064",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "hacking incident", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 0, "end": 159, "sha256": "6b5273a4e803a274ae1e8c433569065beb028a13eae855bf24aed5f86d70936b"}}
+  ]},
+  {"id": "n002", "label": "website defacement", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0013", "start": 40, "end": 181, "sha256": "4e8ef8fcdd0951eb473113ce45fdabc53dfcff38ea9784ec0d45fcac0ae7301f"}},
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0006", "start": 137, "end": 226, "sha256": "2bce59707b8b485edf1d7521802290b3c0489f3519434dc9d53a2ebb2d83e112"}}
+  ]},
+  {"id": "n003", "label": "Anti-Cybercrime Group", "entity_type": "organization", "aliases": ["ACG"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0012", "start": 0, "end": 149, "sha256": "e86e727944211b42f776e74f26ba6bbfef15c2af2ed1794da67937c2788c1725"}},
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0013", "start": 1, "end": 84, "sha256": "bf5d1fa39d4293a4c7742bb5598dd72cef55a98546bd13f58bc3d1fe1b51f9c1"}}
+  ]},
+  {"id": "n004", "label": "House of Representatives", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0006", "start": 147, "end": 226, "sha256": "890c498b94648d81a8a57700c22f0b02922dfe4c9422291bd1e50e569cf2d36e"}}
+  ]},
+  {"id": "n005", "label": "Philippine National Police", "entity_type": "organization", "aliases": ["PNP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0006", "start": 0, "end": 136, "sha256": "7db03cf783a3d32be20ded1af0d24bcfeaeb2992c92f335ee0f9b584c5337464"}}
+  ]},
+  {"id": "n006", "label": "Senate", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0011", "start": 74, "end": 134, "sha256": "1b27d257b8b554965d16cc5652334f7264218ecbdad0a6c1b70e65c7dfa6eb78"}}
+  ]},
+  {"id": "n007", "label": "Senate Electronic Data Processing-Management Information System Bureau", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 160, "end": 329, "sha256": "57ce119bc429835e88143cd5c61e02cc9ab7d295a4559603697b560ededeee2e"}}
+  ]},
+  {"id": "n008", "label": "Jose Melencio Nartatez Jr.", "entity_type": "person", "aliases": ["Nartatez"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0009", "start": 0, "end": 109, "sha256": "0983359a2f23f02df62eafc64dd97f835e1aa48632562f5e45b00c9fbafda7df"}}
+  ]},
+  {"id": "n009", "label": "Nullsec Philippines", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 84, "end": 159, "sha256": "51881c01e9f1b49ca1b92516ba4e7ad941f2789b98606e6d79f6aa6fc985ebba"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n006", "relation_type": "AFFECTS", "attribution": "", "event_time": "Last Thursday", "event_scope": "n001", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 0, "end": 112, "sha256": "0a69fcf643c02de4e918809384098c25dc3a23990811318a7df200b18b7db121"}}
+  ]},
+  {"id": "e002", "source": "n001", "target": "n009", "relation_type": "ATTRIBUTED_TO", "attribution": "", "event_time": "Last Thursday", "event_scope": "n001", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 0, "end": 159, "sha256": "6b5273a4e803a274ae1e8c433569065beb028a13eae855bf24aed5f86d70936b"}}
+  ]},
+  {"id": "e003", "source": "n002", "target": "n004", "relation_type": "AFFECTS", "attribution": "", "event_time": "Saturday", "event_scope": "n002", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0006", "start": 137, "end": 226, "sha256": "2bce59707b8b485edf1d7521802290b3c0489f3519434dc9d53a2ebb2d83e112"}},
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0011", "start": 0, "end": 72, "sha256": "c84c8415e6ec87b88d48241d2576d2519e2a3fd700c4dfe36ba4af585bad5719"}}
+  ]},
+  {"id": "e004", "source": "n003", "target": "n005", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0012", "start": 0, "end": 149, "sha256": "e86e727944211b42f776e74f26ba6bbfef15c2af2ed1794da67937c2788c1725"}}
+  ]},
+  {"id": "e005", "source": "n007", "target": "n006", "relation_type": "PART_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 160, "end": 305, "sha256": "928e89aa352456ed84f2146ab9b7166519da1e5edc78c7d764aeb1f7a22ebcd8"}}
+  ]},
+  {"id": "e006", "source": "n007", "target": "n001", "relation_type": "REPORTS_ON", "attribution": "", "event_time": "", "event_scope": "n001", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0015", "start": 160, "end": 371, "sha256": "2d48c94be263cc8525f25cd1c250fe576e87b20c56a18ec2aab9b07cde59b2be"}}
+  ]},
+  {"id": "e007", "source": "n008", "target": "n005", "relation_type": "LEADS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0064", "paragraph_id": "D0064:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0064:P0009", "start": 0, "end": 43, "sha256": "faa50fe67ee7fcff00c7a1ae247b5cdcb5342f9e7d3daa8709a62e158c4320b8"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

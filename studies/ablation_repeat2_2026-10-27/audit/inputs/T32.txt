@@ -1,0 +1,108 @@
+AUDIT_FILE: T32
+TARGET_DOC_ID: D0329
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0329
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://www.helpnetsecurity.com/2026/04/07/acronis-mdr-by-acronis-tru/
+TITLE_SHA256: 93dbae63c904184809bce74777946a93d8cfd751a886346a063a72561ea1fc38
+BEGIN_DOCUMENT
+[D0329:P0001] sha256:93dbae63c904184809bce74777946a93d8cfd751a886346a063a72561ea1fc38
+[D0329:P0002] sha256:0353f14e96ecfdc40f6d7884afcce73cd0f08b60cbf07643c0f547f8d9b01bf3
+[D0329:P0003] sha256:42094e50ff12599ab529dc1347c1aef33d239f447270eba09fad40d430d1a2b6
+[D0329:P0004] sha256:294b2ec0e468014ce64c6bfc5569d6fb38a6cf5fae50034ee7cc509e9108d5c1
+[D0329:P0005] sha256:b76b8423d2c9090da242c534b0e7b45d5b1c2f020686042063acaa505cc62413
+[D0329:P0006] sha256:daa3b072612a3114b0a7be41aaaad99d8e077eb76f2338a67ba975a7fed23deb
+[D0329:P0007] sha256:ec56de3e607b22f5e6515ee309cdc470ea91d6d9cdad5e9a6ef9ad992be30de6
+[D0329:P0008] sha256:dd7c5c7a9e077fc65da30f6842ccadf541b30f3d6bbbddcf4cbe1a0069f4471b
+[D0329:P0009] sha256:7d35724971506b5476cb9d02fa648efeaace5b35cdbed049f0312032d752394e
+[D0329:P0010] sha256:93156a0230a549ae8d0cf8f8ea21816741e2c9fe00abb91b4d40a1c53473a3ec
+[D0329:P0011] sha256:d60674c26485fc9fa0c66a99f4bea1ed3c207906c62ed8a7a9a8984a161749f6
+[D0329:P0012] sha256:554e6289937fbe98609d732aecb7573f4991dcfa33e9388b373a6c53390cf7da
+[D0329:P0013] sha256:ab7d3beaae7e768463804aea1153a1d432c9bc2aea47989d71ff8509115bff7f
+[D0329:P0014] sha256:4d7a4180889967c098bd327d49e27724d66803ebd487d63002b0f018fa548497
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (39)
+E001: «Acronis MDR by Acronis TRU» — is → «24/7/365 managed detection and response (MDR) service» | форма: actual, positive
+E002: «Acronis Threat Research Unit» — operates → «Acronis MDR by Acronis TRU» | форма: actual, positive
+E003: «Acronis MDR by Acronis TRU» — includes → «attack rollback capabilities» | форма: actual, positive
+E004: «Acronis MDR by Acronis TRU» — integrates → «patch management» | форма: actual, positive
+E005: «Acronis» — provides → «Acronis MDR by Acronis TRU» | форма: actual, positive
+E006: «Gaidar Magdanurov» — leads → «Acronis» | форма: possible, positive
+E007: «Acronis MDR by Acronis TRU» — delivers → «rapid threat containment» | форма: actual, positive
+E008: «Acronis MDR by Acronis TRU» — integrates → «detection, response, and recovery in a single platform» | форма: actual, positive
+E009: «Acronis MDR by Acronis TRU» — uses → «patch management» | форма: actual, negative
+E010: «SIX ICT» — uses → «Acronis MDR» | форма: actual, positive
+E011: «Acronis MDR by Acronis TRU» — uses → «endpoint detection and response» | форма: actual, positive
+E012: «Acronis MDR by Acronis TRU» — is → «24/7/365 managed detection and response (MDR) service» | форма: actual, negative
+E013: «Acronis MDR by Acronis TRU» — offers → «flexible pricing and simplified onboarding» | форма: actual, positive
+E014: «Acronis MDR by Acronis TRU» — provides → «incident response» | форма: actual, positive
+E015: «Acronis MDR by Acronis TRU» — provides → «threat detection» | форма: actual, positive
+E016: «Gaidar Magdanurov» — leads → «Acronis» | форма: actual, positive
+E017: «Acronis MDR by Acronis TRU» — powered by → «Acronis Threat Research Unit (TRU)» | форма: actual, positive
+E018: «Acronis» — announced launch of → «Acronis MDR by Acronis TRU» | форма: actual, positive
+E019: «Acronis MDR by Acronis TRU» — uses → «attack rollback» | форма: actual, positive
+E020: «Acronis MDR by Acronis TRU» — remediates critical incidents in → «as little as 15 minutes» | форма: actual, positive
+E021: «Acronis MDR by Acronis TRU» — is available → «globally» | форма: actual, positive
+E022: «MSSP partners» — provides → «Acronis MDR by Acronis TRU» | форма: possible, positive
+E023: «SIX ICT» — uses → «Acronis MDR by Acronis TRU» | форма: actual, positive
+E024: «Acronis MDR by Acronis TRU» — provides → «cyber resilience» | форма: actual, positive
+E025: «Acronis Threat Research Unit (TRU)» — performs → «continuous endpoint monitoring» | форма: actual, positive
+E026: «Acronis Threat Research Unit» — part of → «Acronis» | форма: actual, positive
+E027: «Acronis MDR» — can be delivered through → «MSSP partners» | форма: actual, positive
+E028: «Help Net Security» — published → «Acronis MDR by TRU brings 24/7 managed detection and response to MSPs» | форма: actual, positive
+E029: «Acronis MDR by TRU brings 24/7 managed detection and response to MSPs» — published on → «2026.04.07» | форма: actual, positive
+E030: «Acronis MDR by Acronis TRU» — delivers → «continuous monitoring» | форма: actual, positive
+E031: «Acronis Threat Research Unit (TRU)» — performs → «rapid isolation» | форма: actual, positive
+E032: «Acronis Threat Research Unit (TRU)» — performs → «threat triage» | форма: actual, positive
+E033: «patch management» — uses → «Acronis MDR by Acronis TRU» | форма: actual, positive
+E034: «Acronis MDR by Acronis TRU» — built for → «managed service providers (MSPs)» | форма: actual, positive
+E035: «Acronis» — enables → «managed service providers (MSPs)» | форма: actual, positive
+E036: «Acronis MDR by Acronis TRU» — combines → «endpoint detection and response» | форма: actual, positive
+E037: «Acronis MDR by Acronis TRU» — integrates → «business continuity capabilities» | форма: actual, positive
+E038: «Acronis MDR by Acronis TRU» — uses → «patch management» | форма: actual, positive
+E039: «Robert Nieuwenhuijse» — leads → «SIX ICT» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

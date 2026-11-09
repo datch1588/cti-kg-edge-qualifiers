@@ -1,0 +1,111 @@
+{
+ "articles": 50,
+ "paired": 50,
+ "excluded": [],
+ "problems": [],
+ "primary": {
+  "mean_share_A": 0.956480189257921,
+  "mean_share_B": 0.8729547549181724,
+  "diff_A_minus_B": 0.08352543433974863,
+  "ci95": [
+   0.04433687744151558,
+   0.1249728157646185
+  ],
+  "decision": "перевагу A встановлено",
+  "articles_A_better": 35,
+  "articles_B_better": 9,
+  "articles_tied": 6
+ },
+ "false_form": {
+  "A": 0.020188425302826378,
+  "B": 0.08312958435207823,
+  "A_count": 15,
+  "B_count": 170,
+  "A_triple_c": 743,
+  "B_triple_c": 2045,
+  "diff_A_minus_B": -0.06294115904925185,
+  "ci95": [
+   -0.09794060867271275,
+   -0.030262249103190628
+  ]
+ },
+ "correct_counts": {
+  "A": {
+   "total": 723,
+   "mean_per_article": 14.46,
+   "records_total": 756,
+   "records_mean_per_article": 15.12
+  },
+  "B": {
+   "total": 1865,
+   "mean_per_article": 37.3,
+   "records_total": 2112,
+   "records_mean_per_article": 42.24
+  },
+  "diff_mean_per_article_A_minus_B": -22.84,
+  "ci95": [
+   -29.86,
+   -17.68
+  ]
+ },
+ "records_in_both": 11,
+ "triple_c_share": {
+  "A": 0.9782370909112573,
+  "B": 0.967274284502539,
+  "diff_A_minus_B": 0.010962806408718212,
+  "ci95": [
+   -0.010329697510543238,
+   0.029879297925165846
+  ]
+ },
+ "A_correct_nonactual": 97,
+ "A_records_nonactual": 120,
+ "decoys": {
+  "n": 240,
+  "caught_expected": 233,
+  "not_correct": 237,
+  "by_mutation": {
+   "reverse": {
+    "n": 91,
+    "caught_expected": 89,
+    "not_correct": 89
+   },
+   "polarity": {
+    "n": 79,
+    "caught_expected": 77,
+    "not_correct": 79
+   },
+   "modality": {
+    "n": 70,
+    "caught_expected": 67,
+    "not_correct": 69
+   }
+  }
+ },
+ "pooled": {
+  "A": {
+   "records": 756,
+   "correct": 723,
+   "share_correct": 0.9563492063492064,
+   "share_triple_c": 0.9828042328042328,
+   "U_triple": 10,
+   "U_form": 5
+  },
+  "B": {
+   "records": 2112,
+   "correct": 1865,
+   "share_correct": 0.8830492424242424,
+   "share_triple_c": 0.9682765151515151,
+   "U_triple": 30,
+   "U_form": 10
+  }
+ },
+ "sensitivity_noU": {
+  "articles": 50,
+  "diff_A_minus_B": 0.08825097578710035,
+  "ci95": [
+   0.05202344267752528,
+   0.12560524165015272
+  ]
+ }
+}

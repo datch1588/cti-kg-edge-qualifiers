@@ -1,0 +1,122 @@
+AUDIT_FILE: S5F07
+TARGET_DOC_ID: D0660
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0660
+PUBLICATION_DATE: 2026-01-06
+SOURCE_URL: https://en.antaranews.com/news/398668/cyfirmas-2025-impact-recap-showcases-decyfir-preemptive-external-threat-landscape-management-platform
+TITLE_SHA256: f9bd81bd9de40aaf55f5953e304a0501e1c2e46a21dc6cb07f02352f5d560133
+BEGIN_DOCUMENT
+[D0660:P0001] sha256:f9bd81bd9de40aaf55f5953e304a0501e1c2e46a21dc6cb07f02352f5d560133
+[D0660:P0002] sha256:6f27a2a67edc76a053a57a3f2adab6546b70ae8c9552d44b8c70a8233013a61a
+[D0660:P0003] sha256:90ce92d12b4aee6402aee50142d987e22c62ee623dcb67e01f8ab67029161cc2
+[D0660:P0004] sha256:6e4d7cccc42c74a4ec67c4343a417aec273191fdad80d2a7bf2dc86a5beafef0
+[D0660:P0005] sha256:7d5d4d820af44c87a691de1903b15afbb61e4eb28ef5ec5dbae649a953589a7e
+[D0660:P0006] sha256:9da872e5f51123850f02095d36fe8b20186275addbf17ab02302c0228353b620
+[D0660:P0007] sha256:879fba96288ddfbbaab4ebce331174178252362446994082809d8c0408a1263f
+[D0660:P0008] sha256:d171fe7db32d118205ca82d4d29fcbd9c3c61624ee87590a095763627a61d7a5
+[D0660:P0009] sha256:4f9466a880c1a53a02157a5780165d55e88a242ef8ae233fae4782b806362576
+[D0660:P0010] sha256:27b5b51101b6118e26e146f3a55973811b9fdcd46a50d0eb4efaded3c1334b19
+[D0660:P0011] sha256:d4457d7aeaa87cf5afa5723c87f7481ab4efb370db91f7cea7e3f6adb55eb189
+[D0660:P0012] sha256:ba225283a32dbf6a76fc6efa4fddfa847dcf96d6d36862a2e7efe8bbe5250e5c
+[D0660:P0013] sha256:ffec3d96151d26cdb64e8f52b5925d9a340bde50a01fe5097a44e5b2f4b2f27d
+[D0660:P0014] sha256:dc9dc1d9dcda65bf5eed40d95835f7beb8cdba4c65c245fde41ac70784cb8640
+[D0660:P0015] sha256:710c060424cb17c0ec039c17ad9cef9b23e75c75bbe1a7f2e9fd43f788cd263e
+[D0660:P0016] sha256:543d8f88dad5a8ca0cd455167b0715ad3c02324dc1d7627787f7c50d27487a76
+[D0660:P0017] sha256:57ed642a6e111c9c9c9728bdc7f1a1a443468eff1ffdbe420132ab09a16bf442
+[D0660:P0018] sha256:aade6a7b3888d35685740ea2a3bcda29f0198a79e4f895e6fcc6064653effc72
+[D0660:P0019] sha256:2208d23c8ca85ff8a20b7c8441266d47e530746326f2ba56983bfd3b5d312bb4
+[D0660:P0020] sha256:6e9fbe8b49a2f384cb1ac5d22e13589c6bd36ea018c969926d0f31a009e27405
+[D0660:P0021] sha256:04f4e26cb0eb633663f1351be13f1c13ee2bbccdc821f4aefc5bbf0f1957c266
+[D0660:P0022] sha256:b66d246170cbd042e577b14529b0f2294b2ab2dbf7089a23c90e7098049536a8
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (37)
+E001: «CYFIRMA» — provides → «DeCYFIR» | форма: actual, positive
+E002: «DeCYFIR» — uses → «Predictive Threat Intelligence» | форма: actual, positive
+E003: «CYFIRMA» — uses → «Sector-Tailored Deception Intelligence» | форма: actual, positive
+E004: «Predictive Threat Intelligence» — part of → «DeCYFIR» | форма: actual, positive
+E005: «CYFIRMA» — uses → «Predictive Threat Intelligence» | форма: actual, positive
+E006: «CYFIRMA» — located in → «EMEA» | форма: actual, positive
+E007: «DeCYFIR» — mitigates → «deepfakes» | форма: actual, positive
+E008: «Vulnerability Intelligence» — part of → «DeCYFIR» | форма: actual, positive
+E009: «Kumar Ritesh» — leads → «CYFIRMA» | форма: actual, positive
+E010: «Sector-Tailored Deception Intelligence» — part of → «DeCYFIR» | форма: actual, positive
+E011: «DeCYFIR» — protects → «supply chains» | форма: actual, positive
+E012: «DeCYFIR» — uses → «deception technology» | форма: actual, positive
+E013: «Threat Adaptive Awareness» — part of → «DeCYFIR» | форма: actual, positive
+E014: «Situational Awareness» — part of → «DeCYFIR» | форма: actual, positive
+E015: «CYFIRMA» — uses → «Brand & Digital Risk Management» | форма: actual, positive
+E016: «CYFIRMA» — uses → «Vulnerability Intelligence» | форма: actual, positive
+E017: «CYFIRMA» — uses → «Third-Party Risk» | форма: actual, positive
+E018: «DeCYFIR» — uses → «9-pillar AI architecture» | форма: possible, positive
+E019: «Third-Party Risk» — part of → «DeCYFIR» | форма: actual, positive
+E020: «DeCYFIR» — uses → «decoys» | форма: actual, positive
+E021: «DeCYFIR» — protects → «top-level domains» | форма: actual, positive
+E022: «CYFIRMA» — uses → «Situational Awareness» | форма: actual, positive
+E023: «CYFIRMA» — uses → «Threat Adaptive Awareness» | форма: actual, positive
+E024: «Ask DeCYFIR AI Agent» — part of → «DeCYFIR» | форма: actual, positive
+E025: «DeCYFIR» — operates → «deception environments» | форма: actual, positive
+E026: «DeCYFIR» — uses → «9-pillar AI architecture» | форма: actual, positive
+E027: «Attack Surface Discovery» — part of → «DeCYFIR» | форма: actual, positive
+E028: «CYFIRMA» — uses → «Attack Surface Discovery» | форма: actual, positive
+E029: «Brand & Digital Risk Management» — part of → «DeCYFIR» | форма: actual, positive
+E030: «CYFIRMA» — located in → «Singapore» | форма: actual, positive
+E031: «DeCYFIR» — detects → «deepfakes» | форма: actual, negative
+E032: «CYFIRMA» — located in → «APAC» | форма: actual, positive
+E033: «DeCYFIR» — part of → «Sector-Tailored Deception Intelligence» | форма: actual, positive
+E034: «DeCYFIR» — protects → «third-party entities» | форма: actual, positive
+E035: «DeCYFIR» — uses → «AI» | форма: actual, positive
+E036: «DeCYFIR» — detects → «deepfakes» | форма: actual, positive
+E037: «CYFIRMA» — located in → «US» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

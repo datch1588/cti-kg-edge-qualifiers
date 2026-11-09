@@ -1,0 +1,182 @@
+AUDIT_FILE: S3N06
+TARGET_DOC_ID: D0532
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0532
+PUBLICATION_DATE: 2026-02-18
+SOURCE_URL: https://www.prnewswire.com/news-releases/trend-micro-reports-earnings-results-for-q4-2025-and-fy-2025-302691252.html
+TITLE_SHA256: 813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b
+BEGIN_DOCUMENT
+[D0532:P0001] sha256:813e346e5839238b696d0e3cb72141c10e217c3395f4cf7eca6f693391df012b
+[D0532:P0002] sha256:bb928866ed505808edc0fd4be112419da62a5ce83a81458fd9af290c7537e72f
+[D0532:P0003] sha256:4ed86abcd539ad57125518056ad95ce9273975f732b7d03fecb92948698b9b21
+[D0532:P0004] sha256:55249ca4415fa86ec7c85449e87d159f75890005dea73d64773e3b873e9be6b6
+[D0532:P0005] sha256:ec5deba275ad7cd8141d5fa0eba6c0acd4cf4e6af9a22d5923b59c9f0455ed13
+[D0532:P0006] sha256:ef0877bbcd038563a8c0978d6a1f69e0cc9f8f381c3cb298650ec72c3ddbfc30
+[D0532:P0007] sha256:3c93e31841d459e88db31102099f9b0f26e07246f155763a516f2e0b005172a4
+[D0532:P0008] sha256:48efd369f7cf17241b98ddb65f7f828613fd249e95b98bf24d1c72a7e042cddf
+[D0532:P0009] sha256:6a59d5f27c39ce0a0e14ec4cf667d9c17bfd52eb411d0e239b0eb0acb6fce475
+[D0532:P0010] sha256:2db990e1933cbc75be53c75be4e342c51c67471eda144e6ec71251f8145b6416
+[D0532:P0011] sha256:402fafd0b1f6416fe7ae5598acde1714dda3da2ef7de4ad28236a1a81c5aa620
+[D0532:P0012] sha256:02fc4b0e5f5c159400aa97f46c5498192251d32832f429980c23cd70374b14aa
+[D0532:P0013] sha256:6d9fbffa7e8d924dce2b16f213d280f9b61a7dbf1b8bfb72614a2fa6b3cbe926
+[D0532:P0014] sha256:164c0307a634942c067488c1c9172b4f861887b8845fd5fea87e29db55aa2ce8
+[D0532:P0015] sha256:0c7b38380c79f4ebd6be68d55c49a6b389305f814b70e11d01ea08302a7ba1a4
+[D0532:P0016] sha256:4eab5a159d86336d86ff2c84be1904f6116bef03f9e84d5643b564464a217428
+[D0532:P0017] sha256:efae142f4dba2f884daa2a3a72bc26a1f6702519754f6e6638f7f3b217c83241
+[D0532:P0018] sha256:d6924316cd19aef08f3811b8ca58fb179e53b38d6a52c15ab276739752427293
+[D0532:P0019] sha256:7746b8fc72e0350d384aea05a63c10d2f99f2f5f915eb3242383021ecde12b8d
+[D0532:P0020] sha256:f753e5c6ad37b63bdc282784c7ac8ba3cf858c0980dd8171898c7139b404aba7
+[D0532:P0021] sha256:b9da81c84d2158a202803cf355b86e39d38004ffa28f756bb25ddf14e5581169
+[D0532:P0022] sha256:221ec84584111d6dda8d8f436e60eb1498d69b8802af39d185c0bb2b9a5ffeae
+[D0532:P0023] sha256:496372bfbc726e11ab20e58c1b35cf9f08985ff3fd7af669190136db8d5a12d1
+[D0532:P0024] sha256:7e8cd2056da73a7fefb6cd91f4e5d199d08d9058c517b9a2476b1b520324d674
+[D0532:P0025] sha256:3a2c29c916c0791523889ec17cb06ebd40fa1464d7cfb0b3ea88c755a9decc8f
+[D0532:P0026] sha256:15ede754d54ea5871c05e84ef9ef0fcbf96a5e0d3ea93ec6df99c9616c779952
+[D0532:P0027] sha256:f4311057b7fd2e68243270046dc0bf38356995d2b8311187bc3e8f3d9a2a341e
+[D0532:P0028] sha256:82dfdf88aa88a25b53a274329505bd2d42d317a1a63d817cbda0647edc0890e5
+[D0532:P0029] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0030] sha256:db2b0757373570b99500a1b92ded55fc6b360436457f2f9a391df26679ef9ba9
+[D0532:P0031] sha256:2786d8993b51d933cc27ee2650f164ccf6fbec74989f68a08eac3e30351dad5a
+[D0532:P0032] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0033] sha256:fa40f7c91f54b6b2a25dd5afe4ca66c11d0005634cf5bf56e91ab36ca80b16e6
+[D0532:P0034] sha256:626f74add3074dcb18305cdcb7d8cf7485f8c05092bef062f3b6399f32cd74cc
+[D0532:P0035] sha256:1d906cc078c2d1a89fff22d3643447f675a117e0f3d85379fa90bd4d669ccf66
+[D0532:P0036] sha256:314a9cb47695e4168643aae2e0f1bd9d4c3fbad775a5c552390085ec8a421a63
+[D0532:P0037] sha256:021f921d570836ddda7ef6396eb3e2c7ac7b328b54ab496e01ad0e1accd67e01
+[D0532:P0038] sha256:b4e22c98a57ae80a81427ba2e35a08afcb194e78652ab6acc4b6ae33b0677f0c
+[D0532:P0039] sha256:9bd60f341f0cdf30e9e531c0def6ec96aae850d795a7df423dfdb541e4bb15f9
+[D0532:P0040] sha256:5438e6a5eda8bf5b84ad77516b56468443177480e383e13225e4c6777f90366f
+[D0532:P0041] sha256:adf7171f678513ccab712ddbd79996e9c31b4e95761ff6e72b173d4dde805ded
+[D0532:P0042] sha256:675657fd93f39d15abe8dca2ee01390279e65f0b082d676ef11d9d13595dd1e5
+[D0532:P0043] sha256:b5b4046a8d6eba04fb8e2ff2ba6b110ce5daa506e8290a6b7bde9d4700356a4b
+[D0532:P0044] sha256:68e58a56f71a0d852836aea9c45a9674d5ec5ccfcde8892dd56f23a54b567ffc
+[D0532:P0045] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0532:P0046] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0532:P0047] sha256:cd5e70fd532edf9c491e52083b1bcc772eb48d18323f7e266cbb9e87992f7394
+[D0532:P0048] sha256:96976f34b804fbcec933c13eb22de7013ed9dd692bc581bdb180fa5b896d6a6e
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (71)
+E001: «TrendAI Vision One for service providers» — launched in → «Q4 2025» | форма: actual, positive
+E002: «Cifas» — mitigates → «online scams» | форма: planned, negative
+E003: «Trend Micro» — partnered with → «Winstron Digital Technology Holding Company» | форма: actual, positive
+E004: «Trend Micro» — announced earnings results for → «fiscal year 2025» | форма: actual, positive
+E005: «IDC» — recognized as a leader in Consumer Digital Life Protection → «Trend Micro» | форма: actual, positive
+E006: «TrendAI Zero Day Initiative» — held → «Pwn2Own» | форма: actual, positive
+E007: «Trend Micro» — provides → «TrendAI Vision OneTM» | форма: actual, positive
+E008: «identity fraud» — mitigates → «Trend Micro» | форма: planned, positive
+E009: «Trend Micro» — provides → «TrendAI Vision OneTM AI Security Package» | форма: actual, positive
+E010: «Eva Chen» — is co-founder and CEO of → «Trend Micro» | форма: actual, positive
+E011: «Trend Micro» — provides → «Magna AI» | форма: actual, positive
+E012: «Trend Micro» — launched → «Magna AI» | форма: actual, positive
+E013: «Trend Micro» — warns about → «scams» | форма: actual, positive
+E014: «Trend Micro» — provides → «Network Analysis and Visibility» | форма: actual, positive
+E015: «Trend Micro» — mitigates → «online scams» | форма: actual, positive
+E016: «Trend Micro» — published → «Trend Micro Reports Earnings Results for Q4 2025 and FY 2025» | форма: actual, positive
+E017: «Trend Micro» — mitigates → «identity fraud» | форма: actual, positive
+E018: «Cifas» — mitigates → «identity fraud» | форма: planned, positive
+E019: «Trend Micro» — partnered with → «Cifas» | форма: actual, positive
+E020: «Cifas» — located in → «UK» | форма: actual, positive
+E021: «TrendAI Vision One» — provides → «security operations» | форма: actual, positive
+E022: «Trend Micro» — provides → «Beyond Device Protection» | форма: actual, positive
+E023: «Trend Micro» — protects → «agentic AI» | форма: actual, positive
+E024: «TrendAI Vision OneTM» — uses → «AI» | форма: actual, positive
+E025: «Trend Micro» — awarded over $1,000,000 to ethical hackers for discovering → «zero-day vulnerabilities» | форма: actual, positive
+E026: «Trend Micro» — warns about → «scams» | форма: possible, positive
+E027: «Kevin Simzer» — member of → «Trend Micro» | форма: actual, positive
+E028: «TrendAI Vision One» — delivers layered protection across → «on-premises, hybrid, and multi-cloud environments» | форма: actual, positive
+E029: «TrendAI Zero Day Initiative» — operates → «Pwn2Own» | форма: actual, positive
+E030: «Trend Micro» — headquartered in → «Tokyo» | форма: actual, positive
+E031: «Trend Micro» — provides → «ScamCheck» | форма: actual, positive
+E032: «Trend Micro» — provides → «threat intelligence» | форма: actual, positive
+E033: «Trend Micro» — combats → «online scams» | форма: actual, positive
+E034: «Trend Micro» — was awarded patent for detection of → «bring your own vulnerable driver attacks» | форма: actual, positive
+E035: «Trend Micro» — launched end-to-end protection for → «agentic AI systems» | форма: actual, positive
+E036: «Trend Micro» — launched → «TrendAI Vision One for service providers» | форма: actual, positive
+E037: «Trend Micro» — introduced → «TrendAI Vision One AI Security Package» | форма: actual, positive
+E038: «bring your own vulnerable driver attacks» — target → «windows-based systems» | форма: actual, positive
+E039: «Winstron Digital Technology Holding Company» — provides → «Magna AI» | форма: actual, positive
+E040: «Trend Micro» — uses → «AI» | форма: actual, positive
+E041: «Trend Micro» — mitigates → «online scams» | форма: planned, positive
+E042: «Trend Micro» — detects → «bring your own vulnerable driver attacks» | форма: actual, positive
+E043: «ethical hackers» — discovers → «zero-day vulnerabilities» | форма: actual, positive
+E044: «bring your own vulnerable driver attacks» — targets → «windows-based systems» | форма: actual, positive
+E045: «Trend Micro» — mitigates → «identity fraud» | форма: planned, positive
+E046: «Trend Micro» — protects → «agentic AI systems» | форма: actual, positive
+E047: «Trend Micro» — provides → «TrendAI Vision One» | форма: actual, positive
+E048: «Forrester» — recognized as a Leader in Network Analysis and Visibility solutions → «Trend Micro» | форма: actual, positive
+E049: «TrendAI Vision One» — provides → «attack surface risk management» | форма: actual, positive
+E050: «TrendAI Vision One» — uses → «AI» | форма: actual, positive
+E051: «PR Newswire» — distributed → «Trend Micro Reports Earnings Results for Q4 2025 and FY 2025» | форма: actual, positive
+E052: «Trend Micro» — partnered with → «NVIDIA» | форма: actual, positive
+E053: «AI» — uses → «TrendAI Vision OneTM» | форма: actual, positive
+E054: «Eva Chen» — leads → «Trend Micro» | форма: actual, positive
+E055: «Trend Micro» — offers → «Beyond Device Protection (Digital Life Protection)» | форма: actual, positive
+E056: «Cifas» — mitigates → «online scams» | форма: planned, positive
+E057: «Trend Micro» — offers → «ScamCheck» | форма: actual, positive
+E058: «Trend Micro» — develops → «TrendAI Vision One» | форма: actual, positive
+E059: «TrendAI Vision OneTM» — uses → «agentic AI» | форма: actual, positive
+E060: «Trend Micro» — was awarded patent for scanning of → «security logs» | форма: actual, positive
+E061: «TrendAI Vision One» — uses → «agentic AI» | форма: actual, positive
+E062: «Cifas» — mitigates → «online scams» | форма: actual, positive
+E063: «Trend Micro» — combats → «identity fraud» | форма: actual, positive
+E064: «Trend Micro» — published research warning of → «AI-driven scams» | форма: actual, positive
+E065: «Trend Micro» — launched → «TrendAI Vision One for service providers» | форма: possible, positive
+E066: «Trend Micro» — provides → «TrendAI Vision OneTM for service providers» | форма: actual, positive
+E067: «TrendAI Vision One» — provides → «cyber risk exposure management» | форма: actual, positive
+E068: «Trend Micro» — mitigates → «online scams» | форма: actual, negative
+E069: «Cifas» — mitigates → «identity fraud» | форма: actual, positive
+E070: «Trend Micro Reports Earnings Results for Q4 2025 and FY 2025» — published on → «Feb 18, 2026» | форма: actual, positive
+E071: «Kevin Simzer» — is COO of → «Trend Micro» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

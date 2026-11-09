@@ -1,0 +1,260 @@
+AUDIT_FILE: QT21A
+TARGET_DOC_ID: D0420
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0420
+PUBLICATION_DATE: 2026-03-13
+SOURCE_URL: https://lansinginstitute.org/2026/03/13/disinformation-and-cyber-threat-narratives-in-kosovo-during-the-iran-crisis/
+TITLE_SHA256: 10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+BEGIN_DOCUMENT
+[D0420:P0001] sha256:10212fedb33be66e17304407c80e30eb14c026ee6415b49b10d6ef19a1ccc53d
+[D0420:P0002] sha256:58d8c3bc898617135423140b77d85d024f89f34f7afe5d93bae02e803517124d
+[D0420:P0003] sha256:dc94452fc6b9734a2a812525408002aa1338ec7a7b9b0c5bc3f5b5e8475104a9
+[D0420:P0004] sha256:81ee68c086ba15d1751aadaee43d535fe5c9d6936b1f2a3d0151c7b23582c65e
+[D0420:P0005] sha256:951af6a93cfef1c5feddc23a2d6f9fa2aa5563897217c94e0971594611f14431
+[D0420:P0006] sha256:ad799c311042eacb4447abf0817742500e4fb932439db3147d4dd9763784c207
+[D0420:P0007] sha256:f4f43f5a4257ace9c91feaff44d1d9baed362c5cb44ab8c20ab630dc5b5db51d
+[D0420:P0008] sha256:0716d9e9f90d27c29260ddaf2574706d2065870d1113d2e10ae283eebe2884d3
+[D0420:P0009] sha256:5af3fb4073371961f37ba710a74b6d2dcbdffc02c1a5939320d44e25647e2b05
+[D0420:P0010] sha256:d54e08fedad077b284cac7f859add80007ca103332b53b1479654b43df789110
+[D0420:P0011] sha256:7ac36f13b55ebe8e6d790aa85af651fc71d44f2b1b110a7c8de868c4430b58bb
+[D0420:P0012] sha256:4bf4b3490e84ae48935aef2ec193f4b82b754730643566b3523dece380b05cd5
+[D0420:P0013] sha256:6ca561b00c1bc4e5a2c8e7f3599fd6702ddc8711ecc899b825330ecc0eab411a
+[D0420:P0014] sha256:3eb9f0f0d777cfaa9ea5ce100dccdc74625032c9b8f3ea8dff69771d89d8fe45
+[D0420:P0015] sha256:795234364348172be9e1e281f2bae25bac07b50fd5a4efb33eb62b8d63616934
+[D0420:P0016] sha256:4d6a77bed9e8cd0df940da6cc2371e5d5850078282a0c1871943c1eed2ace4a5
+[D0420:P0017] sha256:cc7aadf70a06772717f7ca35caccd373fc5954359d65f052249a5a10b3bc4d01
+[D0420:P0018] sha256:73c3aa1926ee5664b83f83615f0e11109a9505c02a0832ee285ba2938f7e7c81
+[D0420:P0019] sha256:aa21127771b033a7d7daa56da9e4c554911e896424b2c4ae6d7ad0597b53ccf9
+[D0420:P0020] sha256:e156e164ba4002854556abd1408afb5bcd82f535a97c8bdcebd93346d8bbb254
+[D0420:P0021] sha256:b75b4a8d0bda312c4000486a6b735fb23c3d413909eb86540d7d42001b402545
+[D0420:P0022] sha256:597d787a194109c02acfabf2f4c2abca8005d9d6b8b42812dd5f532b35879835
+[D0420:P0023] sha256:2d697ef846194e11c7b86d65527609ba8addad5c504ccf91e70e5ce8f7345b6c
+[D0420:P0024] sha256:cc87fa9d4179120c1798a63d6f9f73c7a3d610231d17d6a0a8ed93a7ecbb3887
+[D0420:P0025] sha256:d409bff127ba944e8fa84b99778959736c495851e154599ab076cef176cc12fc
+[D0420:P0026] sha256:0c39a20139fbef7425d9bd9bb25bb663daa0002930e2bcf9e71d02b20c42b521
+[D0420:P0027] sha256:d2fe71739d05cd676faeb0a251c55eadf8ed56a5dbdc5363210cfde18f010edc
+[D0420:P0028] sha256:0acb8a6adf0984895a1b6f07132e57858d783c54caae7fdd2728ab52318af28f
+[D0420:P0029] sha256:22d7dcb74103af19050cf97b02fa86c63a10e69ece92cf2e59719237708d3bd6
+[D0420:P0030] sha256:7b01be1d45344f23626aea9d4c88e6f8b2b792ba8daaf4b2b61c04e3fd6759b6
+[D0420:P0031] sha256:0860af3b0a67a408940ed4153afebb52dd29f8928fc549b75217606f8bed1fcb
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 45, вузлів 4)
+E001: «Cyber units associated with Iranian security institutions» — targets → «political communication networks» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@178-408 sha256=4dd542cdc675caae0f3b717e2edeba8ffcd670d3ce8451d47399c9848a5defbd»
+E002: «Russia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generation of narratives projecting uncertainty and instability»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E003: «Aleksandar Vulin» — leads → «Security Intelligence Agency» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0011] «@584-686 sha256=f23d56f4fdd0c945f2c34900292e94265ac513246efb6e1b01d278b0c03d106b»
+E004: «NATO» — operates → «KFOR» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0007] «@1164-1268 sha256=17118817e59cc0c754adb63eb082d3d9d12c4d7f82a027ae408aed331399388f»
+E005: «Serbia» — targets → «Kosovo» | форма: recommended, positive
+  атрибуція: «Aleksandar Vulin» | час події: — | контекст події: «Vulin's public call for Serbia to act toward Kosovo as Israel acted toward Iran»
+  фрагменти: [D0420:P0011] «@750-859 sha256=e6b30065606eaa4f570de151b16473eb22ea4dce0c6d62c50e80e7ae03c8b692»
+E006: «Iran» — uses → «information operations» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@61-177 sha256=d498de6a53733ec25d4b6bb43c81ef6e0f963715bb228e4674ea5a6695882a6b»
+E007: «Security Intelligence Agency» — part of → «Serbia» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0011] «@584-686 sha256=f23d56f4fdd0c945f2c34900292e94265ac513246efb6e1b01d278b0c03d106b»
+E008: «Maria Zakharova» — warns about → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «advised Russian citizens not to travel to Kosovo»
+  фрагменти: [D0420:P0014] «@230-330 sha256=62f5350d5fffcfbec93ce8d21f216445be851720da621f1f5f46e01250a203f1»
+E009: «transparent communication» — mitigates → «propaganda» | форма: recommended, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0026] «@156-324 sha256=decb78d52086bb3daaad05c60c5ab0f1774d856c6522474620517b052bf20fef»
+E010: «Kosovo» — mitigates → «disinformation» | форма: recommended, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0028] «@250-349 sha256=56645e57449d1583be4cf899f7fc9fdc9b88d242ed65c9b90fb2221fed20d53b»
+E011: «Russia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generating narratives that project uncertainty and instability in the Balkan region with focus on Kosovo»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E012: «Psychological operations» — affects → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0021] «@0-161 sha256=48018a11f77012b479c765a4eaf9c3c35c75befaf79911354bf39e4b3ebc7de1»
+E013: «United States» — operates → «Camp Bondsteel» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0005] «@393-452 sha256=d9d2e08e66eccbc0c9e5a9424726c048c1a1131b3f7b16df68cabc5058abc9d5»; [D0420:P0007] «@985-1129 sha256=8ea64c76a53ab53b166b90e24bca9aa49c331fcb819a550ac9f41a6d0fbedffe»
+E014: «Kosovo» — mitigates → «disinformation» | форма: actual, positive
+  атрибуція: — | час події: «At present» | контекст події: —
+  фрагменти: [D0420:P0027] «@0-178 sha256=97f08906c89c7ca064151d78bee9cbba1d32f7b8716768ec8e73a9607dfdaa4a»
+E015: «media literacy» — mitigates → «hybrid conflict» | форма: recommended, positive
+  атрибуція: «Security Intelligence Agency» | час події: — | контекст події: —
+  фрагменти: [D0420:P0022] «@384-692 sha256=57513fd3897dd1fb5b4c64210c0aee7247d9b8f0dec02564ee6970b012e5734d»
+E016: «NATO» — operates → «KFOR» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0007] «@1130-1269 sha256=0b8bfd0d23a8ca306dc48afe98da456bbf7fd3dd3de8ab35ca491cf920dd74a3»
+E017: «Aleksandar Vulin» — leads → «Security Intelligence Agency» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «former director (past role)»
+  фрагменти: [D0420:P0011] «@584-686 sha256=f23d56f4fdd0c945f2c34900292e94265ac513246efb6e1b01d278b0c03d106b»
+E018: «Camp Bondsteel» — located in → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0007] «@985-1129 sha256=8ea64c76a53ab53b166b90e24bca9aa49c331fcb819a550ac9f41a6d0fbedffe»
+E019: «Kosovo» — mitigates → «disinformation» | форма: recommended, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0028] «@250-410 sha256=b018d80026a088363182963855c80219d7fd481a9f908b5ad3b8b434b25e8a8a»
+E020: «Serbia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generation of narratives projecting uncertainty and instability, with particular focus on Kosovo»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E021: «Serbia» — targets → «Kosovo» | форма: recommended, positive
+  атрибуція: «Aleksandar Vulin» | час події: — | контекст події: «Vulin's call for Serbia to act toward Kosovo as Israel acted toward Iran»
+  фрагменти: [D0420:P0011] «@750-858 sha256=218ce8e68e488926711b09cce0bfcd5ee45f89ccdc76fc9a6d2ee3bcabca7591»
+E022: «Iran» — uses → «cyber capabilities» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@61-177 sha256=d498de6a53733ec25d4b6bb43c81ef6e0f963715bb228e4674ea5a6695882a6b»
+E023: «Cyber units associated with Iranian security institutions» — targets → «infrastructure» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@178-408 sha256=4dd542cdc675caae0f3b717e2edeba8ffcd670d3ce8451d47399c9848a5defbd»
+E024: «Russia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generating narratives that project uncertainty and instability in the Balkan region»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E025: «media literacy» — mitigates → «hybrid conflict» | форма: recommended, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0022] «@384-692 sha256=57513fd3897dd1fb5b4c64210c0aee7247d9b8f0dec02564ee6970b012e5734d»
+E026: «Serbia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generating narratives that project uncertainty and instability in the Balkan region with focus on Kosovo»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E027: «Cyber units associated with Iranian security institutions» — uses → «cyber operations» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@178-285 sha256=7f7cceec6604fdaa80881adceb4495e8421a2de773f2a28669bec89a3dee7d0c»; [D0420:P0006] «@409-545 sha256=652c73ac23d6fce0c9d262bbe50736b09c691b035ee59f02aedd3d6f75ca9592»
+E028: «Cyber units associated with Iranian security institutions» — targets → «government institutions» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0006] «@178-408 sha256=4dd542cdc675caae0f3b717e2edeba8ffcd670d3ce8451d47399c9848a5defbd»
+E029: «Aleksandar Vulin» — leads → «Security Intelligence Agency» | форма: actual, positive
+  атрибуція: — | час події: «2026-03-13» | контекст події: —
+  фрагменти: [D0420:P0011] «@584-686 sha256=f23d56f4fdd0c945f2c34900292e94265ac513246efb6e1b01d278b0c03d106b»
+E030: «Israel» — targets → «Iran» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «Israeli strike against Iran»
+  фрагменти: [D0420:P0011] «@687-859 sha256=84c5e8afaf76127fba4da0433ba7a44133fc40d3136eb3e997b306e365c3fbbf»
+E031: «Israel» — targets → «Iran» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: вузол «Israeli strike against Iran» (event)
+  фрагменти: [D0420:P0011] «@687-859 sha256=84c5e8afaf76127fba4da0433ba7a44133fc40d3136eb3e997b306e365c3fbbf»
+E032: «Russia» — uses → «disinformation» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «disinformation about the insecure environment in Kosovo»
+  фрагменти: [D0420:P0014] «@116-228 sha256=fc1c2b50e408edfccb25e36781f22692dad2eb984f70a46b7b7a708dad8729d2»
+E033: «Russia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generation of narratives projecting uncertainty and instability, with particular focus on Kosovo»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E034: «Aleksandar Vulin» — leads → «Security Intelligence Agency» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generation of narratives projecting uncertainty and instability»
+  фрагменти: [D0420:P0011] «@584-686 sha256=f23d56f4fdd0c945f2c34900292e94265ac513246efb6e1b01d278b0c03d106b»
+E035: «Serbia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generation of narratives projecting uncertainty and instability»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E036: «Maria Zakharova» — warns about → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «public advice to Russian citizens not to travel to Kosovo, citing security concerns»
+  фрагменти: [D0420:P0014] «@230-330 sha256=62f5350d5fffcfbec93ce8d21f216445be851720da621f1f5f46e01250a203f1»
+E037: «Maria Zakharova» — warns about → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «advice to Russian citizens not to travel to Kosovo»
+  фрагменти: [D0420:P0014] «@230-330 sha256=62f5350d5fffcfbec93ce8d21f216445be851720da621f1f5f46e01250a203f1»
+E038: «Kosovo» — mitigates → «propaganda» | форма: actual, positive
+  атрибуція: — | час події: «At present» | контекст події: —
+  фрагменти: [D0420:P0027] «@0-178 sha256=97f08906c89c7ca064151d78bee9cbba1d32f7b8716768ec8e73a9607dfdaa4a»
+E039: «Hybrid strategies» — uses → «information warfare» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0020] «@166-389 sha256=6c5de1c47f48978a9612acaa22ad96e96bd250acef4bb4b14d7bf7faed356de4»
+E040: «Camp Bondsteel» — located in → «Ferizaj» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0007] «@985-1129 sha256=8ea64c76a53ab53b166b90e24bca9aa49c331fcb819a550ac9f41a6d0fbedffe»
+E041: «United States» — operates → «Camp Bondsteel» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0007] «@985-1129 sha256=8ea64c76a53ab53b166b90e24bca9aa49c331fcb819a550ac9f41a6d0fbedffe»
+E042: «United States» — operates → «Camp Bondsteel» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0005] «@282-453 sha256=89c5c03c025fc4d1e9002c9aada37ba310e00a0e8a370cf3b7a7329f1b7fb928»; [D0420:P0007] «@985-1129 sha256=8ea64c76a53ab53b166b90e24bca9aa49c331fcb819a550ac9f41a6d0fbedffe»
+E043: «Serbia» — targets → «Kosovo» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «generating narratives that project uncertainty and instability in the Balkan region»
+  фрагменти: [D0420:P0021] «@162-338 sha256=2706ad2e4eac276d21239022aab5bff31c69c9f9734af48023b941bb7df6769c»
+E044: «Hybrid strategies» — uses → «cyber operations» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0020] «@166-389 sha256=6c5de1c47f48978a9612acaa22ad96e96bd250acef4bb4b14d7bf7faed356de4»
+E045: «Social media platforms» — enables → «disinformation» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0420:P0015] «@544-751 sha256=9b0021865d613663bdca21da756c86a2c6387ce637d0aba3e338c9d3b0e0f383»
+V001: «Aleksandar Vulin» (person) | альтернативні назви: «Vulin»
+V002: «Camp Bondsteel» (location) | альтернативні назви: «Bondsteel»
+V003: «Balkans» (location) | альтернативні назви: «Balkan region»
+V004: «NATO» (organization) | альтернативні назви: «government institutions»
+КІНЕЦЬ ЗАПИСІВ

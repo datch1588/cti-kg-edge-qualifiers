@@ -1,0 +1,186 @@
+AUDIT_FILE: QT38A
+TARGET_DOC_ID: D0144
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_QUALIFIER_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Записи двох видів. Запис ребра — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми, полями атрибуції, часу й контексту події та фрагментами статті, якими запис себе підтверджує. Запис вузла — це сутність із типом і альтернативними назвами. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису ребра
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+  атрибуція: «…» | час події: «…» | контекст події: «…»
+  фрагменти: [Dxxxx:Pyyyy] «…»; [Dxxxx:Pyyyy] «…»
+Тире замість значення означає, що поле порожнє. Якщо контекстом події позначено вузол графа, показано його назву й тип: вузол «…» (тип).
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+
+Вердикти ребра
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — вердикт не ставиться (див. «Коли що оцінювати»).
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+attribution_verdict — атрибуція: хто, за статтею, стверджує або повідомляє саме цей звʼязок. Це особа, організація, видання, звіт чи інший документ, які стаття явно називає джерелом цього твердження («said», «reported», «according to», «claimed», «warned», «denied», «researchers at X found»). Сама стаття чи видання, що її опублікувало, не є атрибуцією, якщо текст не називає їх джерелом твердження. Учасник звʼязку може бути атрибуцією, лише якщо саме він робить заяву («Microsoft said it patched the flaw»). Приписування атаки актору (відношення attributed to) — це трійка, а не атрибуція.
+- Поле заповнене: C — стаття явно подає цей звʼязок як твердження чи повідомлення названого джерела; назва може бути коротшою чи повнішою («Microsoft» і «Microsoft Threat Intelligence»), поле може містити уточнення, якщо воно є в статті («Shmyhal on Telegram»). I — стаття не приписує цей звʼязок названому джерелу: джерело каже інше, такого джерела в статті немає або названо того, хто цього не стверджує. U — неоднозначність.
+- Поле порожнє: N — стаття не називає джерела саме цього твердження, тож порожнє поле правильне. M — стаття явно називає джерело цього твердження, а поле порожнє. U — неоднозначність.
+time_verdict — час події: дослівне позначення в статті часу події чи періоду, про які це твердження («in March 2024», «last week», «since 2021», «on the night of 2-3 February»). Дата публікації із заголовка статті не є часом події, якщо текст не подає її як час цієї події. Час іншої події з тієї самої статті не підходить.
+- Поле заповнене: C — таке позначення часу є в статті (дослівно або з дрібними відмінностями в регістрі, артиклі чи прийменнику) і стосується саме цієї події чи стану. I — час стосується іншої події, узятий із дати публікації, обчислений чи переписаний іншими словами («2023» замість «last year»), або його в статті немає. U — неоднозначність.
+- Поле порожнє: N — стаття не називає часу цієї події, тож порожнє поле правильне. M — стаття явно називає час цієї події, а поле порожнє. U — неоднозначність.
+context_verdict — контекст події: конкретна подія (інцидент, кампанія, атака, операція, витік, оголошення, захід), у межах якої чинне це твердження.
+- Поле заповнене: C — твердження справді стосується саме цієї події статті. I — твердження стосується іншої події або значення не є конкретною подією (загальна тема, галузь, явище, назва статті, сам учасник без події). U — неоднозначність.
+- Поле порожнє: «—» (порожній контекст не оцінюють).
+fragment_verdict — чи підтверджують показані фрагменти самі по собі цей запис. Читай лише фрагменти. Абзац, з якого взято фрагмент, використовуй тільки для того, щоб зрозуміти, кого позначає займенник чи описова назва у фрагменті («the group», «the company», «it»).
+- S — фрагменти самі підтверджують трійку, форму й кожне заповнене поле атрибуції, часу й контексту, яке ти оцінив як C.
+- Q — фрагменти підтверджують трійку й форму, але хоча б одне таке поле підтверджує лише інше місце статті.
+- P — фрагменти не підтверджують трійки чи форми: наприклад, лише згадують обидві назви, звʼязок сказано в іншому місці, форма випливає лише з іншого місця, фрагмент про інше або такого фрагмента в статті немає.
+
+Коли що оцінювати
+- Якщо triple_verdict не C, усі інші вердикти ребра — «—».
+- Якщо triple_verdict = C, оціни form_verdict, attribution_verdict, time_verdict і context_verdict. fragment_verdict оціни, лише якщо form_verdict = C; інакше «—».
+- Атрибуцію, час і контекст оцінюй незалежно від форми: хибна форма не робить хибними атрибуцію чи час.
+
+Запис вузла
+V001: «назва» (тип) | альтернативні назви: «…»; «…»
+alias_verdict:
+- C — кожна альтернативна назва, за статтею, позначає саме цю сутність: скорочення, повна назва, інше написання або назва, яку стаття прямо ототожнює з нею («also known as», «formerly», абревіатура в дужках).
+- I — хоча б одна альтернативна назва позначає іншу сутність (продукт і його розробник, особа та її організація, сімейство ПЗ і група атакувальників, ціле й частина, загальне поняття й конкретний об'єкт) або її немає в статті.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+Тип сутності тут не оцінюй.
+
+Не став C чи N за замовчуванням: для кожного запису окремо знайди відповідне місце статті й перевір кожне поле.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "attribution_verdict": "N", "time_verdict": "C", "context_verdict": "—", "fragment_verdict": "S", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "attribution_verdict": "—", "time_verdict": "—", "context_verdict": "—", "fragment_verdict": "—", "reason": "коротко, українською"},
+  {"item_id": "V001", "alias_verdict": "C", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне-два речення; для кожного вердикту I, U, M, Q чи P обов'язково назви, що саме не так. У reason не вживай прямих лапок ("); цитуй у лапках «».
+
+СТАТТЯ
+DOC_ID: D0144
+PUBLICATION_DATE: 2026-05-27
+SOURCE_URL: https://www.aa.com.tr/en/europe/german-government-approves-draft-for-new-powers-to-fight-cyber-threats/3949933
+TITLE_SHA256: fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+BEGIN_DOCUMENT
+[D0144:P0001] sha256:fab02c4096e535780ea7d434417e4ad099d9d750e2ae0fa5aeacf4e155aa0eb8
+[D0144:P0002] sha256:9ea106218bc851ef1ddde648dc3211e843b3e4e58a155cd34f27a430b74120ee
+[D0144:P0003] sha256:b27a38347d9c98bec8bee9c690e02baa496e89101d69c7a5794792e879ffd17b
+[D0144:P0004] sha256:e5af578481a4b35d652765ccdab8e194179c045a59a9dbe0a680494828ecfe2c
+[D0144:P0005] sha256:253fab16fc1f1ac31b997f4eeef3b7cefa94e6d3b4e56baaa8b4ed00b0f0b5b9
+[D0144:P0006] sha256:b98e567baa639cfef2283782f700c041aaef42ce9892ccd00a29b52ed661a82a
+[D0144:P0007] sha256:d1382b3f4976e1e3ebf9dc06bebc1374b7eafab399982bea6bdc3afce1562661
+[D0144:P0008] sha256:825b78aabe95bcac334b7525c2d2d697adef8f70adbbeb1368ca5837c96267c9
+[D0144:P0009] sha256:1c0deb8c8477c48914cca0968dd41e5baf00bcf76f38e833a3272374175b0c3c
+[D0144:P0010] sha256:caf2d26f7c57ade93fe0b531756f51a8fea38091ecc1ac4167b01d73bfde26c9
+[D0144:P0011] sha256:7c63e57feef66042ddf1db733c8b36dd7b2ee109d272c96d449a3a88123db6b2
+[D0144:P0012] sha256:234b4fb68d682269e4cb118675ec8bdca07558dbded83a4fe10704a155ed23a5
+[D0144:P0013] sha256:c6178c3c7a565f8da58b133fce2e6b29b8ac1047a29c11e6a6ef7df3f6f7f12c
+[D0144:P0014] sha256:f231d27feee60bf45ba632a2a4e04ed20914d45bf1f394c1eb544e6cf643302a
+[D0144:P0015] sha256:a405faa469c031edd4a4604793093105b2438e099deaa6a988bfe5bb5967de37
+[D0144:P0016] sha256:f776f3ed49d11a2f7760f7baca58586bed85d0cabb3e66cb149a73187856bf22
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (ребер 25, вузлів 5)
+E001: «foreign powers» — targets → «scientific community» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@99-295 sha256=42ab05394cef57dd96ea4d6dd182efc10b611e7948f14ffe50ae7bae2e92ed60»
+E002: «state-linked groups» — targets → «political parties» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: «sophisticated operations by foreign powers and state-linked groups»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E003: «German authorities» — uses → «active cyber defense» | форма: planned, positive
+  атрибуція: «Alexander Dobrindt» | час події: — | контекст події: «proactive cyber defense under the draft legislation»
+  фрагменти: [D0144:P0010] «@0-165 sha256=caf2d26f7c57ade93fe0b531756f51a8fea38091ecc1ac4167b01d73bfde26c9»; [D0144:P0011] «@40-170 sha256=0e9cd6115932a745fceaef7ac3cc0da137956a795d3ec2f4513c29589af8738e»
+E004: «German authorities» — uses → «hackbacks» | форма: planned, negative
+  атрибуція: «Alexander Dobrindt» | час події: — | контекст події: «new powers under draft cyber defense legislation approved by Germany's government»
+  фрагменти: [D0144:P0010] «@0-103 sha256=6f06b468feba2d79a04cc3121c9e2b9a727d540e5de0d5c6f03633a1e65a6d98»
+E005: «cyberattacks» — targets → «Germany» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@0-53 sha256=7b8eb5852d1ff7039dc9f6f6337433175a7c924cdc7ab1d4cb48767538aac12e»
+E006: «German authorities» — mitigates → «cyber threats» | форма: planned, positive
+  атрибуція: «Alexander Dobrindt» | час події: — | контекст події: «new powers under draft cyber defense legislation approved by Germany's government»
+  фрагменти: [D0144:P0010] «@23-164 sha256=a1081a4f10cbdfe03f496a340dbde12f2b49c8a18fec28d42897101032f13a5d»
+E007: «state-linked groups» — targets → «scientific community» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@99-295 sha256=42ab05394cef57dd96ea4d6dd182efc10b611e7948f14ffe50ae7bae2e92ed60»
+E008: «state-linked groups» — targets → «industry» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: «sophisticated operations by foreign powers and state-linked groups»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E009: «foreign powers» — targets → «political parties» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E010: «foreign powers» — targets → «scientific community» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E011: «German authorities» — warns about → «state-linked groups» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-191 sha256=886af048573fb3bf344dabfb9458e0460f2c9fee0f8f612aeaf4a9999300284f»
+E012: «state-linked groups» — targets → «small and midsize businesses» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E013: «state-linked groups» — targets → «political parties» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@99-295 sha256=42ab05394cef57dd96ea4d6dd182efc10b611e7948f14ffe50ae7bae2e92ed60»
+E014: «foreign powers» — targets → «small and midsize businesses» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@99-295 sha256=42ab05394cef57dd96ea4d6dd182efc10b611e7948f14ffe50ae7bae2e92ed60»
+E015: «German authorities» — warns about → «foreign powers» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «sophisticated operations by foreign powers and state-linked groups»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E016: «state-linked groups» — targets → «government institutions» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: «sophisticated operations by foreign powers and state-linked groups»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E017: «German authorities» — warns about → «state-linked groups» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «new powers under draft cyber defense legislation approved by Germany's government»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E018: «German authorities» — warns about → «state-linked groups» | форма: actual, positive
+  атрибуція: «Alexander Dobrindt» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-191 sha256=886af048573fb3bf344dabfb9458e0460f2c9fee0f8f612aeaf4a9999300284f»
+E019: «German authorities» — warns about → «state-linked groups» | форма: actual, positive
+  атрибуція: — | час події: — | контекст події: «sophisticated operations by foreign powers and state-linked groups»
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E020: «German authorities» — uses → «hackbacks» | форма: planned, negative
+  атрибуція: «Alexander Dobrindt» | час події: — | контекст події: «proactive cyber defense under the draft legislation»
+  фрагменти: [D0144:P0010] «@0-165 sha256=caf2d26f7c57ade93fe0b531756f51a8fea38091ecc1ac4167b01d73bfde26c9»
+E021: «state-linked groups» — targets → «industry» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E022: «Federal Office for Information Security» — mitigates → «cyberattacks» | форма: planned, positive
+  атрибуція: — | час події: — | контекст події: «Cabinet-approved draft legislation granting new powers against cyberattacks»
+  фрагменти: [D0144:P0006] «@34-216 sha256=66e3aac4af9f4b51ba429fffe07a69d55372a0cccba15c85aa054e283f1ecced»; [D0144:P0012] «@0-211 sha256=234b4fb68d682269e4cb118675ec8bdca07558dbded83a4fe10704a155ed23a5»
+E023: «state-linked groups» — targets → «government institutions» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@99-295 sha256=42ab05394cef57dd96ea4d6dd182efc10b611e7948f14ffe50ae7bae2e92ed60»
+E024: «foreign powers» — targets → «small and midsize businesses» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+E025: «state-linked groups» — targets → «political parties» | форма: actual, positive
+  атрибуція: «authorities» | час події: — | контекст події: —
+  фрагменти: [D0144:P0009] «@59-295 sha256=ab5bf6fd995daf30cda983eda305c56069ad204b773512630aa27769ecee7b79»
+V001: «Federal Criminal Police Office» (organization) | альтернативні назви: «BKA»
+V002: «German government» (organization) | альтернативні назви: «small and midsize businesses»
+V003: «German government» (organization) | альтернативні назви: «Germany's government»
+V004: «Alexander Dobrindt» (person) | альтернативні назви: «Dobrindt»
+V005: «Bundespolizei» (organization) | альтернативні назви: «federal police»
+КІНЕЦЬ ЗАПИСІВ

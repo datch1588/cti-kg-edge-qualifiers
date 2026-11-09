@@ -1,0 +1,311 @@
+AUDIT_FILE: S3N04
+TARGET_DOC_ID: D0593
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0593
+PUBLICATION_DATE: 2026-01-25
+SOURCE_URL: https://www.thesun.co.uk/news/37834160/neo-nazi-cult-groom-teens-to-stab/
+TITLE_SHA256: 3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca
+BEGIN_DOCUMENT
+[D0593:P0001] sha256:3ee539c9cfc5a17f7beb8ea6262bf0d570e01833e2e256805d2547a633f750ca
+[D0593:P0002] sha256:7c2ac032afe03bcff057337942f860037b3db062d96cd072be5e4d1eee00c3d5
+[D0593:P0003] sha256:67fef5eb20cef38018b0f14e27fac7ed4d66920160695f38abb35cb478010cd4
+[D0593:P0004] sha256:b47d635828d380ae33e95e3ae311d860b26249b4a613e6aac81cce18faee69bc
+[D0593:P0005] sha256:cd31f1d9e2ff543a11f91f2c35d52235c6147938346bfcdf1584e30412c821a5
+[D0593:P0006] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0593:P0007] sha256:8e15373ad2693f02461117867961199562b4b9397f7bcf6ac8086943755f0b9b
+[D0593:P0008] sha256:80e6af915534e86f75fa010d35cf0faa81dba6c77ee05b4e5c32790713f46def
+[D0593:P0009] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0010] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0011] sha256:b7023331f1a00b36ce3f346555f922a454aa6cf3c208476ec7bc5a49b6edbe7c
+[D0593:P0012] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0013] sha256:4efeb8e0eef045a813d96f7a5e8539f53630839e28aeaebb22ec5dc37348b1e5
+[D0593:P0014] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0015] sha256:a3e254b555991e189e0bf9f4f167c066e0d8c5873fa06a4086dbad3b07215c83
+[D0593:P0016] sha256:0a100b8357ddb52c7f820f9e1bfb2d02d504b1797c0b9714541e70f94b060ddd
+[D0593:P0017] sha256:5151e983d73332a7d4ae55a06b9160073925df5d086b3f2078a326cb2c0c52a7
+[D0593:P0018] sha256:7c277d98a9431ca06ee20129b32a6844041047ccbb0e8653309972c9f4665841
+[D0593:P0019] sha256:ff266f2537f7837afdb7d3e4f461790ded69d8dbaeece0f74376548a80bbcf6d
+[D0593:P0020] sha256:0b8c97182dac072c7c3e0eecd76d80011acdd1aa6eb285ff9b8fd022d515a699
+[D0593:P0021] sha256:873185b0e1ce07650ef43b1890ef370a4e9d15b9ff9b9f2cdefda7b20c61b679
+[D0593:P0022] sha256:d006369d46db91bad5c7eb472e3464d8af74ab7984f0525b93181966eb191d5f
+[D0593:P0023] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0024] sha256:7202b2e8eeda974349d4538039f02a54363c542be1fa43a959876b5f5977dd5d
+[D0593:P0025] sha256:8b86f3dd303260164622a3c7484243301a595217663b4fddd5554e5e1774f7af
+[D0593:P0026] sha256:b9bbcfb26e5388a1a36dce3fee55fc1fbc7482dbfbbeb2fb82e0d6a86a1cba90
+[D0593:P0027] sha256:a9124009a6c22c7ec5b200aa8034cbcb67f1d5f91540df7f4817ce3f8e4b8ccb
+[D0593:P0028] sha256:7327789c309712807a96d27b5288da2e063d61213f4afb85ac054daa1feef543
+[D0593:P0029] sha256:b8fee0325af2f36b68b5124435df6f53c3428c296a00a7dca2c18e3ab3f174e3
+[D0593:P0030] sha256:0625104d23ec8f64bd05b7c4ec2334856cf9fd3c3f0343ee13b9feefca53799b
+[D0593:P0031] sha256:6db7d3e1b09cb62252038bf7a785284124bf8d26d1ddb4e52702c35898d48bc2
+[D0593:P0032] sha256:a3df5ea43062ef36654bc3cdb5c8228f9df061772532540e2ec2f92a954cc214
+[D0593:P0033] sha256:72770effd9878244c958b179a19644d1c1b73feaa78fd1e08c94acf2dd0163c7
+[D0593:P0034] sha256:97ac26efe97f2afde1de6d8215dfd8a70996e01c42230a54f5fdced0ba1fac2f
+[D0593:P0035] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0036] sha256:f31a6205c0f32563a0a7801a7c441bb23d8c157cb5b3255eb946b2ea8492a9af
+[D0593:P0037] sha256:74ca3aef3f8b925cbf26728599b4a0dfa0a836cbc5a32e21a46e55ebd79309f4
+[D0593:P0038] sha256:ae8cba817493ef8f4154b47d27a5b6f9fb10c8f0e4835f928d360b87b8cfa201
+[D0593:P0039] sha256:13dc0ed9169e40a72c483b1a274e6282cf3c2cd1e1f7ccd41816dd37d7cc1fd0
+[D0593:P0040] sha256:53eff077d7d48af6ecb311b56cc08be99f1c108561249d667e8717ae4dfb7d3c
+[D0593:P0041] sha256:4989eb24916d589ff8abdafff051a5a95a81f725cb92f62964d4661cfdcdddef
+[D0593:P0042] sha256:bbee63f62fb2796f7d200502da7db9303d9c41cbf92be44e4d98b35b2d25f14b
+[D0593:P0043] sha256:26c098fae499eea4734e95861ef6e3cd70e6abc6bb5dcbc41d0f6b6c7a3b82be
+[D0593:P0044] sha256:4755762f3f72f437282aef43a75d4e737d1c785ac03125b1b636948135bd5fc1
+[D0593:P0045] sha256:cc2adf9984768442918416c00894fc6aaa9515cde84191b5e2b8e451a72545c1
+[D0593:P0046] sha256:f7ddbe8e397e9383cfd62d1004d2c15e647f825398f7273cde82766edcbb9262
+[D0593:P0047] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0048] sha256:8c137ee5dd912524edc50aab2ab8f6e1c14ba1dc03a46cb9d9560edff52833e2
+[D0593:P0049] sha256:18b8b45e25762944454448c3fcc892574cd06ebf3c73b2359f0217d8e7799d7c
+[D0593:P0050] sha256:21f8e4dcde9751eb9e8dec69d54481f3297c3a8c560dc107ff6f4b97063c5c0e
+[D0593:P0051] sha256:bf46c5fa0613feab1ad3ece3dc9cb9e9846a04f637c03a9b5500e29b6fbe74e4
+[D0593:P0052] sha256:213d454bc40274a86a6cc09fe223f511f0449425442e5f7d1f5740745ffcec69
+[D0593:P0053] sha256:57f1df9e760f7c320d27f02050430186d3df53bded0bc1229eec98f158df8ccf
+[D0593:P0054] sha256:101f410ed221f2489ed9ee546e52dc648e5f22ce50336cfcad8ab7b1d6f6bed3
+[D0593:P0055] sha256:3afbabb603ddcbbdf74d2f2d108390598a7e9f5208621fa13bce27b5714da7fb
+[D0593:P0056] sha256:4fb7104c14eb0baed57a07476d72f9a11d0bd35d639a8cef8f5f4b1f821b9be1
+[D0593:P0057] sha256:0771d4b0a61eb95078648850501dfcdc936b80bcc61fb912a5977ec212a5bf88
+[D0593:P0058] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0059] sha256:eb2bc9f7491b51f5decdb290631ced2ec77eeb0b059d0f1dfdb37715f25558b5
+[D0593:P0060] sha256:eb367ed79119cbe210c3e9ae72f295105b5577417067f1c4ce4bf0292e821a97
+[D0593:P0061] sha256:4267bff52d8699f98559e956ae7c854d95d485676e336d5c1d3918cf79dbece3
+[D0593:P0062] sha256:fe2b73826d14ff00b39cbfd2335e04972f7aae832894a644d35c606655821b7b
+[D0593:P0063] sha256:fcbfb80f86d789407163ad754698c75e581be0183d3f0708f298cb6aad621e90
+[D0593:P0064] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0065] sha256:44d21e2abee92fb349c1635e7e261ae5f35482ce6e5596a4971be206c7de4f95
+[D0593:P0066] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0067] sha256:fa1a8d9d3280adf3b2ed076e89fadd425d2d1a6b3518c2be7c8860fe2394fc4f
+[D0593:P0068] sha256:9baa0181130bbd2aceeef06bd4c19b0b540bf702fd2b6659fe87215459a239ea
+[D0593:P0069] sha256:d6c5de081cb3b3828afad9b9f776a4f400f0964484d5a90c8576409d5502c223
+[D0593:P0070] sha256:11800d2e320110a03f5612f5e7fe2804cc39ec036daade395f9256149136a37f
+[D0593:P0071] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0072] sha256:b6350c6c1cca9c320443ac491cc7c82ff0b4c5175f4a3d84f777bc9ec107e00c
+[D0593:P0073] sha256:676617f4a416449b24954b4e7ff787af451f1b572fc89901dc18480df2d12918
+[D0593:P0074] sha256:727972274f894a6c126b7adb75cb9fbdefb7421550a7e1c979d950749c974b2a
+[D0593:P0075] sha256:6ed481f9df13a7303e502f55358edc5247041abf83a68aa9488ccfa0ab94c1df
+[D0593:P0076] sha256:a007597d565ccfc3a6c8a3eabfc729e04e2e18810a23c68b3b1f01331281cdd8
+[D0593:P0077] sha256:4c43116e7316daa928ba913e3ce80c117279bdc6b675e25b57febb981178eb9d
+[D0593:P0078] sha256:75742369a7e2682e15931dac6887765e588dbe96a47942978cb52dc71e1cc98e
+[D0593:P0079] sha256:7edb5b73faa3721d590b1c681a53d9edcf94eb9180899c4648b4ff21f834b78a
+[D0593:P0080] sha256:7a6ca74b26c1a164da8fede44f8c1fe0f95ce535d21a175200c7964ddc81feaa
+[D0593:P0081] sha256:77c9b831b37923ceab82d137b0b62d283e1f9aa74a9c13ba1761c06d047da1ce
+[D0593:P0082] sha256:5abbe920b6e288977f1bb32c9e23fceccc7fe9cb4b459723cb3ca5fd58992745
+[D0593:P0083] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0084] sha256:b1d1ef250a1cf765380a4d8c9d857ff7fd24a01dc897c0b064565289a15de276
+[D0593:P0085] sha256:cf055bdc7f48f883de62a20c9e192663c1d2b4ab83e86868440acaf2f544443a
+[D0593:P0086] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0087] sha256:e89cb0e561d4c1887651ba8a1a14a9df3e980a63f54d547ef5c238d680ba3ddb
+[D0593:P0088] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0089] sha256:0e681bd2ce42236c7979d577a0f32c615034022212f78845edf70056659656d8
+[D0593:P0090] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0091] sha256:dd16a3cad40f2019843ba30fe42f93cb1d875ff3f5adae96c69eecc0fba371b6
+[D0593:P0092] sha256:e43c820a662c879e59fa3bbec7f123ccd30b45d9b6ac0a117bdc415f9191f0d7
+[D0593:P0093] sha256:3cd451e0672d4d40a0178bfd162b07196b212820c93344383144afa4581ca57b
+[D0593:P0094] sha256:32c7124f6b89b4433514d27f91b1e5eb01b7aef7d91e6d7897c564eeec6eca0e
+[D0593:P0095] sha256:cee7da145121ea60a19a3e28adf27441bee92d85db1d82dbe7dc9a3170c48216
+[D0593:P0096] sha256:440928b9b430dc447acfa3f58c0fbb46c93d4a39c49d5777af896fd5dfc83824
+[D0593:P0097] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0098] sha256:2adb4a974616f1b34b49e24917023e04fcd4e2a7d5fff3c055239cffe600fa22
+[D0593:P0099] sha256:7de64208055d397c7de19aa2d8bb77aedba1f80e7808b03916f424286ff8d05d
+[D0593:P0100] sha256:d2087dc4149a0ada9540412b4b0a793744fd42562ff0dde902a088547b5cafb1
+[D0593:P0101] sha256:5317af8ed36fcebd6194e446d4fb417814d484f9bff0f96a2f509cf0443a8978
+[D0593:P0102] sha256:14826ff7ab579af8879df5c15f71bde213efe267cd674ec74a05e016efc16696
+[D0593:P0103] sha256:4cd2a99aa5f082a421545a9e4fa8a3b45432c426827b6d0dd0f961c0e267b5bc
+[D0593:P0104] sha256:32f1c4675263f5dd34998c44b0ca659846455f82fec6e4cece6b72725edb7e9f
+[D0593:P0105] sha256:0401e48fa5efbdc48cfe8023e797a29eaa029eb6f630fc288332ef8c0af610a9
+[D0593:P0106] sha256:f03f1a583135b4df20a4baaa4376d355fe6c621971339a4fdb038aa133c74402
+[D0593:P0107] sha256:1b728b22cd9a251b36c5453a13077598b88148e835a1fa99bb318ccd0df76a37
+[D0593:P0108] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0109] sha256:017cb3394dec8c4e6af4b076dd38b511f8cb5229511b242ef2c772b332ed05c3
+[D0593:P0110] sha256:fc26fe9917bb009827b8da6804db23142c7ade3bc36fc18c9e56da207fe86621
+[D0593:P0111] sha256:4a7b22f5b27371c53876e3e94b48a62e911d04a8f100e315e5581bc7e00ad6ba
+[D0593:P0112] sha256:e3f18295e364f849d74c53394c1bfe5e866d0eaa1113629f6bac7bf0214f5ba4
+[D0593:P0113] sha256:9abd38c77243434d17fdde6469b72aed83d8f1340bb108db11a49b66fe458740
+[D0593:P0114] sha256:37ab6557664f5f7b00dac62a1a2bcc3686c34781001fdeba8f70037446c499b6
+[D0593:P0115] sha256:cd7727c1b3bfc8e25ad97280068bee7bb38dadd76e286de377c21689446bff2c
+[D0593:P0116] sha256:b71a24796b92299000b3e1f05bfca15cd86a8b26daa513734768b22a68209ad6
+[D0593:P0117] sha256:efa1bd08bead77092e929e5d44c7a835bc704b63b92647853309aa9fa89c1e4a
+[D0593:P0118] sha256:788c0a2d95d28e92898acd3aec9e81547eddcd0b173253684dc6ffa5faa58f70
+[D0593:P0119] sha256:e175f9d813a1ef473eec7391ab19f0fceb1b1c43520f06459ba204c2657e0d7c
+[D0593:P0120] sha256:19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+[D0593:P0121] sha256:9740900d297a595ddc4f73d510d553ff7bc4c3f8d1c7fc9976de2f240463cc2a
+[D0593:P0122] sha256:355f79f29d7d3c2df917ad07f7441e3ce4b0ac48892b778076dbdca401851712
+[D0593:P0123] sha256:b39851fef752bb211bc5dfeb055c072dbfd433599d6678e78889386d68271f47
+[D0593:P0124] sha256:c13e0990b1af1bb20cd3baa4532f6c5e566b38e18017ac4dd69fecb1ff275bdd
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (124)
+E001: «No Lives Matter» — operates channels on → «Telegram» | форма: actual, positive
+E002: «20-year-old German suspect» — targeted victims from → «US» | форма: actual, positive
+E003: «Cxrpse account» — left → «No Lives Matter» | форма: actual, positive
+E004: «Claire Georges» — reports on → «764» | форма: actual, positive
+E005: «Justin B» — left → «The Com» | форма: actual, positive
+E006: «764» — cases seen in → «UK» | форма: actual, positive
+E007: «No Lives Matter» — part of → «The Com» | форма: actual, positive
+E008: «Shahriar J.» — on trial in → «Hamburg» | форма: actual, positive
+E009: «764» — uses → «Telegram» | форма: actual, positive
+E010: «Brenton Tarrant» — attacked mosques in → «New Zealand» | форма: actual, positive
+E011: «No Lives Matter» — released → «No Lives Matter manuals» | форма: actual, positive
+E012: «764» — named after → «Texas postcode» | форма: actual, positive
+E013: «Shahriar J.» — methods mirror → «764» | форма: actual, positive
+E014: «The Com» — is driven by ideology → «accelerationism» | форма: actual, positive
+E015: «Justin B» — believed to be founder of → «No Lives Matter» | форма: actual, positive
+E016: «Shahriar J.» — known online as → «White Tiger» | форма: actual, positive
+E017: «764» — located in → «US» | форма: actual, positive
+E018: «No Lives Matter» — targets → «teens» | форма: actual, positive
+E019: «764» — originated in → «US» | форма: actual, positive
+E020: «Bradley Cadenhead» — founded → «764» | форма: actual, positive
+E021: «Claire Finlay» — leads → «Counter Terrorism Policing Southeast» | форма: actual, positive
+E022: «Justin B» — convicted of → «attempted manslaughter» | форма: actual, positive
+E023: «Cameron Finnigan» — located in → «Horsham» | форма: actual, positive
+E024: «Justin B» — located in → «Netherlands» | форма: actual, positive
+E025: «complex international cyber-grooming operation» — attributed to → «764» | форма: possible, positive
+E026: «Shahriar J.» — uses → «grooming» | форма: actual, positive
+E027: «Justin B» — leads → «No Lives Matter» | форма: actual, positive
+E028: «The Sun» — published report on → «25 Jan 2026» | форма: actual, positive
+E029: «20-year-old German suspect» — targeted victims from → «England» | форма: actual, positive
+E030: «Claire Georges» — reports on → «764» | форма: actual, negative
+E031: «Justin B» — glorified → «Brenton Tarrant» | форма: actual, positive
+E032: «Rob Richardson» — reports on → «764» | форма: actual, positive
+E033: «Terror Council» — is part of → «The Com» | форма: actual, positive
+E034: «764» — targets → «teenage girls with eating disorders and mental health issues» | форма: actual, positive
+E035: «Cxrpse account» — left No Lives Matter around → «2023» | форма: possible, positive
+E036: «Australia» — issued warnings about → «The Com» | форма: actual, positive
+E037: «Cameron Finnigan» — jailed in → «January last year» | форма: actual, positive
+E038: «20-year-old German suspect» — arrested in → «June last year» | форма: actual, positive
+E039: «No Lives Matter manuals» — instruct how to → «select victims for murder» | форма: actual, positive
+E040: «knife attacks on random passers-by» — located in → «Europe» | форма: actual, positive
+E041: «Stockholm» — located in → «knife attacks in Stockholm» | форма: actual, positive
+E042: «Justin B» — charged with → «animal crushing» | форма: actual, positive
+E043: «Britain» — issued warnings about → «The Com» | форма: actual, positive
+E044: «No Lives Matter» — groomed teens to carry out → «knife attacks» | форма: actual, positive
+E045: «death of a 13-year-old boy» — located in → «US» | форма: actual, positive
+E046: «Joe Whittaker» — warns about → «764» | форма: actual, positive
+E047: «death of a 13-year-old boy» — attributed to → «Shahriar J.» | форма: actual, positive
+E048: «No Lives Matter» — hunts, grooms and blackmails teens through → «Telegram» | форма: actual, positive
+E049: «The Com» — recruits youngsters via → «Roblox» | форма: actual, positive
+E050: «20-year-old German suspect» — ran cyber-grooming operation as part of → «764» | форма: actual, positive
+E051: «764» — operates channels on → «Telegram» | форма: actual, positive
+E052: «764» — part of → «The Com» | форма: actual, positive
+E053: «No Lives Matter» — uses → «live-streamed brutality» | форма: actual, positive
+E054: «The Com» — recruits youngsters via → «Minecraft» | форма: actual, positive
+E055: «Cameron Finnigan» — is member of → «764» | форма: actual, positive
+E056: «Shahriar J.» — methods mirror → «No Lives Matter» | форма: actual, positive
+E057: «Justin B» — suspected of → «membership in a terrorist organisation» | форма: actual, positive
+E058: «Justin B» — arrested in → «June last year» | форма: actual, positive
+E059: «Cameron Finnigan» — is from → «Horsham» | форма: actual, positive
+E060: «No Lives Matter» — uses → «grooming» | форма: actual, negative
+E061: «The Com» — recruits youngsters via → «Snapchat» | форма: actual, positive
+E062: «Justin B» — charged with → «sharing extreme violent and terrorist material» | форма: actual, positive
+E063: «No Lives Matter» — uses → «Telegram» | форма: actual, positive
+E064: «764» — set up in → «2021» | форма: actual, positive
+E065: «Justin B» — member of → «764» | форма: actual, positive
+E066: «Graeme Biggar» — leads → «National Crime Agency» | форма: actual, positive
+E067: «No Lives Matter manuals» — instruct how to → «choose weapons» | форма: actual, positive
+E068: «No Lives Matter manuals» — instruct how to → «conduct extortion» | форма: actual, positive
+E069: «No Lives Matter» — is tied to → «764» | форма: actual, positive
+E070: «The Com» — is linked to → «neo-Nazism» | форма: actual, positive
+E071: «14-year-old perpetrator» — live-streamed knife attacks in → «Stockholm» | форма: actual, positive
+E072: «Justin B» — is from → «Netherlands» | форма: actual, positive
+E073: «NCA» — is coordinating UK law enforcement response to → «764» | форма: actual, positive
+E074: «764» — authored → «sexploitation playbook» | форма: actual, positive
+E075: «764» — reports on → «Rob Richardson» | форма: actual, positive
+E076: «No Lives Matter» — set up around → «2020» | форма: actual, positive
+E077: «Justin B» — glorified → «Anders Breivik» | форма: actual, positive
+E078: «The Com» — offers recruits → «cash incentives up to EUR20,000 for killings» | форма: actual, positive
+E079: «Canada» — issued warnings about → «The Com» | форма: actual, positive
+E080: «Finland» — issued warnings about → «The Com» | форма: actual, positive
+E081: «Justin B» — charged with → «creation of child sex abuse material» | форма: actual, positive
+E082: «Justin B» — is member of → «764» | форма: actual, positive
+E083: «Terror Council» — part of → «The Com» | форма: actual, positive
+E084: «knife attacks on random passers-by» — attributed to → «No Lives Matter» | форма: actual, positive
+E085: «764» — uses → «forced self-harm» | форма: actual, positive
+E086: «764» — is part of → «The Com» | форма: actual, positive
+E087: «Justin B» — left The Com shortly before arrest in → «late 2025» | форма: actual, positive
+E088: «Cameron Finnigan» — plotted → «terror week» | форма: actual, positive
+E089: «Brenton Tarrant» — attacked mosques in → «2019» | форма: actual, positive
+E090: «Claire Georges» — reports on → «No Lives Matter» | форма: actual, positive
+E091: «20-year-old German suspect» — targeted victims from → «Germany» | форма: actual, positive
+E092: «Vincent Charlton» — jailed in → «2024» | форма: actual, positive
+E093: «Dutch police» — investigated → «Justin B» | форма: actual, positive
+E094: «Justin B» — psychiatric assessment expected to conclude in → «February 2026» | форма: actual, positive
+E095: «764» — finds victims via → «communication apps» | форма: actual, positive
+E096: «Justin B» — known as → «Cxrpse» | форма: actual, positive
+E097: «No Lives Matter» — uses → «sexual extortion» | форма: actual, positive
+E098: «764» — targets → «teens» | форма: actual, positive
+E099: «20-year-old German suspect» — targeted victims from → «Canada» | форма: actual, positive
+E100: «Shahriar J.» — targeted victim in → «US» | форма: actual, positive
+E101: «knife attacks in Stockholm» — located in → «Stockholm» | форма: actual, positive
+E102: «14-year-old perpetrator» — carried out knife attacks in → «2024» | форма: actual, positive
+E103: «The Com» — recruits youngsters via → «Instagram» | форма: actual, positive
+E104: «Justin B» — leads → «No Lives Matter» | форма: possible, positive
+E105: «No Lives Matter manuals» — instruct how to → «create poisons» | форма: actual, positive
+E106: «the Met» — conducts undercover policing in → «Telegram» | форма: actual, positive
+E107: «Germany» — issued warnings about → «The Com» | форма: actual, positive
+E108: «The Com» — recruits minors using → «coded language and gamification» | форма: actual, positive
+E109: «Justin B» — charged with → «instructing victims to commit self-harm» | форма: actual, positive
+E110: «No Lives Matter» — is a → «neo-Nazi death cult» | форма: actual, positive
+E111: «No Lives Matter» — uses → «blackmail» | форма: actual, positive
+E112: «Cameron Finnigan» — located in → «Horsham» | форма: possible, positive
+E113: «Bradley Cadenhead» — located in → «Texas» | форма: actual, positive
+E114: «No Lives Matter» — has → «hundreds of members» | форма: actual, positive
+E115: «Cxrpse account» — left No Lives Matter around → «2023» | форма: actual, positive
+E116: «No Lives Matter» — forms part of → «The Com» | форма: actual, positive
+E117: «Joe Whittaker» — warns about → «The Com» | форма: actual, positive
+E118: «764» — is described as → «international Satanic paedo ring» | форма: actual, positive
+E119: «No Lives Matter» — also known as → «NLM» | форма: actual, positive
+E120: «No Lives Matter» — uses → «grooming» | форма: actual, positive
+E121: «Cameron Finnigan» — member of → «764» | форма: actual, positive
+E122: «Joe Whittaker» — reports on → «764» | форма: actual, positive
+E123: «MI5» — conducts undercover policing in → «Telegram» | форма: actual, positive
+E124: «Shahriar J.» — used → «grooming and psychological pressure» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

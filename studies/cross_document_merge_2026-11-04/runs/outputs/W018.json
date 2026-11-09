@@ -1,0 +1,166 @@
+{
+  "run_id": "W018",
+  "target_doc_id": "D0166",
+  "status": "COMPLETE",
+  "nodes": [
+    {"id": "n001", "label": "China", "entity_type": "country", "aliases": ["Communist China"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 0, "end": 99, "sha256": "50f63ed6e2d7ca252589b9c4ff931a4083eadd80c2db829d50bfac83741cb8d7"}}
+    ]},
+    {"id": "n002", "label": "U.S.", "entity_type": "country", "aliases": ["America"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 288, "end": 379, "sha256": "73758ec98ee63fefaade661b6c5356d118ddf4f02a0db12b3326fa6a4161a133"}}
+    ]},
+    {"id": "n003", "label": "Chinese Communist Party", "entity_type": "organization", "aliases": ["CCP"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n004", "label": "Cybersecurity and Infrastructure Security Agency", "entity_type": "organization", "aliases": ["CISA"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 305, "sha256": "9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba"}}
+    ]},
+    {"id": "n005", "label": "Department of Homeland Security", "entity_type": "organization", "aliases": ["DHS"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 146, "sha256": "4f71068a5e9c6eaba62ae02eb297213d08dbde684b900aecc63817003861ad10"}}
+    ]},
+    {"id": "n006", "label": "financial institutions", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "n007", "label": "joint task force", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 305, "sha256": "9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba"}}
+    ]},
+    {"id": "n008", "label": "U.S. government agencies", "entity_type": "organization", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+    ]},
+    {"id": "n009", "label": "American economy", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}}
+    ]},
+    {"id": "n010", "label": "bank account", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n011", "label": "communications", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 331, "sha256": "92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10"}}
+    ]},
+    {"id": "n012", "label": "critical infrastructure sectors", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 331, "sha256": "92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10"}}
+    ]},
+    {"id": "n013", "label": "digital records of stock and home ownership", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "n014", "label": "energy", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 331, "sha256": "92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10"}}
+    ]},
+    {"id": "n015", "label": "power", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n016", "label": "Strengthening Cyber Resilience Against State-Sponsored Threats Act", "entity_type": "other", "aliases": ["Strengthening Cyber Resilience Against State- Sponsored Threats Act"], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 100, "end": 201, "sha256": "f3f1b90eeca88622785398145046b8bae0358fdc7e6caa02a410c083b23e95e0"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 331, "end": 461, "sha256": "8b094bdfdf86cae993fc54ec878805de51d76d15e54e90cb041cf0c365468e0c"}}
+    ]},
+    {"id": "n017", "label": "transportation systems", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 331, "sha256": "92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10"}}
+    ]},
+    {"id": "n018", "label": "water", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n019", "label": "water and wastewater systems", "entity_type": "other", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 199, "end": 331, "sha256": "92feff108d330947a6044468396666ae7203effa32f812b1677547effb9dbf10"}}
+    ]},
+    {"id": "n020", "label": "Andy Ogles", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+    ]},
+    {"id": "n021", "label": "Rick Scott", "entity_type": "person", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+    ]},
+    {"id": "n022", "label": "internet", "entity_type": "technology", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "n023", "label": "hackers", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "n024", "label": "Salt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}}
+    ]},
+    {"id": "n025", "label": "Volt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 234, "sha256": "3795f25e702bf560d961ac167dd54b6ff6a089773414aaa166a79feed7c8a89b"}}
+    ]},
+    {"id": "n026", "label": "CCP-backed cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}
+    ]}
+  ],
+  "edges": [
+    {"id": "e001", "source": "n001", "target": "n002", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}}
+    ]},
+    {"id": "e002", "source": "n001", "target": "n009", "relation_type": "TARGETS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 76, "end": 203, "sha256": "7a26542e60b6369952a080a5b22011adb277186838e6a1a32c8c16745db87048"}}
+    ]},
+    {"id": "e003", "source": "n003", "target": "n006", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "e004", "source": "n003", "target": "n010", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "e005", "source": "n003", "target": "n015", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "e006", "source": "n003", "target": "n018", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "e007", "source": "n003", "target": "n022", "relation_type": "TARGETS", "modality": "possible", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0004", "start": 107, "end": 287, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+    ]},
+    {"id": "e008", "source": "n004", "target": "n007", "relation_type": "OPERATES", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 305, "sha256": "9356e72c127197f10a173494818e9efd68751e65397ac76b4b55328d1c59cdba"}}
+    ]},
+    {"id": "e009", "source": "n004", "target": "n005", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0014", "start": 0, "end": 146, "sha256": "4f71068a5e9c6eaba62ae02eb297213d08dbde684b900aecc63817003861ad10"}}
+    ]},
+    {"id": "e010", "source": "n004", "target": "n026", "relation_type": "REPORTS_ON", "modality": "recommended", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0013", "start": 0, "end": 135, "sha256": "a030b767a71f666c223da43b360363e0235ff970ff127687747e7213689eda57"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}
+    ]},
+    {"id": "e011", "source": "n007", "target": "n025", "relation_type": "DETECTS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}
+    ]},
+    {"id": "e012", "source": "n007", "target": "n026", "relation_type": "DETECTS", "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 202, "end": 384, "sha256": "d942dfa15165cb717a2fdacc1866855ee1f184bf8d16bd6ef302a58b7503fc08"}}
+    ]},
+    {"id": "e013", "source": "n008", "target": "n025", "relation_type": "REPORTS_ON", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "February 2024", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]},
+    {"id": "e014", "source": "n020", "target": "n001", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+    ]},
+    {"id": "e015", "source": "n021", "target": "n001", "relation_type": "WARNS_ABOUT", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0001", "start": 0, "end": 113, "sha256": "75364f04568f1b52d22e237002edfec55d5551c97e47e86811c1b9c62f3248e2"}}
+    ]},
+    {"id": "e016", "source": "n023", "target": "n010", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "e017", "source": "n023", "target": "n013", "relation_type": "TARGETS", "modality": "conditional", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0009", "start": 0, "end": 143, "sha256": "58853307eb2686186ac91f5e75f5816ce40234ff86c2093860044bab18e64523"}}
+    ]},
+    {"id": "e018", "source": "n024", "target": "n003", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}}
+    ]},
+    {"id": "e019", "source": "n025", "target": "n003", "relation_type": "ATTRIBUTED_TO", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0005", "start": 186, "end": 281, "sha256": "63fbe243fc9c9c90bbb32766fc29628a8356aef1ca916ac17eb6565fb16a9339"}},
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0012", "start": 306, "end": 384, "sha256": "869697c47deea0210bbf18e6ed252499fdda95aaff7eabd226bf4679171ff09c"}}
+    ]},
+    {"id": "e020", "source": "n025", "target": "n011", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]},
+    {"id": "e021", "source": "n025", "target": "n012", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]},
+    {"id": "e022", "source": "n025", "target": "n014", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]},
+    {"id": "e023", "source": "n025", "target": "n017", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]},
+    {"id": "e024", "source": "n025", "target": "n019", "relation_type": "TARGETS", "modality": "actual", "polarity": "positive", "attribution": "U.S. government agencies", "event_time": "for years", "event_scope": "Volt Typhoon intrusion into critical infrastructure IT environments", "evidence": [
+      {"role": "TARGET", "doc_id": "D0166", "paragraph_id": "D0166:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0166:P0006", "start": 83, "end": 331, "sha256": "ce54996204bb7837e230242c08a0bafcdd7d5838518c9c8f6579a1d91153297e"}}
+    ]}
+  ],
+  "context_passages_used": []
+}

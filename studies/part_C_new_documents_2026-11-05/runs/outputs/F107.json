@@ -1,0 +1,121 @@
+{
+ "run_id": "F107",
+ "target_doc_id": "D0300",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "AI Voice Deepfakes", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0014", "start": 648, "end": 691, "sha256": "2fafbfe965e05a02bf06aac4d4bdb40d53a65341cbf59888f61258445cecff76"}},
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0015", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0015", "start": 55, "end": 131, "sha256": "122090a1eac0e7b1fcefc5f108ace88618f8609d9b0ea865c79b0612cb52fd07"}}]},
+  {"id": "n002", "label": "Business Email Compromise", "entity_type": "attack_technique", "aliases": ["BEC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0009", "start": 143, "end": 233, "sha256": "0cbb050cffa4cd902de3153980b2f6330d993892fd85041db3c18417def08eb3"}}]},
+  {"id": "n003", "label": "CEO Fraud", "entity_type": "attack_technique", "aliases": ["Whaling"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0012", "start": 205, "end": 227, "sha256": "3b3977387e190f8ae33591ba82dfe3e164436c084e4e15f45ae964be9a208285"}},
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0013", "start": 0, "end": 72, "sha256": "cc4b721df67599fc30d914ce8320027b2f5948e0d209965fb24286a72e096917"}}]},
+  {"id": "n004", "label": "DDoS", "entity_type": "attack_technique", "aliases": ["Distributed Denial of Service"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 270, "end": 390, "sha256": "970a267f3e853ab02c15513d194fd3197b943a2a1c4b3b2367d9b0684464eee5"}}]},
+  {"id": "n005", "label": "Phishing", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0009", "start": 0, "end": 89, "sha256": "746075fab937da526577fb66140e0a0225601abd4b8c7e50273cb2313e6f148b"}}]},
+  {"id": "n006", "label": "Vendor E-mail Compromise", "entity_type": "attack_technique", "aliases": ["VEC"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0011", "start": 81, "end": 114, "sha256": "47d7c0da7f808c65bcb674178fb27ceada4c0a10521dfe0eecfbbb53cbee411f"}},
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0012", "start": 0, "end": 85, "sha256": "c3a80724a0b94d879cad98fe35fed6fca9336795dd15146a8532495b2bf283af"}}]},
+  {"id": "n007", "label": "Malta", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 0, "end": 73, "sha256": "5f5530940e9b9e42bc03b23db23c0fd60b58a4e7cdf42c544b2dc9e768809fd9"}}]},
+  {"id": "n008", "label": "Hal Far", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0002", "start": 0, "end": 82, "sha256": "10f59da3cbf3cd5979b243796aec0f984d1a5c8b04f015319a39e1450f60d087"}}]},
+  {"id": "n009", "label": "St Julian's", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0004", "start": 0, "end": 90, "sha256": "5c51aa11432bf2baf3f17b14f76340c2b6ce8554f851b746e04a44b09c7af264"}}]},
+  {"id": "n010", "label": "Valletta", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0006", "start": 0, "end": 64, "sha256": "e2d6bf8bb4b241bb0fb5775ef8876484b7de6cb14706cfe0e76203766b53e59d"}}]},
+  {"id": "n011", "label": "ransomware", "entity_type": "malware_class", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 597, "end": 711, "sha256": "dcb7ec75dbd8ce75efa5d4da77efe2d369ce33e61033aad685e18f8136196d0d"}}]},
+  {"id": "n012", "label": "banks", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 520, "end": 552, "sha256": "96051d0155092aa22ae82bfac5aa4b634c0814e5d2794946f6bd15cfc3dece43"}}]},
+  {"id": "n013", "label": "Data Protection Commissioner", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0020", "start": 235, "end": 308, "sha256": "bf16f6674c6a4c9ce235a6eb906a85e518e1d86f7a863fa2214e1c448f4e5994"}}]},
+  {"id": "n014", "label": "Eurostat", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 75, "end": 152, "sha256": "78dbff0640641b6def7c8683921d30590c300032176feafbc262dadb2df81012"}}]},
+  {"id": "n015", "label": "Facebook", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0011", "start": 0, "end": 80, "sha256": "cf27f5df235b35fc3c7badd97cb5adb37ec68cfb29829ae49fddfb6bb4178383"}}]},
+  {"id": "n016", "label": "GasanMamo Insurance", "entity_type": "organization", "aliases": ["GasanMamo Insurance Ltd"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0024", "start": 0, "end": 99, "sha256": "d4902f6fe62aca7ace205541c81dc560cf405c37f75b87311e89159be2203fc0"}},
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0025", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0025", "start": 0, "end": 97, "sha256": "919e90c8c5708ef36676a33a759aa778a9e6b96069a9dc89d5d47733d806c2cd"}}]},
+  {"id": "n017", "label": "Google", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0011", "start": 0, "end": 80, "sha256": "cf27f5df235b35fc3c7badd97cb5adb37ec68cfb29829ae49fddfb6bb4178383"}}]},
+  {"id": "n018", "label": "insurers", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 597, "end": 671, "sha256": "35a44e31118642e1d437470ee760b4727bd207331c80060e8a3f855ecbee5d4b"}}]},
+  {"id": "n019", "label": "Malta's Police Cyber Crime Unit", "entity_type": "organization", "aliases": ["Malta Police Cyber Crime Unit"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 392, "end": 468, "sha256": "28a0840f06e1d06b4e7bb5c271c58836a2d0ad8275da58b016f0d0b8955d1ca6"}},
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0020", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0020", "start": 179, "end": 233, "sha256": "c078093ed9e8e55b4f87a5870d341c162744ebd1c4953f112ac8a6f90504e459"}}]},
+  {"id": "n020", "label": "Maltese businesses", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0024", "start": 0, "end": 126, "sha256": "ba2c4af251180cc2139dc5222118155a8759111171f5599b5bc19a801b5a284a"}}]},
+  {"id": "n021", "label": "manufacturing company in Hal Far", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0002", "start": 0, "end": 82, "sha256": "10f59da3cbf3cd5979b243796aec0f984d1a5c8b04f015319a39e1450f60d087"}}]},
+  {"id": "n022", "label": "PwC Malta", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 268, "sha256": "52acbc3551b1dcc077124ea1736532649ee3a0b480a37631ded575b2d27281ba"}}]},
+  {"id": "n023", "label": "restaurant in St Julian's", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0004", "start": 0, "end": 90, "sha256": "5c51aa11432bf2baf3f17b14f76340c2b6ce8554f851b746e04a44b09c7af264"}}]},
+  {"id": "n024", "label": "service providers", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 597, "end": 671, "sha256": "35a44e31118642e1d437470ee760b4727bd207331c80060e8a3f855ecbee5d4b"}}]},
+  {"id": "n025", "label": "SMEs", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0014", "start": 420, "end": 473, "sha256": "395027c8b9810c2aaaa2eef18ab860ff48becc33364d80a9360f20ccf0a1d8b0"}}]},
+  {"id": "n026", "label": "Valletta law firm", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0006", "start": 0, "end": 64, "sha256": "e2d6bf8bb4b241bb0fb5775ef8876484b7de6cb14706cfe0e76203766b53e59d"}}]},
+  {"id": "n027", "label": "government financial websites", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 520, "end": 591, "sha256": "9e2a881b8d541931bd5ab14c01d81c22c7d7f7689a7b4916031d6a89388481f6"}}]},
+  {"id": "n028", "label": "healthcare sector", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0014", "start": 311, "end": 419, "sha256": "1fcfa502bd179b8a0a2c1aa2301e8fd6c53cc2a32858a2499d968d3d7552909a"}}]},
+  {"id": "n029", "label": "Maltese infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 268, "sha256": "52acbc3551b1dcc077124ea1736532649ee3a0b480a37631ded575b2d27281ba"}}]},
+  {"id": "n030", "label": "Train employees regularly", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0019", "start": 13, "end": 92, "sha256": "b2dc8b5f58105544c064a72844a464e0242e2c6a8117bae161dcd882a84a345f"}}]},
+  {"id": "n031", "label": "Cyber Insurance", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0024", "start": 0, "end": 99, "sha256": "d4902f6fe62aca7ace205541c81dc560cf405c37f75b87311e89159be2203fc0"}}]},
+  {"id": "n032", "label": "AI-powered email security", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0018", "start": 77, "end": 147, "sha256": "833a79c2be0076a3d24e4e8b8145425a916a7146e0eede698a0fa91656246f60"}}]},
+  {"id": "n033", "label": "honeypot", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 247, "sha256": "2df237f1ca6536a4dcbdc0d1a385a763e1211fb54dc714709e39488cef74ccbc"}}]},
+  {"id": "n034", "label": "Multi-Factor Authentication", "entity_type": "technology", "aliases": ["MFA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0018", "start": 20, "end": 76, "sha256": "c6566c933ff2190700ff003a454ad258aad5433c4eddd3b99b534b1bd5c3cd96"}}]},
+  {"id": "n035", "label": "regular backups", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0018", "start": 209, "end": 262, "sha256": "35a2a172b25a8f370f730aaf276591823adefd7cbbd0e8f6c50ffdf2a0400186"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n015", "relation_type": "AFFECTS", "attribution": "", "event_time": "", "event_scope": "losses of over $100 million to a single BEC scammer", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0011", "start": 0, "end": 80, "sha256": "cf27f5df235b35fc3c7badd97cb5adb37ec68cfb29829ae49fddfb6bb4178383"}}]},
+  {"id": "e002", "source": "n002", "target": "n017", "relation_type": "AFFECTS", "attribution": "", "event_time": "", "event_scope": "losses of over $100 million to a single BEC scammer", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0011", "start": 0, "end": 80, "sha256": "cf27f5df235b35fc3c7badd97cb5adb37ec68cfb29829ae49fddfb6bb4178383"}}]},
+  {"id": "e003", "source": "n004", "target": "n012", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 520, "end": 591, "sha256": "9e2a881b8d541931bd5ab14c01d81c22c7d7f7689a7b4916031d6a89388481f6"}}]},
+  {"id": "e004", "source": "n004", "target": "n027", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 520, "end": 591, "sha256": "9e2a881b8d541931bd5ab14c01d81c22c7d7f7689a7b4916031d6a89388481f6"}}]},
+  {"id": "e005", "source": "n004", "target": "n029", "relation_type": "TARGETS", "attribution": "PwC Malta", "event_time": "", "event_scope": "PwC Malta honeypot study", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 343, "sha256": "19193951ad611a92a102e28d2c097e729ac36701b709b3073ae06a81e07c8e91"}}]},
+  {"id": "e006", "source": "n011", "target": "n025", "relation_type": "AFFECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0014", "start": 420, "end": 473, "sha256": "395027c8b9810c2aaaa2eef18ab860ff48becc33364d80a9360f20ccf0a1d8b0"}}]},
+  {"id": "e007", "source": "n011", "target": "n028", "relation_type": "AFFECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0014", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0014", "start": 311, "end": 419, "sha256": "1fcfa502bd179b8a0a2c1aa2301e8fd6c53cc2a32858a2499d968d3d7552909a"}}]},
+  {"id": "e008", "source": "n011", "target": "n018", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 597, "end": 671, "sha256": "35a44e31118642e1d437470ee760b4727bd207331c80060e8a3f855ecbee5d4b"}}]},
+  {"id": "e009", "source": "n011", "target": "n024", "relation_type": "TARGETS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 597, "end": 671, "sha256": "35a44e31118642e1d437470ee760b4727bd207331c80060e8a3f855ecbee5d4b"}}]},
+  {"id": "e010", "source": "n016", "target": "n031", "relation_type": "PROVIDES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0024", "start": 0, "end": 99, "sha256": "d4902f6fe62aca7ace205541c81dc560cf405c37f75b87311e89159be2203fc0"}}]},
+  {"id": "e011", "source": "n021", "target": "n008", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0002", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0002", "start": 0, "end": 82, "sha256": "10f59da3cbf3cd5979b243796aec0f984d1a5c8b04f015319a39e1450f60d087"}}]},
+  {"id": "e012", "source": "n022", "target": "n004", "relation_type": "REPORTS_ON", "attribution": "PwC Malta", "event_time": "", "event_scope": "PwC Malta honeypot study", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 343, "sha256": "19193951ad611a92a102e28d2c097e729ac36701b709b3073ae06a81e07c8e91"}}]},
+  {"id": "e013", "source": "n022", "target": "n033", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "PwC Malta honeypot study", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0008", "start": 154, "end": 247, "sha256": "2df237f1ca6536a4dcbdc0d1a385a763e1211fb54dc714709e39488cef74ccbc"}}]},
+  {"id": "e014", "source": "n023", "target": "n009", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0004", "start": 0, "end": 90, "sha256": "5c51aa11432bf2baf3f17b14f76340c2b6ce8554f851b746e04a44b09c7af264"}}]},
+  {"id": "e015", "source": "n026", "target": "n010", "relation_type": "LOCATED_IN", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0006", "start": 0, "end": 64, "sha256": "e2d6bf8bb4b241bb0fb5775ef8876484b7de6cb14706cfe0e76203766b53e59d"}}]},
+  {"id": "e016", "source": "n030", "target": "n002", "relation_type": "MITIGATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0019", "start": 13, "end": 92, "sha256": "b2dc8b5f58105544c064a72844a464e0242e2c6a8117bae161dcd882a84a345f"}}]},
+  {"id": "e017", "source": "n031", "target": "n020", "relation_type": "PROTECTS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0024", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0024", "start": 0, "end": 172, "sha256": "44340427a01c69f9e610b3bcda91756a80a7c796d0142df060f15fcc12c660a9"}}]},
+  {"id": "e018", "source": "n035", "target": "n011", "relation_type": "MITIGATES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0300", "paragraph_id": "D0300:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0300:P0018", "start": 209, "end": 262, "sha256": "35a2a172b25a8f370f730aaf276591823adefd7cbbd0e8f6c50ffdf2a0400186"}}]}
+ ],
+ "context_passages_used": []
+}

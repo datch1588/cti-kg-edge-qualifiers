@@ -1,0 +1,93 @@
+{
+ "run_id": "Z002",
+ "target_doc_id": "D0574",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Ukraine", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0001", "start": 0, "end": 93, "sha256": "18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4"}}
+  ]},
+  {"id": "n002", "label": "missile strike", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0007", "start": 66, "end": 170, "sha256": "f287ab9fb79109f48b6a518c8e80cd6aa80811835edec761be86922474081518"}}
+  ]},
+  {"id": "n003", "label": "Russian attack on Kyiv's energy infrastructure", "entity_type": "incident", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0016", "start": 12, "end": 147, "sha256": "79f665a78a4f99cc0318451840dc1404a634221bcc8bb538833502dba45081b0"}}
+  ]},
+  {"id": "n004", "label": "Darnytskyi", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0016", "start": 12, "end": 147, "sha256": "79f665a78a4f99cc0318451840dc1404a634221bcc8bb538833502dba45081b0"}}
+  ]},
+  {"id": "n005", "label": "Dniprovskyi", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0016", "start": 12, "end": 147, "sha256": "79f665a78a4f99cc0318451840dc1404a634221bcc8bb538833502dba45081b0"}}
+  ]},
+  {"id": "n006", "label": "Kyiv", "entity_type": "location", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+  ]},
+  {"id": "n007", "label": "NATO", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 0, "end": 83, "sha256": "e4c94b80f8d314bd81aaa058dfa5f311c685768a65395409dc72446f2e03fecb"}}
+  ]},
+  {"id": "n008", "label": "Kyiv power plant", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0001", "start": 0, "end": 93, "sha256": "18381f5dcd9dc1d63e71ea09aba5089b4202be1c7712d50dc589e243599b2ac4"}},
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+  ]},
+  {"id": "n009", "label": "Andrii Sybiha", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0009", "start": 152, "end": 216, "sha256": "972e7adf4d5800165adaf996d389da2613c88e9e6dba2e9f999afd7f00fb3235"}}
+  ]},
+  {"id": "n010", "label": "Denys Shmyhal", "entity_type": "person", "aliases": ["Shmyhal"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 0, "end": 128, "sha256": "e305fb98622ed31dd41691836e153aa40e8cdf4f64fdcf684e16745fe90e922c"}},
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0011", "start": 9, "end": 166, "sha256": "0d200f0be6e07f2505a89917f3d808b48fdd7b9566f2ee32b71b92a5dda3a2ab"}}
+  ]},
+  {"id": "n011", "label": "Mark Rutte", "entity_type": "person", "aliases": ["Rutte"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 0, "end": 128, "sha256": "e305fb98622ed31dd41691836e153aa40e8cdf4f64fdcf684e16745fe90e922c"}},
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0011", "start": 9, "end": 166, "sha256": "0d200f0be6e07f2505a89917f3d808b48fdd7b9566f2ee32b71b92a5dda3a2ab"}}
+  ]},
+  {"id": "n012", "label": "Russian forces", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+  ]},
+  {"id": "n013", "label": "cyber threats", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0013", "start": 0, "end": 81, "sha256": "5ddbda4b8e18eaf671f62c8e42a9fe70fe5361371a1e98af44254d12b4040cc3"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n002", "target": "n008", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "Shmyhal on Telegram", "event_time": "on the night of 2-3 February", "event_scope": "n002",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0007", "start": 66, "end": 170, "sha256": "f287ab9fb79109f48b6a518c8e80cd6aa80811835edec761be86922474081518"}},
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+   ]},
+  {"id": "e002", "source": "n002", "target": "n012", "relation_type": "ATTRIBUTED_TO",
+   "modality": "actual", "polarity": "positive", "attribution": "Shmyhal on Telegram", "event_time": "on the night of 2-3 February", "event_scope": "n002",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+   ]},
+  {"id": "e003", "source": "n003", "target": "n004", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0016", "start": 12, "end": 147, "sha256": "79f665a78a4f99cc0318451840dc1404a634221bcc8bb538833502dba45081b0"}}
+   ]},
+  {"id": "e004", "source": "n003", "target": "n005", "relation_type": "AFFECTS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "n003",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0016", "start": 12, "end": 147, "sha256": "79f665a78a4f99cc0318451840dc1404a634221bcc8bb538833502dba45081b0"}}
+   ]},
+  {"id": "e005", "source": "n008", "target": "n006", "relation_type": "LOCATED_IN",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0003", "start": 0, "end": 66, "sha256": "2e63ff731ccdd2c4daea39044f59af6ef22b467e4b5b7c35e6c035c6689185f2"}}
+   ]},
+  {"id": "e006", "source": "n010", "target": "n002", "relation_type": "REPORTS_ON",
+   "modality": "actual", "polarity": "positive", "attribution": "Shmyhal on Telegram", "event_time": "", "event_scope": "n002",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0007", "start": 8, "end": 170, "sha256": "55913159598f519d842d267d4925daed0543b173fbdbbd91b605f33b92a55079"}}
+   ]},
+  {"id": "e007", "source": "n011", "target": "n007", "relation_type": "LEADS",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 0, "end": 83, "sha256": "e4c94b80f8d314bd81aaa058dfa5f311c685768a65395409dc72446f2e03fecb"}}
+   ]},
+  {"id": "e008", "source": "n012", "target": "n008", "relation_type": "TARGETS",
+   "modality": "actual", "polarity": "positive", "attribution": "Shmyhal on Telegram", "event_time": "on the night of 2-3 February", "event_scope": "n002",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0574", "paragraph_id": "D0574:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0574:P0005", "start": 84, "end": 193, "sha256": "2fdb69a29a4c29d7dcd6d0b3961ee38081d3b1cee5e235f99d7c16b5e44fd1d5"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

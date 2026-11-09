@@ -1,0 +1,291 @@
+AUDIT_FILE: T30
+TARGET_DOC_ID: D0327
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0327
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a
+TITLE_SHA256: 5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+BEGIN_DOCUMENT
+[D0327:P0001] sha256:5ef1d02205186d59c30585f410eafc02b7b7787e555e205ef0a238898e75ecf3
+[D0327:P0002] sha256:0c2540a5c672eae6ac9bb09c7d7c7bec68dd0cce863e0012110dd872ad70b001
+[D0327:P0003] sha256:4520083fc3914960791c7c9feafe2c58d1094645da53102a86b58c981e260176
+[D0327:P0004] sha256:dddab21467c06402b7516a4df95fb4ad646d0134ac39763c2895f3ca3912f46d
+[D0327:P0005] sha256:7a2573266033dc4de5846fc724746fb34255a3ad3031feae9a3aafc79ee745d8
+[D0327:P0006] sha256:920458eccafe500aa00a9bae40096ea40a14397336c37662b27beef108c02a6e
+[D0327:P0007] sha256:286acccd18bc0e790317f74706628acc5faa9f86c40876d2ea48b415f58b5ccf
+[D0327:P0008] sha256:e76fe174228ba61f7cdf2dd9fbab4af4c0793527660253012672194d1fe3189d
+[D0327:P0009] sha256:d52b22db2f498fa09483ca6c25365710fd3692a2fdda55e41e54d16fbafee4d1
+[D0327:P0010] sha256:9ef13554ff038106bba631fd1ac61ad55bd98c14108c60acf97a64040c2ef6a8
+[D0327:P0011] sha256:583bd0190b19e4c589e8ddf0cabbe91caad258b2851401f6a4df7a5c82f0f7a9
+[D0327:P0012] sha256:02ab0dc2773b96b00f82e15a03ad4f09da537cecf95b76cd1d6d572ba9e49c55
+[D0327:P0013] sha256:796d85360f1d13eaca085782fb147b2604c4f0c5ea8eabcfd0b366ad05c5e431
+[D0327:P0014] sha256:62511035a9408d4e0a267246b0ce61dc7f098f9a5b17c855af5dd0523551369d
+[D0327:P0015] sha256:42ca0a3e42f0119f35653459de1aa3437ae6f5ec1c2798a8433c964a39984e45
+[D0327:P0016] sha256:2bb16ee1ce4bf3a77882e1e74b7fcd599c79e463c5b90414ac7d8c5a505ed550
+[D0327:P0017] sha256:53e6adbe51b6cf6424aeeaafa05a1f17edfa0d106a7b58bc9cddab63d5a5f1ac
+[D0327:P0018] sha256:ea5b9ea01818ff077bcd0c006594c4b3aaa501e0b21f4abac1b316f7c1790d97
+[D0327:P0019] sha256:408a76f4aeaff4a258c2bc1b088c81ab4c7fc74acaea83026b54a0b407e3460d
+[D0327:P0020] sha256:624af301c3e6626a012ed00798af780a9cedb5e8ab9db8a0279bd76c622c3c59
+[D0327:P0021] sha256:11552e14c3b3f7810d6d803c5eb3350f07a26da7de53f03516dbd7766e09c4e7
+[D0327:P0022] sha256:a6ec59a5a8b8e74d49700bb42cde19065d8a3926ab7e7501228070e87d69a01b
+[D0327:P0023] sha256:b4993be61761c20cd8a5e427ffa13a0f63891750fe3ed026483fade0520b89b8
+[D0327:P0024] sha256:278d74cee03a0faba41edef0087c814ed963602ffe6bfc16b1bbe897b8c4f322
+[D0327:P0025] sha256:8cda29e58c1fbd6a66864a99aa89133d5472066b80fa53ca4c49f885f7683327
+[D0327:P0026] sha256:0d102211325b10c63f43b6134bd4b4fce0893e6e45dfd52aa86cd9fce49207b1
+[D0327:P0027] sha256:c3aa64f2c244df90446ac7905efb5891abdb4a3034ab7cffdca797240ddda826
+[D0327:P0028] sha256:4cf075249ba858e94c6bb14963617fad4446d121f30bcbbd9e88d633e069e574
+[D0327:P0029] sha256:02e11c14fba69545c857be8ae5203c6eed6bf94eb15857c228364a2a8440e1a6
+[D0327:P0030] sha256:bffe4e94011a64eccf966b22c2a55550acfadf75471ac05881efc987e36e2f93
+[D0327:P0031] sha256:932214f9874176bb0d86e59b4f292290b73040cb39146f6b78bb8e94da396c32
+[D0327:P0032] sha256:449ad04ea160f4da6aad9118e3f9902e8ea45f4460c28591db7fdad83796333b
+[D0327:P0033] sha256:13ad88631da88be7e7cfeaa0d04e174f50a1c4481db991c750b2a39fe7b62037
+[D0327:P0034] sha256:f44f33cb14b0d7376c60f02438793cad4a0498871f1d50cdd8e5cb9bdb10ba76
+[D0327:P0035] sha256:3e640996b940621379b86cab573c9c9bd0ebb678cf352b155d415a377d239cec
+[D0327:P0036] sha256:223bc63bcf071e0847c5131d5ae4d974bf8a904b4ca07a5b573f8cfdab13cbfc
+[D0327:P0037] sha256:946e9729305d337ac458b9fea9299f057a3d755802e2eadd8adfe2466c3926cc
+[D0327:P0038] sha256:42cfb7659fdd8f732a41d71ec7dd193e4d3d2f39d6f4bfdadab83d385e3d7591
+[D0327:P0039] sha256:52d4266318408cabc622230fe87c9251a6d1806bea1554b75dd1e5df754fe137
+[D0327:P0040] sha256:27fecb19b64015f9af31eadf0dac2667771af88469d245ab172ac741bf59f454
+[D0327:P0041] sha256:5c38acf3270137eddff51c0b2faf220fbaf32c9db6c1b19abf41cd03ad20d3dd
+[D0327:P0042] sha256:77a07c396f8263aac1219e29eeda120f01b342f7655a908d9cd1ece1e6d82d3d
+[D0327:P0043] sha256:b75105c0e1c3b5d9fbeb1b5ebf366c723f6f2dca93657aa7c950755a1b35fe93
+[D0327:P0044] sha256:ad9b5d6c2311f83a7f88964272a61734bef5035c46a4a80b3946cd8733dfb2b7
+[D0327:P0045] sha256:bc77a5e4053976aa2485b04a1c89651446189fedbd031515f4e67ae8eac095a0
+[D0327:P0046] sha256:2c0db6d112d31ef2b3f27cdfc2ff1e223229f19a3a6a0d16cfa9b1c3c3b7310a
+[D0327:P0047] sha256:94b07aff0327ecb384df7e14f4d2db1cb791e50b0b8461c672ec86ea05801e10
+[D0327:P0048] sha256:78590f2bc22d892acc1cfa91450829991bcf04ef02d636fa53557ea56dfd9649
+[D0327:P0049] sha256:54ecd727fb12dfc8ec2765b8dde79fe211245c0d56446d80685adea45c118797
+[D0327:P0050] sha256:b9361d3bfc4ad2b6ad3d957f2bdb35ecfc2ac7e8464d44bfbf59ad7b10a6aba3
+[D0327:P0051] sha256:07134b1c969ea4a4e1f1c963066e8b59d4054e9220dab830afb75147852037e5
+[D0327:P0052] sha256:ccd44fc48264fc0298914f31d6306ce0d5b8edef792b177afd286ecce30ad663
+[D0327:P0053] sha256:817766654bd51bf74847c313585ec47b40f982a28416eb42d077ee4c11a37dc6
+[D0327:P0054] sha256:a95749d1585c035a49b172c8a45138527a6d1c86f18e379128a327084fc30c27
+[D0327:P0055] sha256:bb8b12c8b14cfda913b3d4127f921f5417d5112ec5085cda4d6c5afe0a802401
+[D0327:P0056] sha256:cff1c76574b0d498e2b5334bb92ea6b7a4b508927445038923c8f628c79c18d9
+[D0327:P0057] sha256:1aadbede701fedad6684afcb877302bf50879a65e47c02093310155ff82e5117
+[D0327:P0058] sha256:0eb5a285ecdfc41a293a6970507bb93f4102bae33d1c65bcf9ee26f02168eb80
+[D0327:P0059] sha256:87d34c41b64a865e31ab6a305997422361e8a30cfe935c9d6ddbac28d5491c4d
+[D0327:P0060] sha256:f269c3832e9d2a1edaaeb93704c9851e32975c1aa0a7fb2111731d6ace3af2be
+[D0327:P0061] sha256:eaeb20fc590c69a1ebdd290926481ce7bb1557afda4b08c22267fd30fac1d340
+[D0327:P0062] sha256:1b1e3f24959eca2e4ccaf00154d042c8843a6f82007deec9f38ce6134dc73616
+[D0327:P0063] sha256:3a1ea8de3b89274657a48b0cfec6875bbb6dc5485b318b1d8ec45808ec9e51a4
+[D0327:P0064] sha256:470d3a4769e1dfb41541d5bfb391002a3e7cd0176a4b6d288df2e0835742038d
+[D0327:P0065] sha256:93a91c1347e8a2d3ce554cf8f13e70d8c5e9bb8f1ab88c1a109de72e4e69327b
+[D0327:P0066] sha256:403c6f6e6040e3ed578a47ef86fb4df7fedd688fd6261a5a95dfcd2b951399a0
+[D0327:P0067] sha256:e55a2d3506cd9a04f4bddf766dd9bcfe88dc8bedef3327d296992930cce97057
+[D0327:P0068] sha256:74db14c635e2203500ba9e1023df9648134b1a909753876376fbf907ac45d7b9
+[D0327:P0069] sha256:8438667ba18605169bd460a84e76df8612272dbdd74df6581c918d78dab0c189
+[D0327:P0070] sha256:0dad3aea4a091e81787adcfcc11b005913b3f6ce278eb5d4074ad8d0b1189a0f
+[D0327:P0071] sha256:b723a76576be2cfa68308aa48ba93274382177c7aa600d7542fbfc6263027e78
+[D0327:P0072] sha256:07a85e3cc4b1e0e4dc5b6fafebf1394eb3338f2878f388324fe4c08b8d31d38f
+[D0327:P0073] sha256:ba9447360aecf349ad831242211d183e01f5301ceead8ba7a7578ab9d8b44143
+[D0327:P0074] sha256:199bc967af7c44ff498760153bd4fc8c880feb48e7ee236a90e58f5f543cf845
+[D0327:P0075] sha256:c08fb77976ec2c5e0c477b005a3f1bc0405bd65714d5156da83fd19b05750d4d
+[D0327:P0076] sha256:4e82d0807ad0ac443c284c649f6eb4f7ef8e2f1aa60556a5c34daa9dd6c0238b
+[D0327:P0077] sha256:ceb59b69bc12739c0ff6739cb068554b45f27caf01822f751e11021fd270890b
+[D0327:P0078] sha256:86c9855e7c5c5ddfffecf1f9d7ce1bddfbb8deb566ed418a82eb6d3ac72e7955
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (158)
+E001: «Iranian-affiliated APT actors» — uses → «135.136.1[.]133» | форма: actual, positive
+E002: «National Security Agency (NSA)» — co-authored → «AA26-097A» | форма: actual, positive
+E003: «Iranian-affiliated APT actors» — targets → «Government Services and Facilities» | форма: actual, positive
+E004: «Siemens» — develops → «Siemens S7 PLC» | форма: actual, positive
+E005: «Cyber National Mission Force» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E006: «Iranian-affiliated APT actors» — uses → «185.82.73[.]171» | форма: actual, positive
+E007: «Iranian-affiliated APT actors» — directs traffic to → «port 22» | форма: actual, positive
+E008: «Iranian-affiliated APT actors» — exploits → «programmable logic controllers (PLCs)» | форма: actual, positive
+E009: «Iranian-affiliated APT actors» — targets → «OT devices» | форма: actual, positive
+E010: «CyberAv3ngers» — is also known as → «APT Iran» | форма: actual, positive
+E011: «Iranian-affiliated APT actors» — may target → «Siemens S7 PLC» | форма: actual, positive
+E012: «project files» — contain → «ladder logic and configuration settings» | форма: actual, positive
+E013: «Iranian-affiliated APT actors» — targets → «human machine interface» | форма: actual, positive
+E014: «Environmental Protection Agency» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E015: «CyberAv3ngers» — is also known as → «Bauxite» | форма: actual, positive
+E016: «Iranian-affiliated APT actors» — deployed → «Dropbear Secure Shell (SSH) software» | форма: actual, positive
+E017: «CyberAv3ngers» — is affiliated with → «Islamic Revolutionary Guard Corps (IRGC) Cyber Electronic Command (CEC)» | форма: actual, positive
+E018: «Department of Energy» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E019: «Iranian-affiliated APT actors» — uses → «Internet Accessible Device» | форма: actual, positive
+E020: «Iranian-affiliated APT actors» — uses → «185.82.73[.]168» | форма: actual, positive
+E021: «Studio 5000 Logix Designer» — is developed by → «Rockwell Automation» | форма: actual, positive
+E022: «Cybersecurity and Infrastructure Security Agency» — provides → «Decider Tool» | форма: actual, positive
+E023: «Iranian-affiliated APT actors» — uses → «185.82.73[.]165» | форма: actual, positive
+E024: «CyberAv3ngers» — targets → «human machine interface» | форма: actual, positive
+E025: «Iranian-affiliated APT actors» — targets → «operational technology» | форма: actual, positive
+E026: «Iranian-affiliated APT actors» — uses → «Studio 5000 Logix Designer» | форма: actual, positive
+E027: «CyberAv3ngers» — targets → «programmable logic controllers» | форма: actual, positive
+E028: «CyberAv3ngers» — targeted → «U.S.-based PLCs and HMIs» | форма: actual, positive
+E029: «SD1771» — was published in → «2026» | форма: actual, positive
+E030: «CyberAv3ngers» — is also known as → «Hydro Kitten» | форма: actual, positive
+E031: «programmable logic controllers (PLCs)» — are manufactured by → «Rockwell Automation/Allen-Bradley» | форма: actual, positive
+E032: «cyber exploitation of internet-connected operational technology (OT) devices» — attributed to → «Iranian-affiliated APT actors» | форма: actual, positive
+E033: «Rockwell Automation» — develops → «Studio 5000 Logix Designer» | форма: actual, positive
+E034: «virtual private network» — enables → «multifactor authentication» | форма: actual, positive
+E035: «Iranian-affiliated APT actors» — directs traffic to → «port 2222» | форма: actual, positive
+E036: «National Institute of Standards and Technology (NIST)» — co-developed → «Cross-Sector Cybersecurity Performance Goals 2.0 (CPGs 2.0)» | форма: actual, positive
+E037: «Rockwell Automation» — published → «SD1771» | форма: actual, positive
+E038: «Rockwell Automation» — provides → «Studio 5000 Logix Designer» | форма: actual, positive
+E039: «Islamic Revolutionary Guard Corps» — located in → «Iran» | форма: actual, positive
+E040: «CyberAv3ngers» — is also known as → «Mr. Soul» | форма: actual, positive
+E041: «Rockwell Automation» — develops → «Rockwell Automation/Allen-Bradley manufactured PLCs» | форма: actual, positive
+E042: «185.82.73[.]162» — was associated with actors during → «January 2025 - March 2026» | форма: actual, negative
+E043: «National Institute of Standards and Technology» — develops → «Cross-Sector Cybersecurity Performance Goals 2.0» | форма: actual, positive
+E044: «Iranian-affiliated APT actors» — targets → «Water and Wastewater Systems (WWS) sector» | форма: actual, positive
+E045: «Siemens» — develops → «S7 Totally Integrated Automation [TIA] Portal» | форма: actual, positive
+E046: «AA26-097A» — describes → «Iranian-affiliated APT actors» | форма: actual, positive
+E047: «Iranian-affiliated APT actors» — uses → «overseas-based IP addresses» | форма: actual, positive
+E048: «185.82.73[.]168» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E049: «Iranian-affiliated APT actors» — used → «185.82.73[.]162» | форма: actual, positive
+E050: «Iranian-affiliated APT actors» — uses → «Stored Data Manipulation» | форма: actual, positive
+E051: «Federal Bureau of Investigation (FBI)» — co-authored → «AA26-097A» | форма: actual, positive
+E052: «AA26-097A» — was released on → «April 07, 2026» | форма: actual, positive
+E053: «Iranian-affiliated APT actors» — targets → «CompactLogix PLC devices» | форма: actual, positive
+E054: «Iranian-affiliated APT actors» — uses → «leased, third-party hosted infrastructure» | форма: actual, positive
+E055: «Iranian-affiliated APT actors» — directs traffic to → «port 102» | форма: actual, positive
+E056: «Iranian-affiliated APT actors» — uses → «Commonly Used Port» | форма: actual, positive
+E057: «Iranian-affiliated APT actors» — targets → «Micro850 PLC devices» | форма: actual, positive
+E058: «Iranian-affiliated APT actors» — targets → «Water and Wastewater Systems» | форма: actual, positive
+E059: «project files» — are referred to on Rockwell Automation devices as → «.ACD file» | форма: actual, positive
+E060: «Rockwell Automation» — published → «PN1550» | форма: actual, positive
+E061: «Iranian-affiliated APT actors» — targets → «programmable logic controllers» | форма: actual, positive
+E062: «Iranian-affiliated APT actors» — uses → «185.82.73[.]162» | форма: actual, positive
+E063: «Environmental Protection Agency» — reports on → «CyberAv3ngers» | форма: actual, positive
+E064: «185.82.73[.]165» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E065: «Iranian-affiliated APT actors» — uses → «Dropbear SSH» | форма: actual, positive
+E066: «185.82.73[.]167» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E067: «Iranian-affiliated APT actors» — targets → «Energy» | форма: actual, positive
+E068: «Iranian-affiliated APT actors» — uses → «Internet Accessible Device T0883» | форма: actual, positive
+E069: «CyberAv3ngers» — targeted → «Unitronics PLC devices» | форма: actual, positive
+E070: «Cyber National Mission Force» — part of → «United States Cyber Command» | форма: actual, positive
+E071: «Iranian-affiliated APT actors» — targets → «supervisory control and data acquisition» | форма: actual, positive
+E072: «Federal Bureau of Investigation» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E073: «Iranian-affiliated APT actors» — uses → «Remote Access Tools T1219» | форма: actual, positive
+E074: «Iranian-affiliated APT actors» — used → «185.82.73[.]167» | форма: actual, positive
+E075: «Cybersecurity and Infrastructure Security Agency» — reports on → «CyberAv3ngers» | форма: actual, positive
+E076: «Iranian-affiliated APT actors» — targets → «U.S. critical infrastructure sectors» | форма: actual, positive
+E077: «United States Cyber Command - Cyber National Mission Force (CNMF)» — co-authored → «AA26-097A» | форма: actual, positive
+E078: «Allen-Bradley» — develops → «Rockwell Automation/Allen-Bradley manufactured PLCs» | форма: actual, positive
+E079: «Iranian-affiliated APT actors» — targets → «CompactLogix» | форма: actual, positive
+E080: «Iranian-affiliated APT actors» — used → «185.82.73[.]164» | форма: actual, positive
+E081: «Iranian-affiliated APT actors» — targets → «United States» | форма: actual, positive
+E082: «Iranian-affiliated APT actors» — targets → «Government Services and Facilities sector» | форма: actual, positive
+E083: «Iranian-affiliated APT actors» — has been active since → «March 2026» | форма: actual, positive
+E084: «Iranian-affiliated APT actors» — uses → «Commonly Used Port T0885» | форма: actual, positive
+E085: «Environmental Protection Agency (EPA)» — co-authored → «AA26-097A» | форма: actual, positive
+E086: «Cyber National Mission Force» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E087: «Iranian-affiliated APT actors» — uses → «Remote Access Tools» | форма: actual, positive
+E088: «PN1550» — was published in → «2021» | форма: actual, positive
+E089: «virtual private network» — enables → «multifactor authentication» | форма: possible, positive
+E090: «CyberAv3ngers» — targeted → «Water and Wastewater Systems (WWS) sector» | форма: actual, positive
+E091: «Iranian-affiliated APT actors» — manipulates data on → «human machine interface (HMI) displays» | форма: actual, positive
+E092: «Iranian-affiliated APT actors» — used → «185.82.73[.]165» | форма: actual, positive
+E093: «Rockwell Automation» — develops → «programmable logic controllers» | форма: actual, positive
+E094: «Iranian-affiliated APT actors» — maliciously interacts with → «project files» | форма: actual, positive
+E095: «CVE-2021-22681» — is a → «authentication bypass» | форма: actual, positive
+E096: «185.82.73[.]170» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E097: «Cyber Electronic Command» — part of → «Islamic Revolutionary Guard Corps» | форма: actual, positive
+E098: «Iranian-affiliated APT actors» — extracted → «project files» | форма: actual, positive
+E099: «National Security Agency» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E100: «Cybersecurity and Infrastructure Security Agency» — provides → «Cyber Hygiene Services» | форма: actual, positive
+E101: «Iranian-affiliated APT actors» — directs traffic to → «port 502» | форма: actual, positive
+E102: «Siemens S7 PLC» — is manufactured by → «Siemens» | форма: actual, positive
+E103: «Department of Energy» — reports on → «CyberAv3ngers» | форма: actual, positive
+E104: «CISA» — co-developed → «Cross-Sector Cybersecurity Performance Goals 2.0 (CPGs 2.0)» | форма: actual, positive
+E105: «Iranian-affiliated APT actors» — targets → «internet-facing operational technology (OT) devices» | форма: actual, positive
+E106: «PLC targeting campaign beginning in November 2023» — began in → «November 2023» | форма: actual, positive
+E107: «CyberAv3ngers» — compromised → «at least 75 devices» | форма: actual, positive
+E108: «Iranian-affiliated APT actors» — manipulates data on → «supervisory control and data acquisition (SCADA) displays» | форма: actual, positive
+E109: «Cybersecurity and Infrastructure Security Agency» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E110: «Department of Energy» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E111: «Rockwell Automation» — reports on → «CVE-2021-22681» | форма: actual, positive
+E112: «Cybersecurity and Infrastructure Security Agency» — develops → «Cross-Sector Cybersecurity Performance Goals 2.0» | форма: actual, positive
+E113: «Iranian-affiliated APT actors» — targets → «Rockwell Automation/Allen-Bradley manufactured PLCs» | форма: actual, positive
+E114: «Iranian-affiliated APT actors» — targets → «Siemens S7 PLC» | форма: possible, positive
+E115: «185.82.73[.]162» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E116: «Iranian-affiliated APT actors» — used → «185.82.73[.]168» | форма: actual, positive
+E117: «Iranian-affiliated APT actors» — uses → «Stored Data Manipulation T1565» | форма: actual, positive
+E118: «Department of Energy (DOE)» — co-authored → «AA26-097A» | форма: actual, positive
+E119: «CyberAv3ngers» — conducted → «PLC targeting campaign beginning in November 2023» | форма: actual, positive
+E120: «CVE-2021-22681» — affects → «Logix Controllers» | форма: actual, positive
+E121: «Cyber National Mission Force» — reports on → «CyberAv3ngers» | форма: actual, positive
+E122: «CyberAv3ngers» — targets → «Water and Wastewater Systems» | форма: actual, positive
+E123: «Environmental Protection Agency» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E124: «Iranian-affiliated APT actors» — used → «185.82.73[.]171» | форма: actual, positive
+E125: «CyberAv3ngers» — is also known as → «Soldiers of Solomon» | форма: actual, positive
+E126: «Federal Bureau of Investigation» — reports on → «CyberAv3ngers» | форма: actual, positive
+E127: «Iranian-affiliated APT actors» — used → «185.82.73[.]170» | форма: actual, positive
+E128: «Iranian-affiliated APT actors» — used → «135.136.1[.]133» | форма: actual, positive
+E129: «National Security Agency» — reports on → «CyberAv3ngers» | форма: actual, positive
+E130: «PN1550» — addresses → «CVE-2021-22681» | форма: actual, positive
+E131: «Iranian-affiliated APT actors» — is affiliated with → «Iran» | форма: actual, positive
+E132: «Federal Bureau of Investigation» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E133: «Rockwell Automation Product Security Incident Response Team» — part of → «Rockwell Automation» | форма: actual, positive
+E134: «CyberAv3ngers» — targets → «Unitronics PLC» | форма: actual, positive
+E135: «Dropbear Secure Shell (SSH) software» — enables remote access through → «port 22» | форма: actual, positive
+E136: «Cybersecurity and Infrastructure Security Agency» — reports on → «Iranian-affiliated APT actors» | форма: possible, positive
+E137: «CyberAv3ngers» — is also known as → «Storm-0784» | форма: actual, positive
+E138: «Iranian-affiliated APT actors» — uses → «185.82.73[.]170» | форма: actual, positive
+E139: «Iranian-affiliated APT actors» — targets → «Micro850» | форма: actual, positive
+E140: «185.82.73[.]162» — uses → «Iranian-affiliated APT actors» | форма: actual, positive
+E141: «CyberAv3ngers» — is also known as → «Shahid Kaveh Group» | форма: actual, positive
+E142: «Rockwell Automation» — published → «PN1550» | форма: possible, positive
+E143: «Iranian-affiliated APT actors» — directs traffic to → «port 44818» | форма: actual, positive
+E144: «Iranian-affiliated APT actors» — targets → «Energy sector» | форма: actual, positive
+E145: «Cybersecurity and Infrastructure Security Agency» — reports on → «Iranian-affiliated APT actors» | форма: actual, positive
+E146: «Cybersecurity and Infrastructure Security Agency (CISA)» — co-authored → «AA26-097A» | форма: actual, positive
+E147: «Iranian-affiliated APT actors» — uses → «185.82.73[.]164» | форма: actual, positive
+E148: «185.82.73[.]171» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E149: «CyberAv3ngers» — reports on → «Federal Bureau of Investigation» | форма: actual, positive
+E150: «CyberAv3ngers» — is also known as → «UNC5691» | форма: actual, positive
+E151: «Allen-Bradley» — develops → «programmable logic controllers» | форма: actual, positive
+E152: «National Security Agency» — warns about → «cyber exploitation of internet-connected operational technology (OT) devices» | форма: actual, positive
+E153: «185.82.73[.]164» — was associated with actors during → «January 2025 - March 2026» | форма: actual, positive
+E154: «Iranian-affiliated APT actors» — uses → «185.82.73[.]167» | форма: actual, positive
+E155: «Iranian-affiliated APT actors» — uses → «Studio 5000 Logix Designer» | форма: actual, negative
+E156: «IRGC-Affiliated Cyber Actors Exploit PLCs in Multiple Sectors, Including US Water and Wastewater Systems Facilities» — describes → «CyberAv3ngers» | форма: actual, positive
+E157: «Iranian-affiliated APT actors» — conducts activity similar to → «CyberAv3ngers» | форма: actual, positive
+E158: «135.136.1[.]133» — was associated with actors in → «March 2026» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

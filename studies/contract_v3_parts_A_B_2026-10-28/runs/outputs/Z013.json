@@ -1,0 +1,74 @@
+{
+ "run_id": "Z013",
+ "target_doc_id": "D0045",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Australia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "n002", "label": "Canada", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "n003", "label": "New Zealand", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "n004", "label": "UK", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "n005", "label": "USA", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "n006", "label": "Anthropic", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0019", "start": 0, "end": 157, "sha256": "e10bec8faf18308eb6ed0681c75cc1e47dd0b3471f461043017707676779850f"}}
+  ]},
+  {"id": "n007", "label": "Five Eyes", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 0, "end": 162, "sha256": "b81b6352540619a004eb58e0c5f51b342bfa923c8b876fce828177b856c7ccc3"}},
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0009", "start": 43, "end": 79, "sha256": "232e955e5e84124912f1239d7a27d872b86a05dc00b9bf5d6dc1dd4ec0242d4d"}}
+  ]},
+  {"id": "n008", "label": "Mythos", "entity_type": "product", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0019", "start": 55, "end": 157, "sha256": "9afd11e9421bc88368ceda4f3e843af9cbc9cc6538a3142da380d9a084bbd5d3"}}
+  ]},
+  {"id": "n009", "label": "agentic AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0018", "start": 180, "end": 317, "sha256": "d785be34b936eda9ff7451e0dd1aa8fe740697c979ea38ad4afc9842b30ccec2"}}
+  ]},
+  {"id": "n010", "label": "AI", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0007", "start": 1, "end": 129, "sha256": "b224150df7a1a76b846977ce7b1b9755a66ddf2c3a483001d8b02b7b78dbc528"}}
+  ]},
+  {"id": "n011", "label": "AI-powered attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 163, "end": 256, "sha256": "ced91f18ab71bd9b0703fca8a959d098d2677704b73bfc4adea8ce4b815c0a61"}}
+  ]},
+  {"id": "n012", "label": "cyber-attacks", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0018", "start": 180, "end": 317, "sha256": "d785be34b936eda9ff7451e0dd1aa8fe740697c979ea38ad4afc9842b30ccec2"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n001", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "e002", "source": "n002", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "e003", "source": "n003", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "e004", "source": "n004", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "e005", "source": "n005", "target": "n007", "relation_type": "MEMBER_OF", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 42, "end": 116, "sha256": "a8938a8fb4712ad97cab90f0bb8def0936e97811ca5077eff3bf988f9a02b316"}}
+  ]},
+  {"id": "e006", "source": "n006", "target": "n008", "relation_type": "DEVELOPS", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0019", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0019", "start": 55, "end": 157, "sha256": "9afd11e9421bc88368ceda4f3e843af9cbc9cc6538a3142da380d9a084bbd5d3"}}
+  ]},
+  {"id": "e007", "source": "n007", "target": "n011", "relation_type": "WARNS_ABOUT", "attribution": "", "event_time": "", "event_scope": "Five Eyes intelligence agencies' joint cybersecurity advice to leaders", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 0, "end": 257, "sha256": "29109ae0138df7df662a80657f6ea229532e9d961ee2c4110e5d1f8966ad72be"}}
+  ]},
+  {"id": "e008", "source": "n009", "target": "n012", "relation_type": "ENABLES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0018", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0018", "start": 180, "end": 317, "sha256": "d785be34b936eda9ff7451e0dd1aa8fe740697c979ea38ad4afc9842b30ccec2"}}
+  ]},
+  {"id": "e009", "source": "n011", "target": "n010", "relation_type": "USES", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0045", "paragraph_id": "D0045:P0005", "quote_ref": {"match": "exact", "paragraph_id": "D0045:P0005", "start": 163, "end": 256, "sha256": "ced91f18ab71bd9b0703fca8a959d098d2677704b73bfc4adea8ce4b815c0a61"}}
+  ]}
+ ],
+ "context_passages_used": []
+}

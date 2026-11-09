@@ -1,0 +1,168 @@
+AUDIT_FILE: S3N10
+TARGET_DOC_ID: D0399
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0399
+PUBLICATION_DATE: 2026-03-19
+SOURCE_URL: https://www.eureporter.co/general/2026/03/19/how-does-private-cloud-improve-it-security/
+TITLE_SHA256: 6a18aa7ea8b448fe5c7951110878a67d1052f63f79056ca5fcf02fa65ffd4c86
+BEGIN_DOCUMENT
+[D0399:P0001] sha256:6a18aa7ea8b448fe5c7951110878a67d1052f63f79056ca5fcf02fa65ffd4c86
+[D0399:P0002] sha256:0317ffb109739c36d0fb99be7efc36e53968f23a364ca07c027214a326ca0e3e
+[D0399:P0003] sha256:7ecb241cc4fad41895bdc43d39c24da44ca51a50e381585e5b2d3458ef79314f
+[D0399:P0004] sha256:97378a217fe24da56d46f123d2d08eea763bc17194fed5864715597f996c0f83
+[D0399:P0005] sha256:a14e82e028306d0f4ac429e80bbc6a9b28f1c7a191de07ef78f0d88e9f9cf49e
+[D0399:P0006] sha256:da078ac526873b239352b44ade9f8aceae8b0004d69c73c6f9854d759805b306
+[D0399:P0007] sha256:cdbecbbd5991962be8573e48b74ad729350c6f5529d85fcde3f5de428dfa3512
+[D0399:P0008] sha256:2be01db9a9cef1a3357f4fceea43ba3479903ae6977e6d22fe9abfd3e8eb3466
+[D0399:P0009] sha256:23427d921668c516b59405e38bd6b8ee3b80eb8e3435495fdc8d1ac6762b60b1
+[D0399:P0010] sha256:c38269141fd59562fb7a219ea9a71c1350677dcff506b574d0916d0c2538318c
+[D0399:P0011] sha256:54f3ea9f7598b142da50f2e2aac866d81b8244f172bbfbc4c87c7928ce3cfc6c
+[D0399:P0012] sha256:266e875944eca5ef21e584a69df39f0f731532b7a5cb7f5e92a5b75126b62043
+[D0399:P0013] sha256:e9609e2f5dfa3bda036143526ddfb36f9b44c8e91edb17de92d00e498736053b
+[D0399:P0014] sha256:cb8850abdf9ea2ea7a4ca73b80035e34b65274645268ffbfb80c726546789b25
+[D0399:P0015] sha256:bb8d816efb81ec1fab84771c4ddd8685b04f899cf9e6bc779b1f88b75d47de27
+[D0399:P0016] sha256:1a9863e071c37b9ccaca3478bd76c31086b74f575376ae764a28f0f9629ea595
+[D0399:P0017] sha256:dbdb1c3c34b99a105eced586bf629ea3beada38d2683f08ef82efd8a740b8da7
+[D0399:P0018] sha256:8ec7bbb322644ed64b13d58cb6e8392b06c0c4892d1c486511878c3b224e700f
+[D0399:P0019] sha256:eb738d8e9a400c473cc04589e05f9623c64a7b2b47a4b25502fb4c652c3f6b41
+[D0399:P0020] sha256:cb5111839eec7eb12d593d05d66db672f463d58ca9e99dfc140061be4e8d8271
+[D0399:P0021] sha256:aaa439f7e4f9dec51bd7024c822f9fec51f259210812568fc5d3b1c52c19b388
+[D0399:P0022] sha256:4a0615d6589d78f9a5071d29a2e551fe424292039c3dde445b39b4af9c9ce486
+[D0399:P0023] sha256:5b5fe21bcf9ac12c8d6444e37687bb59311d452a84cb6be64ceb8254876682b2
+[D0399:P0024] sha256:9364a3784803976859a9ab6f1ac95e447a0b22fefb6f150172a43beae5689029
+[D0399:P0025] sha256:e95edad526ef195877e9649a58a118781e64be152a6b80277ec3ec508708e680
+[D0399:P0026] sha256:41958c436af470ba075653a192808d6ad47a112d33027b41b91bee7b54819a90
+[D0399:P0027] sha256:4c22d79cf231baca92e4b763fe29f00c8bcc3bc0136d1575c0e74fcb073a41b0
+[D0399:P0028] sha256:9f3b8d9ce8795b3a1f8719e9cfa047c13e84d3f4980f24559a0767610f75d1c7
+[D0399:P0029] sha256:4c83a905bf18192cbaf6f818d3d3ad3a8a50444ff12d9f956f8f7f5e1370c9a4
+[D0399:P0030] sha256:781fbfab3b3547b105fc80e74514901bdbbd4ccb0e45e207b728a7ebfabe4a87
+[D0399:P0031] sha256:5aea8873f6efb49dbf9189895778d0874783619992e8194c333038ea4960fea2
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (74)
+E001: «software-defined networking» — uses → «zero-trust principles» | форма: recommended, positive
+E002: «network micro-segmentation» — relies on → «software-defined networking» | форма: actual, positive
+E003: «Identity federation» — uses → «SAML» | форма: actual, positive
+E004: «private cloud» — restricts privileged access to → «own employees and approved contractors» | форма: actual, positive
+E005: «hypervisor and firmware integrity» — requires → «secure boot» | форма: actual, positive
+E006: «backup isolation» — mitigates → «ransomware» | форма: actual, positive
+E007: «providers» — are asked to provide → «incident-response playbooks» | форма: actual, positive
+E008: «cloud security guidance» — recommends verifying → «physical and logical separation» | форма: actual, positive
+E009: «backup isolation» — mitigates → «ransomware» | форма: recommended, positive
+E010: «Identity federation» — uses → «OpenID Connect» | форма: actual, positive
+E011: «write-once storage tier» — prevents → «erasing evidence of intrusion» | форма: actual, positive
+E012: «private cloud» — mitigates → «cyber threats» | форма: actual, positive
+E013: «malicious or compromised insider at the provider» — could access → «customer data» | форма: actual, positive
+E014: «How does private cloud improve IT security?» — was published on → «March 19, 2026» | форма: actual, positive
+E015: «backups» — are stored in → «separate fault domains» | форма: actual, positive
+E016: «EU Reporter» — published → «How does private cloud improve IT security?» | форма: actual, positive
+E017: «speculative-execution flaws» — mitigates → «Patches» | форма: actual, positive
+E018: «private cloud» — mitigates → «side-channel attacks» | форма: possible, positive
+E019: «National Cyber Security Centre» — located in → «UK» | форма: actual, positive
+E020: «backup isolation» — mitigates → «ransomware» | форма: actual, negative
+E021: «encryption» — protects → «data in transit between internal microservices» | форма: actual, positive
+E022: «private deployment» — enables → «encryption at every layer of the infrastructure» | форма: actual, positive
+E023: «ransomware campaigns» — target → «critical infrastructure» | форма: actual, positive
+E024: «providers» — are asked to provide → «penetration-test summaries» | форма: actual, positive
+E025: «General News, Partner Contributor» — authored → «How does private cloud improve IT security?» | форма: actual, positive
+E026: «private cloud» — enables → «encryption» | форма: actual, positive
+E027: «vulnerability scanning tools» — integrate into → «CI/CD pipeline» | форма: actual, positive
+E028: «dedicated setup» — integrates → «HSMs» | форма: actual, positive
+E029: «private cloud hosting» — eliminates → «shared-tenancy risk» | форма: actual, positive
+E030: «healthcare, finance, and government organisations» — especially need → «granular encryption and key management» | форма: actual, positive
+E031: «private cloud» — uses → «just-in-time privilege escalation» | форма: possible, positive
+E032: «software-defined networking» — uses → «zero-trust principles» | форма: actual, positive
+E033: «audit trails» — are forwarded to → «write-once storage tier» | форма: actual, positive
+E034: «private cloud» — uses → «role-based access control (RBAC)» | форма: actual, positive
+E035: «attack-surface reviews» — map → «exposed API endpoints, management consoles, and inter-service communication channels» | форма: actual, positive
+E036: «Patches» — mitigates → «speculative-execution flaws» | форма: actual, positive
+E037: «software-defined networking» — isolates workloads using → «zero-trust principles» | форма: actual, positive
+E038: «Cybersecurity Act» — mitigates → «foreign IT risks» | форма: actual, positive
+E039: «private cloud» — mitigates → «shared-tenancy risk» | форма: actual, positive
+E040: «side-channel vulnerabilities» — include → «speculative-execution flaws» | форма: actual, positive
+E041: «private cloud» — mitigates → «cross-tenant exploits» | форма: actual, positive
+E042: «private cloud» — enables → «HSMs» | форма: actual, positive
+E043: «Germany» — received third payment from → «NextGenerationEU» | форма: actual, positive
+E044: «hypervisor and firmware integrity» — requires → «firmware patching via hardware-rooted trust chains» | форма: actual, positive
+E045: «ransomware» — targets → «critical infrastructure» | форма: actual, positive
+E046: «organizations throughout Europe» — face → «supply-chain attacks» | форма: actual, positive
+E047: «write-once storage tier» — protects → «audit trails» | форма: recommended, positive
+E048: «organizations throughout Europe» — face → «ransomware campaigns» | форма: actual, positive
+E049: «speculative-execution flaws» — leak information between tenants via → «shared silicon» | форма: actual, positive
+E050: «compromised tenant process» — could probe → «memory caches and CPU pipelines» | форма: actual, positive
+E051: «European lawmakers» — adopted → «Cybersecurity Act» | форма: actual, positive
+E052: «private cloud» — uses → «just-in-time privilege escalation» | форма: actual, positive
+E053: «critical infrastructure» — targets → «ransomware» | форма: actual, positive
+E054: «newly deployed container» — inherits → «current security baselines» | форма: actual, positive
+E055: «speculative-execution flaws» — affects → «shared silicon» | форма: actual, positive
+E056: «Cybersecurity Act» — mitigates → «foreign IT risks» | форма: actual, negative
+E057: «write-once storage tier» — protects → «audit trails» | форма: actual, positive
+E058: «UK's National Cyber Security Centre» — publishes → «cloud security guidance» | форма: actual, positive
+E059: «private cloud» — prevents → «cross-tenant exploits» | форма: actual, positive
+E060: «private cloud» — mitigates → «side-channel attacks» | форма: actual, positive
+E061: «provider's support engineers» — hold broad administrative privileges on → «public cloud platform» | форма: actual, positive
+E062: «backup isolation» — counters → «ransomware» | форма: actual, positive
+E063: «providers» — are asked to provide → «SOC 2 Type II reports» | форма: actual, positive
+E064: «dedicated setup» — enforces → «custom rotation policies» | форма: actual, positive
+E065: «hypervisor and firmware integrity» — requires → «measured launch» | форма: actual, positive
+E066: «supply-chain attacks» — exploit → «shared resources» | форма: actual, positive
+E067: «tenant configuration flaw on shared hardware» — can open the door for → «lateral movement across the entire platform» | форма: actual, positive
+E068: «private cloud» — offers protection unmatched by → «multi-tenant environments» | форма: actual, positive
+E069: «private architecture» — removes → «side-channel attacks» | форма: actual, positive
+E070: «shared environment provider» — typically controls → «key rotation and storage vaults» | форма: actual, positive
+E071: «private cloud» — mitigates → «insider threat» | форма: actual, positive
+E072: «identity federation» — integrates with → «existing directory services» | форма: actual, positive
+E073: «National Cyber Security Centre» — provides → «cloud security guidance» | форма: actual, positive
+E074: «encryption» — protects → «data at rest stored on NVMe drives» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,16 @@
+{
+ "audit_file": "R1_T49",
+ "target_doc_id": "D0069",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0017 провайдери, «such as AT&T and Microsoft», названі такими, що «are required to comply», і це подано як факт, тож формулювання без маркерів відповідає."},
+  {"item_id": "W002", "wording_modality": "conditional", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0024 це гіпотетичний сценарій з умовою («If the FBI hears a ransomware attack has been made... they're going to want to... figure out where it's coming from»), а «would use» теж передає гіпотетичну, умовну форму."},
+  {"item_id": "W003", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне («never has authority»), а P0026 стверджує, що NSA «have authority to access Section 702 data», тобто полярність хибна."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "У P0016 сказано лише, що сертифікації «can cover» такі категорії, як cyber threats, тобто подано можливість, а формулювання без маркерів подає охоплення як факт."},
+  {"item_id": "W005", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0023 Gerstell каже, що cyberattacks «might present a higher risk with the authority having lapsed», і це можливість, що збігається з «might» у формулюванні."},
+  {"item_id": "W006", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0023 terror attacks «might present a higher risk with the authority having lapsed», тож форма можливості у формулюванні відповідає статті."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0017 Microsoft названо серед провайдерів, які «are required to comply», і це подано як факт, тож форма відповідає."},
+  {"item_id": "W008", "wording_modality": "planned", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0008 сказано: «the House is scheduled to recess until June 23», тобто подано заплановане за графіком, що збігається з «is scheduled to»."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У P0003 сказано: «The House failed to approve an extension», тобто це факт, що схвалення не відбулося, і «failed to» у формулюванні передає це правильно."},
+  {"item_id": "W010", "wording_modality": "recommended", "wording_polarity": "positive", "form_verdict": "C", "reason": "У P0006 Trump пише «I encourage the United States Senate to confirm Jay as soon as possible», тобто це заклик, який формулювання «urged to confirm» передає правильно."}
+ ]
+}

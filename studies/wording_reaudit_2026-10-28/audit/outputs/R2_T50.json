@@ -1,0 +1,10 @@
+{
+ "audit_file": "R2_T50",
+ "target_doc_id": "D0120",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У [D0120:P0020] однорядкове локальне сканування SecAlerts подано як наявну функцію («run our one-line local scan»), що відповідає формі actual, positive."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "I", "reason": "Формулювання заперечне («never runs on»), а [D0120:P0020] стверджує, що сканування запускається на будь-якому endpoint, зокрема Mac, тобто звʼязок стверджено, а не заперечено."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "У [D0120:P0021] фільтрацію подано як можливість користувача («If you only want to see Adobe zero-days ... you can»), що відповідає формулюванню «can filter»."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "negative", "form_verdict": "C", "reason": "У [D0120:P0015] і [D0120:P0019] прямо сказано, що SecAlerts працює «rather than relying solely on NVD», тобто стаття так само заперечує виключну залежність від NVD."}
+ ]
+}

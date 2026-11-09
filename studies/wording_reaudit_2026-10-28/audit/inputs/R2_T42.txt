@@ -1,0 +1,78 @@
+AUDIT_FILE: R2_T42
+TARGET_DOC_ID: D0160
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_WORDING_REAUDIT)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт» — відношення → «об'єкт». Позначки форми в записах немає: форму твердження передає лише саме формулювання відношення. Трійку (учасників і напрям) уже перевірено окремо, її не оцінюй. Оціни для кожного запису лише одне: чи передає формулювання відношення ту форму, у якій стаття подає цей звʼязок. Оцінюй лише за текстом статті й правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Правдивість за зовнішніми джерелами не оцінюй.
+
+Крок 1. Визнач форму, яку передає формулювання відношення
+Модальність: actual — сталося або є чинним станом речей; planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — прямо сказано, що це невідомо або не встановлено.
+Полярність: positive — стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Якщо у формулюванні відношення немає слів, що вказують на план, рекомендацію, можливість, умову, невідомість чи заперечення, його форма — actual, positive. Слова на кшталт «could», «may», «will», «plans to», «should», «must», «if», «not», «never», «failed to» змінюють форму; часи дієслова в минулому чи теперішньому самі по собі форму не змінюють.
+
+Крок 2. Порівняй із тим, як стаття подає цей звʼязок
+Як стаття подає звʼязок, визначай за тими самими значеннями модальності й полярності. Твердження, яке стаття переказує з посиланням на джерело («за даними…», «as reported by…»), і загальне твердження, подане як факт, — actual.
+form_verdict:
+- C — форма за формулюванням відношення (крок 1) відповідає тому, як стаття подає звʼязок.
+- I — не відповідає: наприклад, формулювання без жодних маркерів (actual, positive), а стаття каже лише, що це може статися, заплановано чи рекомендовано; або формулювання каже «could», а стаття подає це як здійснений факт; або формулювання заперечне, а стаття звʼязок стверджує.
+- U — неоднозначність, яку не вдалося усунути за текстом статті.
+
+Не став C за замовчуванням: для кожного запису окремо знайди відповідне місце статті й порівняй форму.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "C", "reason": "коротко, українською, з ідентифікатором абзацу"},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "коротко, українською, з ідентифікатором абзацу"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+СТАТТЯ
+DOC_ID: D0160
+PUBLICATION_DATE: 2026-05-21
+SOURCE_URL: https://www.washingtontimes.com/news/2026/may/21/sen-rick-scotts-bill-aims-combat-chinese-linked-cyberattacks/
+TITLE_SHA256: e84bfb61bee24bdaaf31bded83d8b3726c800e70696104dd226c3de1ccd40b44
+BEGIN_DOCUMENT
+[D0160:P0001] sha256:e84bfb61bee24bdaaf31bded83d8b3726c800e70696104dd226c3de1ccd40b44
+[D0160:P0002] sha256:6e9b8bf3aaaaff9731c9455138840c8c1675840b4bcddf77c45a053867a551a3
+[D0160:P0003] sha256:e5666e971d880a02223c4df493b7c85ee994639888aaeed4884d93270fcf4ea5
+[D0160:P0004] sha256:bdce2afca44fb3a8f084a7a296c0eae7d66e543d89d3e34617170053fdcd56d3
+[D0160:P0005] sha256:415adb5a7590cd37996740e65db652a770249b22f45e25a5667222211bb660e3
+[D0160:P0006] sha256:9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0
+[D0160:P0007] sha256:7cecacdea041289937f47a2f1711d49eb0bd54a23d94baf1dadf7d04e4c90c0f
+[D0160:P0008] sha256:163ceb068407faaf98b82bae2c8ea3a1dcdabe3385a6cde4acf953e6b209682f
+[D0160:P0009] sha256:bdfd98cd9b6bbc363e46b8695cd0825e60486661b321cb2879d3f7689899e749
+[D0160:P0010] sha256:841586a50153c81404aa4de7e16df75e011ebf06fba503af6ade78abf27e31e8
+[D0160:P0011] sha256:90c543f8a5a23134bacdb7e7d2512082fe1b8e3831519045b7b03b36df34eed7
+[D0160:P0012] sha256:847fee9fa039d404d7eb794213ad993529a15fabfc616f485a2b03affa29a5b0
+[D0160:P0013] sha256:aee4721a89d0608ba5489ed20a2cc632d8e769cac9ea95bda70612ea85dc86ba
+[D0160:P0014] sha256:da657acc2711d55968eb489446a48b69df7ae87a24de94e232f64b0af5cba1b2
+[D0160:P0015] sha256:e814286bb9f08f394059a4ea977a974b6e73aab54cc04a8ca7260101e9de3e0a
+[D0160:P0016] sha256:7c5141d65f6a539807c622f17ace9e37f6ccdf355d65289ea0478f9e2a59c068
+[D0160:P0017] sha256:b63938e06b53ab13bec84107c5034c63253ec3b55b3201dd0c2bd245e27d93f8
+[D0160:P0018] sha256:1a7e125ce4c847c38dd70bf44146297cc4842d0fe0e3eb735c0c40635c0358f3
+[D0160:P0019] sha256:5eab977d40cedc8d0d3606bb3b4a264d049c7ea08998ea2c84ea4695725c680a
+[D0160:P0020] sha256:4b4c6085fcfe0b2accaa7036531ff5cc3ed2e8e80abf3a009288666a449f52fa
+[D0160:P0021] sha256:5ad0c26a8665229a144d5bf7f6a72399e1ccfd171ab484917f8f65d3617686a9
+[D0160:P0022] sha256:52a9f98545925795bf3f1ef910d9791e9d1425a29b8a1add94292bd9653b5e23
+[D0160:P0023] sha256:68143e71a2660dc10df317afd9e41fdc119648e4038aeb47dd1dfe75c52666c0
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (11)
+W001: «Strengthening Cyber Resilience Against State-Sponsored Threats Act» — would create → «interagency task force»
+W002: «interagency task force» — led by directors of → «FBI»
+W003: «interagency task force» — monitors → «Volt Typhoon»
+W004: «interagency task force» — submits reports and briefings to → «Congress»
+W005: «interagency task force» — detects, analyzes and responds to → «Chinese-linked cyber threats»
+W006: «interagency task force» — includes representatives from → «sector risk management agencies»
+W007: «CISA» — possibly issued warning in → «February 2024»
+W008: «interagency task force» — assesses potential damage to → «U.S. critical infrastructure»
+W009: «FBI» — warned about → «Volt Typhoon»
+W010: «interagency task force» — led by directors of → «CISA»
+W011: «interagency task force» — monitors → «Chinese state-sponsored cyber actors»
+КІНЕЦЬ ЗАПИСІВ

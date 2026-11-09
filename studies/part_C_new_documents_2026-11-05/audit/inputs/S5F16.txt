@@ -1,0 +1,125 @@
+AUDIT_FILE: S5F16
+TARGET_DOC_ID: D0473
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0473
+PUBLICATION_DATE: 2026-03-04
+SOURCE_URL: https://www.dawn.com/news/1978379/us-banks-on-high-alert-for-cyberattacks-as-iran-war-escalates
+TITLE_SHA256: d2b1f1606a8e1691c4b924149369543a6c207adffdad6691d3866de7b6cdce2d
+BEGIN_DOCUMENT
+[D0473:P0001] sha256:d2b1f1606a8e1691c4b924149369543a6c207adffdad6691d3866de7b6cdce2d
+[D0473:P0002] sha256:e10a235c9daab79a72e2f801814fb9b0f333550b1235bdcbcd9b3f43c9cc4ed9
+[D0473:P0003] sha256:7eb1ccaf3922a2d95da76c253d5bf832329b732f2d95b9c9f76a5a9148a0f684
+[D0473:P0004] sha256:840cf310c780551ae2182fb2596f4be39f747461fd0353eeefa1b9f19c4cddff
+[D0473:P0005] sha256:d3350ab94b67c50a658e6e62e2c426f17a4e99efcea5cdb5ef9626ae3ca2f032
+[D0473:P0006] sha256:eb017df7a351bfb07c866741b8ad2d7fa5934e59fbe892efbed5c3974d0fce4d
+[D0473:P0007] sha256:d429530fe28a0b1aa060fea4673cbeb546e562b07860b5d55098db6d20c2149f
+[D0473:P0008] sha256:38f7cb9903461a3e1992b5413401bf408516d816b746e5abfd19f81062cbd895
+[D0473:P0009] sha256:3fc8dba300d9e1ccb8dd2a6f676d2e6f1d5aa50bc3f6a8a1209e844f0f39ccae
+[D0473:P0010] sha256:3e2aa6e0dcee6ae648e3e0766b0cff71e3b53a8e054109967bcb839b195ac1c3
+[D0473:P0011] sha256:4b5f67a14721c4ba5777a7e4e4af425bd8294e6fa647f7decd6f7b2d612e1522
+[D0473:P0012] sha256:de658c9a38e0c93b9bac8c5923b7c75252206535458c4ea6eb87c08927621bce
+[D0473:P0013] sha256:15f0a6bf09d5639fd25526befa17c8252ee4b8144b067dc2ec1a609def7dc07a
+[D0473:P0014] sha256:7bf35173de477b193b0ef61ff7a9f5e85ddef065aeffc9769255b86f9930bbff
+[D0473:P0015] sha256:b9bb06a0a9a3951b74ea18b557af224df14ad4516b43b665ac046acf23f26b69
+[D0473:P0016] sha256:5357899afed7a81bcaf305e8220aa519de8db58fffa5c495a46d70acafd64ba8
+[D0473:P0017] sha256:8bf8e20cef797372356abac557d9f32fa8e9560591edc061bc4dbc0a4b5ba9ec
+[D0473:P0018] sha256:db5ea11924bb8c96a4314d424c8d0c594df7319e44a8cef63b075aabbf48d217
+[D0473:P0019] sha256:d650bf7084ba35996723692e11d510b12eb028c3ffc4530d32aa1908b5bca53e
+[D0473:P0020] sha256:a14174eaf8000e790f96d657cddc7e062ee9b7e38a05c710c3bc3bb77bfffbaf
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (42)
+E001: «US broker-dealer unit» — located in → «US» | форма: actual, positive
+E002: «Iran-aligned "hacktivists"» — targets → «US networks» | форма: possible, positive
+E003: «geopolitical advisory team» — warns about → «cyber risks» | форма: actual, positive
+E004: «US broker-dealer unit» — part of → «Industrial and Commercial Bank of China» | форма: actual, positive
+E005: «2023 ransomware attack» — affects → «US broker-dealer unit» | форма: actual, negative
+E006: «financial services industry» — operates → «critical US infrastructure» | форма: actual, positive
+E007: «Iran» — targets → «financial systems» | форма: actual, positive
+E008: «US intelligence» — warns about → «Iran-aligned "hacktivists"» | форма: actual, positive
+E009: «Iran-aligned "hacktivists"» — uses → «distributed denial-of-service attacks» | форма: possible, positive
+E010: «Lazard» — warns about → «cyber risks» | форма: actual, positive
+E011: «Financial Services Information Sharing and Analysis Centre» — reports on → «DDoS» | форма: actual, positive
+E012: «US broker-dealer unit of Industrial and Commercial Bank of China» — located in → «US» | форма: actual, positive
+E013: «Iran» — targets → «Western entities» | форма: possible, positive
+E014: «Ali Khamenei» — leads → «Iran» | форма: actual, positive
+E015: «2023 ransomware attack» — affects → «US broker-dealer unit» | форма: actual, positive
+E016: «cyberattacks» — targets → «US financial services industry» | форма: actual, positive
+E017: «US financial services industry» — operates → «critical US infrastructure» | форма: actual, positive
+E018: «US intelligence» — warns about → «DDoS» | форма: actual, positive
+E019: «2023 ransomware attack» — uses → «ransomware» | форма: actual, positive
+E020: «geopolitical advisory team» — part of → «Lazard» | форма: actual, positive
+E021: «2023 ransomware attack» — targets → «US broker-dealer unit» | форма: actual, positive
+E022: «Financial Services Information Sharing and Analysis Centre» — protects → «global financial system» | форма: planned, positive
+E023: «distributed denial-of-service attacks» — targets → «financial services industry» | форма: actual, positive
+E024: «Securities Industry and Financial Markets Association» — operates → «annual exercise» | форма: actual, positive
+E025: «Industrial and Commercial Bank of China» — part of → «US broker-dealer unit» | форма: actual, positive
+E026: «Iran-aligned "hacktivists"» — targets → «US networks» | форма: possible, negative
+E027: «DDoS» — targets → «financial services sector» | форма: actual, positive
+E028: «2023 ransomware attack» — affects → «US broker-dealer unit of Industrial and Commercial Bank of China» | форма: actual, positive
+E029: «Financial Services Information Sharing and Analysis Centre» — reports on → «distributed denial-of-service attacks» | форма: actual, positive
+E030: «Morningstar DBRS» — warns about → «cyber risks» | форма: actual, positive
+E031: «Financial Services Information Sharing and Analysis Centre» — reports on → «hacktivism» | форма: actual, positive
+E032: «2023 ransomware attack» — affects → «US Treasury trades» | форма: actual, positive
+E033: «Morningstar DBRS» — warns about → «Iran» | форма: actual, positive
+E034: «Todd Klessman» — member of → «Securities Industry and Financial Markets Association» | форма: actual, positive
+E035: «US broker-dealer unit of Industrial and Commercial Bank of China» — part of → «Industrial and Commercial Bank of China» | форма: actual, positive
+E036: «Securities Industry and Financial Markets Association» — operates → «annual exercise» | форма: possible, positive
+E037: «Lazard» — located in → «US» | форма: actual, positive
+E038: «Iran» — targets → «US financial services industry» | форма: possible, positive
+E039: «distributed denial-of-service attacks» — targets → «financial services sector» | форма: actual, positive
+E040: «geopolitical advisory team» — warns about → «Iran» | форма: actual, positive
+E041: «Iran» — targets → «banks» | форма: possible, positive
+E042: «Financial Services Information Sharing and Analysis Centre» — protects → «global financial system» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

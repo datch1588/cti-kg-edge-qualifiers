@@ -1,0 +1,26 @@
+{
+ "audit_file": "S5F50",
+ "target_doc_id": "D0063",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "Стаття каже, що 28,7% мальтійських бізнесів зазнали кіберінциденту."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "I", "reason": "Порада вмикати MFA не робить зв'язок «захищає» рекомендацією; захист подано як чинну властивість засобу (actual)."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Йдеться про кіберстрахування GasanMamo, яке компанія пропонує."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "Дослідження PwC зафіксувало мільйони атак на мальтійську інфраструктуру."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "Фішингові листи тепер генеруються за допомогою ШІ, подано як факт."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "Атаки на мальтійську інфраструктуру подано як чинний стан, Мальта описана як мішень."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "I", "reason": "Захист резервними копіями подано лише за умови «якщо можна відновити з чистої копії», тож це conditional, а не actual."},
+  {"item_id": "E008", "triple_verdict": "I", "form_verdict": "—", "reason": "Обернений напрям: ЄС не є членом Мальти, а Мальта є членом ЄС."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття не заперечує зв'язку: за умови наявності чистої копії програма-вимагач не втримає в заручниках, полярність має бути positive."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "CyberSift пропонує підтримку 24/7, подано як факт."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "Ransomware не може тримати в заручниках, якщо відновити все з чистої копії: умовний наслідок."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "Дослідження PwC зафіксувало мільйони атак на мальтійську інфраструктуру."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "I", "reason": "Порада вмикати MFA у хмарних системах не робить зв'язок «захищає» рекомендацією; має бути actual."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "Фішинговий лист і наступне поширення ransomware подано як конкретний сценарій, що відбувається («within hours ransomware spreads»), а не як лише можливе."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "«MFA blocks the vast majority of automated attacks» — властивість засобу, actual."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "I", "reason": "Порада вмикати MFA на пошті не робить зв'язок «захищає» рекомендацією; має бути actual."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "C", "reason": "Мальтійські бізнеси розташовані на Мальті, подано як чинний стан."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "C", "reason": "Людська помилка часто є точкою входу для кіберінцидентів, типова поведінка як факт."},
+  {"item_id": "E019", "triple_verdict": "C", "form_verdict": "C", "reason": "Мальту названо серед країн ЄС, тобто вона є членом ЄС."},
+  {"item_id": "E020", "triple_verdict": "C", "form_verdict": "I", "reason": "Порада вмикати MFA на банківських платформах не робить зв'язок «захищає» рекомендацією; має бути actual."}
+ ]
+}

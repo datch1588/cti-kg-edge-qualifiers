@@ -1,0 +1,14 @@
+{
+ "audit_file": "S3N22",
+ "target_doc_id": "D0026",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0003 прямо вказано дату публікації матеріалу «Published: Jun 24, 2026», подану як факт."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0004 Високий суд «ordered the immediate restoration of PTI's iconic 'bat' election symbol», і цей наказ подано як ухвалене рішення."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "Матеріал має позначку «Edited By WION Video Desk» (P0002), штамп «WION» (P0052) та адресу wionews.com (P0053), тож те, що його опублікував WION, подано як факт."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття пов'язує PTI з виборами в PoK, бо символ партії відновлено «for the upcoming PoK polls», але участь у ще не проведених виборах за графіком — майбутня дія (planned), а не actual."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "I", "reason": "Публікацію матеріалу WION підтверджують P0002, P0052 і P0053, тому полярність negative хибна: стаття ніде не заперечує цього зв'язку."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "У P0004 згадано «the Election Commission's attempts to strip the party's registration», тобто спроби позбавити PTI реєстрації, і ці спроби подано як такі, що відбулися."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "За P0004 «the High Court overrules the Election Commission's attempts» і «dismissed the EC's reasoning», тобто суд як факт скасував рішення Виборчої комісії."},
+  {"item_id": "E008", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: за P0004 це Виборча комісія намагалася позбавити PTI реєстрації, а не PTI комісію."}
+ ]
+}

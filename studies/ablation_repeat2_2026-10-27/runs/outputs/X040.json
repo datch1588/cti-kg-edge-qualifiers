@@ -1,0 +1,110 @@
+{
+ "run_id": "X040",
+ "target_doc_id": "D0160",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "cyberespionage", "entity_type": "attack_technique", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 0, "end": 123, "sha256": "b138c9982cc7c113d80318532255a695013b73249d5088449649f56a17292080"}}
+  ]},
+  {"id": "n002", "label": "China", "entity_type": "country", "aliases": ["People's Republic of China"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}},
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 54, "end": 123, "sha256": "34989679809590b40f6d8140ccaaabc75e20f67de87d07a7ec993fc83c0ad7f3"}}
+  ]},
+  {"id": "n003", "label": "U.S.", "entity_type": "country", "aliases": ["America"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}},
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0012", "start": 1, "end": 87, "sha256": "87566331c55a27a914d7234d570ac08a24e8d1db0dd14bbaef14756aa3c27f76"}}
+  ]},
+  {"id": "n004", "label": "Chinese Communist Party", "entity_type": "organization", "aliases": ["CCP"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0009", "start": 225, "end": 405, "sha256": "e825b2e20f100bdd3c8774f38d268000b0c96f805709a71f372ff5802e22b008"}}
+  ]},
+  {"id": "n005", "label": "Cybersecurity and Infrastructure Security Agency", "entity_type": "organization", "aliases": ["CISA"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 223, "end": 328, "sha256": "e0bb9b06bbcb2a3ec9fa3299b9b1d07fa7540e3841dd0338480cb26c7cc53b5d"}},
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0010", "start": 0, "end": 100, "sha256": "7135b63ecf950df378a3f89f8ff716dee0a418c9adf235df9855e496eeac4802"}}
+  ]},
+  {"id": "n006", "label": "FBI", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 329, "end": 446, "sha256": "1f4034bb081ed30cfb52e570421a5516c2e2a0ddd1e671fb4b95ae8481519fd9"}}
+  ]},
+  {"id": "n007", "label": "interagency task force", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0007", "start": 129, "end": 262, "sha256": "c2adba9defb4b9207ad242ff9c3b5e6db6076e0a2f21e09b765a5b8aaae6ac98"}}
+  ]},
+  {"id": "n008", "label": "Senate Committee on Homeland Security", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0012", "start": 89, "end": 175, "sha256": "2e729fe4adde4da59757c486438e3eb5c0fe1cec8bf279adc4782050e313bb39"}}
+  ]},
+  {"id": "n009", "label": "critical infrastructure", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}},
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 125, "end": 222, "sha256": "24abcec5d47c804949a0c8576b0fee7a706b917ea285bd992beab563a845f8d2"}}
+  ]},
+  {"id": "n010", "label": "Strengthening Cyber Resilience Against State-Sponsored Threats Act", "entity_type": "other", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0007", "start": 0, "end": 167, "sha256": "bcbc1ee56ccd9972764eebe13ebe38d90dcc270e61dcccdc9be3fdb6daccc0e9"}}
+  ]},
+  {"id": "n011", "label": "Andy Ogles", "entity_type": "person", "aliases": ["Mr. Ogles"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0009", "start": 109, "end": 223, "sha256": "47f71813dfad398ab9d67e8d65d886bed1cb852f66ab5ccc21309eb4a21a670e"}}
+  ]},
+  {"id": "n012", "label": "Rick Scott", "entity_type": "person", "aliases": ["Mr. Scott"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}}
+  ]},
+  {"id": "n013", "label": "Volt Typhoon", "entity_type": "threat_actor", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0007", "start": 168, "end": 262, "sha256": "ec008a8819daa42cb28ae8385b988a33e7d226937b87b6b890ad4d687efb4157"}},
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 0, "end": 123, "sha256": "b138c9982cc7c113d80318532255a695013b73249d5088449649f56a17292080"}}
+  ]},
+  {"id": "n014", "label": "Chinese hackers", "entity_type": "threat_category", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0016", "start": 212, "end": 276, "sha256": "18cb59a6ad3524182060ecba3c3dc91924a879dc0e631f94aaf78e6db7ba477b"}}
+  ]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n005", "target": "n013", "relation_type": "REPORTS_ON",
+   "modality": "actual", "polarity": "positive", "attribution": "Cybersecurity and Infrastructure Security Agency", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 0, "end": 328, "sha256": "ae11b0ec7b7984b4e07709ee9f1155c4bcf6f9c7092e547829d197cf463abbb9"}}
+   ]},
+  {"id": "e002", "source": "n005", "target": "n013", "relation_type": "WARNS_ABOUT",
+   "modality": "actual", "polarity": "positive", "attribution": "FBI and CISA", "event_time": "February 2024", "event_scope": "warning that Volt Typhoon compromised networks in all critical sectors",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 329, "end": 446, "sha256": "1f4034bb081ed30cfb52e570421a5516c2e2a0ddd1e671fb4b95ae8481519fd9"}}
+   ]},
+  {"id": "e003", "source": "n006", "target": "n013", "relation_type": "WARNS_ABOUT",
+   "modality": "actual", "polarity": "positive", "attribution": "FBI and CISA", "event_time": "February 2024", "event_scope": "warning that Volt Typhoon compromised networks in all critical sectors",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 329, "end": 446, "sha256": "1f4034bb081ed30cfb52e570421a5516c2e2a0ddd1e671fb4b95ae8481519fd9"}}
+   ]},
+  {"id": "e004", "source": "n009", "target": "n003", "relation_type": "LOCATED_IN",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}}
+   ]},
+  {"id": "e005", "source": "n010", "target": "n009", "relation_type": "PROTECTS",
+   "modality": "planned", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "proposed Senate bill by Rick Scott",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0006", "start": 0, "end": 117, "sha256": "9168a5b3c3e49118f499d03104998d262838349c6ebef69267a0eee81231b9a0"}},
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0007", "start": 0, "end": 167, "sha256": "bcbc1ee56ccd9972764eebe13ebe38d90dcc270e61dcccdc9be3fdb6daccc0e9"}}
+   ]},
+  {"id": "e006", "source": "n011", "target": "n014", "relation_type": "WARNS_ABOUT",
+   "modality": "actual", "polarity": "positive", "attribution": "Rick Scott and Andy Ogles", "event_time": "", "event_scope": "Breitbart op-ed by Rick Scott and Andy Ogles",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0009", "start": 109, "end": 223, "sha256": "47f71813dfad398ab9d67e8d65d886bed1cb852f66ab5ccc21309eb4a21a670e"}},
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0016", "start": 0, "end": 277, "sha256": "7f7dcde217a863b85a761190edee9fd3565e43cc5700f953015f5c1bc8c23a11"}}
+   ]},
+  {"id": "e007", "source": "n012", "target": "n008", "relation_type": "MEMBER_OF",
+   "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0012", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0012", "start": 89, "end": 175, "sha256": "2e729fe4adde4da59757c486438e3eb5c0fe1cec8bf279adc4782050e313bb39"}}
+   ]},
+  {"id": "e008", "source": "n012", "target": "n014", "relation_type": "WARNS_ABOUT",
+   "modality": "actual", "polarity": "positive", "attribution": "Rick Scott and Andy Ogles", "event_time": "", "event_scope": "Breitbart op-ed by Rick Scott and Andy Ogles",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0009", "start": 109, "end": 223, "sha256": "47f71813dfad398ab9d67e8d65d886bed1cb852f66ab5ccc21309eb4a21a670e"}},
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0016", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0016", "start": 0, "end": 277, "sha256": "7f7dcde217a863b85a761190edee9fd3565e43cc5700f953015f5c1bc8c23a11"}}
+   ]},
+  {"id": "e009", "source": "n013", "target": "n009", "relation_type": "TARGETS",
+   "modality": "actual", "polarity": "positive", "attribution": "Cybersecurity and Infrastructure Security Agency", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 125, "end": 328, "sha256": "5c1965dc250274e6ce3ed3afecf97d7652379186ab5a0835a8411b4fe37595c0"}}
+   ]},
+  {"id": "e010", "source": "n013", "target": "n001", "relation_type": "USES",
+   "modality": "actual", "polarity": "positive", "attribution": "Cybersecurity and Infrastructure Security Agency", "event_time": "", "event_scope": "",
+   "evidence": [
+    {"role": "TARGET", "doc_id": "D0160", "paragraph_id": "D0160:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0160:P0008", "start": 0, "end": 123, "sha256": "b138c9982cc7c113d80318532255a695013b73249d5088449649f56a17292080"}}
+   ]}
+ ],
+ "context_passages_used": []
+}

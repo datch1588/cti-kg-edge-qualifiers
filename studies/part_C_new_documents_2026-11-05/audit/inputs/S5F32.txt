@@ -1,0 +1,115 @@
+AUDIT_FILE: S5F32
+TARGET_DOC_ID: D0300
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0300
+PUBLICATION_DATE: 2026-04-14
+SOURCE_URL: https://timesofmalta.com/article/cyber-threats-hitting-malta-businesses-a2.1126915
+TITLE_SHA256: ecfb7e427a2b0decd07c58779effe0205cd45ea2f96cd4de7321b48268ba1898
+BEGIN_DOCUMENT
+[D0300:P0001] sha256:ecfb7e427a2b0decd07c58779effe0205cd45ea2f96cd4de7321b48268ba1898
+[D0300:P0002] sha256:d53f6b1b721f6a1c661f919ae64651df797d7c680255af5438fab99e03b7f871
+[D0300:P0003] sha256:d4458e66835cb0bbc8e65f7520e8c0cfc7f7518b1d37cad02fcd2a2c95a89ae7
+[D0300:P0004] sha256:ada1f4b684af843d7b7d498bee11612ee8ed3625166000e8fc212e425537bf45
+[D0300:P0005] sha256:f2d09b36aadc62a7e49693763a6784a1fa5e1aab69900190335cbe1e64f30799
+[D0300:P0006] sha256:7a5e9a8e13a732bf31a87943f7499b7c65cba9769b371b69b639ce6f032682a1
+[D0300:P0007] sha256:de724d86f4514ee9da3689523a98808dfc67d3cca0378779825996588422e5fc
+[D0300:P0008] sha256:77fe2a1d5e98e81585f8adaf328ba6725a26fae2174bc01b027ff3d03ac6c147
+[D0300:P0009] sha256:45d54bf0df35d7d7e2e230ac38be8a8a2e953eb107fd3887a03467ce6268d8f6
+[D0300:P0010] sha256:8203908f6fd771ac506162b8e2f9e3232fa0f42dd950902aa93e34444300e33a
+[D0300:P0011] sha256:0909c17ddc1ed08dccf7f9363dc952491163a58af5778a50d4ef4da67ea3bbf5
+[D0300:P0012] sha256:c42b9f766ac743bd6d3ac7f03f0182409a7f6c6d92b75c4b911e52cb10baf1d9
+[D0300:P0013] sha256:c8cfa26e9d5e24425da24996443d64f89d5354f7c391ff8c97c5349a02a59f4c
+[D0300:P0014] sha256:a2b79798c139b4f13b0d6460ee0abfe7e0e13555086ae4fdb714f9a3b45e5181
+[D0300:P0015] sha256:8a0e964288c74d22fc8fa5e0749d96345b172b35217969763496c1d925521903
+[D0300:P0016] sha256:8e470dd641292645dc5d5d7ac5fb7fe6c3c8b0245c2b7c09a667484f2d2a5538
+[D0300:P0017] sha256:d447586ce3b34f989997b56809307ae98da7f1c177bbfc36a9d3f18999ba02a2
+[D0300:P0018] sha256:66d66e5b7a14be309dccbf57a31e6d97e6d2b43b934d33518efc6591f4b8b3f9
+[D0300:P0019] sha256:b4d3d76df26047c90e8da48f7206cdac54bb2f716734f3e9361b89b8ee1e370c
+[D0300:P0020] sha256:1fc952b2e3edc4f96f26791ca260fd17c8d3dfea9cb989c6234001d14899bf70
+[D0300:P0021] sha256:8822fbcccbe209716f54edcf25b842dc1386383416332582947579e7216edfc0
+[D0300:P0022] sha256:05ce941dfea9b0849d2b69026c7bfe72a2e20c2075cde2052746a1dcfcfbed45
+[D0300:P0023] sha256:b9e73ef68a570a28826dd6112cbb1ad744a685b4a73a2abe3072607d60e420bf
+[D0300:P0024] sha256:7d21a21f7d6f0656b2d82aab0c64003e8f259859cfb0ca68c341d5e38980a42d
+[D0300:P0025] sha256:919e90c8c5708ef36676a33a759aa778a9e6b96069a9dc89d5d47733d806c2cd
+[D0300:P0026] sha256:2763cac54145fb70a468bc32d61a5dc22a165e7376ea88c2cb319aeacf049b85
+[D0300:P0027] sha256:451c19ef35d4808cc9e06c2ca026bb4f3cf4e3777ccfe532b687097254005cce
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (25)
+E001: «law firm» — located in → «Valletta» | форма: actual, positive
+E002: «SEPA» — enables → «Vendor E-mail Compromise» | форма: possible, positive
+E003: «ransomware» — mitigates → «backups» | форма: recommended, positive
+E004: «Train employees regularly» — mitigates → «Business Email Compromise» | форма: actual, positive
+E005: «DDoS» — targets → «banks» | форма: actual, positive
+E006: «Valletta law firm» — located in → «Valletta» | форма: actual, positive
+E007: «ransomware» — targets → «service providers» | форма: actual, positive
+E008: «restaurant» — located in → «St Julian's» | форма: actual, positive
+E009: «manufacturing company» — located in → «Hal Far» | форма: actual, positive
+E010: «PwC Malta» — reports on → «DDoS» | форма: actual, positive
+E011: «Business Email Compromise» — affects → «Google» | форма: actual, positive
+E012: «manufacturing company in Hal Far» — located in → «Hal Far» | форма: actual, positive
+E013: «Cyber Insurance» — protects → «Maltese businesses» | форма: actual, positive
+E014: «PwC Malta» — reports on → «DDoS» | форма: actual, negative
+E015: «PwC Malta» — uses → «honeypot» | форма: actual, positive
+E016: «restaurant in St Julian's» — located in → «St Julian's» | форма: actual, positive
+E017: «GasanMamo Insurance» — provides → «Cyber Insurance» | форма: actual, positive
+E018: «backups» — mitigates → «ransomware» | форма: recommended, positive
+E019: «ransomware» — affects → «healthcare sector» | форма: actual, positive
+E020: «DDoS» — targets → «Maltese infrastructure» | форма: actual, positive
+E021: «regular backups» — mitigates → «Ransomware» | форма: actual, positive
+E022: «DDoS» — targets → «government financial websites» | форма: actual, positive
+E023: «ransomware» — targets → «insurers» | форма: actual, positive
+E024: «Business Email Compromise» — affects → «Facebook» | форма: actual, positive
+E025: «ransomware» — affects → «SMEs» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

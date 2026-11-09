@@ -1,0 +1,193 @@
+AUDIT_BATCH: N03
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_INDEPENDENT_AUDIT_V3)
+
+Завдання
+Нижче наведено кілька статей з ідентифікаторами абзаців; після кожної статті — перелік записів, вилучених із неї. Записи кожної статті оцінюй лише за текстом цієї статті. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+N03-E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_batch": "значення AUDIT_BATCH",
+ "verdicts": [
+  {"item_id": "N03-E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "N03-E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи всіх статей файлу без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+=== СТАТТЯ 1 з 2 (TARGET_DOC_ID: D0045) ===
+DOC_ID: D0045
+PUBLICATION_DATE: 2026-06-23
+SOURCE_URL: https://www.theregister.com/security/2026/06/23/five-eyes-spooks-warn-ai-means-infosec-incidents-can-become-major-operational-and-financial-crises/5259916
+TITLE_SHA256: ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a
+BEGIN_DOCUMENT
+[D0045:P0001] sha256:ad9d8975f06d314f943fe3216676893c3ef9ff6960ff7f2104ab66f111448a1a
+[D0045:P0002] sha256:d0cc142b46da2863be070684a81a6eb5c0642c6c5f84ac931224fda1c25bdc50
+[D0045:P0003] sha256:960fdeba507721dad78e8c6099488404f2babbda33d53a084c5419a4832f5626
+[D0045:P0004] sha256:d4025d491b6b630c7e1d236e003d29d39c8caa307816f74f9672c35cfcc703b4
+[D0045:P0005] sha256:29109ae0138df7df662a80657f6ea229532e9d961ee2c4110e5d1f8966ad72be
+[D0045:P0006] sha256:445203311592210c2d728cd74870a4ead3faf5475d481323a6355f6064604056
+[D0045:P0007] sha256:3def0f43375ecaf26c07fcf42f448543bd7d15d0beff944c7d04f36b6747456a
+[D0045:P0008] sha256:2d63d2c7349baaec3242fd99cafa2c08e62fe323d1ffb93dfe3cafd2cdb8c9dc
+[D0045:P0009] sha256:395ca725fbeaa8b82307b2ddbfb2507953b752838ce1ca3fd15177a4328dad5f
+[D0045:P0010] sha256:273550d9231c57414b94bcca7e9e1149f906e52e7ccf604521ce258c8b50c252
+[D0045:P0011] sha256:6fa64a0568ccb9d3643512d7789b050b264b340adcc375b595211c3b08ca30a9
+[D0045:P0012] sha256:03667a9796607350633e86e9f6e5f7289d3121d7f86f1ff2c975bca2d93af114
+[D0045:P0013] sha256:4f10fff37ec7a4d526ae0159b74b49995fe92987dd487dbfde72b7a6b70eabc0
+[D0045:P0014] sha256:40e0db2fe1dc67fe72858529024a5e22fe4aa3add02decaecf040d80661c7899
+[D0045:P0015] sha256:1a04648d1a92ae8b15e432290c08c79be343a05efae57fc56490085718762cdc
+[D0045:P0016] sha256:46968410ecbdf342c06bed60167a0f8ae26e97958f402a8a923e94eba14ed41d
+[D0045:P0017] sha256:5156427be8152f284d8e0f38867b99673e8c03c69a58926bb80e8db0b4a018df
+[D0045:P0018] sha256:9ad5b9d8f32ad294ebfcb6e17e07424bbe3ccb395c6c71e4b26745849490e947
+[D0045:P0019] sha256:410b5f450f7be099bd6f96ab3340c7c093a415a9f9063f9232d9d429add23993
+[D0045:P0020] sha256:adc68fec6e65766734776acc60ce32363f38c2bdef15e4fa581907bdd0935686
+[D0045:P0021] sha256:8711cd5613ce57998463a8d1a40b4c529236f6368417039ab7caa7b15b803005
+[D0045:P0022] sha256:c570066c8296fc1d91dd76534afe5a5c4aa87faea356832c6a902f5adf3dab8e
+[D0045:P0023] sha256:943d48a2f2289ceda32085ee6a551df22d4da47db0ed3ec1e2b778d969afa329
+[D0045:P0024] sha256:981ab75a8943d8d4e3e6b84d2171fb8a80c2fb0d2ebea3cd4d19a1f9644f298c
+[D0045:P0025] sha256:622f8640357ab4a2137847e7831a76547fd904ba1fc2e6fec9effc1b036fdd51
+[D0045:P0026] sha256:ee93927d04afa48dae230ca2de52f24f0333ca79a98db0cdf39659ef5fe8e876
+[D0045:P0027] sha256:ecfc0a1715c7b3547557ff2b0013f7da647a8001f29a8f0dfc34a748f3a3d366
+[D0045:P0028] sha256:08099878decba342ccd0b5b850b6abd85361aa3de6c368694dbbc5ba43e961fa
+[D0045:P0029] sha256:523967362701ea7919fe1eca184c4c923e922d29a48418507dfa457632009459
+[D0045:P0030] sha256:49a351d9538c511be5962d0dcf39fa02121fa6ec9abee72e003662549c02cdc1
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 1 (16)
+N03-E001: «generative and agentic AI» — enables → «cyber-attacks» | форма: actual, positive
+N03-E002: «Australia» — member of → «Five Eyes» | форма: actual, negative
+N03-E003: «UK» — member of → «Five Eyes» | форма: actual, positive
+N03-E004: «UK» — member of → «Five Eyes» | форма: actual, negative
+N03-E005: «agentic AI» — enables → «cyber-attacks» | форма: possible, positive
+N03-E006: «Australia» — member of → «Five Eyes» | форма: actual, positive
+N03-E007: «USA» — member of → «Five Eyes» | форма: actual, positive
+N03-E008: «AI tools» — detects → «vulnerabilities» | форма: actual, positive
+N03-E009: «New Zealand» — member of → «Five Eyes» | форма: actual, positive
+N03-E010: «AI tools» — mitigates → «incidents» | форма: actual, positive
+N03-E011: «Canada» — member of → «Five Eyes» | форма: actual, positive
+N03-E012: «Anthropic» — develops → «Mythos» | форма: actual, positive
+N03-E013: «Five Eyes» — warns about → «cyber threats» | форма: actual, positive
+N03-E014: «Preparedness» — mitigates → «Breaches» | форма: actual, positive
+N03-E015: «AI-powered attacks» — warns about → «Five Eyes» | форма: actual, positive
+N03-E016: «Five Eyes» — warns about → «AI-powered attacks» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 1
+
+=== СТАТТЯ 2 з 2 (TARGET_DOC_ID: D0382) ===
+DOC_ID: D0382
+PUBLICATION_DATE: 2026-03-23
+SOURCE_URL: https://www.prnewswire.com/news-releases/straiker-secures-agents-building-agents-302721497.html
+TITLE_SHA256: 2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d
+BEGIN_DOCUMENT
+[D0382:P0001] sha256:2961309a45e8cf869990fa3050f78991144a21eb9605935398971db601f6b25d
+[D0382:P0002] sha256:4c84bdbe9b45fb696a1c2c054984d4b537b10899127befd9a15026f6863247b3
+[D0382:P0003] sha256:c66ddb4473e530da0514cf6c629d34a5d48941f43908078488db461aa7abf453
+[D0382:P0004] sha256:6b417ac6a774fa50295558b893463340b0e177aa7e044a6a7d337df3abed6766
+[D0382:P0005] sha256:de78a083c50f5e9d1b5402da3db19d26c03191a300b719cf74479d75d4596313
+[D0382:P0006] sha256:29a6c507e21b67bc822d5c80200725fc492c4e02844732b4abc8d4a79d2c9646
+[D0382:P0007] sha256:b07a3bb61c7104aee48cd1e2981af6167900866ec3d143c8cf060f5ade305608
+[D0382:P0008] sha256:3ec6f9338430666329e254bb49237db069f7224fea6e8490b0d36648efa7cc96
+[D0382:P0009] sha256:ddf403fa7c406a50d44ece215a9395cdd8e66d7a08b4187375f08f62e718b3f5
+[D0382:P0010] sha256:541b9510b41e44ef8500bbd2f05f7d0dccc9ead0b42ce8ce607e880ef41b6e86
+[D0382:P0011] sha256:d3a0d7f2aa656d15e69ade165abacef4cd1f33ea1f85e1cfd811899b6b17fd29
+[D0382:P0012] sha256:e08fddb68dab63ebc227835f31f248bba610c971befb704475805112028e4173
+[D0382:P0013] sha256:34bdf0dc64cf273591c7090f0bd8c72c3afb55402eacfa847d74bdaecf28d2ea
+[D0382:P0014] sha256:b258cc42a8845202f1cb7cf0294ae0084eda5b189563d8a12d12ea279d29862c
+[D0382:P0015] sha256:7a87e70a57f2946f3974debbd1f43be3c941c4907c21135eeee24351cbc82f97
+[D0382:P0016] sha256:e0d44f9dbec5f19222e42848f9019d4f24a83c4901708c7f69182cd1f15470f1
+[D0382:P0017] sha256:b2c361eb7885f23e2730a988f2256750142e8d0ed88444ba9beccafdc76c36d3
+[D0382:P0018] sha256:75c102af25158df4fd61b4e02ad692e35663ef67e6fa3eb6e88560c2685dc40a
+[D0382:P0019] sha256:5c2b836fa817f390324c05db43efa8e193490796343bc64388c30ccee9e9776a
+[D0382:P0020] sha256:90ed1ee8319cebac4257b303222417e72124e7b566b6b4862b51d3cb790b2ba9
+[D0382:P0021] sha256:241e1979f9caaef0445397770c24277402e81783b2c93e747b9298d4ea1bf5bd
+[D0382:P0022] sha256:e760a09f6822943ad19cbf1ac67fd8477275ee990d16e61d53776c2599953267
+[D0382:P0023] sha256:fb9c87f9219ddfb5b6ee265c73a33037c648cbf6765c2be9c2170bf77e6b61f8
+[D0382:P0024] sha256:5017e3930a44d44452895e464439fd3e5856b21c9608e61138c6134b79d5a1e5
+[D0382:P0025] sha256:74f0003cd5379e6a71a3758be477ae0d5e4ce1dfccfa32faf9361b1305554d57
+[D0382:P0026] sha256:cef280de8c937307358e810e2b1697f3b826a4f9f7b5080a7bc72f091d212ad0
+[D0382:P0027] sha256:4b69511709bb6c6f3de45baa696e6d7f7824055d4c186dd2f0c55c1cbc0e58ba
+[D0382:P0028] sha256:f7cef736b980b4988ca9ec27a585b86d125a4f74384dd52e96b52415f0bc2711
+[D0382:P0029] sha256:16d190ec76d318f8a916a506d18a5f363f0545cf186e1b82f7bc83a58b069c12
+[D0382:P0030] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0382:P0031] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0382:P0032] sha256:67f4feda66812472b340c3662cafb9e366e1fe3037df52cb8e563e1173b98b7e
+[D0382:P0033] sha256:c9b4bea314ce6543adf6fdf5a98eabf230272cfad2dea8a09a9a588387ab241b
+END_DOCUMENT
+
+ЗАПИСИ ДО СТАТТІ 2 (41)
+N03-E017: «coding agents» — enables → «tool manipulation» | форма: possible, positive
+N03-E018: «Defend AI» — detects → «tool misuse» | форма: actual, positive
+N03-E019: «Straiker» — protects → «AI agents» | форма: actual, positive
+N03-E020: «Straiker» — develops → «OWASP Top 10 for Agentic Applications» | форма: actual, positive
+N03-E021: «Scott Clinton» — leads → «OWASP GenAI Security Project» | форма: actual, positive
+N03-E022: «coding agents» — enables → «endpoint takeover» | форма: possible, positive
+N03-E023: «Discover AI» — detects → «MCP vulnerability» | форма: actual, positive
+N03-E024: «tool manipulation» — enables → «malicious MCP servers» | форма: possible, positive
+N03-E025: «Defend AI» — detects → «malicious MCP servers» | форма: actual, positive
+N03-E026: «coding agents» — enables → «data exfiltration» | форма: actual, positive
+N03-E027: «Defend AI» — mitigates → «data exfiltration» | форма: actual, positive
+N03-E028: «Defend AI» — detects → «prompt injection» | форма: actual, positive
+N03-E029: «Straiker» — develops → «Defend AI» | форма: actual, positive
+N03-E030: «Defend AI» — protects → «custom-built agent platforms» | форма: actual, positive
+N03-E031: «David Levin» — member of → «American Express Global Business Travel» | форма: actual, positive
+N03-E032: «Defend AI» — supports → «Amazon Bedrock AgentCore» | форма: actual, positive
+N03-E033: «coding agents» — enables → «tool manipulation» | форма: actual, positive
+N03-E034: «coding agents» — enables → «remote code execution» | форма: possible, positive
+N03-E035: «coding agents» — enables → «endpoint takeover» | форма: actual, positive
+N03-E036: «RSAC 2026» — located in → «San Francisco» | форма: actual, positive
+N03-E037: «Straiker» — provides → «Defend AI» | форма: actual, positive
+N03-E038: «Defend AI» — detects → «agentic threats» | форма: actual, positive
+N03-E039: «agent skills» — enables → «tool manipulation» | форма: actual, positive
+N03-E040: «Defend AI» — protects → «coding agents» | форма: actual, positive
+N03-E041: «Defend AI» — supports → «Microsoft Copilot Studio» | форма: actual, positive
+N03-E042: «MCP servers» — enables → «tool manipulation» | форма: actual, positive
+N03-E043: «Defend AI» — provides → «Straiker» | форма: actual, positive
+N03-E044: «coding agents» — enables → «remote code execution» | форма: actual, positive
+N03-E045: «Straiker» — provides → «Discover AI» | форма: actual, positive
+N03-E046: «Ken Buckler» — member of → «EMA» | форма: actual, positive
+N03-E047: «Defend AI» — protects → «productivity agents» | форма: actual, positive
+N03-E048: «Scott Clinton» — warns about → «behavior hijacking» | форма: actual, positive
+N03-E049: «Straiker» — develops → «Defend AI» | форма: actual, negative
+N03-E050: «Defend AI» — supports → «Azure Foundry» | форма: actual, positive
+N03-E051: «Straiker» — provides → «Ascend AI» | форма: actual, positive
+N03-E052: «coding agents» — enables → «data exfiltration» | форма: possible, positive
+N03-E053: «Straiker» — develops → «Discover AI» | форма: actual, positive
+N03-E054: «Defend AI» — supports → «Azure Foundry» | форма: actual, negative
+N03-E055: «Scott Clinton» — warns about → «privilege abuse» | форма: actual, positive
+N03-E056: «Scott Clinton» — leads → «OWASP GenAI Security Project» | форма: possible, positive
+N03-E057: «malicious MCP servers» — enables → «tool manipulation» | форма: possible, positive
+КІНЕЦЬ ЗАПИСІВ ДО СТАТТІ 2
+
+КІНЕЦЬ ФАЙЛУ N03. Усього записів у файлі: 57 (від N03-E001 до N03-E057).

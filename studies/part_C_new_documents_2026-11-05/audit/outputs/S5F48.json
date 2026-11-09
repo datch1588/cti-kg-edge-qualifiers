@@ -1,0 +1,25 @@
+{
+ "audit_file": "S5F48",
+ "target_doc_id": "D0073",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: за сильного електромагнітного глушіння дрони можуть втратити звʼязок; «can» тут означає можливу подію, тож possible."},
+  {"item_id": "E002", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: другий пілот AH-64E може напряму керувати польотом, сенсорами й зброєю дрона; це здатність, тож actual."},
+  {"item_id": "E003", "triple_verdict": "C", "form_verdict": "C", "reason": "P0004 і P0019: Apache безпосередньо керує роями дронів і спрямовує їх; це подано як здатність, тож actual."},
+  {"item_id": "E004", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: стандартне озброєння Apache включає 30-мм гармату."},
+  {"item_id": "E005", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: стандартне озброєння Apache включає 16 ракет Hellfire."},
+  {"item_id": "E006", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: Apache може перейти на некеровані ракети, коли кіберзагрози виводять з ладу безпілотні системи, тобто за названої умови."},
+  {"item_id": "E007", "triple_verdict": "C", "form_verdict": "C", "reason": "P0019: Apache спрямовує рої дронів глушити ворожі радари; це подано як здатність, тож actual."},
+  {"item_id": "E008", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: виведення безпілотних систем з ладу кіберзагрозами названо як умову-сценарій, а не як подію, що сталася, тож possible."},
+  {"item_id": "E009", "triple_verdict": "C", "form_verdict": "I", "reason": "Звʼязок у P0022 є, але дрони лише «can lose their connection», тобто це можлива подія, а не actual."},
+  {"item_id": "E010", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: Apache (у статті це AH-64E) може перейти на зброю з GPS-наведенням, коли кіберзагрози виводять з ладу безпілотні системи, тобто за умови."},
+  {"item_id": "E011", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: Apache може перейти на зброю з GPS-наведенням за названої умови."},
+  {"item_id": "E012", "triple_verdict": "C", "form_verdict": "C", "reason": "P0008: Японія поступово списує свої старіші AH-64D, тобто наразі їх експлуатує."},
+  {"item_id": "E013", "triple_verdict": "C", "form_verdict": "C", "reason": "P0012: стандартне озброєння Apache, про який іде мова в статті (AH-64E), включає ракети Hellfire."},
+  {"item_id": "E014", "triple_verdict": "C", "form_verdict": "I", "reason": "У P0022 вплив кіберзагроз на безпілотні системи подано лише як сценарій-умову («when ... disable»), а не як подію, що сталася, тож actual не підходить."},
+  {"item_id": "E015", "triple_verdict": "C", "form_verdict": "C", "reason": "P0016: сучасний AH-64E використовує Manned-Unmanned Teaming."},
+  {"item_id": "E016", "triple_verdict": "C", "form_verdict": "C", "reason": "P0022: за електромагнітного глушіння дистанційно керовані дрони можуть втратити звʼязок, тож possible."},
+  {"item_id": "E017", "triple_verdict": "C", "form_verdict": "I", "reason": "P0008 подає перехід Японії на безпілотні системи як поточний процес («are gradually retiring ... in favour of»), а не як план, тож planned не підходить."},
+  {"item_id": "E018", "triple_verdict": "C", "form_verdict": "I", "reason": "Стаття стверджує, що Hellfire входить у стандартне озброєння Apache, тож полярність negative хибна."},
+  {"item_id": "E019", "triple_verdict": "I", "form_verdict": "—", "reason": "Напрям обернено: Японія переходить на безпілотні системи, а не безпілотні системи використовують Японію."}
+ ]
+}

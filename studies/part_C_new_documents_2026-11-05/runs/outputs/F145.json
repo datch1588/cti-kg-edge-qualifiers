@@ -1,0 +1,57 @@
+{
+ "run_id": "F145",
+ "target_doc_id": "D0411",
+ "status": "COMPLETE",
+ "nodes": [
+  {"id": "n001", "label": "Australia", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0011", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0011", "start": 0, "end": 116, "sha256": "d3c89355f9fb2dfc8dbe7d19f593dbb7a0f4638a4a770e70a0c430c92f38f391"}}]},
+  {"id": "n002", "label": "New Zealand", "entity_type": "country", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 322, "end": 455, "sha256": "cd80e6f1684de5dfbb2d03349e2ff3502de5c3abc806b58cd1b267bf2650befa"}}]},
+  {"id": "n003", "label": "The Instillery", "entity_type": "organization", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 322, "end": 508, "sha256": "a781eb81ef487bab61a1f8a5af742dcf912edf3d7e80163ae5025726c441d2db"}}]},
+  {"id": "n004", "label": "Virtual IT Group", "entity_type": "organization", "aliases": ["VITG"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 0, "end": 126, "sha256": "2ec9dc03f48ac44db6b546b84bf7b2ab216cfc168124198d8bf66d5c5e6e40d5"}},
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0003", "start": 39, "end": 133, "sha256": "5958530a8f0c8ebc96e0288979a17db6f92a326740e45fda988b09acbaa370a2"}}]},
+  {"id": "n005", "label": "Jeremy Nees", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0006", "start": 97, "end": 186, "sha256": "66003b97971afbeb6ca9987cad6109fb6c9c10e2b05310f9e112b8eebd1b300a"}}]},
+  {"id": "n006", "label": "Masaki Takeda", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0010", "start": 166, "end": 255, "sha256": "7a1b2d42b4d576e211f149d7f68011c05081214c6b03d49436c6515e880158b4"}}]},
+  {"id": "n007", "label": "Maurice McCarthy", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0008", "start": 0, "end": 93, "sha256": "292d7ec6a793e6f4f6f3e9e0d8dfe27fab5c9b58c3c6568e0002e42f40194277"}}]},
+  {"id": "n008", "label": "Ronnie Meekers", "entity_type": "person", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0010", "start": 166, "end": 255, "sha256": "7a1b2d42b4d576e211f149d7f68011c05081214c6b03d49436c6515e880158b4"}}]},
+  {"id": "n009", "label": "Zero Trust Detection & Response", "entity_type": "product", "aliases": ["ZDR", "Zero Trust Detection and Response"], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0003", "start": 39, "end": 271, "sha256": "fc4ea3b8fa71e3e7a070fee0c2a0061992975a2efae78c7abce51c4e0a269bb2"}},
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0008", "start": 95, "end": 181, "sha256": "23747dbc7aa82c90303314ae5c32bd4f1cdaf676b5f35e28af1c75a0987f3777"}}]},
+  {"id": "n010", "label": "deep packet inspection", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0007", "start": 434, "end": 499, "sha256": "ee2f14e4394856927cb8347c5e24e03a94744be5b718c760aad1d5da34ff3b95"}}]},
+  {"id": "n011", "label": "threat intelligence", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0007", "start": 434, "end": 530, "sha256": "b7ff865c62dda9f28e3a0d9052ade39f9d8299ce68fcee9f83fd692a55a9b364"}}]},
+  {"id": "n012", "label": "Zero Trust", "entity_type": "technology", "aliases": [], "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0009", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0009", "start": 87, "end": 203, "sha256": "a5e8bebb7f574553da5fbab7bf568a65bf5d13ef7af426da4478049934e53f8e"}}]}
+ ],
+ "edges": [
+  {"id": "e001", "source": "n003", "target": "n002", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 356, "end": 455, "sha256": "2cc5b749de9bcbe27edcb0ab8e4c89b25afcae855fe4b800ad56d5ef19507a8e"}}]},
+  {"id": "e002", "source": "n003", "target": "n004", "relation_type": "PART_OF", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "2025", "event_scope": "acquisition of The Instillery by Virtual IT Group", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 322, "end": 416, "sha256": "d8e1a34869fc6c76a69144bebdf671ba2fb295d69d25af34c323e348d30950da"}}]},
+  {"id": "e003", "source": "n003", "target": "n009", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "launch of the ZDR service", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0003", "start": 39, "end": 196, "sha256": "ce7a49b82f21b708db24805223dbbb4a11205d42d9be2fdd587ee7e6273312e1"}}]},
+  {"id": "e004", "source": "n004", "target": "n001", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 0, "end": 126, "sha256": "2ec9dc03f48ac44db6b546b84bf7b2ab216cfc168124198d8bf66d5c5e6e40d5"}}]},
+  {"id": "e005", "source": "n004", "target": "n002", "relation_type": "LOCATED_IN", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0013", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0013", "start": 0, "end": 126, "sha256": "2ec9dc03f48ac44db6b546b84bf7b2ab216cfc168124198d8bf66d5c5e6e40d5"}}]},
+  {"id": "e006", "source": "n004", "target": "n009", "relation_type": "PROVIDES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "launch of the ZDR service", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0003", "start": 39, "end": 196, "sha256": "ce7a49b82f21b708db24805223dbbb4a11205d42d9be2fdd587ee7e6273312e1"}}]},
+  {"id": "e007", "source": "n007", "target": "n004", "relation_type": "LEADS", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0008", "start": 0, "end": 93, "sha256": "292d7ec6a793e6f4f6f3e9e0d8dfe27fab5c9b58c3c6568e0002e42f40194277"}},
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0004", "start": 0, "end": 133, "sha256": "eed05b15e8a704a6487cc7e07540239fcaff44aa7a845f28446486c666681113"}}]},
+  {"id": "e008", "source": "n009", "target": "n010", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0007", "start": 360, "end": 499, "sha256": "be7efca76475d2d42a4068de7888b65b09569b9ba77ed4b5965cee1d660f48bd"}}]},
+  {"id": "e009", "source": "n009", "target": "n011", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0007", "start": 360, "end": 530, "sha256": "518f2752e3649b236c51f43637fac54248c7aeb6165090a29aefb99743169d02"}}]},
+  {"id": "e010", "source": "n009", "target": "n012", "relation_type": "USES", "modality": "actual", "polarity": "positive", "attribution": "", "event_time": "", "event_scope": "", "evidence": [
+   {"role": "TARGET", "doc_id": "D0411", "paragraph_id": "D0411:P0003", "quote_ref": {"match": "exact", "paragraph_id": "D0411:P0003", "start": 96, "end": 270, "sha256": "ccda8fa2c957e2fe13da1a6bb076d7e8a324742e56d7ab9ddec49e802339d921"}}]}
+ ],
+ "context_passages_used": []
+}

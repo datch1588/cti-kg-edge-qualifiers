@@ -1,0 +1,15 @@
+{
+ "audit_file": "R1_T09",
+ "target_doc_id": "D0523",
+ "verdicts": [
+  {"item_id": "W001", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrated into» подає інтеграцію як здійснену, а основний текст D0523:P0005 каже «Concentrix will integrate» (planned); теперішній час у підзаголовку P0003 лише узагальнює оголошене."},
+  {"item_id": "W002", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів (actual), а в D0523:P0004 сказано «the two companies will collaborate across Asia Pacific», тобто співпрацю лише заплановано (planned)."},
+  {"item_id": "W003", "wording_modality": "possible", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «possibly secures» подає звʼязок як можливість, а D0523:P0012 стверджує як факт, що Proofpoint «securing how people, data and AI agents connect across email, cloud» (actual)."},
+  {"item_id": "W004", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «deploys» без маркерів (actual), а в D0523:P0004–P0005, P0007 використання й розгортання платформи Proofpoint подано лише як майбутнє («will integrate», «will jointly go to market… enabling customers to deploy»), тобто planned."},
+  {"item_id": "W005", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання без маркерів (actual), а D0523:P0004 каже «the two companies will collaborate across Asia Pacific», тобто це заплановано (planned)."},
+  {"item_id": "W006", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrates» подає інтеграцію як чинний факт, а D0523:P0005 каже «Concentrix will integrate Proofpoint's collaboration security… solutions» (planned)."},
+  {"item_id": "W007", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrated into» подає інтеграцію як здійснену, а D0523:P0005 каже, що Concentrix лише «will integrate» ці рішення у свої SOC-пропозиції (planned); підзаголовок P0003 цього не змінює."},
+  {"item_id": "W008", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "C", "reason": "У D0523:P0004 з датою «NEW DELHI» сказано, що Proofpoint «today announced a strategic partnership», тобто оголошення відбулося (actual, positive), як і у формулюванні."},
+  {"item_id": "W009", "wording_modality": "actual", "wording_polarity": "positive", "form_verdict": "I", "reason": "Формулювання «integrates» подає інтеграцію як чинний факт, а D0523:P0005 каже «Concentrix will integrate Proofpoint's… data protection solutions» (planned)."}
+ ]
+}

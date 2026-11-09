@@ -1,0 +1,104 @@
+AUDIT_FILE: T47
+TARGET_DOC_ID: D0107
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_BASELINE_CTINEXUS)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність: actual — сталося або є чинним станом речей (зокрема загальне твердження, подане як факт, і твердження, яке стаття переказує з посиланням на джерело); planned — заплановано, оголошено на майбутнє, очікується за графіком; recommended — порада, заклик, рекомендація, вимога «слід»; possible — можливість, припущення, ризик, «може», «ймовірно»; conditional — лише за певної умови; unknown — джерело прямо каже, що це невідомо або не встановлено.
+Полярність: positive — твердження стверджує звʼязок; negative — заперечує його (не сталося, не було, не вплинуло, не причетний).
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0107
+PUBLICATION_DATE: 2026-06-03
+SOURCE_URL: https://arxiv.org/abs/2606.03811
+TITLE_SHA256: 351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741
+BEGIN_DOCUMENT
+[D0107:P0001] sha256:351d503078ec0edd3d207f5162ebd832dec1df7afff09c55f95ce555e74dc741
+[D0107:P0002] sha256:aa199dab7349ed3386bc497dd93b674298c8131ad7c31239ce125562c20df4fe
+[D0107:P0003] sha256:2e0f427470116797ccdb58e286eb3fbcc05bbf63e5c7fbd38d1eca2377a49334
+[D0107:P0004] sha256:f6dace5bb7718a8db388c78bf957732e24c85e5d9e88a3ac7dca3880670ba320
+[D0107:P0005] sha256:90bdcbcc654ee41a0f23878754860202500df7b9f1c2c05cf3d8c8f25cd3db27
+[D0107:P0006] sha256:ca7c5fedb235635afca35006de981409b7aa7de907dd7058580f990c00cb642a
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (43)
+E001: «AI-driven worm» — runs → «open-weight large language models (LLMs)» | форма: actual, positive
+E002: «AI-driven worm» — is powered by → «stolen compute» | форма: actual, positive
+E003: «autonomous generative adversaries» — are → «malware systems that propagate without human operators» | форма: actual, positive
+E004: «WannaCry» — exploited → «predetermined vulnerabilities» | форма: actual, positive
+E005: «Adaptive Computer Worms» — exploits → «corporate network vulnerabilities» | форма: actual, positive
+E006: «AI Agents Enable Adaptive Computer Worms» — has identifier → «arXiv:2606.03811» | форма: actual, positive
+E007: «centralized safety controls» — is a → «rate limiting» | форма: actual, positive
+E008: «Adaptive Computer Worms» — affects → «Linux» | форма: possible, positive
+E009: «patching» — halts spread of → «WannaCry» | форма: actual, positive
+E010: «AI Agents Enable Adaptive Computer Worms» — demonstrates → «self-sustaining AI-driven cyber-threats» | форма: actual, positive
+E011: «AI-driven worm» — deployed on → «Linux» | форма: actual, positive
+E012: «AI Agents Enable Adaptive Computer Worms» — published at → «https://arxiv.org/abs/2606.03811» | форма: actual, positive
+E013: «WannaCry» — exploits → «predetermined vulnerabilities» | форма: actual, positive
+E014: «WannaCry» — mitigates → «patching» | форма: possible, positive
+E015: «AI Agents Enable Adaptive Computer Worms» — submitted on → «2 Jun 2026» | форма: actual, positive
+E016: «AI-driven worm» — requires no → «commercial AI platform» | форма: actual, positive
+E017: «computer worm» — spreads on → «network» | форма: actual, positive
+E018: «AI Agents Enable Adaptive Computer Worms» — has DOI → «https://doi.org/10.48550/arXiv.2606.03811» | форма: actual, positive
+E019: «computer worm» — replicates itself from → «one machine to another» | форма: actual, positive
+E020: «AI-driven worm» — generates → «tailored attack strategies» | форма: actual, positive
+E021: «AI-driven worm» — deployed on → «Windows» | форма: actual, positive
+E022: «rate limiting» — is a → «centralized safety controls» | форма: actual, positive
+E023: «AI Agents» — enables → «Adaptive Computer Worms» | форма: actual, positive
+E024: «Adaptive Computer Worms» — uses → «large language models» | форма: actual, positive
+E025: «AI agents» — enable → «adaptive computer worms» | форма: actual, positive
+E026: «Adaptive Computer Worms» — uses → «compromised machines» | форма: actual, positive
+E027: «Adaptive Computer Worms» — affects → «IoT (Internet of Things) devices» | форма: actual, positive
+E028: «Adaptive Computer Worms» — affects → «Windows» | форма: actual, positive
+E029: «open-weight large language models (LLMs)» — sustain reasoning of → «AI-driven worm» | форма: actual, positive
+E030: «service refusals» — is a → «centralized safety controls» | форма: actual, positive
+E031: «centralized safety controls» — mitigates → «Adaptive Computer Worms» | форма: actual, negative
+E032: «AI-driven worm» — propagated by exploiting → «common real-world corporate network vulnerabilities» | форма: actual, positive
+E033: «AI-driven worm» — deployed on → «IoT (Internet of Things) devices» | форма: actual, positive
+E034: «AI-driven worm» — parasitically uses → «compromised machines» | форма: actual, positive
+E035: «computer worm» — is → «malware» | форма: actual, positive
+E036: «autonomous generative adversaries» — reason about → «targets» | форма: actual, positive
+E037: «AI Agents Enable Adaptive Computer Worms» — describes → «AI-driven worm» | форма: actual, positive
+E038: «patching» — mitigates → «WannaCry» | форма: possible, positive
+E039: «centralized safety controls» — are structurally irrelevant against → «AI-driven worm» | форма: actual, positive
+E040: «autonomous generative adversaries» — synthesize → «attack logic in real time» | форма: actual, positive
+E041: «WannaCry» — is a → «traditional worm» | форма: actual, positive
+E042: «Adaptive Computer Worms» — affects → «Linux» | форма: actual, positive
+E043: «service refusals» — is a → «centralized safety controls» | форма: actual, negative
+КІНЕЦЬ ЗАПИСІВ

@@ -1,0 +1,426 @@
+{
+  "run_id": "F046",
+  "target_doc_id": "D0527",
+  "status": "COMPLETE",
+  "nodes": [
+    {
+      "id": "n001",
+      "label": "exploit discovery",
+      "entity_type": "attack_technique",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}}
+      ]
+    },
+    {
+      "id": "n002",
+      "label": "United States",
+      "entity_type": "country",
+      "aliases": ["U.S."],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 88, "end": 189, "sha256": "f18cbcb3cdc0b576b6e7fa7a79b6d3fcb46b5b4fdce94db8b2c340452489f102"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0001", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0001", "start": 50, "end": 122, "sha256": "890b2a2f3f8130a4dc756149c73d8f4ba221d7783f66d2c0b75d22c3edba7db5"}}
+      ]
+    },
+    {
+      "id": "n003",
+      "label": "Austin",
+      "entity_type": "location",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 348, "end": 460, "sha256": "097f6bc00e16a919b92ed92e6e47186174f49ab97844af1089a6bcee68321dff"}}
+      ]
+    },
+    {
+      "id": "n004",
+      "label": "Texas",
+      "entity_type": "location",
+      "aliases": ["TX"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 0, "end": 41, "sha256": "031a5cbd7e1c3dc87f979a77c4bed11f944fd0c1639b9214af4eb82715ef997d"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 348, "end": 460, "sha256": "097f6bc00e16a919b92ed92e6e47186174f49ab97844af1089a6bcee68321dff"}}
+      ]
+    },
+    {
+      "id": "n005",
+      "label": "Anduril",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 143, "sha256": "88852caed50125357fadb2d702ae53d560f875487df6407b7d5ba80e329c6fbe"}}
+      ]
+    },
+    {
+      "id": "n006",
+      "label": "DARPA",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 344, "end": 443, "sha256": "36cb1d915e8e7e36b34b72717b418b6dea271bf9c3fcc319b198ff7d5f8a3e88"}}
+      ]
+    },
+    {
+      "id": "n007",
+      "label": "JSOC",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 143, "sha256": "88852caed50125357fadb2d702ae53d560f875487df6407b7d5ba80e329c6fbe"}}
+      ]
+    },
+    {
+      "id": "n008",
+      "label": "Palantir",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 143, "sha256": "88852caed50125357fadb2d702ae53d560f875487df6407b7d5ba80e329c6fbe"}}
+      ]
+    },
+    {
+      "id": "n009",
+      "label": "SpaceX",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 143, "sha256": "88852caed50125357fadb2d702ae53d560f875487df6407b7d5ba80e329c6fbe"}}
+      ]
+    },
+    {
+      "id": "n010",
+      "label": "Wraithwatch",
+      "entity_type": "organization",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 143, "sha256": "88852caed50125357fadb2d702ae53d560f875487df6407b7d5ba80e329c6fbe"}}
+      ]
+    },
+    {
+      "id": "n011",
+      "label": "Nik Seetharaman",
+      "entity_type": "person",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "n012",
+      "label": "agentic cyber defense platform",
+      "entity_type": "product",
+      "aliases": ["autonomous cyber defense system", "AI-powered cyber defense systems"],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 190, "end": 308, "sha256": "c4e084004ae58eec07089e24c6e46880dd2f5102e58db1414584e23c180169d0"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 40, "end": 195, "sha256": "09d46812f81814fe65b735ddfc5830e31a8da0481d884d8c94accd25fac21816"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 84, "sha256": "9a8d2a531b362a864a06cfafc63788592b2d4f15a4a85ccc353a6b0c9165c0c8"}}
+      ]
+    },
+    {
+      "id": "n013",
+      "label": "AI agents",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 197, "end": 285, "sha256": "1625a5b16421cc64bfccb03da2643fe83100fc5adf2e74eda86d1c1de7cbc5cd"}}
+      ]
+    },
+    {
+      "id": "n014",
+      "label": "digital twin",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0008", "start": 189, "end": 260, "sha256": "5f812aad4424538c4da09f5eca7c0835b69b8182547966012793f1ab08d8c096"}}
+      ]
+    },
+    {
+      "id": "n015",
+      "label": "evolutionary algorithms",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 117, "sha256": "756c446ddeb3462b3ecbd3321c6b6a1ec32b69392df6da29bbbfc2de3c975d91"}}
+      ]
+    },
+    {
+      "id": "n016",
+      "label": "frontier AI",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}}
+      ]
+    },
+    {
+      "id": "n017",
+      "label": "recursive self-improvement",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}}
+      ]
+    },
+    {
+      "id": "n018",
+      "label": "swarming",
+      "entity_type": "technology",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}}
+      ]
+    },
+    {
+      "id": "n019",
+      "label": "AI-augmented cyber threats",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 88, "end": 189, "sha256": "f18cbcb3cdc0b576b6e7fa7a79b6d3fcb46b5b4fdce94db8b2c340452489f102"}}
+      ]
+    },
+    {
+      "id": "n020",
+      "label": "cyber threats",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 286, "end": 355, "sha256": "d97d739218af4f6692ae50acd05e6d21f26d379b6bf559a50334ee2b13152b94"}}
+      ]
+    },
+    {
+      "id": "n021",
+      "label": "offensive attack automation",
+      "entity_type": "threat_category",
+      "aliases": [],
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 139, "end": 249, "sha256": "966236d28dac6306744ddee7ccdfc79696783e77cc50a3a9f13dbec7818acbcc"}}
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "source": "n003",
+      "target": "n004",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 348, "end": 460, "sha256": "097f6bc00e16a919b92ed92e6e47186174f49ab97844af1089a6bcee68321dff"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 0, "end": 41, "sha256": "031a5cbd7e1c3dc87f979a77c4bed11f944fd0c1639b9214af4eb82715ef997d"}}
+      ]
+    },
+    {
+      "id": "e002",
+      "source": "n010",
+      "target": "n012",
+      "relation_type": "DEVELOPS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 117, "sha256": "756c446ddeb3462b3ecbd3321c6b6a1ec32b69392df6da29bbbfc2de3c975d91"}}
+      ]
+    },
+    {
+      "id": "e003",
+      "source": "n010",
+      "target": "n003",
+      "relation_type": "LOCATED_IN",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 348, "end": 460, "sha256": "097f6bc00e16a919b92ed92e6e47186174f49ab97844af1089a6bcee68321dff"}}
+      ]
+    },
+    {
+      "id": "e004",
+      "source": "n010",
+      "target": "n021",
+      "relation_type": "MITIGATES",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 139, "end": 286, "sha256": "5a9eeb7bb36239f6e449e729b92bd7a0e780c7789ec72558f9392f79babf1bcf"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e005",
+      "source": "n010",
+      "target": "n012",
+      "relation_type": "PROVIDES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "$30 million contract to deploy the platform across multiple federal agencies",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0004", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0004", "start": 44, "end": 308, "sha256": "776bb4afea4b118470e5d1f9109ccb305adea013374a0247fa1c5cd4aa5f3a9c"}}
+      ]
+    },
+    {
+      "id": "e006",
+      "source": "n011",
+      "target": "n010",
+      "relation_type": "LEADS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e007",
+      "source": "n011",
+      "target": "n021",
+      "relation_type": "WARNS_ABOUT",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 249, "sha256": "eb12504dd2a85c68a35a1c77c0ce1188f1f91bc7806d8a8fbcd36e635345f8a2"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e008",
+      "source": "n012",
+      "target": "n020",
+      "relation_type": "DETECTS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 197, "end": 355, "sha256": "940bc608beed7b1695f7da299a0393027f39fff61250637e5ae62c7d6ef86c4e"}}
+      ]
+    },
+    {
+      "id": "e009",
+      "source": "n012",
+      "target": "n019",
+      "relation_type": "MITIGATES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 189, "sha256": "e17684a339426b9bae34891d319842d64bdcb6f66d92125e5bc1a600c122598c"}}
+      ]
+    },
+    {
+      "id": "e010",
+      "source": "n012",
+      "target": "n020",
+      "relation_type": "MITIGATES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 197, "end": 355, "sha256": "940bc608beed7b1695f7da299a0393027f39fff61250637e5ae62c7d6ef86c4e"}}
+      ]
+    },
+    {
+      "id": "e011",
+      "source": "n012",
+      "target": "n002",
+      "relation_type": "PROTECTS",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 189, "sha256": "e17684a339426b9bae34891d319842d64bdcb6f66d92125e5bc1a600c122598c"}}
+      ]
+    },
+    {
+      "id": "e012",
+      "source": "n012",
+      "target": "n013",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0006", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0006", "start": 197, "end": 355, "sha256": "940bc608beed7b1695f7da299a0393027f39fff61250637e5ae62c7d6ef86c4e"}}
+      ]
+    },
+    {
+      "id": "e013",
+      "source": "n012",
+      "target": "n014",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0008", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0008", "start": 189, "end": 260, "sha256": "5f812aad4424538c4da09f5eca7c0835b69b8182547966012793f1ab08d8c096"}}
+      ]
+    },
+    {
+      "id": "e014",
+      "source": "n012",
+      "target": "n015",
+      "relation_type": "USES",
+      "attribution": "",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0010", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0010", "start": 0, "end": 117, "sha256": "756c446ddeb3462b3ecbd3321c6b6a1ec32b69392df6da29bbbfc2de3c975d91"}}
+      ]
+    },
+    {
+      "id": "e015",
+      "source": "n016",
+      "target": "n001",
+      "relation_type": "ENABLES",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e016",
+      "source": "n016",
+      "target": "n017",
+      "relation_type": "ENABLES",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e017",
+      "source": "n016",
+      "target": "n018",
+      "relation_type": "ENABLES",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 127, "sha256": "d7684335042ba1f13f8a3471ee3a8912290c4b3cbf8c9e2b3bc751460bf38318"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    },
+    {
+      "id": "e018",
+      "source": "n016",
+      "target": "n021",
+      "relation_type": "ENABLES",
+      "attribution": "Nik Seetharaman",
+      "event_time": "",
+      "event_scope": "",
+      "evidence": [
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 1, "end": 201, "sha256": "ce6ef1b6eed7c90c5f150609a2ce70a93c7adaeb9e21e34cf2aa252bb66fe0c5"}},
+        {"role": "TARGET", "doc_id": "D0527", "paragraph_id": "D0527:P0007", "quote_ref": {"match": "exact", "paragraph_id": "D0527:P0007", "start": 289, "end": 341, "sha256": "a45131db43fca8989b387dfd11664bd7fd22ca93b3f9bf7a463916e3cd25a945"}}
+      ]
+    }
+  ],
+  "context_passages_used": []
+}

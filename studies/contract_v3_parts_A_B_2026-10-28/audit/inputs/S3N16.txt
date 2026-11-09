@@ -1,0 +1,146 @@
+AUDIT_FILE: S3N16
+TARGET_DOC_ID: D0332
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0332
+PUBLICATION_DATE: 2026-04-07
+SOURCE_URL: https://iol.co.za/business-report/economy/2026-04-07-hackers-dont-wait--why-your-cybersecurity-strategy-shouldnt-either/
+TITLE_SHA256: 52bbf51b3d3a36795ffb9609b21b7e86a9299e26f6a6d5f624c9b052eb29ff57
+BEGIN_DOCUMENT
+[D0332:P0001] sha256:52bbf51b3d3a36795ffb9609b21b7e86a9299e26f6a6d5f624c9b052eb29ff57
+[D0332:P0002] sha256:7fec011559a7a0a794e9fde0d54b385c439086ff195fcc60ef2c5b9b7f82617a
+[D0332:P0003] sha256:691081ec69fddb04162fba71ef82eee0e88f908e4658b20ef23e465dea2a0930
+[D0332:P0004] sha256:fd6ce8b15b8d7e692b9a0f82a7d60a3efaf671bf12ab4211a439090df08507af
+[D0332:P0005] sha256:19ed2bc3df4ad27043a1a3f120925c8625b3ee8fa8ab171736b116206339f9cb
+[D0332:P0006] sha256:19b5fc747508774a67cd193533de1c5dda6ca82d9dfdec83cfff335949788b9e
+[D0332:P0007] sha256:be06215db2ddc0324caae16a561bc8a063da56b3280e224255f297d877964cff
+[D0332:P0008] sha256:1c9e0cbb059054fdc7008e87c61aeec5bf69890485c25bceb6f71be1b04598de
+[D0332:P0009] sha256:9d3b4be7f9fbeb664a8c3a1efae889f012cc64e0e3462e6bab7ce96cc1284333
+[D0332:P0010] sha256:751bc83b0a0d11adaf92fae548b84710e0d73155392afa8ddb699e559fb4024d
+[D0332:P0011] sha256:5f5ab9dc058ca424e144074fd5517895d515ccc1d8ddfbf79acbac4112565181
+[D0332:P0012] sha256:7293a4372d21e0e9ef8af3e260bc652a3397113e6d9c6357aa153a65f28a241c
+[D0332:P0013] sha256:6926955596845c7c78b70715bc3df609c293ca76c4247174e92cd8d4a77f0955
+[D0332:P0014] sha256:8790019f3e4f87e238d385c448ed20279e02c9d46d35578c654f26f7b109c9be
+[D0332:P0015] sha256:612b42fc00c31ef7a8b20bedaa31c5f84730b61de27412c72bfd52fa2b39a4ac
+[D0332:P0016] sha256:da2196d039aeff4693769dfa014b6f378e2fdd7385a5346d33caba83673c8fa7
+[D0332:P0017] sha256:7525995fe8b817198389bad5b4a00ce826cd5e8d59b6a342224105e1e8618b1c
+[D0332:P0018] sha256:7e81fc433c8562e5f4d95828a058c4c586b0985a5cf5bd5338239ea7daff4054
+[D0332:P0019] sha256:7a34936dc7c47bd2be7b8301edfd54256afe0367da9ea0217d0bc79d681c4db6
+[D0332:P0020] sha256:f000ec34236230883ca4f9f24dd4a7ad2ec64073a5e6ccccd7673fd43f7e0d92
+[D0332:P0021] sha256:dbab4b5eb369d9365a6b1d46a835ce20078a50401910ce93c27d9651019b6e9f
+[D0332:P0022] sha256:cfba3c4ef5e6b9fd4440378e6dfd9c83459059c8890fde4512181b29421640f4
+[D0332:P0023] sha256:3b6132caeeb5386ed0f3f05b6925c2099d534a8809ea1241fc044b014033ae6f
+[D0332:P0024] sha256:9edfde972f63b36218bf10bb03a5024c824f77478c6c1b5305bd230e6883f1f9
+[D0332:P0025] sha256:e8c3fe07e4c60732c67f217f5d49d56853bf00bd95f5c10532f3834ed2c6be49
+[D0332:P0026] sha256:321350d1dd99713f24986cd3a7dc35df52aed09f84a6abfd4970e188d5856929
+[D0332:P0027] sha256:d9859d38676aed89fe0b08cb3a9e559cb14d8df4c1bf3fe0198bc6f6c0425a75
+[D0332:P0028] sha256:5fb5a2de9c45a1157c502c9daf98fc368ed8a16a2fffcca185395e5e4086565f
+[D0332:P0029] sha256:aa94d84aaea6ce3ad81720a4d295f8a39a0936f54b9a61d7360de84181b3521d
+[D0332:P0030] sha256:acd5a235297858f116bef2835a950f5ddbe7f14797c6f3ecd97b6496f7e28795
+[D0332:P0031] sha256:d098438c1b1b66291fd18b081a8bc9124955de2b7e578bf108816dcd64fac122
+[D0332:P0032] sha256:ab063ea2b5408689fe0a26ad847310db17bd67e6a04154079f7166077af78b77
+[D0332:P0033] sha256:73ecfb92d4f51fe60bf7c2a0e2e644eaefcdf9e9c23c2a1c860a0bbcf4888882
+[D0332:P0034] sha256:2ff36345703f12c1f3c287b88537cb43f5d389f60baafe9c67ccd23e4005ce4f
+[D0332:P0035] sha256:5e7c5164bb1719911f0147633bb9454172f2de26ffb1a8248731b3bfae7e1dea
+[D0332:P0036] sha256:dcf66731721792d8ef0b5ba662b10437cb1b174e8dcfb6754e6bd964f214e3a2
+[D0332:P0037] sha256:1059a5f8f6a80443e024c522ef0be375234ae949fa6dafff450631aa9cf3efff
+[D0332:P0038] sha256:254aa7936f9aa83ff1552a3d5605170b8e185e5b283c033d815087edd9b373f7
+[D0332:P0039] sha256:254aa7936f9aa83ff1552a3d5605170b8e185e5b283c033d815087edd9b373f7
+[D0332:P0040] sha256:3000281bf9e415d30c00bbfd591510fed4bcca2c786b1946932eb14f48348fe0
+[D0332:P0041] sha256:bc1b3bcf522a7d836cb7cb66ea950c1705de95e71aedc030329edb1b87424757
+[D0332:P0042] sha256:baf1d4058740be8efb0dfdc90ad1f098fd9cbef006fd316cd6eb4aa30315e7fa
+[D0332:P0043] sha256:16dbca58f84b20360d3ab6c7117936328f691c2d052c42c97a8ef663bf1c1b1d
+[D0332:P0044] sha256:49fb8690ce4ba7fe98c8d5fcec2335001aa4d004e3aa8b77bd45482def1da49c
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (39)
+E001: «Continuous Threat Exposure Management» — uses → «threat simulations» | форма: actual, positive
+E002: «misconfiguration in a cloud storage bucket» — combined with → «weak access policy» | форма: actual, positive
+E003: «attackers» — exploit → «tiniest cracks in digital defences» | форма: actual, positive
+E004: «Continuous Threat Exposure Management (CTEM)» — continuously scans → «networks» | форма: actual, positive
+E005: «misconfiguration» — affects → «sensitive data» | форма: conditional, positive
+E006: «attackers» — uses → «Artificial Intelligence» | форма: actual, positive
+E007: «Proactive threat management» — enables → «innovation» | форма: actual, positive
+E008: «attackers» — use → «automation» | форма: actual, positive
+E009: «high-severity flaw» — located on → «isolated test system» | форма: actual, positive
+E010: «Continuous Threat Exposure Management (CTEM)» — contrasts with → «periodic vulnerability scans» | форма: possible, positive
+E011: «low-severity vulnerability» — located on → «critical financial application» | форма: actual, positive
+E012: «Continuous Threat Exposure Management (CTEM)» — uncovers → «shadow IT assets» | форма: actual, positive
+E013: «Continuous Threat Exposure Management (CTEM)» — continuously scans → «endpoints» | форма: actual, positive
+E014: «Continuous Threat Exposure Management» — detects → «vulnerabilities» | форма: actual, positive
+E015: «Continuous Threat Exposure Management (CTEM)» — helps prevent → «multimillion-rand data breach» | форма: actual, positive
+E016: «threat simulations» — uses → «Continuous Threat Exposure Management» | форма: actual, positive
+E017: «Continuous Threat Exposure Management (CTEM)» — uses → «threat simulations» | форма: actual, positive
+E018: «attackers» — use → «Artificial Intelligence (AI)» | форма: actual, positive
+E019: «threat simulations» — mimic → «real-world attack techniques» | форма: actual, positive
+E020: «Continuous Threat Exposure Management (CTEM)» — continuously probes → «organisation's IT environment» | форма: actual, positive
+E021: «Hackers don't wait - why your cybersecurity strategy shouldn't either» — published by → «Business Report» | форма: actual, positive
+E022: «Continuous Threat Exposure Management» — uses → «attack emulation» | форма: actual, positive
+E023: «Continuous Threat Exposure Management (CTEM)» — contrasts with → «periodic vulnerability scans» | форма: actual, positive
+E024: «Continuous Threat Exposure Management (CTEM)» — uncovers → «misconfigurations» | форма: actual, positive
+E025: «low-severity vulnerability» — may take precedence over → «high-severity flaw» | форма: actual, positive
+E026: «attackers» — uses → «automation» | форма: actual, positive
+E027: «Hackers don't wait - why your cybersecurity strategy shouldn't either» — published on → «IOL» | форма: actual, positive
+E028: «Hackers don't wait - why your cybersecurity strategy shouldn't either» — published on → «2026.04.07» | форма: actual, positive
+E029: «Hackers don't wait - why your cybersecurity strategy shouldn't either» — written by Senior Solution Architect at → «In2IT Technologies» | форма: actual, positive
+E030: «misconfiguration in a cloud storage bucket» — could lead to → «sensitive data exposure» | форма: actual, positive
+E031: «Proactive threat management» — protects → «brand reputation» | форма: actual, negative
+E032: «Proactive threat management» — protects → «brand reputation» | форма: actual, positive
+E033: «Continuous Threat Exposure Management (CTEM)» — continuously scans → «applications» | форма: actual, positive
+E034: «Continuous Threat Exposure Management» — uses → «automation» | форма: actual, negative
+E035: «Continuous Threat Exposure Management (CTEM)» — relies on → «automation» | форма: actual, positive
+E036: «Continuous Threat Exposure Management» — detects → «misconfiguration» | форма: actual, positive
+E037: «Continuous Threat Exposure Management» — uses → «automation» | форма: actual, positive
+E038: «Saurabh Prasad» — member of → «In2IT Technologies» | форма: actual, positive
+E039: «Continuous Threat Exposure Management (CTEM)» — uses → «attack emulation» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ

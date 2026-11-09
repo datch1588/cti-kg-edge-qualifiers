@@ -1,0 +1,120 @@
+AUDIT_FILE: S5F22
+TARGET_DOC_ID: D0377
+
+ІНСТРУКЦІЯ АУДИТОРА (дослід CTI_CONTRACT_V3)
+
+Завдання
+Нижче наведено статтю з ідентифікаторами абзаців і перелік записів, вилучених із неї. Кожен запис — це твердження «суб'єкт — відношення → об'єкт» з позначкою форми. Записи надійшли з кількох незалежних запусків і перемішані; звідки який запис, тобі невідомо й не має значення. Оціни кожен запис окремо лише за текстом статті та правилами нижче. Факти з пам'яті, Інтернету чи інших файлів не використовуй. Новина підтверджує те, що каже джерело, а не істинність події; правдивість за зовнішніми джерелами не оцінюй.
+
+Формат запису
+E001: «суб'єкт» — відношення → «об'єкт» | форма: <модальність>, <полярність>
+Модальність і полярність визначай для саме цього звʼязку (суб'єкт, відношення, об'єкт), а не для абзацу чи статті загалом, за такими правилами. Порада впровадити засіб не робить рекомендацією твердження про те, що засіб захищає; можливий наслідок атаки не робить можливою саму атаку, якщо її подано як здійснену.
+- actual — звʼязок подано як такий, що відбувся, відбувається або є чинним станом речей. Сюди належать: (а) загальне твердження, подане як факт, і типова поведінка («usually», «often», «increasingly target»); (б) властивість, функція, призначення чи здатність засобу, продукту, технології, техніки, ПЗ або вразливості, зокрема рекламована чи продемонстрована й ще не застосована; «can» тут означає здатність, тобто його можна замінити на «is able to» («antivirus software can detect malware», «tools pitched as AI systems that can write phishing emails», «the flaw allows attackers to…»), а також вразливість чи залежність як чинний стан («are increasingly vulnerable»); (в) твердження, яке стаття переказує з посиланням на джерело або як чиюсь заяву («said», «reported», «according to», «claimed responsibility», «allegedly», «reportedly»): дієслово повідомлення не змінює модальності; (г) оголошене чи ухвалене рішення і склад пакета, угоди чи продукту («the package included 82 HIMARS»).
+- planned — дію подано як майбутню: хтось її планує, має намір чи мету здійснити, погрожує нею, готується до неї, її призначено за графіком або суб'єкт узяв зобов'язання її виконати («will launch», «plans to», «is set to», «intends», «aims to», «threatens», «vowed», «is committed to defend», «channels are being set up to target»), і саму дію не подано як уже здійснену.
+- recommended — текст радить, закликає, вимагає чи зобов'язує когось діяти («should», «must», «need to», «urged», «recommends», «advised», «is required to», наказовий спосіб). Твердження про важливість, роль чи ефективність засобу («the importance of behavioural analysis in defending against threats») — не порада, а твердження про сам звʼязок: actual.
+- possible — подію, наслідок чи причетність подано як можливі, імовірні, підозрювані або як ризик, без явної умови й без повідомлення, що вони сталися («may», «might», «could», «likely», «possibly», «potentially», «suspected», «believed to», «public accounts suggest», «appears to»; «can», яке означає не здатність, а те, що подія може статися: «any vulnerability at the infrastructure level can impact the entire AI stack» — не «is able to», а «може статися, що вразливість уразить увесь стек»). Прогноз, за яким немає чийогось плану («experts expect attacks to grow»), — possible.
+- conditional — звʼязок чинний лише за явно названої умови («if», «unless», «in case of», «provided that»), і запис передає наслідок цієї умови. У реченні «If the CCP attacked our financial institutions, hackers could empty your bank account» наслідок (hackers → bank account) — conditional, а сама умова (CCP → financial institutions) — гіпотетична подія: possible.
+- unknown — текст прямо каже, що звʼязок не встановлено чи невідомо, чи він є («it is unclear whether», «has not been confirmed», «there is no evidence that»); полярність тоді positive.
+- Кілька маркерів в одному твердженні: recommended має перевагу над planned, planned — над conditional, conditional — над possible. Порада за умови («if the intrusion is detected, isolate the host») — recommended; план за умови — planned; можливість за умови — conditional.
+- Полярність negative — лише коли текст стверджує, що звʼязку немає або подія не відбулася («did not», «was not affected», «no data was stolen», «were not involved», «cannot» як відсутність здатності). Відсутність підтвердження — unknown, positive. Заперечення, яке висловлює учасник («X denied involvement»), — negative. В усіх інших випадках полярність positive.
+- Якщо стаття подає той самий звʼязок у різних місцях у різних формах (в одному абзаці як факт, в іншому як можливий сценарій), форма запису правильна, якщо відповідає хоча б одному з цих місць.
+Атрибуцію (хто стверджує), час і контекст події тут не показано й не оцінюють.
+
+Вердикти
+C — підтверджено текстом статті.
+I — встановлена помилка.
+U — неоднозначність, яку не вдалося усунути за текстом статті.
+— (тире) — лише у form_verdict, коли triple_verdict не C.
+
+triple_verdict — чи стверджує стаття звʼязок саме між цими учасниками в цьому напрямі:
+- Відношення оцінюй за змістом, а не за дослівним збігом слів: «uses», «deployed», «relies on» можуть означати те саме. Але відношення має бути конкретним: спільна згадка двох учасників або загальне «related to», «associated with», «involved in», якого текст не уточнює, — I.
+- Обидва учасники мають бути правильно визначені: не плутай компанію з її продуктом, особу з організацією, ціле з частиною. Учасник, якого в статті немає або якого запис підмінив іншим, — I.
+- Обернений напрям (об'єкт робить те, що запис приписує суб'єкту) — I.
+- Звʼязок, якого текст не стверджує, а лише дозволяє здогадатися, — I.
+form_verdict — чи так стаття подає цей звʼязок:
+- C — модальність і полярність відповідають тексту.
+- I — не відповідають: наприклад, позначено actual, а стаття каже лише, що це може статися, заплановано, рекомендовано чи відбувається за умови; позначено positive, а стаття заперечує; позначено possible чи planned, а стаття подає це як здійснений факт.
+- Якщо triple_verdict не C, form_verdict = «—».
+
+Не став C за замовчуванням: для кожного запису окремо перевір суб'єкт, відношення, об'єкт, напрям і форму за текстом статті.
+
+Формат відповіді
+Запиши ОДИН JSON-об'єкт, без Markdown і пояснень поза ним:
+{
+ "audit_file": "значення AUDIT_FILE",
+ "target_doc_id": "значення TARGET_DOC_ID",
+ "verdicts": [
+  {"item_id": "E001", "triple_verdict": "C", "form_verdict": "C", "reason": "коротко, українською"},
+  {"item_id": "E002", "triple_verdict": "I", "form_verdict": "—", "reason": "коротко, українською"}
+ ]
+}
+Оціни всі записи без винятку, у будь-якому порядку. reason — одне речення; для I та U обов'язково назви, що саме не так.
+
+
+СТАТТЯ
+DOC_ID: D0377
+PUBLICATION_DATE: 2026-03-24
+SOURCE_URL: https://www.prnewswire.com/news-releases/netstar-and-varist-announce-strategic-alliance-to-combat-ai-driven-cyber-threats-302723263.html
+TITLE_SHA256: e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45
+BEGIN_DOCUMENT
+[D0377:P0001] sha256:e5528d4c3ab13b4bc1eb42b7694db9e2922d5f624802927a2bca9ef90a77ea45
+[D0377:P0002] sha256:8f33f2bef6e0bec3bf6852f2efd42ceed32e1961e46507a545eb75888a0d9670
+[D0377:P0003] sha256:b48e9b15df09521c6f5521be0bad337d4ddb195bdc847003a439ff751a88ac2d
+[D0377:P0004] sha256:80ab51b2ac3923eca437a720aadaadf947b6aedd34c71bbe839f3f2947b63d8a
+[D0377:P0005] sha256:091397d2728cb35d39f6de4df68d7e0088d6a5573a3b8f846a634eaa831cd4ac
+[D0377:P0006] sha256:df3ab1a35a3b3a4210ea48029a1db6842920e45f9db07d86678304d4a909522e
+[D0377:P0007] sha256:267ed4818c503621682587c857dc5027108c9a50d301583d7eb8fc1631413c3e
+[D0377:P0008] sha256:c7f6b5e4db30c64cb960391a1f2405b591938446ff1abbcceffa9a25cceefef5
+[D0377:P0009] sha256:74d8423cb535f482dc058b0f04a549a9a0e9cd7d9ec06088bd595e1a77eb05f5
+[D0377:P0010] sha256:514d4980798182e1b8476d0c93608b2e705e7c5253ec533a5ec7b8ce8645f218
+[D0377:P0011] sha256:d23e0aaabbca29e56b58082049b1acd1688a80bafa0f7a2b9ce84b95208bf260
+[D0377:P0012] sha256:1883078b16deabe659a830341b41b9585ca9714de3c8f8df4b875ab3c2c3610e
+[D0377:P0013] sha256:2197d888675a0603512087b0e75eceeb51fa683dd4b691a5dd8681586210d32a
+[D0377:P0014] sha256:fc226c6be4ebbdfb28efb85fada6be21d03b6a51ab806300cc14ad9e974fb8df
+[D0377:P0015] sha256:d88b0ef8db75774101a806809d663825e353ac9ba8d0b2f84fa92eacac0839e8
+[D0377:P0016] sha256:80d02ff767ba7d992e3ff60f585d3c4fbc9bfeaa2f8c9a434b24288e26f6da77
+[D0377:P0017] sha256:2bde326932b4d48d9d802cec47c25324957bd206118f35aefcaf4f6c4b692c84
+[D0377:P0018] sha256:78da66f078a720b01a895c41ebe6faac2d70f0bc04041421e1cac8bd4bb4310b
+[D0377:P0019] sha256:ebb3f905d2f531fa2f8e0d3cd36d59321a79597534031accdd50167833437566
+[D0377:P0020] sha256:4de538ec4121a1d2fdaf1fbd7bd28c859f4767631cebe6c72efe6f1b9f8f98cd
+[D0377:P0021] sha256:ddbd524013e283a6e3b70e9448a4cab862005a4e328f2c1602d31bcd1c946d5f
+[D0377:P0022] sha256:24426f95e84d51b213d263d3d7663cd05dd093dadc471e07940f61272f1fe8da
+[D0377:P0023] sha256:4597b13d4caf604e134f6f1735901f249f2dd6121955dbf822a3fda8aa3a32c6
+[D0377:P0024] sha256:5b20eb6c91f17d6f15216d31044237a5626b9123c81aca7096e830d64bb7ccd3
+[D0377:P0025] sha256:0e69162db740a37843a7ea5b4adefe280e533d119440162c158580d532f0f156
+[D0377:P0026] sha256:3a00cf1746e33b3b89414aafa4d3e01fdfbb08330e509c5591eee6e4b7d5cc79
+[D0377:P0027] sha256:d6dfd711147c1be467b6441c2602af6da2a17f84c9b03ab1aedae11decba5bb4
+[D0377:P0028] sha256:b40257e0eff533771eb03eb25f8fb9d83389f0d635c5c6e5d2d4e80cf94af2c8
+END_DOCUMENT
+
+ЗАПИСИ ДЛЯ ПЕРЕВІРКИ (29)
+E001: «Varist Hybrid Detection Engine» — uses → «real-time dynamic behavioral analysis» | форма: actual, positive
+E002: «NetSTAR» — provides → «URL categorization» | форма: actual, positive
+E003: «Varist» — protects → «mailboxes» | форма: actual, positive
+E004: «NetSTAR» — detects → «AI-generated malware» | форма: planned, positive
+E005: «strategic alliance» — mitigates → «AI-Driven Cyber Threats» | форма: planned, positive
+E006: «Varist» — uses → «real-time dynamic behavioral analysis» | форма: actual, positive
+E007: «Varist» — detects → «malware» | форма: actual, positive
+E008: «generative AI» — enables → «phishing» | форма: actual, positive
+E009: «Varist Hybrid Detection Engine» — uses → «dynamic behavioral analysis» | форма: actual, positive
+E010: «Varist Hybrid Detection Engine» — detects → «malware» | форма: actual, positive
+E011: «NetSTAR» — provides → «web application intelligence» | форма: actual, positive
+E012: «Varist» — located in → «Iceland» | форма: actual, positive
+E013: «Varist Hybrid Detection Engine» — protects → «mailboxes» | форма: actual, positive
+E014: «Finnbogi Finnbogason» — member of → «Varist» | форма: actual, positive
+E015: «Varist» — detects → «AI-generated malware» | форма: planned, positive
+E016: «NetSTAR» — member of → «strategic alliance» | форма: actual, positive
+E017: «Varist Hybrid Detection Engine» — uses → «heuristics» | форма: actual, positive
+E018: «generative AI» — enables → «malware» | форма: actual, positive
+E019: «NetSTAR» — provides → «real-time threat feeds» | форма: actual, positive
+E020: «Varist» — member of → «strategic alliance» | форма: actual, positive
+E021: «Finnbogi Finnbogason» — member of → «Varist» | форма: possible, positive
+E022: «strategic alliance» — enables → «threat correlation» | форма: actual, positive
+E023: «NetSTAR» — provides → «IP intelligence» | форма: actual, negative
+E024: «Daniel Ashby» — member of → «NetSTAR» | форма: actual, positive
+E025: «Varist» — uses → «heuristics» | форма: actual, positive
+E026: «generative AI» — enables → «phishing campaigns» | форма: actual, positive
+E027: «Varist» — develops → «Varist Hybrid Detection Engine» | форма: actual, positive
+E028: «web application intelligence» — provides → «NetSTAR» | форма: actual, positive
+E029: «NetSTAR» — provides → «IP intelligence» | форма: actual, positive
+КІНЕЦЬ ЗАПИСІВ
